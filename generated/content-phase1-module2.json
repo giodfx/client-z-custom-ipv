@@ -1,0 +1,434 @@
+{
+  "moduleId": "module-2",
+  "title": "MODULE 2: Intimate Partner Sexual Violence",
+  "description": "Understanding sexual violence within intimate relationships, including societal context, prevalence, and unique characteristics of intimate partner sexual assault.",
+  "weekNumber": 2,
+  "learningOutcomes": [
+    "Define sexual violence and its forms",
+    "Understand societal factors contributing to sexual violence (rape culture)",
+    "Recognize unique aspects of sexual assault within intimate relationships",
+    "Identify myths and facts about intimate partner sexual violence"
+  ],
+  "lessons": [
+    {
+      "lessonId": "lesson-2-1",
+      "title": "What is Sexual Violence?",
+      "description": "Understanding the spectrum of consent, legal versus social definitions, and how sexual violence intersects with intimate partner violence.",
+      "duration": 10,
+      "objectives": [],
+      "contentBlocks": [
+        {
+          "id": "block-lesson-2-1-hero",
+          "type": "hero-banner",
+          "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
+          "imageRatio": "21:9",
+          "overlayText": "What is Sexual Violence?"
+        },
+        {
+          "id": "block-lesson-2-1-narration",
+          "type": "text",
+          "content": "We now enter the twilight zone—where light fades and hidden truths emerge. Sexual violence in intimate relationships challenges our assumptions about consent and harm. While Hollywood depicts strangers in dark alleys, the reality is that most sexual assault is committed by someone the survivor knows. This deeper understanding transforms how we recognize and respond to intimate partner sexual violence."
+        },
+        {
+          "id": "block-lesson-2-1-heading-1",
+          "type": "heading",
+          "level": 2,
+          "content": "Module 2 Overview"
+        },
+        {
+          "id": "block-lesson-2-1-content-1",
+          "type": "text",
+          "content": "## Intimate Partner Sexual Violence\n\nWhile Hollywood often depicts sexual assault as a stranger in a ski mask who lunges out to pull a complete stranger into a dark alley, in reality, most sexual assault is committed by someone the survivor knows.\n\n**According to the National Sexual Violence Resource Center (NSVRC):**\n\n- More than half (51.1%) of female survivors of rape reported being raped by an intimate partner and 40.8% by an acquaintance\n- For male survivors, more than half (52.4%) reported being raped by an acquaintance\n- For both men and women, being assaulted by a known individual makes up more than half of the cases reported\n\n### Module Learning Objectives\n\nIn the first module, you examined intimate partner violence and the use of power and control in abusive relationships. On the outer ring of the Power and Control Wheel are physical and sexual violence. The threat of violence can be terrorizing, and the use of sexual violence can be particularly traumatizing.\n\nThe intersection between sexual violence and intimate partner violence is more common than you might think, and to understand this intersection, you must understand the basis of sexual violence.\n\n**By the end of this module you will be able to:**\n\n- Distinguish between consent, compliance, coercion, rape, and other forms of sexual assault\n- Identify ways society normalizes violence against women\n- Describe how sexual violence connects to intimate partner violence"
+        },
+        {
+          "id": "block-lesson-2-1-heading-2",
+          "type": "heading",
+          "level": 2,
+          "content": "The Spectrum of Consent"
+        },
+        {
+          "id": "block-lesson-2-1-content-2",
+          "type": "text",
+          "content": "## Understanding Consent\n\nThe spectrum of consent includes four areas: **consent, compliance, coercion**, and **rape/assault**. A large portion of understanding sexual violence is understanding consent and what lack of consent looks like.\n\n### Consent\n\n**True consent is:**\n- Freely given without pressure or coercion\n- Informed - with full awareness of what is being agreed to\n- Enthusiastic - not reluctant or hesitant\n- Ongoing - can be withdrawn at any time\n- Specific - consent to one thing doesn't mean consent to everything\n\n### Compliance\n\n**Compliance means:**\n- Going along with something without true enthusiasm\n- May involve pressure, obligation, or social expectations\n- Not the same as freely given consent\n- In healthy relationships, occasional compliance may occur, but it should not be the norm\n\n### Coercion\n\n**Coercion involves:**\n- Pressure, threats, or manipulation to obtain sexual activity\n- Creating a sense of obligation or guilt\n- Using position of power or authority\n- Threatening consequences if someone doesn't comply\n- When coercion is present, true consent cannot be given\n\n### Rape/Assault\n\n**Rape and sexual assault are:**\n- Any sexual act without consent\n- Sexual activity obtained through force or threat of force\n- Sexual contact when someone cannot consent (incapacitated, unconscious, etc.)\n- A serious crime and violation of a person's autonomy\n\n### A Note About Gender\n\nWhen reviewing the research and history of sexual violence, it is largely a story of men's violence against women. Unfortunately, that also means that most of the research that has been done does not include research about survivors who are men, transgender, or non-binary. This data will be included where possible throughout the course."
+        },
+        {
+          "id": "block-lesson-2-1-heading-3",
+          "type": "heading",
+          "level": 2,
+          "content": "Social vs. Legal Definitions"
+        },
+        {
+          "id": "block-lesson-2-1-content-3",
+          "type": "text",
+          "content": "## Understanding Different Definitions of Consent\n\nConsent may sound like a simple concept—you either have someone's consent or you don't. As the consent spectrum shows, however, consent isn't always easy to understand. Many people struggle with knowing when someone can and cannot consent.\n\n**Social Definitions:**\n\nIn a social context, consent should be enthusiastic, informed, freely given, and ongoing. If any of these elements are missing, consent is questionable or absent.\n\n**Legal Definitions:**\n\nWhile social understanding helps us recognize what consent looks like, legal definitions of consent and sexual assault don't always match the social definition. Laws also vary between states and territories, which can make it that much harder to understand.\n\n### How to Respond\n\n**For this reason, it is important to always respond to survivors of rape and sexual assault based on their social and lived experiences.**\n\nThis means that if a survivor has any of the actions defined across the consent spectrum used against them, and they consider themselves to have experienced sexual assault, then we should believe and support them.\n\nAs professionals like Dr. Patel or James, your role is not to determine legal definitions—it's to provide trauma-informed support based on the survivor's experience and needs."
+        },
+        {
+          "id": "block-lesson-2-1-takeaways",
+          "type": "key-takeaway",
+          "content": "Most sexual assault is committed by someone the survivor knows, not by strangers\n\nThe spectrum of consent includes consent, compliance, coercion, and rape/assault\n\nTrue consent is freely given, informed, enthusiastic, ongoing, and specific\n\nCoercion means true consent cannot be given, even if it looks like compliance\n\nLegal and social definitions of consent don't always align—support survivors based on their lived experience\n\nMore than half of female rape survivors were raped by an intimate partner"
+        },
+        {
+          "id": "block-lesson-2-1-kc-1",
+          "type": "knowledge-check",
+          "question": "What is the key difference between consent and compliance?",
+          "options": [
+            {
+              "label": "Consent is legal while compliance is not",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Consent is freely given without pressure, while compliance means going along without true enthusiasm",
+              "correct": true,
+              "feedback": "CONSENT is freely given without pressure or coercion, while COMPLIANCE means going along with something without true enthusiasm and may involve pressure, obligation, or social expectations. True consent must be enthusiastic, informed, and freely given. While occasional compliance may occur in healthy relationships, in abusive relationships, compliance often results from fear or learned patterns—which means consent is not actually present."
+            },
+            {
+              "label": "Compliance is always acceptable in relationships while consent is not",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "There is no difference between consent and compliance",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-2-1-kc-2",
+          "type": "knowledge-check",
+          "question": "According to the lesson, what happens to the possibility of consent when coercion is present?",
+          "options": [
+            {
+              "label": "Consent is still possible if the person eventually agrees",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Coercion creates delayed consent",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "When coercion is present, true consent cannot be given",
+              "correct": true,
+              "feedback": "When COERCION is present, TRUE CONSENT CANNOT BE GIVEN. Coercion involves pressure, threats, manipulation, creating obligation or guilt, or using a position of power. Even if someone eventually 'agrees' under these conditions, it is not freely given consent—it is compliance obtained through pressure or fear. This is especially important in intimate partner relationships where coercion may be subtle or part of a larger pattern of control."
+            },
+            {
+              "label": "Coercion only matters in stranger assault cases",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-2-1-kc-3",
+          "type": "knowledge-check",
+          "question": "How should professionals respond when legal definitions of sexual assault don't match a survivor's lived experience?",
+          "options": [
+            {
+              "label": "Tell the survivor their experience doesn't count legally",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Only provide support if the experience meets legal criteria",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Respond to survivors based on their social and lived experiences, believing and supporting them",
+              "correct": true,
+              "feedback": "Professionals should RESPOND TO SURVIVORS BASED ON THEIR SOCIAL AND LIVED EXPERIENCES, believing and supporting them regardless of legal definitions. If a survivor has experienced any actions on the consent spectrum and considers themselves to have experienced sexual assault, we should believe and support them. Your role is not to determine legal definitions—it's to provide trauma-informed support based on the survivor's experience and needs."
+            },
+            {
+              "label": "Encourage survivors to change their story to match legal definitions",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson-2-2",
+      "title": "Sexual Violence in Our Society",
+      "description": "Examining rape culture, gender stereotypes, and how societal attitudes normalize and perpetuate violence against women.",
+      "duration": 8,
+      "objectives": [],
+      "contentBlocks": [
+        {
+          "id": "block-lesson-2-2-hero",
+          "type": "hero-banner",
+          "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
+          "imageRatio": "21:9",
+          "overlayText": "Sexual Violence in Our Society"
+        },
+        {
+          "id": "block-lesson-2-2-narration",
+          "type": "text",
+          "content": "In the twilight zone, we see how cultural currents shape violence. Rape culture isn't abstract theory—it's the water we swim in, the messages we absorb, the stereotypes that seem normal until we examine them. Understanding these societal foundations helps us challenge the beliefs that support violence and create change at every level."
+        },
+        {
+          "id": "block-lesson-2-2-heading-1",
+          "type": "heading",
+          "level": 2,
+          "content": "Understanding Rape Culture"
+        },
+        {
+          "id": "block-lesson-2-2-content-1",
+          "type": "text",
+          "content": "## Sexual Violence in Our Society\n\nViolence against women is based upon the idea of unequal power between men and women, a message that has been used by society throughout history.\n\n**Rape culture** is a term used to describe an environment where sexual violence against women is normalized and excused in the media and popular culture. It is perpetuated through:\n\n- Misogynistic language\n- The objectification of women's bodies\n- The glamorization of sexual violence\n\n### The Rape Culture Pyramid\n\nThe Rape Culture Pyramid, created by the **11th Principle: Consent** advocacy group, shows how gender stereotypes can perpetuate abusive and violent behaviors at many levels.\n\n**Key Insights:**\n\n- All the layers are linked and build on one another\n- Therefore, to eliminate violence against women, we must start at the foundation and address our beliefs and attitudes that support sexual violence\n- Behaviors at the bottom of the pyramid create the foundation for more serious violence at the top\n\n**The Pyramid Structure:**\n\n- **Foundation:** Gender stereotypes, sexist jokes, objectification\n- **Middle layers:** Victim blaming, slut-shaming, denial of rape culture\n- **Top:** Sexual assault, rape, sexual violence\n\nOnce you know what rape culture is, it may be overwhelming to see how common these behaviors are and how \"normal\" they are considered in our society."
+        },
+        {
+          "id": "block-lesson-2-2-heading-2",
+          "type": "heading",
+          "level": 2,
+          "content": "Challenging Rape Culture"
+        },
+        {
+          "id": "block-lesson-2-2-content-2",
+          "type": "text",
+          "content": "## Taking Action Against Harmful Norms\n\nIt is not easy to challenge rape culture, especially for those who have intentionally or unintentionally perpetuated it. It is important, however, to still have these conversations and call out sexist language or behaviors, no matter how small they seem.\n\n### Impact on All Genders\n\nIt is also important to recognize these harmful beliefs affect individuals of any gender, not just women and girls. Because of this, there are many organizations led by men that focus on spreading awareness about the impact of rigid gender stereotypes and the effect it can have on men and boys.\n\n**Gender Stereotypes Harm Everyone:**\n\n- Boys and men are told to suppress emotions (\"boys don't cry\")\n- Men are expected to be aggressive and dominant\n- Showing vulnerability is seen as weakness\n- These expectations contribute to violence and harm\n\nThe \"Boys Don't Cry\" campaign from White Ribbon shows how gender stereotypes impact the way men and boys act in our society. It captures many of the concepts in the Rape Culture Pyramid and how harmful behaviors and mindsets can build to sexual violence."
+        },
+        {
+          "id": "block-lesson-2-2-heading-3",
+          "type": "heading",
+          "level": 2,
+          "content": "Prevention Through Education"
+        },
+        {
+          "id": "block-lesson-2-2-content-3",
+          "type": "text",
+          "content": "## Preventing Sexual Violence and Rape Culture\n\nThe \"Boys Don't Cry\" initiative seeks to prevent sexual violence by breaking down common stereotypes and behaviors that often reinforce rape culture. By educating the public through common images and familiar language, this effort aims to lead to awareness and prevention behaviors rather than behaviors that reinforce rape culture.\n\n**Ultimately, prevention must include education, both formal and informal.**\n\n### How Allies and Advocates Can Participate:\n\n- **Talking about rape culture and gender-based violence with others** - Break the silence and normalize these important conversations\n\n- **Challenging sexist comments in conversations** - Speak up when you hear jokes, language, or attitudes that perpetuate harm\n\n- **Knowing your local resources** - Be prepared to connect survivors with appropriate support\n\n### Creating Change\n\nIn the next section, you focus on how the concepts you have encountered thus far relate to the intersection of intimate partner violence and sexual assault and how to respond and help survivors experiencing intimate partner sexual violence.\n\nAs professionals like Maria, Dr. Patel, Aisha, or James, you have opportunities every day to challenge rape culture, educate others, and support survivors. Small actions at every community level create ripple effects that can transform society."
+        },
+        {
+          "id": "block-lesson-2-2-takeaways",
+          "type": "key-takeaway",
+          "content": "Rape culture describes an environment where sexual violence is normalized and excused through media and popular culture\n\nThe Rape Culture Pyramid shows how gender stereotypes at the foundation build to sexual violence at the top\n\nAll layers of the pyramid are linked—addressing the foundation is essential to eliminating violence\n\nHarmful gender stereotypes affect individuals of all genders, not just women and girls\n\nPrevention requires education and challenging sexist attitudes at every level\n\nAllies can participate by talking about rape culture, challenging sexist comments, and knowing local resources"
+        },
+        {
+          "id": "block-lesson-2-2-kc-1",
+          "type": "knowledge-check",
+          "question": "What is rape culture?",
+          "options": [
+            {
+              "label": "A legal term for prosecuting sexual assault cases",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "An environment where sexual violence against women is normalized and excused in media and popular culture",
+              "correct": true,
+              "feedback": "RAPE CULTURE is an environment where sexual violence against women is NORMALIZED and EXCUSED in the media and popular culture. It is perpetuated through misogynistic language, objectification of women's bodies, and glamorization of sexual violence. Understanding rape culture helps us recognize how societal attitudes and beliefs create the foundation for violence and how challenging these attitudes is essential for prevention."
+            },
+            {
+              "label": "A culture that only exists in certain communities",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "A term used only by feminists to blame men",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-2-2-kc-2",
+          "type": "knowledge-check",
+          "question": "According to the Rape Culture Pyramid, why must we address beliefs and attitudes at the foundation level?",
+          "options": [
+            {
+              "label": "Because foundation-level behaviors are more serious than sexual violence",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Because all layers are linked and build on one another, so addressing the foundation is essential to eliminating violence at the top",
+              "correct": true,
+              "feedback": "According to the Rape Culture Pyramid, ALL LAYERS ARE LINKED AND BUILD ON ONE ANOTHER. Therefore, to eliminate violence against women at the top of the pyramid, we must START AT THE FOUNDATION and address our beliefs and attitudes that support sexual violence. Behaviors like gender stereotypes, sexist jokes, and objectification at the bottom create the foundation for more serious violence at the top. This is why challenging 'small' sexist comments matters."
+            },
+            {
+              "label": "Because it's easier to change attitudes than behaviors",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Because sexual violence only happens when foundation attitudes are present",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-2-2-kc-3",
+          "type": "knowledge-check",
+          "question": "Which of the following is an example of how allies can help prevent sexual violence and challenge rape culture?",
+          "options": [
+            {
+              "label": "Ignoring sexist comments to avoid conflict",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Only supporting survivors who report to police",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Challenging sexist comments in conversations and talking about rape culture with others",
+              "correct": true,
+              "feedback": "Allies can help prevent sexual violence by CHALLENGING SEXIST COMMENTS in conversations and TALKING ABOUT RAPE CULTURE with others. This breaks the silence, normalizes important conversations, and disrupts the foundation of attitudes that support violence. Other ally actions include knowing local resources and being prepared to support survivors. Prevention requires active participation, not passive observation."
+            },
+            {
+              "label": "Waiting for survivors to ask for help before offering resources",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson-2-3",
+      "title": "Rape and Sexual Assault in IPV Context",
+      "description": "Understanding how sexual violence functions as a tool of power and control in intimate partner relationships and how to support survivors.",
+      "duration": 12,
+      "objectives": [],
+      "contentBlocks": [
+        {
+          "id": "block-lesson-2-3-hero",
+          "type": "hero-banner",
+          "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
+          "imageRatio": "21:9",
+          "overlayText": "Rape and Sexual Assault in IPV Context"
+        },
+        {
+          "id": "block-lesson-2-3-narration",
+          "type": "text",
+          "content": "We reach the deepest part of the twilight zone, where sexual violence and intimate partner violence converge. This intersection reveals uncomfortable truths—marital rape wasn't criminalized in all states until 1993, and intimate partner sexual violence remains deeply underreported. Understanding these hidden depths prepares you to provide truly trauma-informed support."
+        },
+        {
+          "id": "block-lesson-2-3-heading-1",
+          "type": "heading",
+          "level": 2,
+          "content": "The Intersection of IPV and Sexual Violence"
+        },
+        {
+          "id": "block-lesson-2-3-content-1",
+          "type": "text",
+          "content": "## Rape and Sexual Assault in the Context of Intimate Partner Violence\n\nMost sexual assault is committed by someone the survivor knows. This is often referred to as **acquaintance rape**, but if you were asked to name an acquaintance, you might think of a classmate, a coworker, or a friend—not someone with whom you're in a long-term relationship or someone to whom you are married.\n\n**According to the National Coalition Against Domestic Violence:**\n\n- It's estimated that between **10% and 14%** of married women will be raped at some point during their marriages\n- Marital rape is the **most underreported** form of sexual assault\n\n### The Reality of Intimate Partner Sexual Violence\n\nIntimate partner violence can include sexual assault. This can be both surprising and confusing to the public and even to individuals new to working with survivors. In fact, this concept is still presented as shocking news in popular culture and media.\n\n**The truth is that intimate partner sexual assault:**\n\n- Happens to people of all races, genders, ages, social classes, ethnicities, and abilities\n- Occurs when the person causing harm uses sexual assault or rape as a means of exerting control over the survivor\n- Is used to intimidate, control, and demean survivors of domestic violence\n\n### Prevalence\n\nIntimate partner sexual violence is far more common than you might think:\n\n- Between **40% and 45%** of women in abusive relationships will also be sexually assaulted during the course of the relationship\n- Only **36%** of all rape survivors ever report the crime to the police\n- The percentage of married women who report a spousal rape to the police is even lower\n- Women who are sexually abused by intimate partners report **more risk factors for intimate partner homicides** than non-sexually abused women"
+        },
+        {
+          "id": "block-lesson-2-3-heading-2",
+          "type": "heading",
+          "level": 2,
+          "content": "Sexual Violence and the Power and Control Wheel"
+        },
+        {
+          "id": "block-lesson-2-3-content-2",
+          "type": "text",
+          "content": "## Using Intimate Partner Sexual Violence for Power and Control\n\nWhen intimate partner sexual violence is present in an abusive relationship, it is often used alongside other types of abuse on the Power and Control Wheel. It can be physical, visual, or verbal, and take place individually or in any combination.\n\n### How Sexual Violence Manifests Across the Wheel\n\n**On the Outer Ring (Physical and Sexual Violence):**\n- Forced sexual contact\n- Rape and sexual assault\n- Physical violence during or related to sex\n\n**Connected to Inner Sections:**\n\n- **Using Intimidation:** Threatening sexual violence; making them afraid through sexual gestures or actions\n- **Using Emotional Abuse:** Calling them sexually degrading names; making them feel sexually inadequate\n- **Using Isolation:** Controlling their sexuality; preventing them from seeing friends who might notice abuse\n- **Minimizing/Denying/Blaming:** Saying the sexual assault didn't happen; claiming they wanted it; blaming them for \"causing\" it\n- **Using Coercion and Threats:** Threatening to rape them; threatening to be unfaithful; pressuring for unwanted sexual acts\n\n### The Punishment Dynamic\n\nIn other words, if the survivor doesn't respond to the threats, abusive behaviors, or emotional abuse in a way that makes the person causing harm feel empowered or in control, the abuser may see sexual assault as a punishment for the survivor.\n\nThe way this threat is communicated can vary:\n- Explicit graphic explanations of what the abuser intends to do\n- Implied threats paired with other behaviors\n- Part of a larger pattern of control and coercion"
+        },
+        {
+          "id": "block-lesson-2-3-heading-3",
+          "type": "heading",
+          "level": 2,
+          "content": "Barriers and Support"
+        },
+        {
+          "id": "block-lesson-2-3-content-3",
+          "type": "text",
+          "content": "## Barriers to Identifying Intimate Partner Sexual Violence\n\nIntimate partner sexual violence carries many of the same impacts as domestic violence and sexual violence individually, but also has a number of unique challenges that can impact survivors.\n\n### Common Barriers:\n\n**Conceptual Barriers:**\n- The survivor may view sex as a \"spousal duty\"\n- Assuming that being in a relationship means passive consent to all future sex\n- This intersection of rape and sex can cause survivors to classify their experience as \"sex\" instead of \"violence\"\n- Difficulty reconciling love for the partner with the harm the partner has caused\n- Hesitance to define someone they love as a \"rapist\"\n\n**Legal and Social Barriers:**\n- Until 1976, state laws specifically **exempted spousal rape** from general rape laws\n- It wasn't until **1993** that all fifty states had repealed their spousal rape exemptions\n- Many states still continued to treat marital rape differently than non-marital rape\n- Even now, some states legally consider marital rape as a lesser crime than non-marital rape\n\n### Supporting Survivors\n\nWhen engaging with a survivor of sexual assault who has chosen to disclose their experience to you, it is a signal that they believe you can be trusted.\n\n**Critical Response Elements:**\n\n- **Listen to them** without judgment\n- **Continue to build trust** through your actions and words\n- **Maintain an environment of safety and confidentiality**\n- There may be several reasons they are uncomfortable disclosing full details—and that's okay\n- If you provide an environment where they feel safe, heard, and believed, survivors are more likely to share their experiences and be receptive to recommendations for support and services\n\n### Survivor Reactions\n\nThere is no right way for a survivor to react to being sexually assaulted by their partner. Some common reactions include:\n\n- Fear they won't be believed\n- Wondering if it's their fault\n- Feeling alone or not sure who they can talk to\n- PTSD symptoms (dissociation, flashbacks, nightmares)\n- Feeling emotionally numb and detached from other people\n- Difficulty remembering aspects of the event\n- Increased use of alcohol and/or illicit drugs\n- Self-harm\n\nA survivor's response to their experience can impact how and when they may disclose sexual assault, if at all. People who cause harm often know this and may use these reactions or feelings to further the abuse—using insults, demeaning language, or threats to make the survivor feel ashamed and keep them isolated from support systems."
+        },
+        {
+          "id": "block-lesson-2-3-takeaways",
+          "type": "key-takeaway",
+          "content": "Between 40-45% of women in abusive relationships are also sexually assaulted during the relationship\n\nMarital rape is the most underreported form of sexual assault and wasn't criminalized in all states until 1993\n\nIntimate partner sexual violence is used as a tool of power and control, often alongside other abusive tactics\n\nSurvivors face unique barriers including conceptual difficulties (viewing sex as 'spousal duty') and legal/social challenges\n\nWhen a survivor discloses to you, they're signaling trust—respond with belief, safety, and confidentiality\n\nWomen sexually abused by intimate partners report more risk factors for intimate partner homicide"
+        },
+        {
+          "id": "block-lesson-2-3-kc-1",
+          "type": "knowledge-check",
+          "question": "What percentage of women in abusive relationships are also sexually assaulted during the course of the relationship?",
+          "options": [
+            {
+              "label": "Between 5-10%",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Between 15-20%",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Between 25-30%",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Between 40-45%",
+              "correct": true,
+              "feedback": "Between 40% AND 45% of women in abusive relationships will also be sexually assaulted during the course of the relationship. This high percentage demonstrates how commonly sexual violence is used as a tool of power and control in abusive relationships. Despite this prevalence, intimate partner sexual violence remains deeply underreported, with marital rape being the most underreported form of sexual assault."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-2-3-kc-2",
+          "type": "knowledge-check",
+          "question": "When did all fifty states finally repeal their spousal rape exemptions?",
+          "options": [
+            {
+              "label": "1950",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "1976",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "1993",
+              "correct": true,
+              "feedback": "It wasn't until 1993 that all fifty states had repealed their spousal rape exemptions. Until 1976, state laws specifically EXEMPTED spousal rape from general rape laws—meaning it was legal for a husband to rape his wife. Even after 1993, many states continued to treat marital rape differently than non-marital rape. Understanding this recent legal history helps explain why intimate partner sexual violence is so underreported and why survivors face unique barriers."
+            },
+            {
+              "label": "2010",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-2-3-kc-3",
+          "type": "knowledge-check",
+          "question": "When a survivor of intimate partner sexual violence discloses to you, what is the MOST important response?",
+          "options": [
+            {
+              "label": "Immediately report it to law enforcement",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Ask detailed questions to verify their story",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Listen without judgment and create an environment of safety, trust, and confidentiality",
+              "correct": true,
+              "feedback": "The MOST important response is to LISTEN without judgment and CREATE AN ENVIRONMENT OF SAFETY, TRUST, AND CONFIDENTIALITY. When a survivor discloses, it signals they believe you can be trusted. If you provide an environment where they feel safe, heard, and believed, they're more likely to share their experiences and be receptive to support. Your role is not to investigate, force reporting, or make decisions for them—it's to provide trauma-informed support that honors their autonomy."
+            },
+            {
+              "label": "Tell them they need to leave the relationship immediately",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

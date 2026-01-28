@@ -1,0 +1,714 @@
+{
+  "moduleId": "module-1",
+  "title": "MODULE 1: Recognizing Intimate Partner Violence",
+  "description": "In-depth exploration of the types, dynamics, and recognition of intimate partner violence using evidence-based frameworks.",
+  "weekNumber": 1,
+  "learningOutcomes": [
+    "Identify various types of intimate partner violence",
+    "Analyze relationship dynamics using the Power and Control Wheel",
+    "Categorize different patterns of IPV",
+    "Apply IPV recognition skills to case scenarios"
+  ],
+  "lessons": [
+    {
+      "lessonId": "lesson-1-1",
+      "title": "Who is Affected by Intimate Partner Violence?",
+      "description": "Exploring the prevalence and universality of intimate partner violence, examining statistics and debunking common stereotypes about survivors.",
+      "duration": 8,
+      "objectives": [],
+      "contentBlocks": [
+        {
+          "id": "block-lesson-1-1-hero",
+          "type": "hero-banner",
+          "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
+          "imageRatio": "21:9",
+          "overlayText": "Who is Affected by Intimate Partner Violence?"
+        },
+        {
+          "id": "block-lesson-1-1-narration",
+          "type": "text",
+          "content": "As we descend deeper into the iceberg, we encounter the surface reality—the visible patterns of who experiences intimate partner violence. What you're about to learn challenges common assumptions and reveals a universal truth: IPV crosses all boundaries. Like Maria, who might screen hundreds of individuals, you'll learn to recognize that IPV affects anyone, anywhere."
+        },
+        {
+          "id": "block-lesson-1-1-heading-1",
+          "type": "heading",
+          "level": 2,
+          "content": "Module 1 Overview"
+        },
+        {
+          "id": "block-lesson-1-1-content-1",
+          "type": "text",
+          "content": "## Recognizing Intimate Partner Violence\n\nWhether you are taking this course as part of a professional development plan or because you are seeking to be more informed about intimate partner violence, this course has been organized to help you understand the prevalence of intimate partner violence, its components, and how you can be a helpful ally to survivors.\n\nIn this first module, you explore the faces of intimate partner violence, types and categories of abuse, and the foundations of power and control on which it is based.\n\n**By the end of this module, you will be able to:**\n\n- Define intimate partner violence\n- Recognize ways a person who causes harm establishes power and control in their relationship\n- Identify different categories of relationship violence"
+        },
+        {
+          "id": "block-lesson-1-1-heading-2",
+          "type": "heading",
+          "level": 2,
+          "content": "The Prevalence of IPV"
+        },
+        {
+          "id": "block-lesson-1-1-content-2",
+          "type": "text",
+          "content": "## How Common is Intimate Partner Violence?\n\nIntimate partner violence is far more common than many people realize. Understanding the scope of this issue is essential for recognizing its impact across communities.\n\n**According to the CDC's National Intimate Partner and Sexual Violence Survey:**\n\n- About **1 in 4 women** and nearly **1 in 10 men** have experienced contact sexual violence, physical violence, and/or stalking by an intimate partner during their lifetime and reported some form of IPV-related impact\n\n- Data from U.S. crime reports suggest that **16% (about 1 in 6)** of homicide victims are killed by an intimate partner\n\n- About **11 million women** and **5 million men** who reported experiencing contact sexual violence, physical violence, or stalking by an intimate partner in their lifetime said that they **first experienced these forms of violence before the age of 18**\n\nThese statistics reveal that IPV is a widespread public health issue affecting millions of individuals. The data also shows that IPV often begins early in life, highlighting the importance of prevention and early intervention."
+        },
+        {
+          "id": "block-lesson-1-1-heading-3",
+          "type": "heading",
+          "level": 2,
+          "content": "Breaking Down Stereotypes"
+        },
+        {
+          "id": "block-lesson-1-1-content-3",
+          "type": "text",
+          "content": "## Myths About Survivors\n\nSometimes people have a very specific image in their mind of what a survivor of intimate partner violence looks like. There are harmful stereotypes that survivors are:\n\n- Poor, uneducated, and totally reliant on the person causing harm\n- Meek and don't stand up for themselves\n- Have low self-esteem\n- Disheveled, nervous, and jumpy\n- Put up with or excuse abusive behavior\n- Have traditional beliefs about gender roles\n\n**Why These Stereotypes Are Harmful:**\n\nMaking these generalizations reinforces the idea that only certain types of people are affected by intimate partner violence. It is important to emphasize, however, that **intimate partner violence occurs in every demographic regardless of age, race, gender, sexuality, and socioeconomic class**.\n\nAssuming that intimate partner violence only happens in certain communities can make it easy to overlook signs and symptoms that someone we know is experiencing abuse in their relationship.\n\n**The Reality:**\n\nIPV can happen to anyone:\n- Across all income levels\n- In all racial and ethnic communities\n- Regardless of education level\n- In all types of relationships\n- Regardless of gender identity or sexual orientation\n- In all religious and cultural backgrounds\n\nAs professionals like Dr. Patel conducting health screenings or Aisha monitoring workplace dynamics, recognizing that IPV crosses all boundaries is essential for trauma-informed practice."
+        },
+        {
+          "id": "block-lesson-1-1-takeaways",
+          "type": "key-takeaway",
+          "content": "About 1 in 4 women and 1 in 10 men experience IPV-related impact during their lifetime\n\nIPV can happen to anyone regardless of race, age, sexual orientation, religion, ability, or gender\n\nStereotypes about IPV survivors are harmful and can prevent us from recognizing abuse\n\nApproximately 16% of homicide victims are killed by an intimate partner\n\nMany people first experience IPV before age 18, highlighting the need for early intervention\n\nAssuming IPV only affects certain demographics can cause us to overlook warning signs"
+        },
+        {
+          "id": "block-lesson-1-1-kc-1",
+          "type": "knowledge-check",
+          "question": "According to the CDC's National Intimate Partner and Sexual Violence Survey, approximately how many women experience contact sexual violence, physical violence, and/or stalking by an intimate partner during their lifetime?",
+          "options": [
+            {
+              "label": "About 1 in 10 women",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "About 1 in 4 women",
+              "correct": true,
+              "feedback": "About 1 in 4 women (25%) have experienced contact sexual violence, physical violence, and/or stalking by an intimate partner during their lifetime and reported some form of IPV-related impact. This statistic demonstrates how widespread intimate partner violence is in our society."
+            },
+            {
+              "label": "About 1 in 2 women",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "About 1 in 20 women",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-1-1-kc-2",
+          "type": "knowledge-check",
+          "question": "Which statement is TRUE about who can experience intimate partner violence?",
+          "options": [
+            {
+              "label": "IPV primarily affects people from low-income communities",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "IPV occurs in every demographic regardless of age, race, gender, sexuality, and socioeconomic class",
+              "correct": true,
+              "feedback": "Intimate partner violence occurs in EVERY demographic regardless of age, race, gender, sexuality, and socioeconomic class. One of the most harmful myths about IPV is that it only affects certain types of people. In reality, IPV crosses all boundaries and affects diverse communities. Recognizing this universality is essential for providing trauma-informed support."
+            },
+            {
+              "label": "IPV mostly affects people with low self-esteem who don't stand up for themselves",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "IPV is most common among people who have traditional beliefs about gender roles",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-1-1-kc-3",
+          "type": "knowledge-check",
+          "question": "What does the data tell us about when many people first experience intimate partner violence?",
+          "options": [
+            {
+              "label": "Most people first experience IPV in their 30s and 40s",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "IPV typically begins after marriage",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Many people first experience IPV before the age of 18",
+              "correct": true,
+              "feedback": "According to the CDC data, about 11 million women and 5 million men who reported experiencing IPV said they first experienced these forms of violence BEFORE THE AGE OF 18. This highlights the critical importance of prevention efforts, early intervention, and education for young people about healthy relationships."
+            },
+            {
+              "label": "IPV usually begins in retirement years",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson-1-2",
+      "title": "Types of Abuse",
+      "description": "Identifying the various forms of abuse in intimate partner violence and understanding how different types of abuse often overlap and escalate.",
+      "duration": 7,
+      "objectives": [],
+      "contentBlocks": [
+        {
+          "id": "block-lesson-1-2-hero",
+          "type": "hero-banner",
+          "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
+          "imageRatio": "21:9",
+          "overlayText": "Types of Abuse"
+        },
+        {
+          "id": "block-lesson-1-2-narration",
+          "type": "text",
+          "content": "At the surface of the iceberg, abuse reveals itself in many forms—some visible like bruises, others hidden like financial control. Understanding these types helps you, like James providing trauma-informed support, recognize the full spectrum of harm. What seems like separate behaviors often connects into a larger pattern of control."
+        },
+        {
+          "id": "block-lesson-1-2-heading-1",
+          "type": "heading",
+          "level": 2,
+          "content": "Recognizing Different Forms of Abuse"
+        },
+        {
+          "id": "block-lesson-1-2-content-1",
+          "type": "text",
+          "content": "## What Does Abuse Actually Look Like?\n\nRecognizing intimate partner violence involves more than just identifying bruises or waiting for someone to show up in the emergency room. It is also not a single moment in time, but **a pattern of actions that compound**.\n\nIntimate partner violence can take many forms, and understanding each type is essential for recognizing abuse when it occurs. Review each type of violence and its examples below.\n\n### Physical Abuse\nPhysical violence includes any intentional use of physical force with the potential to cause harm, including:\n- Hitting, slapping, punching, kicking\n- Choking or strangling\n- Burning\n- Using weapons\n- Physical restraint\n\n### Sexual Abuse\nSexual violence includes any sexual act or attempt without consent, including:\n- Forced sexual contact\n- Sexual coercion\n- Reproductive control\n- Refusing to use protection\n\n### Emotional/Psychological Abuse\nPsychological abuse involves verbal and non-verbal behaviors that harm someone's mental health, including:\n- Name-calling and insults\n- Humiliation and degradation\n- Threats and intimidation\n- Isolation from friends and family\n- Gaslighting (making someone question their reality)\n\n### Economic Abuse\nEconomic violence involves controlling access to financial resources, including:\n- Preventing someone from working\n- Controlling all finances\n- Withholding money for necessities\n- Sabotaging employment\n- Running up debt in someone's name"
+        },
+        {
+          "id": "block-lesson-1-2-heading-2",
+          "type": "heading",
+          "level": 2,
+          "content": "How Abuse Types Overlap"
+        },
+        {
+          "id": "block-lesson-1-2-content-2",
+          "type": "text",
+          "content": "## Relationship Between Types of Abuse and Escalation of Harm\n\nIt is important to note that survivors can experience several types of abuse at once. Often, people who cause harm will use multiple strategies to gain coercive control in their relationship, layering each on top of the others to intensify their effect.\n\n**A Critical Pattern:**\n\nIn most cases, physical and sexual violence in an intimate relationship means there is already a history of controlling behaviors.\n\nFor example, in a 2006 study, Maria A. Pico-Alfonso et al. found that \"while some subjects experienced only psychological abuse, all those who experienced physical abuse were also subjected to some form of psychological abuse.\"\n\n**What This Means:**\n\n- Psychological abuse often comes first and creates the foundation for other forms of abuse\n- Physical violence rarely happens in isolation—it's typically part of a larger pattern of control\n- Multiple forms of abuse working together create a more powerful system of control\n- Understanding this overlap helps professionals like Dr. Patel recognize early warning signs before physical violence occurs"
+        },
+        {
+          "id": "block-lesson-1-2-heading-3",
+          "type": "heading",
+          "level": 2,
+          "content": "Moving Forward"
+        },
+        {
+          "id": "block-lesson-1-2-content-3",
+          "type": "text",
+          "content": "## Understanding Power and Control\n\nYou have examined types of abuse and how they can overlap. Next, you look more closely at how these behaviors can create a relationship where one partner has power and control over the other.\n\nTo do this, you explore the use of one of the most common tools in this field—the Domestic Abuse Intervention Program's **Power and Control Wheel**.\n\nThis tool helps illustrate:\n- How different abusive behaviors work together\n- The systematic nature of intimate partner violence\n- How control is established and maintained in relationships\n- Patterns that may not be visible from looking at individual incidents\n\nUnderstanding these connections prepares you to better support survivors and recognize abuse in all its forms."
+        },
+        {
+          "id": "block-lesson-1-2-takeaways",
+          "type": "key-takeaway",
+          "content": "IPV involves a pattern of behaviors, not isolated incidents, across multiple types of abuse\n\nThe main types of abuse are physical, sexual, emotional/psychological, and economic\n\nSurvivors often experience multiple types of abuse simultaneously, with abusers layering tactics to intensify their effect\n\nIn most cases, physical and sexual violence in a relationship indicates an existing history of controlling behaviors\n\nResearch shows that all people experiencing physical abuse also experience psychological abuse\n\nRecognizing how different types of abuse overlap is essential for identifying IPV patterns early"
+        },
+        {
+          "id": "block-lesson-1-2-kc-1",
+          "type": "knowledge-check",
+          "question": "Which of the following is an example of ECONOMIC abuse in an intimate partner relationship?",
+          "options": [
+            {
+              "label": "Calling someone insulting names",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Preventing someone from working or controlling all finances",
+              "correct": true,
+              "feedback": "Preventing someone from working or controlling all finances is economic abuse. This type of abuse involves controlling access to financial resources, which can include preventing employment, withholding money for necessities, sabotaging jobs, or controlling all financial decisions. Economic abuse creates dependency and makes it harder for survivors to leave abusive relationships."
+            },
+            {
+              "label": "Threatening to harm someone if they don't comply",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Isolating someone from their friends and family",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-1-2-kc-2",
+          "type": "knowledge-check",
+          "question": "What does research tell us about the relationship between physical abuse and psychological abuse?",
+          "options": [
+            {
+              "label": "They rarely occur together in the same relationship",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Physical abuse always leads to psychological abuse",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "All those who experienced physical abuse were also subjected to some form of psychological abuse",
+              "correct": true,
+              "feedback": "Research by Maria A. Pico-Alfonso et al. found that while some people experienced ONLY psychological abuse, ALL those who experienced physical abuse were also subjected to some form of psychological abuse. This demonstrates that physical violence rarely happens in isolation—it's typically part of a larger pattern that includes psychological abuse as a foundation for control."
+            },
+            {
+              "label": "Psychological abuse only occurs in relationships without physical violence",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-1-2-kc-3",
+          "type": "knowledge-check",
+          "question": "Why is it important to understand that IPV is a PATTERN of behaviors rather than isolated incidents?",
+          "options": [
+            {
+              "label": "Because single incidents of abuse are not harmful",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Because patterns help us distinguish IPV from occasional relationship conflict and recognize the systematic nature of abuse",
+              "correct": true,
+              "feedback": "Understanding IPV as a PATTERN of behaviors is crucial because it helps us distinguish systematic abuse from occasional relationship conflict. A pattern reveals the ongoing nature of power and control, shows how different tactics work together, and helps professionals recognize that even 'small' controlling behaviors may be part of a larger abusive system. This understanding is essential for trauma-informed assessment and support."
+            },
+            {
+              "label": "Because only repeated physical violence qualifies as IPV",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Because isolated incidents always escalate to patterns",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson-1-3",
+      "title": "Power and Control Wheel",
+      "description": "Exploring the foundational tool for understanding how abusive partners establish and maintain power and control through systematic tactics.",
+      "duration": 10,
+      "objectives": [],
+      "contentBlocks": [
+        {
+          "id": "block-lesson-1-3-hero",
+          "type": "hero-banner",
+          "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
+          "imageRatio": "21:9",
+          "overlayText": "Power and Control Wheel"
+        },
+        {
+          "id": "block-lesson-1-3-narration",
+          "type": "text",
+          "content": "Now we begin to see beneath the surface—where the iceberg's true mass lies. The Power and Control Wheel reveals the systematic nature of abuse, showing how seemingly separate behaviors connect into a coherent pattern of domination. Like the Duluth advocates who created this tool by listening to survivors, you'll learn to recognize the invisible architecture of control."
+        },
+        {
+          "id": "block-lesson-1-3-heading-1",
+          "type": "heading",
+          "level": 2,
+          "content": "The Domestic Abuse Intervention Program's Power and Control Wheel"
+        },
+        {
+          "id": "block-lesson-1-3-content-1",
+          "type": "text",
+          "content": "## A Tool for Recognition and Understanding\n\nIntimate partner violence service providers use a variety of tools to help survivors and perpetrators recognize and identify their experiences. One of the most common and powerful tools to aid survivors, service providers, and people who cause harm in describing and recognizing patterns of abuse is called the **Power and Control Wheel**.\n\n### Origins of the Wheel\n\nIn the early 1980s, Ellen Pence and her colleagues at the Domestic Abuse Intervention Project (DAIP) in Duluth, MN created the Power and Control Wheel. To create the model, Pence and the DAIP team interviewed survivors of intimate partner violence to identify their common experiences.\n\nPence and the Duluth team took great pains to document the most common abusive behaviors, or \"tactics,\" that were used against the women they interviewed. The wheel they created includes the tactics that were most universally experienced.\n\n**Important to Remember:**\n\nAs with all models, it is important to remember that not all survivors experience abuse in the same way, but that does not invalidate anyone's experience or mean that what they experienced is not abuse."
+        },
+        {
+          "id": "block-lesson-1-3-heading-2",
+          "type": "heading",
+          "level": 2,
+          "content": "Understanding the Wheel's Structure"
+        },
+        {
+          "id": "block-lesson-1-3-content-2",
+          "type": "text",
+          "content": "## How to Use the Power and Control Wheel\n\nTo use the Power and Control Wheel, begin by familiarizing yourself with the individual components.\n\n### The Inner Sections\n\nOn the whole, the inside of the wheel contains **subtler, continual behaviors**, including:\n\n- **Using Intimidation:** Creating fear through looks, actions, gestures; destroying property; displaying weapons\n- **Using Emotional Abuse:** Putting someone down; making them feel bad about themselves; name-calling; making them think they're crazy\n- **Using Isolation:** Controlling what they do, who they see and talk to, what they read, where they go; limiting outside involvement\n- **Minimizing, Denying, and Blaming:** Making light of the abuse; saying it didn't happen; shifting responsibility; saying they caused it\n- **Using Children:** Making them feel guilty about the children; using children to relay messages; threatening to take children away\n- **Using Male Privilege:** Treating them like a servant; making all big decisions; acting like \"master of the castle\"\n- **Using Economic Abuse:** Preventing them from getting or keeping a job; taking their money; not letting them know about family income\n- **Using Coercion and Threats:** Making threats to hurt them; threatening to leave, commit suicide, or report them to authorities\n\n### The Outer Ring\n\nThe outer ring contains **more visible violence** such as physical and sexual assault.\n\n**How They Work Together:**\n\nThe violence depicted on the outside of the wheel often reinforces the regular use of the subtler methods of abuse shown on the inside of the wheel. When tactics on the inside of the wheel stop working, then the abuse may escalate to physical and sexual assault. The outer ring works as both a threat of escalation and as the end result of the escalation itself."
+        },
+        {
+          "id": "block-lesson-1-3-heading-3",
+          "type": "heading",
+          "level": 2,
+          "content": "The Threat Changes Everything"
+        },
+        {
+          "id": "block-lesson-1-3-content-3",
+          "type": "text",
+          "content": "## From Unhealthy to Abusive\n\nYou'll notice some of the characteristics and behaviors that appear inside the wheel might occur in many relationships at varying degrees. The threat of physical and/or sexual violence, however, adds an emphasis to the other tactics that increase the likelihood of compliance by the partner being abused.\n\n**The Critical Difference:**\n\nThe very presence of the outer ring changes the dynamic from an unhealthy relationship behavior to abuse or intimate partner violence.\n\n### The Equality Wheel\n\nWe know people who cause harm can change, however. With this in mind, the Duluth Abuse Intervention Project created an **Equality Wheel** to accompany the Power and Control Wheel. The Equality Wheel shows the healthy behaviors that partners should use in their relationships instead of the controlling behaviors shown in the Power and Control Wheel.\n\n**Comparing the Wheels:**\n\nNotice how the healthy behaviors inside the Equality Wheel are reinforced by the non-violence on the outside of the wheel. Using the Equality Wheel to speak with survivors about intimate partner violence can help them see their experience in a different way—especially for individuals who are resistant to calling their experience abuse.\n\nBy seeing the healthy behaviors and actions next to the unhealthy ones in the Power and Control Wheel, survivors may have a breakthrough they may not have had otherwise when presented with the dichotomy of behaviors."
+        },
+        {
+          "id": "block-lesson-1-3-takeaways",
+          "type": "key-takeaway",
+          "content": "The Power and Control Wheel was created by interviewing survivors to identify the most common tactics used against them\n\nThe inside of the wheel contains subtler, continual behaviors while the outer ring shows more visible physical and sexual violence\n\nThe threat of physical/sexual violence transforms relationship behaviors from unhealthy to abusive\n\nWhen tactics inside the wheel stop working, abuse may escalate to physical and sexual assault\n\nThe Equality Wheel shows healthy relationship behaviors as an alternative to the Power and Control Wheel\n\nNot all survivors experience abuse in the same way, but the wheel captures universally experienced patterns"
+        },
+        {
+          "id": "block-lesson-1-3-kc-1",
+          "type": "knowledge-check",
+          "question": "What is the main difference between the behaviors shown on the INSIDE versus the OUTSIDE of the Power and Control Wheel?",
+          "options": [
+            {
+              "label": "The inside shows legal behaviors while the outside shows illegal behaviors",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "The inside shows subtler, continual behaviors while the outside shows more visible physical and sexual violence",
+              "correct": true,
+              "feedback": "The INSIDE of the Power and Control Wheel contains subtler, continual behaviors like intimidation, isolation, and economic abuse. The OUTSIDE contains more visible violence such as physical and sexual assault. The outer ring reinforces the inner tactics—when the subtle methods stop working, abuse may escalate to physical violence. Understanding this structure helps professionals recognize that psychological abuse often precedes physical violence."
+            },
+            {
+              "label": "The inside shows minor abuse while the outside shows serious abuse",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "The inside shows accidental behaviors while the outside shows intentional behaviors",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-1-3-kc-2",
+          "type": "knowledge-check",
+          "question": "According to the lesson, what changes a relationship dynamic from unhealthy behavior to intimate partner violence?",
+          "options": [
+            {
+              "label": "The frequency of arguments between partners",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "The presence of the threat of physical and/or sexual violence",
+              "correct": true,
+              "feedback": "The very presence of the THREAT of physical and/or sexual violence (the outer ring) changes the dynamic from unhealthy relationship behavior to abuse or intimate partner violence. While some behaviors inside the wheel might occur in many relationships at varying degrees, the threat of violence adds emphasis to the other tactics and increases the likelihood of compliance through fear. This is what distinguishes IPV from general relationship problems."
+            },
+            {
+              "label": "Whether the partners live together",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "The severity of name-calling or insults",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-1-3-kc-3",
+          "type": "knowledge-check",
+          "question": "Why did the Duluth Abuse Intervention Project create the Equality Wheel?",
+          "options": [
+            {
+              "label": "To replace the Power and Control Wheel",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "To show that people who cause harm can change and to illustrate healthy relationship behaviors as an alternative",
+              "correct": true,
+              "feedback": "The Duluth Project created the Equality Wheel to accompany the Power and Control Wheel because we know people who cause harm CAN change. The Equality Wheel shows the HEALTHY behaviors partners should use instead of controlling behaviors. Presenting both wheels together can help survivors see their experience differently and recognize what healthy relationships look like, which can be particularly helpful for those resistant to calling their experience abuse."
+            },
+            {
+              "label": "To demonstrate that all relationships have equal amounts of conflict",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "To prove that abuse only happens when equality is absent",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson-1-4",
+      "title": "Categorizing Intimate Partner Violence",
+      "description": "Understanding Dr. Michael P. Johnson's typology of intimate partner violence and why accurate categorization matters for providing appropriate support.",
+      "duration": 9,
+      "objectives": [],
+      "contentBlocks": [
+        {
+          "id": "block-lesson-1-4-hero",
+          "type": "hero-banner",
+          "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
+          "imageRatio": "21:9",
+          "overlayText": "Categorizing Intimate Partner Violence"
+        },
+        {
+          "id": "block-lesson-1-4-narration",
+          "type": "text",
+          "content": "The iceberg reveals complexity—not all violence is the same. Dr. Johnson's typology helps us distinguish between different patterns of violence, each requiring different responses. Like Maria making intake assessments, understanding these categories helps you provide the right support to the right people at the right time."
+        },
+        {
+          "id": "block-lesson-1-4-heading-1",
+          "type": "heading",
+          "level": 2,
+          "content": "Understanding Different Types of IPV"
+        },
+        {
+          "id": "block-lesson-1-4-content-1",
+          "type": "text",
+          "content": "## Categorizing Intimate Partner Violence\n\nFor decades, researchers have asked whether men use violence in relationships more often than women, or whether men and women use violence in relationships at equal rates. There are many studies that support each of these claims, but researcher Michael P. Johnson found that the discrepancies in these studies mainly came from the **different definitions being used for intimate partner violence**.\n\n**The Problem:**\n\nSome researchers were using intimate partner violence to describe a relationship where one partner had coercive control over the other partner, while other researchers described intimate partner violence as a partner using an abusive behavior at any point in their relationship.\n\n### Johnson's Typology\n\nIn 2008, Michael P. Johnson introduced what he called \"A Typology of Domestic Violence.\" This typology is widely used to categorize different types of intimate partner violence to better provide resources and support to survivors.\n\n**According to Johnson, there are three main types of Intimate Partner Violence:**\n\n1. **Intimate Terrorism** - A pattern of violence combined with a broader pattern of control; one partner uses violence and other controlling tactics to dominate the other\n\n2. **Situational Couple Violence** - Violence that arises in the context of specific arguments or conflicts but is not part of a general pattern of control\n\n3. **Violent Resistance** - Violence used by someone experiencing intimate terrorism in an attempt to resist or defend against their partner's violence and control\n\n**Note:** A fourth type has been identified (\"Mutual Violent Resistance\") but has not yet been fully researched. For our purposes, and for work in the field, we focus on the original three types that Johnson defined in his work."
+        },
+        {
+          "id": "block-lesson-1-4-heading-2",
+          "type": "heading",
+          "level": 2,
+          "content": "The Importance of Context"
+        },
+        {
+          "id": "block-lesson-1-4-content-2",
+          "type": "text",
+          "content": "## Why Categorization Matters\n\n**Without relationship context from both partners, distinguishing between intimate terrorism and situational couple violence is impossible!**\n\nThis is a critical insight for professionals like Dr. Patel conducting screenings or Aisha observing workplace dynamics. A single incident doesn't tell the full story—you need to understand the broader pattern.\n\n### Gender and Violence\n\nAny individual can choose to abuse their partner. Still, women's violence in a relationship usually takes the form of responsive violence. In contrast, only a small group of women use violence in their relationships to gain coercive control over their partner.\n\n**Social Context:**\n\nSocial norms and institutions also make it more difficult for women to exert coercive control over a male partner. Understanding these dynamics helps us provide appropriate, trauma-informed support."
+        },
+        {
+          "id": "block-lesson-1-4-heading-3",
+          "type": "heading",
+          "level": 2,
+          "content": "Why Accurate Terminology Matters"
+        },
+        {
+          "id": "block-lesson-1-4-content-3",
+          "type": "text",
+          "content": "## The Importance of Shared Language\n\nPeople can mean different things when talking about intimate partner violence and domestic violence. It can depend on whether you are talking to:\n\n- A counselor specializing in intimate partner violence\n- An emergency shelter volunteer\n- A law enforcement officer\n- A survivor of abuse\n- A person who causes harm\n\n**There is no \"one size fits all\" model or definition of intimate partner violence.** The tools developed over decades to describe what is happening in an abusive relationship have been created to share a common language about a complex, changing problem.\n\n### Abusive Behavior vs. Abusive Relationship\n\nFor example, it is important to be able to differentiate between **abusive behavior** and **abusive relationships**.\n\n- **Any person may use an isolated abusive behavior.** In fact, most of us have when we aren't at our best.\n- It is the **pattern of behaviors** and the **power imbalance** that makes it an abusive relationship.\n\n### Supporting Diverse Experiences\n\nAs complex as the topic is, it is made more complex when you factor in the diverse experiences of survivors. Accuracy in terminology matters to each of these groups and can have long-lasting ramifications. Having these tools prepares you to better communicate with survivors and even the advocates with whom you may need to connect them."
+        },
+        {
+          "id": "block-lesson-1-4-takeaways",
+          "type": "key-takeaway",
+          "content": "Dr. Michael P. Johnson identified three main types of IPV: Intimate Terrorism, Situational Couple Violence, and Violent Resistance\n\nWithout relationship context from both partners, it's impossible to distinguish between intimate terrorism and situational couple violence\n\nIntimate terrorism involves a pattern of violence combined with broader control tactics\n\nSituational couple violence arises from specific conflicts but isn't part of a general pattern of control\n\nIt's critical to differentiate between isolated abusive behavior and abusive relationships—the pattern and power imbalance make it IPV\n\nAccurate categorization helps providers offer appropriate resources and support tailored to each situation"
+        },
+        {
+          "id": "block-lesson-1-4-kc-1",
+          "type": "knowledge-check",
+          "question": "According to Dr. Michael P. Johnson's typology, which type of IPV involves a pattern of violence combined with a broader pattern of control where one partner dominates the other?",
+          "options": [
+            {
+              "label": "Situational Couple Violence",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Violent Resistance",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Intimate Terrorism",
+              "correct": true,
+              "feedback": "INTIMATE TERRORISM involves a pattern of violence combined with a broader pattern of control, where one partner uses violence and other controlling tactics to dominate the other. This is different from Situational Couple Violence (which arises from specific conflicts without a general pattern of control) and Violent Resistance (which is violence used to resist or defend against a partner's control)."
+            },
+            {
+              "label": "Mutual Violent Resistance",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-1-4-kc-2",
+          "type": "knowledge-check",
+          "question": "Why is relationship context from both partners important when assessing intimate partner violence?",
+          "options": [
+            {
+              "label": "To determine who started the violence first",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Because without context, it's impossible to distinguish between intimate terrorism and situational couple violence",
+              "correct": true,
+              "feedback": "WITHOUT relationship context from both partners, distinguishing between intimate terrorism and situational couple violence is IMPOSSIBLE. A single incident doesn't reveal whether violence is part of a broader pattern of control (intimate terrorism) or arose from a specific conflict (situational couple violence). Understanding the full relationship pattern is essential for providing appropriate, trauma-informed support."
+            },
+            {
+              "label": "To assign blame equally to both partners",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "To determine if the violence was accidental or intentional",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-1-4-kc-3",
+          "type": "knowledge-check",
+          "question": "What distinguishes an isolated abusive behavior from an abusive relationship?",
+          "options": [
+            {
+              "label": "The severity of the behavior",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Whether it happens in public or private",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "The pattern of behaviors and the power imbalance",
+              "correct": true,
+              "feedback": "It's the PATTERN OF BEHAVIORS and the POWER IMBALANCE that makes it an abusive relationship. Any person may use an isolated abusive behavior—in fact, most of us have when we aren't at our best. But intimate partner violence is characterized by systematic patterns where one partner establishes control over the other through multiple tactics over time. Understanding this distinction is critical for trauma-informed assessment."
+            },
+            {
+              "label": "Whether the person apologizes afterward",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson-1-5",
+      "title": "Case Analysis: Lois and James Sumpter",
+      "description": "Applying the Power and Control Wheel to a real case, seeing how the concepts you've learned manifest in actual experiences of intimate partner violence.",
+      "duration": 12,
+      "objectives": [],
+      "contentBlocks": [
+        {
+          "id": "block-lesson-1-5-hero",
+          "type": "hero-banner",
+          "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
+          "imageRatio": "21:9",
+          "overlayText": "Case Analysis: Lois and James Sumpter"
+        },
+        {
+          "id": "block-lesson-1-5-narration",
+          "type": "text",
+          "content": "Now we apply what we've learned to reality. The Sumpter case brings the Power and Control Wheel to life, showing how abstract concepts become lived experiences. This is difficult terrain—the deepest part of the surface zone—but understanding real cases prepares you to recognize patterns in the people you'll encounter."
+        },
+        {
+          "id": "block-lesson-1-5-heading-1",
+          "type": "heading",
+          "level": 2,
+          "content": "Preparing to Review a Real Case"
+        },
+        {
+          "id": "block-lesson-1-5-content-1",
+          "type": "text",
+          "content": "## Case Analysis: Lois and James Sumpter\n\nIt can be difficult to imagine all of the elements you've learned happening in a real-life scenario. In this section, you review the case of Lois and James Sumpter.\n\n**Content Warning:**\n\nThis case includes real audio of abuse and may be difficult to listen to or read. If you find engaging with this content too difficult or jarring, you can skip the audio portions and follow along with the written descriptions, or you may choose to take breaks as needed.\n\n**What You'll Learn:**\n\nAs you review the case, you will be guided through the audio and timeline of the events that occurred. This case will help you:\n\n- See how the Power and Control Wheel manifests in real situations\n- Understand how different types of abuse work together over time\n- Recognize patterns that may not be obvious from isolated incidents\n- Apply the concepts you've learned to actual experiences"
+        },
+        {
+          "id": "block-lesson-1-5-heading-2",
+          "type": "heading",
+          "level": 2,
+          "content": "Analyzing the Case Through the Power and Control Wheel"
+        },
+        {
+          "id": "block-lesson-1-5-content-2",
+          "type": "text",
+          "content": "## Identifying Patterns and Tactics\n\nAs you engage with the Sumpter Case, think about the types of abuse you encounter. Consider these questions:\n\n**Types of Abuse:**\n- What types of abuse can you identify in this case?\n- How do different forms of abuse overlap and reinforce each other?\n- Which behaviors fit into physical, emotional, economic, or sexual abuse categories?\n\n**Power and Control:**\n- How does James Sumpter create and use a power imbalance?\n- Which sections of the Power and Control Wheel do you see represented?\n- How do the tactics on the inside of the wheel relate to the violence on the outside?\n\n**The Pattern:**\n- Is this intimate terrorism, situational couple violence, or violent resistance?\n- What evidence helps you make this determination?\n- How does the timeline reveal escalation or patterns of control?\n\n### What the Case Illustrates\n\nThis case exemplifies how the Power and Control Wheel can be used to illustrate to survivors how what they experience contributes to an environment in which a person who causes harm creates and uses a power imbalance to gain control in the relationship.\n\nFor professionals like James providing IPV advocacy or Maria conducting intake assessments, being able to recognize these patterns is essential for trauma-informed support."
+        },
+        {
+          "id": "block-lesson-1-5-heading-3",
+          "type": "heading",
+          "level": 2,
+          "content": "Applying Your Knowledge"
+        },
+        {
+          "id": "block-lesson-1-5-content-3",
+          "type": "text",
+          "content": "## Using the Tools You've Learned\n\nThe Sumpter case demonstrates how the tools you've learned in this module come together:\n\n**The Power and Control Wheel** helps you:\n- Identify specific tactics being used\n- See how behaviors on the inside of the wheel create a foundation for violence on the outside\n- Understand the systematic nature of abuse\n\n**Types of Abuse** understanding helps you:\n- Recognize that abuse takes many forms beyond physical violence\n- See how different types compound and reinforce each other\n- Identify early warning signs before escalation occurs\n\n**Johnson's Typology** helps you:\n- Categorize the pattern of violence\n- Understand the context and dynamics of the relationship\n- Provide appropriate resources and support\n\n### Moving Forward\n\nAs you complete Module 1, you now have foundational knowledge about:\n- What intimate partner violence is and who it affects\n- The different types of abuse and how they overlap\n- How power and control function in abusive relationships\n- Different categories of relationship violence\n- How these concepts apply to real cases\n\nThis foundation prepares you for Module 2, where you'll explore the intersection of intimate partner violence and sexual violence—moving deeper into the iceberg's hidden depths."
+        },
+        {
+          "id": "block-lesson-1-5-takeaways",
+          "type": "key-takeaway",
+          "content": "Real cases like the Sumpter case help illustrate how theoretical concepts manifest in actual experiences\n\nThe Power and Control Wheel helps identify specific tactics and patterns in real situations\n\nMultiple types of abuse work together and compound over time in intimate terrorism\n\nAnalyzing timelines reveals patterns and escalation that may not be obvious from single incidents\n\nUnderstanding real cases prepares professionals to recognize similar patterns in their work\n\nThe tools learned in Module 1 work together to provide a comprehensive understanding of IPV dynamics"
+        },
+        {
+          "id": "block-lesson-1-5-kc-1",
+          "type": "knowledge-check",
+          "question": "What is the primary purpose of using the Power and Control Wheel to analyze cases like the Sumpter case?",
+          "options": [
+            {
+              "label": "To assign legal blame to the person who causes harm",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "To illustrate to survivors how their experiences contribute to an environment where power imbalance creates control",
+              "correct": true,
+              "feedback": "The Power and Control Wheel can be used to ILLUSTRATE TO SURVIVORS how what they experience contributes to an environment in which a person who causes harm creates and uses a power imbalance to gain control in the relationship. This helps survivors see their experience more clearly, validates that what they're experiencing is abuse, and can help them understand why leaving is so difficult. It's not about blame—it's about recognition and understanding."
+            },
+            {
+              "label": "To determine if the survivor should have left the relationship sooner",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "To prove that physical violence is the most important type of abuse",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-1-5-kc-2",
+          "type": "knowledge-check",
+          "question": "Why is reviewing a timeline of events important when analyzing cases of intimate partner violence?",
+          "options": [
+            {
+              "label": "To determine the exact date when abuse started",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "To assign a severity score to each incident",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "To reveal patterns and escalation that may not be obvious from isolated incidents",
+              "correct": true,
+              "feedback": "Reviewing a TIMELINE reveals PATTERNS and ESCALATION that may not be obvious from looking at isolated incidents. IPV is a pattern of behaviors, and seeing how events unfold over time helps identify the systematic nature of abuse, shows how different tactics build on each other, and demonstrates escalation. This understanding is critical for trauma-informed assessment and safety planning."
+            },
+            {
+              "label": "To create legal evidence for prosecution",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-1-5-kc-3",
+          "type": "knowledge-check",
+          "question": "How do the different tools you learned in Module 1 (Power and Control Wheel, Types of Abuse, Johnson's Typology) work together?",
+          "options": [
+            {
+              "label": "They contradict each other and should be used separately",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "They provide different perspectives that together create a comprehensive understanding of IPV dynamics",
+              "correct": true,
+              "feedback": "The tools learned in Module 1 work TOGETHER to provide a COMPREHENSIVE understanding of IPV dynamics. The Power and Control Wheel shows specific tactics and their systematic nature; understanding Types of Abuse helps recognize different forms and how they overlap; Johnson's Typology helps categorize patterns and provide appropriate support. Using these tools together—as demonstrated in the Sumpter case—creates a fuller, more nuanced understanding than any single tool alone."
+            },
+            {
+              "label": "Only the Power and Control Wheel is necessary for understanding IPV",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "They are used for different populations and should never be combined",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

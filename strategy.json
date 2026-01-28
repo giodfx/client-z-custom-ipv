@@ -1,0 +1,175 @@
+{
+  "id": "strategy-IPV-2026",
+  "projectId": "IPV",
+  "createdAt": "2026-01-26",
+  "version": "1.0",
+
+  "courseTitle": "Recognizing and Responding to Intimate Partner Violence",
+  "courseSubtitle": "Understanding, Identifying, and Supporting Survivors of IPV",
+  "client": "z-custom",
+  "sourceType": "SCORM-Articulate-Rise",
+  "contentStrategy": "preserve-and-enhance",
+  "imageGenerationProvider": "qwen",
+
+  "imageStrategy": {
+    "sourceHasImages": true,
+    "sourceImageLocation": "media/source-images",
+    "reviewSourceImages": true,
+    "reuseApprovedImages": true,
+    "generateForGapsOnly": true
+  },
+
+  "description": "This comprehensive training course provides essential knowledge for recognizing, understanding, and responding to intimate partner violence (IPV). The course covers the dynamics of IPV, including various forms of abuse, the Power and Control Wheel framework, sexual violence in intimate relationships, and evidence-based strategies for supporting survivors. Learners will develop critical skills to identify signs of abuse, understand the impact on victims, and implement appropriate response strategies including safety planning.",
+
+  "personas": [
+    {
+      "name": "Maria Rodriguez",
+      "role": "Coordinated Entry Worker",
+      "description": "Community health intake specialist who needs to recognize IPV during brief appointments"
+    },
+    {
+      "name": "James Chen",
+      "role": "IPV Advocate",
+      "description": "Social services professional providing trauma-informed advocacy and safety planning"
+    },
+    {
+      "name": "Aisha Williams",
+      "role": "Corporate HR Professional",
+      "description": "HR manager who recognizes workplace signs and connects employees to resources"
+    },
+    {
+      "name": "Dr. Sam Patel",
+      "role": "Healthcare Provider",
+      "description": "Primary care provider integrating IPV screening into clinical workflow"
+    }
+  ],
+
+  "targetAudience": {
+    "primary": [
+      "Healthcare professionals",
+      "Social workers and counselors",
+      "HR professionals and employee assistance program staff",
+      "Community support workers",
+      "Law enforcement and first responders"
+    ],
+    "secondary": [
+      "Educators and school staff",
+      "Faith community leaders",
+      "General workplace employees"
+    ],
+    "prerequisites": "None - foundational training suitable for all professional levels",
+    "experienceLevel": "Beginner to Intermediate"
+  },
+
+  "learningObjectives": {
+    "terminal": "Upon completion, learners will be able to recognize signs of intimate partner violence, understand its impact on victims and survivors, and implement appropriate response strategies including safety planning and resource referral.",
+    "enabling": [
+      "Identify and describe various types of intimate partner violence including physical, emotional, sexual, and economic abuse",
+      "Analyze abusive relationship dynamics using the Duluth Model's Power and Control Wheel framework",
+      "Recognize the unique characteristics and prevalence of intimate partner sexual violence",
+      "Assess the psychological, physical, and social impacts of IPV on victims and survivors",
+      "Apply trauma-informed approaches when responding to individuals experiencing intimate partner violence",
+      "Develop and facilitate safety planning strategies with IPV survivors",
+      "Identify appropriate resources and referral pathways for IPV support services"
+    ]
+  },
+
+  "instructionalApproach": {
+    "methodology": "Case-based learning with evidence-based frameworks and interactive scenarios",
+    "engagement": [
+      "Case analysis activities (e.g., Lois and James Sumpter case study)",
+      "Interactive knowledge checks throughout lessons",
+      "Module quizzes with formative feedback",
+      "Framework application exercises (Power and Control Wheel)",
+      "Scenario-based learning for response strategies",
+      "Visual infographics and statistical data presentations"
+    ],
+    "assessmentStrategy": {
+      "formative": "Interactive knowledge checks embedded within lessons and case analysis activities",
+      "summative": "Module quizzes after each of the 3 main modules plus comprehensive final course assessment",
+      "practiceOpportunities": "Case-based scenarios, power dynamics analysis, and safety planning exercises"
+    }
+  },
+
+  "contentStructure": {
+    "estimatedDuration": "45-60 minutes",
+    "modules": 3,
+    "lessonsPerModule": "3-6",
+    "totalLessons": 18,
+    "quizzesPerModule": 1,
+    "finalAssessment": true
+  },
+
+  "designNotes": {
+    "theme": {
+      "primary": "#582c83",
+      "accent": "#582c83",
+      "typography": "Professional sans-serif (Rise default)",
+      "mood": "Professional, supportive, trauma-informed, accessible"
+    },
+    "branding": "Comcast/z-custom branding elements present in title cards and sponsor imagery. Purple theme (#582c83) used throughout for consistency.",
+    "accessibility": "WCAG 2.1 AA compliance required - ensure all images have appropriate alt text, sufficient color contrast, and keyboard navigation support",
+    "sensitivityNotes": [
+      "Content deals with intimate partner violence, sexual violence, and abuse - requires trauma-informed language",
+      "Use person-first language (victims/survivors)",
+      "Avoid graphic descriptions or imagery",
+      "Provide content warnings where appropriate",
+      "Include crisis resources and helpline information",
+      "Ensure diverse representation in imagery (age, race, gender, ability)",
+      "Avoid stereotypical portrayals of victims or perpetrators"
+    ]
+  },
+
+  "existingAssets": {
+    "fromSource": [
+      "39 cataloged images with context and location metadata",
+      "Power and Control Wheel diagrams (Duluth Model) - 4 variations",
+      "Equality Wheel diagram - 1 image",
+      "CDC statistical infographics - 3 images",
+      "Sexual violence framework diagrams - 2 images",
+      "Types of Abuse infographic - 1 image",
+      "Rape Culture Pyramid diagram - 1 image",
+      "Comcast branding and title cards",
+      "Stock photography for emotional context",
+      "Case study materials (Lois and James Sumpter)",
+      "Complete course content text (259 chunks, 8,763 words)",
+      "Quiz questions (19 multiple response, 17 multiple choice, 5 matching)",
+      "Knowledge check activities (5 interactive checks)"
+    ],
+    "toGenerate": [
+      "Fresh stock photography for diverse representation",
+      "Modern iconography matching updated design system",
+      "Additional context-setting images where original photos are outdated",
+      "Video content (if Phase 2 expansion planned)",
+      "Interactive component enhancements",
+      "Updated infographics for improved visual clarity (optional - evaluate originals first)"
+    ]
+  },
+
+  "imageReuseStrategy": {
+    "mustReuse": [
+      "Power & Control Wheel (Duluth Model) - Critical framework, reuse exactly",
+      "Equality Wheel - Critical framework, reuse exactly",
+      "CDC Statistics infographics - Specific data must be preserved",
+      "Sexual Violence frameworks and diagrams - Educational models to preserve",
+      "Rape Culture Pyramid - Educational model to preserve",
+      "Types of Abuse infographic - If data is accurate, reuse",
+      "Comcast branding elements - Brand consistency required"
+    ],
+    "considerReplace": [
+      "Stock photography - Generate fresh, diverse, modern images",
+      "Generic icons - Update to match new design system",
+      "Dated imagery - Assess and replace if needed"
+    ],
+    "catalogLocation": "clients/z-custom/IPV/image-catalog.json and image-catalog.html"
+  },
+
+  "metadata": {
+    "phase": "0-strategy",
+    "status": "draft",
+    "scormExtractionComplete": true,
+    "imageCatalogComplete": true,
+    "totalImagesExtracted": 39,
+    "imageCatalogSuccessRate": "100%"
+  }
+}

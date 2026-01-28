@@ -1,0 +1,434 @@
+{
+  "moduleId": "module-3",
+  "title": "MODULE 3: Responding to Intimate Partner Violence",
+  "description": "Evidence-based strategies for responding to individuals experiencing IPV, including trauma-informed approaches, safety planning, and resource connection.",
+  "weekNumber": 3,
+  "learningOutcomes": [
+    "Understand the multifaceted impact of IPV on victims/survivors",
+    "Apply trauma-informed principles when responding to IPV",
+    "Facilitate safety planning with survivors",
+    "Identify appropriate resources and referral pathways"
+  ],
+  "lessons": [
+    {
+      "lessonId": "lesson-3-1",
+      "title": "Impact of IPV on Survivors",
+      "description": "Understanding the profound effects of intimate partner violence on survivors and why 'Why don't they leave?' is the wrong question.",
+      "duration": 10,
+      "objectives": [],
+      "contentBlocks": [
+        {
+          "id": "block-lesson-3-1-hero",
+          "type": "hero-banner",
+          "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
+          "imageRatio": "21:9",
+          "overlayText": "Impact of IPV on Survivors"
+        },
+        {
+          "id": "block-lesson-3-1-narration",
+          "type": "text",
+          "content": "We have reached the deep zone—the profound darkness where understanding transforms into wisdom. Here, we confront the most challenging question: why do survivors stay? But as we descend to this depth, we discover the question itself is wrong. The real question is: why do people choose to abuse? Understanding this shift is the foundation of trauma-informed response."
+        },
+        {
+          "id": "block-lesson-3-1-heading-1",
+          "type": "heading",
+          "level": 2,
+          "content": "Module 3 Overview"
+        },
+        {
+          "id": "block-lesson-3-1-content-1",
+          "type": "text",
+          "content": "## Responding to Intimate Partner Violence\n\nWhen a friend, family member, or coworker chooses to disclose to you that they are experiencing intimate partner violence or intimate partner sexual violence, it is easy to feel overwhelmed, nervous, or scared. It's normal to want to help someone who has entrusted you with their experience, but it is important to know how to respond in ways that will be supportive to the survivor.\n\n**By the end of this module you will be able to:**\n\n- Identify reasons why leaving an abusive relationship can be difficult for survivors\n- Recognize messages that are harmful to survivors of intimate partner violence\n- Determine ways to respond to someone experiencing intimate partner violence\n\n### The Importance of Listening\n\nListening to survivors is critical in understanding the problem that people experiencing intimate partner violence face. Survivors like Rebel explain the challenges they faced and the ripple effect that victimization can have on family members and the community at large.\n\nPay particular attention to how survivors talk about the abuse they experienced and their difficulty recognizing it as intimate partner violence. As you can see from survivor accounts, abuse does not fit neatly into a single box, which can make it hard for people to identify the abuse happening to them.\n\n**There is no one who understands the impact of intimate partner violence more than a survivor who has experienced it, but it can be helpful for them to know that they are not alone in this experience and the abuse is not their fault.**"
+        },
+        {
+          "id": "block-lesson-3-1-heading-2",
+          "type": "heading",
+          "level": 2,
+          "content": "Messages That Harm"
+        },
+        {
+          "id": "block-lesson-3-1-content-2",
+          "type": "text",
+          "content": "## Messages That Are NOT Helpful, but Survivors Often Hear\n\nIf you have ever encountered a survivor of intimate partner violence, you will have probably heard horror stories about the ways individuals have tried to \"help\" them or \"give advice.\" Friends, colleagues, relatives, community members, and even people causing harm themselves have been known to offer what they thought was helpful information, but was actually harmful information, to individuals in an abusive relationship.\n\n### Common Harmful Messages:\n\n**\"Why don't you just leave?\"**\n- This places responsibility on the survivor to stop the violence\n- It ignores the many barriers to leaving\n- It fails to acknowledge that leaving is the most dangerous time\n\n**\"It can't be that bad if you're still there\"**\n- This minimizes the survivor's experience\n- It doesn't recognize the complex dynamics of abuse\n- It suggests the survivor is exaggerating\n\n**\"You just need to stand up for yourself\"**\n- This ignores the power imbalance that defines IPV\n- It suggests the abuse is the survivor's fault for not being strong enough\n- It doesn't recognize that resistance can increase danger\n\n**\"I would never put up with that\"**\n- This is judgmental and creates shame\n- It suggests the survivor is weak or making bad choices\n- It fails to recognize that anyone can experience IPV\n\n**\"What did you do to make them so angry?\"**\n- This directly blames the survivor for the abuse\n- It suggests abuse is a justified response to behavior\n- It reinforces the abuser's narrative\n\n### Why These Messages Are Harmful\n\nYou already know that language matters when working with survivors. These messages:\n- Place responsibility for stopping abuse on the survivor instead of the person causing harm\n- Create shame and isolation\n- Demonstrate a lack of understanding about IPV dynamics\n- Can cause survivors to stop seeking help"
+        },
+        {
+          "id": "block-lesson-3-1-heading-3",
+          "type": "heading",
+          "level": 2,
+          "content": "Why Survivors Stay"
+        },
+        {
+          "id": "block-lesson-3-1-content-3",
+          "type": "text",
+          "content": "## Why Do Some Survivors Stay?\n\nOne of the questions survivors of intimate partner violence get asked the most is \"Why do you stay?\" People often wonder why survivors would stay with a partner who is abusing them.\n\n**The Right Question:**\n\nIntimate partner violence is never a survivor's fault. By asking survivors why they choose to stay, we are putting the responsibility on them to stop the violence they are experiencing. Instead, we should be asking people who cause harm why they choose to abuse so that we are putting the responsibility on them to stop their violence.\n\n### The Danger of Leaving\n\n**We often focus on how dangerous being in an abusive relationship is for a survivor but forget to think about how dangerous leaving can actually be.**\n\nLeaving is the most dangerous time for survivors because:\n- Leaving threatens the person's control over them\n- The person causing harm may use violence to reestablish that control\n- That violence can be deadly\n- Studies show that women are much more likely to be killed by their abusive partner **after separating** from them than at any other point in the relationship\n\n### There Are Many Reasons a Survivor May Stay\n\n**Safety Concerns:**\n- Fear of escalated violence or death\n- Threats to harm children or other family members\n- Threats to harm pets\n- Fear of losing custody of children\n\n**Practical Barriers:**\n- Lack of financial resources\n- No safe place to go\n- Lack of job or employment sabotage\n- Immigration status concerns\n- Lack of accessible shelters (especially for people with disabilities)\n\n**Emotional and Psychological Factors:**\n- Love for the partner and hope they will change\n- Belief that keeping the family together is best for children\n- Trauma bonding and psychological manipulation\n- Low self-esteem from ongoing abuse\n- Cultural or religious beliefs about marriage and family\n\n**Social and Institutional Barriers:**\n- Isolation from friends and family\n- Lack of community support\n- Previous negative experiences with law enforcement or courts\n- Fear of not being believed\n- Cultural stigma about divorce or leaving\n\n### Understanding Individual Circumstances\n\nAs you can see, survivors stay with abusive partners for many personal reasons. Each circumstance is different, and the reason one survivor stays may be different than someone else.\n\nFor some, threats to family or children can create a sense of responsibility that keeps women in abusive relationships. For others, lack of resources, finances, or support make it difficult to leave.\n\n**Often a survivor's decision to stay is an informed one, made with their safety in mind.**\n\nUnderstanding how individual circumstances and variables interact with a survivor's ability to leave an abusive relationship is necessary to develop a proper safety plan with a survivor or a family."
+        },
+        {
+          "id": "block-lesson-3-1-takeaways",
+          "type": "key-takeaway",
+          "content": "The question 'Why do survivors stay?' places blame on the wrong person—we should ask 'Why do people choose to abuse?'\n\nLeaving is the most dangerous time for survivors; women are more likely to be killed after separating than during the relationship\n\nSurvivors face multiple barriers to leaving including safety concerns, practical obstacles, emotional factors, and social/institutional barriers\n\nHarmful messages like 'just leave' or 'it can't be that bad' create shame, place blame on survivors, and can cause them to stop seeking help\n\nOften a survivor's decision to stay is an informed one made with their safety in mind\n\nUnderstanding individual circumstances is essential for developing appropriate safety plans and support"
+        },
+        {
+          "id": "block-lesson-3-1-kc-1",
+          "type": "knowledge-check",
+          "question": "Instead of asking 'Why do survivors stay?', what question should we be asking?",
+          "options": [
+            {
+              "label": "When will survivors leave?",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Why do people choose to abuse their partners?",
+              "correct": true,
+              "feedback": "Instead of asking 'Why do survivors stay?', we should be asking 'WHY DO PEOPLE CHOOSE TO ABUSE?' By asking survivors why they stay, we put the responsibility on THEM to stop the violence they're experiencing. The responsibility belongs with the person causing harm. This shift in perspective is essential for trauma-informed practice and ensures we don't blame survivors for the abuse they experience."
+            },
+            {
+              "label": "What did the survivor do to cause the abuse?",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "How can we force survivors to leave?",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-3-1-kc-2",
+          "type": "knowledge-check",
+          "question": "According to the research, when are survivors at the HIGHEST risk of being killed by their abusive partner?",
+          "options": [
+            {
+              "label": "During the honeymoon phase of the cycle of violence",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "When they first experience abuse",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "After separating from the abusive partner",
+              "correct": true,
+              "feedback": "Survivors are at HIGHEST risk AFTER SEPARATING from the abusive partner. Studies show that women are much more likely to be killed by their abusive partner after leaving than at any other point in the relationship. Leaving threatens the abuser's control, and they may use violence—including lethal violence—to reestablish that control. This is why 'just leave' is not only unhelpful advice but potentially dangerous."
+            },
+            {
+              "label": "When they call the police",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-3-1-kc-3",
+          "type": "knowledge-check",
+          "question": "Why is the statement 'I would never put up with that' harmful to survivors?",
+          "options": [
+            {
+              "label": "It provides helpful comparison for the survivor",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "It is judgmental, creates shame, and suggests the survivor is weak or making bad choices",
+              "correct": true,
+              "feedback": "The statement 'I would never put up with that' is JUDGMENTAL and CREATES SHAME. It suggests the survivor is weak or making bad choices, and fails to recognize that ANYONE can experience IPV regardless of strength or character. This type of statement can cause survivors to feel isolated, ashamed, and less likely to seek help. Remember: IPV can happen to anyone, and staying is often a complex decision influenced by multiple barriers."
+            },
+            {
+              "label": "It encourages the survivor to be stronger",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "It has no impact on survivors",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson-3-2",
+      "title": "Safety Planning with Survivors",
+      "description": "Understanding survivor-defined safety, Maslow's hierarchy of needs, and how to support autonomy while addressing safety concerns.",
+      "duration": 9,
+      "objectives": [],
+      "contentBlocks": [
+        {
+          "id": "block-lesson-3-2-hero",
+          "type": "hero-banner",
+          "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
+          "imageRatio": "21:9",
+          "overlayText": "Safety Planning with Survivors"
+        },
+        {
+          "id": "block-lesson-3-2-narration",
+          "type": "text",
+          "content": "In the deep zone, we learn that safety is more than the absence of violence. True safety encompasses physical security, basic needs, and emotional wellbeing. Jill Davies teaches us that survivors are the experts on their own safety. Our role isn't to rescue—it's to support their autonomy, honor their wisdom, and help them regain the power and control that abuse took away."
+        },
+        {
+          "id": "block-lesson-3-2-heading-1",
+          "type": "heading",
+          "level": 2,
+          "content": "Understanding Safety Planning"
+        },
+        {
+          "id": "block-lesson-3-2-content-1",
+          "type": "text",
+          "content": "## Safety Planning with Survivors\n\nOne way to help a survivor of intimate partner violence is through **safety planning**. A safety plan is a personalized, practical plan used to improve someone's safety while experiencing abuse, preparing to leave an abusive situation, or after leaving an abusive situation.\n\n### How to Support Safety Planning\n\nSee if you can help the survivor identify ways that they can increase their safety, and ask how you can be involved in that process.\n\n**Examples of how you might help:**\n\n- Can you provide them with a place to go if they need to leave?\n- Can you check in on them and use a codeword or phrase that lets you know if they are in danger?\n- Can you hold important documents or a bag with emergency supplies?\n- Can you help them identify safe people in their network?\n\n**Important principle:**\n\nTry to brainstorm ideas WITH the survivor and don't be afraid to reach out to a domestic violence advocate for help. Safety planning should be collaborative, not directive."
+        },
+        {
+          "id": "block-lesson-3-2-heading-2",
+          "type": "heading",
+          "level": 2,
+          "content": "Intersectionality and Individual Needs"
+        },
+        {
+          "id": "block-lesson-3-2-content-2",
+          "type": "text",
+          "content": "## Intersectionality and Survivor's Needs\n\nRemember that every survivor of intimate partner violence will have different needs. The word **\"intersectionality\"** is often used to describe the intersecting identities every person holds, such as their:\n\n- Age\n- Race\n- Gender\n- Sexual orientation\n- Religion\n- Culture\n- Ability/disability\n- Immigration status\n- Socioeconomic status\n\n### Honoring Autonomy\n\nTo focus on each survivor's particular needs, we must understand that person's perspectives, culture, and resources.\n\n**A Critical Balance:**\n\nSometimes, it is easier to focus on the survivor's physical safety over letting them make decisions for themselves, but **that reinforces the lack of power and control the survivor has in their life**.\n\nIf the foundation of abuse is that a survivor has had their power and control taken away, then to resolve that, we must help the person regain that control in their life.\n\n**We want to promote the following in every survivor:**\n- Liberation\n- Autonomy\n- Self-determination"
+        },
+        {
+          "id": "block-lesson-3-2-heading-3",
+          "type": "heading",
+          "level": 2,
+          "content": "Survivor-Defined Safety"
+        },
+        {
+          "id": "block-lesson-3-2-content-3",
+          "type": "text",
+          "content": "## Survivor Risk Analysis\n\nJill Davies, deputy director of Greater Hartford Legal Aid, emphasizes the need to focus on more than just a survivor's physical safety. In Davies' Victim-Defined Safety Planning Summary, she states that **\"The spiritual, social, and emotional aspects of our humanity are also necessary for security.\"**\n\n### Three Elements Survivors Consider When Assessing Safety Strategies:\n\n1. **No violence** - Freedom from physical and sexual assault\n2. **Basic human needs** - Food, shelter, financial security\n3. **Social and emotional well-being** - Connection, self-esteem, autonomy\n\n### Life-Generated Risks\n\nIn addition to the risks associated with their abusive partner, a survivor must also consider their **life-generated risks**—risks in their life that they may have no control over such as:\n\n- Health issues\n- Financial concerns\n- Social supports\n- Immigration status\n- Custody concerns\n- Employment stability\n\n## Reevaluating \"Safety\"\n\nWhen deciding if a survivor is \"safe,\" we often look at whether or not they are free from the abuse of their partner. It is important to remember, however, that a survivor's safety also includes their social and emotional needs.\n\n### Maslow's Hierarchy of Needs\n\nIn 1943, psychologist Abraham Maslow outlined what is now called **Maslow's hierarchy of needs**, which identifies the five \"needs\" that drive human behavior:\n\n1. **Physiological** (bottom) - Food, water, sleep, shelter\n2. **Safety** - Security, employment, health\n3. **Belonging** - Friendship, family, intimacy\n4. **Esteem** - Respect, recognition, confidence\n5. **Self-actualization** (top) - Achieving full potential\n\nMaslow argues that to get to the top of the pyramid (self-fulfillment), you first need to satisfy everything below it.\n\n### Safety Beyond Physical Security\n\nWhen we talk about safety and survivors of intimate partner violence, it's easy for us to think once a survivor reaches the second level of this pyramid, then they are safe and no longer require help. But for a survivor to truly find safety, they must be more than just physically safe.\n\n**According to Dr. Jacqueline Campbell:**\n\n\"A survivor who is no longer hit by their partner but cannot feed her children or pay her bills **isn't safe**, nor is she safe if she is still suffering from the effects of trauma.\"\n\n### True Safety Means:\n\n- **No violence** - Physical and sexual safety\n- **Basic needs are met** - Food, shelter, financial security\n- **Social and emotional well-being** - Connection, healing, self-esteem\n\nWe also want survivors to achieve emotional safety, make social connections, and recognize their strengths.\n\nIf the foundation of abuse is that a survivor has had their power and control taken away, then to resolve that, we must help the person regain that control in their life."
+        },
+        {
+          "id": "block-lesson-3-2-takeaways",
+          "type": "key-takeaway",
+          "content": "Safety planning should be collaborative and personalized, not directive—survivors are experts on their own safety\n\nEvery survivor has different needs based on their intersecting identities and life circumstances\n\nFocusing only on physical safety while taking away decision-making reinforces the lack of power and control\n\nTrue safety includes no violence, basic needs being met, AND social/emotional well-being\n\nSurvivors must consider both partner-generated risks and life-generated risks when assessing safety\n\nWe want to promote liberation, autonomy, and self-determination in every survivor"
+        },
+        {
+          "id": "block-lesson-3-2-kc-1",
+          "type": "knowledge-check",
+          "question": "According to Jill Davies, what three elements do survivors consider when assessing safety strategies?",
+          "options": [
+            {
+              "label": "Police protection, restraining orders, and shelter",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "No violence, basic human needs, and social and emotional well-being",
+              "correct": true,
+              "feedback": "According to Jill Davies, survivors consider three elements: (1) NO VIOLENCE, (2) BASIC HUMAN NEEDS, and (3) SOCIAL AND EMOTIONAL WELL-BEING. This framework recognizes that safety is more than just the absence of violence—it encompasses having basic needs met (food, shelter, financial security) and experiencing social/emotional wellbeing (connection, self-esteem, autonomy). True safety planning must address all three elements."
+            },
+            {
+              "label": "Physical safety, legal safety, and financial safety",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Separation, custody, and employment",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-3-2-kc-2",
+          "type": "knowledge-check",
+          "question": "Why is it problematic to focus only on a survivor's physical safety while taking away their decision-making power?",
+          "options": [
+            {
+              "label": "Because physical safety is not important",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Because it reinforces the lack of power and control the survivor has in their life",
+              "correct": true,
+              "feedback": "Focusing only on physical safety while taking away decision-making power REINFORCES THE LACK OF POWER AND CONTROL the survivor has in their life. If the foundation of abuse is that a survivor has had their power and control taken away, then to resolve that, we must help them REGAIN that control. This is why we promote liberation, autonomy, and self-determination—even when it's difficult or scary. Trauma-informed support honors survivor choice."
+            },
+            {
+              "label": "Because survivors always make the best decisions",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Because physical safety and decision-making are unrelated",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-3-2-kc-3",
+          "type": "knowledge-check",
+          "question": "According to Dr. Jacqueline Campbell, when is a survivor truly safe?",
+          "options": [
+            {
+              "label": "When they have a restraining order",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "When they are no longer being physically hit",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "When there is no violence, basic needs are met, AND they experience social and emotional well-being",
+              "correct": true,
+              "feedback": "According to Dr. Campbell, a survivor is truly safe when there is NO VIOLENCE, their BASIC NEEDS ARE MET, AND they experience SOCIAL AND EMOTIONAL WELL-BEING. Simply not being hit is not enough—if a survivor cannot feed their children, pay bills, or is still suffering from trauma effects, they are NOT safe. This comprehensive view of safety helps us provide more complete, trauma-informed support that addresses all aspects of a survivor's wellbeing."
+            },
+            {
+              "label": "When they have left the relationship",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson-3-3",
+      "title": "Responding to Someone Experiencing IPV",
+      "description": "Learning trauma-informed response strategies, understanding community accountability, and knowing your resources for supporting survivors.",
+      "duration": 12,
+      "objectives": [],
+      "contentBlocks": [
+        {
+          "id": "block-lesson-3-3-hero",
+          "type": "hero-banner",
+          "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
+          "imageRatio": "21:9",
+          "overlayText": "Responding to Someone Experiencing IPV"
+        },
+        {
+          "id": "block-lesson-3-3-narration",
+          "type": "text",
+          "content": "At the deepest point of the iceberg, we emerge with wisdom. You've traveled from the visible surface through the twilight of hidden truths to this profound understanding: responding to IPV requires community transformation, not individual rescue. Like the iceberg rising from deep waters, you emerge equipped to see what others don't, to respond with trauma-informed care, and to be part of systemic change."
+        },
+        {
+          "id": "block-lesson-3-3-heading-1",
+          "type": "heading",
+          "level": 2,
+          "content": "How to Respond to Survivors"
+        },
+        {
+          "id": "block-lesson-3-3-content-1",
+          "type": "text",
+          "content": "## Responding to Someone Experiencing Intimate Partner Violence\n\nResponding to someone who is experiencing intimate partner violence can seem overwhelming, and it's normal to want to get it right when helping others. Remember that there isn't one \"correct\" way to handle every situation.\n\n### General Tips for Responding:\n\n- **Be open to talking about relationships and having uncomfortable conversations** - Creating space for disclosure is the first step\n\n- **The most important thing you can do is be supportive and listen non-judgmentally** - Your role is to support, not to judge or fix\n\n- **Recognize that it's okay if you don't have all the answers** - You are not expected to be an expert; connecting to resources is part of support\n\n- **It is not your role to rescue people** - Honoring autonomy means supporting their decisions, not making decisions for them\n\n- **Know where you can refer survivors** - Have resources ready and encourage them to talk to people who can provide specialized help and guidance\n\n### Helpful Messages to Share\n\nYou already know that language matters when working with survivors. When responding, try using helpful statements that remind a survivor that the abuse is not their fault and they are not alone.\n\n**Examples of Helpful Messages:**\n\n- **\"I believe you\"** - Validates their experience and builds trust\n\n- **\"This is not your fault\"** - Counters self-blame and reinforces that responsibility belongs with the person causing harm\n\n- **\"You don't deserve to be treated this way\"** - Affirms their worth and dignity\n\n- **\"I'm worried about your safety\"** - Expresses care without judgment\n\n- **\"You are not alone\"** - Reduces isolation and offers connection\n\n- **\"I'm here for you\"** - Provides ongoing support without pressure\n\n- **\"What do you need right now?\"** - Centers their autonomy and current needs\n\n- **\"This must be really difficult\"** - Acknowledges the complexity of their situation"
+        },
+        {
+          "id": "block-lesson-3-3-heading-2",
+          "type": "heading",
+          "level": 2,
+          "content": "Community Accountability Model"
+        },
+        {
+          "id": "block-lesson-3-3-content-2",
+          "type": "text",
+          "content": "## Responding as a Community\n\nIntimate partner violence is a socially supported behavior, learned through observation, experience, and reinforcement. People who cause harm learn these behaviors through our culture, communities, schools, family, personal experience, and peer groups.\n\nThe **community-accountability model of male violence against women** illustrates the different systems that can support or discourage violence against women. It shows that **community-based solutions are needed to address intimate partner violence**.\n\n### The Men Stopping Violence Community-Accountability Model\n\nThis model depicts **five levels of community influence:**\n\n**1. The Individual**\n- The individual person, their actions, and all the forces that influence their behavior\n\n**2. The Primary Community**\n- The group closest to the individual\n- Can consist of family, school friends, clubs, gangs, or any group that functions in a family-like role\n- The communities the individual engages with most frequently\n\n**3. The Micro-Community**\n- Tied to the primary community but on a larger scale\n- Can include religious communities, the broader school system, civic groups, social service agencies\n\n**4. The Macro-Community**\n- Yet one additional layer away from the individual\n- Can include very large group numbers scattered across the country\n- The individual may never directly engage with it but is subject to its rules, values, and guidelines\n- Examples: organized religion, governments, mass media, high-level courts, large corporations\n\n**5. The Global Community**\n- Encapsulates all other communities\n- Has influence on all those that fall under it\n- Examples: patriarchy, colonialism\n- More abstract but significant impact on individual development\n\n### How the Model Works\n\nThe five levels of community are depicted as nested ovals. The arrows illustrate how each level influences and interacts with the others—going **both directions** from the individual to progressively larger communities, and from the global community back to the individual.\n\n**This demonstrates:**\n\n- This ecosystem works together\n- Any changes to one level, or the messages reinforced in each level, will naturally impact the others\n- Impacting messaging at ANY level can work to prevent intimate partner violence by disrupting existing reinforced messaging\n- By changing the mindset, behaviors, and beliefs of individuals and even primary and micro-communities, those changes ripple throughout the ecosystem"
+        },
+        {
+          "id": "block-lesson-3-3-heading-3",
+          "type": "heading",
+          "level": 2,
+          "content": "Taking Action and Knowing Resources"
+        },
+        {
+          "id": "block-lesson-3-3-content-3",
+          "type": "text",
+          "content": "## Challenging Unhealthy Assumptions\n\nThis model shows that individuals are shaped by what they see and experience in their community and our society at large. It looks at the contributions society makes to individual development and the way it influences their treatment of others.\n\n**Learning about violence against women and its historical and cultural context invites individuals to shift the way they view the world and their place in it.**\n\nPeople are taught that the use of coercion, dominance, and control in relationships with women reflects their internalization of social norms communicated through their day-to-day interactions within primary communities, micro-communities, and macro-communities. They are challenged to accept responsibility for making choices that prevent destructive behaviors.\n\n### The Role of Media and Culture\n\nThe role mainstream media plays in the reinforcement of historical and cultural contexts is a clear example. The way TV shows, movies, and news outlets discuss and portray violence against women can have an impact on how individuals view the issue.\n\nThe media can also influence our ideas on how men and women should act, or \"gendered stereotypes,\" instead of valuing people as whole human beings.\n\n**By examining the many ways society reinforces sexism and the use of violence against women, we can identify actions that might be taken on personal, cultural, and institutional levels to end the tolerance of abuse. As a community, we can nurture a society where violence against women is unacceptable.**\n\n## Know Your Resources\n\nIt is crucial to have resources ready when survivors disclose to you. Being prepared helps you provide immediate, practical support.\n\n### National Resources:\n\n**National Domestic Violence Hotline**\n- Available 24/7\n- Phone: 1-800-799-7233\n- TTY: 1-800-787-3224\n- Online chat available\n- Provides crisis intervention, safety planning, and referrals to local resources\n\n**National Sexual Assault Hotline**\n- Available 24/7\n- Phone: 1-800-656-HOPE (4673)\n- Online chat available through RAINN\n\n### Local Resources:\n\nYou can also contact your statewide domestic violence coalition to find resources in your area and locate your local domestic violence center. If you don't know your statewide coalition, the National Domestic Violence Hotline lists them on their website.\n\nMany of these programs have a 24-hour hotline available with advocates who specialize in intimate partner violence.\n\n### Resources Are for Everyone\n\nIt is important to remember that these resources are not only for survivors of intimate partner violence, but also for friends, families, and community members. Watching someone experience abuse is challenging, especially if that person is someone you know and love, so **don't forget to take care of yourself as well**.\n\n## Conclusion\n\nUltimately, understanding how to recognize intimate partner violence and intimate partner sexual violence will prepare you to support individuals who choose to disclose their circumstances to you.\n\nBy understanding:\n- The types of abuse\n- How power and control are used to perpetuate abuse\n- How intimate partner violence intersects with sexual violence\n- Why survivors stay and how to support their safety\n- How to respond with trauma-informed care\n- How community accountability creates systemic change\n\n**You can be a better ally and resource for survivors who reach out to you.**\n\nSuccessfully completing this course does not make you an intimate partner violence service expert, but it prepares you to have informed, supportive, and educated interactions with survivors you may encounter.\n\n**To be a successful ally:**\n- Collect resources and information that you can share\n- Challenge harmful attitudes in your communities\n- Support survivor autonomy and decision-making\n- Continue learning and growing in your understanding\n\n**We each have a role to play in ending intimate partner violence and by working together, we hope to achieve that goal.**"
+        },
+        {
+          "id": "block-lesson-3-3-takeaways",
+          "type": "key-takeaway",
+          "content": "Your role is to support and listen non-judgmentally, not to rescue or make decisions for survivors\n\nHelpful messages include 'I believe you,' 'This is not your fault,' and 'What do you need right now?'\n\nThe Community-Accountability Model shows that IPV is socially supported and requires community-based solutions at all levels\n\nChanges at any community level—individual, primary, micro, macro, or global—ripple throughout the ecosystem\n\nNational resources like the National Domestic Violence Hotline (1-800-799-7233) are available 24/7 for survivors and supporters\n\nBeing a successful ally means having resources ready, challenging harmful attitudes, and continuing to learn"
+        },
+        {
+          "id": "block-lesson-3-3-kc-1",
+          "type": "knowledge-check",
+          "question": "What is the MOST important thing you can do when responding to someone experiencing intimate partner violence?",
+          "options": [
+            {
+              "label": "Tell them exactly what they should do to leave the relationship",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Be supportive and listen non-judgmentally",
+              "correct": true,
+              "feedback": "The MOST important thing you can do is BE SUPPORTIVE AND LISTEN NON-JUDGMENTALLY. Your role is not to rescue, make decisions for them, or force a particular course of action. Instead, you provide a safe space for disclosure, validate their experience, and support their autonomy. This trauma-informed approach honors their expertise about their own situation and helps rebuild the power and control that abuse took away."
+            },
+            {
+              "label": "Contact law enforcement immediately",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Convince them that the abuse is serious",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-3-3-kc-2",
+          "type": "knowledge-check",
+          "question": "What does the Community-Accountability Model teach us about preventing intimate partner violence?",
+          "options": [
+            {
+              "label": "Only individuals who cause harm need to change",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Prevention only happens through law enforcement",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Changes at any community level can ripple throughout the ecosystem, so community-based solutions at all levels are needed",
+              "correct": true,
+              "feedback": "The Community-Accountability Model shows that CHANGES AT ANY COMMUNITY LEVEL can RIPPLE THROUGHOUT THE ECOSYSTEM, so COMMUNITY-BASED SOLUTIONS AT ALL LEVELS are needed. IPV is socially supported behavior learned through multiple community influences. By changing mindsets, behaviors, and beliefs at the individual, primary, micro, macro, or global levels, those changes naturally impact the other levels. This means everyone has a role in prevention."
+            },
+            {
+              "label": "The global community has no impact on individual behavior",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-3-3-kc-3",
+          "type": "knowledge-check",
+          "question": "Why is it important to know resources like the National Domestic Violence Hotline BEFORE a survivor discloses to you?",
+          "options": [
+            {
+              "label": "So you can immediately transfer the survivor to someone else",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Because being prepared helps you provide immediate, practical support when someone trusts you with their disclosure",
+              "correct": true,
+              "feedback": "Being PREPARED with resources helps you provide IMMEDIATE, PRACTICAL SUPPORT when someone trusts you with their disclosure. When a survivor discloses, they're taking a risk and showing trust in you. Having resources ready (like the National Domestic Violence Hotline: 1-800-799-7233) allows you to offer concrete help while they're in a receptive state. This preparation demonstrates that you take IPV seriously and are ready to support them effectively."
+            },
+            {
+              "label": "Because you are required by law to provide resources",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "So you don't have to listen to the survivor's story",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

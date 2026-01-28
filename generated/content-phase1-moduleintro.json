@@ -1,0 +1,152 @@
+{
+  "moduleId": "module-intro",
+  "title": "Introduction",
+  "description": "Foundation for understanding intimate partner violence, its prevalence, and impact on individuals and communities.",
+  "weekNumber": 0,
+  "learningOutcomes": [
+    "Define intimate partner violence and its key characteristics",
+    "Recognize the prevalence and societal impact of IPV"
+  ],
+  "lessons": [
+    {
+      "lessonId": "lesson-intro-1",
+      "title": "Introduction: What is Intimate Partner Violence?",
+      "description": "Foundation for understanding intimate partner violence, its definition, prevalence, and why IPV awareness is critical for professionals across sectors.",
+      "duration": 5,
+      "objectives": [],
+      "contentBlocks": [
+        {
+          "id": "block-lesson-intro-1-hero",
+          "type": "hero-banner",
+          "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
+          "imageRatio": "21:9",
+          "overlayText": "Introduction: What is Intimate Partner Violence?"
+        },
+        {
+          "id": "block-lesson-intro-1-narration",
+          "type": "text",
+          "content": "Welcome to the surface of a profound journey. Like an iceberg, intimate partner violence has visible elements above the waterline—but much more lies hidden beneath. This course will guide you through all three zones: the visible surface, the twilight depths, and the profound darkness below, emerging with the knowledge to see what others don't."
+        },
+        {
+          "id": "block-lesson-intro-1-heading-1",
+          "type": "heading",
+          "level": 2,
+          "content": "Defining Intimate Partner Violence"
+        },
+        {
+          "id": "block-lesson-intro-1-content-1",
+          "type": "text",
+          "content": "## What is Intimate Partner Violence (IPV)?\n\nIntimate Partner Violence (IPV) is defined slightly differently depending on who is using the term. For this course, we will use the House of Ruth Maryland standard definition, which focuses on the experience of the survivor and addresses the survivor's need for support and services.\n\n**Two Critical Elements:**\n\nThe two most important elements to remember about the definition of intimate partner violence are:\n\n1. **It is a pattern of behaviors** - not isolated incidents\n2. **There is a power imbalance** between the intimate partners—one partner holds some power over the other\n\n### IPV vs. Domestic Violence\n\nMore commonly, you will hear the term \"domestic violence\" used when talking about intimate partner violence, but it is important to remember that **not all partners live together** and **not all violence in a home is between partners**.\n\nThe term \"intimate partner\" refers to any intimate relationship between people:\n- Long-term or short-term\n- Formal or casual\n- Public or private\n- Serious or not\n\n### Who Is Affected\n\nIntimate partner violence can happen to **anyone** regardless of:\n- Race\n- Age  \n- Sexual orientation\n- Religion\n- Ability\n- Gender\n\n### Forms of IPV\n\nIt can take many forms, including:\n- Physical abuse\n- Sexual abuse\n- Emotional abuse\n- Economic abuse\n- Psychological abuse\n\n### Broader Impact\n\nIPV impacts individuals, families, workplaces, and communities. Since intimate partner violence is framed within the global issue of violence against women, it is shaped and supported by societal, familial, and cultural norms and is complicated by the intersection of other cultural oppressions."
+        },
+        {
+          "id": "block-lesson-intro-1-heading-2",
+          "type": "heading",
+          "level": 2,
+          "content": "What You Will Learn"
+        },
+        {
+          "id": "block-lesson-intro-1-content-2",
+          "type": "text",
+          "content": "## Course Objectives\n\nDefining intimate partner violence is an important step in understanding the issue and how it is perceived, but definitions can only tell you so much. This course provides you with the foundational knowledge needed to recognize intimate partner violence and how to respond to survivors of it.\n\n**By the end of this course, you will be able to:**\n\n- **Identify** essential elements of intimate partner violence\n- **Identify** how sexual assault connects to intimate partner violence  \n- **Recognize** ways society impacts our views on violence against women\n- **Determine** appropriate responses to survivors of intimate partner violence\n\nAs you progress through this training, think of yourself as **Maria**, a coordinated entry worker conducting intake assessments; or **Dr. Patel**, a healthcare provider integrating IPV screening; or **Aisha**, an HR professional recognizing workplace warning signs; or **James**, an IPV advocate providing trauma-informed support. Each of these professionals encounters IPV in their work—and now, you will too."
+        },
+        {
+          "id": "block-lesson-intro-1-heading-3",
+          "type": "heading",
+          "level": 2,
+          "content": "Essential Resources"
+        },
+        {
+          "id": "block-lesson-intro-1-content-3",
+          "type": "text",
+          "content": "## Intimate Partner Violence Resources\n\nThroughout this course, you will find a number of current and key resources about abuse, theories, case studies, and approaches that feature statistics about intimate partner violence. In some cases, the resources are available by downloading documents embedded in the course itself, and other times you will be given a link to follow on the open web to view or read resources currently available.\n\n**The following resources are particularly helpful as you learn about and support survivors of intimate partner violence:**\n\n### Centers for Disease Control and Prevention (CDC)\n- National Intimate Partner and Sexual Violence Survey\n- IPV prevention resources\n- Statistical data and research\n\n### U.S. Department of Health and Human Services\n- Office on Women's Health\n- IPV support and intervention programs\n- Healthcare provider guidance\n\nThese evidence-based resources will support your learning throughout the course and provide reference materials for your professional practice."
+        },
+        {
+          "id": "block-lesson-intro-1-takeaways",
+          "type": "key-takeaway",
+          "content": "Intimate partner violence is defined by two critical elements: a pattern of behaviors and a power imbalance between partners\n\nIPV affects anyone regardless of race, age, sexual orientation, religion, ability, or gender\n\nIPV takes multiple forms: physical, sexual, emotional, economic, and psychological abuse\n\nThe term 'intimate partner' is broader than 'domestic'—not all partners live together\n\nThis course equips you to identify IPV, understand its connection to sexual violence, recognize societal impacts, and respond appropriately to survivors"
+        },
+        {
+          "id": "block-lesson-intro-1-kc-1",
+          "type": "knowledge-check",
+          "question": "According to the House of Ruth Maryland definition used in this course, what are the TWO most important elements of intimate partner violence?",
+          "options": [
+            {
+              "label": "A pattern of behaviors AND a power imbalance between partners",
+              "correct": true,
+              "feedback": "The two critical elements are: (1) IPV is a PATTERN of behaviors, not isolated incidents, and (2) there is a POWER IMBALANCE where one partner holds power over the other. These elements distinguish IPV from other types of conflict or violence."
+            },
+            {
+              "label": "Physical violence AND emotional abuse",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Living together AND being married",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Criminal charges AND restraining orders",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-intro-1-kc-2",
+          "type": "knowledge-check",
+          "question": "Why is the term 'intimate partner violence' more accurate than 'domestic violence'?",
+          "options": [
+            {
+              "label": "It only applies to married couples",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "Not all partners live together, and not all violence in a home is between partners",
+              "correct": true,
+              "feedback": "The term 'intimate partner violence' is more precise because it recognizes that not all intimate partners cohabitate (they may be dating, in casual relationships, etc.), and 'domestic' violence could refer to other family violence that isn't between intimate partners. IPV specifically describes violence between intimate partners regardless of living situation."
+            },
+            {
+              "label": "Domestic violence is the legal term, IPV is the medical term",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "IPV is less serious than domestic violence",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        },
+        {
+          "id": "block-lesson-intro-1-kc-3",
+          "type": "knowledge-check",
+          "question": "Which of the following is TRUE about who can experience intimate partner violence?",
+          "options": [
+            {
+              "label": "IPV primarily affects women from low-income communities",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "IPV can happen to anyone regardless of race, age, sexual orientation, religion, ability, or gender",
+              "correct": true,
+              "feedback": "Intimate partner violence can happen to ANYONE regardless of race, age, sexual orientation, religion, ability, or gender. One of the most harmful myths about IPV is that it only affects certain demographics. In reality, IPV crosses all boundaries and affects diverse communities. Recognizing this universality is essential for trauma-informed practice."
+            },
+            {
+              "label": "IPV only occurs in heterosexual relationships",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            },
+            {
+              "label": "IPV is most common among people with substance abuse issues",
+              "correct": false,
+              "feedback": "Not quite. Review the lesson content and try again."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "courseId": "IPV",
+  "courseLearningOutcomes": [
+    {
+      "id": "LO1",
+      "outcome": "Recognize various forms of intimate partner violence including physical, emotional, sexual, and economic abuse",
+      "primaryModules": [],
+      "lessons": {
+        "introduced": "",
+        "practiced": [],
+        "mastered": ""
+      }
+    },
+    {
+      "id": "LO2",
+      "outcome": "Analyze abusive relationship dynamics using the Power and Control Wheel framework",
+      "primaryModules": [],
+      "lessons": {
+        "introduced": "",
+        "practiced": [],
+        "mastered": ""
+      }
+    },
+    {
+      "id": "LO3",
+      "outcome": "Understand the unique characteristics and impacts of intimate partner sexual violence",
+      "primaryModules": [],
+      "lessons": {
+        "introduced": "",
+        "practiced": [],
+        "mastered": ""
+      }
+    },
+    {
+      "id": "LO4",
+      "outcome": "Apply trauma-informed approaches when responding to individuals experiencing IPV",
+      "primaryModules": [],
+      "lessons": {
+        "introduced": "",
+        "practiced": [],
+        "mastered": ""
+      }
+    },
+    {
+      "id": "LO5",
+      "outcome": "Develop and facilitate safety planning strategies with survivors",
+      "primaryModules": [],
+      "lessons": {
+        "introduced": "",
+        "practiced": [],
+        "mastered": ""
+      }
+    }
+  ],
+  "moduleOutcomeMapping": {
+    "module-intro": {
+      "title": "Introduction",
+      "primaryOutcomes": [],
+      "moduleLearningOutcomes": [
+        "Define intimate partner violence and its key characteristics",
+        "Recognize the prevalence and societal impact of IPV"
+      ]
+    },
+    "module-1": {
+      "title": "MODULE 1: Recognizing Intimate Partner Violence",
+      "primaryOutcomes": [],
+      "moduleLearningOutcomes": [
+        "Identify various types of intimate partner violence",
+        "Analyze relationship dynamics using the Power and Control Wheel",
+        "Categorize different patterns of IPV",
+        "Apply IPV recognition skills to case scenarios"
+      ]
+    },
+    "module-2": {
+      "title": "MODULE 2: Intimate Partner Sexual Violence",
+      "primaryOutcomes": [],
+      "moduleLearningOutcomes": [
+        "Define sexual violence and its forms",
+        "Understand societal factors contributing to sexual violence (rape culture)",
+        "Recognize unique aspects of sexual assault within intimate relationships",
+        "Identify myths and facts about intimate partner sexual violence"
+      ]
+    },
+    "module-3": {
+      "title": "MODULE 3: Responding to Intimate Partner Violence",
+      "primaryOutcomes": [],
+      "moduleLearningOutcomes": [
+        "Understand the multifaceted impact of IPV on victims/survivors",
+        "Apply trauma-informed principles when responding to IPV",
+        "Facilitate safety planning with survivors",
+        "Identify appropriate resources and referral pathways"
+      ]
+    }
+  }
+}

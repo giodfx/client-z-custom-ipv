@@ -1,0 +1,26 @@
+# Output folder (stored in R2, not GitHub)
+output/
+
+# Node modules if any
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+*.backup
+
+# Build artifacts
+dist/
+build/

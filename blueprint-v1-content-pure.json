@@ -1,0 +1,524 @@
+{
+  "id": "blueprint-IPV-2026",
+  "projectId": "IPV",
+  "createdAt": "2026-01-26",
+  "version": "1.0",
+  "projectMeta": {
+    "trainingType": "compliance",
+    "trainingTypePreset": "compliance",
+    "contentFormat": "standard",
+    "primaryLanguage": "en",
+    "localizationRequired": false,
+    "targetLanguages": []
+  },
+  "targetAudience": {
+    "jobRoles": [
+      "Healthcare professionals",
+      "Social workers",
+      "HR professionals",
+      "Employee assistance staff",
+      "Community support workers"
+    ],
+    "departments": [
+      "Human Resources",
+      "Healthcare",
+      "Social Services",
+      "Employee Support"
+    ],
+    "jobLevel": "all",
+    "priorKnowledge": "none"
+  },
+  "competencyFramework": {
+    "enabled": false,
+    "frameworkName": "",
+    "mappings": []
+  },
+  "courseStructure": {
+    "id": "course-IPV",
+    "title": "Recognizing and Responding to Intimate Partner Violence",
+    "description": "Comprehensive training on understanding, identifying, and responding to intimate partner violence with evidence-based frameworks and practical response strategies.",
+    "totalDuration": "45-60 minutes",
+    "learningOutcomes": [
+      "Recognize various forms of intimate partner violence including physical, emotional, sexual, and economic abuse",
+      "Analyze abusive relationship dynamics using the Power and Control Wheel framework",
+      "Understand the unique characteristics and impacts of intimate partner sexual violence",
+      "Apply trauma-informed approaches when responding to individuals experiencing IPV",
+      "Develop and facilitate safety planning strategies with survivors"
+    ],
+    "modules": [
+      {
+        "id": "module-intro",
+        "weekNumber": 0,
+        "title": "Introduction",
+        "description": "Foundation for understanding intimate partner violence, its prevalence, and impact on individuals and communities.",
+        "duration": "5-8 minutes",
+        "learningOutcomes": [
+          "Define intimate partner violence and its key characteristics",
+          "Recognize the prevalence and societal impact of IPV"
+        ],
+        "lessons": [
+          {
+            "id": "lesson-intro-1",
+            "title": "Introduction: What is Intimate Partner Violence?",
+            "duration": 5,
+            "objectives": [
+              "Define intimate partner violence",
+              "Understand the scope and prevalence of IPV",
+              "Recognize why IPV awareness is critical for professionals"
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "id": "text-intro-1-1",
+                "title": "Introduction to IPV"
+              },
+              {
+                "type": "image",
+                "id": "img-intro-1",
+                "title": "Title branding image"
+              },
+              {
+                "type": "text",
+                "id": "text-intro-1-2",
+                "title": "Defining IPV"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "module-1",
+        "weekNumber": 1,
+        "title": "MODULE 1: Recognizing Intimate Partner Violence",
+        "description": "In-depth exploration of the types, dynamics, and recognition of intimate partner violence using evidence-based frameworks.",
+        "duration": "15-20 minutes",
+        "learningOutcomes": [
+          "Identify various types of intimate partner violence",
+          "Analyze relationship dynamics using the Power and Control Wheel",
+          "Categorize different patterns of IPV",
+          "Apply IPV recognition skills to case scenarios"
+        ],
+        "lessons": [
+          {
+            "id": "lesson-1-1",
+            "title": "Who is Affected by Intimate Partner Violence?",
+            "duration": 3,
+            "objectives": [
+              "Identify demographics affected by IPV",
+              "Understand statistical prevalence across populations",
+              "Recognize that IPV affects diverse communities"
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "id": "text-1-1-1",
+                "title": "Demographics and prevalence"
+              },
+              {
+                "type": "image",
+                "id": "img-1-1-stats",
+                "title": "CDC statistics on IPV prevalence"
+              }
+            ]
+          },
+          {
+            "id": "lesson-1-2",
+            "title": "Types of Abuse",
+            "duration": 4,
+            "objectives": [
+              "Identify and describe physical abuse",
+              "Identify and describe emotional/psychological abuse",
+              "Identify and describe economic abuse",
+              "Identify and describe sexual abuse",
+              "Recognize technological abuse"
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "id": "text-1-2-1",
+                "title": "Overview of abuse types"
+              },
+              {
+                "type": "image",
+                "id": "img-1-2-types",
+                "title": "Types of Abuse infographic"
+              },
+              {
+                "type": "text",
+                "id": "text-1-2-2",
+                "title": "Physical abuse details"
+              },
+              {
+                "type": "text",
+                "id": "text-1-2-3",
+                "title": "Emotional abuse details"
+              },
+              {
+                "type": "text",
+                "id": "text-1-2-4",
+                "title": "Economic abuse details"
+              },
+              {
+                "type": "text",
+                "id": "text-1-2-5",
+                "title": "Technological abuse"
+              }
+            ]
+          },
+          {
+            "id": "lesson-1-3",
+            "title": "Power and Control Wheel",
+            "duration": 5,
+            "objectives": [
+              "Understand the Duluth Model's Power and Control Wheel framework",
+              "Identify the eight sections of the Power and Control Wheel",
+              "Recognize how abusers use power and control tactics",
+              "Contrast with the Equality Wheel"
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "id": "text-1-3-1",
+                "title": "Introduction to Power and Control Wheel"
+              },
+              {
+                "type": "image",
+                "id": "img-1-3-wheel",
+                "title": "Power and Control Wheel (Duluth Model)"
+              },
+              {
+                "type": "text",
+                "id": "text-1-3-2",
+                "title": "Wheel sections explained"
+              },
+              {
+                "type": "image",
+                "id": "img-1-3-equality",
+                "title": "Equality Wheel"
+              },
+              {
+                "type": "text",
+                "id": "text-1-3-3",
+                "title": "Equality vs. Control dynamics"
+              }
+            ]
+          },
+          {
+            "id": "lesson-1-4",
+            "title": "Categorizing Intimate Partner Violence",
+            "duration": 3,
+            "objectives": [
+              "Understand different patterns of IPV (situational vs. coercive control)",
+              "Recognize escalation patterns in abusive relationships",
+              "Identify risk factors for severe violence"
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "id": "text-1-4-1",
+                "title": "IPV categorization frameworks"
+              },
+              {
+                "type": "text",
+                "id": "text-1-4-2",
+                "title": "Patterns and escalation"
+              }
+            ]
+          },
+          {
+            "id": "lesson-1-5",
+            "title": "Case Analysis: Lois and James Sumpter",
+            "duration": 5,
+            "objectives": [
+              "Apply IPV recognition skills to a realistic case scenario",
+              "Identify Power and Control tactics in the case",
+              "Analyze relationship dynamics",
+              "Demonstrate critical thinking about IPV situations"
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "id": "text-1-5-1",
+                "title": "Case scenario presentation"
+              },
+              {
+                "type": "interactive",
+                "id": "int-1-5-1",
+                "component": "case-analysis",
+                "title": "Analyze the case"
+              },
+              {
+                "type": "text",
+                "id": "text-1-5-2",
+                "title": "Case debrief and key insights"
+              }
+            ]
+          }
+        ],
+        "moduleQuiz": {
+          "id": "quiz-module-1",
+          "title": "Module 1 Quiz: Recognizing Intimate Partner Violence",
+          "questionCount": 10,
+          "passingScore": 70
+        }
+      },
+      {
+        "id": "module-2",
+        "weekNumber": 2,
+        "title": "MODULE 2: Intimate Partner Sexual Violence",
+        "description": "Understanding sexual violence within intimate relationships, including societal context, prevalence, and unique characteristics of intimate partner sexual assault.",
+        "duration": "10-15 minutes",
+        "learningOutcomes": [
+          "Define sexual violence and its forms",
+          "Understand societal factors contributing to sexual violence (rape culture)",
+          "Recognize unique aspects of sexual assault within intimate relationships",
+          "Identify myths and facts about intimate partner sexual violence"
+        ],
+        "lessons": [
+          {
+            "id": "lesson-2-1",
+            "title": "What is Sexual Violence?",
+            "duration": 4,
+            "objectives": [
+              "Define sexual violence comprehensively",
+              "Identify different forms of sexual violence",
+              "Understand consent and its legal/ethical importance",
+              "Recognize sexual coercion tactics"
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "id": "text-2-1-1",
+                "title": "Defining sexual violence"
+              },
+              {
+                "type": "image",
+                "id": "img-2-1-framework",
+                "title": "Sexual violence framework diagram"
+              },
+              {
+                "type": "text",
+                "id": "text-2-1-2",
+                "title": "Consent and coercion"
+              }
+            ]
+          },
+          {
+            "id": "lesson-2-2",
+            "title": "Sexual Violence in Our Society",
+            "duration": 5,
+            "objectives": [
+              "Understand the concept of rape culture",
+              "Identify societal attitudes that normalize sexual violence",
+              "Recognize the rape culture pyramid",
+              "Understand the impact of societal attitudes on survivors"
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "id": "text-2-2-1",
+                "title": "Understanding rape culture"
+              },
+              {
+                "type": "image",
+                "id": "img-2-2-pyramid",
+                "title": "Rape Culture Pyramid"
+              },
+              {
+                "type": "text",
+                "id": "text-2-2-2",
+                "title": "Challenging rape culture"
+              }
+            ]
+          },
+          {
+            "id": "lesson-2-3",
+            "title": "Rape and Sexual Assault in the Context of Intimate Partner Violence",
+            "duration": 5,
+            "objectives": [
+              "Understand prevalence of sexual violence within intimate relationships",
+              "Recognize unique dynamics of intimate partner sexual assault",
+              "Identify barriers to reporting and help-seeking",
+              "Dispel myths about marital/relationship rape"
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "id": "text-2-3-1",
+                "title": "IPV sexual violence prevalence"
+              },
+              {
+                "type": "image",
+                "id": "img-2-3-stats",
+                "title": "Statistics on intimate partner sexual violence"
+              },
+              {
+                "type": "text",
+                "id": "text-2-3-2",
+                "title": "Unique dynamics and barriers"
+              },
+              {
+                "type": "text",
+                "id": "text-2-3-3",
+                "title": "Myths vs. facts"
+              }
+            ]
+          }
+        ],
+        "moduleQuiz": {
+          "id": "quiz-module-2",
+          "title": "Module 2 Quiz: Intimate Partner Sexual Violence",
+          "questionCount": 10,
+          "passingScore": 70
+        }
+      },
+      {
+        "id": "module-3",
+        "weekNumber": 3,
+        "title": "MODULE 3: Responding to Intimate Partner Violence",
+        "description": "Evidence-based strategies for responding to individuals experiencing IPV, including trauma-informed approaches, safety planning, and resource connection.",
+        "duration": "15-20 minutes",
+        "learningOutcomes": [
+          "Understand the multifaceted impact of IPV on victims/survivors",
+          "Apply trauma-informed principles when responding to IPV",
+          "Facilitate safety planning with survivors",
+          "Identify appropriate resources and referral pathways"
+        ],
+        "lessons": [
+          {
+            "id": "lesson-3-1",
+            "title": "The Impact of Intimate Partner Violence on Victims",
+            "duration": 5,
+            "objectives": [
+              "Understand psychological impacts of IPV (trauma, PTSD, depression, anxiety)",
+              "Recognize physical health consequences",
+              "Identify social and economic impacts",
+              "Understand barriers to leaving abusive relationships"
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "id": "text-3-1-1",
+                "title": "Psychological impacts"
+              },
+              {
+                "type": "text",
+                "id": "text-3-1-2",
+                "title": "Physical health consequences"
+              },
+              {
+                "type": "text",
+                "id": "text-3-1-3",
+                "title": "Social and economic impacts"
+              },
+              {
+                "type": "text",
+                "id": "text-3-1-4",
+                "title": "Why victims stay"
+              }
+            ]
+          },
+          {
+            "id": "lesson-3-2",
+            "title": "Safety Planning with Victims",
+            "duration": 6,
+            "objectives": [
+              "Understand the purpose and importance of safety planning",
+              "Identify key components of a comprehensive safety plan",
+              "Facilitate safety planning conversations",
+              "Recognize when to involve specialized IPV advocates"
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "id": "text-3-2-1",
+                "title": "Introduction to safety planning"
+              },
+              {
+                "type": "text",
+                "id": "text-3-2-2",
+                "title": "Safety plan components"
+              },
+              {
+                "type": "interactive",
+                "id": "int-3-2-1",
+                "component": "safety-planning-tool",
+                "title": "Safety planning exercise"
+              },
+              {
+                "type": "text",
+                "id": "text-3-2-3",
+                "title": "Best practices"
+              }
+            ]
+          },
+          {
+            "id": "lesson-3-3",
+            "title": "Responding to Someone Experiencing Intimate Partner Violence",
+            "duration": 7,
+            "objectives": [
+              "Apply trauma-informed principles (safety, trustworthiness, choice, collaboration, empowerment)",
+              "Use appropriate language and communication strategies",
+              "Identify when and how to offer resources",
+              "Recognize limitations and when to refer to specialists",
+              "Understand mandatory reporting requirements (where applicable)"
+            ],
+            "contentBlocks": [
+              {
+                "type": "text",
+                "id": "text-3-3-1",
+                "title": "Trauma-informed approach"
+              },
+              {
+                "type": "text",
+                "id": "text-3-3-2",
+                "title": "Communication strategies"
+              },
+              {
+                "type": "text",
+                "id": "text-3-3-3",
+                "title": "Resource connection"
+              },
+              {
+                "type": "text",
+                "id": "text-3-3-4",
+                "title": "Professional boundaries and referrals"
+              },
+              {
+                "type": "interactive",
+                "id": "int-3-3-1",
+                "component": "scenario-response",
+                "title": "Responding to disclosure scenario"
+              }
+            ]
+          }
+        ],
+        "moduleQuiz": {
+          "id": "quiz-module-3",
+          "title": "Module 3 Quiz: Responding to Intimate Partner Violence",
+          "questionCount": 10,
+          "passingScore": 70
+        }
+      }
+    ],
+    "finalAssessment": {
+      "id": "final-assessment",
+      "title": "ASSESSMENT: Recognizing and Responding to Intimate Partner Violence",
+      "description": "Comprehensive assessment covering all course content including recognition, dynamics, sexual violence, impacts, and response strategies",
+      "questionCount": 20,
+      "passingScore": 70
+    }
+  },
+  "metadata": {
+    "phase": "0-blueprint",
+    "status": "draft",
+    "notes": [
+      "Blueprint created from SCORM extraction",
+      "Total extracted lessons: 18 (including quizzes and assessments)",
+      "Image catalog available with 39 images",
+      "Key frameworks to preserve: Power & Control Wheel, Equality Wheel, Rape Culture Pyramid",
+      "Focus on trauma-informed language throughout",
+      "Case-based learning with Lois and James Sumpter case study"
+    ]
+  }
+}

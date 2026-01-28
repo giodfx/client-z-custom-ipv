@@ -1,0 +1,463 @@
+{
+  "version": "1.0",
+  "projectId": "IPV",
+  "courseTitle": "What You Don't See",
+  "createdAt": "2026-01-26T00:00:00Z",
+
+  "experienceMetaphor": {
+    "name": "The Iceberg - What You Don't See",
+    "concept": "Like an iceberg, intimate partner violence has visible and hidden dimensions. Learners descend through three zones to discover the full depth of IPV dynamics, impacts, and responses.",
+    "worldDescription": "An ethereal underwater journey from the surface (visible signs) through the twilight zone (sexual violence) to the depths (impact and response). The iceberg metaphor represents how most IPV is hidden beneath the surface.",
+    "emotionalArc": {
+      "beginning": "Surface awareness - seeing the visible 10% of IPV",
+      "middle": "Twilight descent - understanding hidden dynamics and sexual violence",
+      "end": "Deep knowledge - equipped to respond with trauma-informed approaches"
+    },
+    "moduleZones": {
+      "surface": {
+        "name": "The Surface Zone",
+        "module": "Module 1: Recognizing Intimate Partner Violence",
+        "color": "#38b2ac",
+        "description": "The visible tip of the iceberg - recognizing patterns, types, and Power & Control dynamics",
+        "visualTreatment": "Bright teal waters, aurora lights, clear visibility"
+      },
+      "twilight": {
+        "name": "The Twilight Zone",
+        "module": "Module 2: Intimate Partner Sexual Violence",
+        "color": "#4a90a8",
+        "description": "Deeper waters where light fades - understanding sexual violence, rape culture, and hidden assaults",
+        "visualTreatment": "Blue-purple gradient, dimming light, mysterious depths"
+      },
+      "deep": {
+        "name": "The Deep",
+        "module": "Module 3: Responding to Intimate Partner Violence",
+        "color": "#2a5a7a",
+        "description": "The profound depths - understanding impact, trauma, and survivor-centered response strategies",
+        "visualTreatment": "Deep navy-purple, volumetric light rays from above, quiet profundity"
+      }
+    }
+  },
+
+  "toneAndVoice": {
+    "voice": "Compassionate guide and trauma-informed educator",
+    "voiceDescription": "Speaks as a knowledgeable companion on a journey of discovery, balancing expertise with empathy, wonder with gravity",
+    "tone": "Warm, professional, contemplative, trauma-informed",
+    "toneDescription": "Authoritative yet gentle, like a guide leading learners through deep waters. Acknowledges the weight of the topic while maintaining hope and empowerment.",
+    "formalityLevel": 3,
+    "formalityDescription": "Professional but approachable - not clinical or detached, not overly casual. Conversational depth.",
+    "person": "second",
+    "personUsage": "Address learner as 'you' for instructions and reflection; use 'we' when discussing shared professional journeys",
+    "readingLevel": "8th grade",
+    "readingLevelNotes": "Core content accessible to all; technical/clinical terms always explained in context. Use metaphors to clarify complex concepts."
+  },
+
+  "contentLanguageGuidelines": {
+    "metaphorConsistency": {
+      "surface": "Use 'surface-level,' 'visible signs,' 'what we can see,' 'the tip of the iceberg'",
+      "twilight": "Use 'beneath the surface,' 'dimming light,' 'descending deeper,' 'hidden currents'",
+      "deep": "Use 'profound depths,' 'full understanding,' 'deep waters,' 'illuminating the darkness'"
+    },
+    "colorPsychologyMapping": {
+      "teal": "#38b2ac - Healing, clarity, safety - use for Surface Zone content and empowerment messaging",
+      "oceanBlue": "#2a5a7a - Depth, trust, professionalism - use for Deep Zone content and response strategies",
+      "twilightBlue": "#4a90a8 - Transition, complexity - use for Twilight Zone and nuanced topics",
+      "warmGold": "#ffd700 - Hope, breaking free, light - use for empowerment, safety, and survivor strength",
+      "softPeach": "#ffd4b8 - Warmth, care, humanity - use for support and compassion messaging",
+      "deepNavy": "#1a1a2e - Foundation, seriousness - use for backgrounds and framing"
+    },
+    "imageryToContent": {
+      "style": "Ethereal watercolor silhouettes with gradient backgrounds - match image style to content depth",
+      "mood": "Contemplative, hopeful, empowering - dreamlike quality that respects the gravity of the topic",
+      "metaphoricalConcepts": "Freedom (arms open, light rays), Support (people connecting), Breaking Free (breaking chains), Rising (ascending to light), Protection (shields, safe spaces)"
+    },
+    "visualDensityToContent": {
+      "whitespace": "Generous breathing room - like surfacing for air between deep dives",
+      "typography": "Clean, modern Inter font - readable in deep waters and bright surfaces alike",
+      "contentPacing": "Short paragraphs, clear headings, allow processing time between heavy concepts"
+    },
+    "traumaInformedPrinciples": {
+      "predictability": "Consistent zone structure, clear navigation, no surprise sensitive content",
+      "control": "Offer choices, respect learner pace, provide resource access throughout",
+      "safety": "Prominent 'Need Support?' button always visible, crisis resources at every depth",
+      "trustworthiness": "Evidence-based information, source attribution, honest acknowledgment of complexity"
+    }
+  },
+
+  "terminologySubstitutions": [
+    {
+      "instead": "abuser",
+      "use": "person who causes harm OR abusive partner (context-dependent)",
+      "rationale": "Avoids defining someone solely by behavior; use 'abusive partner' when clarity requires"
+    },
+    {
+      "instead": "domestic violence",
+      "use": "intimate partner violence",
+      "rationale": "More inclusive - includes relationships beyond cohabitation"
+    },
+    {
+      "instead": "battered woman",
+      "use": "person experiencing abuse OR survivor",
+      "rationale": "Gender-inclusive, person-first language"
+    },
+    {
+      "instead": "Why doesn't she leave?",
+      "use": "What barriers exist?",
+      "rationale": "Shifts from blaming survivor to understanding systemic barriers"
+    },
+    {
+      "instead": "claims to be",
+      "use": "reports",
+      "rationale": "Avoids implying doubt about survivor accounts"
+    },
+    {
+      "instead": "alleged",
+      "use": "reported",
+      "rationale": "Neutral language without casting doubt"
+    },
+    {
+      "instead": "provoked",
+      "use": "[omit - reframe entirely]",
+      "rationale": "Never imply survivors cause abuse"
+    },
+    {
+      "instead": "simple",
+      "use": "straightforward",
+      "rationale": "Avoids minimizing IPV complexity"
+    },
+    {
+      "instead": "obviously",
+      "use": "[omit]",
+      "rationale": "Never assume learner knowledge or survivor recognition of abuse"
+    },
+    {
+      "instead": "victim",
+      "use": "victim OR survivor (context-dependent)",
+      "rationale": "Both valid; 'victim' for active abuse situations, 'survivor' for empowerment contexts"
+    }
+  ],
+
+  "visualIdentity": {
+    "colorPalette": {
+      "primary": {
+        "main": "#38b2ac",
+        "light": "#4fd1c5",
+        "dark": "#2c7a7b",
+        "name": "Teal - Healing & Clarity (Surface Zone)"
+      },
+      "secondary": {
+        "main": "#2a5a7a",
+        "light": "#4a90a8",
+        "dark": "#1a3a5a",
+        "name": "Ocean Blue - Depth & Trust (Deep Zone)"
+      },
+      "accent": {
+        "main": "#ffd700",
+        "light": "#ffe44d",
+        "dark": "#ccac00",
+        "name": "Warm Gold - Hope & Light"
+      },
+      "etherealDepth": {
+        "deepNavy": "#1a1a2e",
+        "twilightPurple": "#2a1a3e",
+        "oceanBlue": "#2a5a7a",
+        "teal": "#38b2ac",
+        "brightCyan": "#80ffff",
+        "warmGold": "#ffd700",
+        "softPeach": "#ffd4b8"
+      },
+      "moduleZoneColors": {
+        "surface": "#38b2ac",
+        "twilight": "#4a90a8",
+        "deep": "#2a5a7a"
+      },
+      "semantic": {
+        "success": "#10b981",
+        "warning": "#f59e0b",
+        "error": "#ef4444",
+        "info": "#38b2ac",
+        "safety": "#ffd700"
+      },
+      "backgrounds": {
+        "primary": "#ffffff",
+        "secondary": "#f5f5f7",
+        "dark": "#1a1a2e",
+        "card": "#ffffff"
+      }
+    },
+
+    "typography": {
+      "headingFont": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "bodyFont": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "headingWeight": "600",
+      "bodyWeight": "400",
+      "captionWeight": "300"
+    },
+
+    "imagery": {
+      "styleName": "Ethereal Depth - Watercolor Silhouettes",
+      "styleDescription": "Dreamlike watercolor paintings featuring silhouette figures against gradient backgrounds with volumetric light effects",
+      "rendering": "Soft watercolor textures, gradient color washes, volumetric god rays, luminescent effects, ethereal atmosphere",
+      "subjects": "Silhouette figures (no facial details), metaphorical concepts, light and depth imagery, connection and support",
+      "mood": "Ethereal, hopeful, contemplative, empowering, dreamlike yet professional",
+      "colorTreatment": "Teal-purple-gold gradient palette matching iceberg/underwater theme. Zone-appropriate colors.",
+
+      "approvedStyles": [
+        "Silhouette + Watercolor Gradient (primary for all people)",
+        "Rising to Light (empowerment, freedom, hope)",
+        "Breaking Free (golden chains breaking, liberation)",
+        "Support Circle (people connecting, community support)",
+        "Protective Shield (safety concepts, boundaries)",
+        "Descending Journey (moving through water zones)",
+        "Aurora Lights (hope, beauty in darkness)",
+        "Window of Hope (transitions, looking forward)",
+        "Healing Hands (care, compassion)",
+        "Path to Safety (journey, progress)"
+      ],
+
+      "zoneSpecificImagery": {
+        "surface": {
+          "colors": ["#38b2ac", "#4fd1c5", "#80ffff", "#d8e8f0"],
+          "mood": "Bright, clear, empowering",
+          "lightQuality": "Bright, hopeful, visible",
+          "examples": "Person with arms open to light, community circle, recognition moments"
+        },
+        "twilight": {
+          "colors": ["#4a90a8", "#2a1a3e", "#6b8fa8", "#a8c8db"],
+          "mood": "Mysterious, deeper understanding, complexity",
+          "lightQuality": "Dimming, transitional, revealing hidden depths",
+          "examples": "Descending figures, hidden currents, purple-blue gradients"
+        },
+        "deep": {
+          "colors": ["#2a5a7a", "#1a1a2e", "#ffd700", "#38b2ac"],
+          "mood": "Profound, contemplative, empowering",
+          "lightQuality": "God rays from above, illuminating darkness, hope in depths",
+          "examples": "Breaking chains, protective shields, rising to surface, support networks"
+        }
+      },
+
+      "avoidList": [
+        "Photorealistic people or faces",
+        "Images of physical injury or violence",
+        "Cowering or helpless poses",
+        "Gendered stereotypes",
+        "Harsh or aggressive imagery",
+        "Stock photo aesthetic",
+        "Cartoon or anime style",
+        "Text rendered in images",
+        "Hard edges or sharp lines",
+        "Literal/obvious imagery (use metaphor instead)"
+      ],
+
+      "mustReuseFromSource": [
+        "Power & Control Wheel (Duluth Model) - 4 variations - PRESERVE EXACTLY",
+        "Equality Wheel diagram - PRESERVE EXACTLY",
+        "CDC statistical infographics - 3 images - PRESERVE EXACTLY",
+        "Sexual violence framework diagrams - 2 images - PRESERVE EXACTLY",
+        "Rape Culture Pyramid diagram - PRESERVE EXACTLY",
+        "Types of Abuse infographic - PRESERVE EXACTLY"
+      ],
+
+      "imageCatalogReference": "image-catalog.json - 39 cataloged source images with tags and context"
+    }
+  },
+
+  "terminology": {
+    "course": "Journey",
+    "module": "Zone",
+    "lesson": "Lesson",
+    "quiz": "Knowledge Check",
+    "progress": "Depth Progress",
+    "complete": "Emerged",
+    "resources": "Lifelines",
+    "custom": {
+      "contentWarning": "Content Note",
+      "safetyResources": "Need Support?",
+      "knowledgeCheck": "Check Your Understanding",
+      "moduleIntro": "Entering the [Zone Name]",
+      "moduleComplete": "Rising from [Zone Name]",
+      "quizSuccess": "Well done - continue your descent",
+      "quizReview": "Let's review this together"
+    }
+  },
+
+  "learnerJourney": {
+    "navigationModel": "linear-descent-with-lifelines",
+    "progressionType": "zone-based-competency",
+    "levels": [
+      {
+        "id": "surface-intro",
+        "title": "Introduction: What You Don't See",
+        "zone": "Surface",
+        "unlockedAt": "course-start",
+        "description": "Understanding the iceberg of intimate partner violence"
+      },
+      {
+        "id": "zone-surface",
+        "title": "The Surface Zone",
+        "zone": "Surface",
+        "unlockedAt": "intro-complete",
+        "description": "Module 1: Recognizing Intimate Partner Violence"
+      },
+      {
+        "id": "zone-twilight",
+        "title": "The Twilight Zone",
+        "zone": "Twilight",
+        "unlockedAt": "module-1-complete",
+        "description": "Module 2: Intimate Partner Sexual Violence"
+      },
+      {
+        "id": "zone-deep",
+        "title": "The Deep",
+        "zone": "Deep",
+        "unlockedAt": "module-2-complete",
+        "description": "Module 3: Responding to Intimate Partner Violence"
+      },
+      {
+        "id": "emergence",
+        "title": "Emergence",
+        "zone": "Surface Return",
+        "unlockedAt": "module-3-complete",
+        "description": "Final Assessment - Rising with knowledge"
+      }
+    ],
+    "motivationalMechanics": [
+      "Visual depth progression (descending through zones)",
+      "Zone completion unlocks next depth",
+      "'Need Support?' lifeline always visible",
+      "Emergence metaphor for completion"
+    ]
+  },
+
+  "lessonDesign": {
+    "layout": "ethereal-content-focused",
+    "headerStyle": {
+      "type": "zone-specific-hero",
+      "aspectRatio": "16:5",
+      "overlay": "gradient-zone-color",
+      "titlePosition": "center-left"
+    },
+    "contentWidth": "720px",
+    "readingExperience": {
+      "fontSize": "16px",
+      "lineHeight": "1.5",
+      "paragraphSpacing": "1.5rem",
+      "fontFamily": "Inter"
+    },
+    "specialPatterns": {
+      "contentWarning": {
+        "placement": "before-sensitive-content",
+        "style": "warm-gold-border-soft-background",
+        "options": ["Continue", "View Lifelines"]
+      },
+      "frameworkDiagram": {
+        "placement": "full-width-centered",
+        "treatment": "Preserve original diagrams exactly",
+        "caption": "Source attribution required"
+      },
+      "lifelineCard": {
+        "placement": "fixed-top-right",
+        "style": "Need Support? button with teal-gold gradient",
+        "alwaysVisible": true
+      }
+    }
+  },
+
+  "interactionPatterns": {
+    "preferredComponents": [
+      {
+        "component": "case-analysis-interactive",
+        "useCase": "Lois and James Sumpter case study"
+      },
+      {
+        "component": "power-control-wheel-interactive",
+        "useCase": "Matching examples to Power & Control Wheel sections"
+      },
+      {
+        "component": "knowledge-check-scenario",
+        "useCase": "Workplace recognition scenarios"
+      },
+      {
+        "component": "safety-planning-tool",
+        "useCase": "Interactive safety planning exercise"
+      }
+    ],
+    "feedbackStyle": {
+      "correct": "Affirming with metaphor",
+      "incorrect": "Supportive redirection",
+      "tone": "Encouraging guide, non-punitive"
+    },
+    "assessmentPhilosophy": {
+      "formative": "Knowledge checks after key concepts",
+      "summative": "Zone quizzes (70%) + Final assessment",
+      "passingScore": 70,
+      "retryPolicy": "unlimited-with-supportive-feedback"
+    }
+  },
+
+  "accessibilityRequirements": {
+    "wcagLevel": "AA",
+    "colorContrast": {
+      "normalText": "4.5:1 minimum",
+      "largeText": "3:1 minimum",
+      "uiComponents": "3:1 minimum"
+    },
+    "keyboardNavigation": "Full support required",
+    "screenReaderSupport": {
+      "imageDescriptions": "Describe metaphorical meaning",
+      "frameworkDiagrams": "Full text descriptions required",
+      "contentWarnings": "Announced before sensitive sections"
+    },
+    "motionPreferences": "Respect prefers-reduced-motion",
+    "readingLevel": "8th grade or below for core content"
+  },
+
+  "brandingContext": {
+    "primaryBrand": "Salus Community",
+    "parentOrganization": "House of Ruth Maryland",
+    "logoPlacement": "Top left: Salus Community",
+    "brandColors": {
+      "salusTeal": "#38b2ac",
+      "hrMPurple": "#2a1a3e"
+    }
+  },
+
+  "audienceAdaptation": {
+    "primary": "Multi-sector professionals (Healthcare, HR, Social Services, Community Support)",
+    "secondary": ["Law enforcement", "Faith community leaders", "Educators"],
+    "adaptationNotes": {
+      "healthcare": "Connect to patient care frameworks",
+      "hr": "Workplace response focus",
+      "socialServices": "Resource connection emphasis",
+      "general": "Foundational knowledge for all levels"
+    }
+  },
+
+  "sourceContentPreservation": {
+    "approach": "preserve-and-enhance-with-iceberg-metaphor",
+    "preserveExactly": [
+      "Power and Control Wheel (Duluth Model)",
+      "Equality Wheel framework",
+      "CDC statistical infographics",
+      "Sexual violence framework diagrams",
+      "Rape Culture Pyramid",
+      "Types of Abuse categorization",
+      "Case study: Lois and James Sumpter"
+    ],
+    "enhanceWithMetaphor": [
+      "Frame content with iceberg/zone metaphors",
+      "Add zone transition moments",
+      "Connect to surface/twilight/deep themes"
+    ],
+    "replaceWithNewStyle": [
+      "Stock photography → Ethereal watercolor silhouettes",
+      "Generic icons → Metaphorical concept images",
+      "Hero images → Zone-specific watercolor scenes"
+    ]
+  },
+
+  "designFilesLocation": {
+    "mockups": "design ideas/",
+    "htmlPrototypes": ["design ideas/index.html", "design ideas/lesson-1-1.html"],
+    "imageStyleSamples": "design ideas/image styles/"
+  }
+}
