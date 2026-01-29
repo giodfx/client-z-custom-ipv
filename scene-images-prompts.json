@@ -1,0 +1,2808 @@
+{
+  "projectId": "IPV",
+  "sourceType": "video-scripts",
+  "totalVideos": 13,
+  "totalScenes": 163,
+  "scenesWithQualityIssues": 148,
+  "extractedAt": "2026-01-27T03:15:11.884Z",
+  "prompts": [
+    {
+      "sceneId": "lesson-1-1-scene-1",
+      "lessonId": "lesson-1-1",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of diverse group of silhouettes in overlapping scattered arrangement suggesting community diversity. Solid teal, purple, and cream silhouettes of varied heights against soft peach and purple watercolor background. Centered composition. Inclusive, respectful mood with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-1-scene-2",
+      "lessonId": "lesson-1-1",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of silhouette gesturing with open palm in explaining pose positioned on LEFT SIDE of frame. Teal silhouette with cream light rays flowing from palm against purple and peach watercolor background. Teaching, informing theme. RIGHT SIDE empty for text overlay. Painterly style with soft edges. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-1-scene-3",
+      "lessonId": "lesson-1-1",
+      "sceneNumber": 3,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of three silhouettes of different heights in semi-circle formation looking toward horizon, positioned on RIGHT SIDE of frame. Teal and purple silhouettes against cream and peach watercolor background suggesting generational diversity. LEFT SIDE empty for text overlay. Respectful, inclusive mood. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-1-scene-4",
+      "lessonId": "lesson-1-1",
+      "sceneNumber": 4,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of flowing ribbons interweaving in harmonious pattern. Soft teal, purple, cream, and peach ribbons blending together against watercolor background. Centered composition. Symbolic representation of diverse communities interconnected. Painterly style with organic flowing edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-1-scene-5",
+      "lessonId": "lesson-1-1",
+      "sceneNumber": 5,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of two silhouettes walking together in same direction side by side positioned on LEFT SIDE of frame. Solid teal silhouettes moving toward cream light with purple and peach atmospheric watercolor background. Partnership, solidarity theme. RIGHT SIDE empty for text overlay. No facial features or details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-1-scene-6",
+      "lessonId": "lesson-1-1",
+      "sceneNumber": 6,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of silhouette in profile with hand touching abstract symbol positioned on RIGHT SIDE of frame. Teal silhouette reaching toward cream glowing circular symbol against purple and peach watercolor background. Contemplation, understanding theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-1-1-scene-7",
+      "lessonId": "lesson-1-1",
+      "sceneNumber": 7,
+      "template": "diagonal",
+      "visualDescription": "Watercolor painting of cascade of light falling like waterfall into gathering pool below. Cream and peach light cascading down through teal and purple atmospheric watercolor. Centered composition. Symbolic representation of universal impact and understanding flowing to all. Painterly style with visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-1-scene-8",
+      "lessonId": "lesson-1-1",
+      "sceneNumber": 8,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of protective shelter shape formed by abstract hands with light glowing inside positioned on LEFT SIDE of frame. Teal hands forming protective arch over cream light with purple and peach watercolor background. Care, protection theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-1-1-scene-9",
+      "lessonId": "lesson-1-1",
+      "sceneNumber": 9,
+      "template": "split-right",
+      "visualDescription": "Watercolor illustration of interlocking puzzle pieces in teal, purple, cream, and peach fitting together harmoniously positioned on RIGHT SIDE of frame. Soft watercolor edges blending pieces together against atmospheric background. Symbolic representation of intersectionality. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-1-scene-10",
+      "lessonId": "lesson-1-1",
+      "sceneNumber": 10,
+      "template": "final",
+      "visualDescription": "Watercolor painting of silhouettes gathered in radial formation around central light source with all figures connected by light rays. Teal and purple silhouettes with cream light radiating from center against peach watercolor background. Centered composition. Universal support, connection theme with painterly textures and visible brushstrokes. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-2-scene-1",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of sprouting plants with five stems reaching upward toward light. Teal and purple stems growing from cream base with peach light above against soft watercolor background. Centered composition. Growth of understanding theme with painterly textures and visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-2-scene-2",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of single silhouette in sitting meditation pose with hands resting calmly positioned on LEFT SIDE of frame. Teal silhouette surrounded by protective cream light against purple and peach watercolor background. Peaceful, recovery theme. RIGHT SIDE empty for text overlay. Painterly style with soft edges. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-1-2-scene-3",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 3,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of silhouette standing at window opening looking toward cream and peach light positioned on RIGHT SIDE of frame. Teal silhouette framed by purple architectural elements with light streaming in. Hope, perspective theme. LEFT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-2-scene-4",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 4,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of single glowing orb of cream light surrounded by breaking purple chains with teal light rays emerging outward. Symbolic representation of isolation being broken. Peach and purple watercolor background. Centered composition. Freedom, liberation theme. Painterly style with visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-2-scene-5",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 5,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of two silhouettes with one helping lift the other upward positioned on LEFT SIDE of frame. Teal silhouettes with cream light flowing between them showing support against purple and peach watercolor background. Assistance, empowerment theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-2-scene-6",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 6,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of single silhouette with thoughtful hand near chin in contemplative pose positioned on RIGHT SIDE of frame. Teal silhouette surrounded by soft purple and cream watercolor washes. Serious, respectful mood. LEFT SIDE empty for text overlay. Painterly style. No facial features or details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-1-2-scene-7",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 7,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of silhouette with arm pointing toward horizon in decisive gesture positioned on LEFT SIDE of frame. Teal silhouette with cream light emanating from pointing hand toward peach horizon against purple watercolor background. Direction, awareness theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-1-2-scene-8",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 8,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of tree branches spreading outward with interconnected teal and purple branches against cream sky. Peach and purple atmospheric watercolor at base. Centered composition. Symbolic representation of interconnected abuse patterns. Painterly style with organic edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-2-scene-9",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 9,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of winding path through calm meadow with wildflowers positioned on RIGHT SIDE of frame. Teal path with purple and peach wildflowers against cream and soft watercolor background. Journey, progression theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-2-scene-10",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 10,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of silhouette in profile walking forward with determined posture positioned on LEFT SIDE of frame. Teal silhouette moving toward cream light with purple and peach atmospheric watercolor background. Determination, recognition theme. RIGHT SIDE empty for text overlay. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-2-scene-11",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 11,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of two silhouettes back to back supporting each other positioned on RIGHT SIDE of frame. Solid teal and purple silhouettes leaning together for mutual support against cream and peach watercolor background. Solidarity, recovery theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-2-scene-12",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 12,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of lighthouse beam cutting through soft mist with teal tower and cream light rays spreading across purple and peach watercolor background. Centered composition. Symbolic representation of guidance and recognition. Painterly style with visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-2-scene-13",
+      "lessonId": "lesson-1-2",
+      "sceneNumber": 13,
+      "template": "final",
+      "visualDescription": "Watercolor painting of multiple silhouettes standing together in ascending pyramid formation with cream light glowing at apex. Teal and purple silhouettes of varied heights supporting each other. Centered composition. Empowerment, collective strength theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-3-scene-1",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of protective circular wheel pattern with eight segments radiating from center. Teal and purple segments arranged around cream central hub against peach watercolor background. Centered composition. Framework, structure theme with painterly textures and visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-3-scene-2",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of single silhouette with arms outstretched wide in embracing gesture positioned on LEFT SIDE of frame. Teal silhouette with cream light rays extending outward against purple and peach watercolor background. Openness, explanation theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-3-scene-3",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 3,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of calm lake with reflections and ripples emanating from center positioned on RIGHT SIDE of frame. Teal and purple water with cream light reflecting across surface against peach sky. Impact, consequence theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-3-scene-4",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 4,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of bridge spanning across space connecting two shores with teal structure over purple water and cream light at connection point. Peach sky above. Centered composition. Symbolic representation of reconnection after isolation. Painterly style with organic edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-3-scene-5",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 5,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of two silhouettes in mirror gesture pose facing each other positioned on LEFT SIDE of frame. Teal silhouettes with matching poses and cream light between them against purple and peach watercolor background. Balance, reality theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-3-scene-6",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 6,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of silhouettes gathered around central light with protective circle formation positioned on RIGHT SIDE of frame. Teal and purple silhouettes with cream light glowing protectively in center against soft peach watercolor background. Protection, care theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-3-scene-7",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 7,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of single silhouette sitting in calm contemplative pose with hands resting positioned on LEFT SIDE of frame. Teal silhouette surrounded by protective cream light against purple and peach watercolor background. Reflection, healing theme. RIGHT SIDE empty for text overlay. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-1-3-scene-8",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 8,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of ascending steps or platforms leading upward with teal and purple steps toward cream light above. Peach watercolor background. Centered composition. Symbolic representation of financial independence and freedom. Painterly style with visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-3-scene-9",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 9,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of silhouette with one hand extended in stop gesture positioned on RIGHT SIDE of frame. Teal silhouette with firm posture and cream light radiating from palm against purple and peach watercolor background. Boundary, protection theme. LEFT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-1-3-scene-10",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 10,
+      "template": "diagonal",
+      "visualDescription": "Watercolor painting of beach shoreline with gentle waves on cream sand. Teal and purple water meeting peach shore with soft watercolor sky. Centered composition. Peace, transition theme representing movement away from violence. Painterly style with soft edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-3-scene-11",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 11,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of two silhouettes in supportive teaching pose with one gesturing, one listening positioned on LEFT SIDE of frame. Teal silhouettes with cream light flowing between them showing knowledge sharing against purple and peach watercolor background. Partnership, equality theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-3-scene-12",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 12,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of constellation pattern with connected teal and purple stars linked by cream light rays against peach and purple watercolor background positioned on RIGHT SIDE of frame. Pattern recognition theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-3-scene-13",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 13,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of open book with cream light emerging and spreading outward in teal and purple rays. Soft watercolor background in peach tones. Centered composition. Symbolic representation of knowledge illuminating understanding. Painterly style with visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-3-scene-14",
+      "lessonId": "lesson-1-3",
+      "sceneNumber": 14,
+      "template": "final",
+      "visualDescription": "Watercolor painting of silhouettes in semi-circle formation all looking toward shared horizon with cream and peach light ahead. Teal and purple silhouettes standing together. Centered composition. Collective understanding, forward movement theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-4-scene-1",
+      "lessonId": "lesson-1-4",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of branching pathways diverging from single origin point. Teal and purple paths flowing outward against cream base with peach watercolor background. Centered composition. Diversity of patterns theme with painterly textures and visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-4-scene-2",
+      "lessonId": "lesson-1-4",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of silhouette in teaching gesture with one arm extended positioned on LEFT SIDE of frame. Teal silhouette with cream light emanating from open palm against purple and peach watercolor background. Education, framework theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-4-scene-3",
+      "lessonId": "lesson-1-4",
+      "sceneNumber": 3,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of two silhouettes in animated conversation pose positioned on RIGHT SIDE of frame. Teal and purple silhouettes with dynamic gestures and cream light between them against peach watercolor background. Conflict, tension theme. LEFT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-4-scene-4",
+      "lessonId": "lesson-1-4",
+      "sceneNumber": 4,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of heavy storm clouds with teal and purple masses parting to reveal cream light breaking through. Peach atmospheric glow at horizon. Centered composition. Symbolic representation of controlling atmosphere being challenged. Painterly style with dramatic edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-4-scene-5",
+      "lessonId": "lesson-1-4",
+      "sceneNumber": 5,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of single silhouette in confined space with arms reaching upward toward opening with cream light positioned on LEFT SIDE of frame. Teal silhouette surrounded by purple boundaries with peach light above. Constraint, limitation theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-4-scene-6",
+      "lessonId": "lesson-1-4",
+      "sceneNumber": 6,
+      "template": "diagonal",
+      "visualDescription": "Watercolor painting of circular wave pattern with teal and purple waves flowing in cycle around cream center. Peach watercolor background. Centered composition. Symbolic representation of cyclical pattern. Painterly style with flowing brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-4-scene-7",
+      "lessonId": "lesson-1-4",
+      "sceneNumber": 7,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of ascending mountain silhouette with teal peaks rising against cream and peach sky positioned on RIGHT SIDE of frame. Purple atmospheric base with increasing height. Growth, escalation theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-4-scene-8",
+      "lessonId": "lesson-1-4",
+      "sceneNumber": 8,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of alert lighthouse with teal structure and bright cream beacon cutting through purple mist positioned on LEFT SIDE of frame. Peach atmospheric glow in background. Warning, awareness theme. RIGHT SIDE empty for text overlay. Painterly style with dramatic lighting. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-4-scene-9",
+      "lessonId": "lesson-1-4",
+      "sceneNumber": 9,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of silhouette standing at crossroads with two paths diverging positioned on RIGHT SIDE of frame. Teal silhouette at intersection with cream light illuminating both paths against purple and peach watercolor background. Decision, danger theme. LEFT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-4-scene-10",
+      "lessonId": "lesson-1-4",
+      "sceneNumber": 10,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of compass with teal and purple directional points around cream central star. Peach watercolor background with soft atmospheric quality. Centered composition. Symbolic representation of guided direction and appropriate response. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-4-scene-11",
+      "lessonId": "lesson-1-4",
+      "sceneNumber": 11,
+      "template": "final",
+      "visualDescription": "Watercolor painting of multiple silhouettes in protective circle formation around central glowing light. Teal and purple silhouettes standing together with cream light radiating from center. Centered composition. Collective protection, informed action theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-5-scene-1",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of open doorway revealing scene beyond with teal frame and cream light streaming through opening. Purple and peach atmospheric watercolor around entrance. Centered composition. Gateway to understanding theme with painterly textures and visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-5-scene-2",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of single silhouette in professional standing pose with briefcase positioned on LEFT SIDE of frame. Teal silhouette against cream and purple watercolor background suggesting workplace setting. Professional, composed mood. RIGHT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Vague clothing - specify exact garments (e.g., \"charcoal blazer with white shirt\")",
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-5-scene-3",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 3,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of two silhouettes in greeting gesture with hands extending toward each other positioned on RIGHT SIDE of frame. Teal and purple silhouettes with cream light between connecting hands against peach watercolor background. Initial connection theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-1-5-scene-4",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 4,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of single orb of cream light surrounded by closing teal and purple walls or barriers. Peach atmospheric glow dimming around confined space. Centered composition. Symbolic representation of gradual isolation. Painterly style with closing edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-5-scene-5",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 5,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of locked treasure chest with teal and purple decorative elements and cream keyhole positioned on LEFT SIDE of frame. Peach watercolor background. Restriction, control theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-5-scene-6",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 6,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of wilting flower with drooping teal petals and purple stem against cream and peach watercolor background positioned on RIGHT SIDE of frame. Symbolic representation of damaged self-esteem. LEFT SIDE empty for text overlay. Painterly style with soft edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-5-scene-7",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 7,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of protective shelter formed by gentle teal arch with small purple silhouettes sheltered beneath and cream light glowing inside positioned on LEFT SIDE of frame. Peach watercolor background. Vulnerability, protection needed theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-5-scene-8",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 8,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of breaking wave or barrier with teal and purple water disrupting against cream light with peach sky above. Centered composition. Symbolic representation of boundary crossed, violence beginning. Painterly style with dynamic edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-5-scene-9",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 9,
+      "template": "diagonal",
+      "visualDescription": "Watercolor painting of spiral pattern with teal and purple elements circling downward toward center with cream light attempting to break through. Peach atmospheric background. Centered composition. Cyclical pattern, entrapment theme. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-5-scene-10",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 10,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of silhouette at intersection of multiple paths, hesitating with contemplative posture positioned on RIGHT SIDE of frame. Teal silhouette surrounded by purple pathways and cream light on distant horizons. Difficult choice, barriers theme. LEFT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-5-scene-11",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 11,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of puzzle pieces with gaps being filled, teal and purple pieces with cream connections against peach background positioned on LEFT SIDE of frame. Recognition, understanding theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-5-scene-12",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 12,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of dark storm clouds with teal and purple masses containing flashes of cream lightning against peach threatening sky. Centered composition. Symbolic representation of severe danger pattern. Painterly style with dramatic atmosphere. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-1-5-scene-13",
+      "lessonId": "lesson-1-5",
+      "sceneNumber": 13,
+      "template": "final",
+      "visualDescription": "Watercolor painting of multiple silhouettes standing together in unified formation with cream light radiating outward from group. Teal and purple silhouettes of supportive professionals. Centered composition. Professional response, collective support theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Vague clothing - specify exact garments (e.g., \"charcoal blazer with white shirt\")",
+        "Missing hand positions - critical for z-image realism",
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-1-scene-1",
+      "lessonId": "lesson-2-1",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of gentle sunrise with teal and purple horizon line beneath cream and peach sky. Soft atmospheric quality suggesting new understanding. Centered composition. Clarity, awareness theme with painterly textures and visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-1-scene-2",
+      "lessonId": "lesson-2-1",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of silhouette with hand raised in clear stop gesture positioned on LEFT SIDE of frame. Teal silhouette with firm posture and cream light radiating from raised palm against purple and peach watercolor background. Boundary, clarity theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-2-1-scene-3",
+      "lessonId": "lesson-2-1",
+      "sceneNumber": 3,
+      "template": "split-right",
+      "visualDescription": "Watercolor illustration of branching tree with multiple limbs extending outward. Teal trunk with purple and cream branches spreading against peach watercolor background positioned on RIGHT SIDE of frame. Complexity, multiple forms theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-1-scene-4",
+      "lessonId": "lesson-2-1",
+      "sceneNumber": 4,
+      "template": "diagonal",
+      "visualDescription": "Watercolor painting of two silhouettes facing each other in respectful dialogue pose with cream light flowing between them. Teal and purple silhouettes against peach watercolor background. Centered composition. Mutual respect, communication theme with painterly textures. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-1-scene-5",
+      "lessonId": "lesson-2-1",
+      "sceneNumber": 5,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of single silhouette with arms spread wide in open, free gesture positioned on LEFT SIDE of frame. Teal silhouette with cream light surrounding suggesting freedom and choice against purple and peach watercolor background. Liberation, choice theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-1-scene-6",
+      "lessonId": "lesson-2-1",
+      "sceneNumber": 6,
+      "template": "split-right",
+      "visualDescription": "Watercolor illustration of four interlocking puzzle pieces fitting together harmoniously in teal, purple, cream, and peach positioned on RIGHT SIDE of frame. Symbolic representation of consent elements working together. LEFT SIDE empty for text overlay. Painterly style with soft edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-1-scene-7",
+      "lessonId": "lesson-2-1",
+      "sceneNumber": 7,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of protective dome or shield with teal and purple curved protective structure over cream light positioned on LEFT SIDE of frame. Peach atmospheric background. Protection, boundaries theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-1-scene-8",
+      "lessonId": "lesson-2-1",
+      "sceneNumber": 8,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of heavy teal and purple clouds pressing downward against cream light trying to break through below. Peach atmospheric background. Centered composition. Symbolic representation of pressure and coercion. Painterly style with weight and heaviness. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-1-scene-9",
+      "lessonId": "lesson-2-1",
+      "sceneNumber": 9,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of two silhouettes standing separately with respectful distance between them positioned on RIGHT SIDE of frame. Teal and purple silhouettes with cream light around each showing autonomy against peach watercolor background. Independence, respect theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-1-scene-10",
+      "lessonId": "lesson-2-1",
+      "sceneNumber": 10,
+      "template": "diagonal",
+      "visualDescription": "Watercolor painting of single silhouette sitting on ground in vulnerable curled posture with protective teal and purple watercolor surrounding and cream light gently approaching. Peach atmospheric background. Centered composition. Trauma, need for support theme. Painterly style with compassionate mood. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-1-scene-11",
+      "lessonId": "lesson-2-1",
+      "sceneNumber": 11,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of interconnected web or network with teal and purple connection points linked by cream light rays against peach watercolor background positioned on LEFT SIDE of frame. Interconnection, complexity theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-1-scene-12",
+      "lessonId": "lesson-2-1",
+      "sceneNumber": 12,
+      "template": "final",
+      "visualDescription": "Watercolor painting of silhouettes standing together in supportive formation with cream light radiating from center outward. Teal and purple silhouettes of varied heights showing solidarity. Centered composition. Professional understanding, support theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-2-scene-1",
+      "lessonId": "lesson-2-2",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of landscape with layered atmospheric perspective showing teal and purple foreground, cream middle distance, and peach horizon. Centered composition. Contextual layers, societal environment theme with painterly textures and visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-2-scene-2",
+      "lessonId": "lesson-2-2",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of single silhouette in contemplative standing pose with hand on chest positioned on LEFT SIDE of frame. Teal silhouette surrounded by purple atmospheric watercolor suggesting heavy societal weight with cream light breaking through above. Awareness, recognition theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-2-2-scene-3",
+      "lessonId": "lesson-2-2",
+      "sceneNumber": 3,
+      "template": "split-right",
+      "visualDescription": "Watercolor illustration of scales heavily tilted to one side with teal and purple balance arms and cream light showing imbalance positioned on RIGHT SIDE of frame. Peach atmospheric background. Symbolic representation of misplaced responsibility. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-2-scene-4",
+      "lessonId": "lesson-2-2",
+      "sceneNumber": 4,
+      "template": "diagonal",
+      "visualDescription": "Watercolor painting of fortress wall with cracks appearing and cream light breaking through teal and purple stone. Peach atmospheric glow beyond barrier. Centered composition. Symbolic representation of normalized barriers being challenged. Painterly style with texture and detail. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-2-scene-5",
+      "lessonId": "lesson-2-2",
+      "sceneNumber": 5,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of triangular mountain shape with teal base, purple middle slopes, cream pathways, and peach peak against atmospheric background positioned on LEFT SIDE of frame. Hierarchical structure, progression theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-2-scene-6",
+      "lessonId": "lesson-2-2",
+      "sceneNumber": 6,
+      "template": "split-right",
+      "visualDescription": "Watercolor illustration of scattered seeds on ground with teal and purple seed shapes against cream soil and peach atmospheric background positioned on RIGHT SIDE of frame. Symbolic representation of problematic attitudes taking root. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-2-scene-7",
+      "lessonId": "lesson-2-2",
+      "sceneNumber": 7,
+      "template": "diagonal",
+      "visualDescription": "Watercolor painting of ascending stone steps with teal and purple stones rising toward distant peak with cream light between steps. Peach atmospheric background. Centered composition. Escalation, progression upward theme. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-2-scene-8",
+      "lessonId": "lesson-2-2",
+      "sceneNumber": 8,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of mountain peak with dark teal and purple summit being cleared away to reveal cream light beneath and peach sky opening above positioned on LEFT SIDE of frame. Transformation, dismantling theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-2-scene-9",
+      "lessonId": "lesson-2-2",
+      "sceneNumber": 9,
+      "template": "split-right",
+      "visualDescription": "Watercolor illustration of multiple windows or frames with teal and purple borders showing different cream light sources against peach atmospheric background positioned on RIGHT SIDE of frame. Multiple influences, media messages theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-2-scene-10",
+      "lessonId": "lesson-2-2",
+      "sceneNumber": 10,
+      "template": "diagonal",
+      "visualDescription": "Watercolor painting of single silhouette sitting hunched with protective posture surrounded by pressing teal and purple atmospheric weight with small cream light of hope nearby. Peach background. Centered composition. Impact on survivors, isolation theme. Painterly style with compassionate mood. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-2-scene-11",
+      "lessonId": "lesson-2-2",
+      "sceneNumber": 11,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of multiple silhouettes in various active poses suggesting speaking up and taking action positioned on LEFT SIDE of frame. Teal and purple silhouettes with cream light radiating outward showing influence against peach watercolor background. Action, advocacy theme. RIGHT SIDE empty for text overlay. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-2-scene-12",
+      "lessonId": "lesson-2-2",
+      "sceneNumber": 12,
+      "template": "final",
+      "visualDescription": "Watercolor painting of diverse silhouettes standing together in unified circle with hands joined and cream light radiating from center. Teal and purple silhouettes of varied heights. Centered composition. Collective change, unified action theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-1",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of two paths diverging with one teal path in shadow and one purple path in cream light against peach watercolor background. Centered composition. Different realities, hidden dynamics theme with painterly textures and visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-2",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of single silhouette in professional teaching pose with arm gesturing toward data positioned on LEFT SIDE of frame. Teal silhouette with cream light illuminating presented information against purple and peach watercolor background. Information sharing, education theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Vague clothing - specify exact garments (e.g., \"charcoal blazer with white shirt\")",
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-3",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 3,
+      "template": "split-right",
+      "visualDescription": "Watercolor illustration of broken chain links with teal and purple chain breaking apart and cream light emerging from break against peach watercolor background positioned on RIGHT SIDE of frame. Freedom from historical oppression theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-4",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 4,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of house silhouette with teal and purple walls and windows showing cream light both inside and outside with peach sky positioned on LEFT SIDE of frame. Complex relationship between safety and danger theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-5",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 5,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of tangled teal and purple thorny vines with cream light struggling to break through. Peach atmospheric background. Centered composition. Symbolic representation of complex entrapment and multiple forms. Painterly style with organic edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-6",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 6,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of protective cage or barrier with teal and purple bars surrounding cream light positioned on RIGHT SIDE of frame. Peach atmospheric background suggesting captivity through reproductive control. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-7",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 7,
+      "template": "diagonal",
+      "visualDescription": "Watercolor painting of interconnected web with teal and purple strands all connecting to central dark point surrounded by cream warning light. Peach atmospheric background. Centered composition. Interconnected dangers, severity theme. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-8",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 8,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of figure at base of tall wall looking up at distant opening with cream light above positioned on LEFT SIDE of frame. Teal silhouette surrounded by purple walls suggesting barriers with peach light far above. Trapped, barriers theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-9",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 9,
+      "template": "split-right",
+      "visualDescription": "Watercolor illustration of closed door with teal and purple frame and heavy locks with small cream light seeping underneath gap positioned on RIGHT SIDE of frame. Barriers to speaking, silence theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-10",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 10,
+      "template": "diagonal",
+      "visualDescription": "Watercolor painting of fog or mist clearing with teal and purple clouds dissipating to reveal cream light and clarity beneath. Peach sky emerging above. Centered composition. Myths being dispelled, truth emerging theme. Painterly style with atmospheric quality. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-11",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 11,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of single silhouette in hunched sitting position with protective arms wrapped around knees surrounded by gentle cream light positioned on LEFT SIDE of frame. Teal silhouette against purple and peach watercolor background. Trauma, vulnerability theme. RIGHT SIDE empty for text overlay. Painterly style with compassionate mood. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-12",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 12,
+      "template": "split-right",
+      "visualDescription": "Watercolor illustration of magnifying glass with teal frame examining purple pattern with cream light illuminating details against peach watercolor background positioned on RIGHT SIDE of frame. Recognition, attention to detail theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-2-3-scene-13",
+      "lessonId": "lesson-2-3",
+      "sceneNumber": 13,
+      "template": "final",
+      "visualDescription": "Watercolor painting of multiple silhouettes standing together in supportive circle formation with cream light glowing in center and radiating outward. Teal and purple silhouettes of varied heights. Centered composition. Professional support, understanding response theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-1",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of ripples spreading outward in concentric circles from center point. Teal and purple ripples with cream light at origin against peach watercolor background. Centered composition. Far-reaching impact theme with painterly textures and visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-2",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of silhouette sitting with head bowed surrounded by swirling teal and purple atmospheric pressure with small cream light nearby positioned on LEFT SIDE of frame. Peach background. Psychological weight, trauma theme. RIGHT SIDE empty for text overlay. Painterly style with emotional depth. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-3",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 3,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of fractured mirror or broken glass with teal and purple shards with cream light visible through cracks. Peach atmospheric background. Centered composition. Symbolic representation of fragmented sense of self. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-4",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 4,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of silhouette sitting against wall in defeated posture with arms resting on raised knees positioned on RIGHT SIDE of frame. Teal silhouette in purple shadowed corner with cream light distant and unreachable. Helplessness, exhaustion theme. LEFT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-5",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 5,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of wilting plant or tree with drooping teal branches and purple leaves showing physical decline with cream light trying to reach it positioned on LEFT SIDE of frame. Peach background. Physical toll, health impact theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-6",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 6,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of protective cocoon or wrapped form in teal and purple with gentle cream light inside suggesting need for healing and protection. Peach atmospheric background. Centered composition. Vulnerability, need for care theme. Painterly style with soft organic edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-7",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 7,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of single silhouette on small island surrounded by teal and purple water with cream light on distant shore unreachable positioned on RIGHT SIDE of frame. Peach sky above. Isolation, disconnection theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-8",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 8,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of figure carrying heavy load represented by teal and purple weight on shoulders positioned on LEFT SIDE of frame. Cream light ahead on path but burden making progress difficult. Peach atmospheric background. Economic burden, struggle theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-9",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 9,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of small vulnerable seedlings in purple soil being sheltered by larger teal protective shape with cream light filtered through protection. Peach sky above. Centered composition. Symbolic representation of children needing protection from violence. Painterly style with care and concern. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-10",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 10,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of silhouette at edge of cliff looking down at dangerous drop with teal cliff edge and purple void below, cream light far on other side positioned on RIGHT SIDE of frame. Peach sky with ominous atmosphere. Danger of leaving theme. LEFT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-11",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 11,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of multiple locked doors in row with teal and purple door frames all showing heavy locks with cream light visible through keyholes positioned on LEFT SIDE of frame. Peach background. Multiple barriers, obstacles theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-12",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 12,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of heart shape divided between teal and purple halves with cream light at center division point showing internal conflict. Peach atmospheric background. Centered composition. Symbolic representation of conflicted feelings, love and fear mixed. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-13",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 13,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of layered mountain ranges with teal foreground, purple middle distance, cream highlights, and peach distant peaks positioned on RIGHT SIDE of frame. Overlapping challenges, cumulative weight theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-1-scene-14",
+      "lessonId": "lesson-3-1",
+      "sceneNumber": 14,
+      "template": "final",
+      "visualDescription": "Watercolor painting of multiple silhouettes standing together on rising ground moving toward bright cream and peach horizon light with teal and purple supportive figures helping each other climb. Centered composition. Resilience, recovery, support theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-1",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of hands holding and carefully arranging puzzle pieces with teal and purple pieces coming together with cream light showing connection points. Peach watercolor background. Centered composition. Planning, preparation theme with painterly textures and visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-2",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of single silhouette in confident standing pose with map or document in hands positioned on LEFT SIDE of frame. Teal silhouette with cream light illuminating the planning document against purple and peach watercolor background. Preparation, empowerment theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-3-2-scene-3",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 3,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of house layout from above showing teal walls, purple rooms, cream safe pathway marked through space, and peach exterior. Centered composition. Symbolic representation of planning safe routes and spaces. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-4",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 4,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of storm warning system with teal signal tower and purple alert symbols with cream light beaming warning positioned on RIGHT SIDE of frame. Peach atmospheric background. Alert, warning recognition theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-5",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 5,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of packed bag or bundle with teal and purple fabric tied securely containing essential items suggested by abstract shapes with cream light nearby positioned on LEFT SIDE of frame. Peach background. Preparation, readiness theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-6",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 6,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of bridge extending from purple shore across teal water toward cream and peach safe distant shore with careful step-by-step path marked. Centered composition. Symbolic representation of planned transition to safety. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-7",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 7,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of protective circle of silhouettes surrounding central figure with teal and purple support figures and cream light glowing in center positioned on RIGHT SIDE of frame. Peach background. Support, protection theme. LEFT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-8",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 8,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of shield protecting glowing cream light from teal and purple threatening digital elements represented by circuit-like patterns positioned on LEFT SIDE of frame. Peach atmospheric background. Digital protection, privacy theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-9",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 9,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of growing plant with teal stem and purple leaves with cream coins or resources accumulating at base like saved nutrients. Peach watercolor background. Centered composition. Symbolic representation of building financial resources. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-10",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 10,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of balanced scales with teal and purple balance arms holding cream light symbolizing justice positioned on RIGHT SIDE of frame. Peach atmospheric background. Legal protection, justice theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-11",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 11,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of figure walking on new path with teal and purple landscape behind and cream and peach light ahead showing forward movement but maintaining awareness positioned on LEFT SIDE of frame. Vigilance, new beginning theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-12",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 12,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of two silhouettes in respectful listening pose with one slightly leaning forward attentively positioned on RIGHT SIDE of frame. Teal and purple silhouettes with cream light of respect flowing between them against peach watercolor background. Active listening, collaboration theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-13",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 13,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of network or web connecting multiple points with teal and purple connection nodes linked by cream light pathways against peach background. Centered composition. Collaborative professional network theme. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Vague clothing - specify exact garments (e.g., \"charcoal blazer with white shirt\")",
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-2-scene-14",
+      "lessonId": "lesson-3-2",
+      "sceneNumber": 14,
+      "template": "final",
+      "visualDescription": "Watercolor painting of silhouette standing at center of radiating pathways with multiple teal and purple options extending outward illuminated by cream light with peach sky above. Centered composition. Empowerment, choices, possibilities theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-1",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of two pathways diverging with one teal path leading to warm cream and peach light and one purple path leading to shadow. Centered composition. Impact of response choices theme with painterly textures and visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-2",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of strong tree with five main branches extending upward with teal trunk, purple branches, cream light filtering through, and peach sky positioned on LEFT SIDE of frame. Foundation of principles theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-3",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 3,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of protective shelter or safe space formed by gentle teal walls with opening showing cream light inside and purple exterior with peach atmospheric glow. Centered composition. Symbolic representation of creating safe space for disclosure. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-4",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 4,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of two silhouettes facing each other with one extending supportive hand to other positioned on RIGHT SIDE of frame. Teal and purple silhouettes with cream light of validation flowing between them against peach watercolor background. Support, belief theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-3-3-scene-5",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 5,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of cracked or broken ground with teal and purple fissures showing what not to step on with cream light showing safe path around cracks positioned on LEFT SIDE of frame. Peach background. Avoiding harmful responses theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-6",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 6,
+      "template": "split-right",
+      "visualDescription": "Watercolor illustration of two silhouettes in attentive conversation with one listening intently positioned on RIGHT SIDE of frame. Teal listener leaning slightly forward, purple speaker, with cream light of attention and connection between them. Peach atmospheric background. Active listening theme. LEFT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-7",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 7,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of figure standing at crossroads with multiple paths choosing their own direction with teal and purple pathways and cream light illuminating options positioned on LEFT SIDE of frame. Peach sky above. Autonomy, choice theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-8",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 8,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of gentle flowing river with teal and purple water moving smoothly with cream light reflecting on surface suggesting careful, respectful communication. Peach sky above. Centered composition. Symbolic representation of appropriate language flow. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-9",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 9,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of opening door with teal frame showing cream light streaming through with purple and peach atmospheric space beyond positioned on RIGHT SIDE of frame. Opening for disclosure theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-10",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 10,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of multiple pathways or roads extending from center outward like rays with teal and purple paths illuminated by cream light showing options positioned on LEFT SIDE of frame. Peach atmospheric background. Resources, multiple options theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-11",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 11,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of bridge being built connecting one shore to another with teal and purple construction elements and cream light showing the helpful connection forming. Peach sky above. Centered composition. Symbolic representation of connecting to resources. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-12",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 12,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of figure standing at clear boundary line with teal and purple zones clearly defined and cream light illuminating the appropriate professional space positioned on RIGHT SIDE of frame. Peach atmospheric background. Boundaries, appropriate role theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Vague clothing - specify exact garments (e.g., \"charcoal blazer with white shirt\")",
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-13",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 13,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of scales balancing competing priorities with teal and purple balance arms holding legal obligation and survivor safety with cream light at fulcrum positioned on LEFT SIDE of frame. Peach background. Balance, legal requirements theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-14",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 14,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of protective circle with teal and purple boundary surrounding cream light representing self-care space with peach atmospheric environment beyond. Centered composition. Symbolic representation of protecting helper wellbeing. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-3-3-scene-15",
+      "lessonId": "lesson-3-3",
+      "sceneNumber": 15,
+      "template": "final",
+      "visualDescription": "Watercolor painting of multiple silhouettes standing together on rising ground moving toward bright cream and peach horizon with teal and purple supportive figures helping each other forward. Centered composition. Collective impact, hope, professional response theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Vague clothing - specify exact garments (e.g., \"charcoal blazer with white shirt\")",
+        "Missing hand positions - critical for z-image realism",
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-final-assessment-scene-1",
+      "lessonId": "lesson-final-assessment",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of sunrise over mountain peaks with teal and purple mountains against cream and peach sky suggesting completion of journey. Centered composition. Achievement, completion theme with painterly textures and visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-final-assessment-scene-2",
+      "lessonId": "lesson-final-assessment",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of silhouette in confident recognition pose with hand shading eyes looking toward horizon positioned on LEFT SIDE of frame. Teal silhouette with cream light illuminating discovered knowledge against purple and peach watercolor background. Recognition, awareness theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-final-assessment-scene-3",
+      "lessonId": "lesson-final-assessment",
+      "sceneNumber": 3,
+      "template": "split-right",
+      "visualDescription": "Watercolor illustration of protective boundary being established with teal and purple elements forming respectful space around cream light representing autonomy. Peach atmospheric background positioned on RIGHT SIDE of frame. Consent, boundaries theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-final-assessment-scene-4",
+      "lessonId": "lesson-final-assessment",
+      "sceneNumber": 4,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of two silhouettes in supportive partnership with one helping other stand positioned on LEFT SIDE of frame. Teal and purple silhouettes with cream light flowing between showing support against peach watercolor background. Support, response theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-final-assessment-scene-5",
+      "lessonId": "lesson-final-assessment",
+      "sceneNumber": 5,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of interconnected gear wheels in teal and purple working together with cream light showing connection points against peach watercolor background. Centered composition. Symbolic representation of frameworks working together. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-final-assessment-scene-6",
+      "lessonId": "lesson-final-assessment",
+      "sceneNumber": 6,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of lighthouse with strong teal tower and bright cream beacon cutting through purple and peach atmospheric conditions positioned on RIGHT SIDE of frame. Guidance, key principles theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-final-assessment-scene-7",
+      "lessonId": "lesson-final-assessment",
+      "sceneNumber": 7,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of silhouette in action pose taking a purposeful step forward positioned on LEFT SIDE of frame. Teal silhouette moving toward cream light with determination against purple and peach watercolor background. Action, application theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-final-assessment-scene-8",
+      "lessonId": "lesson-final-assessment",
+      "sceneNumber": 8,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of ascending steps or ladder with teal and purple steps leading upward toward cream light representing assessment completion. Peach atmospheric background. Centered composition. Progress toward completion theme. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-final-assessment-scene-9",
+      "lessonId": "lesson-final-assessment",
+      "sceneNumber": 9,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of open pathways extending into distance with teal and purple paths continuing forward illuminated by cream light toward peach horizon positioned on RIGHT SIDE of frame. Ongoing learning, continued growth theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-final-assessment-scene-10",
+      "lessonId": "lesson-final-assessment",
+      "sceneNumber": 10,
+      "template": "final",
+      "visualDescription": "Watercolor painting of diverse silhouettes standing together in unified formation on hilltop with cream and peach light radiating outward from group. Teal and purple silhouettes of varied heights showing collective impact. Centered composition. Hope, professional commitment, collective change theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Vague clothing - specify exact garments (e.g., \"charcoal blazer with white shirt\")",
+        "Missing hand positions - critical for z-image realism",
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-intro-1-scene-1",
+      "lessonId": "lesson-intro-1",
+      "sceneNumber": 1,
+      "template": "intro",
+      "visualDescription": "Watercolor painting of winding illuminated path ascending through misty mountains toward sunrise. Path glows with soft teal and cream light leading toward peach horizon. Purple mountain silhouettes with atmospheric haze. Centered composition. Hopeful, empowering mood with painterly textures and visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"intro\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-intro-1-scene-2",
+      "lessonId": "lesson-intro-1",
+      "sceneNumber": 2,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of diverse human silhouettes standing in supportive circle positioned on LEFT SIDE of frame. Solid teal and purple silhouettes against cream watercolor background with peach atmospheric washes. Varied heights suggesting diversity. Simple clean outlines, no facial features or clothing details. RIGHT HALF empty for text overlay. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-intro-1-scene-3",
+      "lessonId": "lesson-intro-1",
+      "sceneNumber": 3,
+      "template": "split-right",
+      "visualDescription": "Watercolor illustration of glowing constellation pattern with connected stars and light rays positioned on RIGHT SIDE of frame. Soft teal and purple stars connected by cream light rays against peach watercolor background. Abstract representation of widespread impact. LEFT SIDE empty for text overlay. Painterly style with organic edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-intro-1-scene-4",
+      "lessonId": "lesson-intro-1",
+      "sceneNumber": 4,
+      "template": "diagonal-badge",
+      "visualDescription": "Watercolor painting of single silhouette with one arm extended forward reaching toward light, other hand at heart, positioned on RIGHT SIDE of frame. Teal silhouette with cream light rays emanating from extended hand against purple and peach watercolor background. Empowering, purposeful mood. LEFT SIDE empty for diagonal text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-intro-1-scene-5",
+      "lessonId": "lesson-intro-1",
+      "sceneNumber": 5,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of two silhouettes facing each other in supportive dialogue positioned on LEFT SIDE of frame. Solid teal silhouettes with soft light rays connecting between them symbolizing communication. Purple and peach watercolor background with cream highlights. Empowering, connected mood. RIGHT SIDE empty for text overlay. No facial features or details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-intro-1-scene-6",
+      "lessonId": "lesson-intro-1",
+      "sceneNumber": 6,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of protective circular mandala pattern with geometric teal and purple shapes arranged in concentric circles around cream light center. Peach and purple atmospheric watercolor background. Centered composition. Symbolic representation of control dynamics. Painterly style with organic edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-intro-1-scene-7",
+      "lessonId": "lesson-intro-1",
+      "sceneNumber": 7,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of single silhouette in contemplative pose with head bowed, hands clasped, positioned on RIGHT SIDE of frame. Teal silhouette surrounded by soft purple and peach watercolor washes suggesting processing and reflection. Cream light beginning to emerge above. LEFT SIDE empty for text overlay. Empathetic, respectful mood. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      }
+    },
+    {
+      "sceneId": "lesson-intro-1-scene-8",
+      "lessonId": "lesson-intro-1",
+      "sceneNumber": 8,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of silhouette standing confidently with hands on hips positioned on LEFT SIDE of frame. Solid teal silhouette against cream and peach watercolor background with purple atmospheric accents. Confident, professional posture. RIGHT SIDE empty for text overlay. Painterly style with soft edges. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Vague clothing - specify exact garments (e.g., \"charcoal blazer with white shirt\")"
+      ]
+    },
+    {
+      "sceneId": "lesson-intro-1-scene-9",
+      "lessonId": "lesson-intro-1",
+      "sceneNumber": 9,
+      "template": "split-right",
+      "visualDescription": "Watercolor painting of three silhouettes in varied heights standing together in supportive line with shoulders gently touching, positioned on RIGHT SIDE of frame. Solid teal and purple silhouettes against cream watercolor background with peach atmospheric washes. Community support theme. LEFT SIDE empty for text overlay. No facial features. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-intro-1-scene-10",
+      "lessonId": "lesson-intro-1",
+      "sceneNumber": 10,
+      "template": "diagonal",
+      "visualDescription": "Watercolor illustration of open doorway with warm cream and peach light streaming through, positioned centrally. Teal and purple architectural elements framing the doorway against soft watercolor background. Symbolic representation of access to help and new possibilities. Hopeful, welcoming mood. Painterly style with visible brushstrokes. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"diagonal\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    },
+    {
+      "sceneId": "lesson-intro-1-scene-11",
+      "lessonId": "lesson-intro-1",
+      "sceneNumber": 11,
+      "template": "split-left",
+      "visualDescription": "Watercolor painting of ascending staircase into soft clouds with light positioned on LEFT SIDE of frame. Stairs glow with teal and cream light ascending toward peach sky. Purple cloud formations. Journey and progression theme. RIGHT SIDE empty for text overlay. Painterly style with soft organic edges. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism"
+      ]
+    },
+    {
+      "sceneId": "lesson-intro-1-scene-12",
+      "lessonId": "lesson-intro-1",
+      "sceneNumber": 12,
+      "template": "final",
+      "visualDescription": "Watercolor painting of single silhouette with arms raised upward in empowering celebration gesture. Teal silhouette with radiating cream and peach light rays against purple watercolor background. Centered composition. Uplifting, inspiring mood with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+      "model": "z-image",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": true,
+        "subjectPosition": "CENTER"
+      },
+      "qualityIssues": [
+        "Missing hand positions - critical for z-image realism",
+        "Template \"final\" needs explicit positioning (LEFT/RIGHT/CENTER)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,844 @@
+{
+  "projectId": "IPV",
+  "courseTitle": "Recognizing and Responding to Intimate Partner Violence",
+  "analyzedAt": "2026-01-27T03:30:00.000Z",
+  "summary": {
+    "totalLessons": 12,
+    "mediaItems": {
+      "images": 32,
+      "videos": 0,
+      "audio": 12,
+      "animations": 0,
+      "interactive": 15
+    },
+    "estimatedEffort": {
+      "hours": "32.5 hours",
+      "cost": "$2,206"
+    },
+    "priorityBreakdown": {
+      "high": 27,
+      "medium": 20,
+      "low": 12
+    }
+  },
+  "lessonPlans": [
+    {
+      "lessonId": "lesson-intro-1",
+      "lessonTitle": "Introduction: What is Intimate Partner Violence?",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "high",
+            "rationale": "Opening hero image establishing the iceberg metaphor for the entire course journey",
+            "existingPlan": "qwen-optimized-prompts.json#lesson-intro-1",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          }
+        ],
+        "videos": [],
+        "audio": [
+          {
+            "type": "narration",
+            "priority": "medium",
+            "rationale": "Accessibility - full lesson narration for screen reader users",
+            "approach": "Text-to-speech (TTS)",
+            "effort": "1 hour (TTS generation + review)",
+            "cost": "$0 (TTS) or $100 (professional)"
+          }
+        ],
+        "animations": [],
+        "interactive": []
+      },
+      "totalEffort": "1.17 hours",
+      "estimatedCost": "$0.30 (images only) or $100.30 (with professional voiceover)"
+    },
+    {
+      "lessonId": "lesson-1-1",
+      "lessonTitle": "Who is Affected by Intimate Partner Violence?",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "high",
+            "rationale": "Diverse silhouettes demonstrate IPV affects all populations without stereotyping",
+            "existingPlan": "qwen-optimized-prompts.json#lesson-1-1",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          },
+          {
+            "type": "infographic",
+            "priority": "high",
+            "rationale": "CDC statistics - 1 in 4 women, 1 in 10 men prevalence data visualization",
+            "existingAsset": "source-images/1in4w1in19m.png",
+            "status": "reuse",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          }
+        ],
+        "videos": [],
+        "audio": [
+          {
+            "type": "narration",
+            "priority": "medium",
+            "rationale": "Accessibility for prevalence statistics and stereotype-breaking content",
+            "approach": "Text-to-speech (TTS)",
+            "effort": "1 hour (TTS generation + review)",
+            "cost": "$0 (TTS) or $100 (professional)"
+          }
+        ],
+        "animations": [],
+        "interactive": [
+          {
+            "type": "case-study",
+            "priority": "high",
+            "rationale": "Practice identifying IPV across diverse demographics to combat stereotypes",
+            "existingPlan": "interactive-opportunities.json#lesson-1-1-case-study",
+            "status": "planned",
+            "effort": "6-8 hours (case scenario design + development)",
+            "cost": "$300-800 depending on complexity"
+          }
+        ]
+      },
+      "totalEffort": "7.17-9.17 hours",
+      "estimatedCost": "$300.30-$900.30"
+    },
+    {
+      "lessonId": "lesson-1-2",
+      "lessonTitle": "Types of Abuse",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "medium",
+            "rationale": "Abstract overlapping circles represent interconnected abuse types without triggering imagery",
+            "existingPlan": "qwen-optimized-prompts.json#lesson-1-2",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          },
+          {
+            "type": "infographic",
+            "priority": "high",
+            "rationale": "Types of Abuse visual showing physical, emotional, sexual, economic categories",
+            "existingAsset": "source-images/Types_of_Abuse.png",
+            "status": "reuse",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          }
+        ],
+        "videos": [],
+        "audio": [
+          {
+            "type": "narration",
+            "priority": "medium",
+            "rationale": "Accessibility for abuse type definitions and examples",
+            "approach": "Text-to-speech (TTS)",
+            "effort": "1 hour (TTS generation + review)",
+            "cost": "$0 (TTS) or $100 (professional)"
+          }
+        ],
+        "animations": [],
+        "interactive": [
+          {
+            "type": "drag-drop",
+            "priority": "high",
+            "rationale": "Practice categorizing behaviors into abuse types (physical, emotional, sexual, economic)",
+            "existingPlan": "interactive-opportunities.json#lesson-1-2-drag-drop",
+            "status": "planned",
+            "effort": "3-4 hours (behavior cards + drop zones + feedback)",
+            "cost": "$150-400"
+          }
+        ]
+      },
+      "totalEffort": "4.17-5.17 hours",
+      "estimatedCost": "$150.30-$500.30"
+    },
+    {
+      "lessonId": "lesson-1-3",
+      "lessonTitle": "Power and Control Wheel",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "high",
+            "rationale": "Abstract circular mandala complements (doesn't duplicate) the Power & Control Wheel diagram",
+            "existingPlan": "qwen-optimized-prompts.json#lesson-1-3",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          },
+          {
+            "type": "framework-diagram",
+            "priority": "high",
+            "rationale": "Power & Control Wheel (Duluth Model) - Critical educational framework",
+            "existingAsset": "source-images/Duluth_P_C_Wheel_-_Orig.png",
+            "status": "reuse",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          },
+          {
+            "type": "framework-diagram",
+            "priority": "high",
+            "rationale": "Power & Control Wheel B&W version - Alternative view",
+            "existingAsset": "source-images/Duluth_PW_bw.png",
+            "status": "reuse",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          },
+          {
+            "type": "framework-diagram",
+            "priority": "high",
+            "rationale": "Power & Control + Equality Wheel duo - Shows both frameworks side-by-side",
+            "existingAsset": "source-images/PCW_EW_DUO__NOPROCESS_.png",
+            "status": "reuse",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          }
+        ],
+        "videos": [],
+        "audio": [
+          {
+            "type": "narration",
+            "priority": "medium",
+            "rationale": "Accessibility for Power & Control Wheel explanation and tactics",
+            "approach": "Text-to-speech (TTS)",
+            "effort": "1 hour (TTS generation + review)",
+            "cost": "$0 (TTS) or $100 (professional)"
+          }
+        ],
+        "animations": [],
+        "interactive": [
+          {
+            "type": "hot-spot",
+            "priority": "high",
+            "rationale": "Interactive Power & Control Wheel - click on each section to explore tactics and examples",
+            "existingPlan": "interactive-opportunities.json#lesson-1-3-hot-spot",
+            "status": "planned",
+            "effort": "4-6 hours (clickable wheel + popover content + examples)",
+            "cost": "$200-600"
+          }
+        ]
+      },
+      "totalEffort": "5.17-7.17 hours",
+      "estimatedCost": "$200.30-$700.30"
+    },
+    {
+      "lessonId": "lesson-1-4",
+      "lessonTitle": "Categorizing Intimate Partner Violence",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "medium",
+            "rationale": "Winding illuminated path represents journey through understanding IPV patterns and categories",
+            "existingPlan": "qwen-optimized-prompts.json#lesson-1-4",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          }
+        ],
+        "videos": [],
+        "audio": [
+          {
+            "type": "narration",
+            "priority": "medium",
+            "rationale": "Accessibility for Johnson's Typologies and IPV categorization",
+            "approach": "Text-to-speech (TTS)",
+            "effort": "1 hour (TTS generation + review)",
+            "cost": "$0 (TTS) or $100 (professional)"
+          }
+        ],
+        "animations": [],
+        "interactive": [
+          {
+            "type": "case-study",
+            "priority": "high",
+            "rationale": "Analyze case scenarios and categorize using Johnson's Typologies (Intimate Terrorism, Situational Couple Violence, etc.)",
+            "existingPlan": "interactive-opportunities.json#lesson-1-4-case-study",
+            "status": "planned",
+            "effort": "6-8 hours (case scenarios + categorization tool + feedback)",
+            "cost": "$300-800"
+          }
+        ]
+      },
+      "totalEffort": "7.17-9.17 hours",
+      "estimatedCost": "$300.30-$900.30"
+    },
+    {
+      "lessonId": "lesson-1-5",
+      "lessonTitle": "Case Analysis: Lois and James Sumpter",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "high",
+            "rationale": "African American female silhouette in contemplative pose - professional reflection without depicting victimization",
+            "existingPlan": "qwen-optimized-prompts.json#lesson-1-5",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          }
+        ],
+        "videos": [],
+        "audio": [
+          {
+            "type": "narration",
+            "priority": "medium",
+            "rationale": "Accessibility for case study narrative and analysis",
+            "approach": "Text-to-speech (TTS)",
+            "effort": "1 hour (TTS generation + review)",
+            "cost": "$0 (TTS) or $100 (professional)"
+          }
+        ],
+        "animations": [],
+        "interactive": [
+          {
+            "type": "case-study",
+            "priority": "high",
+            "rationale": "Guided analysis of Lois and James Sumpter case using Power & Control Wheel and Johnson's Typologies",
+            "existingPlan": "interactive-opportunities.json#lesson-1-5-case-study",
+            "status": "planned",
+            "effort": "8-10 hours (detailed case narrative + framework application tools + assessment)",
+            "cost": "$400-1000"
+          }
+        ]
+      },
+      "totalEffort": "9.17-11.17 hours",
+      "estimatedCost": "$400.30-$1100.30"
+    },
+    {
+      "lessonId": "lesson-2-1",
+      "lessonTitle": "What is Sexual Violence?",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "high",
+            "rationale": "Abstract descending light rays through twilight waters - transition into deeper, more complex topics",
+            "existingPlan": "qwen-optimized-prompts.json#lesson-2-1",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          },
+          {
+            "type": "infographic",
+            "priority": "high",
+            "rationale": "Sexual violence prevalence statistics from CDC",
+            "existingAsset": "source-images/1in4w1in19m.png",
+            "status": "reuse (already mapped to this lesson)",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          },
+          {
+            "type": "framework-diagram",
+            "priority": "high",
+            "rationale": "Sexual Violence framework diagram showing categories and contexts",
+            "existingAsset": "source-images/Sexual_Violence__NOPROCESS_.png",
+            "status": "reuse",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          },
+          {
+            "type": "framework-diagram",
+            "priority": "high",
+            "rationale": "Intimate Partner Sexual Violence (IPSV) diagram",
+            "existingAsset": "source-images/IPSV_NO_ARROW_NOPROCESS_.png",
+            "status": "reuse",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          }
+        ],
+        "videos": [],
+        "audio": [
+          {
+            "type": "narration",
+            "priority": "medium",
+            "rationale": "Accessibility for sexual violence definitions and statistics (sensitive content)",
+            "approach": "Text-to-speech (TTS)",
+            "effort": "1 hour (TTS generation + review)",
+            "cost": "$0 (TTS) or $100 (professional)"
+          }
+        ],
+        "animations": [],
+        "interactive": []
+      },
+      "totalEffort": "1.17 hours",
+      "estimatedCost": "$0.30-$100.30"
+    },
+    {
+      "lessonId": "lesson-2-2",
+      "lessonTitle": "Sexual Violence in Our Society",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "medium",
+            "rationale": "Abstract pyramid structure represents rape culture pyramid concept without text or triggering imagery",
+            "existingPlan": "qwen-optimized-prompts.json#lesson-2-2",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          },
+          {
+            "type": "framework-diagram",
+            "priority": "high",
+            "rationale": "Rape Culture Pyramid diagram showing continuum from subtle behaviors to violence",
+            "existingAsset": "source-images/Rape-Culture-v5.png",
+            "status": "reuse",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          }
+        ],
+        "videos": [],
+        "audio": [
+          {
+            "type": "narration",
+            "priority": "medium",
+            "rationale": "Accessibility for rape culture pyramid explanation and societal context",
+            "approach": "Text-to-speech (TTS)",
+            "effort": "1 hour (TTS generation + review)",
+            "cost": "$0 (TTS) or $100 (professional)"
+          }
+        ],
+        "animations": [],
+        "interactive": [
+          {
+            "type": "sorting",
+            "priority": "high",
+            "rationale": "Sort behaviors along the rape culture pyramid continuum from subtle to severe",
+            "existingPlan": "interactive-opportunities.json#lesson-2-2-sorting",
+            "status": "planned",
+            "effort": "4-6 hours (behavior cards + pyramid zones + feedback)",
+            "cost": "$200-600"
+          }
+        ]
+      },
+      "totalEffort": "5.17-7.17 hours",
+      "estimatedCost": "$200.30-$700.30"
+    },
+    {
+      "lessonId": "lesson-2-3",
+      "lessonTitle": "Rape and Sexual Assault in the Context of Intimate Partner Violence",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "high",
+            "rationale": "Hispanic Latino male silhouette in meditation pose - professional contemplation of difficult topic without depicting assault",
+            "existingPlan": "qwen-optimized-prompts.json#lesson-2-3",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          }
+        ],
+        "videos": [],
+        "audio": [
+          {
+            "type": "narration",
+            "priority": "medium",
+            "rationale": "Accessibility for IPV sexual assault context and professional response strategies",
+            "approach": "Text-to-speech (TTS)",
+            "effort": "1 hour (TTS generation + review)",
+            "cost": "$0 (TTS) or $100 (professional)"
+          }
+        ],
+        "animations": [],
+        "interactive": [
+          {
+            "type": "branching-scenario",
+            "priority": "high",
+            "rationale": "Practice responding to IPV sexual assault disclosure with trauma-informed communication choices",
+            "existingPlan": "interactive-opportunities.json#lesson-2-3-branching-scenario",
+            "status": "planned",
+            "effort": "10-15 hours (scenario tree + dialogue + branching logic + feedback)",
+            "cost": "$500-1500"
+          }
+        ]
+      },
+      "totalEffort": "11.17-16.17 hours",
+      "estimatedCost": "$500.30-$1600.30"
+    },
+    {
+      "lessonId": "lesson-3-1",
+      "lessonTitle": "The Impact of Intimate Partner Violence on Victims",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "high",
+            "rationale": "Deep navy ocean depths with golden light rays - profound understanding with hope breaking through darkness",
+            "existingPlan": "qwen-optimized-prompts.json#lesson-3-1",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          },
+          {
+            "type": "infographic",
+            "priority": "high",
+            "rationale": "Impact statistics - psychological, physical, social effects of IPV on survivors",
+            "existingAsset": "source-images/HRM_CDC_Stats_2.png",
+            "status": "reuse",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          }
+        ],
+        "videos": [],
+        "audio": [
+          {
+            "type": "narration",
+            "priority": "high",
+            "rationale": "Accessibility for sensitive content about trauma impact - professional tone essential",
+            "approach": "Professional voiceover recommended for trauma-informed tone",
+            "effort": "2 hours (professional recording + review)",
+            "cost": "$100-300 (professional)"
+          }
+        ],
+        "animations": [],
+        "interactive": []
+      },
+      "totalEffort": "2.17 hours",
+      "estimatedCost": "$100.30-$300.30"
+    },
+    {
+      "lessonId": "lesson-3-2",
+      "lessonTitle": "Safety Planning with Victims",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "high",
+            "rationale": "Abstract protective shield with glowing center - safety metaphor without depicting danger or threat",
+            "existingPlan": "qwen-optimized-prompts.json#lesson-3-2",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          }
+        ],
+        "videos": [],
+        "audio": [
+          {
+            "type": "narration",
+            "priority": "high",
+            "rationale": "Accessibility for safety planning steps - professional voiceover recommended for clarity and tone",
+            "approach": "Professional voiceover recommended",
+            "effort": "2 hours (professional recording + review)",
+            "cost": "$100-300 (professional)"
+          }
+        ],
+        "animations": [],
+        "interactive": [
+          {
+            "type": "simulation",
+            "priority": "high",
+            "rationale": "Practice safety planning conversation with survivor - dialogue choices, empowerment focus, resource provision",
+            "existingPlan": "interactive-opportunities.json#lesson-3-2-simulation",
+            "status": "planned",
+            "effort": "12-15 hours (conversation simulator + safety plan builder + feedback)",
+            "cost": "$600-1500"
+          }
+        ]
+      },
+      "totalEffort": "14.17-17.17 hours",
+      "estimatedCost": "$700.30-$1800.30"
+    },
+    {
+      "lessonId": "lesson-3-3",
+      "lessonTitle": "Responding to Someone Experiencing Intimate Partner Violence",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "high",
+            "rationale": "Two silhouettes in supportive conversation - professional trauma-informed response from helper perspective",
+            "existingPlan": "qwen-optimized-prompts.json#lesson-3-3",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          },
+          {
+            "type": "framework-diagram",
+            "priority": "high",
+            "rationale": "Power & Control Wheel B&W - Framework for analyzing disclosure",
+            "existingAsset": "source-images/Duluth_PW_bw.png",
+            "status": "reuse (already mapped to this lesson)",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          },
+          {
+            "type": "framework-diagram",
+            "priority": "high",
+            "rationale": "Power & Control Wheel Original - Reference framework",
+            "existingAsset": "source-images/Duluth_P_C_Wheel_-_Orig.png",
+            "status": "reuse (already mapped to this lesson)",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          },
+          {
+            "type": "framework-diagram",
+            "priority": "high",
+            "rationale": "Power & Control + Equality Wheel Duo - Both frameworks for response guidance",
+            "existingAsset": "source-images/PCW_EW_DUO__NOPROCESS_.png",
+            "status": "reuse (already mapped to this lesson)",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          },
+          {
+            "type": "resource-info",
+            "priority": "high",
+            "rationale": "National Domestic Violence Hotline information for referrals",
+            "existingAsset": "source-images/NDVHotline_NOPROCESS_.png",
+            "status": "reuse",
+            "effort": "0 (existing asset)",
+            "cost": "$0"
+          }
+        ],
+        "videos": [],
+        "audio": [
+          {
+            "type": "narration",
+            "priority": "high",
+            "rationale": "Accessibility for trauma-informed response protocol - professional voiceover essential",
+            "approach": "Professional voiceover strongly recommended",
+            "effort": "2 hours (professional recording + review)",
+            "cost": "$100-300 (professional)"
+          }
+        ],
+        "animations": [],
+        "interactive": [
+          {
+            "type": "simulation",
+            "priority": "high",
+            "rationale": "Practice full trauma-informed response conversation with multiple pathways and feedback",
+            "existingPlan": "interactive-opportunities.json#lesson-3-3-simulation",
+            "status": "planned",
+            "effort": "15-20 hours (complex conversation tree + branching + assessment + feedback)",
+            "cost": "$750-2000"
+          }
+        ]
+      },
+      "totalEffort": "17.17-22.17 hours",
+      "estimatedCost": "$850.30-$2300.30"
+    },
+    {
+      "lessonId": "module-completion",
+      "lessonTitle": "Course Completion - Emergence",
+      "mediaRecommendations": {
+        "images": [
+          {
+            "type": "hero",
+            "priority": "high",
+            "rationale": "Four diverse silhouettes ascending through water toward light - triumphant emergence representing transformation and knowledge gained",
+            "existingPlan": "qwen-optimized-prompts.json#module-completion",
+            "status": "planned",
+            "effort": "10 minutes (AI-generated)",
+            "cost": "$0.30"
+          }
+        ],
+        "videos": [],
+        "audio": [],
+        "animations": [],
+        "interactive": []
+      },
+      "totalEffort": "0.17 hours",
+      "estimatedCost": "$0.30"
+    }
+  ],
+  "consolidatedPlan": {
+    "images": {
+      "toGenerate": 13,
+      "toReuse": 19,
+      "total": 32,
+      "breakdown": {
+        "heroImages": 13,
+        "frameworkDiagrams": 9,
+        "statisticsInfographics": 4,
+        "resources": 2,
+        "technicalAbuse": 1,
+        "definitions": 2,
+        "branding": 1
+      },
+      "effort": "2.17 hours (13 AI images × 10 min)",
+      "cost": "$3.90 (AI generation) or $390 (stock photos)"
+    },
+    "videos": {
+      "total": 0,
+      "rationale": "Text-based course with trauma-informed approach - video not recommended",
+      "reasoning": [
+        "Trauma-informed: Text allows learner control over pacing and exposure to sensitive content",
+        "Professional focus: Course targets professional response skills, not survivor stories",
+        "Content type: Frameworks and concepts are effectively taught through text + static diagrams",
+        "Accessibility: Text is more accessible than video for diverse learning needs",
+        "Cost-effective: Video would add $2500-5000 without significant learning benefit"
+      ],
+      "effort": "0 hours",
+      "cost": "$0"
+    },
+    "audio": {
+      "lessons": 12,
+      "approach": "Hybrid - TTS for most lessons, professional voiceover for trauma-sensitive lessons",
+      "breakdown": {
+        "textToSpeech": 9,
+        "professionalVoiceover": 3
+      },
+      "professionalVoiceoverLessons": [
+        "lesson-3-1 (Impact of IPV - trauma-informed tone essential)",
+        "lesson-3-2 (Safety Planning - clarity and professionalism essential)",
+        "lesson-3-3 (Responding - professional trauma-informed delivery essential)"
+      ],
+      "effort": "15 hours (9 TTS × 1 hr + 3 professional × 2 hrs)",
+      "cost": "$0 (TTS only) or $300-900 (3 professional voiceovers)"
+    },
+    "animations": {
+      "total": 0,
+      "rationale": "Static diagrams + interactive components sufficient - animations not needed",
+      "reasoning": [
+        "Framework diagrams (Power & Control Wheel, Rape Culture Pyramid) are already visual and clear",
+        "Interactive components provide hands-on engagement (better than passive animation)",
+        "Trauma-informed: Static imagery allows learner control, animations can be jarring",
+        "Cost-benefit: $4000-6000 investment wouldn't add significant learning value"
+      ],
+      "effort": "0 hours",
+      "cost": "$0"
+    },
+    "interactive": {
+      "total": 15,
+      "prioritized": "Yes (from 58 identified opportunities)",
+      "breakdown": {
+        "simulations": 3,
+        "caseStudies": 4,
+        "branchingScenarios": 2,
+        "dragDrop": 2,
+        "hotSpot": 1,
+        "sorting": 1,
+        "skillPractice": 2
+      },
+      "highPriorityComponents": [
+        "lesson-1-3: Interactive Power & Control Wheel hot-spot",
+        "lesson-1-5: Lois and James Sumpter case analysis",
+        "lesson-2-3: IPV sexual assault disclosure branching scenario",
+        "lesson-3-2: Safety planning conversation simulation",
+        "lesson-3-3: Trauma-informed response simulation"
+      ],
+      "effort": "95-125 hours (15 components × avg 6-8 hours)",
+      "cost": "$4,750-12,500 depending on complexity"
+    }
+  },
+  "recommendations": {
+    "minimumViableProduct": {
+      "description": "Essential media for functional, accessible course launch",
+      "images": "Generate 13 AI images + reuse 19 source images (32 total) - $3.90",
+      "videos": "Skip - text-based course is appropriate for trauma-informed IPV training",
+      "audio": "Use TTS for all 12 lessons (accessibility) - $0",
+      "animations": "Skip - static diagrams sufficient",
+      "interactive": "Implement 5 highest-priority components only: Power & Control hot-spot, Lois/James case, IPV disclosure scenario, safety planning sim, response sim - $2,200-5,000",
+      "totalEffort": "27-35 hours",
+      "totalCost": "$2,203.90-$5,003.90",
+      "readyForLaunch": "Yes - meets WCAG 2.1 AA accessibility with TTS, provides core learning experiences"
+    },
+    "recommended": {
+      "description": "Balanced approach maximizing learning impact while controlling costs",
+      "images": "All 32 images (13 AI + 19 reused) - $3.90",
+      "videos": "Skip - not needed for this course format",
+      "audio": "Hybrid approach - TTS for 9 lessons, professional voiceover for 3 trauma-sensitive lessons (3-1, 3-2, 3-3) - $300-900",
+      "animations": "Skip - interactive components provide better engagement",
+      "interactive": "Implement 10 prioritized components (mix of complexities) - $3,500-8,000",
+      "totalEffort": "45-60 hours",
+      "totalCost": "$3,803.90-$8,903.90",
+      "advantages": [
+        "Professional voiceover for most sensitive content enhances trauma-informed delivery",
+        "10 interactive components provide robust hands-on practice across all modules",
+        "Excellent learner engagement without excessive development cost",
+        "Maintains accessibility standards with hybrid audio approach"
+      ]
+    },
+    "fullProduction": {
+      "description": "Maximum engagement with all 15 prioritized interactive components",
+      "images": "All 32 images (13 AI + 19 reused) - $3.90",
+      "videos": "Still skip - not appropriate for trauma-informed IPV course",
+      "audio": "Professional voiceover for all 12 lessons - $1,200-3,600",
+      "animations": "Still skip - not needed given interactive investment",
+      "interactive": "All 15 prioritized components fully developed - $4,750-12,500",
+      "totalEffort": "110-140 hours",
+      "totalCost": "$5,953.90-$16,103.90",
+      "advantages": [
+        "Professional audio quality throughout entire course",
+        "Comprehensive interactive practice opportunities in every module",
+        "Maximum learner engagement and skill development",
+        "Premium professional training experience"
+      ]
+    }
+  },
+  "coordination": {
+    "note": "This plan coordinates across all media types identified in Phase 2 analysis",
+    "sources": [
+      "qwen-optimized-prompts.json (13 hero images planned)",
+      "interactive-opportunities.json (58 opportunities identified, 15 prioritized for implementation)",
+      "image-gap-analysis.json (19 source images to reuse, 10 gaps identified)",
+      "source-images-catalog.json (19 essential framework diagrams, statistics, resources marked as KEEP)"
+    ],
+    "conflicts": [],
+    "duplicationsAvoided": [
+      "Power & Control Wheel: Reusing 3 source diagram variations + AI hero image complements (doesn't duplicate) + Interactive hot-spot for hands-on exploration (no redundant video or animation)",
+      "Rape Culture Pyramid: Reusing source diagram + AI hero complements + Interactive sorting activity (no redundant video explanation)",
+      "Safety Planning: AI hero metaphor + Interactive simulation for practice (no redundant video demonstration)",
+      "Statistics: Reusing CDC infographics (no regeneration, no animated charts)"
+    ],
+    "gaps": [],
+    "strengths": [
+      "Intelligent image reuse preserves 19 evidence-based frameworks and statistics (cost savings + consistency)",
+      "Interactive components focus on skill practice (not passive consumption)",
+      "Trauma-informed approach throughout (learner control, professional perspective, empowering imagery)",
+      "Accessibility addressed with audio narration plan (TTS or professional based on budget)",
+      "No redundant media - each type serves distinct purpose"
+    ]
+  },
+  "accessibilityCompliance": {
+    "standard": "WCAG 2.1 AA",
+    "requirements": {
+      "images": {
+        "altText": "Required for all 32 images - descriptive alt text must be authored during Phase 3",
+        "colorContrast": "All text in images must meet 4.5:1 ratio",
+        "textAlternatives": "Source framework diagrams have text descriptions in lesson content"
+      },
+      "audio": {
+        "transcripts": "All audio narration must have full text transcripts (lesson content serves as transcript)",
+        "volumeControls": "Media player must have accessible volume controls",
+        "pausePlay": "Keyboard-accessible pause/play controls required"
+      },
+      "interactive": {
+        "keyboardNav": "All 15 interactive components must be fully keyboard navigable",
+        "screenReader": "ARIA labels and roles required for all interactive elements",
+        "focusIndicators": "Clear visual focus indicators required",
+        "errorMessages": "Accessible error and success messages required"
+      }
+    },
+    "plan": "Full accessibility audit required in Phase 4 after all media integrated"
+  },
+  "traumaInformedValidation": {
+    "imageApproach": "✅ Artistic watercolor silhouettes (not photorealistic people)",
+    "imageContent": "✅ Empowering imagery (professional helper perspective, not victim perspective)",
+    "imageMetaphors": "✅ Abstract representations (icebergs, journeys, shields) for difficult concepts",
+    "videoApproach": "✅ No videos (text allows learner control over pacing and exposure)",
+    "audioTone": "✅ Professional voiceover for trauma-sensitive lessons (calm, empowering tone)",
+    "interactiveFocus": "✅ Professional skill practice (not survivor experience simulation)",
+    "learnerControl": "✅ All media allows learner to pause, skip, or revisit at their own pace",
+    "contentWarnings": "⚠️ To be added in Phase 4 - content warnings before sensitive modules"
+  },
+  "developmentPriority": {
+    "phase3": {
+      "priority": "Generate images (13 AI) + Copy reused images (19) - 2.17 hours, $3.90",
+      "deliverable": "All 32 images ready for Phase 4 HTML integration"
+    },
+    "phase4": {
+      "priority": "Integrate images + Implement 5-10 highest-priority interactive components",
+      "deliverable": "Functional course with images, interactive practice, and HTML structure"
+    },
+    "phase5Plus": {
+      "priority": "Add professional voiceover (if budget allows) + Implement remaining interactive components",
+      "deliverable": "Enhanced course with professional audio and comprehensive interactivity"
+    }
+  }
+}
