@@ -1,0 +1,1323 @@
+{
+  "projectPath": "g:\\z-CUSTOM_DEV\\CourseFuture\\clients\\z-custom\\IPV",
+  "analyzedAt": "2026-01-27T02:26:56.163Z",
+  "totalLessons": 12,
+  "lessonsWithOpportunities": 12,
+  "totalOpportunities": 58,
+  "lessonAnalyses": [
+    {
+      "lessonId": "lesson-1-1",
+      "lessonTitle": "Who is Affected by Intimate Partner Violence?",
+      "currentInteractivity": [
+        "knowledge-check",
+        "knowledge-check",
+        "knowledge-check"
+      ],
+      "opportunities": [
+        {
+          "type": "simulation",
+          "title": "Trauma-Informed Conversation Simulator",
+          "description": "Practice having trauma-informed conversations with survivors using realistic dialogue options",
+          "learningObjective": "Demonstrate trauma-informed communication techniques with survivors",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "10-15 hours",
+          "technicalRequirements": [
+            "Dialogue system",
+            "NPC responses",
+            "Tone analysis"
+          ],
+          "contentNeeds": [
+            "Conversation scripts",
+            "Response variations",
+            "Feedback on communication choices"
+          ]
+        },
+        {
+          "type": "case-study",
+          "title": "IPV Case Analysis",
+          "description": "Analyze a realistic case study, identify abuse patterns, and recommend appropriate interventions",
+          "learningObjective": "Apply frameworks to identify IPV patterns and recommend interventions",
+          "complexity": "medium",
+          "priority": "high",
+          "estimatedDevelopmentTime": "6-8 hours",
+          "technicalRequirements": [
+            "Case presentation system",
+            "Analysis tools",
+            "Feedback mechanism"
+          ],
+          "contentNeeds": [
+            "Detailed case narratives",
+            "Analysis prompts",
+            "Expert interpretations"
+          ]
+        },
+        {
+          "type": "drag-drop",
+          "title": "Abuse Type Categorization",
+          "description": "Drag behaviors/examples into the correct abuse category (physical, emotional, economic, etc.)",
+          "learningObjective": "Correctly identify and categorize different types of abuse",
+          "complexity": "low",
+          "priority": "high",
+          "estimatedDevelopmentTime": "3-4 hours",
+          "technicalRequirements": [
+            "Drag-drop interface",
+            "Validation logic"
+          ],
+          "contentNeeds": [
+            "Behavior examples",
+            "Category definitions",
+            "Feedback for correct/incorrect"
+          ]
+        },
+        {
+          "type": "sorting",
+          "title": "Cycle of Violence Sequencing",
+          "description": "Arrange phases of the cycle of violence in the correct order and identify characteristics",
+          "learningObjective": "Understand the sequential nature of the abuse cycle",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Sortable list interface",
+            "Validation"
+          ],
+          "contentNeeds": [
+            "Phase descriptions",
+            "Correct sequence",
+            "Explanatory feedback"
+          ]
+        }
+      ],
+      "recommendedPriority": "low",
+      "notes": [
+        "Multiple interactive opportunities available",
+        "Prioritize based on learning impact and development time"
+      ]
+    },
+    {
+      "lessonId": "lesson-1-2",
+      "lessonTitle": "Types of Abuse",
+      "currentInteractivity": [
+        "knowledge-check",
+        "knowledge-check",
+        "knowledge-check"
+      ],
+      "opportunities": [
+        {
+          "type": "branching-scenario",
+          "title": "Interactive Response Scenario",
+          "description": "Learners make decisions about how to respond to an IPV situation, with branching paths based on their choices",
+          "learningObjective": "Apply appropriate response strategies in realistic IPV situations",
+          "complexity": "high",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "8-12 hours",
+          "technicalRequirements": [
+            "Scenario builder",
+            "Decision tree logic",
+            "Feedback system"
+          ],
+          "contentNeeds": [
+            "Realistic scenarios",
+            "Decision options",
+            "Outcome descriptions",
+            "Expert feedback"
+          ]
+        },
+        {
+          "type": "simulation",
+          "title": "Trauma-Informed Conversation Simulator",
+          "description": "Practice having trauma-informed conversations with survivors using realistic dialogue options",
+          "learningObjective": "Demonstrate trauma-informed communication techniques with survivors",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "10-15 hours",
+          "technicalRequirements": [
+            "Dialogue system",
+            "NPC responses",
+            "Tone analysis"
+          ],
+          "contentNeeds": [
+            "Conversation scripts",
+            "Response variations",
+            "Feedback on communication choices"
+          ]
+        },
+        {
+          "type": "case-study",
+          "title": "IPV Case Analysis",
+          "description": "Analyze a realistic case study, identify abuse patterns, and recommend appropriate interventions",
+          "learningObjective": "Apply frameworks to identify IPV patterns and recommend interventions",
+          "complexity": "medium",
+          "priority": "high",
+          "estimatedDevelopmentTime": "6-8 hours",
+          "technicalRequirements": [
+            "Case presentation system",
+            "Analysis tools",
+            "Feedback mechanism"
+          ],
+          "contentNeeds": [
+            "Detailed case narratives",
+            "Analysis prompts",
+            "Expert interpretations"
+          ]
+        },
+        {
+          "type": "drag-drop",
+          "title": "Abuse Type Categorization",
+          "description": "Drag behaviors/examples into the correct abuse category (physical, emotional, economic, etc.)",
+          "learningObjective": "Correctly identify and categorize different types of abuse",
+          "complexity": "low",
+          "priority": "high",
+          "estimatedDevelopmentTime": "3-4 hours",
+          "technicalRequirements": [
+            "Drag-drop interface",
+            "Validation logic"
+          ],
+          "contentNeeds": [
+            "Behavior examples",
+            "Category definitions",
+            "Feedback for correct/incorrect"
+          ]
+        },
+        {
+          "type": "hot-spot",
+          "title": "Interactive Framework Explorer",
+          "description": "Click on different regions of the Power & Control Wheel to explore detailed information",
+          "learningObjective": "Explore and understand all components of IPV frameworks",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Image mapping",
+            "Modal/popup system"
+          ],
+          "contentNeeds": [
+            "High-res framework images",
+            "Detailed descriptions for each component"
+          ]
+        }
+      ],
+      "recommendedPriority": "low",
+      "notes": [
+        "Multiple interactive opportunities available",
+        "Prioritize based on learning impact and development time"
+      ]
+    },
+    {
+      "lessonId": "lesson-1-3",
+      "lessonTitle": "Power and Control Wheel",
+      "currentInteractivity": [
+        "knowledge-check",
+        "knowledge-check",
+        "knowledge-check"
+      ],
+      "opportunities": [
+        {
+          "type": "simulation",
+          "title": "Trauma-Informed Conversation Simulator",
+          "description": "Practice having trauma-informed conversations with survivors using realistic dialogue options",
+          "learningObjective": "Demonstrate trauma-informed communication techniques with survivors",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "10-15 hours",
+          "technicalRequirements": [
+            "Dialogue system",
+            "NPC responses",
+            "Tone analysis"
+          ],
+          "contentNeeds": [
+            "Conversation scripts",
+            "Response variations",
+            "Feedback on communication choices"
+          ]
+        },
+        {
+          "type": "case-study",
+          "title": "IPV Case Analysis",
+          "description": "Analyze a realistic case study, identify abuse patterns, and recommend appropriate interventions",
+          "learningObjective": "Apply frameworks to identify IPV patterns and recommend interventions",
+          "complexity": "medium",
+          "priority": "high",
+          "estimatedDevelopmentTime": "6-8 hours",
+          "technicalRequirements": [
+            "Case presentation system",
+            "Analysis tools",
+            "Feedback mechanism"
+          ],
+          "contentNeeds": [
+            "Detailed case narratives",
+            "Analysis prompts",
+            "Expert interpretations"
+          ]
+        },
+        {
+          "type": "drag-drop",
+          "title": "Abuse Type Categorization",
+          "description": "Drag behaviors/examples into the correct abuse category (physical, emotional, economic, etc.)",
+          "learningObjective": "Correctly identify and categorize different types of abuse",
+          "complexity": "low",
+          "priority": "high",
+          "estimatedDevelopmentTime": "3-4 hours",
+          "technicalRequirements": [
+            "Drag-drop interface",
+            "Validation logic"
+          ],
+          "contentNeeds": [
+            "Behavior examples",
+            "Category definitions",
+            "Feedback for correct/incorrect"
+          ]
+        },
+        {
+          "type": "hot-spot",
+          "title": "Interactive Framework Explorer",
+          "description": "Click on different regions of the Power & Control Wheel to explore detailed information",
+          "learningObjective": "Explore and understand all components of IPV frameworks",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Image mapping",
+            "Modal/popup system"
+          ],
+          "contentNeeds": [
+            "High-res framework images",
+            "Detailed descriptions for each component"
+          ]
+        }
+      ],
+      "recommendedPriority": "low",
+      "notes": [
+        "Multiple interactive opportunities available",
+        "Prioritize based on learning impact and development time"
+      ]
+    },
+    {
+      "lessonId": "lesson-1-4",
+      "lessonTitle": "Categorizing Intimate Partner Violence",
+      "currentInteractivity": [
+        "knowledge-check",
+        "knowledge-check",
+        "knowledge-check"
+      ],
+      "opportunities": [
+        {
+          "type": "branching-scenario",
+          "title": "Interactive Response Scenario",
+          "description": "Learners make decisions about how to respond to an IPV situation, with branching paths based on their choices",
+          "learningObjective": "Apply appropriate response strategies in realistic IPV situations",
+          "complexity": "high",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "8-12 hours",
+          "technicalRequirements": [
+            "Scenario builder",
+            "Decision tree logic",
+            "Feedback system"
+          ],
+          "contentNeeds": [
+            "Realistic scenarios",
+            "Decision options",
+            "Outcome descriptions",
+            "Expert feedback"
+          ]
+        },
+        {
+          "type": "simulation",
+          "title": "Trauma-Informed Conversation Simulator",
+          "description": "Practice having trauma-informed conversations with survivors using realistic dialogue options",
+          "learningObjective": "Demonstrate trauma-informed communication techniques with survivors",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "10-15 hours",
+          "technicalRequirements": [
+            "Dialogue system",
+            "NPC responses",
+            "Tone analysis"
+          ],
+          "contentNeeds": [
+            "Conversation scripts",
+            "Response variations",
+            "Feedback on communication choices"
+          ]
+        },
+        {
+          "type": "case-study",
+          "title": "IPV Case Analysis",
+          "description": "Analyze a realistic case study, identify abuse patterns, and recommend appropriate interventions",
+          "learningObjective": "Apply frameworks to identify IPV patterns and recommend interventions",
+          "complexity": "medium",
+          "priority": "high",
+          "estimatedDevelopmentTime": "6-8 hours",
+          "technicalRequirements": [
+            "Case presentation system",
+            "Analysis tools",
+            "Feedback mechanism"
+          ],
+          "contentNeeds": [
+            "Detailed case narratives",
+            "Analysis prompts",
+            "Expert interpretations"
+          ]
+        },
+        {
+          "type": "hot-spot",
+          "title": "Interactive Framework Explorer",
+          "description": "Click on different regions of the Power & Control Wheel to explore detailed information",
+          "learningObjective": "Explore and understand all components of IPV frameworks",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Image mapping",
+            "Modal/popup system"
+          ],
+          "contentNeeds": [
+            "High-res framework images",
+            "Detailed descriptions for each component"
+          ]
+        }
+      ],
+      "recommendedPriority": "low",
+      "notes": [
+        "Multiple interactive opportunities available",
+        "Prioritize based on learning impact and development time"
+      ]
+    },
+    {
+      "lessonId": "lesson-1-5",
+      "lessonTitle": "Case Analysis: Lois and James Sumpter",
+      "currentInteractivity": [
+        "knowledge-check",
+        "knowledge-check",
+        "knowledge-check"
+      ],
+      "opportunities": [
+        {
+          "type": "branching-scenario",
+          "title": "Interactive Response Scenario",
+          "description": "Learners make decisions about how to respond to an IPV situation, with branching paths based on their choices",
+          "learningObjective": "Apply appropriate response strategies in realistic IPV situations",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "8-12 hours",
+          "technicalRequirements": [
+            "Scenario builder",
+            "Decision tree logic",
+            "Feedback system"
+          ],
+          "contentNeeds": [
+            "Realistic scenarios",
+            "Decision options",
+            "Outcome descriptions",
+            "Expert feedback"
+          ]
+        },
+        {
+          "type": "simulation",
+          "title": "Trauma-Informed Conversation Simulator",
+          "description": "Practice having trauma-informed conversations with survivors using realistic dialogue options",
+          "learningObjective": "Demonstrate trauma-informed communication techniques with survivors",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "10-15 hours",
+          "technicalRequirements": [
+            "Dialogue system",
+            "NPC responses",
+            "Tone analysis"
+          ],
+          "contentNeeds": [
+            "Conversation scripts",
+            "Response variations",
+            "Feedback on communication choices"
+          ]
+        },
+        {
+          "type": "case-study",
+          "title": "IPV Case Analysis",
+          "description": "Analyze a realistic case study, identify abuse patterns, and recommend appropriate interventions",
+          "learningObjective": "Apply frameworks to identify IPV patterns and recommend interventions",
+          "complexity": "medium",
+          "priority": "high",
+          "estimatedDevelopmentTime": "6-8 hours",
+          "technicalRequirements": [
+            "Case presentation system",
+            "Analysis tools",
+            "Feedback mechanism"
+          ],
+          "contentNeeds": [
+            "Detailed case narratives",
+            "Analysis prompts",
+            "Expert interpretations"
+          ]
+        },
+        {
+          "type": "drag-drop",
+          "title": "Abuse Type Categorization",
+          "description": "Drag behaviors/examples into the correct abuse category (physical, emotional, economic, etc.)",
+          "learningObjective": "Correctly identify and categorize different types of abuse",
+          "complexity": "low",
+          "priority": "high",
+          "estimatedDevelopmentTime": "3-4 hours",
+          "technicalRequirements": [
+            "Drag-drop interface",
+            "Validation logic"
+          ],
+          "contentNeeds": [
+            "Behavior examples",
+            "Category definitions",
+            "Feedback for correct/incorrect"
+          ]
+        },
+        {
+          "type": "hot-spot",
+          "title": "Interactive Framework Explorer",
+          "description": "Click on different regions of the Power & Control Wheel to explore detailed information",
+          "learningObjective": "Explore and understand all components of IPV frameworks",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Image mapping",
+            "Modal/popup system"
+          ],
+          "contentNeeds": [
+            "High-res framework images",
+            "Detailed descriptions for each component"
+          ]
+        }
+      ],
+      "recommendedPriority": "low",
+      "notes": [
+        "Multiple interactive opportunities available",
+        "Prioritize based on learning impact and development time"
+      ]
+    },
+    {
+      "lessonId": "lesson-2-1",
+      "lessonTitle": "What is Sexual Violence?",
+      "currentInteractivity": [
+        "knowledge-check",
+        "knowledge-check",
+        "knowledge-check"
+      ],
+      "opportunities": [
+        {
+          "type": "branching-scenario",
+          "title": "Interactive Response Scenario",
+          "description": "Learners make decisions about how to respond to an IPV situation, with branching paths based on their choices",
+          "learningObjective": "Apply appropriate response strategies in realistic IPV situations",
+          "complexity": "high",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "8-12 hours",
+          "technicalRequirements": [
+            "Scenario builder",
+            "Decision tree logic",
+            "Feedback system"
+          ],
+          "contentNeeds": [
+            "Realistic scenarios",
+            "Decision options",
+            "Outcome descriptions",
+            "Expert feedback"
+          ]
+        },
+        {
+          "type": "simulation",
+          "title": "Trauma-Informed Conversation Simulator",
+          "description": "Practice having trauma-informed conversations with survivors using realistic dialogue options",
+          "learningObjective": "Demonstrate trauma-informed communication techniques with survivors",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "10-15 hours",
+          "technicalRequirements": [
+            "Dialogue system",
+            "NPC responses",
+            "Tone analysis"
+          ],
+          "contentNeeds": [
+            "Conversation scripts",
+            "Response variations",
+            "Feedback on communication choices"
+          ]
+        },
+        {
+          "type": "case-study",
+          "title": "IPV Case Analysis",
+          "description": "Analyze a realistic case study, identify abuse patterns, and recommend appropriate interventions",
+          "learningObjective": "Apply frameworks to identify IPV patterns and recommend interventions",
+          "complexity": "medium",
+          "priority": "high",
+          "estimatedDevelopmentTime": "6-8 hours",
+          "technicalRequirements": [
+            "Case presentation system",
+            "Analysis tools",
+            "Feedback mechanism"
+          ],
+          "contentNeeds": [
+            "Detailed case narratives",
+            "Analysis prompts",
+            "Expert interpretations"
+          ]
+        },
+        {
+          "type": "drag-drop",
+          "title": "Abuse Type Categorization",
+          "description": "Drag behaviors/examples into the correct abuse category (physical, emotional, economic, etc.)",
+          "learningObjective": "Correctly identify and categorize different types of abuse",
+          "complexity": "low",
+          "priority": "high",
+          "estimatedDevelopmentTime": "3-4 hours",
+          "technicalRequirements": [
+            "Drag-drop interface",
+            "Validation logic"
+          ],
+          "contentNeeds": [
+            "Behavior examples",
+            "Category definitions",
+            "Feedback for correct/incorrect"
+          ]
+        },
+        {
+          "type": "hot-spot",
+          "title": "Interactive Framework Explorer",
+          "description": "Click on different regions of the Power & Control Wheel to explore detailed information",
+          "learningObjective": "Explore and understand all components of IPV frameworks",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Image mapping",
+            "Modal/popup system"
+          ],
+          "contentNeeds": [
+            "High-res framework images",
+            "Detailed descriptions for each component"
+          ]
+        },
+        {
+          "type": "sorting",
+          "title": "Cycle of Violence Sequencing",
+          "description": "Arrange phases of the cycle of violence in the correct order and identify characteristics",
+          "learningObjective": "Understand the sequential nature of the abuse cycle",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Sortable list interface",
+            "Validation"
+          ],
+          "contentNeeds": [
+            "Phase descriptions",
+            "Correct sequence",
+            "Explanatory feedback"
+          ]
+        }
+      ],
+      "recommendedPriority": "medium",
+      "notes": [
+        "Multiple interactive opportunities available",
+        "Prioritize based on learning impact and development time"
+      ]
+    },
+    {
+      "lessonId": "lesson-2-2",
+      "lessonTitle": "Sexual Violence in Our Society",
+      "currentInteractivity": [
+        "knowledge-check",
+        "knowledge-check",
+        "knowledge-check"
+      ],
+      "opportunities": [
+        {
+          "type": "branching-scenario",
+          "title": "Interactive Response Scenario",
+          "description": "Learners make decisions about how to respond to an IPV situation, with branching paths based on their choices",
+          "learningObjective": "Apply appropriate response strategies in realistic IPV situations",
+          "complexity": "high",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "8-12 hours",
+          "technicalRequirements": [
+            "Scenario builder",
+            "Decision tree logic",
+            "Feedback system"
+          ],
+          "contentNeeds": [
+            "Realistic scenarios",
+            "Decision options",
+            "Outcome descriptions",
+            "Expert feedback"
+          ]
+        },
+        {
+          "type": "simulation",
+          "title": "Trauma-Informed Conversation Simulator",
+          "description": "Practice having trauma-informed conversations with survivors using realistic dialogue options",
+          "learningObjective": "Demonstrate trauma-informed communication techniques with survivors",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "10-15 hours",
+          "technicalRequirements": [
+            "Dialogue system",
+            "NPC responses",
+            "Tone analysis"
+          ],
+          "contentNeeds": [
+            "Conversation scripts",
+            "Response variations",
+            "Feedback on communication choices"
+          ]
+        },
+        {
+          "type": "case-study",
+          "title": "IPV Case Analysis",
+          "description": "Analyze a realistic case study, identify abuse patterns, and recommend appropriate interventions",
+          "learningObjective": "Apply frameworks to identify IPV patterns and recommend interventions",
+          "complexity": "medium",
+          "priority": "high",
+          "estimatedDevelopmentTime": "6-8 hours",
+          "technicalRequirements": [
+            "Case presentation system",
+            "Analysis tools",
+            "Feedback mechanism"
+          ],
+          "contentNeeds": [
+            "Detailed case narratives",
+            "Analysis prompts",
+            "Expert interpretations"
+          ]
+        }
+      ],
+      "recommendedPriority": "medium",
+      "notes": [
+        "Multiple interactive opportunities available",
+        "Prioritize based on learning impact and development time"
+      ]
+    },
+    {
+      "lessonId": "lesson-2-3",
+      "lessonTitle": "Rape and Sexual Assault in IPV Context",
+      "currentInteractivity": [
+        "knowledge-check",
+        "knowledge-check",
+        "knowledge-check"
+      ],
+      "opportunities": [
+        {
+          "type": "branching-scenario",
+          "title": "Interactive Response Scenario",
+          "description": "Learners make decisions about how to respond to an IPV situation, with branching paths based on their choices",
+          "learningObjective": "Apply appropriate response strategies in realistic IPV situations",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "8-12 hours",
+          "technicalRequirements": [
+            "Scenario builder",
+            "Decision tree logic",
+            "Feedback system"
+          ],
+          "contentNeeds": [
+            "Realistic scenarios",
+            "Decision options",
+            "Outcome descriptions",
+            "Expert feedback"
+          ]
+        },
+        {
+          "type": "simulation",
+          "title": "Trauma-Informed Conversation Simulator",
+          "description": "Practice having trauma-informed conversations with survivors using realistic dialogue options",
+          "learningObjective": "Demonstrate trauma-informed communication techniques with survivors",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "10-15 hours",
+          "technicalRequirements": [
+            "Dialogue system",
+            "NPC responses",
+            "Tone analysis"
+          ],
+          "contentNeeds": [
+            "Conversation scripts",
+            "Response variations",
+            "Feedback on communication choices"
+          ]
+        },
+        {
+          "type": "case-study",
+          "title": "IPV Case Analysis",
+          "description": "Analyze a realistic case study, identify abuse patterns, and recommend appropriate interventions",
+          "learningObjective": "Apply frameworks to identify IPV patterns and recommend interventions",
+          "complexity": "medium",
+          "priority": "high",
+          "estimatedDevelopmentTime": "6-8 hours",
+          "technicalRequirements": [
+            "Case presentation system",
+            "Analysis tools",
+            "Feedback mechanism"
+          ],
+          "contentNeeds": [
+            "Detailed case narratives",
+            "Analysis prompts",
+            "Expert interpretations"
+          ]
+        },
+        {
+          "type": "drag-drop",
+          "title": "Abuse Type Categorization",
+          "description": "Drag behaviors/examples into the correct abuse category (physical, emotional, economic, etc.)",
+          "learningObjective": "Correctly identify and categorize different types of abuse",
+          "complexity": "low",
+          "priority": "high",
+          "estimatedDevelopmentTime": "3-4 hours",
+          "technicalRequirements": [
+            "Drag-drop interface",
+            "Validation logic"
+          ],
+          "contentNeeds": [
+            "Behavior examples",
+            "Category definitions",
+            "Feedback for correct/incorrect"
+          ]
+        },
+        {
+          "type": "hot-spot",
+          "title": "Interactive Framework Explorer",
+          "description": "Click on different regions of the Power & Control Wheel to explore detailed information",
+          "learningObjective": "Explore and understand all components of IPV frameworks",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Image mapping",
+            "Modal/popup system"
+          ],
+          "contentNeeds": [
+            "High-res framework images",
+            "Detailed descriptions for each component"
+          ]
+        },
+        {
+          "type": "sorting",
+          "title": "Cycle of Violence Sequencing",
+          "description": "Arrange phases of the cycle of violence in the correct order and identify characteristics",
+          "learningObjective": "Understand the sequential nature of the abuse cycle",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Sortable list interface",
+            "Validation"
+          ],
+          "contentNeeds": [
+            "Phase descriptions",
+            "Correct sequence",
+            "Explanatory feedback"
+          ]
+        }
+      ],
+      "recommendedPriority": "medium",
+      "notes": [
+        "Multiple interactive opportunities available",
+        "Prioritize based on learning impact and development time"
+      ]
+    },
+    {
+      "lessonId": "lesson-3-1",
+      "lessonTitle": "Impact of IPV on Survivors",
+      "currentInteractivity": [
+        "knowledge-check",
+        "knowledge-check",
+        "knowledge-check"
+      ],
+      "opportunities": [
+        {
+          "type": "branching-scenario",
+          "title": "Interactive Response Scenario",
+          "description": "Learners make decisions about how to respond to an IPV situation, with branching paths based on their choices",
+          "learningObjective": "Apply appropriate response strategies in realistic IPV situations",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "8-12 hours",
+          "technicalRequirements": [
+            "Scenario builder",
+            "Decision tree logic",
+            "Feedback system"
+          ],
+          "contentNeeds": [
+            "Realistic scenarios",
+            "Decision options",
+            "Outcome descriptions",
+            "Expert feedback"
+          ]
+        },
+        {
+          "type": "simulation",
+          "title": "Trauma-Informed Conversation Simulator",
+          "description": "Practice having trauma-informed conversations with survivors using realistic dialogue options",
+          "learningObjective": "Demonstrate trauma-informed communication techniques with survivors",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "10-15 hours",
+          "technicalRequirements": [
+            "Dialogue system",
+            "NPC responses",
+            "Tone analysis"
+          ],
+          "contentNeeds": [
+            "Conversation scripts",
+            "Response variations",
+            "Feedback on communication choices"
+          ]
+        },
+        {
+          "type": "drag-drop",
+          "title": "Abuse Type Categorization",
+          "description": "Drag behaviors/examples into the correct abuse category (physical, emotional, economic, etc.)",
+          "learningObjective": "Correctly identify and categorize different types of abuse",
+          "complexity": "low",
+          "priority": "high",
+          "estimatedDevelopmentTime": "3-4 hours",
+          "technicalRequirements": [
+            "Drag-drop interface",
+            "Validation logic"
+          ],
+          "contentNeeds": [
+            "Behavior examples",
+            "Category definitions",
+            "Feedback for correct/incorrect"
+          ]
+        },
+        {
+          "type": "sorting",
+          "title": "Cycle of Violence Sequencing",
+          "description": "Arrange phases of the cycle of violence in the correct order and identify characteristics",
+          "learningObjective": "Understand the sequential nature of the abuse cycle",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Sortable list interface",
+            "Validation"
+          ],
+          "contentNeeds": [
+            "Phase descriptions",
+            "Correct sequence",
+            "Explanatory feedback"
+          ]
+        }
+      ],
+      "recommendedPriority": "high",
+      "notes": [
+        "Multiple interactive opportunities available",
+        "Prioritize based on learning impact and development time"
+      ]
+    },
+    {
+      "lessonId": "lesson-3-2",
+      "lessonTitle": "Safety Planning with Survivors",
+      "currentInteractivity": [
+        "knowledge-check",
+        "knowledge-check",
+        "knowledge-check"
+      ],
+      "opportunities": [
+        {
+          "type": "branching-scenario",
+          "title": "Interactive Response Scenario",
+          "description": "Learners make decisions about how to respond to an IPV situation, with branching paths based on their choices",
+          "learningObjective": "Apply appropriate response strategies in realistic IPV situations",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "8-12 hours",
+          "technicalRequirements": [
+            "Scenario builder",
+            "Decision tree logic",
+            "Feedback system"
+          ],
+          "contentNeeds": [
+            "Realistic scenarios",
+            "Decision options",
+            "Outcome descriptions",
+            "Expert feedback"
+          ]
+        },
+        {
+          "type": "simulation",
+          "title": "Trauma-Informed Conversation Simulator",
+          "description": "Practice having trauma-informed conversations with survivors using realistic dialogue options",
+          "learningObjective": "Demonstrate trauma-informed communication techniques with survivors",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "10-15 hours",
+          "technicalRequirements": [
+            "Dialogue system",
+            "NPC responses",
+            "Tone analysis"
+          ],
+          "contentNeeds": [
+            "Conversation scripts",
+            "Response variations",
+            "Feedback on communication choices"
+          ]
+        },
+        {
+          "type": "case-study",
+          "title": "IPV Case Analysis",
+          "description": "Analyze a realistic case study, identify abuse patterns, and recommend appropriate interventions",
+          "learningObjective": "Apply frameworks to identify IPV patterns and recommend interventions",
+          "complexity": "medium",
+          "priority": "high",
+          "estimatedDevelopmentTime": "6-8 hours",
+          "technicalRequirements": [
+            "Case presentation system",
+            "Analysis tools",
+            "Feedback mechanism"
+          ],
+          "contentNeeds": [
+            "Detailed case narratives",
+            "Analysis prompts",
+            "Expert interpretations"
+          ]
+        },
+        {
+          "type": "drag-drop",
+          "title": "Abuse Type Categorization",
+          "description": "Drag behaviors/examples into the correct abuse category (physical, emotional, economic, etc.)",
+          "learningObjective": "Correctly identify and categorize different types of abuse",
+          "complexity": "low",
+          "priority": "high",
+          "estimatedDevelopmentTime": "3-4 hours",
+          "technicalRequirements": [
+            "Drag-drop interface",
+            "Validation logic"
+          ],
+          "contentNeeds": [
+            "Behavior examples",
+            "Category definitions",
+            "Feedback for correct/incorrect"
+          ]
+        },
+        {
+          "type": "hot-spot",
+          "title": "Interactive Framework Explorer",
+          "description": "Click on different regions of the Power & Control Wheel to explore detailed information",
+          "learningObjective": "Explore and understand all components of IPV frameworks",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Image mapping",
+            "Modal/popup system"
+          ],
+          "contentNeeds": [
+            "High-res framework images",
+            "Detailed descriptions for each component"
+          ]
+        },
+        {
+          "type": "sorting",
+          "title": "Cycle of Violence Sequencing",
+          "description": "Arrange phases of the cycle of violence in the correct order and identify characteristics",
+          "learningObjective": "Understand the sequential nature of the abuse cycle",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Sortable list interface",
+            "Validation"
+          ],
+          "contentNeeds": [
+            "Phase descriptions",
+            "Correct sequence",
+            "Explanatory feedback"
+          ]
+        }
+      ],
+      "recommendedPriority": "high",
+      "notes": [
+        "Multiple interactive opportunities available",
+        "Prioritize based on learning impact and development time"
+      ]
+    },
+    {
+      "lessonId": "lesson-3-3",
+      "lessonTitle": "Responding to Someone Experiencing IPV",
+      "currentInteractivity": [
+        "knowledge-check",
+        "knowledge-check",
+        "knowledge-check"
+      ],
+      "opportunities": [
+        {
+          "type": "branching-scenario",
+          "title": "Interactive Response Scenario",
+          "description": "Learners make decisions about how to respond to an IPV situation, with branching paths based on their choices",
+          "learningObjective": "Apply appropriate response strategies in realistic IPV situations",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "8-12 hours",
+          "technicalRequirements": [
+            "Scenario builder",
+            "Decision tree logic",
+            "Feedback system"
+          ],
+          "contentNeeds": [
+            "Realistic scenarios",
+            "Decision options",
+            "Outcome descriptions",
+            "Expert feedback"
+          ]
+        },
+        {
+          "type": "simulation",
+          "title": "Trauma-Informed Conversation Simulator",
+          "description": "Practice having trauma-informed conversations with survivors using realistic dialogue options",
+          "learningObjective": "Demonstrate trauma-informed communication techniques with survivors",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "10-15 hours",
+          "technicalRequirements": [
+            "Dialogue system",
+            "NPC responses",
+            "Tone analysis"
+          ],
+          "contentNeeds": [
+            "Conversation scripts",
+            "Response variations",
+            "Feedback on communication choices"
+          ]
+        },
+        {
+          "type": "case-study",
+          "title": "IPV Case Analysis",
+          "description": "Analyze a realistic case study, identify abuse patterns, and recommend appropriate interventions",
+          "learningObjective": "Apply frameworks to identify IPV patterns and recommend interventions",
+          "complexity": "medium",
+          "priority": "high",
+          "estimatedDevelopmentTime": "6-8 hours",
+          "technicalRequirements": [
+            "Case presentation system",
+            "Analysis tools",
+            "Feedback mechanism"
+          ],
+          "contentNeeds": [
+            "Detailed case narratives",
+            "Analysis prompts",
+            "Expert interpretations"
+          ]
+        },
+        {
+          "type": "drag-drop",
+          "title": "Abuse Type Categorization",
+          "description": "Drag behaviors/examples into the correct abuse category (physical, emotional, economic, etc.)",
+          "learningObjective": "Correctly identify and categorize different types of abuse",
+          "complexity": "low",
+          "priority": "high",
+          "estimatedDevelopmentTime": "3-4 hours",
+          "technicalRequirements": [
+            "Drag-drop interface",
+            "Validation logic"
+          ],
+          "contentNeeds": [
+            "Behavior examples",
+            "Category definitions",
+            "Feedback for correct/incorrect"
+          ]
+        },
+        {
+          "type": "hot-spot",
+          "title": "Interactive Framework Explorer",
+          "description": "Click on different regions of the Power & Control Wheel to explore detailed information",
+          "learningObjective": "Explore and understand all components of IPV frameworks",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Image mapping",
+            "Modal/popup system"
+          ],
+          "contentNeeds": [
+            "High-res framework images",
+            "Detailed descriptions for each component"
+          ]
+        },
+        {
+          "type": "sorting",
+          "title": "Cycle of Violence Sequencing",
+          "description": "Arrange phases of the cycle of violence in the correct order and identify characteristics",
+          "learningObjective": "Understand the sequential nature of the abuse cycle",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Sortable list interface",
+            "Validation"
+          ],
+          "contentNeeds": [
+            "Phase descriptions",
+            "Correct sequence",
+            "Explanatory feedback"
+          ]
+        }
+      ],
+      "recommendedPriority": "high",
+      "notes": [
+        "Multiple interactive opportunities available",
+        "Prioritize based on learning impact and development time"
+      ]
+    },
+    {
+      "lessonId": "lesson-intro-1",
+      "lessonTitle": "Introduction: What is Intimate Partner Violence?",
+      "currentInteractivity": [
+        "knowledge-check",
+        "knowledge-check",
+        "knowledge-check"
+      ],
+      "opportunities": [
+        {
+          "type": "branching-scenario",
+          "title": "Interactive Response Scenario",
+          "description": "Learners make decisions about how to respond to an IPV situation, with branching paths based on their choices",
+          "learningObjective": "Apply appropriate response strategies in realistic IPV situations",
+          "complexity": "high",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "8-12 hours",
+          "technicalRequirements": [
+            "Scenario builder",
+            "Decision tree logic",
+            "Feedback system"
+          ],
+          "contentNeeds": [
+            "Realistic scenarios",
+            "Decision options",
+            "Outcome descriptions",
+            "Expert feedback"
+          ]
+        },
+        {
+          "type": "simulation",
+          "title": "Trauma-Informed Conversation Simulator",
+          "description": "Practice having trauma-informed conversations with survivors using realistic dialogue options",
+          "learningObjective": "Demonstrate trauma-informed communication techniques with survivors",
+          "complexity": "high",
+          "priority": "high",
+          "estimatedDevelopmentTime": "10-15 hours",
+          "technicalRequirements": [
+            "Dialogue system",
+            "NPC responses",
+            "Tone analysis"
+          ],
+          "contentNeeds": [
+            "Conversation scripts",
+            "Response variations",
+            "Feedback on communication choices"
+          ]
+        },
+        {
+          "type": "case-study",
+          "title": "IPV Case Analysis",
+          "description": "Analyze a realistic case study, identify abuse patterns, and recommend appropriate interventions",
+          "learningObjective": "Apply frameworks to identify IPV patterns and recommend interventions",
+          "complexity": "medium",
+          "priority": "high",
+          "estimatedDevelopmentTime": "6-8 hours",
+          "technicalRequirements": [
+            "Case presentation system",
+            "Analysis tools",
+            "Feedback mechanism"
+          ],
+          "contentNeeds": [
+            "Detailed case narratives",
+            "Analysis prompts",
+            "Expert interpretations"
+          ]
+        },
+        {
+          "type": "drag-drop",
+          "title": "Abuse Type Categorization",
+          "description": "Drag behaviors/examples into the correct abuse category (physical, emotional, economic, etc.)",
+          "learningObjective": "Correctly identify and categorize different types of abuse",
+          "complexity": "low",
+          "priority": "high",
+          "estimatedDevelopmentTime": "3-4 hours",
+          "technicalRequirements": [
+            "Drag-drop interface",
+            "Validation logic"
+          ],
+          "contentNeeds": [
+            "Behavior examples",
+            "Category definitions",
+            "Feedback for correct/incorrect"
+          ]
+        },
+        {
+          "type": "sorting",
+          "title": "Cycle of Violence Sequencing",
+          "description": "Arrange phases of the cycle of violence in the correct order and identify characteristics",
+          "learningObjective": "Understand the sequential nature of the abuse cycle",
+          "complexity": "low",
+          "priority": "medium",
+          "estimatedDevelopmentTime": "2-3 hours",
+          "technicalRequirements": [
+            "Sortable list interface",
+            "Validation"
+          ],
+          "contentNeeds": [
+            "Phase descriptions",
+            "Correct sequence",
+            "Explanatory feedback"
+          ]
+        }
+      ],
+      "recommendedPriority": "low",
+      "notes": [
+        "Multiple interactive opportunities available",
+        "Prioritize based on learning impact and development time"
+      ]
+    }
+  ],
+  "summary": {
+    "byType": {
+      "simulation": 12,
+      "case-study": 11,
+      "drag-drop": 10,
+      "sorting": 7,
+      "branching-scenario": 10,
+      "hot-spot": 8
+    },
+    "byPriority": {
+      "high": 38,
+      "medium": 20
+    },
+    "byComplexity": {
+      "high": 22,
+      "medium": 11,
+      "low": 25
+    }
+  },
+  "recommendations": [
+    "Phase 1 includes basic knowledge-checks and reflections (✓)",
+    "Phase 2 identifies opportunities for ADVANCED interactivity:",
+    "",
+    "**Immediate Priorities (High-Impact, Essential):**",
+    "- Drag-drop abuse categorization (Module 3)",
+    "- Case study analysis with Johnson's Typologies (Module 3)",
+    "- Trauma-informed conversation simulator (Module 5)",
+    "",
+    "**Medium Priorities (Enhance Learning):**",
+    "- Interactive Power & Control Wheel explorer (Module 3)",
+    "- Branching safety planning scenario (Module 5)",
+    "- Cycle of violence sequencing activity (Module 3)",
+    "",
+    "**Optional Enhancements (Time Permitting):**",
+    "- Additional branching scenarios for complex situations",
+    "- More case studies for practice",
+    "",
+    "**Development Approach:**",
+    "1. Implement high-priority, low-complexity items first (drag-drop, hot spots)",
+    "2. Build 1-2 high-complexity items for critical content (case study, simulation)",
+    "3. Test and iterate based on learner feedback",
+    "4. Add optional items in future iterations"
+  ]
+}

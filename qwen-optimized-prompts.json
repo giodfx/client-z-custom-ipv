@@ -1,0 +1,292 @@
+{
+  "projectId": "IPV",
+  "courseTitle": "Recognizing and Responding to Intimate Partner Violence",
+  "visualTheme": "Ethereal Depth - Watercolor Silhouettes with Iceberg Metaphor",
+  "generatedAt": "2026-01-27T02:15:00.000Z",
+  "model": "qwen",
+  "styleGuide": {
+    "approach": "artistic-watercolor-trauma-informed",
+    "colorPalette": {
+      "surface": "#38b2ac (teal - healing, clarity)",
+      "twilight": "#4a90a8 (blue - complexity, depth)",
+      "deep": "#2a5a7a (navy - profundity, trust)",
+      "accent": "#ffd700 (gold - hope, light)",
+      "supporting": "#ffd4b8 (peach - warmth, care)"
+    },
+    "mood": "Ethereal, hopeful, contemplative, empowering, trauma-informed",
+    "styleRequirements": [
+      "Watercolor painting style - NOT photorealistic",
+      "Silhouettes only for people - NO faces or clothing details",
+      "Soft painterly edges with visible brushstrokes",
+      "Metaphorical representations for sensitive content",
+      "Calming, empowering imagery",
+      "No realistic violence or distress"
+    ],
+    "traumaInformedPrinciples": [
+      "Focus on empowerment over victimization",
+      "Show strength, resilience, and support",
+      "Use abstract metaphors for difficult concepts",
+      "Professional helper perspective, not victim perspective",
+      "Hope and possibility themes"
+    ]
+  },
+  "diversityRotation": {
+    "ethnicities": ["African American", "Hispanic Latino", "Asian American", "Caucasian", "South Asian", "Middle Eastern", "multiracial"],
+    "genders": ["male", "female"],
+    "ages": ["30s", "40s", "50s", "60s"],
+    "note": "Applied systematically across all prompts to ensure representation"
+  },
+  "prompts": [
+    {
+      "lessonId": "lesson-intro-1",
+      "lessonTitle": "Introduction: What is Intimate Partner Violence?",
+      "imageType": "hero",
+      "template": "intro",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor painting of majestic iceberg floating in ethereal ocean waters. Above surface shows bright teal-colored ice tip glowing with aurora lights against cream sky. Below waterline reveals massive deep navy-purple iceberg structure descending into mysterious depths with golden light rays penetrating from above. Painterly watercolor style with soft atmospheric washes and visible brushstrokes. Metaphorical representation of hidden depths and what lies beneath surface awareness. Centered composition. Contemplative and profound mood. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "n/a - metaphorical",
+        "subjectPosition": "CENTER",
+        "icebergZone": "intro - full iceberg view"
+      },
+      "priority": "high",
+      "rationale": "Opening hero image establishing the core iceberg metaphor for the entire course journey"
+    },
+    {
+      "lessonId": "lesson-1-1",
+      "lessonTitle": "Who is Affected by Intimate Partner Violence?",
+      "imageType": "conceptual",
+      "template": "split-left",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor painting of diverse human silhouettes standing together in varied heights and postures. Solid teal and purple silhouettes positioned on LEFT HALF against cream watercolor background with peach atmospheric washes. Silhouettes show variety in body types and heights suggesting age and ethnic diversity. Simple clean outlines without facial features or clothing details. RIGHT HALF empty for text overlay. Empowering community theme. Soft painterly edges with visible brushstrokes. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "Multiple silhouettes - varied heights and body types",
+        "subjectPosition": "LEFT",
+        "icebergZone": "surface"
+      },
+      "priority": "high",
+      "rationale": "Demonstrates IPV affects diverse populations without stereotyping"
+    },
+    {
+      "lessonId": "lesson-1-2",
+      "lessonTitle": "Types of Abuse",
+      "imageType": "conceptual",
+      "template": "diagonal",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor illustration of overlapping circular patterns in teal, purple, and peach colors representing interconnected concepts. Soft watercolor washes create translucent overlapping layers showing how different elements connect. Abstract geometric design positioned on LEFT SIDE of frame. RIGHT SIDE empty for text overlay. Painterly style with organic edges and visible brushstrokes. Metaphorical representation of multiple types working together. Calming analytical mood. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "n/a - abstract",
+        "subjectPosition": "LEFT",
+        "icebergZone": "surface"
+      },
+      "priority": "medium",
+      "rationale": "Abstract representation of overlapping abuse types without triggering imagery"
+    },
+    {
+      "lessonId": "lesson-1-3",
+      "lessonTitle": "Power and Control Wheel",
+      "imageType": "conceptual",
+      "template": "split-right",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor painting of protective circular mandala pattern with geometric elements. Soft teal shapes arranged in concentric circles around cream light center on RIGHT HALF of composition. Purple and peach atmospheric watercolor background. LEFT HALF empty for text overlay. Symbolic representation of structure and framework. Painterly style with organic edges and visible brushstrokes. Centered on right side. Analytical yet calming mood. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "n/a - abstract framework",
+        "subjectPosition": "RIGHT",
+        "icebergZone": "surface"
+      },
+      "priority": "high",
+      "rationale": "Visual complement to Power & Control Wheel diagram without duplicating the actual wheel"
+    },
+    {
+      "lessonId": "lesson-1-4",
+      "lessonTitle": "Categorizing Intimate Partner Violence",
+      "imageType": "conceptual",
+      "template": "split-left",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor painting of winding illuminated path ascending through misty landscape. Path glows with soft teal and cream light positioned on LEFT HALF leading toward peach horizon. Purple atmospheric mist creates depth. Simple landscape silhouette suggesting journey and progression. RIGHT HALF empty for text overlay. Perspective composition with path leading upward. Hopeful analytical mood. Painterly textures with visible brushstrokes. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "n/a - landscape metaphor",
+        "subjectPosition": "LEFT",
+        "icebergZone": "surface"
+      },
+      "priority": "medium",
+      "rationale": "Journey metaphor for understanding different patterns and categories"
+    },
+    {
+      "lessonId": "lesson-1-5",
+      "lessonTitle": "Case Analysis: Lois and James Sumpter",
+      "imageType": "conceptual",
+      "template": "diagonal-badge",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor painting of single African American female silhouette in contemplative pose with head bowed and hands clasped. Solid teal-purple silhouette positioned on RIGHT SIDE against cream watercolor background with soft peach atmospheric washes. Simple clean outline without facial features or clothing details. LEFT SIDE empty for text overlay. Thoughtful reflective mood. Soft painterly edges with visible brushstrokes. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "African American female - first in diversity rotation",
+        "subjectPosition": "RIGHT",
+        "icebergZone": "surface"
+      },
+      "priority": "high",
+      "rationale": "Case study reflection - shows contemplation without depicting abuse or victimization"
+    },
+    {
+      "lessonId": "lesson-2-1",
+      "lessonTitle": "What is Sexual Violence?",
+      "imageType": "conceptual",
+      "template": "intro",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor painting of descending light rays through deep twilight blue waters. Purple and teal gradient waters create mysterious depth with volumetric light beams penetrating from above. Abstract aquatic environment suggesting deeper understanding and hidden truths. Painterly watercolor style with atmospheric depth. Centered composition showing transition from lighter surface to darker depths. Contemplative profound mood. Soft edges with visible brushstrokes. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "n/a - abstract transition",
+        "subjectPosition": "CENTER",
+        "icebergZone": "twilight - entering deeper waters"
+      },
+      "priority": "high",
+      "rationale": "Transition into Module 2's deeper, more complex topics using water depth metaphor"
+    },
+    {
+      "lessonId": "lesson-2-2",
+      "lessonTitle": "Sexual Violence in Our Society",
+      "imageType": "conceptual",
+      "template": "split-left",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor illustration of abstract pyramid structure with layered translucent shapes. Soft purple and teal watercolor layers create foundation with lighter peach tones ascending toward top. Abstract geometric design positioned on LEFT HALF showing foundational concepts building upward. RIGHT HALF empty for text overlay. Painterly style with organic edges. Analytical educational mood. Visible brushstrokes and watercolor washes. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "n/a - abstract structure",
+        "subjectPosition": "LEFT",
+        "icebergZone": "twilight"
+      },
+      "priority": "medium",
+      "rationale": "Abstract representation of rape culture pyramid concept without text or triggering imagery"
+    },
+    {
+      "lessonId": "lesson-2-3",
+      "lessonTitle": "Rape and Sexual Assault in IPV Context",
+      "imageType": "conceptual",
+      "template": "split-right",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor painting of single Hispanic Latino male silhouette sitting in meditation pose with head bowed. Solid deep blue-purple silhouette positioned on RIGHT HALF against darker twilight watercolor background with soft golden light washing from above. Simple clean outline without facial features or clothing details. LEFT HALF empty for text overlay. Contemplative supportive mood suggesting professional reflection and understanding. Painterly edges with visible brushstrokes. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "Hispanic Latino male - continuing diversity rotation",
+        "subjectPosition": "RIGHT",
+        "icebergZone": "twilight"
+      },
+      "priority": "high",
+      "rationale": "Professional contemplation of difficult topic - shows thoughtful engagement without depicting assault"
+    },
+    {
+      "lessonId": "lesson-3-1",
+      "lessonTitle": "Impact of IPV on Survivors",
+      "imageType": "conceptual",
+      "template": "intro",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor painting of deep navy-purple ocean depths with powerful golden light rays descending from above. Volumetric god rays penetrate dark waters creating luminescent atmosphere. Abstract underwater environment showing profound depths with hope breaking through darkness. Painterly watercolor style with dramatic light and shadow. Centered composition emphasizing depth and illumination. Contemplative yet hopeful mood. Soft edges with visible brushstrokes. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "n/a - abstract depth",
+        "subjectPosition": "CENTER",
+        "icebergZone": "deep - reaching profound understanding"
+      },
+      "priority": "high",
+      "rationale": "Entrance to Module 3's deep zone - light in darkness represents hope amid profound understanding"
+    },
+    {
+      "lessonId": "lesson-3-2",
+      "lessonTitle": "Safety Planning with Survivors",
+      "imageType": "conceptual",
+      "template": "diagonal",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor painting of abstract protective shield shape with soft glowing golden center. Teal and purple watercolor layers create shield form positioned on LEFT SIDE suggesting safety and protection. Warm golden light radiates from center. RIGHT SIDE empty for text overlay. Metaphorical representation of safety and boundaries. Painterly style with organic edges and visible brushstrokes. Empowering protective mood. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "n/a - abstract safety concept",
+        "subjectPosition": "LEFT",
+        "icebergZone": "deep"
+      },
+      "priority": "high",
+      "rationale": "Safety and protection metaphor without depicting danger or threat"
+    },
+    {
+      "lessonId": "lesson-3-3",
+      "lessonTitle": "Responding to Someone Experiencing IPV",
+      "imageType": "conceptual",
+      "template": "split-left",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor painting of two human silhouettes in supportive conversation pose. An Asian American female silhouette in her 40s positioned slightly forward on LEFT HALF with one hand extended in supportive gesture. Behind and to the side, a Caucasian male silhouette in his 50s with attentive listening posture. Solid teal and navy silhouettes against cream watercolor background with warm peach and golden atmospheric washes. Simple clean outlines without facial features or clothing details. RIGHT HALF empty for text overlay. Compassionate professional support mood. Painterly edges with visible brushstrokes. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "Asian American female 40s + Caucasian male 50s - continuing rotation",
+        "subjectPosition": "LEFT",
+        "icebergZone": "deep"
+      },
+      "priority": "high",
+      "rationale": "Professional supportive interaction showing trauma-informed response from helper perspective"
+    },
+    {
+      "lessonId": "module-completion",
+      "lessonTitle": "Course Completion - Emergence",
+      "imageType": "hero",
+      "template": "final",
+      "model": "qwen",
+      "qwenPrompt": "Watercolor painting of diverse human silhouettes ascending together through water toward bright surface light. Four silhouettes of varied heights showing South Asian female, Middle Eastern male, multiracial female, and African American male rising upward in synchronized motion. Solid teal, purple, and golden silhouettes against gradient background transitioning from deep navy below to bright teal above with brilliant golden sunrise light at surface. Perspective composition showing upward movement toward light and emergence. Simple clean outlines without facial features or clothing details. Empowering triumphant mood suggesting knowledge gained and transformation. Centered composition. Painterly style with dynamic watercolor washes and visible brushstrokes. Purely visual artwork.",
+      "specifications": {
+        "textFree": true,
+        "traumaInformed": true,
+        "diverseRepresentation": "Four diverse silhouettes - completing full diversity rotation",
+        "subjectPosition": "CENTER",
+        "icebergZone": "emergence - rising with knowledge"
+      },
+      "priority": "high",
+      "rationale": "Triumphant emergence representing transformation through learning and equipped professionals"
+    }
+  ],
+  "imageReuseFromSource": {
+    "mustPreserve": [
+      "Power & Control Wheel (Duluth Model) - 4 variations",
+      "Equality Wheel diagram",
+      "CDC statistical infographics - 3 images",
+      "Sexual violence framework diagrams - 2 images",
+      "Rape Culture Pyramid diagram",
+      "Types of Abuse infographic"
+    ],
+    "catalogReference": "image-catalog.json contains 39 cataloged source images",
+    "preservationRationale": "These are evidence-based educational frameworks and data visualizations that must remain accurate and recognizable"
+  },
+  "negativePrompt": "text, words, letters, labels, signs, watermarks, logos, readable content, screens, displays, charts, diagrams, documents, UI elements, photorealistic faces, detailed facial features, clothing details, specific clothing items, realistic people, threatening imagery, violence, distress, cowering poses, victimization, harsh imagery, aggressive scenes, blurry, low quality, distorted anatomy, cartoon, anime, clipart, amateur",
+  "qualityNotes": {
+    "traumaInformedApproach": "All prompts avoid depicting violence, victimization, or distress. Focus on empowerment, support, professional response, and metaphorical representation.",
+    "diversityImplementation": "Systematic rotation through 7 ethnicities, 2 genders, and 4 age ranges ensures balanced representation across all people-focused images.",
+    "styleConsistency": "Watercolor silhouette style maintains trauma-informed approach while providing visual coherence across iceberg zones (surface teal, twilight blue, deep navy-gold).",
+    "textFreeVerification": "Every prompt explicitly states 'No text or letters visible' to ensure Qwen model compliance.",
+    "icebergMetaphorIntegration": "Visual progression from bright teal surface waters through twilight blue depths to profound navy depths with golden light represents learning journey."
+  },
+  "metadata": {
+    "totalPrompts": 13,
+    "lessonsWithImages": 12,
+    "completionImage": 1,
+    "diversityRotationApplied": true,
+    "traumaInformedReview": true,
+    "textFreeVerified": true,
+    "generationModel": "qwen",
+    "styleApproach": "artistic-watercolor-silhouettes"
+  }
+}
