@@ -22,12 +22,14 @@
           "type": "hero-banner",
           "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
           "imageRatio": "21:9",
-          "overlayText": "What is Sexual Violence?"
+          "overlayText": "What is Sexual Violence?",
+          "imagePath": "media/heroes/lesson-2-1-hero.png"
         },
         {
           "id": "block-lesson-2-1-narration",
-          "type": "text",
-          "content": "We now enter the twilight zone—where light fades and hidden truths emerge. Sexual violence in intimate relationships challenges our assumptions about consent and harm. While Hollywood depicts strangers in dark alleys, the reality is that most sexual assault is committed by someone the survivor knows. This deeper understanding transforms how we recognize and respond to intimate partner sexual violence."
+          "type": "audio-narration",
+          "content": "We now enter the twilight zone—where light fades and hidden truths emerge. Sexual violence in intimate relationships challenges our assumptions about consent and harm. While Hollywood depicts strangers in dark alleys, the reality is that most sexual assault is committed by someone the survivor knows. This deeper understanding transforms how we recognize and respond to intimate partner sexual violence.",
+          "audioPath": "media/audio/lesson-2-1-narration.wav"
         },
         {
           "id": "block-lesson-2-1-heading-1",
@@ -162,12 +164,14 @@
           "type": "hero-banner",
           "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
           "imageRatio": "21:9",
-          "overlayText": "Sexual Violence in Our Society"
+          "overlayText": "Sexual Violence in Our Society",
+          "imagePath": "media/heroes/lesson-2-2-hero.png"
         },
         {
           "id": "block-lesson-2-2-narration",
-          "type": "text",
-          "content": "In the twilight zone, we see how cultural currents shape violence. Rape culture isn't abstract theory—it's the water we swim in, the messages we absorb, the stereotypes that seem normal until we examine them. Understanding these societal foundations helps us challenge the beliefs that support violence and create change at every level."
+          "type": "audio-narration",
+          "content": "In the twilight zone, we see how cultural currents shape violence. Rape culture isn't abstract theory—it's the water we swim in, the messages we absorb, the stereotypes that seem normal until we examine them. Understanding these societal foundations helps us challenge the beliefs that support violence and create change at every level.",
+          "audioPath": "media/audio/lesson-2-2-narration.wav"
         },
         {
           "id": "block-lesson-2-2-heading-1",
@@ -302,12 +306,14 @@
           "type": "hero-banner",
           "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
           "imageRatio": "21:9",
-          "overlayText": "Rape and Sexual Assault in IPV Context"
+          "overlayText": "Rape and Sexual Assault in IPV Context",
+          "imagePath": "media/heroes/lesson-2-3-hero.png"
         },
         {
           "id": "block-lesson-2-3-narration",
-          "type": "text",
-          "content": "We reach the deepest part of the twilight zone, where sexual violence and intimate partner violence converge. This intersection reveals uncomfortable truths—marital rape wasn't criminalized in all states until 1993, and intimate partner sexual violence remains deeply underreported. Understanding these hidden depths prepares you to provide truly trauma-informed support."
+          "type": "audio-narration",
+          "content": "We reach the deepest part of the twilight zone, where sexual violence and intimate partner violence converge. This intersection reveals uncomfortable truths—marital rape wasn't criminalized in all states until 1993, and intimate partner sexual violence remains deeply underreported. Understanding these hidden depths prepares you to provide truly trauma-informed support.",
+          "audioPath": "media/audio/lesson-2-3-narration.wav"
         },
         {
           "id": "block-lesson-2-3-heading-1",

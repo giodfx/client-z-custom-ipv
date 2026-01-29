@@ -22,12 +22,14 @@
           "type": "hero-banner",
           "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
           "imageRatio": "21:9",
-          "overlayText": "Impact of IPV on Survivors"
+          "overlayText": "Impact of IPV on Survivors",
+          "imagePath": "media/heroes/lesson-3-1-hero.png"
         },
         {
           "id": "block-lesson-3-1-narration",
-          "type": "text",
-          "content": "We have reached the deep zone—the profound darkness where understanding transforms into wisdom. Here, we confront the most challenging question: why do survivors stay? But as we descend to this depth, we discover the question itself is wrong. The real question is: why do people choose to abuse? Understanding this shift is the foundation of trauma-informed response."
+          "type": "audio-narration",
+          "content": "We have reached the deep zone—the profound darkness where understanding transforms into wisdom. Here, we confront the most challenging question: why do survivors stay? But as we descend to this depth, we discover the question itself is wrong. The real question is: why do people choose to abuse? Understanding this shift is the foundation of trauma-informed response.",
+          "audioPath": "media/audio/lesson-3-1-narration.wav"
         },
         {
           "id": "block-lesson-3-1-heading-1",
@@ -162,12 +164,14 @@
           "type": "hero-banner",
           "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
           "imageRatio": "21:9",
-          "overlayText": "Safety Planning with Survivors"
+          "overlayText": "Safety Planning with Survivors",
+          "imagePath": "media/heroes/lesson-3-2-hero.png"
         },
         {
           "id": "block-lesson-3-2-narration",
-          "type": "text",
-          "content": "In the deep zone, we learn that safety is more than the absence of violence. True safety encompasses physical security, basic needs, and emotional wellbeing. Jill Davies teaches us that survivors are the experts on their own safety. Our role isn't to rescue—it's to support their autonomy, honor their wisdom, and help them regain the power and control that abuse took away."
+          "type": "audio-narration",
+          "content": "In the deep zone, we learn that safety is more than the absence of violence. True safety encompasses physical security, basic needs, and emotional wellbeing. Jill Davies teaches us that survivors are the experts on their own safety. Our role isn't to rescue—it's to support their autonomy, honor their wisdom, and help them regain the power and control that abuse took away.",
+          "audioPath": "media/audio/lesson-3-2-narration.wav"
         },
         {
           "id": "block-lesson-3-2-heading-1",
@@ -302,12 +306,14 @@
           "type": "hero-banner",
           "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
           "imageRatio": "21:9",
-          "overlayText": "Responding to Someone Experiencing IPV"
+          "overlayText": "Responding to Someone Experiencing IPV",
+          "imagePath": "media/heroes/lesson-3-3-hero.png"
         },
         {
           "id": "block-lesson-3-3-narration",
-          "type": "text",
-          "content": "At the deepest point of the iceberg, we emerge with wisdom. You've traveled from the visible surface through the twilight of hidden truths to this profound understanding: responding to IPV requires community transformation, not individual rescue. Like the iceberg rising from deep waters, you emerge equipped to see what others don't, to respond with trauma-informed care, and to be part of systemic change."
+          "type": "audio-narration",
+          "content": "At the deepest point of the iceberg, we emerge with wisdom. You've traveled from the visible surface through the twilight of hidden truths to this profound understanding: responding to IPV requires community transformation, not individual rescue. Like the iceberg rising from deep waters, you emerge equipped to see what others don't, to respond with trauma-informed care, and to be part of systemic change.",
+          "audioPath": "media/audio/lesson-3-3-narration.wav"
         },
         {
           "id": "block-lesson-3-3-heading-1",

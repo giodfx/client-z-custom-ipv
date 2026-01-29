@@ -22,12 +22,14 @@
           "type": "hero-banner",
           "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
           "imageRatio": "21:9",
-          "overlayText": "Who is Affected by Intimate Partner Violence?"
+          "overlayText": "Who is Affected by Intimate Partner Violence?",
+          "imagePath": "media/heroes/lesson-1-1-hero.png"
         },
         {
           "id": "block-lesson-1-1-narration",
-          "type": "text",
-          "content": "As we descend deeper into the iceberg, we encounter the surface reality—the visible patterns of who experiences intimate partner violence. What you're about to learn challenges common assumptions and reveals a universal truth: IPV crosses all boundaries. Like Maria, who might screen hundreds of individuals, you'll learn to recognize that IPV affects anyone, anywhere."
+          "type": "audio-narration",
+          "content": "As we descend deeper into the iceberg, we encounter the surface reality—the visible patterns of who experiences intimate partner violence. What you're about to learn challenges common assumptions and reveals a universal truth: IPV crosses all boundaries. Like Maria, who might screen hundreds of individuals, you'll learn to recognize that IPV affects anyone, anywhere.",
+          "audioPath": "media/audio/lesson-1-1-narration.wav"
         },
         {
           "id": "block-lesson-1-1-heading-1",
@@ -162,12 +164,14 @@
           "type": "hero-banner",
           "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
           "imageRatio": "21:9",
-          "overlayText": "Types of Abuse"
+          "overlayText": "Types of Abuse",
+          "imagePath": "media/heroes/lesson-1-2-hero.png"
         },
         {
           "id": "block-lesson-1-2-narration",
-          "type": "text",
-          "content": "At the surface of the iceberg, abuse reveals itself in many forms—some visible like bruises, others hidden like financial control. Understanding these types helps you, like James providing trauma-informed support, recognize the full spectrum of harm. What seems like separate behaviors often connects into a larger pattern of control."
+          "type": "audio-narration",
+          "content": "At the surface of the iceberg, abuse reveals itself in many forms—some visible like bruises, others hidden like financial control. Understanding these types helps you, like James providing trauma-informed support, recognize the full spectrum of harm. What seems like separate behaviors often connects into a larger pattern of control.",
+          "audioPath": "media/audio/lesson-1-2-narration.wav"
         },
         {
           "id": "block-lesson-1-2-heading-1",
@@ -302,12 +306,14 @@
           "type": "hero-banner",
           "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
           "imageRatio": "21:9",
-          "overlayText": "Power and Control Wheel"
+          "overlayText": "Power and Control Wheel",
+          "imagePath": "media/heroes/lesson-1-3-hero.png"
         },
         {
           "id": "block-lesson-1-3-narration",
-          "type": "text",
-          "content": "Now we begin to see beneath the surface—where the iceberg's true mass lies. The Power and Control Wheel reveals the systematic nature of abuse, showing how seemingly separate behaviors connect into a coherent pattern of domination. Like the Duluth advocates who created this tool by listening to survivors, you'll learn to recognize the invisible architecture of control."
+          "type": "audio-narration",
+          "content": "Now we begin to see beneath the surface—where the iceberg's true mass lies. The Power and Control Wheel reveals the systematic nature of abuse, showing how seemingly separate behaviors connect into a coherent pattern of domination. Like the Duluth advocates who created this tool by listening to survivors, you'll learn to recognize the invisible architecture of control.",
+          "audioPath": "media/audio/lesson-1-3-narration.wav"
         },
         {
           "id": "block-lesson-1-3-heading-1",
@@ -442,12 +448,14 @@
           "type": "hero-banner",
           "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
           "imageRatio": "21:9",
-          "overlayText": "Categorizing Intimate Partner Violence"
+          "overlayText": "Categorizing Intimate Partner Violence",
+          "imagePath": "media/heroes/lesson-1-4-hero.png"
         },
         {
           "id": "block-lesson-1-4-narration",
-          "type": "text",
-          "content": "The iceberg reveals complexity—not all violence is the same. Dr. Johnson's typology helps us distinguish between different patterns of violence, each requiring different responses. Like Maria making intake assessments, understanding these categories helps you provide the right support to the right people at the right time."
+          "type": "audio-narration",
+          "content": "The iceberg reveals complexity—not all violence is the same. Dr. Johnson's typology helps us distinguish between different patterns of violence, each requiring different responses. Like Maria making intake assessments, understanding these categories helps you provide the right support to the right people at the right time.",
+          "audioPath": "media/audio/lesson-1-4-narration.wav"
         },
         {
           "id": "block-lesson-1-4-heading-1",
@@ -582,12 +590,14 @@
           "type": "hero-banner",
           "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
           "imageRatio": "21:9",
-          "overlayText": "Case Analysis: Lois and James Sumpter"
+          "overlayText": "Case Analysis: Lois and James Sumpter",
+          "imagePath": "media/heroes/lesson-1-5-hero.png"
         },
         {
           "id": "block-lesson-1-5-narration",
-          "type": "text",
-          "content": "Now we apply what we've learned to reality. The Sumpter case brings the Power and Control Wheel to life, showing how abstract concepts become lived experiences. This is difficult terrain—the deepest part of the surface zone—but understanding real cases prepares you to recognize patterns in the people you'll encounter."
+          "type": "audio-narration",
+          "content": "Now we apply what we've learned to reality. The Sumpter case brings the Power and Control Wheel to life, showing how abstract concepts become lived experiences. This is difficult terrain—the deepest part of the surface zone—but understanding real cases prepares you to recognize patterns in the people you'll encounter.",
+          "audioPath": "media/audio/lesson-1-5-narration.wav"
         },
         {
           "id": "block-lesson-1-5-heading-1",

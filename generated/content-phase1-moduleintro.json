@@ -20,12 +20,14 @@
           "type": "hero-banner",
           "imagePrompt": "Ethereal watercolor silhouette representing IPV awareness",
           "imageRatio": "21:9",
-          "overlayText": "Introduction: What is Intimate Partner Violence?"
+          "overlayText": "Introduction: What is Intimate Partner Violence?",
+          "imagePath": "media/heroes/lesson-intro-1-hero.png"
         },
         {
           "id": "block-lesson-intro-1-narration",
-          "type": "text",
-          "content": "Welcome to the surface of a profound journey. Like an iceberg, intimate partner violence has visible elements above the waterline—but much more lies hidden beneath. This course will guide you through all three zones: the visible surface, the twilight depths, and the profound darkness below, emerging with the knowledge to see what others don't."
+          "type": "audio-narration",
+          "content": "Welcome to the surface of a profound journey. Like an iceberg, intimate partner violence has visible elements above the waterline—but much more lies hidden beneath. This course will guide you through all three zones: the visible surface, the twilight depths, and the profound darkness below, emerging with the knowledge to see what others don't.",
+          "audioPath": "media/audio/lesson-intro-1-narration.wav"
         },
         {
           "id": "block-lesson-intro-1-heading-1",
