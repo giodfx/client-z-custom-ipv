@@ -1,0 +1,2489 @@
+{
+  "projectId": "IPV",
+  "courseTitle": "Recognizing and Responding to Intimate Partner Violence",
+  "extractedAt": "2026-01-29T23:26:48.535Z",
+  "sourceType": "video-scripts-narration",
+  "totalLessons": 13,
+  "totalScenes": 163,
+  "audioEngine": "VibeVoice Emma (0.5B streaming model)",
+  "generatedDate": "2026-01-27",
+  "scripts": [
+    {
+      "lessonId": "lesson-1-1",
+      "videoTitle": "Who is Affected by Intimate Partner Violence?",
+      "sceneCount": 10,
+      "totalDuration": 132,
+      "contentType": "CONCEPT",
+      "fullNarration": "Intimate partner violence doesn't discriminate. It affects people of all ages, races, genders, sexual orientations, socioeconomic backgrounds, and education levels. No community is immune to this widespread issue. CDC data reveals that approximately one in four women and one in seven men experience severe intimate partner violence during their lifetimes. This represents millions of people affected every year across the United States alone. IPV affects people throughout their lifespan. Young adults in dating relationships, middle-aged couples, and older adults all experience intimate partner violence. Age provides no protection from abuse. IPV occurs in every racial and ethnic community. While cultural contexts and specific barriers may vary, the fundamental dynamics of power and control remain consistent. Research shows similar prevalence rates across racial groups when accounting for socioeconomic factors. While women are most commonly affected by severe IPV, men also experience intimate partner violence. LGBTQ plus individuals face unique challenges including threats of outing, limited access to gender-specific resources, and additional barriers to reporting and help-seeking. A critical myth to dispel: IPV happens at every income level. While economic stress can be a risk factor, abuse occurs in wealthy households just as it does in lower-income families. Financial resources can actually make some forms of abuse easier to hide. Understanding that IPV affects all demographics helps us recognize it in unexpected places. It prevents us from making assumptions based on someone's appearance, profession, or background. Everyone deserves to be screened and supported. Certain populations face additional vulnerabilities. Immigrants may fear deportation or face language barriers. People with disabilities may depend on abusive partners for care. Pregnant individuals face higher risks. Rural isolation creates unique challenges for accessing help. People hold multiple identities that intersect and create unique experiences. A Black lesbian woman faces different barriers than a white heterosexual woman. An immigrant man with disabilities has distinct vulnerabilities. Effective response means understanding these intersecting identities. The key takeaway: intimate partner violence can affect anyone you encounter in your professional role. Stay alert to the signs. Never assume someone is too wealthy, educated, or successful to be experiencing abuse. Your awareness can save lives.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-1-1-scene-1",
+          "heading": "IPV Affects Everyone",
+          "narration": "Intimate partner violence doesn't discriminate. It affects people of all ages, races, genders, sexual orientations, socioeconomic backgrounds, and education levels. No community is immune to this widespread issue.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-1-1-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-1-1-scene-2",
+          "heading": "Statistics Tell the Story",
+          "narration": "CDC data reveals that approximately one in four women and one in seven men experience severe intimate partner violence during their lifetimes. This represents millions of people affected every year across the United States alone.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-1-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-1-1-scene-3",
+          "heading": "All Age Groups",
+          "narration": "IPV affects people throughout their lifespan. Young adults in dating relationships, middle-aged couples, and older adults all experience intimate partner violence. Age provides no protection from abuse.",
+          "duration": 11,
+          "audioFile": "content/audio/lesson-1-1-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-1-1-scene-4",
+          "heading": "Every Racial and Ethnic Group",
+          "narration": "IPV occurs in every racial and ethnic community. While cultural contexts and specific barriers may vary, the fundamental dynamics of power and control remain consistent. Research shows similar prevalence rates across racial groups when accounting for socioeconomic factors.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-1-1-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-1-1-scene-5",
+          "heading": "All Gender Identities",
+          "narration": "While women are most commonly affected by severe IPV, men also experience intimate partner violence. LGBTQ plus individuals face unique challenges including threats of outing, limited access to gender-specific resources, and additional barriers to reporting and help-seeking.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-1-1-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-1-1-scene-6",
+          "heading": "Socioeconomic Status",
+          "narration": "A critical myth to dispel: IPV happens at every income level. While economic stress can be a risk factor, abuse occurs in wealthy households just as it does in lower-income families. Financial resources can actually make some forms of abuse easier to hide.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-1-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-1-1-scene-7",
+          "heading": "Why Understanding Demographics Matters",
+          "narration": "Understanding that IPV affects all demographics helps us recognize it in unexpected places. It prevents us from making assumptions based on someone's appearance, profession, or background. Everyone deserves to be screened and supported.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-1-1-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-1-1-scene-8",
+          "heading": "Special Populations",
+          "narration": "Certain populations face additional vulnerabilities. Immigrants may fear deportation or face language barriers. People with disabilities may depend on abusive partners for care. Pregnant individuals face higher risks. Rural isolation creates unique challenges for accessing help.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-1-1-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-1-1-scene-9",
+          "heading": "Intersectionality Matters",
+          "narration": "People hold multiple identities that intersect and create unique experiences. A Black lesbian woman faces different barriers than a white heterosexual woman. An immigrant man with disabilities has distinct vulnerabilities. Effective response means understanding these intersecting identities.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-1-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-1-1-scene-10",
+          "heading": "Everyone Deserves Support",
+          "narration": "The key takeaway: intimate partner violence can affect anyone you encounter in your professional role. Stay alert to the signs. Never assume someone is too wealthy, educated, or successful to be experiencing abuse. Your awareness can save lives.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-1-section-10.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-1-1-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-1-1-section-1.wav",
+            "heading": "IPV Affects Everyone",
+            "duration": 15
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-1-1-section-2.wav",
+            "heading": "Statistics Tell the Story",
+            "duration": 14
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-1-1-section-3.wav",
+            "heading": "All Age Groups",
+            "duration": 11
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-1-1-section-4.wav",
+            "heading": "Every Racial and Ethnic Group",
+            "duration": 15
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-1-1-section-5.wav",
+            "heading": "All Gender Identities",
+            "duration": 16
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-1-1-section-6.wav",
+            "heading": "Socioeconomic Status",
+            "duration": 14
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-1-1-section-7.wav",
+            "heading": "Why Understanding Demographics Matters",
+            "duration": 13
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-1-1-section-8.wav",
+            "heading": "Special Populations",
+            "duration": 16
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-1-1-section-9.wav",
+            "heading": "Intersectionality Matters",
+            "duration": 14
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-1-1-section-10.wav",
+            "heading": "Everyone Deserves Support",
+            "duration": 14
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson-1-2",
+      "videoTitle": "Types of Abuse",
+      "sceneCount": 13,
+      "totalDuration": 174,
+      "contentType": "CONCEPT",
+      "fullNarration": "Intimate partner violence takes many forms beyond physical violence. Understanding the full spectrum of abuse helps you recognize patterns that might otherwise go unnoticed. Let's explore five major categories. Physical abuse includes hitting, punching, kicking, and choking. It can involve weapons or physical restraint. Some abusers prevent sleep or withhold medical care. Physical abuse often escalates over time and poses life-threatening danger. Emotional abuse can be devastating. It includes constant criticism, insults, and humiliation designed to destroy self-esteem. Abusers use threats and intimidation. Gaslighting makes victims question their own perceptions and sanity. This form leaves no visible scars but profound psychological damage. Isolation is a powerful abuse tactic. Abusers systematically cut victims off from family, friends, and support systems. They may monitor phone calls, control transportation, or create conflict with loved ones. Isolation makes victims dependent and removes witnesses to abuse. Economic abuse creates financial dependence. Abusers control all money, prevent employment, and sabotage careers or education. They may destroy credit, create debt in the victim's name, or withhold basic necessities. This makes leaving financially impossible for many survivors. Sexual violence within intimate relationships is common but often unrecognized. It includes any unwanted sexual contact, coercion, or assault. Marriage or relationship status does not imply consent. We'll explore this topic in depth in Module Two. Technology has created new avenues for abuse. Abusers use GPS to track locations, monitor all online activity and communications, and install spyware. They may impersonate victims online or use technology to harass and intimidate. Digital abuse is increasingly common. Here's what's critical to understand: these forms of abuse rarely exist in isolation. Physical abuse almost always occurs alongside emotional abuse. Economic control combines with isolation. Recognizing one form should prompt you to look for others. What distinguishes intimate partner violence from relationship conflicts is the pattern. IPV isn't about isolated incidents or mutual arguments. It's a systematic pattern of behaviors designed to maintain power and control over a partner. The pattern continues and often escalates. Not all abuse is obvious. You may notice someone who seems anxious about their partner's reaction, makes excuses for injuries, or has lost contact with friends and family. These subtle signs deserve attention and appropriate follow-up. All forms of abuse cause serious harm. Physical abuse creates injuries and chronic health problems. Emotional abuse causes psychological trauma, PTSD, depression, and anxiety. Economic abuse traps victims. Sexual violence creates profound trauma. The cumulative impact can be devastating. As a professional, you're positioned to recognize these different forms of abuse. Someone experiencing economic control might not identify it as abuse. Your knowledge helps you ask the right questions and connect people to appropriate resources. Understanding these five types of abuse physical, emotional, economic, sexual, and technological equips you to recognize intimate partner violence in its many forms. This knowledge is your foundation for effective response.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-1-2-scene-1",
+          "heading": "Understanding Abuse Types",
+          "narration": "Intimate partner violence takes many forms beyond physical violence. Understanding the full spectrum of abuse helps you recognize patterns that might otherwise go unnoticed. Let's explore five major categories.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-1-2-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-1-2-scene-2",
+          "heading": "Physical Abuse",
+          "narration": "Physical abuse includes hitting, punching, kicking, and choking. It can involve weapons or physical restraint. Some abusers prevent sleep or withhold medical care. Physical abuse often escalates over time and poses life-threatening danger.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-2-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-1-2-scene-3",
+          "heading": "Emotional and Psychological Abuse",
+          "narration": "Emotional abuse can be devastating. It includes constant criticism, insults, and humiliation designed to destroy self-esteem. Abusers use threats and intimidation. Gaslighting makes victims question their own perceptions and sanity. This form leaves no visible scars but profound psychological damage.",
+          "duration": 17,
+          "audioFile": "content/audio/lesson-1-2-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-1-2-scene-4",
+          "heading": "Isolation as Control",
+          "narration": "Isolation is a powerful abuse tactic. Abusers systematically cut victims off from family, friends, and support systems. They may monitor phone calls, control transportation, or create conflict with loved ones. Isolation makes victims dependent and removes witnesses to abuse.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-2-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-1-2-scene-5",
+          "heading": "Economic Abuse",
+          "narration": "Economic abuse creates financial dependence. Abusers control all money, prevent employment, and sabotage careers or education. They may destroy credit, create debt in the victim's name, or withhold basic necessities. This makes leaving financially impossible for many survivors.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-1-2-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-1-2-scene-6",
+          "heading": "Sexual Abuse and Coercion",
+          "narration": "Sexual violence within intimate relationships is common but often unrecognized. It includes any unwanted sexual contact, coercion, or assault. Marriage or relationship status does not imply consent. We'll explore this topic in depth in Module Two.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-1-2-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-1-2-scene-7",
+          "heading": "Technological Abuse",
+          "narration": "Technology has created new avenues for abuse. Abusers use GPS to track locations, monitor all online activity and communications, and install spyware. They may impersonate victims online or use technology to harass and intimidate. Digital abuse is increasingly common.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-1-2-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-1-2-scene-8",
+          "heading": "Abuse Rarely Exists Alone",
+          "narration": "Here's what's critical to understand: these forms of abuse rarely exist in isolation. Physical abuse almost always occurs alongside emotional abuse. Economic control combines with isolation. Recognizing one form should prompt you to look for others.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-1-2-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-1-2-scene-9",
+          "heading": "The Pattern of Control",
+          "narration": "What distinguishes intimate partner violence from relationship conflicts is the pattern. IPV isn't about isolated incidents or mutual arguments. It's a systematic pattern of behaviors designed to maintain power and control over a partner. The pattern continues and often escalates.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-1-2-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-1-2-scene-10",
+          "heading": "Recognizing Subtle Signs",
+          "narration": "Not all abuse is obvious. You may notice someone who seems anxious about their partner's reaction, makes excuses for injuries, or has lost contact with friends and family. These subtle signs deserve attention and appropriate follow-up.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-1-2-section-10.wav"
+        },
+        {
+          "sceneNumber": 11,
+          "sceneId": "lesson-1-2-scene-11",
+          "heading": "Impact Across All Forms",
+          "narration": "All forms of abuse cause serious harm. Physical abuse creates injuries and chronic health problems. Emotional abuse causes psychological trauma, PTSD, depression, and anxiety. Economic abuse traps victims. Sexual violence creates profound trauma. The cumulative impact can be devastating.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-1-2-section-11.wav"
+        },
+        {
+          "sceneNumber": 12,
+          "sceneId": "lesson-1-2-scene-12",
+          "heading": "Your Role in Recognition",
+          "narration": "As a professional, you're positioned to recognize these different forms of abuse. Someone experiencing economic control might not identify it as abuse. Your knowledge helps you ask the right questions and connect people to appropriate resources.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-1-2-section-12.wav"
+        },
+        {
+          "sceneNumber": 13,
+          "sceneId": "lesson-1-2-scene-13",
+          "heading": "Knowledge Empowers Action",
+          "narration": "Understanding these five types of abuse physical, emotional, economic, sexual, and technological equips you to recognize intimate partner violence in its many forms. This knowledge is your foundation for effective response.",
+          "duration": 12,
+          "audioFile": "content/audio/lesson-1-2-section-13.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-1-2-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-1-2-section-1.wav",
+            "heading": "Understanding Abuse Types",
+            "duration": 13
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-1-2-section-2.wav",
+            "heading": "Physical Abuse",
+            "duration": 14
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-1-2-section-3.wav",
+            "heading": "Emotional and Psychological Abuse",
+            "duration": 17
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-1-2-section-4.wav",
+            "heading": "Isolation as Control",
+            "duration": 14
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-1-2-section-5.wav",
+            "heading": "Economic Abuse",
+            "duration": 16
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-1-2-section-6.wav",
+            "heading": "Sexual Abuse and Coercion",
+            "duration": 13
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-1-2-section-7.wav",
+            "heading": "Technological Abuse",
+            "duration": 15
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-1-2-section-8.wav",
+            "heading": "Abuse Rarely Exists Alone",
+            "duration": 13
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-1-2-section-9.wav",
+            "heading": "The Pattern of Control",
+            "duration": 15
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-1-2-section-10.wav",
+            "heading": "Recognizing Subtle Signs",
+            "duration": 13
+          },
+          {
+            "section": 11,
+            "path": "content/audio/lesson-1-2-section-11.wav",
+            "heading": "Impact Across All Forms",
+            "duration": 16
+          },
+          {
+            "section": 12,
+            "path": "content/audio/lesson-1-2-section-12.wav",
+            "heading": "Your Role in Recognition",
+            "duration": 13
+          },
+          {
+            "section": 13,
+            "path": "content/audio/lesson-1-2-section-13.wav",
+            "heading": "Knowledge Empowers Action",
+            "duration": 12
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson-1-3",
+      "videoTitle": "Power and Control Wheel",
+      "sceneCount": 14,
+      "totalDuration": 180,
+      "contentType": "CONCEPT",
+      "fullNarration": "The Duluth Model's Power and Control Wheel is one of the most important tools for understanding intimate partner violence. This framework reveals how abusers systematically use multiple tactics to dominate their partners. Intimidation creates an atmosphere of fear. Abusers use looks, actions, and gestures to frighten their partners. They may destroy property, harm beloved pets, or display weapons. The message is clear: obey or face consequences. Emotional abuse systematically destroys self-worth. Constant put-downs, name-calling, and humiliation erode confidence. Abusers make partners feel crazy through gaslighting and mind games. Over time, victims internalize these messages and doubt their own perceptions. Isolation cuts victims off from everyone who might help. Abusers control what partners do, see, read, and who they talk to. They may monitor all communications, limit transportation, or create conflicts with family and friends. Isolation makes victims dependent and removes witnesses. Abusers minimize their actions, deny abuse occurred, or shift blame to victims. They'll say it wasn't that bad, claim the victim is too sensitive, or insist the victim provoked them. This tactic makes victims doubt their experiences and feel responsible for abuse. When children are present, abusers weaponize them. They make partners feel guilty about the children, use visitation to harass, threaten to take children away, or manipulate children to relay messages. Children become tools for control and emotional leverage. Some abusers use traditional gender roles to justify control. They treat partners like servants, make all decisions, act as master of the house, and enforce rigid gender expectations. This tactic weaponizes cultural or religious beliefs to maintain dominance. Economic abuse creates complete financial dependence. Abusers prevent partners from working or getting education, control all money, don't allow access to family income, and may force victims to ask for money for basic needs. Financial control traps victims in relationships. Coercion and threats maintain control through fear. Abusers threaten to harm the victim, themselves, or loved ones. They threaten suicide, deportation, or reporting to child services. Some force partners to participate in illegal activities to create leverage. Threats keep victims compliant. At the wheel's center: physical and sexual violence. While not all abusive relationships involve physical violence, when present it's typically surrounded by these other control tactics. The wheel shows how multiple tactics work together to trap victims. The Equality Wheel presents a healthy contrast. In equal relationships, partners practice non-threatening behavior, mutual respect, trust, and honesty. They share responsibility, support each other's goals, negotiate fairly, and function as economic partners. This is the alternative to control. The Power and Control Wheel helps you see the full pattern. One tactic alone might be explained away. Multiple tactics used systematically reveal intimate partner violence. When you identify one spoke of the wheel, look for others. They're almost always present. This framework matters because it names the tactics abusers use. It validates survivors' experiences. It helps professionals identify patterns we might otherwise miss. And it clarifies that abuse is about power and control, not anger management or relationship problems. The Power and Control Wheel is now part of your professional toolkit. Use it to analyze relationships, recognize abuse patterns, and explain dynamics to colleagues. This evidence-based framework has helped millions understand what intimate partner violence really looks like.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-1-3-scene-1",
+          "heading": "The Power and Control Wheel",
+          "narration": "The Duluth Model's Power and Control Wheel is one of the most important tools for understanding intimate partner violence. This framework reveals how abusers systematically use multiple tactics to dominate their partners.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-3-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-1-3-scene-2",
+          "heading": "Using Intimidation",
+          "narration": "Intimidation creates an atmosphere of fear. Abusers use looks, actions, and gestures to frighten their partners. They may destroy property, harm beloved pets, or display weapons. The message is clear: obey or face consequences.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-3-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-1-3-scene-3",
+          "heading": "Emotional Abuse Tactics",
+          "narration": "Emotional abuse systematically destroys self-worth. Constant put-downs, name-calling, and humiliation erode confidence. Abusers make partners feel crazy through gaslighting and mind games. Over time, victims internalize these messages and doubt their own perceptions.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-1-3-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-1-3-scene-4",
+          "heading": "Using Isolation",
+          "narration": "Isolation cuts victims off from everyone who might help. Abusers control what partners do, see, read, and who they talk to. They may monitor all communications, limit transportation, or create conflicts with family and friends. Isolation makes victims dependent and removes witnesses.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-3-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-1-3-scene-5",
+          "heading": "Minimizing, Denying, Blaming",
+          "narration": "Abusers minimize their actions, deny abuse occurred, or shift blame to victims. They'll say it wasn't that bad, claim the victim is too sensitive, or insist the victim provoked them. This tactic makes victims doubt their experiences and feel responsible for abuse.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-1-3-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-1-3-scene-6",
+          "heading": "Using Children",
+          "narration": "When children are present, abusers weaponize them. They make partners feel guilty about the children, use visitation to harass, threaten to take children away, or manipulate children to relay messages. Children become tools for control and emotional leverage.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-1-3-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-1-3-scene-7",
+          "heading": "Using Male Privilege",
+          "narration": "Some abusers use traditional gender roles to justify control. They treat partners like servants, make all decisions, act as master of the house, and enforce rigid gender expectations. This tactic weaponizes cultural or religious beliefs to maintain dominance.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-1-3-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-1-3-scene-8",
+          "heading": "Economic Abuse",
+          "narration": "Economic abuse creates complete financial dependence. Abusers prevent partners from working or getting education, control all money, don't allow access to family income, and may force victims to ask for money for basic needs. Financial control traps victims in relationships.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-1-3-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-1-3-scene-9",
+          "heading": "Using Coercion and Threats",
+          "narration": "Coercion and threats maintain control through fear. Abusers threaten to harm the victim, themselves, or loved ones. They threaten suicide, deportation, or reporting to child services. Some force partners to participate in illegal activities to create leverage. Threats keep victims compliant.",
+          "duration": 17,
+          "audioFile": "content/audio/lesson-1-3-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-1-3-scene-10",
+          "heading": "Physical and Sexual Violence",
+          "narration": "At the wheel's center: physical and sexual violence. While not all abusive relationships involve physical violence, when present it's typically surrounded by these other control tactics. The wheel shows how multiple tactics work together to trap victims.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-1-3-section-10.wav"
+        },
+        {
+          "sceneNumber": 11,
+          "sceneId": "lesson-1-3-scene-11",
+          "heading": "The Equality Wheel",
+          "narration": "The Equality Wheel presents a healthy contrast. In equal relationships, partners practice non-threatening behavior, mutual respect, trust, and honesty. They share responsibility, support each other's goals, negotiate fairly, and function as economic partners. This is the alternative to control.",
+          "duration": 17,
+          "audioFile": "content/audio/lesson-1-3-section-11.wav"
+        },
+        {
+          "sceneNumber": 12,
+          "sceneId": "lesson-1-3-scene-12",
+          "heading": "Recognizing the Pattern",
+          "narration": "The Power and Control Wheel helps you see the full pattern. One tactic alone might be explained away. Multiple tactics used systematically reveal intimate partner violence. When you identify one spoke of the wheel, look for others. They're almost always present.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-3-section-12.wav"
+        },
+        {
+          "sceneNumber": 13,
+          "sceneId": "lesson-1-3-scene-13",
+          "heading": "Why This Framework Matters",
+          "narration": "This framework matters because it names the tactics abusers use. It validates survivors' experiences. It helps professionals identify patterns we might otherwise miss. And it clarifies that abuse is about power and control, not anger management or relationship problems.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-3-section-13.wav"
+        },
+        {
+          "sceneNumber": 14,
+          "sceneId": "lesson-1-3-scene-14",
+          "heading": "A Tool for Understanding",
+          "narration": "The Power and Control Wheel is now part of your professional toolkit. Use it to analyze relationships, recognize abuse patterns, and explain dynamics to colleagues. This evidence-based framework has helped millions understand what intimate partner violence really looks like.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-3-section-14.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-1-3-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-1-3-section-1.wav",
+            "heading": "The Power and Control Wheel",
+            "duration": 14
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-1-3-section-2.wav",
+            "heading": "Using Intimidation",
+            "duration": 14
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-1-3-section-3.wav",
+            "heading": "Emotional Abuse Tactics",
+            "duration": 16
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-1-3-section-4.wav",
+            "heading": "Using Isolation",
+            "duration": 14
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-1-3-section-5.wav",
+            "heading": "Minimizing, Denying, Blaming",
+            "duration": 15
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-1-3-section-6.wav",
+            "heading": "Using Children",
+            "duration": 13
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-1-3-section-7.wav",
+            "heading": "Using Male Privilege",
+            "duration": 16
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-1-3-section-8.wav",
+            "heading": "Economic Abuse",
+            "duration": 13
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-1-3-section-9.wav",
+            "heading": "Using Coercion and Threats",
+            "duration": 17
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-1-3-section-10.wav",
+            "heading": "Physical and Sexual Violence",
+            "duration": 13
+          },
+          {
+            "section": 11,
+            "path": "content/audio/lesson-1-3-section-11.wav",
+            "heading": "The Equality Wheel",
+            "duration": 17
+          },
+          {
+            "section": 12,
+            "path": "content/audio/lesson-1-3-section-12.wav",
+            "heading": "Recognizing the Pattern",
+            "duration": 14
+          },
+          {
+            "section": 13,
+            "path": "content/audio/lesson-1-3-section-13.wav",
+            "heading": "Why This Framework Matters",
+            "duration": 14
+          },
+          {
+            "section": 14,
+            "path": "content/audio/lesson-1-3-section-14.wav",
+            "heading": "A Tool for Understanding",
+            "duration": 14
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson-1-4",
+      "videoTitle": "Categorizing Intimate Partner Violence",
+      "sceneCount": 11,
+      "totalDuration": 156,
+      "contentType": "CONCEPT",
+      "fullNarration": "Not all intimate partner violence follows the same pattern. Understanding different types of IPV helps predict risk, tailor interventions, and provide appropriate support. Let's explore key categorization frameworks. Researcher Michael Johnson identified distinct types of intimate partner violence. Situational couple violence involves conflicts that escalate. Intimate terrorism is systematic coercive control. Violent resistance occurs when victims fight back. Separation-instigated violence emerges during breakups. Situational couple violence emerges from specific conflicts rather than control patterns. Both partners may be violent. It typically involves fewer severe tactics and doesn't escalate as predictably. However, it still causes harm and isn't acceptable behavior. Intimate terrorism is what we typically mean when discussing serious IPV. It involves the systematic pattern of coercive control we explored in the Power and Control Wheel. One partner uses multiple tactics to dominate. This type is most dangerous and escalates over time. Coercive control is the defining feature of intimate terrorism. It's a pattern of microregulation that dominates daily life. Victims must constantly monitor their behavior to avoid punishment. This psychological captivity characterizes the most dangerous relationships. Many abusive relationships follow a predictable cycle. Tension builds gradually. An acute violent incident occurs. The abuser apologizes profusely during reconciliation. A calm period follows before tension rebuilds. Understanding this cycle helps predict and prevent escalation. Violence escalates for several reasons. Abusers learn violence works to maintain control. Victims develop coping strategies requiring increased force to overcome. External stressors like job loss or pregnancy increase risk. Previous tactics lose effectiveness over time. Certain factors predict life-threatening violence. Previous escalation is the strongest predictor. Threats to kill, especially with weapons access, signal extreme danger. Strangulation dramatically increases homicide risk. Stalking, obsessive behavior, and forced sex are also critical red flags. The most dangerous time for IPV victims is when they leave or attempt to leave. Abusers face loss of control, triggering extreme violence. Homicide risk peaks in the first few months after separation. This is why safety planning for departure is critical. Understanding these categories informs our response. Situational violence may respond to couples counseling, but intimate terrorism requires victim safety prioritization and specialized intervention. Risk assessment guides the urgency and type of resources provided. These frameworks equip you to recognize not just that abuse is occurring, but what type and level of danger exists. This knowledge helps you match the right intervention to the situation and potentially save lives through appropriate escalation of response.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-1-4-scene-1",
+          "heading": "Different Patterns of IPV",
+          "narration": "Not all intimate partner violence follows the same pattern. Understanding different types of IPV helps predict risk, tailor interventions, and provide appropriate support. Let's explore key categorization frameworks.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-1-4-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-1-4-scene-2",
+          "heading": "Johnson's Typology",
+          "narration": "Researcher Michael Johnson identified distinct types of intimate partner violence. Situational couple violence involves conflicts that escalate. Intimate terrorism is systematic coercive control. Violent resistance occurs when victims fight back. Separation-instigated violence emerges during breakups.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-1-4-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-1-4-scene-3",
+          "heading": "Situational Couple Violence",
+          "narration": "Situational couple violence emerges from specific conflicts rather than control patterns. Both partners may be violent. It typically involves fewer severe tactics and doesn't escalate as predictably. However, it still causes harm and isn't acceptable behavior.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-4-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-1-4-scene-4",
+          "heading": "Intimate Terrorism",
+          "narration": "Intimate terrorism is what we typically mean when discussing serious IPV. It involves the systematic pattern of coercive control we explored in the Power and Control Wheel. One partner uses multiple tactics to dominate. This type is most dangerous and escalates over time.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-1-4-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-1-4-scene-5",
+          "heading": "Coercive Control",
+          "narration": "Coercive control is the defining feature of intimate terrorism. It's a pattern of microregulation that dominates daily life. Victims must constantly monitor their behavior to avoid punishment. This psychological captivity characterizes the most dangerous relationships.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-4-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-1-4-scene-6",
+          "heading": "The Escalation Pattern",
+          "narration": "Many abusive relationships follow a predictable cycle. Tension builds gradually. An acute violent incident occurs. The abuser apologizes profusely during reconciliation. A calm period follows before tension rebuilds. Understanding this cycle helps predict and prevent escalation.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-1-4-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-1-4-scene-7",
+          "heading": "Why Escalation Happens",
+          "narration": "Violence escalates for several reasons. Abusers learn violence works to maintain control. Victims develop coping strategies requiring increased force to overcome. External stressors like job loss or pregnancy increase risk. Previous tactics lose effectiveness over time.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-4-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-1-4-scene-8",
+          "heading": "Risk Factors for Severe Violence",
+          "narration": "Certain factors predict life-threatening violence. Previous escalation is the strongest predictor. Threats to kill, especially with weapons access, signal extreme danger. Strangulation dramatically increases homicide risk. Stalking, obsessive behavior, and forced sex are also critical red flags.",
+          "duration": 17,
+          "audioFile": "content/audio/lesson-1-4-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-1-4-scene-9",
+          "heading": "Separation as High-Risk Period",
+          "narration": "The most dangerous time for IPV victims is when they leave or attempt to leave. Abusers face loss of control, triggering extreme violence. Homicide risk peaks in the first few months after separation. This is why safety planning for departure is critical.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-4-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-1-4-scene-10",
+          "heading": "Why Categorization Matters",
+          "narration": "Understanding these categories informs our response. Situational violence may respond to couples counseling, but intimate terrorism requires victim safety prioritization and specialized intervention. Risk assessment guides the urgency and type of resources provided.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-4-section-10.wav"
+        },
+        {
+          "sceneNumber": 11,
+          "sceneId": "lesson-1-4-scene-11",
+          "heading": "Informed Recognition",
+          "narration": "These frameworks equip you to recognize not just that abuse is occurring, but what type and level of danger exists. This knowledge helps you match the right intervention to the situation and potentially save lives through appropriate escalation of response.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-4-section-11.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-1-4-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-1-4-section-1.wav",
+            "heading": "Different Patterns of IPV",
+            "duration": 13
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-1-4-section-2.wav",
+            "heading": "Johnson's Typology",
+            "duration": 16
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-1-4-section-3.wav",
+            "heading": "Situational Couple Violence",
+            "duration": 14
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-1-4-section-4.wav",
+            "heading": "Intimate Terrorism",
+            "duration": 15
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-1-4-section-5.wav",
+            "heading": "Coercive Control",
+            "duration": 14
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-1-4-section-6.wav",
+            "heading": "The Escalation Pattern",
+            "duration": 15
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-1-4-section-7.wav",
+            "heading": "Why Escalation Happens",
+            "duration": 14
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-1-4-section-8.wav",
+            "heading": "Risk Factors for Severe Violence",
+            "duration": 17
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-1-4-section-9.wav",
+            "heading": "Separation as High-Risk Period",
+            "duration": 14
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-1-4-section-10.wav",
+            "heading": "Why Categorization Matters",
+            "duration": 14
+          },
+          {
+            "section": 11,
+            "path": "content/audio/lesson-1-4-section-11.wav",
+            "heading": "Informed Recognition",
+            "duration": 14
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson-1-5",
+      "videoTitle": "Case Analysis: Lois and James Sumpter",
+      "sceneCount": 13,
+      "totalDuration": 180,
+      "contentType": "CASE_STUDY",
+      "fullNarration": "Let's apply what we've learned to a realistic case scenario. This story is composite, drawn from real patterns. As we explore Lois and James Sumpter's relationship, identify the Power and Control tactics you recognize. Lois is thirty-five, an office manager at a medical practice. She's been married to James for eight years. They have two children, ages six and four. From the outside, they appear to be a typical middle-class family. Lois met James at a friend's party. He was charming, attentive, and made her feel special. He called constantly and wanted to spend all his time with her. At first, she felt flattered by his intense interest and devotion. Gradually, James began criticizing Lois's friends and family. He insisted she check in constantly about her whereabouts. He became intensely jealous when she spent time with anyone else. Slowly, Lois lost contact with her support system. After marriage, James insisted Lois quit her job to stay home with the baby. He controlled all finances, gave her an allowance for groceries, and required receipts for every purchase. Lois had no access to bank accounts or credit cards. James called Lois stupid and worthless. He criticized every aspect of her parenting. He told her repeatedly that she couldn't survive without him, that no one else would want her. Lois began to believe these messages. James used the children to maintain control. He told Lois she was a terrible mother. He threatened to take the children if she ever left. He made the children relay messages and report on what Lois did during the day. The first time James pushed Lois, she was shocked. He apologized profusely, brought flowers, and promised it would never happen again. He blamed stress at work. Lois wanted to believe him and accepted his explanation. The pattern became predictable. Tension would build as James became increasingly critical and controlling. An explosive incident would occur. James would apologize and promise change. After a calm period, the cycle would begin again. Each time, the violence escalated. Why did Lois stay? She had no money, no job, no car, and no support system. James had convinced her she was worthless. She feared losing her children. She hoped he would change. Most importantly, leaving is the most dangerous time. Let's identify the Power and Control Wheel tactics present in this case. James used isolation, economic abuse, emotional abuse, children as leverage, and physical violence. Multiple tactics worked together to trap Lois in an increasingly dangerous situation. This is intimate terrorism, characterized by systematic coercive control. It's not situational couple violence. James uses multiple tactics over time to dominate Lois completely. The violence is escalating, and the risk factors for severe harm are present. The Sumpter case illustrates patterns you may encounter in your professional role. Behind a normal appearance can hide severe abuse. Your ability to recognize these dynamics and respond appropriately can help survivors like Lois find safety and support.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-1-5-scene-1",
+          "heading": "Case Study: The Sumpters",
+          "narration": "Let's apply what we've learned to a realistic case scenario. This story is composite, drawn from real patterns. As we explore Lois and James Sumpter's relationship, identify the Power and Control tactics you recognize.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-5-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-1-5-scene-2",
+          "heading": "Meeting Lois",
+          "narration": "Lois is thirty-five, an office manager at a medical practice. She's been married to James for eight years. They have two children, ages six and four. From the outside, they appear to be a typical middle-class family.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-5-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-1-5-scene-3",
+          "heading": "The Beginning",
+          "narration": "Lois met James at a friend's party. He was charming, attentive, and made her feel special. He called constantly and wanted to spend all his time with her. At first, she felt flattered by his intense interest and devotion.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-1-5-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-1-5-scene-4",
+          "heading": "Isolation Begins",
+          "narration": "Gradually, James began criticizing Lois's friends and family. He insisted she check in constantly about her whereabouts. He became intensely jealous when she spent time with anyone else. Slowly, Lois lost contact with her support system.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-1-5-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-1-5-scene-5",
+          "heading": "Financial Control",
+          "narration": "After marriage, James insisted Lois quit her job to stay home with the baby. He controlled all finances, gave her an allowance for groceries, and required receipts for every purchase. Lois had no access to bank accounts or credit cards.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-5-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-1-5-scene-6",
+          "heading": "Emotional Abuse Escalates",
+          "narration": "James called Lois stupid and worthless. He criticized every aspect of her parenting. He told her repeatedly that she couldn't survive without him, that no one else would want her. Lois began to believe these messages.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-1-5-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-1-5-scene-7",
+          "heading": "Using Children as Control",
+          "narration": "James used the children to maintain control. He told Lois she was a terrible mother. He threatened to take the children if she ever left. He made the children relay messages and report on what Lois did during the day.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-1-5-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-1-5-scene-8",
+          "heading": "The First Physical Incident",
+          "narration": "The first time James pushed Lois, she was shocked. He apologized profusely, brought flowers, and promised it would never happen again. He blamed stress at work. Lois wanted to believe him and accepted his explanation.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-5-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-1-5-scene-9",
+          "heading": "The Pattern Continues",
+          "narration": "The pattern became predictable. Tension would build as James became increasingly critical and controlling. An explosive incident would occur. James would apologize and promise change. After a calm period, the cycle would begin again. Each time, the violence escalated.",
+          "duration": 17,
+          "audioFile": "content/audio/lesson-1-5-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-1-5-scene-10",
+          "heading": "Why Lois Stayed",
+          "narration": "Why did Lois stay? She had no money, no job, no car, and no support system. James had convinced her she was worthless. She feared losing her children. She hoped he would change. Most importantly, leaving is the most dangerous time.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-1-5-section-10.wav"
+        },
+        {
+          "sceneNumber": 11,
+          "sceneId": "lesson-1-5-scene-11",
+          "heading": "Identifying the Tactics",
+          "narration": "Let's identify the Power and Control Wheel tactics present in this case. James used isolation, economic abuse, emotional abuse, children as leverage, and physical violence. Multiple tactics worked together to trap Lois in an increasingly dangerous situation.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-1-5-section-11.wav"
+        },
+        {
+          "sceneNumber": 12,
+          "sceneId": "lesson-1-5-scene-12",
+          "heading": "What Type of IPV?",
+          "narration": "This is intimate terrorism, characterized by systematic coercive control. It's not situational couple violence. James uses multiple tactics over time to dominate Lois completely. The violence is escalating, and the risk factors for severe harm are present.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-5-section-12.wav"
+        },
+        {
+          "sceneNumber": 13,
+          "sceneId": "lesson-1-5-scene-13",
+          "heading": "Recognizing Real Cases",
+          "narration": "The Sumpter case illustrates patterns you may encounter in your professional role. Behind a normal appearance can hide severe abuse. Your ability to recognize these dynamics and respond appropriately can help survivors like Lois find safety and support.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-1-5-section-13.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-1-5-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-1-5-section-1.wav",
+            "heading": "Case Study: The Sumpters",
+            "duration": 14
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-1-5-section-2.wav",
+            "heading": "Meeting Lois",
+            "duration": 14
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-1-5-section-3.wav",
+            "heading": "The Beginning",
+            "duration": 13
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-1-5-section-4.wav",
+            "heading": "Isolation Begins",
+            "duration": 15
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-1-5-section-5.wav",
+            "heading": "Financial Control",
+            "duration": 14
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-1-5-section-6.wav",
+            "heading": "Emotional Abuse Escalates",
+            "duration": 15
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-1-5-section-7.wav",
+            "heading": "Using Children as Control",
+            "duration": 13
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-1-5-section-8.wav",
+            "heading": "The First Physical Incident",
+            "duration": 14
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-1-5-section-9.wav",
+            "heading": "The Pattern Continues",
+            "duration": 17
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-1-5-section-10.wav",
+            "heading": "Why Lois Stayed",
+            "duration": 15
+          },
+          {
+            "section": 11,
+            "path": "content/audio/lesson-1-5-section-11.wav",
+            "heading": "Identifying the Tactics",
+            "duration": 16
+          },
+          {
+            "section": 12,
+            "path": "content/audio/lesson-1-5-section-12.wav",
+            "heading": "What Type of IPV?",
+            "duration": 14
+          },
+          {
+            "section": 13,
+            "path": "content/audio/lesson-1-5-section-13.wav",
+            "heading": "Recognizing Real Cases",
+            "duration": 14
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson-2-1",
+      "videoTitle": "What is Sexual Violence?",
+      "sceneCount": 12,
+      "totalDuration": 168,
+      "contentType": "CONCEPT",
+      "fullNarration": "Sexual violence is a critical component of intimate partner violence, yet it's often misunderstood or overlooked. Let's establish a clear, comprehensive definition and explore its many forms within intimate relationships. Sexual violence encompasses any sexual act committed without consent. This includes attempted or completed rape, unwanted sexual contact or touching, and sexual coercion through pressure or manipulation. The defining element is absence of freely given consent. Sexual violence takes many forms beyond penetrative assault. It includes forced sexual acts, making someone view or participate in pornography, photographing sexual acts without consent, or reproductive coercion like forcing pregnancy or preventing contraception use. Consent is the foundation of all sexual activity. It must be freely given, reversible, informed, enthusiastic, and specific. This is often remembered as FRIES. Without all these elements, sexual activity becomes sexual violence. Freely given means consent occurs without pressure, coercion, manipulation, or threats. If someone agrees to sex because they're afraid of consequences or being manipulated, that's not free consent. It must be a voluntary, willing choice. Consent must be reversible meaning anyone can change their mind. It must be informed with full understanding of what's being agreed to. It should be enthusiastic, not reluctant. And it must be specific consent to one act doesn't mean consent to all acts. Certain conditions make consent impossible. Someone who is unconscious, asleep, or incapacitated by drugs or alcohol cannot consent. Those below the legal age of consent cannot agree. Some disabilities prevent the capacity to consent. In these situations, sexual activity is always assault. Sexual coercion uses non-physical tactics to pressure sexual activity. This includes persistent pressure, guilt trips, threatening to leave or find sex elsewhere, or claiming that arousal means consent. These tactics undermine free choice and constitute sexual violence. A critical myth to dispel: marriage or being in a relationship doesn't mean ongoing consent. Consent must be given each time. Partners can and do rape their spouses. Relationship status is legally and ethically irrelevant to the requirement for consent. Sexual violence causes profound trauma. Survivors commonly experience PTSD, depression, anxiety, and difficulty with trust and intimacy. Physical injuries and health consequences occur. Perhaps most significantly, sexual violence represents a fundamental violation of bodily autonomy and human dignity. Sexual violence frequently co-occurs with other forms of intimate partner violence. When present, it signals higher risk for severe physical violence and homicide. Understanding sexual violence within IPV contexts is essential for comprehensive assessment and appropriate response. The foundation of all sexual activity is clear, freely given consent. Without it, sexual activity becomes sexual violence regardless of relationship status. As professionals, understanding consent helps us identify sexual violence and support survivors appropriately.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-2-1-scene-1",
+          "heading": "Defining Sexual Violence",
+          "narration": "Sexual violence is a critical component of intimate partner violence, yet it's often misunderstood or overlooked. Let's establish a clear, comprehensive definition and explore its many forms within intimate relationships.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-2-1-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-2-1-scene-2",
+          "heading": "What Sexual Violence Includes",
+          "narration": "Sexual violence encompasses any sexual act committed without consent. This includes attempted or completed rape, unwanted sexual contact or touching, and sexual coercion through pressure or manipulation. The defining element is absence of freely given consent.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-2-1-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-2-1-scene-3",
+          "heading": "Forms of Sexual Violence",
+          "narration": "Sexual violence takes many forms beyond penetrative assault. It includes forced sexual acts, making someone view or participate in pornography, photographing sexual acts without consent, or reproductive coercion like forcing pregnancy or preventing contraception use.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-2-1-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-2-1-scene-4",
+          "heading": "Understanding Consent",
+          "narration": "Consent is the foundation of all sexual activity. It must be freely given, reversible, informed, enthusiastic, and specific. This is often remembered as FRIES. Without all these elements, sexual activity becomes sexual violence.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-2-1-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-2-1-scene-5",
+          "heading": "Freely Given",
+          "narration": "Freely given means consent occurs without pressure, coercion, manipulation, or threats. If someone agrees to sex because they're afraid of consequences or being manipulated, that's not free consent. It must be a voluntary, willing choice.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-2-1-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-2-1-scene-6",
+          "heading": "Reversible, Informed, Enthusiastic, Specific",
+          "narration": "Consent must be reversible meaning anyone can change their mind. It must be informed with full understanding of what's being agreed to. It should be enthusiastic, not reluctant. And it must be specific consent to one act doesn't mean consent to all acts.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-2-1-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-2-1-scene-7",
+          "heading": "When Consent Cannot Be Given",
+          "narration": "Certain conditions make consent impossible. Someone who is unconscious, asleep, or incapacitated by drugs or alcohol cannot consent. Those below the legal age of consent cannot agree. Some disabilities prevent the capacity to consent. In these situations, sexual activity is always assault.",
+          "duration": 17,
+          "audioFile": "content/audio/lesson-2-1-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-2-1-scene-8",
+          "heading": "Sexual Coercion Tactics",
+          "narration": "Sexual coercion uses non-physical tactics to pressure sexual activity. This includes persistent pressure, guilt trips, threatening to leave or find sex elsewhere, or claiming that arousal means consent. These tactics undermine free choice and constitute sexual violence.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-2-1-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-2-1-scene-9",
+          "heading": "Relationship Status Doesn't Equal Consent",
+          "narration": "A critical myth to dispel: marriage or being in a relationship doesn't mean ongoing consent. Consent must be given each time. Partners can and do rape their spouses. Relationship status is legally and ethically irrelevant to the requirement for consent.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-2-1-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-2-1-scene-10",
+          "heading": "The Impact of Sexual Violence",
+          "narration": "Sexual violence causes profound trauma. Survivors commonly experience PTSD, depression, anxiety, and difficulty with trust and intimacy. Physical injuries and health consequences occur. Perhaps most significantly, sexual violence represents a fundamental violation of bodily autonomy and human dignity.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-2-1-section-10.wav"
+        },
+        {
+          "sceneNumber": 11,
+          "sceneId": "lesson-2-1-scene-11",
+          "heading": "Why This Matters for IPV",
+          "narration": "Sexual violence frequently co-occurs with other forms of intimate partner violence. When present, it signals higher risk for severe physical violence and homicide. Understanding sexual violence within IPV contexts is essential for comprehensive assessment and appropriate response.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-2-1-section-11.wav"
+        },
+        {
+          "sceneNumber": 12,
+          "sceneId": "lesson-2-1-scene-12",
+          "heading": "Consent is Non-Negotiable",
+          "narration": "The foundation of all sexual activity is clear, freely given consent. Without it, sexual activity becomes sexual violence regardless of relationship status. As professionals, understanding consent helps us identify sexual violence and support survivors appropriately.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-2-1-section-12.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-2-1-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-2-1-section-1.wav",
+            "heading": "Defining Sexual Violence",
+            "duration": 13
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-2-1-section-2.wav",
+            "heading": "What Sexual Violence Includes",
+            "duration": 16
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-2-1-section-3.wav",
+            "heading": "Forms of Sexual Violence",
+            "duration": 14
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-2-1-section-4.wav",
+            "heading": "Understanding Consent",
+            "duration": 13
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-2-1-section-5.wav",
+            "heading": "Freely Given",
+            "duration": 14
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-2-1-section-6.wav",
+            "heading": "Reversible, Informed, Enthusiastic, Specific",
+            "duration": 16
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-2-1-section-7.wav",
+            "heading": "When Consent Cannot Be Given",
+            "duration": 17
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-2-1-section-8.wav",
+            "heading": "Sexual Coercion Tactics",
+            "duration": 15
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-2-1-section-9.wav",
+            "heading": "Relationship Status Doesn't Equal Consent",
+            "duration": 14
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-2-1-section-10.wav",
+            "heading": "The Impact of Sexual Violence",
+            "duration": 16
+          },
+          {
+            "section": 11,
+            "path": "content/audio/lesson-2-1-section-11.wav",
+            "heading": "Why This Matters for IPV",
+            "duration": 14
+          },
+          {
+            "section": 12,
+            "path": "content/audio/lesson-2-1-section-12.wav",
+            "heading": "Consent is Non-Negotiable",
+            "duration": 14
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson-2-2",
+      "videoTitle": "Sexual Violence in Our Society",
+      "sceneCount": 12,
+      "totalDuration": 174,
+      "contentType": "CONCEPT",
+      "fullNarration": "Sexual violence doesn't happen in a vacuum. It occurs within a societal context that often minimizes, normalizes, or excuses it. This environment is called rape culture. Understanding these cultural factors helps us challenge them effectively. Rape culture refers to social attitudes and practices that normalize, trivialize, or excuse sexual violence. It includes victim-blaming, perpetrator excuses, objectification, and the pervasive message that sexual assault is inevitable. These attitudes create an environment where violence thrives. Victim-blaming shifts responsibility from perpetrators to survivors. Questions about what the victim wore, drank, or did communicate that assault is somehow the victim's fault. This silences survivors, protects perpetrators, and reinforces the false idea that certain behaviors cause rape. Rape culture normalizes behaviors that exist on the continuum of sexual violence. Catcalling becomes flattery. Sexual jokes are just humor. Objectification is entertainment. Boys will be boys excuses disrespectful behavior. These attitudes create environments where serious violence becomes possible. The rape culture pyramid illustrates how attitudes and behaviors build on each other. At the base are sexist jokes and objectifying comments. These support escalating behaviors. At the apex is sexual violence. The foundation enables the peak. The pyramid's foundation includes seemingly minor behaviors. Sexist jokes that demean women. Rigid gender stereotypes. Sexual objectification. Victim-blaming language. These create a cultural environment where sexual violence becomes normalized and perpetrators feel entitled. The middle levels involve more direct behaviors. Unwanted sexual comments and advances. Verbal sexual harassment. Non-consensual intimate images. Sexual coercion and pressure. These behaviors escalate from the foundation and support more severe violence above. At the pyramid's top sits sexual violence, rape, and assault. These acts don't emerge from nowhere. They're supported and enabled by all the attitudes and behaviors below. Understanding this structure helps us intervene at multiple levels to prevent violence. Media often perpetuates rape culture. Movies romanticize persistence that crosses into coercion. News coverage focuses on perpetrator potential rather than their choices. Advertising uses sexual objectification. These messages shape our cultural attitudes about sexual violence and consent. Rape culture profoundly impacts survivors. Many don't report because they fear blame or disbelief. They internalize shame for something done to them. Their trauma is minimized. Meanwhile, perpetrators face few consequences. This environment prioritizes perpetrator comfort over survivor justice. We can challenge rape culture through our words and actions. Interrupt sexist jokes. Call out victim-blaming. Believe survivors. Hold perpetrators accountable. Teach comprehensive consent education. Model respectful relationships. Cultural change happens through individual choices multiplied across communities. The alternative to rape culture is a culture of consent, respect, and equality. This means centering survivor voices, teaching enthusiastic consent, challenging harmful attitudes, and creating accountability for perpetrators. As professionals, we contribute to this cultural shift through our responses to sexual violence.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-2-2-scene-1",
+          "heading": "Understanding Rape Culture",
+          "narration": "Sexual violence doesn't happen in a vacuum. It occurs within a societal context that often minimizes, normalizes, or excuses it. This environment is called rape culture. Understanding these cultural factors helps us challenge them effectively.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-2-2-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-2-2-scene-2",
+          "heading": "What is Rape Culture?",
+          "narration": "Rape culture refers to social attitudes and practices that normalize, trivialize, or excuse sexual violence. It includes victim-blaming, perpetrator excuses, objectification, and the pervasive message that sexual assault is inevitable. These attitudes create an environment where violence thrives.",
+          "duration": 17,
+          "audioFile": "content/audio/lesson-2-2-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-2-2-scene-3",
+          "heading": "Victim-Blaming",
+          "narration": "Victim-blaming shifts responsibility from perpetrators to survivors. Questions about what the victim wore, drank, or did communicate that assault is somehow the victim's fault. This silences survivors, protects perpetrators, and reinforces the false idea that certain behaviors cause rape.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-2-2-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-2-2-scene-4",
+          "heading": "Normalizing Sexual Harassment",
+          "narration": "Rape culture normalizes behaviors that exist on the continuum of sexual violence. Catcalling becomes flattery. Sexual jokes are just humor. Objectification is entertainment. Boys will be boys excuses disrespectful behavior. These attitudes create environments where serious violence becomes possible.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-2-2-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-2-2-scene-5",
+          "heading": "The Rape Culture Pyramid",
+          "narration": "The rape culture pyramid illustrates how attitudes and behaviors build on each other. At the base are sexist jokes and objectifying comments. These support escalating behaviors. At the apex is sexual violence. The foundation enables the peak.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-2-2-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-2-2-scene-6",
+          "heading": "Pyramid Foundation Level",
+          "narration": "The pyramid's foundation includes seemingly minor behaviors. Sexist jokes that demean women. Rigid gender stereotypes. Sexual objectification. Victim-blaming language. These create a cultural environment where sexual violence becomes normalized and perpetrators feel entitled.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-2-2-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-2-2-scene-7",
+          "heading": "Pyramid Middle Levels",
+          "narration": "The middle levels involve more direct behaviors. Unwanted sexual comments and advances. Verbal sexual harassment. Non-consensual intimate images. Sexual coercion and pressure. These behaviors escalate from the foundation and support more severe violence above.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-2-2-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-2-2-scene-8",
+          "heading": "Pyramid Apex: Sexual Violence",
+          "narration": "At the pyramid's top sits sexual violence, rape, and assault. These acts don't emerge from nowhere. They're supported and enabled by all the attitudes and behaviors below. Understanding this structure helps us intervene at multiple levels to prevent violence.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-2-2-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-2-2-scene-9",
+          "heading": "Media and Rape Culture",
+          "narration": "Media often perpetuates rape culture. Movies romanticize persistence that crosses into coercion. News coverage focuses on perpetrator potential rather than their choices. Advertising uses sexual objectification. These messages shape our cultural attitudes about sexual violence and consent.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-2-2-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-2-2-scene-10",
+          "heading": "How Rape Culture Affects Survivors",
+          "narration": "Rape culture profoundly impacts survivors. Many don't report because they fear blame or disbelief. They internalize shame for something done to them. Their trauma is minimized. Meanwhile, perpetrators face few consequences. This environment prioritizes perpetrator comfort over survivor justice.",
+          "duration": 17,
+          "audioFile": "content/audio/lesson-2-2-section-10.wav"
+        },
+        {
+          "sceneNumber": 11,
+          "sceneId": "lesson-2-2-scene-11",
+          "heading": "Challenging Rape Culture",
+          "narration": "We can challenge rape culture through our words and actions. Interrupt sexist jokes. Call out victim-blaming. Believe survivors. Hold perpetrators accountable. Teach comprehensive consent education. Model respectful relationships. Cultural change happens through individual choices multiplied across communities.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-2-2-section-11.wav"
+        },
+        {
+          "sceneNumber": 12,
+          "sceneId": "lesson-2-2-scene-12",
+          "heading": "Creating a Culture of Consent",
+          "narration": "The alternative to rape culture is a culture of consent, respect, and equality. This means centering survivor voices, teaching enthusiastic consent, challenging harmful attitudes, and creating accountability for perpetrators. As professionals, we contribute to this cultural shift through our responses to sexual violence.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-2-2-section-12.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-2-2-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-2-2-section-1.wav",
+            "heading": "Understanding Rape Culture",
+            "duration": 15
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-2-2-section-2.wav",
+            "heading": "What is Rape Culture?",
+            "duration": 17
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-2-2-section-3.wav",
+            "heading": "Victim-Blaming",
+            "duration": 15
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-2-2-section-4.wav",
+            "heading": "Normalizing Sexual Harassment",
+            "duration": 16
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-2-2-section-5.wav",
+            "heading": "The Rape Culture Pyramid",
+            "duration": 14
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-2-2-section-6.wav",
+            "heading": "Pyramid Foundation Level",
+            "duration": 15
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-2-2-section-7.wav",
+            "heading": "Pyramid Middle Levels",
+            "duration": 14
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-2-2-section-8.wav",
+            "heading": "Pyramid Apex: Sexual Violence",
+            "duration": 15
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-2-2-section-9.wav",
+            "heading": "Media and Rape Culture",
+            "duration": 15
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-2-2-section-10.wav",
+            "heading": "How Rape Culture Affects Survivors",
+            "duration": 17
+          },
+          {
+            "section": 11,
+            "path": "content/audio/lesson-2-2-section-11.wav",
+            "heading": "Challenging Rape Culture",
+            "duration": 16
+          },
+          {
+            "section": 12,
+            "path": "content/audio/lesson-2-2-section-12.wav",
+            "heading": "Creating a Culture of Consent",
+            "duration": 15
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson-2-3",
+      "videoTitle": "Rape and Sexual Assault in the Context of Intimate Partner Violence",
+      "sceneCount": 13,
+      "totalDuration": 180,
+      "contentType": "CONCEPT",
+      "fullNarration": "Sexual violence within intimate relationships has unique characteristics that distinguish it from stranger assault. Understanding these dynamics helps us recognize this hidden form of abuse and respond appropriately to survivors. Sexual violence is common in abusive relationships. Research indicates ten to fourteen percent of married women experience spousal rape. Forty to forty-five percent of intimate partner violence includes sexual violence. It's often combined with physical abuse and remains severely underreported. Until relatively recently, marital rape wasn't recognized as a crime. The concept of husband as owner meant wives couldn't refuse sex. The last U.S. state didn't criminalize marital rape until nineteen ninety-three. These attitudes still influence how intimate partner sexual violence is viewed. Intimate partner sexual violence differs from stranger assault in critical ways. Perpetrators have ongoing access to victims. Sexual violence is embedded in broader control patterns. Victims experience profound betrayal by trusted partners. Assaults are typically repeated over months or years. Intimate partner sexual violence takes many forms. Forced sex through physical violence or threats. Coerced sex through pressure or manipulation. Sex when victim is unable to consent. Forcing degrading or unwanted sexual acts. Reproductive coercion controlling pregnancy decisions. Reproductive coercion is a specific form of intimate partner sexual violence. Abusers sabotage birth control, force pregnancy or abortion, control access to reproductive healthcare, or use pregnancy to trap partners. This tactic creates additional dependence and vulnerability. Intimate partner sexual violence rarely exists alone. It's typically part of a broader pattern including physical violence, emotional abuse, isolation, and economic control. When sexual violence is present, relationships are more dangerous and lethal risk increases significantly. Multiple factors prevent leaving. Fear of escalated violence when departing. Financial dependence with no resources. Children and custody concerns. Shame and belief no one will help. Cultural or religious barriers. Trauma bonding to the abuser. Love mixed with abuse creates profound confusion. Victims of intimate partner sexual violence face unique barriers to disclosure. Deep shame about sexual violence. Fear that people won't believe a spouse can rape. Cultural taboos around discussing sexuality. Conflicted loyalty to partners they may still love. These barriers mean most never report. Dangerous myths persist. That spouses can't rape each other. That women who stay must want it. That it's less traumatic than stranger rape. That alcohol or dress causes assault. These myths blame victims, excuse perpetrators, and prevent appropriate response. Intimate partner sexual violence causes severe trauma. Victims experience complex PTSD, depression, anxiety, and suicidality. Physical injuries and chronic health problems occur. The betrayal by a trusted partner creates profound difficulty with future trust and intimacy. The impact can last years. Watch for indicators. Victims may have unexplained injuries, especially in genital areas. They may express fear of partner's sexual demands. They might show signs of depression or trauma. Some become pregnant repeatedly despite expressing desire for no more children. These signs deserve sensitive inquiry. Understanding intimate partner sexual violence prepares you to respond appropriately. Believe disclosures. Never question why they stayed. Recognize the trauma and danger. Connect to specialized resources. Your informed, compassionate response can help survivors begin healing and finding safety.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-2-3-scene-1",
+          "heading": "Sexual Violence Within Relationships",
+          "narration": "Sexual violence within intimate relationships has unique characteristics that distinguish it from stranger assault. Understanding these dynamics helps us recognize this hidden form of abuse and respond appropriately to survivors.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-2-3-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-2-3-scene-2",
+          "heading": "Prevalence in Relationships",
+          "narration": "Sexual violence is common in abusive relationships. Research indicates ten to fourteen percent of married women experience spousal rape. Forty to forty-five percent of intimate partner violence includes sexual violence. It's often combined with physical abuse and remains severely underreported.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-2-3-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-2-3-scene-3",
+          "heading": "Historical Context",
+          "narration": "Until relatively recently, marital rape wasn't recognized as a crime. The concept of husband as owner meant wives couldn't refuse sex. The last U.S. state didn't criminalize marital rape until nineteen ninety-three. These attitudes still influence how intimate partner sexual violence is viewed.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-2-3-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-2-3-scene-4",
+          "heading": "Why It's Different from Stranger Assault",
+          "narration": "Intimate partner sexual violence differs from stranger assault in critical ways. Perpetrators have ongoing access to victims. Sexual violence is embedded in broader control patterns. Victims experience profound betrayal by trusted partners. Assaults are typically repeated over months or years.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-2-3-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-2-3-scene-5",
+          "heading": "Forms Within Relationships",
+          "narration": "Intimate partner sexual violence takes many forms. Forced sex through physical violence or threats. Coerced sex through pressure or manipulation. Sex when victim is unable to consent. Forcing degrading or unwanted sexual acts. Reproductive coercion controlling pregnancy decisions.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-2-3-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-2-3-scene-6",
+          "heading": "Reproductive Coercion",
+          "narration": "Reproductive coercion is a specific form of intimate partner sexual violence. Abusers sabotage birth control, force pregnancy or abortion, control access to reproductive healthcare, or use pregnancy to trap partners. This tactic creates additional dependence and vulnerability.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-2-3-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-2-3-scene-7",
+          "heading": "Connection to Other Abuse",
+          "narration": "Intimate partner sexual violence rarely exists alone. It's typically part of a broader pattern including physical violence, emotional abuse, isolation, and economic control. When sexual violence is present, relationships are more dangerous and lethal risk increases significantly.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-2-3-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-2-3-scene-8",
+          "heading": "Why Victims Don't Leave",
+          "narration": "Multiple factors prevent leaving. Fear of escalated violence when departing. Financial dependence with no resources. Children and custody concerns. Shame and belief no one will help. Cultural or religious barriers. Trauma bonding to the abuser. Love mixed with abuse creates profound confusion.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-2-3-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-2-3-scene-9",
+          "heading": "Barriers to Disclosure",
+          "narration": "Victims of intimate partner sexual violence face unique barriers to disclosure. Deep shame about sexual violence. Fear that people won't believe a spouse can rape. Cultural taboos around discussing sexuality. Conflicted loyalty to partners they may still love. These barriers mean most never report.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-2-3-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-2-3-scene-10",
+          "heading": "Myths About Intimate Partner Sexual Violence",
+          "narration": "Dangerous myths persist. That spouses can't rape each other. That women who stay must want it. That it's less traumatic than stranger rape. That alcohol or dress causes assault. These myths blame victims, excuse perpetrators, and prevent appropriate response.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-2-3-section-10.wav"
+        },
+        {
+          "sceneNumber": 11,
+          "sceneId": "lesson-2-3-scene-11",
+          "heading": "The Impact is Severe",
+          "narration": "Intimate partner sexual violence causes severe trauma. Victims experience complex PTSD, depression, anxiety, and suicidality. Physical injuries and chronic health problems occur. The betrayal by a trusted partner creates profound difficulty with future trust and intimacy. The impact can last years.",
+          "duration": 17,
+          "audioFile": "content/audio/lesson-2-3-section-11.wav"
+        },
+        {
+          "sceneNumber": 12,
+          "sceneId": "lesson-2-3-scene-12",
+          "heading": "Recognizing the Signs",
+          "narration": "Watch for indicators. Victims may have unexplained injuries, especially in genital areas. They may express fear of partner's sexual demands. They might show signs of depression or trauma. Some become pregnant repeatedly despite expressing desire for no more children. These signs deserve sensitive inquiry.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-2-3-section-12.wav"
+        },
+        {
+          "sceneNumber": 13,
+          "sceneId": "lesson-2-3-scene-13",
+          "heading": "Responding with Understanding",
+          "narration": "Understanding intimate partner sexual violence prepares you to respond appropriately. Believe disclosures. Never question why they stayed. Recognize the trauma and danger. Connect to specialized resources. Your informed, compassionate response can help survivors begin healing and finding safety.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-2-3-section-13.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-2-3-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-2-3-section-1.wav",
+            "heading": "Sexual Violence Within Relationships",
+            "duration": 14
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-2-3-section-2.wav",
+            "heading": "Prevalence in Relationships",
+            "duration": 16
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-2-3-section-3.wav",
+            "heading": "Historical Context",
+            "duration": 15
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-2-3-section-4.wav",
+            "heading": "Why It's Different from Stranger Assault",
+            "duration": 15
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-2-3-section-5.wav",
+            "heading": "Forms Within Relationships",
+            "duration": 14
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-2-3-section-6.wav",
+            "heading": "Reproductive Coercion",
+            "duration": 16
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-2-3-section-7.wav",
+            "heading": "Connection to Other Abuse",
+            "duration": 14
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-2-3-section-8.wav",
+            "heading": "Why Victims Don't Leave",
+            "duration": 16
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-2-3-section-9.wav",
+            "heading": "Barriers to Disclosure",
+            "duration": 16
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-2-3-section-10.wav",
+            "heading": "Myths About Intimate Partner Sexual Violence",
+            "duration": 14
+          },
+          {
+            "section": 11,
+            "path": "content/audio/lesson-2-3-section-11.wav",
+            "heading": "The Impact is Severe",
+            "duration": 17
+          },
+          {
+            "section": 12,
+            "path": "content/audio/lesson-2-3-section-12.wav",
+            "heading": "Recognizing the Signs",
+            "duration": 15
+          },
+          {
+            "section": 13,
+            "path": "content/audio/lesson-2-3-section-13.wav",
+            "heading": "Responding with Understanding",
+            "duration": 14
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson-3-1",
+      "videoTitle": "The Impact of Intimate Partner Violence on Victims",
+      "sceneCount": 14,
+      "totalDuration": 186,
+      "contentType": "CONCEPT",
+      "fullNarration": "Intimate partner violence creates profound, multifaceted impacts that extend far beyond visible injuries. Understanding these consequences helps us recognize IPV's severity, respond with appropriate compassion, and avoid judgment about why victims stay. IPV causes severe psychological trauma. Many victims develop post-traumatic stress disorder with flashbacks, nightmares, and hypervigilance. Depression and anxiety disorders are common. Sustained abuse destroys self-esteem and sense of identity. Constant fear becomes a way of life. Ongoing abuse often causes complex PTSD, distinct from single-incident trauma. It involves emotional regulation difficulties, negative self-perception, relationship problems, and feeling permanently damaged. The sustained nature of intimate partner violence creates this complex trauma response. Repeated abuse with no escape creates learned helplessness. Victims stop trying to change their situation because nothing has worked before. This isn't weakness or choosing to stay. It's a psychological response to sustained trauma and control that makes leaving feel impossible. Physical health impacts extend beyond acute injuries. Victims suffer chronic pain, headaches, and gastrointestinal problems. Stress causes cardiovascular issues. Sleep disturbances and fatigue are common. Some injuries like traumatic brain injury from strangulation or blows have long-term consequences. Sexual violence and reproductive coercion create specific health consequences. Sexually transmitted infections, unwanted pregnancies, miscarriage, and pregnancy complications occur. Gynecological problems develop. Some victims experience sexual dysfunction and chronic pelvic pain from repeated assault. Abusers deliberately isolate victims, cutting them off from family, friends, and community support. This isolation becomes self-perpetuating as victims feel ashamed and withdraw further. The loss of social connections removes critical protective factors and support systems. Economic abuse creates lasting financial harm. Victims lose jobs due to abuser sabotage or inability to function. Credit is destroyed, debt accumulates. Many lose housing and stability. Even after leaving, economic impacts persist, making self-sufficiency difficult and increasing vulnerability to future abuse. Children in homes with intimate partner violence suffer significant harm even if not directly abused. They experience trauma, behavioral problems, and academic difficulties. Many develop anxiety and depression. They learn unhealthy relationship models. Witnessing IPV is a form of child abuse. Understanding why victims stay requires understanding barriers. Fear is primary. Victims accurately assess that leaving is the most dangerous time when homicide risk peaks. Abusers threaten to kill them, their children, or themselves. This fear is based in reality, not irrationality. Practical barriers trap victims. Economic abuse leaves them with no money, no job, and destroyed credit. They may have nowhere to go and no transportation. Abusers threaten custody battles. Without resources and support, leaving feels impossible and may genuinely be unsafe. Emotional barriers are powerful. Many victims still love their abusers and hope for change. Trauma bonding creates strong attachment. Cultural or religious beliefs about marriage and family create obligation. Shame prevents disclosure. These emotional factors are as real as physical barriers. These impacts don't exist separately. They compound and reinforce each other. Trauma affects physical health. Economic dependence increases isolation. Fear prevents help-seeking. Understanding this cumulative impact helps us avoid judgment and recognize the immense courage required to survive and eventually leave. Despite devastating impacts, survivors demonstrate remarkable resilience. They develop survival strategies, protect their children, and ultimately find pathways to safety. Understanding impacts helps us appreciate their strength and provide appropriate, trauma-informed support as they rebuild their lives.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-3-1-scene-1",
+          "heading": "Understanding the Impact",
+          "narration": "Intimate partner violence creates profound, multifaceted impacts that extend far beyond visible injuries. Understanding these consequences helps us recognize IPV's severity, respond with appropriate compassion, and avoid judgment about why victims stay.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-1-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-3-1-scene-2",
+          "heading": "Psychological Trauma",
+          "narration": "IPV causes severe psychological trauma. Many victims develop post-traumatic stress disorder with flashbacks, nightmares, and hypervigilance. Depression and anxiety disorders are common. Sustained abuse destroys self-esteem and sense of identity. Constant fear becomes a way of life.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-3-1-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-3-1-scene-3",
+          "heading": "Complex PTSD",
+          "narration": "Ongoing abuse often causes complex PTSD, distinct from single-incident trauma. It involves emotional regulation difficulties, negative self-perception, relationship problems, and feeling permanently damaged. The sustained nature of intimate partner violence creates this complex trauma response.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-3-1-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-3-1-scene-4",
+          "heading": "Learned Helplessness",
+          "narration": "Repeated abuse with no escape creates learned helplessness. Victims stop trying to change their situation because nothing has worked before. This isn't weakness or choosing to stay. It's a psychological response to sustained trauma and control that makes leaving feel impossible.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-1-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-3-1-scene-5",
+          "heading": "Physical Health Consequences",
+          "narration": "Physical health impacts extend beyond acute injuries. Victims suffer chronic pain, headaches, and gastrointestinal problems. Stress causes cardiovascular issues. Sleep disturbances and fatigue are common. Some injuries like traumatic brain injury from strangulation or blows have long-term consequences.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-3-1-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-3-1-scene-6",
+          "heading": "Reproductive Health Impacts",
+          "narration": "Sexual violence and reproductive coercion create specific health consequences. Sexually transmitted infections, unwanted pregnancies, miscarriage, and pregnancy complications occur. Gynecological problems develop. Some victims experience sexual dysfunction and chronic pelvic pain from repeated assault.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-1-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-3-1-scene-7",
+          "heading": "Social Isolation Impact",
+          "narration": "Abusers deliberately isolate victims, cutting them off from family, friends, and community support. This isolation becomes self-perpetuating as victims feel ashamed and withdraw further. The loss of social connections removes critical protective factors and support systems.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-3-1-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-3-1-scene-8",
+          "heading": "Economic Consequences",
+          "narration": "Economic abuse creates lasting financial harm. Victims lose jobs due to abuser sabotage or inability to function. Credit is destroyed, debt accumulates. Many lose housing and stability. Even after leaving, economic impacts persist, making self-sufficiency difficult and increasing vulnerability to future abuse.",
+          "duration": 17,
+          "audioFile": "content/audio/lesson-3-1-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-3-1-scene-9",
+          "heading": "Impact on Children",
+          "narration": "Children in homes with intimate partner violence suffer significant harm even if not directly abused. They experience trauma, behavioral problems, and academic difficulties. Many develop anxiety and depression. They learn unhealthy relationship models. Witnessing IPV is a form of child abuse.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-1-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-3-1-scene-10",
+          "heading": "Barriers to Leaving: Fear",
+          "narration": "Understanding why victims stay requires understanding barriers. Fear is primary. Victims accurately assess that leaving is the most dangerous time when homicide risk peaks. Abusers threaten to kill them, their children, or themselves. This fear is based in reality, not irrationality.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-3-1-section-10.wav"
+        },
+        {
+          "sceneNumber": 11,
+          "sceneId": "lesson-3-1-scene-11",
+          "heading": "Barriers to Leaving: Practical",
+          "narration": "Practical barriers trap victims. Economic abuse leaves them with no money, no job, and destroyed credit. They may have nowhere to go and no transportation. Abusers threaten custody battles. Without resources and support, leaving feels impossible and may genuinely be unsafe.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-1-section-11.wav"
+        },
+        {
+          "sceneNumber": 12,
+          "sceneId": "lesson-3-1-scene-12",
+          "heading": "Barriers to Leaving: Emotional",
+          "narration": "Emotional barriers are powerful. Many victims still love their abusers and hope for change. Trauma bonding creates strong attachment. Cultural or religious beliefs about marriage and family create obligation. Shame prevents disclosure. These emotional factors are as real as physical barriers.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-1-section-12.wav"
+        },
+        {
+          "sceneNumber": 13,
+          "sceneId": "lesson-3-1-scene-13",
+          "heading": "Cumulative Impact",
+          "narration": "These impacts don't exist separately. They compound and reinforce each other. Trauma affects physical health. Economic dependence increases isolation. Fear prevents help-seeking. Understanding this cumulative impact helps us avoid judgment and recognize the immense courage required to survive and eventually leave.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-3-1-section-13.wav"
+        },
+        {
+          "sceneNumber": 14,
+          "sceneId": "lesson-3-1-scene-14",
+          "heading": "Recognizing Resilience",
+          "narration": "Despite devastating impacts, survivors demonstrate remarkable resilience. They develop survival strategies, protect their children, and ultimately find pathways to safety. Understanding impacts helps us appreciate their strength and provide appropriate, trauma-informed support as they rebuild their lives.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-3-1-section-14.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-3-1-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-3-1-section-1.wav",
+            "heading": "Understanding the Impact",
+            "duration": 15
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-3-1-section-2.wav",
+            "heading": "Psychological Trauma",
+            "duration": 16
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-3-1-section-3.wav",
+            "heading": "Complex PTSD",
+            "duration": 14
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-3-1-section-4.wav",
+            "heading": "Learned Helplessness",
+            "duration": 15
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-3-1-section-5.wav",
+            "heading": "Physical Health Consequences",
+            "duration": 16
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-3-1-section-6.wav",
+            "heading": "Reproductive Health Impacts",
+            "duration": 15
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-3-1-section-7.wav",
+            "heading": "Social Isolation Impact",
+            "duration": 14
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-3-1-section-8.wav",
+            "heading": "Economic Consequences",
+            "duration": 17
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-3-1-section-9.wav",
+            "heading": "Impact on Children",
+            "duration": 15
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-3-1-section-10.wav",
+            "heading": "Barriers to Leaving: Fear",
+            "duration": 16
+          },
+          {
+            "section": 11,
+            "path": "content/audio/lesson-3-1-section-11.wav",
+            "heading": "Barriers to Leaving: Practical",
+            "duration": 15
+          },
+          {
+            "section": 12,
+            "path": "content/audio/lesson-3-1-section-12.wav",
+            "heading": "Barriers to Leaving: Emotional",
+            "duration": 15
+          },
+          {
+            "section": 13,
+            "path": "content/audio/lesson-3-1-section-13.wav",
+            "heading": "Cumulative Impact",
+            "duration": 16
+          },
+          {
+            "section": 14,
+            "path": "content/audio/lesson-3-1-section-14.wav",
+            "heading": "Recognizing Resilience",
+            "duration": 14
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson-3-2",
+      "videoTitle": "Safety Planning with Victims",
+      "sceneCount": 14,
+      "totalDuration": 192,
+      "contentType": "CONCEPT",
+      "fullNarration": "Safety planning is a collaborative process to help IPV victims reduce risk and prepare for emergencies. It's not about telling people to leave. It's about empowering them to make informed decisions and increase safety whether they stay or go. Safety planning creates a personalized strategy for each unique situation. It helps reduce risk of harm, prepares for dangerous situations or emergencies, and increases victims' sense of control and options. Effective safety plans are collaborative, practical, and survivor-driven. For those not yet ready or able to leave, safety planning focuses on risk reduction. This includes identifying safe rooms without weapons, planning escape routes, teaching children to call for help, establishing code words with trusted people, and hiding emergency supplies. Help victims recognize warning signs of escalation. Discuss avoiding rooms with weapons or without exits like kitchens, bathrooms, or bedrooms. Identify the safest exit routes from home. Practice what to say or do during incidents to reduce harm while abuse is occurring. Help victims prepare emergency supplies kept in a safe, accessible location. Include copies of important documents like IDs, birth certificates, and legal papers. Cash and credit cards. Extra keys. Medications. A change of clothes. Contact information for resources. These enable quick departure if needed. Leaving requires careful planning as this is the most dangerous time. Discuss timing, safe places to go, transportation, financial resources, and legal protections. Help identify obstacles and solutions. Emphasize that leaving doesn't have to be permanent to practice this planning. Help victims rebuild support networks abusers have destroyed. Identify trusted friends, family members, or neighbors who can offer help or call police. Establish workplace allies. Connect with IPV advocates and counselors. A support network increases safety and provides resources. Technology enables tracking and surveillance. Discuss changing passwords, using safe computers at libraries or work, disabling location services, checking for spyware, and using safety apps. Help victims understand their devices may be monitored and plan accordingly. Address financial barriers to leaving. Discuss opening separate bank accounts at different institutions. Building emergency funds slowly and secretly. Understanding shared finances and debts. Planning steps toward economic independence. Financial resources dramatically increase safety options. Inform victims about legal options including protection orders, custody provisions, and criminal charges. Explain the process, benefits, and limitations of each. Connect to legal advocates who can help navigate systems. Understanding options empowers informed decisions. Post-separation safety planning is critical as danger continues. Discuss changing routines, routes, and patterns. Alert security at residence and workplace. Document all contact and violations. Maintain protection orders. Prepare for potential stalking or continued harassment. Safety planning doesn't end at separation. Effective facilitation requires trauma-informed approaches. Ask open questions. Listen without judgment. Validate concerns. Respect their expertise about their situation. Never push your timeline. Provide information, not directives. Acknowledge that they're the expert on their life and relationship. Recognize your limitations. IPV advocates have specialized training and can provide comprehensive safety planning. Legal advocates help navigate complex systems. Mental health professionals address trauma. Know when to make warm referrals to specialists while maintaining your supportive role. Safety planning isn't about convincing people to leave. It's about increasing options, reducing risk, and supporting informed decision-making. By providing tools and resources, we empower survivors to make choices that are right for their unique situations and enhance their safety.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-3-2-scene-1",
+          "heading": "The Importance of Safety Planning",
+          "narration": "Safety planning is a collaborative process to help IPV victims reduce risk and prepare for emergencies. It's not about telling people to leave. It's about empowering them to make informed decisions and increase safety whether they stay or go.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-2-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-3-2-scene-2",
+          "heading": "What is Safety Planning?",
+          "narration": "Safety planning creates a personalized strategy for each unique situation. It helps reduce risk of harm, prepares for dangerous situations or emergencies, and increases victims' sense of control and options. Effective safety plans are collaborative, practical, and survivor-driven.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-3-2-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-3-2-scene-3",
+          "heading": "Safety While in the Relationship",
+          "narration": "For those not yet ready or able to leave, safety planning focuses on risk reduction. This includes identifying safe rooms without weapons, planning escape routes, teaching children to call for help, establishing code words with trusted people, and hiding emergency supplies.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-2-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-3-2-scene-4",
+          "heading": "Identifying Dangerous Situations",
+          "narration": "Help victims recognize warning signs of escalation. Discuss avoiding rooms with weapons or without exits like kitchens, bathrooms, or bedrooms. Identify the safest exit routes from home. Practice what to say or do during incidents to reduce harm while abuse is occurring.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-2-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-3-2-scene-5",
+          "heading": "Emergency Supply Preparation",
+          "narration": "Help victims prepare emergency supplies kept in a safe, accessible location. Include copies of important documents like IDs, birth certificates, and legal papers. Cash and credit cards. Extra keys. Medications. A change of clothes. Contact information for resources. These enable quick departure if needed.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-3-2-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-3-2-scene-6",
+          "heading": "Safety Planning for Leaving",
+          "narration": "Leaving requires careful planning as this is the most dangerous time. Discuss timing, safe places to go, transportation, financial resources, and legal protections. Help identify obstacles and solutions. Emphasize that leaving doesn't have to be permanent to practice this planning.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-2-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-3-2-scene-7",
+          "heading": "Building a Support Network",
+          "narration": "Help victims rebuild support networks abusers have destroyed. Identify trusted friends, family members, or neighbors who can offer help or call police. Establish workplace allies. Connect with IPV advocates and counselors. A support network increases safety and provides resources.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-2-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-3-2-scene-8",
+          "heading": "Technology Safety",
+          "narration": "Technology enables tracking and surveillance. Discuss changing passwords, using safe computers at libraries or work, disabling location services, checking for spyware, and using safety apps. Help victims understand their devices may be monitored and plan accordingly.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-3-2-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-3-2-scene-9",
+          "heading": "Financial Safety Planning",
+          "narration": "Address financial barriers to leaving. Discuss opening separate bank accounts at different institutions. Building emergency funds slowly and secretly. Understanding shared finances and debts. Planning steps toward economic independence. Financial resources dramatically increase safety options.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-2-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-3-2-scene-10",
+          "heading": "Legal Protections",
+          "narration": "Inform victims about legal options including protection orders, custody provisions, and criminal charges. Explain the process, benefits, and limitations of each. Connect to legal advocates who can help navigate systems. Understanding options empowers informed decisions.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-3-2-section-10.wav"
+        },
+        {
+          "sceneNumber": 11,
+          "sceneId": "lesson-3-2-scene-11",
+          "heading": "Safety After Leaving",
+          "narration": "Post-separation safety planning is critical as danger continues. Discuss changing routines, routes, and patterns. Alert security at residence and workplace. Document all contact and violations. Maintain protection orders. Prepare for potential stalking or continued harassment. Safety planning doesn't end at separation.",
+          "duration": 17,
+          "audioFile": "content/audio/lesson-3-2-section-11.wav"
+        },
+        {
+          "sceneNumber": 12,
+          "sceneId": "lesson-3-2-scene-12",
+          "heading": "Facilitating Safety Planning Conversations",
+          "narration": "Effective facilitation requires trauma-informed approaches. Ask open questions. Listen without judgment. Validate concerns. Respect their expertise about their situation. Never push your timeline. Provide information, not directives. Acknowledge that they're the expert on their life and relationship.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-3-2-section-12.wav"
+        },
+        {
+          "sceneNumber": 13,
+          "sceneId": "lesson-3-2-scene-13",
+          "heading": "When to Involve Specialists",
+          "narration": "Recognize your limitations. IPV advocates have specialized training and can provide comprehensive safety planning. Legal advocates help navigate complex systems. Mental health professionals address trauma. Know when to make warm referrals to specialists while maintaining your supportive role.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-2-section-13.wav"
+        },
+        {
+          "sceneNumber": 14,
+          "sceneId": "lesson-3-2-scene-14",
+          "heading": "Empowering Informed Decisions",
+          "narration": "Safety planning isn't about convincing people to leave. It's about increasing options, reducing risk, and supporting informed decision-making. By providing tools and resources, we empower survivors to make choices that are right for their unique situations and enhance their safety.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-3-2-section-14.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-3-2-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-3-2-section-1.wav",
+            "heading": "The Importance of Safety Planning",
+            "duration": 15
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-3-2-section-2.wav",
+            "heading": "What is Safety Planning?",
+            "duration": 16
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-3-2-section-3.wav",
+            "heading": "Safety While in the Relationship",
+            "duration": 15
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-3-2-section-4.wav",
+            "heading": "Identifying Dangerous Situations",
+            "duration": 15
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-3-2-section-5.wav",
+            "heading": "Emergency Supply Preparation",
+            "duration": 16
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-3-2-section-6.wav",
+            "heading": "Safety Planning for Leaving",
+            "duration": 15
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-3-2-section-7.wav",
+            "heading": "Building a Support Network",
+            "duration": 15
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-3-2-section-8.wav",
+            "heading": "Technology Safety",
+            "duration": 14
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-3-2-section-9.wav",
+            "heading": "Financial Safety Planning",
+            "duration": 15
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-3-2-section-10.wav",
+            "heading": "Legal Protections",
+            "duration": 14
+          },
+          {
+            "section": 11,
+            "path": "content/audio/lesson-3-2-section-11.wav",
+            "heading": "Safety After Leaving",
+            "duration": 17
+          },
+          {
+            "section": 12,
+            "path": "content/audio/lesson-3-2-section-12.wav",
+            "heading": "Facilitating Safety Planning Conversations",
+            "duration": 16
+          },
+          {
+            "section": 13,
+            "path": "content/audio/lesson-3-2-section-13.wav",
+            "heading": "When to Involve Specialists",
+            "duration": 15
+          },
+          {
+            "section": 14,
+            "path": "content/audio/lesson-3-2-section-14.wav",
+            "heading": "Empowering Informed Decisions",
+            "duration": 14
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson-3-3",
+      "videoTitle": "Responding to Someone Experiencing Intimate Partner Violence",
+      "sceneCount": 15,
+      "totalDuration": 210,
+      "contentType": "CONCEPT",
+      "fullNarration": "How you respond when someone discloses intimate partner violence can profoundly impact their healing and safety. A supportive response validates their experience and opens pathways to help. A harmful response can cause additional trauma and prevent future disclosure. Trauma-informed care rests on five principles. Safety ensures physical and emotional security. Trustworthiness requires transparency and consistency. Choice respects autonomy. Collaboration involves shared decision-making. Empowerment builds on survivors' strengths. These principles should guide every interaction. Begin by ensuring immediate safety. Is the abuser present or nearby? Is it safe to talk now? Can they speak freely? Provide a private, comfortable space. Recognize that emotional safety matters too. Your calm, non-judgmental presence contributes to feeling safe. The most powerful response is simple belief. Say I believe you. Validate their feelings and experiences. Acknowledge the courage it took to disclose. Clearly state that the abuse is not their fault. Many survivors have never heard these messages before. Avoid common harmful responses. Never ask why they stayed or didn't leave sooner. Don't minimize their experience or compare to others. Don't tell them what to do or push your timeline. Avoid expressing shock or anger that might feel like judgment. Don't badmouth the abuser. Practice active listening without interrupting. Use open body language. Provide verbal acknowledgments like I hear you or that sounds really difficult. Reflect back what you're hearing. Allow silence when needed. Focus entirely on them, not on formulating your response. Respect that survivors are experts on their own situations and relationships. They understand risks and barriers you may not see. Honor their decisions even when you disagree. Provide information and options, but let them choose. Respecting autonomy counteracts the control they experience. Use respectful, empowering language. Say survivor or person experiencing abuse rather than victim when possible. Avoid dramatic language that sensationalizes. Use their preferred pronouns and terms. Be mindful of cultural context. Language shapes how people understand their experiences. When you suspect abuse, asking directly is appropriate. Use private settings. Ask open-ended questions like Are you safe at home? Has your partner hurt or threatened you? Frame questions non-judgmentally. If they're not ready to disclose, respect that and leave the door open for future conversations. Provide comprehensive resource information. The National Domestic Violence Hotline at one eight hundred seven nine nine seven two three three offers twenty-four seven support. Local IPV organizations provide advocacy. Legal aid assists with protection orders. Mental health services address trauma. Emergency shelters offer safety. Give resources even if not ready to use them now. Make warm referrals when possible. Don't just hand out numbers. Offer to call while they're with you. Introduce them to advocates. Explain what to expect. Follow up to ensure they connected. Warm referrals dramatically increase the likelihood people will access specialized services. Recognize what you can and can't do. You're not an IPV specialist, investigator, or therapist. Your role is to listen, believe, provide resources, and support. Don't try to fix everything yourself. Know when to refer to specialists. Maintain appropriate professional boundaries. Understand your jurisdiction's mandatory reporting requirements. Some professionals must report IPV to authorities. Know what you're required to report, to whom, and when. If mandatory reporting applies, explain this before disclosure. Balance legal obligations with survivor autonomy and safety as much as possible. Supporting IPV survivors can cause vicarious trauma. Practice self-care. Seek supervision and debriefing. Maintain boundaries. Connect with colleagues. Recognize your emotional responses. You can't support others effectively if you don't care for yourself. Preventing burnout ensures sustained, quality support. Your response to IPV disclosure can be transformative. A single supportive conversation can help someone recognize abuse, access resources, or begin their journey to safety. By applying trauma-informed principles and appropriate responses, you become part of the solution to intimate partner violence.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-3-3-scene-1",
+          "heading": "Your Response Matters",
+          "narration": "How you respond when someone discloses intimate partner violence can profoundly impact their healing and safety. A supportive response validates their experience and opens pathways to help. A harmful response can cause additional trauma and prevent future disclosure.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-3-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-3-3-scene-2",
+          "heading": "Trauma-Informed Principles",
+          "narration": "Trauma-informed care rests on five principles. Safety ensures physical and emotional security. Trustworthiness requires transparency and consistency. Choice respects autonomy. Collaboration involves shared decision-making. Empowerment builds on survivors' strengths. These principles should guide every interaction.",
+          "duration": 18,
+          "audioFile": "content/audio/lesson-3-3-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-3-3-scene-3",
+          "heading": "Creating Safety",
+          "narration": "Begin by ensuring immediate safety. Is the abuser present or nearby? Is it safe to talk now? Can they speak freely? Provide a private, comfortable space. Recognize that emotional safety matters too. Your calm, non-judgmental presence contributes to feeling safe.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-3-3-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-3-3-scene-4",
+          "heading": "Believe and Validate",
+          "narration": "The most powerful response is simple belief. Say I believe you. Validate their feelings and experiences. Acknowledge the courage it took to disclose. Clearly state that the abuse is not their fault. Many survivors have never heard these messages before.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-3-3-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-3-3-scene-5",
+          "heading": "What Not to Say",
+          "narration": "Avoid common harmful responses. Never ask why they stayed or didn't leave sooner. Don't minimize their experience or compare to others. Don't tell them what to do or push your timeline. Avoid expressing shock or anger that might feel like judgment. Don't badmouth the abuser.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-3-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-3-3-scene-6",
+          "heading": "Active Listening Skills",
+          "narration": "Practice active listening without interrupting. Use open body language. Provide verbal acknowledgments like I hear you or that sounds really difficult. Reflect back what you're hearing. Allow silence when needed. Focus entirely on them, not on formulating your response.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-3-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-3-3-scene-7",
+          "heading": "Respect Their Choices",
+          "narration": "Respect that survivors are experts on their own situations and relationships. They understand risks and barriers you may not see. Honor their decisions even when you disagree. Provide information and options, but let them choose. Respecting autonomy counteracts the control they experience.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-3-3-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-3-3-scene-8",
+          "heading": "Appropriate Language",
+          "narration": "Use respectful, empowering language. Say survivor or person experiencing abuse rather than victim when possible. Avoid dramatic language that sensationalizes. Use their preferred pronouns and terms. Be mindful of cultural context. Language shapes how people understand their experiences.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-3-3-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-3-3-scene-9",
+          "heading": "Asking About Abuse",
+          "narration": "When you suspect abuse, asking directly is appropriate. Use private settings. Ask open-ended questions like Are you safe at home? Has your partner hurt or threatened you? Frame questions non-judgmentally. If they're not ready to disclose, respect that and leave the door open for future conversations.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-3-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-3-3-scene-10",
+          "heading": "Providing Resources",
+          "narration": "Provide comprehensive resource information. The National Domestic Violence Hotline at one eight hundred seven nine nine seven two three three offers twenty-four seven support. Local IPV organizations provide advocacy. Legal aid assists with protection orders. Mental health services address trauma. Emergency shelters offer safety. Give resources even if not ready to use them now.",
+          "duration": 20,
+          "audioFile": "content/audio/lesson-3-3-section-10.wav"
+        },
+        {
+          "sceneNumber": 11,
+          "sceneId": "lesson-3-3-scene-11",
+          "heading": "Warm Referrals",
+          "narration": "Make warm referrals when possible. Don't just hand out numbers. Offer to call while they're with you. Introduce them to advocates. Explain what to expect. Follow up to ensure they connected. Warm referrals dramatically increase the likelihood people will access specialized services.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-3-3-section-11.wav"
+        },
+        {
+          "sceneNumber": 12,
+          "sceneId": "lesson-3-3-scene-12",
+          "heading": "Understanding Your Role and Limits",
+          "narration": "Recognize what you can and can't do. You're not an IPV specialist, investigator, or therapist. Your role is to listen, believe, provide resources, and support. Don't try to fix everything yourself. Know when to refer to specialists. Maintain appropriate professional boundaries.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-3-3-section-12.wav"
+        },
+        {
+          "sceneNumber": 13,
+          "sceneId": "lesson-3-3-scene-13",
+          "heading": "Mandatory Reporting",
+          "narration": "Understand your jurisdiction's mandatory reporting requirements. Some professionals must report IPV to authorities. Know what you're required to report, to whom, and when. If mandatory reporting applies, explain this before disclosure. Balance legal obligations with survivor autonomy and safety as much as possible.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-3-3-section-13.wav"
+        },
+        {
+          "sceneNumber": 14,
+          "sceneId": "lesson-3-3-scene-14",
+          "heading": "Self-Care for Helpers",
+          "narration": "Supporting IPV survivors can cause vicarious trauma. Practice self-care. Seek supervision and debriefing. Maintain boundaries. Connect with colleagues. Recognize your emotional responses. You can't support others effectively if you don't care for yourself. Preventing burnout ensures sustained, quality support.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-3-3-section-14.wav"
+        },
+        {
+          "sceneNumber": 15,
+          "sceneId": "lesson-3-3-scene-15",
+          "heading": "Making a Difference",
+          "narration": "Your response to IPV disclosure can be transformative. A single supportive conversation can help someone recognize abuse, access resources, or begin their journey to safety. By applying trauma-informed principles and appropriate responses, you become part of the solution to intimate partner violence.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-3-3-section-15.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-3-3-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-3-3-section-1.wav",
+            "heading": "Your Response Matters",
+            "duration": 15
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-3-3-section-2.wav",
+            "heading": "Trauma-Informed Principles",
+            "duration": 18
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-3-3-section-3.wav",
+            "heading": "Creating Safety",
+            "duration": 14
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-3-3-section-4.wav",
+            "heading": "Believe and Validate",
+            "duration": 16
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-3-3-section-5.wav",
+            "heading": "What Not to Say",
+            "duration": 15
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-3-3-section-6.wav",
+            "heading": "Active Listening Skills",
+            "duration": 15
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-3-3-section-7.wav",
+            "heading": "Respect Their Choices",
+            "duration": 16
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-3-3-section-8.wav",
+            "heading": "Appropriate Language",
+            "duration": 14
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-3-3-section-9.wav",
+            "heading": "Asking About Abuse",
+            "duration": 15
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-3-3-section-10.wav",
+            "heading": "Providing Resources",
+            "duration": 20
+          },
+          {
+            "section": 11,
+            "path": "content/audio/lesson-3-3-section-11.wav",
+            "heading": "Warm Referrals",
+            "duration": 14
+          },
+          {
+            "section": 12,
+            "path": "content/audio/lesson-3-3-section-12.wav",
+            "heading": "Understanding Your Role and Limits",
+            "duration": 15
+          },
+          {
+            "section": 13,
+            "path": "content/audio/lesson-3-3-section-13.wav",
+            "heading": "Mandatory Reporting",
+            "duration": 16
+          },
+          {
+            "section": 14,
+            "path": "content/audio/lesson-3-3-section-14.wav",
+            "heading": "Self-Care for Helpers",
+            "duration": 14
+          },
+          {
+            "section": 15,
+            "path": "content/audio/lesson-3-3-section-15.wav",
+            "heading": "Making a Difference",
+            "duration": 14
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson-final-assessment",
+      "videoTitle": "Course Completion and Assessment",
+      "sceneCount": 10,
+      "totalDuration": 132,
+      "contentType": "ASSESSMENT_INTRO",
+      "fullNarration": "Congratulations on completing this comprehensive training on recognizing and responding to intimate partner violence. You've gained knowledge and skills that can make a real difference in survivors' lives. Let's review what we've covered and prepare for the final assessment. In Module One, you learned to recognize intimate partner violence in its many forms. You explored five types of abuse, studied the Power and Control Wheel, understood different IPV patterns, and applied your knowledge to the Sumpter case. Module Two deepened your understanding of sexual violence within intimate relationships. You learned consent principles, explored how rape culture enables violence, and recognized the unique dynamics and barriers surrounding intimate partner sexual assault. In Module Three, you developed response skills. You learned about IPV's multifaceted impacts, how to facilitate safety planning, and trauma-informed principles for supporting survivors. You now understand how to respond compassionately and effectively. Remember the key frameworks you've learned. The Power and Control Wheel for analyzing abusive dynamics. The Equality Wheel for healthy alternatives. The five principles of trauma-informed care. FRIES for understanding consent. These tools guide professional practice. Keep these critical concepts central to your practice. IPV is fundamentally about power and control. Abuse extends beyond physical violence. Leaving is extremely dangerous. Survivors' autonomy must be respected. Your trauma-informed response can change outcomes and save lives. The true value of this training comes from application. Use your knowledge to screen patients, recognize warning signs, respond supportively to disclosures, facilitate safety planning, and connect people to resources. You're now equipped to make a difference. The final assessment contains twenty questions covering all three modules. You'll need seventy percent to pass. Questions test your understanding of concepts, frameworks, and appropriate responses. If you don't pass initially, you can review materials and retake the assessment. This training is a beginning, not an endpoint. Continue learning through specialized IPV trainings, consultation with advocates, staying current on research, and reflecting on your practice. The National Domestic Violence Hotline and local organizations offer ongoing professional education. You now have the knowledge and tools to recognize and respond effectively to intimate partner violence. Your awareness, compassion, and appropriate action can help survivors find safety, access resources, and begin healing. Thank you for your commitment to ending intimate partner violence.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-final-assessment-scene-1",
+          "heading": "Course Completion",
+          "narration": "Congratulations on completing this comprehensive training on recognizing and responding to intimate partner violence. You've gained knowledge and skills that can make a real difference in survivors' lives. Let's review what we've covered and prepare for the final assessment.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-final-assessment-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-final-assessment-scene-2",
+          "heading": "Module 1: Recognition",
+          "narration": "In Module One, you learned to recognize intimate partner violence in its many forms. You explored five types of abuse, studied the Power and Control Wheel, understood different IPV patterns, and applied your knowledge to the Sumpter case.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-final-assessment-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-final-assessment-scene-3",
+          "heading": "Module 2: Sexual Violence",
+          "narration": "Module Two deepened your understanding of sexual violence within intimate relationships. You learned consent principles, explored how rape culture enables violence, and recognized the unique dynamics and barriers surrounding intimate partner sexual assault.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-final-assessment-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-final-assessment-scene-4",
+          "heading": "Module 3: Response",
+          "narration": "In Module Three, you developed response skills. You learned about IPV's multifaceted impacts, how to facilitate safety planning, and trauma-informed principles for supporting survivors. You now understand how to respond compassionately and effectively.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-final-assessment-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-final-assessment-scene-5",
+          "heading": "Key Frameworks to Remember",
+          "narration": "Remember the key frameworks you've learned. The Power and Control Wheel for analyzing abusive dynamics. The Equality Wheel for healthy alternatives. The five principles of trauma-informed care. FRIES for understanding consent. These tools guide professional practice.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-final-assessment-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-final-assessment-scene-6",
+          "heading": "Critical Concepts",
+          "narration": "Keep these critical concepts central to your practice. IPV is fundamentally about power and control. Abuse extends beyond physical violence. Leaving is extremely dangerous. Survivors' autonomy must be respected. Your trauma-informed response can change outcomes and save lives.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-final-assessment-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-final-assessment-scene-7",
+          "heading": "Applying Your Knowledge",
+          "narration": "The true value of this training comes from application. Use your knowledge to screen patients, recognize warning signs, respond supportively to disclosures, facilitate safety planning, and connect people to resources. You're now equipped to make a difference.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-final-assessment-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-final-assessment-scene-8",
+          "heading": "About the Final Assessment",
+          "narration": "The final assessment contains twenty questions covering all three modules. You'll need seventy percent to pass. Questions test your understanding of concepts, frameworks, and appropriate responses. If you don't pass initially, you can review materials and retake the assessment.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-final-assessment-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-final-assessment-scene-9",
+          "heading": "Resources for Ongoing Learning",
+          "narration": "This training is a beginning, not an endpoint. Continue learning through specialized IPV trainings, consultation with advocates, staying current on research, and reflecting on your practice. The National Domestic Violence Hotline and local organizations offer ongoing professional education.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-final-assessment-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-final-assessment-scene-10",
+          "heading": "You Can Make a Difference",
+          "narration": "You now have the knowledge and tools to recognize and respond effectively to intimate partner violence. Your awareness, compassion, and appropriate action can help survivors find safety, access resources, and begin healing. Thank you for your commitment to ending intimate partner violence.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-final-assessment-section-10.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-final-assessment-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-final-assessment-section-1.wav",
+            "heading": "Course Completion",
+            "duration": 15
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-final-assessment-section-2.wav",
+            "heading": "Module 1: Recognition",
+            "duration": 14
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-final-assessment-section-3.wav",
+            "heading": "Module 2: Sexual Violence",
+            "duration": 14
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-final-assessment-section-4.wav",
+            "heading": "Module 3: Response",
+            "duration": 13
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-final-assessment-section-5.wav",
+            "heading": "Key Frameworks to Remember",
+            "duration": 14
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-final-assessment-section-6.wav",
+            "heading": "Critical Concepts",
+            "duration": 15
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-final-assessment-section-7.wav",
+            "heading": "Applying Your Knowledge",
+            "duration": 14
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-final-assessment-section-8.wav",
+            "heading": "About the Final Assessment",
+            "duration": 16
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-final-assessment-section-9.wav",
+            "heading": "Resources for Ongoing Learning",
+            "duration": 14
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-final-assessment-section-10.wav",
+            "heading": "You Can Make a Difference",
+            "duration": 13
+          }
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson-intro-1",
+      "videoTitle": "Introduction: What is Intimate Partner Violence?",
+      "sceneCount": 12,
+      "totalDuration": 156,
+      "contentType": "CONCEPT",
+      "fullNarration": "Welcome to this essential training on recognizing and responding to intimate partner violence. In the next few lessons, you'll gain critical knowledge to support those affected by IPV. Intimate partner violence includes physical, sexual, and emotional abuse. It encompasses economic control and represents a pattern of power and control rather than isolated incidents. IPV affects people across all demographics and communities. The statistics are sobering. Research shows that one in four women and one in seven men will experience severe intimate partner violence in their lifetime. This issue transcends age, race, socioeconomic status, and sexual orientation. As professionals in healthcare, social services, or human resources, you're often the first point of contact for someone experiencing abuse. Your ability to recognize the signs can be life-changing. IPV manifests in many forms. Physical violence ranges from pushing to severe assault. Emotional abuse includes manipulation, threats, and isolation from support networks. Sexual violence involves any unwanted sexual contact. Economic abuse restricts financial independence and freedom. What distinguishes IPV from isolated conflicts is the pattern of power and control. One partner systematically dominates and controls the other through various tactics we'll explore in detail. The impact on survivors extends far beyond physical injuries. Victims often experience profound psychological trauma, PTSD, depression, and anxiety. They may face social isolation as abusers cut them off from family and friends. Economic abuse creates financial dependence that makes leaving extremely difficult. Your role isn't to solve the problem yourself. It's to recognize the signs, respond with trauma-informed care, provide resources, and empower survivors to make their own decisions about their safety. Throughout this course, we'll emphasize trauma-informed principles. This means prioritizing safety and trust, respecting survivor autonomy, collaborating rather than directing, and maintaining cultural sensitivity. Survivors are experts on their own situations. Critical resources exist to support survivors. The National Domestic Violence Hotline provides twenty-four-seven confidential support. Local advocacy organizations offer safety planning, legal assistance, and emergency shelter. In Module One, you'll learn to recognize IPV patterns using evidence-based frameworks. Module Two covers intimate partner sexual violence. Module Three teaches trauma-informed response strategies including safety planning. You're about to gain knowledge that can save lives. By completing this training, you'll be better equipped to recognize intimate partner violence and respond in ways that empower survivors. Let's begin.",
+      "scenes": [
+        {
+          "sceneNumber": 1,
+          "sceneId": "lesson-intro-1-scene-1",
+          "heading": "Understanding Intimate Partner Violence",
+          "narration": "Welcome to this essential training on recognizing and responding to intimate partner violence. In the next few lessons, you'll gain critical knowledge to support those affected by IPV.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-intro-1-section-1.wav"
+        },
+        {
+          "sceneNumber": 2,
+          "sceneId": "lesson-intro-1-scene-2",
+          "heading": "What is IPV?",
+          "narration": "Intimate partner violence includes physical, sexual, and emotional abuse. It encompasses economic control and represents a pattern of power and control rather than isolated incidents. IPV affects people across all demographics and communities.",
+          "duration": 18,
+          "audioFile": "content/audio/lesson-intro-1-section-2.wav"
+        },
+        {
+          "sceneNumber": 3,
+          "sceneId": "lesson-intro-1-scene-3",
+          "heading": "The Scope of IPV",
+          "narration": "The statistics are sobering. Research shows that one in four women and one in seven men will experience severe intimate partner violence in their lifetime. This issue transcends age, race, socioeconomic status, and sexual orientation.",
+          "duration": 17,
+          "audioFile": "content/audio/lesson-intro-1-section-3.wav"
+        },
+        {
+          "sceneNumber": 4,
+          "sceneId": "lesson-intro-1-scene-4",
+          "heading": "Why Recognition Matters",
+          "narration": "As professionals in healthcare, social services, or human resources, you're often the first point of contact for someone experiencing abuse. Your ability to recognize the signs can be life-changing.",
+          "duration": 13,
+          "audioFile": "content/audio/lesson-intro-1-section-4.wav"
+        },
+        {
+          "sceneNumber": 5,
+          "sceneId": "lesson-intro-1-scene-5",
+          "heading": "Multiple Forms of Abuse",
+          "narration": "IPV manifests in many forms. Physical violence ranges from pushing to severe assault. Emotional abuse includes manipulation, threats, and isolation from support networks. Sexual violence involves any unwanted sexual contact. Economic abuse restricts financial independence and freedom.",
+          "duration": 18,
+          "audioFile": "content/audio/lesson-intro-1-section-5.wav"
+        },
+        {
+          "sceneNumber": 6,
+          "sceneId": "lesson-intro-1-scene-6",
+          "heading": "Power and Control",
+          "narration": "What distinguishes IPV from isolated conflicts is the pattern of power and control. One partner systematically dominates and controls the other through various tactics we'll explore in detail.",
+          "duration": 12,
+          "audioFile": "content/audio/lesson-intro-1-section-6.wav"
+        },
+        {
+          "sceneNumber": 7,
+          "sceneId": "lesson-intro-1-scene-7",
+          "heading": "Impact on Survivors",
+          "narration": "The impact on survivors extends far beyond physical injuries. Victims often experience profound psychological trauma, PTSD, depression, and anxiety. They may face social isolation as abusers cut them off from family and friends. Economic abuse creates financial dependence that makes leaving extremely difficult.",
+          "duration": 18,
+          "audioFile": "content/audio/lesson-intro-1-section-7.wav"
+        },
+        {
+          "sceneNumber": 8,
+          "sceneId": "lesson-intro-1-scene-8",
+          "heading": "Your Role as a Professional",
+          "narration": "Your role isn't to solve the problem yourself. It's to recognize the signs, respond with trauma-informed care, provide resources, and empower survivors to make their own decisions about their safety.",
+          "duration": 14,
+          "audioFile": "content/audio/lesson-intro-1-section-8.wav"
+        },
+        {
+          "sceneNumber": 9,
+          "sceneId": "lesson-intro-1-scene-9",
+          "heading": "Trauma-Informed Approach",
+          "narration": "Throughout this course, we'll emphasize trauma-informed principles. This means prioritizing safety and trust, respecting survivor autonomy, collaborating rather than directing, and maintaining cultural sensitivity. Survivors are experts on their own situations.",
+          "duration": 16,
+          "audioFile": "content/audio/lesson-intro-1-section-9.wav"
+        },
+        {
+          "sceneNumber": 10,
+          "sceneId": "lesson-intro-1-scene-10",
+          "heading": "Resources and Support",
+          "narration": "Critical resources exist to support survivors. The National Domestic Violence Hotline provides twenty-four-seven confidential support. Local advocacy organizations offer safety planning, legal assistance, and emergency shelter.",
+          "duration": 12,
+          "audioFile": "content/audio/lesson-intro-1-section-10.wav"
+        },
+        {
+          "sceneNumber": 11,
+          "sceneId": "lesson-intro-1-scene-11",
+          "heading": "Course Journey Ahead",
+          "narration": "In Module One, you'll learn to recognize IPV patterns using evidence-based frameworks. Module Two covers intimate partner sexual violence. Module Three teaches trauma-informed response strategies including safety planning.",
+          "duration": 15,
+          "audioFile": "content/audio/lesson-intro-1-section-11.wav"
+        },
+        {
+          "sceneNumber": 12,
+          "sceneId": "lesson-intro-1-scene-12",
+          "heading": "Ready to Make a Difference",
+          "narration": "You're about to gain knowledge that can save lives. By completing this training, you'll be better equipped to recognize intimate partner violence and respond in ways that empower survivors. Let's begin.",
+          "duration": 12,
+          "audioFile": "content/audio/lesson-intro-1-section-12.wav"
+        }
+      ],
+      "audioFiles": {
+        "intro": "content/audio/lesson-intro-1-intro.wav",
+        "sections": [
+          {
+            "section": 1,
+            "path": "content/audio/lesson-intro-1-section-1.wav",
+            "heading": "Understanding Intimate Partner Violence",
+            "duration": 15
+          },
+          {
+            "section": 2,
+            "path": "content/audio/lesson-intro-1-section-2.wav",
+            "heading": "What is IPV?",
+            "duration": 18
+          },
+          {
+            "section": 3,
+            "path": "content/audio/lesson-intro-1-section-3.wav",
+            "heading": "The Scope of IPV",
+            "duration": 17
+          },
+          {
+            "section": 4,
+            "path": "content/audio/lesson-intro-1-section-4.wav",
+            "heading": "Why Recognition Matters",
+            "duration": 13
+          },
+          {
+            "section": 5,
+            "path": "content/audio/lesson-intro-1-section-5.wav",
+            "heading": "Multiple Forms of Abuse",
+            "duration": 18
+          },
+          {
+            "section": 6,
+            "path": "content/audio/lesson-intro-1-section-6.wav",
+            "heading": "Power and Control",
+            "duration": 12
+          },
+          {
+            "section": 7,
+            "path": "content/audio/lesson-intro-1-section-7.wav",
+            "heading": "Impact on Survivors",
+            "duration": 18
+          },
+          {
+            "section": 8,
+            "path": "content/audio/lesson-intro-1-section-8.wav",
+            "heading": "Your Role as a Professional",
+            "duration": 14
+          },
+          {
+            "section": 9,
+            "path": "content/audio/lesson-intro-1-section-9.wav",
+            "heading": "Trauma-Informed Approach",
+            "duration": 16
+          },
+          {
+            "section": 10,
+            "path": "content/audio/lesson-intro-1-section-10.wav",
+            "heading": "Resources and Support",
+            "duration": 12
+          },
+          {
+            "section": 11,
+            "path": "content/audio/lesson-intro-1-section-11.wav",
+            "heading": "Course Journey Ahead",
+            "duration": 15
+          },
+          {
+            "section": 12,
+            "path": "content/audio/lesson-intro-1-section-12.wav",
+            "heading": "Ready to Make a Difference",
+            "duration": 12
+          }
+        ]
+      }
+    }
+  ]
+}
