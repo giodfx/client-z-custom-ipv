@@ -1,0 +1,2176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What You Don't See - Salus Community</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            background: #1a1a2e;
+        }
+
+        /* ============ LANDING PAGE ============ */
+        .landing-page {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Aurora Background - Uses generated image */
+        .aurora-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* Fallback gradient if image not loaded */
+            background: url('media/backgrounds/landing-iceberg-hero.png') center center / cover no-repeat, linear-gradient(180deg, #1a1a2e 0%, #d8e8f0 100%);
+            z-index: 0;
+        }
+
+        /* When image is available, use it */
+        .aurora-bg.with-image {
+            background: url('media/backgrounds/landing-iceberg-hero.png') center center / cover no-repeat;
+        }
+
+        /* Aurora lights effect - overlay for added depth */
+        .aurora-lights {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background:
+                radial-gradient(ellipse 80% 50% at 20% 20%, rgba(0, 255, 180, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 40% at 50% 15%, rgba(0, 200, 150, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse 70% 45% at 80% 25%, rgba(100, 255, 200, 0.1) 0%, transparent 50%);
+            z-index: 1;
+            animation: aurora-shimmer 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes aurora-shimmer {
+            0%, 100% { opacity: 0.6; transform: translateX(0); }
+            50% { opacity: 1; transform: translateX(10px); }
+        }
+
+        /* Header */
+        .header {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #4fd1c5 0%, #2c7a7b 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .need-help-btn {
+            background: linear-gradient(135deg, #38b2ac 0%, #2c7a7b 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+        }
+
+        .need-help-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(56, 178, 172, 0.4);
+        }
+
+        /* Help Tooltip */
+        .help-tooltip {
+            position: absolute;
+            top: calc(100% + 12px);
+            right: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(248,250,252,0.98) 100%);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+            min-width: 320px;
+            z-index: 1000;
+            display: none;
+            border: 1px solid rgba(56, 178, 172, 0.2);
+        }
+
+        .help-tooltip.active {
+            display: block;
+            animation: tooltipSlideIn 0.3s ease-out;
+        }
+
+        @keyframes tooltipSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .help-tooltip::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            right: 20px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid rgba(255,255,255,0.98);
+        }
+
+        .tooltip-title {
+            color: #2c7a7b;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hotline-item {
+            margin-bottom: 14px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgba(56, 178, 172, 0.15);
+        }
+
+        .hotline-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .hotline-name {
+            color: #1a365d;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .hotline-number {
+            display: inline-block;
+            color: #38b2ac;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 6px 12px;
+            background: rgba(56, 178, 172, 0.08);
+            border-radius: 8px;
+            transition: all 0.2s;
+            margin-right: 8px;
+            margin-bottom: 4px;
+        }
+
+        .hotline-number:hover {
+            background: rgba(56, 178, 172, 0.15);
+            transform: translateX(2px);
+        }
+
+        .hotline-availability {
+            color: #718096;
+            font-size: 11px;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        /* Main Content */
+        .main-content {
+            position: relative;
+            z-index: 5;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .main-title {
+            color: white;
+            font-size: 52px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-shadow:
+                0 2px 4px rgba(0,0,0,0.8),
+                0 4px 8px rgba(0,0,0,0.6),
+                0 8px 16px rgba(0,0,0,0.4),
+                0 0 40px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            color: rgba(255,255,255,0.95);
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 32px;
+            text-shadow:
+                0 2px 4px rgba(0,0,0,0.8),
+                0 4px 8px rgba(0,0,0,0.6),
+                0 8px 16px rgba(0,0,0,0.4);
+        }
+
+        /* Course Info Badges */
+        .course-info {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .info-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.95);
+            font-size: 14px;
+            text-shadow:
+                0 2px 4px rgba(0,0,0,0.7),
+                0 4px 8px rgba(0,0,0,0.5);
+        }
+
+        .info-badge svg {
+            width: 18px;
+            height: 18px;
+            opacity: 0.9;
+        }
+
+        /* Begin Button */
+        .begin-btn {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 20px rgba(72, 187, 120, 0.4);
+        }
+
+        .begin-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(72, 187, 120, 0.5);
+        }
+
+        /* Chevron */
+        .chevron-down {
+            margin-top: 24px;
+            width: 32px;
+            height: 32px;
+            border: 2px solid rgba(255,255,255,0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(8px); }
+        }
+
+        /* Discover Text */
+        .discover-text {
+            color: rgba(255,255,255,0.85);
+            font-size: 14px;
+            margin-top: 16px;
+            letter-spacing: 1px;
+            text-shadow:
+                0 2px 4px rgba(0,0,0,0.7),
+                0 4px 8px rgba(0,0,0,0.5);
+        }
+
+        /* Graphical Iceberg - Landing */
+        .iceberg-container {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 50%;
+            z-index: 2;
+        }
+
+        /* Hide SVG iceberg when using generated image */
+        .aurora-bg.with-image ~ .iceberg-container,
+        .with-image + .aurora-lights + .header + .main-content + .iceberg-container {
+            display: none;
+        }
+
+        .landing-page.use-image .iceberg-container {
+            display: none;
+        }
+
+        /* Water surface line */
+        .water-surface {
+            position: absolute;
+            top: 40%;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(255,255,255,0.2) 15%,
+                rgba(255,255,255,0.4) 50%,
+                rgba(255,255,255,0.2) 85%,
+                transparent 100%
+            );
+            z-index: 10;
+        }
+
+        /* Water Ripples */
+        .water-ripples {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 100%;
+            height: 20%;
+            pointer-events: none;
+            z-index: 4;
+            overflow: visible;
+        }
+
+        .ripple {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            border: 2px solid rgba(180, 220, 240, 0.4);
+            border-radius: 50%;
+            animation: rippleExpand 12s ease-out infinite;
+            box-shadow:
+                0 0 10px rgba(100, 200, 230, 0.2),
+                inset 0 0 8px rgba(180, 220, 240, 0.15);
+            background: radial-gradient(ellipse,
+                rgba(200, 235, 250, 0.12) 0%,
+                rgba(160, 210, 235, 0.08) 40%,
+                transparent 70%);
+        }
+
+        .ripple:nth-child(1) {
+            animation-delay: 0s;
+            border-color: rgba(180, 220, 240, 0.45);
+        }
+
+        .ripple:nth-child(2) {
+            animation-delay: 3s;
+            border-color: rgba(200, 230, 245, 0.35);
+        }
+
+        .ripple:nth-child(3) {
+            animation-delay: 6s;
+            border-color: rgba(160, 210, 235, 0.3);
+        }
+
+        .ripple:nth-child(4) {
+            animation-delay: 9s;
+            border-color: rgba(140, 200, 230, 0.25);
+        }
+
+        @keyframes rippleExpand {
+            0% {
+                width: 120px;
+                height: 40px;
+                opacity: 0;
+                transform: translate(-50%, 0) scale(0.9);
+            }
+            5% {
+                opacity: 1;
+            }
+            15% {
+                opacity: 0.8;
+            }
+            35% {
+                opacity: 0.6;
+            }
+            60% {
+                opacity: 0.3;
+            }
+            100% {
+                width: 1800px;
+                height: 600px;
+                opacity: 0;
+                transform: translate(-50%, 0) scale(1);
+            }
+        }
+
+        /* Rising Bubbles for Descent Page */
+        .water-bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 3;
+            overflow: hidden;
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%,
+                rgba(200, 235, 250, 0.4) 0%,
+                rgba(160, 210, 235, 0.25) 40%,
+                rgba(140, 200, 230, 0.15) 100%);
+            border: 1px solid rgba(180, 220, 240, 0.3);
+            box-shadow:
+                inset -2px -2px 4px rgba(255, 255, 255, 0.3),
+                0 0 8px rgba(140, 200, 230, 0.2);
+        }
+
+        /* Bubble sizes */
+        .bubble.small {
+            width: 4px;
+            height: 4px;
+        }
+
+        .bubble.medium {
+            width: 7px;
+            height: 7px;
+        }
+
+        .bubble.large {
+            width: 10px;
+            height: 10px;
+        }
+
+        /* Rising animation - stops at waterline (around 17% from top) */
+        @keyframes bubbleRise1 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            10% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 0.4;
+                bottom: 50%;
+                transform: translateX(15px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 50%;
+                transform: translateX(20px);
+            }
+        }
+
+        @keyframes bubbleRise2 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            10% {
+                opacity: 0.5;
+            }
+            90% {
+                opacity: 0.3;
+                bottom: 65%;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 65%;
+                transform: translateX(-25px);
+            }
+        }
+
+        @keyframes bubbleRise3 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            15% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.5;
+                bottom: 55%;
+                transform: translateX(10px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 55%;
+                transform: translateX(12px);
+            }
+        }
+
+        /* Apply animations with different timings */
+        .bubble:nth-child(1) {
+            left: 15%;
+            animation: bubbleRise1 8s ease-in-out infinite;
+            animation-delay: 0s;
+        }
+
+        .bubble:nth-child(2) {
+            left: 25%;
+            animation: bubbleRise2 10s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+
+        .bubble:nth-child(3) {
+            left: 35%;
+            animation: bubbleRise3 7s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+
+        .bubble:nth-child(4) {
+            left: 45%;
+            animation: bubbleRise1 9s ease-in-out infinite;
+            animation-delay: 3s;
+        }
+
+        .bubble:nth-child(5) {
+            left: 55%;
+            animation: bubbleRise2 11s ease-in-out infinite;
+            animation-delay: 0.5s;
+        }
+
+        .bubble:nth-child(6) {
+            left: 65%;
+            animation: bubbleRise3 8.5s ease-in-out infinite;
+            animation-delay: 4s;
+        }
+
+        .bubble:nth-child(7) {
+            left: 75%;
+            animation: bubbleRise1 10s ease-in-out infinite;
+            animation-delay: 2.5s;
+        }
+
+        .bubble:nth-child(8) {
+            left: 85%;
+            animation: bubbleRise2 9.5s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+
+        .bubble:nth-child(9) {
+            left: 20%;
+            animation: bubbleRise3 7.5s ease-in-out infinite;
+            animation-delay: 3.5s;
+        }
+
+        .bubble:nth-child(10) {
+            left: 70%;
+            animation: bubbleRise1 8.8s ease-in-out infinite;
+            animation-delay: 0.8s;
+        }
+
+        /* Iceberg SVG container */
+        .iceberg-graphic {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 350px;
+            height: 180px;
+            z-index: 5;
+        }
+
+        /* Iceberg tip above water */
+        .iceberg-tip {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            height: 140px;
+            z-index: 5;
+        }
+
+        .iceberg-tip-shape {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .iceberg-tip-shape svg {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 8px 20px rgba(0,0,0,0.25));
+        }
+
+        /* Iceberg reflection */
+        .iceberg-reflection {
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translateX(-50%) scaleY(-0.5);
+            width: 280px;
+            height: 140px;
+            opacity: 0.25;
+            z-index: 3;
+            filter: blur(2px);
+        }
+
+        /* Water gradient below */
+        .water-below {
+            position: absolute;
+            top: 41%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(130, 170, 200, 0.5) 0%,
+                rgba(100, 145, 175, 0.7) 30%,
+                rgba(70, 115, 150, 0.85) 60%,
+                rgba(45, 85, 120, 0.95) 100%
+            );
+            z-index: 1;
+        }
+
+        /* Sparkles */
+        .sparkle {
+            position: absolute;
+            z-index: 20;
+        }
+
+        .sparkle-1 {
+            bottom: 60px;
+            right: 60px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .sparkle-2 {
+            bottom: 100px;
+            right: 40px;
+            width: 15px;
+            height: 15px;
+            opacity: 0.6;
+        }
+
+        /* ============ DESCENT PAGE ============ */
+        .descent-page {
+            min-height: 100vh;
+            position: relative;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            .descent-page {
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+        }
+
+        .descent-page.active {
+            display: flex;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .landing-page.hidden {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Descent Background - Uses generated image */
+        .descent-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* Fallback gradient if image not loaded */
+            background: linear-gradient(180deg,
+                #1a1a2e 0%,
+                #1e3a4c 10%,
+                #4a90a8 25%,
+                #6bb3c9 35%,
+                #3d7a9a 50%,
+                #2a5a7a 65%,
+                #1a3a5a 80%,
+                #0a2040 100%
+            );
+            z-index: 0;
+        }
+
+        /* When image is available, use it */
+        .descent-bg.with-image {
+            background: url('media/backgrounds/descent-iceberg-side.png') center center / cover no-repeat;
+        }
+
+        .descent-aurora {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 20%;
+            background:
+                radial-gradient(ellipse 80% 60% at 30% 30%, rgba(0, 255, 180, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 50% at 70% 20%, rgba(0, 200, 150, 0.1) 0%, transparent 50%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Descent Title */
+        .descent-title {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            font-weight: 700;
+            padding-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* Diver icon */
+        .diver-icon {
+            position: absolute;
+            top: 75px;
+            right: 15%;
+            z-index: 15;
+            color: #4fd1c5;
+            animation: float-down 3s ease-in-out infinite;
+        }
+
+        @keyframes float-down {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(8px); }
+        }
+
+        /* Depth scale */
+        .depth-scale {
+            position: absolute;
+            left: 60px;
+            top: 90px;
+            bottom: 100px;
+            width: 80px;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .depth-marker {
+            color: rgba(255,255,255,0.85);
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+
+        .depth-line {
+            width: 30px;
+            height: 2px;
+            background: rgba(255,255,255,0.4);
+        }
+
+        .depth-arrow {
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-left: 12px solid #20c997;
+            filter: drop-shadow(0 0 4px rgba(32, 201, 151, 0.5));
+        }
+
+        .depth-value {
+            min-width: 35px;
+        }
+
+        /* Zone labels */
+        .zone-labels {
+            position: absolute;
+            left: 12px;
+            top: 100px;
+            bottom: 110px;
+            width: 20px;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .zone-label {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+            color: rgba(255,255,255,0.55);
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+
+        /* Vertical depth line */
+        .depth-line-vertical {
+            position: absolute;
+            left: 55px;
+            top: 95px;
+            bottom: 110px;
+            width: 2px;
+            background: linear-gradient(180deg,
+                rgba(255,255,255,0.5) 0%,
+                rgba(255,255,255,0.3) 50%,
+                rgba(255,255,255,0.15) 100%
+            );
+            z-index: 9;
+        }
+
+        /* Graphical Iceberg - Side View */
+        .side-iceberg {
+            position: absolute;
+            left: 50%;
+            top: 80px;
+            transform: translateX(-50%);
+            width: 100%;
+            height: calc(100% - 150px);
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        /* Hide SVG iceberg when using generated image */
+        .descent-page.use-image .side-iceberg {
+            display: none;
+        }
+
+        .side-iceberg-svg {
+            position: absolute;
+            top: 0;
+            left: 35%;
+            transform: translateX(-50%);
+            width: 450px;
+            height: 100%;
+            opacity: 0.85;
+        }
+
+        /* Iceberg above water */
+        .iceberg-above {
+            display: none;
+        }
+
+        .iceberg-above-shape {
+            display: none;
+        }
+
+        /* Water line for descent */
+        .descent-water-line {
+            position: absolute;
+            top: 55px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(255,255,255,0.15) 20%,
+                rgba(255,255,255,0.3) 50%,
+                rgba(255,255,255,0.15) 80%,
+                transparent 100%
+            );
+            z-index: 5;
+        }
+
+        /* Iceberg below water */
+        .iceberg-below {
+            display: none;
+        }
+
+        .iceberg-below-shape {
+            display: none;
+        }
+
+        /* Module Cards */
+        .modules-container {
+            position: absolute;
+            top: 100px;
+            right: 6%;
+            width: 440px;
+            height: calc(100% - 200px);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .module-card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .module-card.right {
+            align-self: flex-end;
+        }
+
+        .module-card.left {
+            align-self: flex-start;
+        }
+
+        .module-card.expanded {
+            z-index: 20;
+        }
+
+        .module-trigger {
+            display: flex;
+            align-items: stretch;
+            gap: 16px;
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .module-trigger:focus {
+            outline: 3px solid #4fd1c5;
+            outline-offset: 4px;
+            border-radius: 16px;
+        }
+
+        .module-content {
+            background: linear-gradient(135deg,
+                rgba(255,255,255,0.15) 0%,
+                rgba(255,255,255,0.08) 100%
+            );
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 18px 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+            flex: 1;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .module-content:hover {
+            transform: translateX(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .module-1 .module-content {
+            background: linear-gradient(135deg,
+                rgba(180, 220, 240, 0.45) 0%,
+                rgba(150, 200, 225, 0.35) 100%
+            );
+            border-color: rgba(180, 220, 240, 0.5);
+        }
+
+        .module-2 .module-content {
+            background: linear-gradient(135deg,
+                rgba(80, 120, 160, 0.5) 0%,
+                rgba(60, 100, 140, 0.4) 100%
+            );
+            border-color: rgba(80, 120, 160, 0.4);
+        }
+
+        .module-3 .module-content {
+            background: linear-gradient(135deg,
+                rgba(100, 60, 130, 0.55) 0%,
+                rgba(70, 40, 100, 0.45) 100%
+            );
+            border-color: rgba(100, 60, 130, 0.5);
+        }
+
+        .module-4 .module-content {
+            background: linear-gradient(135deg,
+                rgba(60, 130, 100, 0.5) 0%,
+                rgba(40, 100, 70, 0.4) 100%
+            );
+            border-color: rgba(60, 130, 100, 0.5);
+        }
+
+        .module-5 .module-content {
+            background: linear-gradient(135deg,
+                rgba(130, 100, 60, 0.5) 0%,
+                rgba(100, 70, 40, 0.4) 100%
+            );
+            border-color: rgba(130, 100, 60, 0.5);
+        }
+
+        .module-title {
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .module-meta {
+            color: rgba(255,255,255,0.7);
+            font-size: 11px;
+            margin-bottom: 8px;
+        }
+
+        .module-description {
+            color: rgba(255,255,255,0.9);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        /* Depth indicator on cards */
+        .depth-indicator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 65px;
+        }
+
+        .depth-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 6px;
+        }
+
+        .module-1 .depth-icon {
+            background: rgba(180, 220, 240, 0.35);
+        }
+
+        .module-2 .depth-icon {
+            background: rgba(80, 120, 160, 0.35);
+        }
+
+        .module-3 .depth-icon {
+            background: rgba(100, 60, 130, 0.35);
+        }
+
+        .module-4 .depth-icon {
+            background: rgba(60, 130, 100, 0.35);
+        }
+
+        .module-5 .depth-icon {
+            background: rgba(130, 100, 60, 0.35);
+        }
+
+        .module-4 .bubble-content {
+            background: linear-gradient(135deg,
+                rgba(60, 130, 100, 0.3) 0%,
+                rgba(40, 100, 70, 0.25) 100%
+            );
+        }
+
+        .module-5 .bubble-content {
+            background: linear-gradient(135deg,
+                rgba(130, 100, 60, 0.3) 0%,
+                rgba(100, 70, 40, 0.25) 100%
+            );
+        }
+
+        .depth-icon svg {
+            width: 24px;
+            height: 24px;
+            color: white;
+            stroke: white;
+            fill: none;
+        }
+
+        .depth-text {
+            color: rgba(255,255,255,0.95);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        /* Lessons Bubble - Expanding Navigation */
+        .lessons-bubble {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transform: scale(0.95) translateY(-10px);
+            transform-origin: top center;
+            transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            margin-top: 0;
+        }
+
+        .module-card.expanded .lessons-bubble {
+            max-height: 400px;
+            opacity: 1;
+            transform: scale(1) translateY(0);
+            margin-top: 16px;
+        }
+
+        .bubble-content {
+            background: linear-gradient(135deg,
+                rgba(255,255,255,0.12) 0%,
+                rgba(255,255,255,0.06) 100%
+            );
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 16px;
+            border: 2px solid rgba(255,255,255,0.25);
+            box-shadow:
+                0 8px 32px rgba(0,0,0,0.2),
+                inset 0 1px 1px rgba(255,255,255,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Water bubble animation effect */
+        .bubble-content::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(
+                circle,
+                rgba(255,255,255,0.1) 0%,
+                transparent 50%
+            );
+            animation: bubbleFloat 4s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes bubbleFloat {
+            0%, 100% {
+                transform: translate(0, 0) scale(1);
+            }
+            25% {
+                transform: translate(10%, -10%) scale(1.05);
+            }
+            50% {
+                transform: translate(-5%, 5%) scale(0.95);
+            }
+            75% {
+                transform: translate(-10%, -5%) scale(1.02);
+            }
+        }
+
+        .lesson-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            margin: 6px 0;
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .lesson-link:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateX(8px);
+            border-color: rgba(255,255,255,0.3);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .lesson-link:focus {
+            outline: 3px solid #4fd1c5;
+            outline-offset: 2px;
+        }
+
+        .lesson-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, #4fd1c5 0%, #38b2ac 100%);
+            border-radius: 50%;
+            font-size: 13px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .lesson-title {
+            flex: 1;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        /* Module-specific bubble colors */
+        .module-1 .bubble-content {
+            background: linear-gradient(135deg,
+                rgba(180, 220, 240, 0.25) 0%,
+                rgba(150, 200, 225, 0.15) 100%
+            );
+            border-color: rgba(180, 220, 240, 0.4);
+        }
+
+        .module-2 .bubble-content {
+            background: linear-gradient(135deg,
+                rgba(80, 120, 160, 0.3) 0%,
+                rgba(60, 100, 140, 0.2) 100%
+            );
+            border-color: rgba(80, 120, 160, 0.4);
+        }
+
+        .module-3 .bubble-content {
+            background: linear-gradient(135deg,
+                rgba(100, 60, 130, 0.35) 0%,
+                rgba(70, 40, 100, 0.25) 100%
+            );
+            border-color: rgba(100, 60, 130, 0.4);
+        }
+
+        /* Final Assessment */
+        .final-assessment {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 15;
+        }
+
+        .assessment-btn {
+            background: linear-gradient(135deg, #d69e2e 0%, #b7791f 100%);
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(214, 158, 46, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .assessment-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(214, 158, 46, 0.5);
+        }
+
+        .assessment-text {
+            color: rgba(255,255,255,0.7);
+            font-size: 13px;
+            margin-top: 12px;
+        }
+
+        /* Sparkle for descent page */
+        .descent-sparkle {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            z-index: 20;
+        }
+
+        /* Back button */
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 20;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+
+        .back-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Skip Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: 16px;
+            z-index: 9999;
+            padding: 12px 16px;
+            background: #38b2ac;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: top 0.2s ease;
+        }
+
+        .skip-link:focus {
+            top: 16px;
+            outline: 3px solid #ffd700;
+            outline-offset: 2px;
+        }
+
+        /* Focus visible for all interactive elements */
+        :focus-visible {
+            outline: 3px solid #38b2ac;
+            outline-offset: 2px;
+        }
+
+        /* ============ MOBILE RESPONSIVE ============ */
+        @media (max-width: 768px) {
+            .header {
+                padding: 16px 20px;
+            }
+
+            .logo {
+                font-size: 14px;
+            }
+
+            .logo-icon {
+                width: 28px;
+                height: 28px;
+                font-size: 16px;
+            }
+
+            .need-help-btn {
+                padding: 8px 16px;
+                font-size: 13px;
+                min-height: 44px; /* Touch target */
+            }
+
+            .help-tooltip {
+                right: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                min-width: 280px;
+                max-width: 90vw;
+            }
+
+            .help-tooltip::before {
+                left: 50%;
+                transform: translateX(-50%);
+                right: auto;
+            }
+
+            .main-content {
+                padding-top: 40px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .main-title {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .course-info {
+                flex-wrap: wrap;
+                gap: 12px;
+                justify-content: center;
+            }
+
+            .info-badge {
+                font-size: 13px;
+            }
+
+            .begin-btn {
+                padding: 14px 32px;
+                font-size: 16px;
+                min-height: 48px; /* Touch target */
+            }
+
+            /* Descent Page Mobile */
+            .descent-title {
+                font-size: 24px;
+                padding: 0 16px;
+            }
+
+            .back-btn {
+                min-height: 44px; /* Touch target */
+            }
+
+            .modules-container {
+                position: relative;
+                top: auto;
+                right: auto;
+                width: 100%;
+                height: auto;
+                padding: 20px 16px 40px;
+                gap: 20px;
+            }
+
+            .module-card {
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+
+            .module-trigger {
+                flex-direction: column;
+            }
+
+            .module-content {
+                padding: 16px;
+            }
+
+            .lesson-link {
+                font-size: 14px;
+                padding: 14px;
+            }
+
+            .lesson-title {
+                font-size: 14px;
+            }
+
+            .module-card.expanded .lessons-bubble {
+                max-height: 500px;
+            }
+
+            .module-title {
+                font-size: 16px;
+            }
+
+            .module-meta {
+                font-size: 12px;
+            }
+
+            .module-description {
+                font-size: 13px;
+            }
+
+            .depth-indicator {
+                border-left: none;
+                border-top: 1px solid rgba(255,255,255,0.15);
+                padding: 12px;
+            }
+
+            .side-iceberg {
+                display: none; /* Hide on mobile */
+            }
+
+            .depth-scale,
+            .zone-labels,
+            .depth-line-vertical,
+            .diver-icon {
+                display: none; /* Hide decorative elements on mobile */
+            }
+
+            .final-assessment {
+                padding: 0 16px;
+            }
+
+            .assessment-btn {
+                min-height: 48px; /* Touch target */
+                padding: 12px 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 28px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .course-info {
+                gap: 8px;
+            }
+
+            .info-badge {
+                font-size: 12px;
+            }
+
+            .begin-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .descent-title {
+                font-size: 20px;
+            }
+        }
+
+        /* Respect reduced motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Visually hidden utility */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- LANDING PAGE -->
+    <div class="landing-page" id="landingPage" role="region" aria-label="Course introduction">
+        <div class="aurora-bg"></div>
+        <div class="aurora-lights"></div>
+
+        <!-- Header -->
+        <header class="header" role="banner">
+            <a href="#" class="logo" aria-label="Salus Community - Home">
+                <div class="logo-icon" aria-hidden="true">S</div>
+                <span>Salus<br>Community</span>
+            </a>
+            <button class="need-help-btn" type="button" onclick="toggleHelpTooltip(event)" aria-label="Get help - Access crisis resources and support hotlines" aria-expanded="false">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+                Need Help?
+                <div class="help-tooltip" id="helpTooltip" role="tooltip">
+                    <div class="tooltip-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 16v-4M12 8h.01"/>
+                        </svg>
+                        24/7 Crisis Support
+                    </div>
+                    <div class="hotline-item">
+                        <div class="hotline-name">National Domestic Violence Hotline</div>
+                        <a href="tel:18007997233" class="hotline-number">1-800-799-7233</a>
+                        <a href="tel:18007873224" class="hotline-number">TTY: 1-800-787-3224</a>
+                        <div class="hotline-availability">Available 24/7 in multiple languages</div>
+                    </div>
+                    <div class="hotline-item">
+                        <div class="hotline-name">National Sexual Assault Hotline</div>
+                        <a href="tel:18006564673" class="hotline-number">1-800-656-4673</a>
+                        <div class="hotline-availability">Available 24/7, confidential support</div>
+                    </div>
+                </div>
+            </button>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content" id="main-content" role="main">
+            <h1 class="main-title">What You Don't See</h1>
+            <p class="subtitle">Recognizing and Responding to<br>Intimate Partner Violence</p>
+
+            <div class="course-info" role="list" aria-label="Course details">
+                <div class="info-badge" role="listitem">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                    <span class="visually-hidden">Duration:</span> 3-4 hours
+                </div>
+                <div class="info-badge" role="listitem">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                    </svg>
+                    3 Modules
+                </div>
+                <div class="info-badge" role="listitem">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="12" cy="8" r="6"/>
+                        <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+                    </svg>
+                    Certificate
+                </div>
+                <div class="info-badge" role="listitem">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    Free
+                </div>
+            </div>
+
+            <button class="begin-btn" type="button" onclick="showDescentPage()">
+                Begin the Descent
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+            </button>
+
+            <div class="chevron-down" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2">
+                    <polyline points="6,9 12,15 18,9"/>
+                </svg>
+            </div>
+
+            <p class="discover-text" aria-hidden="true">Discover what lies beneath</p>
+        </main>
+
+        <!-- Water Ripples - Must be outside iceberg-container so they show with generated image -->
+        <div class="water-ripples" aria-hidden="true">
+            <div class="ripple"></div>
+            <div class="ripple"></div>
+            <div class="ripple"></div>
+            <div class="ripple"></div>
+        </div>
+
+        <!-- Iceberg -->
+        <div class="iceberg-container">
+            <div class="water-surface"></div>
+            <div class="iceberg-tip">
+                <div class="iceberg-tip-shape">
+                    <svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="icebergGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#f0f8ff;stop-opacity:1" />
+                                <stop offset="30%" style="stop-color:#d4eaf5;stop-opacity:1" />
+                                <stop offset="60%" style="stop-color:#b8dce8;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8cc4d8;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="icebergShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#a8d4e6;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#c8e4f0;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#90c8dc;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Main iceberg shape - stylized geometric -->
+                        <polygon points="150,5 220,50 250,95 230,145 180,148 120,148 70,145 50,95 80,50" fill="url(#icebergGradient)"/>
+                        <!-- Highlight facet -->
+                        <polygon points="150,5 180,45 150,60 110,45" fill="#ffffff" opacity="0.4"/>
+                        <!-- Shadow facet left -->
+                        <polygon points="80,50 50,95 70,145 120,148 110,90" fill="#7ab8cc" opacity="0.5"/>
+                        <!-- Mid tone facet -->
+                        <polygon points="150,60 180,45 220,50 230,95 180,110" fill="#a0d4e4" opacity="0.6"/>
+                        <!-- Snow caps / highlights -->
+                        <ellipse cx="130" cy="35" rx="25" ry="8" fill="#ffffff" opacity="0.5"/>
+                        <ellipse cx="175" cy="65" rx="15" ry="5" fill="#ffffff" opacity="0.3"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="iceberg-reflection">
+                <div class="iceberg-tip-shape">
+                    <svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid meet">
+                        <polygon points="150,5 220,50 250,95 230,145 180,148 120,148 70,145 50,95 80,50" fill="#6aa8bc" opacity="0.6"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="water-below"></div>
+        </div>
+
+        <!-- Decorative Sparkles -->
+        <svg class="sparkle sparkle-1" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+        </svg>
+        <svg class="sparkle sparkle-2" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+        </svg>
+    </div>
+
+    <!-- DESCENT PAGE -->
+    <div class="descent-page" id="descentPage" role="region" aria-label="Module selection">
+        <div class="descent-bg" aria-hidden="true"></div>
+        <div class="descent-aurora" aria-hidden="true"></div>
+
+        <!-- Rising Water Bubbles -->
+        <div class="water-bubbles" aria-hidden="true">
+            <div class="bubble small"></div>
+            <div class="bubble medium"></div>
+            <div class="bubble small"></div>
+            <div class="bubble large"></div>
+            <div class="bubble medium"></div>
+            <div class="bubble small"></div>
+            <div class="bubble medium"></div>
+            <div class="bubble small"></div>
+            <div class="bubble large"></div>
+            <div class="bubble medium"></div>
+        </div>
+
+        <button class="back-btn" type="button" onclick="showLandingPage()" aria-label="Go back to course introduction">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Back
+        </button>
+
+        <h1 class="descent-title">Your Descent Path</h1>
+
+        <!-- Diver Icon - Decorative -->
+        <div class="diver-icon" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="5" r="3" fill="currentColor"/>
+                <path d="M12 9v6" stroke-linecap="round"/>
+                <path d="M9 11l3 3 3-3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 18l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <!-- Vertical Depth Line - Decorative -->
+        <div class="depth-line-vertical" aria-hidden="true"></div>
+
+        <!-- Depth Scale - Decorative -->
+        <div class="depth-scale" aria-hidden="true">
+            <div class="depth-marker"><span class="depth-arrow"></span><span class="depth-line"></span><span class="depth-value">0m</span></div>
+            <div class="depth-marker"><span class="depth-arrow"></span><span class="depth-line"></span><span class="depth-value">30m</span></div>
+            <div class="depth-marker"><span class="depth-arrow"></span><span class="depth-line"></span><span class="depth-value">100m</span></div>
+            <div class="depth-marker"><span class="depth-arrow"></span><span class="depth-line"></span><span class="depth-value">150m</span></div>
+        </div>
+
+        <!-- Zone Labels - Decorative -->
+        <div class="zone-labels" aria-hidden="true">
+            <span class="zone-label">Surface Zone</span>
+            <span class="zone-label">Twilight Zone</span>
+            <span class="zone-label">Deep Zone</span>
+        </div>
+
+        <!-- Side view iceberg - Decorative -->
+        <div class="side-iceberg" aria-hidden="true">
+            <div class="descent-water-line"></div>
+            <svg class="side-iceberg-svg" viewBox="0 0 400 600" preserveAspectRatio="xMidYMin meet">
+                <defs>
+                    <!-- Gradient for above water -->
+                    <linearGradient id="iceAbove" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f5fbff"/>
+                        <stop offset="50%" style="stop-color:#d8eef8"/>
+                        <stop offset="100%" style="stop-color:#b0d8ea"/>
+                    </linearGradient>
+                    <!-- Gradient for underwater - top -->
+                    <linearGradient id="iceUnderTop" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#90c8dc;stop-opacity:0.8"/>
+                        <stop offset="100%" style="stop-color:#5a9ab5;stop-opacity:0.6"/>
+                    </linearGradient>
+                    <!-- Gradient for underwater - middle -->
+                    <linearGradient id="iceUnderMid" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#5a9ab5;stop-opacity:0.6"/>
+                        <stop offset="100%" style="stop-color:#3a7a95;stop-opacity:0.4"/>
+                    </linearGradient>
+                    <!-- Gradient for underwater - deep -->
+                    <linearGradient id="iceUnderDeep" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#3a7a95;stop-opacity:0.4"/>
+                        <stop offset="100%" style="stop-color:#2a5a75;stop-opacity:0.25"/>
+                    </linearGradient>
+                </defs>
+
+                <!-- Iceberg tip above water -->
+                <polygon points="200,0 250,55 230,58 170,58 150,55" fill="url(#iceAbove)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.1))"/>
+                <!-- Highlight on tip -->
+                <polygon points="200,5 230,45 200,50 175,45" fill="#ffffff" opacity="0.5"/>
+
+                <!-- Underwater portion - large mass -->
+                <!-- Upper section (0-30m zone) -->
+                <polygon points="150,58 250,58 290,150 280,180 120,180 110,150" fill="url(#iceUnderTop)"/>
+                <polygon points="170,65 230,65 250,120 220,130 180,130 150,120" fill="#ffffff" opacity="0.15"/>
+
+                <!-- Middle section (30-100m zone) -->
+                <polygon points="110,180 280,180 300,320 270,380 130,380 100,320" fill="url(#iceUnderMid)"/>
+                <polygon points="140,200 250,200 270,280 240,300 160,300 130,280" fill="#ffffff" opacity="0.1"/>
+
+                <!-- Deep section (100m+ zone) -->
+                <polygon points="100,380 270,380 240,550 160,550" fill="url(#iceUnderDeep)"/>
+                <polygon points="150,400 220,400 210,480 170,480" fill="#ffffff" opacity="0.08"/>
+
+                <!-- Edge highlights -->
+                <line x1="150" y1="58" x2="110" y2="150" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                <line x1="250" y1="58" x2="290" y2="150" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+            </svg>
+        </div>
+
+        <!-- Module Cards -->
+        <nav class="modules-container" role="navigation" aria-label="Course modules">
+            <!-- Module 1: Introduction -->
+            <div class="module-card module-1 right" data-module="1">
+                <button class="module-trigger" onclick="toggleModule(1)" aria-expanded="false" aria-controls="lessons-module-1">
+                    <div class="module-content">
+                        <h2 class="module-title">Introduction</h2>
+                        <p class="module-meta">5 minutes • 1 Lesson</p>
+                        <p class="module-description">Begin your journey by understanding what intimate partner violence is and its scope.</p>
+                    </div>
+                    <div class="depth-indicator" aria-hidden="true">
+                        <div class="depth-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 20L8 14L12 17L16 11L20 20H4Z" fill="rgba(255,255,255,0.3)"/>
+                                <path d="M4 20L8 14L12 17L16 11L20 20" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="depth-text">0-30m</span>
+                    </div>
+                </button>
+                <div class="lessons-bubble" id="lessons-module-1" role="region" aria-label="Introduction lesson">
+                    <div class="bubble-content">
+                        <a href="lessons/lesson-intro-1.html" class="lesson-link">
+                            <span class="lesson-number">1</span>
+                            <span class="lesson-title">Introduction: What is Intimate Partner Violence?</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 1: Recognizing IPV -->
+            <div class="module-card module-2 right" data-module="2" id="descent">
+                <button class="module-trigger" onclick="toggleModule(2)" aria-expanded="false" aria-controls="lessons-module-2">
+                    <div class="module-content">
+                        <h2 class="module-title">MODULE 1: Recognizing Intimate Partner Violence</h2>
+                        <p class="module-meta">20 minutes • 5 Lessons</p>
+                        <p class="module-description">Learn to identify the various forms of IPV and understand the dynamics of power and control.</p>
+                    </div>
+                    <div class="depth-indicator" aria-hidden="true">
+                        <div class="depth-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="3" fill="rgba(255,255,255,0.2)"/>
+                                <circle cx="12" cy="12" r="6" stroke-opacity="0.6"/>
+                                <circle cx="12" cy="12" r="9" stroke-opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <span class="depth-text">30-100m</span>
+                    </div>
+                </button>
+                <div class="lessons-bubble" id="lessons-module-2" role="region" aria-label="Module 1 lessons">
+                    <div class="bubble-content">
+                        <a href="lessons/lesson-1-1.html" class="lesson-link">
+                            <span class="lesson-number">1</span>
+                            <span class="lesson-title">Who is Affected by Intimate Partner Violence?</span>
+                        </a>
+                        <a href="lessons/lesson-1-2.html" class="lesson-link">
+                            <span class="lesson-number">2</span>
+                            <span class="lesson-title">Types of Abuse</span>
+                        </a>
+                        <a href="lessons/lesson-1-3.html" class="lesson-link">
+                            <span class="lesson-number">3</span>
+                            <span class="lesson-title">Power and Control Wheel</span>
+                        </a>
+                        <a href="lessons/lesson-1-4.html" class="lesson-link">
+                            <span class="lesson-number">4</span>
+                            <span class="lesson-title">Categorizing Intimate Partner Violence</span>
+                        </a>
+                        <a href="lessons/lesson-1-5.html" class="lesson-link">
+                            <span class="lesson-number">5</span>
+                            <span class="lesson-title">Case Analysis: Lois and James Sumpter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 2: Intimate Partner Sexual Violence -->
+            <div class="module-card module-3 right" data-module="3" id="twilight">
+                <button class="module-trigger" onclick="toggleModule(3)" aria-expanded="false" aria-controls="lessons-module-3">
+                    <div class="module-content">
+                        <h2 class="module-title">MODULE 2: Intimate Partner Sexual Violence</h2>
+                        <p class="module-meta">15 minutes • 3 Lessons</p>
+                        <p class="module-description">Explore the dynamics of sexual violence within intimate partnerships and understand consent frameworks.</p>
+                    </div>
+                    <div class="depth-indicator" aria-hidden="true">
+                        <div class="depth-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M12 6v6l4 3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="depth-text">100m+</span>
+                    </div>
+                </button>
+                <div class="lessons-bubble" id="lessons-module-3" role="region" aria-label="Module 2 lessons">
+                    <div class="bubble-content">
+                        <a href="lessons/lesson-2-1.html" class="lesson-link">
+                            <span class="lesson-number">1</span>
+                            <span class="lesson-title">What is Sexual Violence?</span>
+                        </a>
+                        <a href="lessons/lesson-2-2.html" class="lesson-link">
+                            <span class="lesson-number">2</span>
+                            <span class="lesson-title">Sexual Violence in Our Society</span>
+                        </a>
+                        <a href="lessons/lesson-2-3.html" class="lesson-link">
+                            <span class="lesson-number">3</span>
+                            <span class="lesson-title">Rape and Sexual Assault in the Context of Intimate Partner Violence</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 3: Responding to IPV -->
+            <div class="module-card module-4 right" data-module="4" id="abyss">
+                <button class="module-trigger" onclick="toggleModule(4)" aria-expanded="false" aria-controls="lessons-module-4">
+                    <div class="module-content">
+                        <h2 class="module-title">MODULE 3: Responding to Intimate Partner Violence</h2>
+                        <p class="module-meta">18 minutes • 3 Lessons</p>
+                        <p class="module-description">Understand the impact of IPV and learn trauma-informed response strategies and safety planning approaches.</p>
+                    </div>
+                    <div class="depth-indicator" aria-hidden="true">
+                        <div class="depth-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="rgba(255,255,255,0.2)"/>
+                            </svg>
+                        </div>
+                        <span class="depth-text">100m+</span>
+                    </div>
+                </button>
+                <div class="lessons-bubble" id="lessons-module-4" role="region" aria-label="Module 3 lessons">
+                    <div class="bubble-content">
+                        <a href="lessons/lesson-3-1.html" class="lesson-link">
+                            <span class="lesson-number">1</span>
+                            <span class="lesson-title">The Impact of Intimate Partner Violence on Victims</span>
+                        </a>
+                        <a href="lessons/lesson-3-2.html" class="lesson-link">
+                            <span class="lesson-number">2</span>
+                            <span class="lesson-title">Safety Planning with Victims</span>
+                        </a>
+                        <a href="lessons/lesson-3-3.html" class="lesson-link">
+                            <span class="lesson-number">3</span>
+                            <span class="lesson-title">Responding to Someone Experiencing Intimate Partner Violence</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Assessment -->
+            <div class="module-card module-5 right" data-module="5">
+                <button class="module-trigger" onclick="toggleModule(5)" aria-expanded="false" aria-controls="lessons-module-5">
+                    <div class="module-content">
+                        <h2 class="module-title">Final Assessment</h2>
+                        <p class="module-meta">10 minutes • 1 Assessment</p>
+                        <p class="module-description">Demonstrate your comprehensive understanding and complete your certification as an informed responder.</p>
+                    </div>
+                    <div class="depth-indicator" aria-hidden="true">
+                        <div class="depth-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="rgba(255,255,255,0.3)" stroke="none"/>
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <span class="depth-text">Final</span>
+                    </div>
+                </button>
+                <div class="lessons-bubble" id="lessons-module-5" role="region" aria-label="Final Assessment">
+                    <div class="bubble-content">
+                        <a href="lessons/final-assessment.html" class="lesson-link">
+                            <span class="lesson-number">1</span>
+                            <span class="lesson-title">ASSESSMENT: Recognizing and Responding to IPV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Final Assessment -->
+        <div class="final-assessment">
+            <button class="assessment-btn" type="button" onclick="showAssessmentInfo()" aria-describedby="assessmentDesc">Final Assessment & Certificate</button>
+            <p class="assessment-text" id="assessmentDesc">Complete all modules to unlock</p>
+        </div>
+
+        <!-- Decorative Sparkle -->
+        <svg class="descent-sparkle" width="30" height="30" viewBox="0 0 24 24" fill="white" opacity="0.6" aria-hidden="true">
+            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+        </svg>
+    </div>
+
+    <script>
+        function showDescentPage() {
+            document.getElementById('landingPage').classList.add('hidden');
+            document.getElementById('descentPage').classList.add('active');
+            history.pushState(null, '', '#descent');
+        }
+
+        function showLandingPage() {
+            document.getElementById('landingPage').classList.remove('hidden');
+            document.getElementById('descentPage').classList.remove('active');
+            history.pushState(null, '', window.location.pathname);
+        }
+
+        // Toggle help tooltip
+        function toggleHelpTooltip(event) {
+            event.stopPropagation();
+            const tooltip = document.getElementById('helpTooltip');
+            const button = event.currentTarget;
+            const isActive = tooltip.classList.contains('active');
+
+            if (isActive) {
+                tooltip.classList.remove('active');
+                button.setAttribute('aria-expanded', 'false');
+            } else {
+                tooltip.classList.add('active');
+                button.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        // Close tooltip when clicking outside
+        document.addEventListener('click', function(event) {
+            const tooltip = document.getElementById('helpTooltip');
+            const button = document.querySelector('.need-help-btn');
+
+            if (tooltip && !tooltip.contains(event.target) && !button.contains(event.target)) {
+                tooltip.classList.remove('active');
+                if (button) {
+                    button.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+        // Close tooltip on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const tooltip = document.getElementById('helpTooltip');
+                const button = document.querySelector('.need-help-btn');
+
+                if (tooltip && tooltip.classList.contains('active')) {
+                    tooltip.classList.remove('active');
+                    if (button) {
+                        button.setAttribute('aria-expanded', 'false');
+                        button.focus(); // Return focus to button
+                    }
+                }
+            }
+        });
+
+        // Toggle module expansion to show/hide lessons
+        function toggleModule(moduleNum) {
+            const moduleCard = document.querySelector(`[data-module="${moduleNum}"]`);
+            const trigger = moduleCard.querySelector('.module-trigger');
+            const isExpanded = moduleCard.classList.contains('expanded');
+
+            // Close all other modules first
+            document.querySelectorAll('.module-card').forEach(card => {
+                if (card !== moduleCard) {
+                    card.classList.remove('expanded');
+                    const otherTrigger = card.querySelector('.module-trigger');
+                    if (otherTrigger) {
+                        otherTrigger.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+
+            // Toggle this module
+            if (isExpanded) {
+                moduleCard.classList.remove('expanded');
+                trigger.setAttribute('aria-expanded', 'false');
+            } else {
+                moduleCard.classList.add('expanded');
+                trigger.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        // Check if generated images exist and apply them
+        function loadGeneratedImages() {
+            // Landing page image
+            const landingImg = new Image();
+            landingImg.onload = function() {
+                document.querySelector('.aurora-bg').classList.add('with-image');
+                document.getElementById('landingPage').classList.add('use-image');
+                console.log('✅ Landing iceberg image loaded');
+            };
+            landingImg.onerror = function() {
+                console.log('ℹ️ Landing image not found, using SVG fallback');
+            };
+            landingImg.src = 'media/backgrounds/landing-iceberg-hero.png';
+
+            // Descent page image
+            const descentImg = new Image();
+            descentImg.onload = function() {
+                document.querySelector('.descent-bg').classList.add('with-image');
+                document.getElementById('descentPage').classList.add('use-image');
+                console.log('✅ Descent iceberg image loaded');
+            };
+            descentImg.onerror = function() {
+                console.log('ℹ️ Descent image not found, using SVG fallback');
+            };
+            descentImg.src = 'media/backgrounds/descent-iceberg-side.png';
+        }
+
+        // Check URL hash on page load
+        function checkUrlHash() {
+            const hash = window.location.hash;
+
+            // If any module hash, show descent page first
+            if (hash === '#descent' || hash === '#twilight' || hash === '#abyss') {
+                showDescentPage();
+
+                // Then auto-expand the specific module
+                const hashToModule = {
+                    '#descent': 2,   // Module 1: Recognizing IPV
+                    '#twilight': 3,  // Module 2: Sexual Violence
+                    '#abyss': 4      // Module 3: Responding to IPV
+                };
+
+                const moduleNum = hashToModule[hash];
+                if (moduleNum) {
+                    // Wait for descent page to fully show
+                    setTimeout(() => {
+                        toggleModule(moduleNum);
+                        // Scroll to the module smoothly
+                        const moduleCard = document.querySelector(`[data-module="${moduleNum}"]`);
+                        if (moduleCard) {
+                            moduleCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                    }, 500);
+                }
+            }
+        }
+
+        // Load images when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            loadGeneratedImages();
+            checkUrlHash();
+        });
+
+        // Handle back/forward browser navigation
+        window.addEventListener('hashchange', checkUrlHash);
+
+        // Keyboard navigation - Escape to go back
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const descentPage = document.getElementById('descentPage');
+                if (descentPage.classList.contains('active')) {
+                    showLandingPage();
+                }
+            }
+        });
+
+        // Assessment placeholder
+        function showAssessmentInfo() {
+            alert('Final Assessment\n\nComplete all 3 modules to unlock the final assessment and earn your certificate of completion.\n\nProgress: Module 1 in progress');
+        }
+    </script>
+</body>
+</html>

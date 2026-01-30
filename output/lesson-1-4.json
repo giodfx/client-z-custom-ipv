@@ -1,0 +1,94 @@
+{
+  "lessonId": "lesson-1-4",
+  "title": "Categorizing Intimate Partner Violence",
+  "description": "Understanding Dr. Michael P. Johnson's typology of intimate partner violence and why accurate categorization matters for providing appropriate support.",
+  "moduleId": "module-1",
+  "estimatedMinutes": 9,
+  "content": {
+    "narration": "The iceberg reveals complexity—not all violence is the same. Dr. Johnson's typology helps us distinguish between different patterns of violence, each requiring different responses. Like Maria making intake assessments, understanding these categories helps you provide the right support to the right people at the right time.",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Understanding Different Types of IPV",
+        "content": "## Categorizing Intimate Partner Violence\n\nFor decades, researchers have asked whether men use violence in relationships more often than women, or whether men and women use violence in relationships at equal rates. There are many studies that support each of these claims, but researcher Michael P. Johnson found that the discrepancies in these studies mainly came from the **different definitions being used for intimate partner violence**.\n\n**The Problem:**\n\nSome researchers were using intimate partner violence to describe a relationship where one partner had coercive control over the other partner, while other researchers described intimate partner violence as a partner using an abusive behavior at any point in their relationship.\n\n### Johnson's Typology\n\nIn 2008, Michael P. Johnson introduced what he called \"A Typology of Domestic Violence.\" This typology is widely used to categorize different types of intimate partner violence to better provide resources and support to survivors.\n\n**According to Johnson, there are three main types of Intimate Partner Violence:**\n\n1. **Intimate Terrorism** - A pattern of violence combined with a broader pattern of control; one partner uses violence and other controlling tactics to dominate the other\n\n2. **Situational Couple Violence** - Violence that arises in the context of specific arguments or conflicts but is not part of a general pattern of control\n\n3. **Violent Resistance** - Violence used by someone experiencing intimate terrorism in an attempt to resist or defend against their partner's violence and control\n\n**Note:** A fourth type has been identified (\"Mutual Violent Resistance\") but has not yet been fully researched. For our purposes, and for work in the field, we focus on the original three types that Johnson defined in his work."
+      },
+      {
+        "id": "section-2",
+        "title": "The Importance of Context",
+        "content": "## Why Categorization Matters\n\n**Without relationship context from both partners, distinguishing between intimate terrorism and situational couple violence is impossible!**\n\nThis is a critical insight for professionals like Dr. Patel conducting screenings or Aisha observing workplace dynamics. A single incident doesn't tell the full story—you need to understand the broader pattern.\n\n### Gender and Violence\n\nAny individual can choose to abuse their partner. Still, women's violence in a relationship usually takes the form of responsive violence. In contrast, only a small group of women use violence in their relationships to gain coercive control over their partner.\n\n**Social Context:**\n\nSocial norms and institutions also make it more difficult for women to exert coercive control over a male partner. Understanding these dynamics helps us provide appropriate, trauma-informed support."
+      },
+      {
+        "id": "section-3",
+        "title": "Why Accurate Terminology Matters",
+        "content": "## The Importance of Shared Language\n\nPeople can mean different things when talking about intimate partner violence and domestic violence. It can depend on whether you are talking to:\n\n- A counselor specializing in intimate partner violence\n- An emergency shelter volunteer\n- A law enforcement officer\n- A survivor of abuse\n- A person who causes harm\n\n**There is no \"one size fits all\" model or definition of intimate partner violence.** The tools developed over decades to describe what is happening in an abusive relationship have been created to share a common language about a complex, changing problem.\n\n### Abusive Behavior vs. Abusive Relationship\n\nFor example, it is important to be able to differentiate between **abusive behavior** and **abusive relationships**.\n\n- **Any person may use an isolated abusive behavior.** In fact, most of us have when we aren't at our best.\n- It is the **pattern of behaviors** and the **power imbalance** that makes it an abusive relationship.\n\n### Supporting Diverse Experiences\n\nAs complex as the topic is, it is made more complex when you factor in the diverse experiences of survivors. Accuracy in terminology matters to each of these groups and can have long-lasting ramifications. Having these tools prepares you to better communicate with survivors and even the advocates with whom you may need to connect them."
+      }
+    ],
+    "keyTakeaways": [
+      "Dr. Michael P. Johnson identified three main types of IPV: Intimate Terrorism, Situational Couple Violence, and Violent Resistance",
+      "Without relationship context from both partners, it's impossible to distinguish between intimate terrorism and situational couple violence",
+      "Intimate terrorism involves a pattern of violence combined with broader control tactics",
+      "Situational couple violence arises from specific conflicts but isn't part of a general pattern of control",
+      "It's critical to differentiate between isolated abusive behavior and abusive relationships—the pattern and power imbalance make it IPV",
+      "Accurate categorization helps providers offer appropriate resources and support tailored to each situation"
+    ],
+    "reflectionQuestions": [
+      "How might understanding Johnson's typology change the way you assess situations in your professional role?",
+      "Why is it important to gather context about the relationship pattern rather than focusing on a single incident?",
+      "What challenges might you face in distinguishing between an isolated abusive behavior and a pattern of abuse?"
+    ],
+    "activities": [
+      {
+        "type": "knowledge-check",
+        "title": "Johnson's Categories",
+        "placement": "end-of-lesson",
+        "prompt": "According to Dr. Michael P. Johnson's typology, which type of IPV involves a pattern of violence combined with a broader pattern of control where one partner dominates the other?",
+        "options": [
+          "Situational Couple Violence",
+          "Violent Resistance",
+          "Intimate Terrorism",
+          "Mutual Violent Resistance"
+        ],
+        "correctAnswer": 2,
+        "explanation": "INTIMATE TERRORISM involves a pattern of violence combined with a broader pattern of control, where one partner uses violence and other controlling tactics to dominate the other. This is different from Situational Couple Violence (which arises from specific conflicts without a general pattern of control) and Violent Resistance (which is violence used to resist or defend against a partner's control)."
+      },
+      {
+        "type": "knowledge-check",
+        "title": "Need for Context",
+        "placement": "end-of-lesson",
+        "prompt": "Why is relationship context from both partners important when assessing intimate partner violence?",
+        "options": [
+          "To determine who started the violence first",
+          "Because without context, it's impossible to distinguish between intimate terrorism and situational couple violence",
+          "To assign blame equally to both partners",
+          "To determine if the violence was accidental or intentional"
+        ],
+        "correctAnswer": 1,
+        "explanation": "WITHOUT relationship context from both partners, distinguishing between intimate terrorism and situational couple violence is IMPOSSIBLE. A single incident doesn't reveal whether violence is part of a broader pattern of control (intimate terrorism) or arose from a specific conflict (situational couple violence). Understanding the full relationship pattern is essential for providing appropriate, trauma-informed support."
+      },
+      {
+        "type": "knowledge-check",
+        "title": "Behavior vs. Relationship",
+        "placement": "end-of-lesson",
+        "prompt": "What distinguishes an isolated abusive behavior from an abusive relationship?",
+        "options": [
+          "The severity of the behavior",
+          "Whether it happens in public or private",
+          "The pattern of behaviors and the power imbalance",
+          "Whether the person apologizes afterward"
+        ],
+        "correctAnswer": 2,
+        "explanation": "It's the PATTERN OF BEHAVIORS and the POWER IMBALANCE that makes it an abusive relationship. Any person may use an isolated abusive behavior—in fact, most of us have when we aren't at our best. But intimate partner violence is characterized by systematic patterns where one partner establishes control over the other through multiple tactics over time. Understanding this distinction is critical for trauma-informed assessment."
+      }
+    ],
+    "images": []
+  },
+  "metadata": {
+    "generatedAt": "2026-01-26T08:15:00.000Z",
+    "sourceChunks": ["chunk-83", "chunk-84", "chunk-85", "chunk-86", "chunk-87", "chunk-88", "chunk-89", "chunk-90", "chunk-91", "chunk-92", "chunk-93", "chunk-94", "chunk-95", "chunk-96", "chunk-97"],
+    "wordCount": 946,
+    "readingLevel": "8th grade",
+    "traumaInformedApproach": true,
+    "icebergZone": "surface",
+    "zoneDescription": "Understanding different patterns of violence beneath the surface appearance"
+  }
+}

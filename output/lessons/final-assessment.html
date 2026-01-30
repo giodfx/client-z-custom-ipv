@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Assessment - IPV Course</title>
+    <link rel="stylesheet" href="../styles/course-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .assessment-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .assessment-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            padding: 48px;
+            margin-bottom: 24px;
+        }
+
+        .assessment-hero {
+            background: linear-gradient(135deg, #0f766e, #0d9488);
+            padding: 40px;
+            border-radius: 16px;
+            color: white;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .assessment-hero h1 {
+            margin: 0 0 12px 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .assessment-hero p {
+            margin: 0;
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .assessment-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 32px 0;
+        }
+
+        .info-item {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #0f766e;
+        }
+
+        .info-item strong {
+            display: block;
+            color: #0f766e;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .info-item span {
+            font-size: 1.125rem;
+            color: #374151;
+            font-weight: 600;
+        }
+
+        .start-btn {
+            background: linear-gradient(135deg, #0f766e, #0d9488);
+            color: white;
+            padding: 18px 48px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            margin: 32px auto;
+            display: block;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(15, 118, 110, 0.3);
+        }
+
+        .start-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(15, 118, 110, 0.4);
+        }
+
+        .quiz-container {
+            display: none;
+        }
+
+        .quiz-header {
+            background: #f9fafb;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .quiz-progress {
+            font-size: 1.125rem;
+            color: #6b7280;
+            font-weight: 600;
+        }
+
+        .quiz-question {
+            display: none;
+            animation: fadeIn 0.3s;
+        }
+
+        .quiz-question.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .question-text {
+            font-size: 1.25rem;
+            color: #1f2937;
+            margin-bottom: 28px;
+            line-height: 1.7;
+            font-weight: 500;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .quiz-option {
+            display: block;
+            padding: 20px 24px;
+            background: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .quiz-option:hover {
+            background: #f3f4f6;
+            border-color: #d1d5db;
+        }
+
+        .quiz-option input[type="radio"] {
+            margin-right: 16px;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
+
+        .quiz-option span {
+            font-size: 1.0625rem;
+            color: #374151;
+            line-height: 1.6;
+        }
+
+        .quiz-option.selected {
+            background: #ecfdf5;
+            border-color: #0d9488;
+        }
+
+        .quiz-feedback {
+            display: none;
+            margin-top: 24px;
+            padding: 24px;
+            border-radius: 12px;
+            border-left: 4px solid;
+        }
+
+        .quiz-feedback.correct {
+            background: #ecfdf5;
+            border-color: #10b981;
+            color: #065f46;
+        }
+
+        .quiz-feedback.incorrect {
+            background: #fef2f2;
+            border-color: #ef4444;
+            color: #991b1b;
+        }
+
+        .quiz-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 32px;
+        }
+
+        .quiz-btn {
+            padding: 14px 32px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.0625rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .quiz-btn-secondary {
+            background: #f3f4f6;
+            color: #6b7280;
+        }
+
+        .quiz-btn-secondary:hover {
+            background: #e5e7eb;
+        }
+
+        .quiz-btn-primary {
+            background: #0f766e;
+            color: white;
+        }
+
+        .quiz-btn-primary:hover {
+            background: #0d9488;
+        }
+
+        .quiz-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .quiz-result {
+            display: none;
+            text-align: center;
+        }
+
+        .result-score {
+            font-size: 4rem;
+            font-weight: 800;
+            margin: 32px 0;
+            background: linear-gradient(135deg, #0f766e, #0d9488);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .result-message {
+            font-size: 1.5rem;
+            color: #374151;
+            margin-bottom: 24px;
+        }
+
+        .result-pass {
+            background: #ecfdf5;
+            padding: 32px;
+            border-radius: 16px;
+            border: 3px solid #10b981;
+        }
+
+        .result-fail {
+            background: #fef2f2;
+            padding: 32px;
+            border-radius: 16px;
+            border: 3px solid #ef4444;
+        }
+
+        ul, ol {
+            line-height: 1.8;
+            color: #374151;
+        }
+
+        h2 {
+            color: #0f766e;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .assessment-card {
+                padding: 32px 24px;
+            }
+
+            .assessment-hero {
+                padding: 32px 24px;
+            }
+
+            .assessment-hero h1 {
+                font-size: 2rem;
+            }
+
+            .assessment-info {
+                grid-template-columns: 1fr;
+            }
+
+            .result-score {
+                font-size: 3rem;
+            }
+        }
+
+        /* Skip Navigation Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #0f766e;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 0 0 4px 0;
+            font-weight: 600;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="assessment-container" id="main-content">
+    <!-- Introduction Screen -->
+    <div id="intro-screen">
+        <div class="assessment-hero">
+            <h1>🎓 Final Assessment</h1>
+            <p>Demonstrate your comprehensive understanding of IPV recognition and response</p>
+        </div>
+
+        <div class="assessment-card">
+            <div class="assessment-info">
+                <div class="info-item">
+                    <strong>Questions</strong>
+                    <span>20 comprehensive</span>
+                </div>
+                <div class="info-item">
+                    <strong>Passing Score</strong>
+                    <span>70% (14/20)</span>
+                </div>
+                <div class="info-item">
+                    <strong>Coverage</strong>
+                    <span>All Modules</span>
+                </div>
+                <div class="info-item">
+                    <strong>Time Limit</strong>
+                    <span>None</span>
+                </div>
+            </div>
+
+            <h2>What to Expect</h2>
+            <p>This final assessment covers all course content including:</p>
+            <ul>
+                <li>Recognizing various forms of intimate partner violence</li>
+                <li>Understanding power and control dynamics</li>
+                <li>Intimate partner sexual violence characteristics</li>
+                <li>Impact of IPV on survivors</li>
+                <li>Trauma-informed response strategies</li>
+                <li>Safety planning approaches and community accountability</li>
+            </ul>
+
+            <h2>Instructions</h2>
+            <ol>
+                <li>Ensure you have completed all 3 modules before starting</li>
+                <li>Read each question carefully - many are scenario-based</li>
+                <li>Select the BEST answer for each question</li>
+                <li>You can review your answer immediately after each question</li>
+                <li>Upon passing (70% or higher), you will have demonstrated comprehensive understanding</li>
+            </ol>
+
+            <button class="start-btn" onclick="startAssessment()">Begin Final Assessment</button>
+        </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="quiz-container">
+        <div class="assessment-card">
+            <div class="quiz-header">
+                <div class="quiz-progress">
+                    Question <span id="current-question">1</span> of <span id="total-questions">20</span>
+                </div>
+                <div style="color: #6b7280; font-weight: 600;">
+                    Score: <span id="current-score">0</span>/20
+                </div>
+            </div>
+
+            <!-- Questions will be dynamically inserted here -->
+            <div id="questions-container"></div>
+
+            <div class="quiz-navigation">
+                <button class="quiz-btn quiz-btn-secondary" id="prev-btn" onclick="previousQuestion()" style="display:none;">Previous</button>
+                <button class="quiz-btn quiz-btn-primary" id="next-btn" onclick="nextQuestion()" disabled>Next Question</button>
+                <button class="quiz-btn quiz-btn-primary" id="submit-btn" onclick="submitAssessment()" style="display:none;">Submit Assessment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div id="results-screen" class="quiz-result">
+        <div class="assessment-card">
+            <div id="result-container"></div>
+
+            <div style="margin-top: 32px;">
+                <a href="lesson-3-3.html" class="quiz-btn quiz-btn-primary" style="display: inline-block; text-decoration: none;">Return to Course</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Assessment data
+const questions = [
+    {
+        "question": "What are the TWO most important elements that define intimate partner violence according to the House of Ruth Maryland definition?",
+        "options": [
+            "Living together AND being married",
+            "A pattern of behaviors AND a power imbalance",
+            "Physical violence AND emotional abuse",
+            "Criminal charges AND restraining orders"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Exactly! The two critical elements are: (1) IPV is a PATTERN of behaviors, not isolated incidents, and (2) there is a POWER IMBALANCE where one partner holds power over the other. These elements distinguish IPV from other types of conflict and help professionals recognize systematic coercive control.",
+            "incorrect": "The two most important elements are that IPV is a PATTERN of behaviors (not isolated incidents) and there is a POWER IMBALANCE between partners. Living situation, marital status, and legal involvement are not defining characteristics. Understanding this definition helps you recognize IPV across different relationship types and contexts."
+        }
+    },
+    {
+        "question": "Who created the Power and Control Wheel in the early 1980s by interviewing survivors of intimate partner violence?",
+        "options": [
+            "The Centers for Disease Control (CDC)",
+            "Ellen Pence and the Domestic Abuse Intervention Project in Duluth, MN",
+            "The National Coalition Against Domestic Violence",
+            "The House of Ruth Maryland"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Correct! Ellen Pence and her colleagues at the Domestic Abuse Intervention Project (DAIP) in Duluth, MN created the Power and Control Wheel by documenting the most common abusive tactics survivors reported experiencing. This survivor-centered approach is what makes the wheel so effective—it captures universally experienced patterns from those who lived through them.",
+            "incorrect": "Ellen Pence and the Domestic Abuse Intervention Project (DAIP) in Duluth, MN created the Power and Control Wheel in the early 1980s by interviewing survivors. This model, also known as the Duluth Model, documents the most common tactics used against survivors and remains the most widely used framework for understanding IPV dynamics."
+        }
+    },
+    {
+        "question": "Maria, a coordinated entry worker, is meeting with a client whose partner controls all the money, won't let her see her family, threatens to harm their children if she talks to anyone, and has said 'If you try to leave, I'll kill you.' According to the Power and Control Wheel, how many different tactics is the partner using?",
+        "options": [
+            "Two tactics (Economic abuse and Using Isolation)",
+            "Three tactics (Economic abuse, Using Isolation, and Using Children)",
+            "Four tactics (Economic abuse, Using Isolation, Using Children, and Using Coercion and Threats)",
+            "Five tactics (all of the above plus Physical and Sexual Violence on the outer ring)"
+        ],
+        "correctAnswer": 3,
+        "feedback": {
+            "correct": "Correct! This partner is using FIVE tactics: (1) Economic abuse (controlling money), (2) Using Isolation (preventing family contact), (3) Using Children (threatening harm to children), (4) Using Coercion and Threats (threatening to kill if she leaves), AND (5) the THREAT of Physical Violence (the outer ring). The threat 'If you try to leave, I'll kill you' places this on the outer ring, which transforms all the inner tactics from unhealthy behaviors to intimate partner violence.",
+            "incorrect": "This scenario shows FIVE distinct tactics: Economic abuse, Using Isolation, Using Children, Using Coercion and Threats, AND the threat of Physical Violence (the outer ring). The statement 'If you try to leave, I'll kill you' is a death threat that places this firmly on the outer ring of physical violence. Remember: the very presence of the threat of physical violence changes the dynamic from unhealthy behavior to IPV. Multiple tactics working together indicate systematic coercive control."
+        }
+    },
+    {
+        "question": "According to the lesson on categorizing IPV, what changes a relationship dynamic from unhealthy behavior to intimate partner violence?",
+        "options": [
+            "The frequency of arguments between partners",
+            "The presence of the threat of physical and/or sexual violence",
+            "Whether the partners live together or are married",
+            "The severity of name-calling or insults"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Exactly! The very presence of the THREAT of physical and/or sexual violence (the outer ring of the Power and Control Wheel) changes the dynamic from unhealthy relationship behavior to IPV. While some behaviors inside the wheel might occur in many relationships, the threat of violence adds emphasis and increases the likelihood of compliance through fear. This distinction is critical for proper assessment.",
+            "incorrect": "The presence of the threat of physical and/or sexual violence is what distinguishes IPV from general relationship problems. While some controlling behaviors might occur in unhealthy relationships, the threat or presence of violence transforms these behaviors into a pattern of abuse. This is why the outer ring of the Power and Control Wheel is so significant—it's what makes the inner tactics abusive rather than just unhealthy."
+        }
+    },
+    {
+        "question": "According to the National Sexual Violence Resource Center (NSVRC), what percentage of female rape survivors reported being raped by an intimate partner?",
+        "options": [
+            "About 25%",
+            "About 35%",
+            "More than half (51.1%)",
+            "About 75%"
+        ],
+        "correctAnswer": 2,
+        "feedback": {
+            "correct": "Correct! More than half (51.1%) of female survivors of rape reported being raped by an intimate partner, and 40.8% by an acquaintance. This means that most sexual assault is committed by someone the survivor knows, not by strangers. Understanding this prevalence helps professionals recognize the intersection between IPV and sexual violence.",
+            "incorrect": "More than half (51.1%) of female rape survivors reported being raped by an intimate partner according to the NSVRC. This high percentage challenges the Hollywood stereotype of stranger assault and demonstrates how commonly sexual violence is used as a tool of power and control in abusive relationships. Recognizing this helps you identify intimate partner sexual violence."
+        }
+    },
+    {
+        "question": "What is the key difference between consent and coercion in the context of sexual activity?",
+        "options": [
+            "Consent is legal while coercion is not",
+            "When coercion is present (pressure, threats, manipulation), true consent cannot be given",
+            "Coercion only matters in stranger assault cases",
+            "Consent and coercion can exist together in intimate relationships"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Exactly! When COERCION is present, TRUE CONSENT CANNOT BE GIVEN. Coercion involves pressure, threats, manipulation, creating obligation or guilt, or using a position of power. Even if someone eventually 'agrees' under these conditions, it is not freely given consent—it is compliance obtained through pressure or fear. This distinction is especially important in intimate partner relationships where coercion may be subtle or part of a larger pattern of control.",
+            "incorrect": "When coercion is present, true consent cannot be given. Coercion includes pressure, threats, manipulation, or using power dynamics to obtain sexual activity. Even if someone says 'yes' under coercion, it's not freely given consent—it's compliance obtained through fear or pressure. Understanding this helps you recognize intimate partner sexual violence, where coercion is often present but may not be recognized by the survivor as force."
+        }
+    },
+    {
+        "question": "Dr. Patel, a healthcare provider, has a patient who says her husband 'gets upset' when she refuses sex and makes her feel guilty by saying 'If you loved me, you would.' She feels obligated to comply to keep the peace. According to the consent spectrum, what is happening?",
+        "options": [
+            "This is healthy sexual negotiation in marriage",
+            "This is coercion—creating obligation and guilt means true consent cannot be given",
+            "This is freely given consent because she agrees",
+            "This is just a communication problem in their relationship"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Correct! This is COERCION. The husband is creating a sense of OBLIGATION and GUILT to obtain sexual activity. When coercion is present, true consent cannot be given. Even though the patient 'complies' to keep the peace, this is not freely given consent—it's compliance obtained through emotional manipulation. Dr. Patel should recognize this as intimate partner sexual violence and provide trauma-informed support.",
+            "incorrect": "This scenario describes coercion. Creating obligation and guilt ('If you loved me...'), causing someone to feel they must comply 'to keep the peace,' is manipulation that prevents true consent. This is a form of intimate partner sexual violence. The patient may not recognize it as abuse (conceptual barrier), but Dr. Patel should understand this dynamic and provide appropriate support and resources."
+        }
+    },
+    {
+        "question": "What is rape culture?",
+        "options": [
+            "A legal framework for prosecuting sexual assault",
+            "An environment where sexual violence against women is normalized and excused in media and popular culture",
+            "A term that only applies to certain communities",
+            "A cultural practice limited to specific countries"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Correct! Rape culture is an environment where sexual violence against women is normalized and excused in the media and popular culture. It is perpetuated through misogynistic language, objectification of women's bodies, and glamorization of sexual violence. Understanding rape culture helps professionals recognize societal attitudes that support violence and identify opportunities for prevention.",
+            "incorrect": "Rape culture is an environment where sexual violence is normalized and excused through media and popular culture. It's perpetuated through misogynistic language, objectification, and glamorization of violence. Recognizing rape culture helps you understand the societal context that supports IPV and sexual violence, and empowers you to challenge these attitudes at every level of the Community-Accountability Model."
+        }
+    },
+    {
+        "question": "According to the Rape Culture Pyramid, why is it important to address beliefs and attitudes at the foundation level?",
+        "options": [
+            "Because foundation behaviors are more serious than sexual violence",
+            "Because all layers are linked and build on one another, so addressing the foundation is essential to eliminating violence at the top",
+            "Because it's easier to change attitudes than behaviors",
+            "Because the foundation is where law enforcement should focus"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Exactly! According to the Rape Culture Pyramid, ALL LAYERS ARE LINKED AND BUILD ON ONE ANOTHER. To eliminate violence at the top, we must START AT THE FOUNDATION and address beliefs and attitudes that support sexual violence. Behaviors like gender stereotypes, sexist jokes, and objectification at the bottom create the foundation for more serious violence at the top. This is why challenging 'small' sexist comments matters—they're part of the system.",
+            "incorrect": "All layers of the Rape Culture Pyramid are linked and build on one another. Foundation-level behaviors (gender stereotypes, sexist jokes, objectification) create the environment for more serious violence at the top. This understanding shows why professionals should challenge harmful attitudes even when they seem 'minor'—they're part of the ecosystem that supports violence. The Community-Accountability Model reinforces this: changes at any level ripple throughout the system."
+        }
+    },
+    {
+        "question": "When did all fifty states finally repeal their spousal rape exemptions?",
+        "options": [
+            "1950",
+            "1976",
+            "1993",
+            "2010"
+        ],
+        "correctAnswer": 2,
+        "feedback": {
+            "correct": "Correct! It wasn't until 1993 that all fifty states had repealed their spousal rape exemptions. Until 1976, state laws specifically exempted spousal rape from general rape laws—meaning it was legal for a husband to rape his wife. This recent legal history helps explain why intimate partner sexual violence is the most underreported form of sexual assault and why survivors face unique barriers.",
+            "incorrect": "All fifty states repealed spousal rape exemptions by 1993. Until 1976, it was legal for husbands to rape their wives—spousal rape was specifically exempted from rape laws. Understanding this recent legal history is essential for recognizing why survivors face conceptual barriers (viewing sex as 'spousal duty') and why intimate partner sexual violence remains deeply underreported."
+        }
+    },
+    {
+        "question": "James, an IPV advocate, hears a colleague say 'Why doesn't she just leave him already?' at a team meeting. Based on everything you've learned, what is the BEST way for James to respond?",
+        "options": [
+            "Agree that leaving is the best option for safety",
+            "Challenge the question by explaining that we should ask 'Why do people choose to abuse?' and share that leaving is actually the most dangerous time",
+            "Ignore it because it's a common question",
+            "Suggest they ask the survivor directly why she stays"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Exactly! James should CHALLENGE the question by explaining that we should ask 'WHY DO PEOPLE CHOOSE TO ABUSE?' (placing responsibility correctly) and share that LEAVING IS ACTUALLY THE MOST DANGEROUS TIME (educating about lethality). This response applies multiple course concepts: shifting blame away from survivors, understanding barriers to leaving, and recognizing the danger of separation. It also demonstrates the Community-Accountability Model in action—challenging harmful attitudes at the micro-community level.",
+            "incorrect": "The best response challenges the harmful question and provides education. 'Why doesn't she just leave?' places blame on the survivor and ignores barriers to leaving. By explaining that we should ask 'Why do people choose to abuse?' James shifts responsibility appropriately. Adding that leaving is the most dangerous time (women are more likely to be killed after separating) helps colleagues understand why staying is often a safety decision. This is the Community-Accountability Model in practice."
+        }
+    },
+    {
+        "question": "Instead of asking 'Why do survivors stay?', what question should we be asking and why?",
+        "options": [
+            "When will survivors leave, because timing matters",
+            "Why do people choose to abuse their partners, because it places responsibility on the person causing harm",
+            "What did the survivor do to cause the abuse, because we need to understand triggers",
+            "How can we convince survivors to leave, because staying is too dangerous"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Exactly! We should ask 'WHY DO PEOPLE CHOOSE TO ABUSE?' because it places responsibility on the PERSON CAUSING HARM, not on the survivor. By asking survivors why they stay, we put the responsibility on them to stop the violence they're experiencing. Intimate partner violence is never the survivor's fault. This shift in perspective is foundational to trauma-informed practice.",
+            "incorrect": "We should ask 'Why do people choose to abuse?' because it correctly places responsibility with the person causing harm. Asking 'Why do survivors stay?' blames the wrong person and ignores the complex reality: leaving is the most dangerous time, survivors face multiple barriers, and often their decision to stay is an informed one made with their safety in mind. Shifting the question is essential for trauma-informed work."
+        }
+    },
+    {
+        "question": "Aisha, a coordinated entry worker, is meeting with a client who wants to stay in her relationship while working on safety. The client has identified specific strategies to increase her safety. According to trauma-informed principles and survivor-defined safety, how should Aisha respond?",
+        "options": [
+            "Tell her that staying is too dangerous and she must leave",
+            "Support her autonomy by collaborating on her safety plan and asking how she can help, while recognizing the client is the expert on her own safety",
+            "Refuse to help until she agrees to leave",
+            "Make decisions for her to ensure her physical safety"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Correct! Aisha should SUPPORT HER AUTONOMY by COLLABORATING on her safety plan and asking how she can help, while RECOGNIZING THE CLIENT IS THE EXPERT on her own safety. This response honors multiple course principles: survivor-defined safety, trauma-informed care, and understanding that focusing on physical safety while removing decision-making reinforces the lack of power and control. Often a survivor's decision to stay is informed and made with safety in mind.",
+            "incorrect": "The best response supports the client's autonomy by collaborating on her safety plan. According to Jill Davies, survivors are experts on their own safety. Forcing her to leave removes her agency and recreates the power imbalance that defines abuse. True safety includes no violence, basic needs being met, AND social/emotional wellbeing. Trauma-informed care means promoting liberation, autonomy, and self-determination—even when it's uncomfortable for us."
+        }
+    },
+    {
+        "question": "According to Jill Davies, what three elements do survivors consider when assessing safety strategies?",
+        "options": [
+            "Police protection, restraining orders, and shelter",
+            "No violence, basic human needs, and social and emotional well-being",
+            "Physical distance, financial independence, and legal protection",
+            "Family support, employment, and housing"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Correct! According to Jill Davies, survivors consider: (1) NO VIOLENCE, (2) BASIC HUMAN NEEDS, and (3) SOCIAL AND EMOTIONAL WELL-BEING. This framework recognizes that 'The spiritual, social, and emotional aspects of our humanity are also necessary for security.' True safety is more than just the absence of violence—it encompasses having basic needs met and experiencing connection, self-esteem, and autonomy.",
+            "incorrect": "Jill Davies identifies three elements: no violence, basic human needs, and social and emotional well-being. This comprehensive view of safety goes beyond physical protection. As Dr. Jacqueline Campbell states, 'A survivor who is no longer hit but cannot feed her children or pay her bills isn't safe, nor is she safe if she is still suffering from trauma effects.' Understanding this helps you provide complete, trauma-informed support."
+        }
+    },
+    {
+        "question": "Maria has been working with a client to develop a safety plan. The client has decided to stay in the relationship for now because leaving would mean losing custody of her children, her home, and her financial security. According to the course, what should Maria understand about this decision?",
+        "options": [
+            "The client is making a mistake and doesn't understand the danger",
+            "The client is considering both partner-generated risks (abuse) and life-generated risks (custody, housing, finances), and her decision to stay may be an informed one made with her safety in mind",
+            "The client is too afraid to leave and needs to be convinced",
+            "This decision means the abuse isn't serious enough"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Exactly! Maria should understand that the client is considering BOTH PARTNER-GENERATED RISKS (the abuse) AND LIFE-GENERATED RISKS (custody, housing, finances). Often a survivor's decision to stay is AN INFORMED ONE MADE WITH THEIR SAFETY IN MIND. True safety includes no violence, basic needs being met, AND social/emotional wellbeing. If leaving means losing children, home, and financial security, the client may not be safer overall. Maria's role is to support her autonomy while helping increase safety.",
+            "incorrect": "The client is weighing both partner-generated and life-generated risks. Her decision demonstrates complex understanding of what safety means—not just absence of violence, but also having basic needs met and maintaining connections (children). According to Maslow's hierarchy and Dr. Campbell, a survivor who escapes violence but cannot feed her children isn't safe. Survivors are experts on their own safety. Maria should respect this informed decision while collaboratively working on safety strategies."
+        }
+    },
+    {
+        "question": "Dr. Patel is speaking with a patient who has disclosed intimate partner sexual violence for the first time. The patient is hesitant to share details and worried she won't be believed. What is the MOST important response?",
+        "options": [
+            "Press for detailed information to verify her story",
+            "Immediately call the police to file a report",
+            "Listen without judgment and create an environment of safety, trust, and confidentiality, while validating her experience",
+            "Tell her similar stories from other patients to make her feel less alone"
+        ],
+        "correctAnswer": 2,
+        "feedback": {
+            "correct": "Exactly! The MOST important response is to LISTEN WITHOUT JUDGMENT and CREATE AN ENVIRONMENT OF SAFETY, TRUST, AND CONFIDENTIALITY while VALIDATING her experience. When a survivor discloses, it signals they believe you can be trusted. If you provide an environment where they feel safe, heard, and believed, they're more likely to share experiences and be receptive to support. Your role is not to investigate, force reporting, or make decisions—it's to provide trauma-informed support.",
+            "incorrect": "The most important response is listening without judgment and creating safety, trust, and confidentiality. When a survivor discloses intimate partner sexual violence, they're taking a significant risk. There may be several reasons they're hesitant to share details—and that's okay. Pressing for details can feel like interrogation. Forcing reporting removes their agency. Sharing other patients' stories violates confidentiality. The trauma-informed response is: believe them, support them, honor their autonomy."
+        }
+    },
+    {
+        "question": "A survivor tells you 'I can't call what he does rape because we're married and I love him.' This statement reflects which barriers to recognizing intimate partner sexual violence?",
+        "options": [
+            "Only practical barriers like lack of resources",
+            "Both conceptual barriers (viewing sex as 'spousal duty') and emotional barriers (love for partner, difficulty defining them as 'rapist')",
+            "Only legal barriers related to marriage laws",
+            "Only social barriers related to stigma"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Exactly! This statement reflects BOTH CONCEPTUAL BARRIERS (viewing sex as 'spousal duty,' difficulty reconciling that married people can rape their spouses) AND EMOTIONAL BARRIERS (love for the partner, difficulty defining someone they love as a 'rapist'). Understanding these barriers helps professionals recognize why survivors may not name their experience as assault and how to provide supportive, non-judgmental education about consent and intimate partner sexual violence.",
+            "incorrect": "This reflects both conceptual and emotional barriers. Conceptually, survivors may believe sex is a 'spousal duty' or that marital rape isn't 'real' rape (understandable given it was legal until 1993). Emotionally, survivors struggle to reconcile loving their partner with recognizing harm, and resist defining someone they love as a 'rapist.' Your response should validate feelings, provide information about consent, and support them based on their lived experience—not force legal definitions."
+        }
+    },
+    {
+        "question": "What is the phone number for the National Domestic Violence Hotline?",
+        "options": [
+            "1-800-656-HOPE",
+            "1-800-799-7233",
+            "1-800-273-8255",
+            "1-800-555-1212"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Correct! The National Domestic Violence Hotline is 1-800-799-7233, available 24/7 (TTY: 1-800-787-3224). This resource provides crisis intervention, safety planning, and referrals to local resources. Having this number ready when survivors disclose helps you provide immediate, practical support. Remember: these resources are for survivors, friends, family, and community members—don't forget to take care of yourself too.",
+            "incorrect": "The National Domestic Violence Hotline is 1-800-799-7233 (24/7, TTY: 1-800-787-3224). Being prepared with this resource demonstrates you take IPV seriously and are equipped to help. Note: 1-800-656-HOPE is the National Sexual Assault Hotline. Having both numbers ready is important for comprehensive support. Contact your statewide coalition to find local resources as well."
+        }
+    },
+    {
+        "question": "According to the Community-Accountability Model, a colleague makes sexist jokes at your workplace (micro-community level). You challenge the jokes and explain why they contribute to rape culture. What principle does this demonstrate?",
+        "options": [
+            "That only macro-level changes (laws, policies) can prevent violence",
+            "That changes at any community level can ripple throughout the ecosystem, and challenging harmful attitudes at the micro-community level contributes to systemic change",
+            "That individuals have no influence on larger systems",
+            "That workplace behavior doesn't connect to intimate partner violence"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Exactly! This demonstrates that CHANGES AT ANY COMMUNITY LEVEL CAN RIPPLE THROUGHOUT THE ECOSYSTEM. By challenging harmful attitudes at the MICRO-COMMUNITY level (your workplace), you contribute to SYSTEMIC CHANGE. The Community-Accountability Model shows that all five levels (individual, primary, micro, macro, global) influence each other bidirectionally. IPV is socially supported behavior—by disrupting harmful attitudes at any level, you help prevent violence. Everyone has a role in prevention.",
+            "incorrect": "This demonstrates the Community-Accountability Model principle that changes at any level ripple through the system. By challenging sexist jokes at your workplace (micro-community), you disrupt the Rape Culture Pyramid at the foundation level. These 'small' interventions matter because all layers are linked—foundation behaviors create the environment for more serious violence. Your action also models behavior for colleagues (primary community) and can shift workplace culture. This is prevention in action."
+        }
+    },
+    {
+        "question": "You're training new staff at your organization. Based on everything you've learned in this course, which statement would you emphasize as MOST important for trauma-informed IPV response?",
+        "options": [
+            "'Always call the police immediately when someone discloses abuse'",
+            "'The most important thing is to be supportive, listen non-judgmentally, honor survivor autonomy, and recognize they are the experts on their own safety'",
+            "'Tell survivors they must leave the relationship for their own good'",
+            "'Focus only on physical safety and don't worry about other needs'"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+            "correct": "Exactly! The MOST important principle is: BE SUPPORTIVE, LISTEN NON-JUDGMENTALLY, HONOR SURVIVOR AUTONOMY, and RECOGNIZE THEY ARE THE EXPERTS ON THEIR OWN SAFETY. This statement integrates core concepts from across the course: trauma-informed care, survivor-defined safety, the importance of autonomy (not recreating power imbalances), and comprehensive support. It's not about rescuing or making decisions—it's about supporting their agency while connecting them to resources.",
+            "incorrect": "The most important principle is being supportive, listening non-judgmentally, honoring survivor autonomy, and recognizing their expertise. This integrates key course concepts: the foundation of abuse is taking away power and control, so we must help them regain it (not recreate control by making decisions for them); true safety includes no violence, basic needs, AND social/emotional wellbeing (not just physical safety); and survivors are experts on their own safety (Jill Davies). This is trauma-informed practice."
+        }
+    }
+];
+
+let currentQuestionIndex = 0;
+let userAnswers = [];
+let score = 0;
+let shuffledQuestions = [];
+
+// Shuffle array utility using Fisher-Yates algorithm with crypto random
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        // Use crypto.getRandomValues for better randomness
+        const randomBuffer = new Uint32Array(1);
+        crypto.getRandomValues(randomBuffer);
+        const j = Math.floor((randomBuffer[0] / (0xFFFFFFFF + 1)) * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+function startAssessment() {
+    console.log('Starting assessment with shuffling...');
+
+    // First, shuffle the questions themselves
+    const questionIndices = questions.map((q, idx) => idx);
+    const shuffledQuestionOrder = shuffleArray(questionIndices);
+
+    console.log('Question order:', shuffledQuestionOrder);
+
+    // Then shuffle options for each question
+    shuffledQuestions = shuffledQuestionOrder.map((questionIdx, qIndex) => {
+        const q = questions[questionIdx];
+
+        // Create array of option objects with their original index
+        const optionsWithIndex = q.options.map((text, idx) => ({
+            text: text,
+            originalIndex: idx,
+            isCorrect: idx === q.correctAnswer
+        }));
+
+        console.log(`Q${qIndex + 1} - Original correct answer at position: ${q.correctAnswer}`);
+
+        // Shuffle the options thoroughly - multiple times for extra randomness
+        let shuffledOptions = shuffleArray(optionsWithIndex);
+
+        // Extra shuffle pass
+        shuffledOptions = shuffleArray(shuffledOptions);
+
+        // Find new position of correct answer
+        const newCorrectIndex = shuffledOptions.findIndex(opt => opt.isCorrect);
+
+        console.log(`Q${qIndex + 1} - New correct answer at position: ${newCorrectIndex}`);
+
+        return {
+            ...q,
+            question: q.question,
+            options: shuffledOptions.map(opt => opt.text),
+            correctAnswer: newCorrectIndex,
+            feedback: q.feedback
+        };
+    });
+
+    console.log('Shuffling complete. Distribution of correct answers:');
+    const distribution = [0, 0, 0, 0];
+    shuffledQuestions.forEach(q => distribution[q.correctAnswer]++);
+    console.log('Position 0 (A):', distribution[0]);
+    console.log('Position 1 (B):', distribution[1]);
+    console.log('Position 2 (C):', distribution[2]);
+    console.log('Position 3 (D):', distribution[3]);
+
+    document.getElementById('intro-screen').style.display = 'none';
+    document.getElementById('quiz-screen').style.display = 'block';
+    loadQuestions();
+    showQuestion(0);
+}
+
+function loadQuestions() {
+    const container = document.getElementById('questions-container');
+
+    shuffledQuestions.forEach((q, index) => {
+        const questionDiv = document.createElement('div');
+        questionDiv.className = 'quiz-question';
+        questionDiv.id = `question-${index}`;
+
+        let optionsHTML = '';
+        q.options.forEach((option, optIndex) => {
+            optionsHTML += `
+                <label class="quiz-option" id="option-${index}-${optIndex}">
+                    <input type="radio" name="question-${index}" value="${optIndex}" onchange="selectOption(${index}, ${optIndex})">
+                    <span>${option}</span>
+                </label>
+            `;
+        });
+
+        questionDiv.innerHTML = `
+            <div class="question-text">${q.question}</div>
+            <div class="quiz-options">
+                ${optionsHTML}
+            </div>
+            <div class="quiz-feedback" id="feedback-${index}"></div>
+        `;
+
+        container.appendChild(questionDiv);
+    });
+
+    document.getElementById('total-questions').textContent = shuffledQuestions.length;
+}
+
+function showQuestion(index) {
+    // Hide all questions
+    document.querySelectorAll('.quiz-question').forEach(q => q.classList.remove('active'));
+
+    // Show current question
+    document.getElementById(`question-${index}`).classList.add('active');
+
+    // Update progress
+    document.getElementById('current-question').textContent = index + 1;
+
+    // Update button visibility
+    document.getElementById('prev-btn').style.display = index > 0 ? 'block' : 'none';
+    document.getElementById('next-btn').style.display = index < questions.length - 1 ? 'block' : 'none';
+    document.getElementById('submit-btn').style.display = index === questions.length - 1 ? 'block' : 'none';
+
+    // If already answered, show feedback
+    if (userAnswers[index] !== undefined) {
+        showFeedback(index);
+    }
+}
+
+function selectOption(questionIndex, optionIndex) {
+    // Store answer
+    userAnswers[questionIndex] = optionIndex;
+
+    // Update selected state
+    document.querySelectorAll(`#question-${questionIndex} .quiz-option`).forEach((opt, idx) => {
+        if (idx === optionIndex) {
+            opt.classList.add('selected');
+        } else {
+            opt.classList.remove('selected');
+        }
+    });
+
+    // Show feedback
+    showFeedback(questionIndex);
+
+    // Enable next button
+    document.getElementById('next-btn').disabled = false;
+    if (questionIndex === questions.length - 1) {
+        document.getElementById('submit-btn').disabled = false;
+    }
+}
+
+function showFeedback(questionIndex) {
+    const question = shuffledQuestions[questionIndex];
+    const userAnswer = userAnswers[questionIndex];
+    const feedbackDiv = document.getElementById(`feedback-${questionIndex}`);
+
+    const isCorrect = userAnswer === question.correctAnswer;
+
+    feedbackDiv.className = `quiz-feedback ${isCorrect ? 'correct' : 'incorrect'}`;
+    feedbackDiv.style.display = 'block';
+
+    feedbackDiv.innerHTML = isCorrect ? question.feedback.correct : question.feedback.incorrect;
+}
+
+function nextQuestion() {
+    if (currentQuestionIndex < shuffledQuestions.length - 1) {
+        currentQuestionIndex++;
+        showQuestion(currentQuestionIndex);
+    }
+}
+
+function previousQuestion() {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        showQuestion(currentQuestionIndex);
+    }
+}
+
+function submitAssessment() {
+    // Calculate score
+    score = 0;
+    userAnswers.forEach((answer, index) => {
+        if (answer === shuffledQuestions[index].correctAnswer) {
+            score++;
+        }
+    });
+
+    const percentage = Math.round((score / shuffledQuestions.length) * 100);
+    const passed = percentage >= 70;
+
+    // Hide quiz screen
+    document.getElementById('quiz-screen').style.display = 'none';
+
+    // Show results
+    document.getElementById('results-screen').style.display = 'block';
+
+    const resultContainer = document.getElementById('result-container');
+    resultContainer.className = passed ? 'result-pass' : 'result-fail';
+
+    resultContainer.innerHTML = `
+        <h2 style="font-size: 2rem; margin-bottom: 1rem; color: ${passed ? '#10b981' : '#ef4444'};">
+            ${passed ? '🎉 Congratulations!' : '📚 Keep Learning'}
+        </h2>
+        <div class="result-score">${percentage}%</div>
+        <div class="result-message">
+            ${passed
+                ? `You scored ${score} out of ${questions.length} questions correct. You have demonstrated comprehensive understanding of IPV recognition and response!`
+                : `You scored ${score} out of ${questions.length} questions correct. You need 70% (14/20) to pass. Review the course materials and try again.`
+            }
+        </div>
+        ${passed
+            ? '<p style="margin-top: 1.5rem; color: #065f46; font-size: 1.125rem; line-height: 1.8;">You are now prepared to recognize intimate partner violence, apply trauma-informed response strategies, and support survivors with compassion and competence. Remember: everyone has a role in ending intimate partner violence.</p>'
+            : '<p style="margin-top: 1.5rem; color: #7f1d1d; font-size: 1.125rem; line-height: 1.8;">We recommend reviewing the course materials, especially focusing on the concepts from questions you missed. Understanding these principles is essential for providing trauma-informed support to survivors.</p>'
+        }
+    `;
+}
+</script>
+
+</body>
+</html>

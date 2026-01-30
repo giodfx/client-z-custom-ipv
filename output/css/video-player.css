@@ -1,0 +1,1682 @@
+
+/* ============================================
+   VIDEO SLIDESHOW PLAYER - AIC Classical Style
+   ============================================ */
+
+.video-player-section {
+  margin: 2rem 0 3rem 0;
+  background: var(--color-cream);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(30, 75, 142, 0.15);
+  border: 2px solid var(--color-border);
+}
+
+.video-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+}
+
+.video-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.video-title svg {
+  width: 20px;
+  height: 20px;
+  opacity: 0.9;
+}
+
+.video-duration {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  opacity: 0.9;
+  background: rgba(255,255,255,0.15);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+}
+
+.video-container {
+  position: relative;
+  background: #0f172a;
+  aspect-ratio: 16/9;
+  overflow: hidden;  /* Contain all animations */
+}
+
+.video-scenes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;  /* Contain Ken Burns animation */
+}
+
+.video-scene {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  overflow: hidden;  /* CRITICAL: Contain Ken Burns animation */
+}
+
+.video-scene.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Ken Burns Animation */
+@keyframes ken-burns {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+
+.scene-background {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.video-scene.active .scene-background {
+  animation: ken-burns 15s ease-out forwards;
+}
+
+/* ============================================
+   Scene Overlay & Content - Enhanced Design
+   ============================================ */
+
+.scene-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;  /* Center vertically instead of bottom */
+  /* Darker gradient for ADA compliance - better contrast */
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.95) 0%,
+    rgba(15, 23, 42, 0.85) 50%,
+    rgba(15, 23, 42, 0.75) 100%
+  );
+}
+
+.scene-content {
+  width: 50%;  /* Reduced from 55% to prevent cut-off */
+  padding: 1.5rem 2rem;  /* Reduced padding */
+  padding-bottom: 5rem;  /* Extra padding to avoid control overlap */
+  color: #ffffff !important;  /* Force white text */
+  background: none !important;  /* Force no background */
+  overflow: hidden;  /* Prevent overflow */
+}
+
+.scene-content * {
+  color: #ffffff !important;  /* Force ALL children to be white */
+  background: none !important;  /* Force no backgrounds on any children */
+}
+
+.scene-heading,
+.video-scene .scene-heading,
+.video-player-section .scene-heading,
+h2.scene-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);  /* Reduced from 1.25-2rem to 1-1.5rem */
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;  /* Reduced margin */
+  line-height: 1.2;  /* Tighter line height */
+  text-shadow: 0 2px 12px rgba(0,0,0,0.8);
+  color: #ffffff !important;
+  background: none !important;
+  max-width: 100%;  /* Allow full width */
+}
+
+/* Teal accent line under heading for better contrast */
+.scene-heading::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #38b2ac, #4fd1c5);
+  margin-top: 0.75rem;
+  border-radius: 2px;
+}
+
+.scene-bullets,
+ul.scene-bullets,
+.video-scene .scene-bullets,
+.video-player-section .scene-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;  /* Allow full width */
+  background: none !important;
+}
+
+.scene-bullets li,
+ul.scene-bullets li,
+.video-scene .scene-bullets li,
+.video-player-section .scene-bullets li {
+  font-family: var(--font-sans);
+  font-size: clamp(0.75rem, 1.2vw, 0.9rem);  /* Reduced from 0.875-1.0625rem to 0.75-0.9rem */
+  padding: 0.4rem 0;  /* Reduced padding */
+  padding-left: 1.5rem;  /* Reduced left padding */
+  position: relative;
+  color: #ffffff !important;
+  line-height: 1.4;  /* Tighter line height */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  background: none !important;
+}
+
+.scene-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  /* Changed to bright teal for better visibility */
+  background: #4fd1c5;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(79, 209, 197, 0.6);
+}
+
+/* Staggered animation for bullets */
+@keyframes bullet-enter {
+  0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.video-scene.active .scene-bullets li {
+  animation: bullet-enter 0.5s ease-out forwards;
+}
+
+.video-scene.active .scene-bullets li:nth-child(1) { animation-delay: 0.2s; opacity: 0; }
+.video-scene.active .scene-bullets li:nth-child(2) { animation-delay: 0.35s; opacity: 0; }
+.video-scene.active .scene-bullets li:nth-child(3) { animation-delay: 0.5s; opacity: 0; }
+.video-scene.active .scene-bullets li:nth-child(4) { animation-delay: 0.65s; opacity: 0; }
+.video-scene.active .scene-bullets li:nth-child(5) { animation-delay: 0.8s; opacity: 0; }
+
+/* ============================================
+   Video Controls - Classic Style
+   ============================================ */
+
+.video-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.98) 0%, transparent 100%);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.video-container:not(:hover) .video-controls {
+  opacity: 0.4;
+}
+
+.video-container:hover .video-controls {
+  opacity: 1;
+}
+
+.video-btn {
+  /* Brighter controls for better visibility */
+  background: rgba(56, 178, 172, 0.25);
+  border: 1px solid rgba(79, 209, 197, 0.4);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #fff;
+}
+
+.video-btn:hover:not(:disabled) {
+  background: rgba(56, 178, 172, 0.5);
+  border-color: rgba(79, 209, 197, 0.8);
+  transform: scale(1.05);
+}
+
+.video-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.video-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.video-play-pause {
+  width: 52px;
+  height: 52px;
+  /* Changed to bright teal for better visibility */
+  background: #38b2ac;
+  border: 2px solid #4fd1c5;
+}
+
+.video-play-pause:hover {
+  background: #4fd1c5;
+  transform: scale(1.08);
+}
+
+.video-play-pause svg {
+  width: 22px;
+  height: 22px;
+  /* Changed to white for contrast with teal background */
+  color: #ffffff;
+}
+
+.video-progress {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.progress-bar {
+  height: 5px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.progress-fill {
+  height: 100%;
+  /* Changed to teal gradient for consistency */
+  background: linear-gradient(90deg, #38b2ac, #4fd1c5);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.video-instructions {
+  padding: 0.75rem 1.5rem;
+  background: var(--color-cream);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* ============================================
+   Closed Captions
+   ============================================ */
+
+.video-caption {
+  position: absolute;
+  bottom: 80px;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  z-index: 90;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.video-caption.hidden {
+  opacity: 0;
+}
+
+.video-caption-text {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 100%;
+  font-family: var(--font-sans);
+  text-shadow: none;
+}
+
+/* CC Button active state */
+.video-btn.video-cc.active {
+  background: rgba(56, 178, 172, 0.6);
+  border-color: #4fd1c5;
+}
+
+.video-btn.video-cc svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Volume slider */
+.video-volume {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.video-volume-slider {
+  width: 70px;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s, width 0.2s;
+  width: 0;
+}
+
+.video-volume:hover .video-volume-slider,
+.video-volume-slider:focus {
+  opacity: 1;
+  width: 70px;
+}
+
+.video-volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #38b2ac;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.video-volume-slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #38b2ac;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+/* Fullscreen button */
+.video-btn.video-fullscreen svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Fullscreen mode */
+.video-player-section.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  border-radius: 0;
+  margin: 0;
+}
+
+.video-player-section.fullscreen .video-container {
+  height: 100%;
+  aspect-ratio: unset;
+}
+
+.video-player-section.fullscreen .video-header,
+.video-player-section.fullscreen .video-instructions {
+  display: none;
+}
+
+/* ============================================
+   Slide Templates - Intro
+   ============================================ */
+
+.video-scene[data-template="intro"] .scene-overlay {
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(30, 75, 142, 0.9), rgba(15, 37, 71, 0.95));
+}
+
+.video-scene[data-template="intro"] .scene-content {
+  text-align: center;
+  padding: 3rem;
+}
+
+.video-scene[data-template="intro"] .scene-heading {
+  font-size: clamp(2rem, 5vw, 3rem);
+  max-width: 100%;
+}
+
+.video-scene[data-template="intro"] .scene-heading::after {
+  margin: 1rem auto 0;
+  width: 120px;
+}
+
+/* ============================================
+   Slide Templates - Split Left (Content on RIGHT - flipped!)
+   ============================================ */
+
+.video-scene[data-template="split-left"] .scene-overlay,
+.video-scene.template-split-left .scene-overlay {
+  align-items: stretch;
+  justify-content: flex-end;  /* Push content to the right */
+  /* Add gradient for contrast on RIGHT side where content is */
+  background: linear-gradient(
+    to left,
+    rgba(15, 23, 42, 0.95) 0%,
+    rgba(15, 23, 42, 0.85) 40%,
+    transparent 60%
+  );
+}
+
+.video-scene[data-template="split-left"] .scene-content,
+.video-scene.template-split-left .scene-content {
+  width: 45%;  /* Reduced from 50% to prevent cut-off */
+  height: 100%;  /* Full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 2rem;  /* Reduced padding */
+  padding-bottom: 5rem;  /* Space above controls */
+  background: none;
+  backdrop-filter: none;
+}
+
+/* ============================================
+   Slide Templates - Split Right (Content on LEFT - flipped!)
+   ============================================ */
+
+.video-scene[data-template="split-right"] .scene-overlay,
+.video-scene.template-split-right .scene-overlay {
+  align-items: stretch;
+  justify-content: flex-start;  /* Push content to the left */
+  /* Add gradient for contrast on LEFT side where content is */
+  background: linear-gradient(
+    to right,
+    rgba(15, 23, 42, 0.95) 0%,
+    rgba(15, 23, 42, 0.85) 40%,
+    transparent 60%
+  );
+}
+
+.video-scene[data-template="split-right"] .scene-content,
+.video-scene.template-split-right .scene-content {
+  width: 45%;  /* Reduced from 50% to prevent cut-off */
+  height: 100%;  /* Full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 2rem;  /* Reduced padding */
+  padding-bottom: 5rem;  /* Space above controls */
+  background: none;
+  backdrop-filter: none;
+}
+
+/* ============================================
+   Slide Templates - Diagonal
+   ============================================ */
+
+.video-scene[data-template="diagonal"] .scene-overlay,
+.video-scene.template-diagonal .scene-overlay {
+  align-items: center;  /* Center vertically */
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.95) 0%,
+    rgba(15, 23, 42, 0.85) 40%,
+    rgba(15, 23, 42, 0.5) 80%
+  );
+}
+
+.video-scene[data-template="diagonal"] .scene-content,
+.video-scene.template-diagonal .scene-content {
+  width: 48%;  /* Reduced from 55% */
+  height: 100%;  /* Full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 2rem;  /* Reduced padding */
+  padding-bottom: 5rem;  /* Extra padding above controls */
+}
+
+/* ============================================
+   Slide Templates - Outro/Summary
+   ============================================ */
+
+.video-scene[data-template="outro"] .scene-overlay {
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(30, 75, 142, 0.95), rgba(15, 37, 71, 0.98));
+}
+
+.video-scene[data-template="outro"] .scene-content {
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-scene[data-template="outro"] .scene-heading {
+  max-width: 100%;
+}
+
+.video-scene[data-template="outro"] .scene-heading::after {
+  margin: 1rem auto 0;
+}
+
+.video-scene[data-template="outro"] .scene-bullets {
+  text-align: left;
+  display: inline-block;
+}
+
+.video-scene[data-template="outro"] .scene-bullets li {
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Checkmark icon for outro */
+.video-scene[data-template="outro"] .scene-content::before {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  background: #38b2ac;
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='%231a1a1a' stroke-width='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
+  background-size: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 32px rgba(184, 134, 11, 0.4);
+}
+
+/* ============================================
+   Slide Templates - Stats (Progress Bars)
+   Perfect for: percentages, breakdowns, comparisons with numbers
+   ============================================ */
+
+.video-scene[data-template="stats"] .scene-overlay,
+.video-scene.template-stats .scene-overlay {
+  align-items: stretch;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.97), rgba(30, 41, 59, 0.95));
+}
+
+.video-scene[data-template="stats"] .scene-content,
+.video-scene.template-stats .scene-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 3rem 5rem;
+}
+
+.video-scene[data-template="stats"] .scene-heading {
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.video-scene[data-template="stats"] .scene-heading::after {
+  margin: 0.75rem auto 0;
+}
+
+/* Stats bars styling */
+.stats-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.stat-value {
+  font-weight: 700;
+  color: var(--color-gold);
+}
+
+.stat-bar {
+  height: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+
+.stat-fill {
+  height: 100%;
+  border-radius: 7px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+  transition: width 1s ease-out;
+  width: 0;
+}
+
+.video-scene.active .stat-fill {
+  animation: stat-grow 1.2s ease-out forwards;
+}
+
+@keyframes stat-grow {
+  0% { width: 0; }
+  100% { width: var(--stat-percent); }
+}
+
+.stat-fill.blue {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+.stat-fill.green {
+  background: linear-gradient(90deg, #10b981, #34d399);
+}
+
+.stat-fill.red {
+  background: linear-gradient(90deg, #ef4444, #f87171);
+}
+
+/* ============================================
+   Slide Templates - Comparison (Side by Side)
+   Perfect for: before/after, pros/cons, plan comparisons
+   ============================================ */
+
+.video-scene[data-template="comparison"] .scene-overlay,
+.video-scene.template-comparison .scene-overlay {
+  align-items: stretch;
+  background: none;
+}
+
+.video-scene[data-template="comparison"] .scene-content,
+.video-scene.template-comparison .scene-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  padding-bottom: 4rem;
+}
+
+.comparison-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.comparison-side--left {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.9));
+  padding-left: 3rem;
+  padding-right: 2.5rem;
+}
+
+.comparison-side--right {
+  background: linear-gradient(135deg, rgba(30, 75, 142, 0.9), rgba(25, 65, 125, 0.95));
+  padding-left: 2.5rem;
+  padding-right: 3rem;
+}
+
+.comparison-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gold);
+  margin-bottom: 0.75rem;
+}
+
+.comparison-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.comparison-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comparison-list li {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+}
+
+.comparison-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #38b2ac;
+  border-radius: 50%;
+}
+
+/* VS badge in center */
+.comparison-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: 1rem;
+  color: #1a1a1a;
+  box-shadow: 0 8px 32px rgba(184, 134, 11, 0.5);
+  z-index: 10;
+  border: 3px solid rgba(255,255,255,0.3);
+}
+
+/* Comparison template fallback for bullet-list content */
+.video-scene[data-template="comparison"] .scene-bullets,
+.video-scene.template-comparison .scene-bullets {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+  max-width: 100%;
+  counter-reset: comparison-item;
+}
+
+.video-scene[data-template="comparison"] .scene-bullets li,
+.video-scene.template-comparison .scene-bullets li {
+  background: none !important;  /* Removed white background */
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  padding-left: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.video-scene[data-template="comparison"] .scene-bullets li:nth-child(odd),
+.video-scene.template-comparison .scene-bullets li:nth-child(odd) {
+  border-left: 3px solid var(--color-gold);
+}
+
+.video-scene[data-template="comparison"] .scene-bullets li:nth-child(even),
+.video-scene.template-comparison .scene-bullets li:nth-child(even) {
+  border-left: 3px solid #4a90c2;
+}
+
+.video-scene[data-template="comparison"] .scene-bullets li::before,
+.video-scene.template-comparison .scene-bullets li::before {
+  display: none;
+}
+
+.video-scene[data-template="comparison"] .scene-heading,
+.video-scene.template-comparison .scene-heading {
+  text-align: center;
+  max-width: 100%;
+}
+
+.video-scene[data-template="comparison"] .scene-heading::after,
+.video-scene.template-comparison .scene-heading::after {
+  margin: 0.75rem auto 1.5rem;
+}
+
+/* ============================================
+   Slide Templates - Quote/Highlight
+   Perfect for: key statements, definitions, important facts
+   ============================================ */
+
+.video-scene[data-template="quote"] .scene-overlay,
+.video-scene.template-quote .scene-overlay {
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.9));
+}
+
+.video-scene[data-template="quote"] .scene-content,
+.video-scene.template-quote .scene-content {
+  width: 85%;
+  max-width: 800px;
+  text-align: center;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+}
+
+.video-scene[data-template="quote"] .scene-heading {
+  max-width: 100%;
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  line-height: 1.4;
+  font-style: italic;
+  position: relative;
+}
+
+.video-scene[data-template="quote"] .scene-heading::before {
+  content: '"';
+  position: absolute;
+  top: -0.5em;
+  left: -0.3em;
+  font-size: 4rem;
+  color: var(--color-gold);
+  opacity: 0.5;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.video-scene[data-template="quote"] .scene-heading::after {
+  margin: 1.5rem auto 0;
+  width: 100px;
+}
+
+.video-scene[data-template="quote"] .scene-bullets {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.video-scene[data-template="quote"] .scene-bullets li {
+  text-align: center;
+  padding-left: 0;
+}
+
+.video-scene[data-template="quote"] .scene-bullets li::before {
+  display: none;
+}
+
+/* ============================================
+   Slide Templates - Icon Focus
+   Perfect for: single concept with icon emphasis
+   ============================================ */
+
+.video-scene[data-template="icon-focus"] .scene-overlay,
+.video-scene.template-icon-focus .scene-overlay {
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, rgba(30, 75, 142, 0.85), rgba(15, 23, 42, 0.95));
+}
+
+.video-scene[data-template="icon-focus"] .scene-content,
+.video-scene.template-icon-focus .scene-content {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.video-scene[data-template="icon-focus"] .scene-content::before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+  border-radius: 50%;
+  box-shadow: 0 12px 40px rgba(184, 134, 11, 0.4);
+}
+
+.video-scene[data-template="icon-focus"] .scene-heading {
+  max-width: 100%;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.video-scene[data-template="icon-focus"] .scene-heading::after {
+  margin: 1rem auto 0;
+}
+
+.video-scene[data-template="icon-focus"] .scene-bullets {
+  max-width: 100%;
+}
+
+.video-scene[data-template="icon-focus"] .scene-bullets li {
+  text-align: center;
+  padding-left: 0;
+}
+
+.video-scene[data-template="icon-focus"] .scene-bullets li::before {
+  display: none;
+}
+
+/* ============================================
+   Slide Templates - Process Steps
+   Perfect for: sequential steps, workflows
+   ============================================ */
+
+.video-scene[data-template="steps"] .scene-overlay,
+.video-scene.template-steps .scene-overlay {
+  align-items: stretch;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.9));
+}
+
+.video-scene[data-template="steps"] .scene-content,
+.video-scene.template-steps .scene-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem 5rem;
+}
+
+.video-scene[data-template="steps"] .scene-heading {
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.video-scene[data-template="steps"] .scene-heading::after {
+  margin: 0.75rem auto 0;
+}
+
+.video-scene[data-template="steps"] .scene-bullets {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  max-width: 900px;
+  counter-reset: step;
+}
+
+.video-scene[data-template="steps"] .scene-bullets li {
+  flex: 1;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  padding-left: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.video-scene[data-template="steps"] .scene-bullets li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
+  background: #38b2ac;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+
+/* Arrow connectors between steps */
+.video-scene[data-template="steps"] .scene-bullets li:not(:last-child)::after {
+  content: '→';
+  position: absolute;
+  right: -1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: var(--color-gold);
+  opacity: 0.7;
+}
+
+/* ============================================
+   Slide Templates - Big Number
+   Perfect for: statistics, dollar amounts, percentages
+   ============================================ */
+
+.video-scene[data-template="big-number"] .scene-overlay,
+.video-scene.template-big-number .scene-overlay {
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, rgba(30, 75, 142, 0.9), rgba(15, 23, 42, 0.97));
+}
+
+.video-scene[data-template="big-number"] .scene-content,
+.video-scene.template-big-number .scene-content {
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.big-number {
+  font-family: var(--font-serif);
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 800;
+  color: var(--color-gold);
+  line-height: 1;
+  text-shadow: 0 4px 24px rgba(184, 134, 11, 0.4);
+  margin-bottom: 1rem;
+}
+
+.video-scene[data-template="big-number"] .scene-heading {
+  max-width: 100%;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.video-scene[data-template="big-number"] .scene-heading::after {
+  margin: 1rem auto 0;
+}
+
+.video-scene[data-template="big-number"] .scene-bullets {
+  max-width: 100%;
+}
+
+.video-scene[data-template="big-number"] .scene-bullets li {
+  text-align: center;
+  padding-left: 0;
+}
+
+.video-scene[data-template="big-number"] .scene-bullets li::before {
+  display: none;
+}
+
+/* ============================================
+   Responsive Design - Tablet
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .scene-heading {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    max-width: 90%;
+  }
+
+  .scene-bullets li {
+    font-size: clamp(0.8rem, 1.5vw, 0.95rem);
+    padding: 0.4rem 0;
+  }
+}
+
+/* ============================================
+   Responsive Design - Mobile
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* Force all templates to show content at bottom on mobile */
+  .scene-overlay {
+    align-items: flex-end !important;
+    justify-content: flex-start !important;
+    background: linear-gradient(
+      to top,
+      rgba(15, 23, 42, 0.98) 0%,
+      rgba(15, 23, 42, 0.85) 40%,
+      rgba(15, 23, 42, 0.4) 70%,
+      transparent 100%
+    ) !important;
+  }
+
+  .scene-content {
+    width: 100% !important;
+    height: auto !important;
+    padding: 1rem 1rem 4.5rem 1rem !important;
+    background: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .scene-heading {
+    font-size: 0.85rem !important;  /* Smaller for mobile */
+    max-width: 100%;
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
+    word-wrap: break-word;  /* Ensure text wraps */
+    overflow-wrap: break-word;
+  }
+
+  .scene-heading::after {
+    width: 40px;
+    height: 2px;
+    margin-top: 0.4rem;
+  }
+
+  .scene-bullets {
+    max-width: 100%;
+    margin-top: 0.25rem;
+  }
+
+  .scene-bullets li {
+    font-size: 0.7rem !important;  /* Smaller for mobile */
+    padding: 0.25rem 0;  /* Tighter spacing */
+    padding-left: 1rem;
+    line-height: 1.3;
+    word-wrap: break-word;  /* Ensure text wraps */
+    overflow-wrap: break-word;
+    hyphens: auto;  /* Allow hyphenation for long words */
+  }
+
+  .scene-bullets li::before {
+    width: 5px;
+    height: 5px;
+    left: 0;
+  }
+
+  /* Show 3 bullets on mobile (hide 4th+) - but make all visible if needed */
+  .scene-bullets li:nth-child(n+4) {
+    font-size: 0.65rem !important;  /* Even smaller for 4th+ items */
+    opacity: 0.9;
+  }
+
+  /* Ensure all bullets can display if space allows */
+  .scene-bullets li:nth-child(3) {
+    display: list-item !important;
+  }
+
+  /* Video controls - compact for mobile */
+  .video-controls {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0.6rem 0.75rem;
+  }
+
+  .video-progress {
+    order: 10;
+    width: 100%;
+    margin-top: 0.4rem;
+  }
+
+  .progress-text {
+    font-size: 0.65rem;
+  }
+
+  .video-play-pause {
+    width: 40px;
+    height: 40px;
+  }
+
+  .video-play-pause svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .video-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .video-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Caption adjustments for mobile */
+  .video-caption {
+    bottom: 70px;
+    left: 5%;
+    right: 5%;
+  }
+
+  .video-caption-text {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  /* Intro template on mobile */
+  .video-scene[data-template="intro"] .scene-content {
+    padding: 1.5rem 1rem 4.5rem !important;
+    text-align: center;
+  }
+
+  .video-scene[data-template="intro"] .scene-heading {
+    font-size: 1.25rem !important;
+  }
+
+  /* Outro template on mobile - horizontal layout with checkmark on left */
+  .video-scene[data-template="outro"] .scene-content {
+    padding: 1.5rem 1rem 4.5rem !important;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .video-scene[data-template="outro"] .scene-content::before {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background-size: 20px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .video-scene[data-template="outro"] .scene-heading {
+    font-size: 1.1rem !important;
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  .video-scene[data-template="outro"] .scene-heading::after {
+    display: none;
+  }
+
+  .video-scene[data-template="outro"] .scene-bullets {
+    text-align: left !important;
+    display: block;
+    max-width: none;
+  }
+
+  .video-scene[data-template="outro"] .scene-bullets li {
+    text-align: left !important;
+    padding-left: 1.25rem !important;
+    white-space: nowrap;
+    font-size: 0.75rem !important;
+  }
+
+  .video-scene[data-template="outro"] .scene-bullets li::before {
+    display: block !important;
+  }
+
+  .video-scene[data-template="outro"] .scene-bullets li:nth-child(3) {
+    display: list-item !important;
+  }
+
+  /* Header adjustments */
+  .video-header {
+    padding: 0.6rem 1rem;
+  }
+
+  .video-title {
+    font-size: 0.9rem;
+    gap: 0.5rem;
+  }
+
+  .video-title svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .video-duration {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .video-instructions {
+    padding: 0.5rem 1rem;
+    font-size: 0.65rem;
+  }
+
+  /* ----------------------------------------
+     Comparison template mobile fixes
+     ---------------------------------------- */
+  .video-scene[data-template="comparison"] .scene-overlay,
+  .video-scene.template-comparison .scene-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(15, 23, 42, 0.98) 0%,
+      rgba(15, 23, 42, 0.95) 60%,
+      rgba(15, 23, 42, 0.7) 85%,
+      transparent 100%
+    ) !important;
+  }
+
+  .video-scene[data-template="comparison"] .scene-content,
+  .video-scene.template-comparison .scene-content {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    padding: 0.75rem 0.5rem 4.5rem !important;
+    gap: 0.25rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .comparison-side {
+    padding: 0.5rem 0.6rem;
+    width: 48%;
+    min-width: 140px;
+    flex: 0 0 48%;
+  }
+
+  .comparison-side--left {
+    background: rgba(15, 23, 42, 0.6) !important;
+    border-radius: 8px;
+  }
+
+  .comparison-side--right {
+    background: rgba(30, 75, 142, 0.6) !important;
+    border-radius: 8px;
+  }
+
+  .comparison-label {
+    font-size: 0.55rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .comparison-title {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.35rem;
+  }
+
+  .comparison-list li {
+    font-size: 0.65rem;
+    padding: 0.15rem 0 0.15rem 1rem;
+  }
+
+  .comparison-list li::before {
+    width: 5px;
+    height: 5px;
+  }
+
+  .comparison-badge {
+    width: 28px;
+    height: 28px;
+    font-size: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    flex: none;
+    order: 0;
+    z-index: 20;
+  }
+
+  /* Comparison fallback grid - 2 columns on mobile */
+  .video-scene[data-template="comparison"] .scene-bullets,
+  .video-scene.template-comparison .scene-bullets {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.35rem !important;
+    padding: 0 0.5rem;
+  }
+
+  .video-scene[data-template="comparison"] .scene-bullets li,
+  .video-scene.template-comparison .scene-bullets li {
+    padding: 0.4rem 0.5rem !important;
+    font-size: 0.65rem !important;
+  }
+
+  /* ----------------------------------------
+     Big Number template mobile fixes
+     ---------------------------------------- */
+  .video-scene[data-template="big-number"] .scene-overlay,
+  .video-scene.template-big-number .scene-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(15, 23, 42, 0.95) 0%,
+      rgba(30, 75, 142, 0.7) 50%,
+      transparent 100%
+    ) !important;
+  }
+
+  .video-scene[data-template="big-number"] .scene-content,
+  .video-scene.template-big-number .scene-content {
+    padding: 1rem 1rem 4.5rem !important;
+  }
+
+  .video-scene[data-template="big-number"] .big-number,
+  .big-number {
+    font-size: clamp(2rem, 10vw, 3.5rem) !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .video-scene[data-template="big-number"] .scene-heading {
+    font-size: 1rem !important;
+  }
+
+  .video-scene[data-template="big-number"] .scene-bullets li {
+    font-size: 0.75rem !important;
+  }
+
+  /* ----------------------------------------
+     Steps template mobile fixes
+     ---------------------------------------- */
+  .video-scene[data-template="steps"] .scene-overlay,
+  .video-scene.template-steps .scene-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(15, 23, 42, 0.98) 0%,
+      rgba(15, 23, 42, 0.85) 60%,
+      transparent 100%
+    ) !important;
+  }
+
+  .video-scene[data-template="steps"] .scene-content,
+  .video-scene.template-steps .scene-content {
+    padding: 1.25rem 0.75rem 4.5rem !important;
+    align-items: center !important;
+  }
+
+  .video-scene[data-template="steps"] .scene-heading {
+    font-size: 0.9rem !important;
+    margin-bottom: 1.25rem;
+    text-align: center;
+  }
+
+  .video-scene[data-template="steps"] .scene-bullets {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 0.4rem !important;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 0.75rem 0.25rem 0.5rem;
+    width: auto;
+    max-width: 100%;
+    justify-content: center !important;
+  }
+
+  .video-scene[data-template="steps"] .scene-bullets li {
+    flex: 0 1 auto !important;
+    min-width: 85px !important;
+    max-width: 95px;
+    padding: 1.25rem 0.4rem 0.6rem !important;
+    font-size: 0.6rem !important;
+    display: flex !important;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.3;
+  }
+
+  .video-scene[data-template="steps"] .scene-bullets li::before {
+    width: 20px;
+    height: 20px;
+    font-size: 0.65rem;
+    top: -8px;
+  }
+
+  .video-scene[data-template="steps"] .scene-bullets li::after {
+    font-size: 0.8rem !important;
+    right: -0.35rem;
+  }
+
+  /* Show all steps on mobile */
+  .video-scene[data-template="steps"] .scene-bullets li:nth-child(n+3),
+  .video-scene[data-template="steps"] .scene-bullets li:nth-child(n+4) {
+    display: flex !important;
+  }
+
+  /* ----------------------------------------
+     Quote template mobile fixes
+     ---------------------------------------- */
+  .video-scene[data-template="quote"] .scene-content {
+    width: 95% !important;
+    padding: 1.5rem 1rem !important;
+  }
+
+  .video-scene[data-template="quote"] .scene-heading {
+    font-size: 1rem !important;
+  }
+
+  .video-scene[data-template="quote"] .scene-heading::before {
+    font-size: 2.5rem;
+    top: -0.3em;
+    left: -0.1em;
+  }
+
+  /* ----------------------------------------
+     Icon Focus template mobile fixes
+     ---------------------------------------- */
+  .video-scene[data-template="icon-focus"] .scene-content::before {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+
+  .video-scene[data-template="icon-focus"] .scene-heading {
+    font-size: 1rem !important;
+  }
+}
+
+/* ============================================
+   Responsive Design - Small Mobile
+   ============================================ */
+
+@media (max-width: 480px) {
+  .scene-heading {
+    font-size: 0.9rem !important;
+  }
+
+  .scene-bullets li {
+    font-size: 0.75rem !important;
+  }
+
+  /* Still show 3 bullets on small screens */
+  .scene-bullets li:nth-child(n+4) {
+    display: none;
+  }
+
+  .scene-bullets li:nth-child(3) {
+    display: list-item !important;
+  }
+
+  .video-play-pause {
+    width: 36px;
+    height: 36px;
+  }
+
+  .video-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Big Number - even smaller on tiny screens */
+  .video-scene[data-template="big-number"] .big-number,
+  .big-number {
+    font-size: clamp(1.75rem, 8vw, 2.5rem) !important;
+  }
+
+  /* Steps - smaller on tiny screens, centered */
+  .video-scene[data-template="steps"] .scene-bullets {
+    justify-content: center !important;
+    gap: 0.3rem !important;
+  }
+
+  .video-scene[data-template="steps"] .scene-bullets li {
+    min-width: 75px !important;
+    max-width: 85px;
+    padding: 1.1rem 0.35rem 0.5rem !important;
+    font-size: 0.55rem !important;
+    display: flex !important;
+  }
+
+  .video-scene[data-template="steps"] .scene-bullets li::before {
+    width: 18px;
+    height: 18px;
+    font-size: 0.55rem;
+    top: -7px;
+  }
+
+  .video-scene[data-template="steps"] .scene-bullets li::after {
+    font-size: 0.7rem !important;
+    right: -0.25rem;
+  }
+
+  /* Outro - smaller checkmark on left, show all 3 bullets */
+  .video-scene[data-template="outro"] .scene-content::before {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    background-size: 16px !important;
+    margin: 0 !important;
+  }
+
+  .video-scene[data-template="outro"] .scene-heading {
+    font-size: 0.95rem !important;
+  }
+
+  .video-scene[data-template="outro"] .scene-bullets li {
+    font-size: 0.7rem !important;
+  }
+
+  .video-scene[data-template="outro"] .scene-bullets li:nth-child(3) {
+    display: list-item !important;
+  }
+
+  /* Comparison - side by side but smaller */
+  .comparison-side {
+    min-width: 130px;
+    padding: 0.4rem 0.5rem;
+  }
+
+  .comparison-label {
+    font-size: 0.5rem;
+  }
+
+  .comparison-title {
+    font-size: 0.75rem !important;
+  }
+
+  .comparison-list li {
+    font-size: 0.55rem;
+    padding: 0.1rem 0 0.1rem 0.8rem;
+  }
+
+  .comparison-badge {
+    width: 24px;
+    height: 24px;
+    font-size: 0.5rem;
+  }
+
+  .video-scene[data-template="comparison"] .scene-bullets li {
+    padding: 0.35rem 0.4rem !important;
+    font-size: 0.6rem !important;
+  }
+}
+
+/* ============================================
+   Reduced Motion Support
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .scene-background,
+  .video-scene,
+  .scene-bullets li,
+  .video-btn,
+  .progress-fill {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .video-scene.active .scene-bullets li {
+    opacity: 1;
+  }
+}

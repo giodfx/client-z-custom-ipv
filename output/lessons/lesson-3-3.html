@@ -1,0 +1,4941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IPV Recognition & Response Course">
+    <title>Responding to Someone Experiencing IPV - IPV Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* ═══════════════════════════════════════════════════════════════
+           CSS CUSTOM PROPERTIES (Design Tokens)
+           ═══════════════════════════════════════════════════════════════ */
+        :root {
+            /* Colors - Ethereal Depth Palette */
+            --color-deep-navy: #1a1a2e;
+            --color-twilight-purple: #2a1a3e;
+            --color-ocean-blue: #2a5a7a;
+            --color-teal: #38b2ac;
+            --color-bright-cyan: #80ffff;
+            --color-warm-gold: #ffd700;
+            --color-soft-peach: #ffd4b8;
+            --color-white: #ffffff;
+            --color-light-gray: #f5f5f7;
+            --color-text: #1a1a2e;
+            --color-text-muted: #6b7280;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-error: #ef4444;
+
+            /* Module Zone Colors */
+            --zone-surface: #38b2ac;
+            --zone-twilight: #4a90a8;
+            --zone-deep: #2a5a7a;
+
+            /* Typography */
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-size-xs: 0.75rem;    /* 12px */
+            --font-size-sm: 0.875rem;   /* 14px */
+            --font-size-base: 1rem;     /* 16px */
+            --font-size-lg: 1.125rem;   /* 18px */
+            --font-size-xl: 1.25rem;    /* 20px */
+            --font-size-2xl: 1.5rem;    /* 24px */
+            --font-size-3xl: 1.875rem;  /* 30px */
+            --font-size-4xl: 2.25rem;   /* 36px */
+            --line-height-tight: 1.25;
+            --line-height-normal: 1.5;
+            --line-height-relaxed: 1.75;
+
+            /* Spacing */
+            --space-1: 0.25rem;
+            --space-2: 0.5rem;
+            --space-3: 0.75rem;
+            --space-4: 1rem;
+            --space-5: 1.25rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-10: 2.5rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+
+            /* Borders & Radius */
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --radius-2xl: 1.5rem;
+            --radius-full: 9999px;
+
+            /* Shadows */
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px rgba(0,0,0,0.15);
+
+            /* Transitions */
+            --transition-fast: 150ms ease;
+            --transition-base: 250ms ease;
+            --transition-slow: 350ms ease;
+
+            /* Layout */
+            --content-max-width: 720px;
+            --sidebar-width: 280px;
+            
+            --min-tap-target: 44px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           RESET & BASE STYLES
+           ═══════════════════════════════════════════════════════════════ */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        /* Respect user motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-normal);
+            color: var(--color-text);
+            background: url('../media/backgrounds/lesson-bg-clean.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           ACCESSIBILITY: Skip Link
+           ═══════════════════════════════════════════════════════════════ */
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: var(--space-4);
+            z-index: 9999;
+            padding: var(--space-3) var(--space-4);
+            background: var(--color-teal);
+            color: var(--color-white);
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            transition: top var(--transition-fast);
+        }
+
+        .skip-link:focus {
+            top: var(--space-4);
+            outline: 3px solid var(--color-warm-gold);
+            outline-offset: 2px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           ACCESSIBILITY: Focus Styles
+           ═══════════════════════════════════════════════════════════════ */
+        :focus {
+            outline: none;
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--color-teal);
+            outline-offset: 2px;
+        }
+
+        button:focus-visible,
+        a:focus-visible,
+        [tabindex]:focus-visible {
+            outline: 3px solid var(--color-teal);
+            outline-offset: 2px;
+        }
+
+        
+        
+        
+        /* ═══════════════════════════════════════════════════════════════
+           HERO SECTION (with integrated navigation)
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-hero {
+            position: relative;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(42, 90, 122, 0.7)), center center / cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 0 0 var(--radius-2xl) var(--radius-2xl);
+            overflow: hidden;
+        }
+
+        .lesson-hero-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: var(--space-4) var(--space-6);
+            gap: var(--space-4);
+            z-index: 10;
+        }
+
+        .hero-back-button {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-3);
+            border: none;
+            background: #38b2ac;
+            backdrop-filter: blur(10px);
+            color: var(--color-white);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            min-height: var(--min-tap-target);
+            text-decoration: none;
+        }
+
+        .hero-back-button:hover {
+            background: #2a5a7a;
+            transform: translateX(-2px);
+        }
+
+        .hero-back-button svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .hero-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            text-decoration: none;
+            color: var(--color-white);
+        }
+
+        .hero-logo-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: var(--font-size-lg);
+        }
+
+        .hero-logo-text {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--color-white);
+        }
+
+        .lesson-hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px var(--space-6) var(--space-6);
+        }
+
+        .lesson-hero-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            margin-bottom: var(--space-3);
+            font-size: var(--font-size-sm);
+        }
+
+        .lesson-hero-breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color var(--transition-base);
+        }
+
+        .lesson-hero-breadcrumb a:hover {
+            color: var(--color-white);
+        }
+
+        .lesson-hero-breadcrumb span {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .lesson-hero-breadcrumb span[aria-current] {
+            color: var(--color-white);
+            font-weight: 500;
+        }
+
+        .lesson-hero-title {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            color: var(--color-white);
+            line-height: var(--line-height-tight);
+            margin: 0;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .lesson-hero {
+                height: 240px;
+            }
+
+            .lesson-hero-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: var(--space-4) var(--space-6);
+            gap: var(--space-4);
+            z-index: 10;
+        }
+
+            .hero-back-button span {
+                display: none;
+            }
+
+            .hero-back-button {
+                width: var(--min-tap-target);
+                height: var(--min-tap-target);
+                padding: 0;
+                justify-content: center;
+            }
+
+            .hero-logo-text {
+                font-size: var(--font-size-sm);
+            }
+
+            .hero-logo-icon {
+                width: 32px;
+                height: 32px;
+                font-size: var(--font-size-base);
+            }
+
+            .lesson-hero-content {
+                padding: 0 var(--space-4) var(--space-4);
+            }
+
+            .lesson-hero-title {
+                font-size: var(--font-size-2xl);
+            }
+        }
+
+/* ═══════════════════════════════════════════════════════════════
+           MAIN CONTENT AREA
+           ═══════════════════════════════════════════════════════════════ */
+        .main-content {
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           VIEW: MODULE LESSONS
+           ═══════════════════════════════════════════════════════════════ */
+        .module-view {
+            display: block;
+        }
+
+        .module-hero {
+            position: relative;
+            height: 280px;
+            background: url('../media/heroes/lesson-3-3-hero.png') top center / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: var(--space-8);
+        }
+
+        .module-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26,26,46,0.9) 0%, rgba(26,26,46,0.4) 50%, transparent 100%);
+        }
+
+        .module-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .module-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: rgba(255,255,255,0.7);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-3);
+        }
+
+        .module-breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .module-breadcrumb a:hover {
+            color: var(--color-white);
+            text-decoration: underline;
+        }
+
+        .module-title {
+            color: var(--color-white);
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            margin-bottom: var(--space-2);
+        }
+
+        .module-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-4);
+            color: rgba(255,255,255,0.8);
+            font-size: var(--font-size-sm);
+        }
+
+        .module-meta-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        /* Lessons Grid */
+        .lessons-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--space-8) var(--space-4);
+        }
+
+        .lessons-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-6);
+        }
+
+        .lessons-title {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+        }
+
+        .lessons-progress {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+        }
+
+        .progress-bar {
+            width: 120px;
+            height: 8px;
+            background: rgba(0,0,0,0.1);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--color-teal);
+            border-radius: var(--radius-full);
+            transition: width var(--transition-slow);
+        }
+
+        /* Lesson Cards */
+        .lessons-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+        }
+
+        .lesson-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-5);
+            display: flex;
+            gap: var(--space-4);
+            align-items: flex-start;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .lesson-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .lesson-card:focus-visible {
+            outline: 3px solid var(--color-teal);
+            outline-offset: 2px;
+        }
+
+        .lesson-number {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--zone-surface), var(--color-ocean-blue));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: var(--font-size-lg);
+        }
+
+        .lesson-number.completed {
+            background: var(--color-success);
+        }
+
+        .lesson-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .lesson-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: var(--space-3);
+            margin-bottom: var(--space-1);
+        }
+
+        .lesson-name {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .lesson-duration {
+            flex-shrink: 0;
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+            display: flex;
+            align-items: center;
+            gap: var(--space-1);
+        }
+
+        .lesson-description {
+            color: var(--color-text-muted);
+            font-size: var(--font-size-sm);
+            line-height: var(--line-height-relaxed);
+            margin-bottom: var(--space-3);
+        }
+
+        .lesson-status {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--font-size-xs);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .lesson-status.not-started {
+            color: var(--color-text-muted);
+        }
+
+        .lesson-status.in-progress {
+            color: var(--color-teal);
+        }
+
+        .lesson-status.completed {
+            color: var(--color-success);
+        }
+
+        .lesson-arrow {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            color: var(--color-text-muted);
+            align-self: center;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           VIEW: LESSON CONTENT
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-view {
+            display: none;
+        }
+
+        .lesson-view.active {
+            display: block;
+        }
+
+        .module-view.hidden {
+            display: none;
+        }
+
+        .lesson-hero {
+            position: relative;
+            height: 200px;
+            background:  url('../media/heroes/lesson-3-3-hero.png') top center / cover no-repeat;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-end;
+            padding: var(--space-6) var(--space-4);
+        }
+
+        .lesson-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26,26,46,0.85) 0%, rgba(26,26,46,0.3) 60%, transparent 100%);
+        }
+
+        .lesson-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: var(--content-max-width);
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .lesson-hero-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: rgba(255,255,255,0.7);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-2);
+        }
+
+        .lesson-hero-breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .lesson-hero-breadcrumb a:hover {
+            color: var(--color-white);
+        }
+
+        .lesson-hero-title {
+            color: var(--color-white);
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+        }
+
+        /* Lesson Content Layout */
+        .lesson-layout {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: var(--space-8);
+            padding: var(--space-8) var(--space-4);
+        }
+
+        .lesson-main {
+            flex: 1;
+            /* Removed max-width to allow content to match hero width */
+        }
+
+        .lesson-sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+        }
+
+        /* Article Content */
+        .lesson-article {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .lesson-article h2 {
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: var(--space-4);
+            margin-top: var(--space-8);
+        }
+
+        .lesson-article h2:first-child {
+            margin-top: 0;
+        }
+
+        .lesson-article h3 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: var(--space-3);
+            margin-top: var(--space-6);
+        }
+
+        .lesson-article p {
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-relaxed);
+            color: var(--color-text);
+            margin-bottom: var(--space-4);
+        }
+
+        .lesson-article ul, .lesson-article ol {
+            margin-bottom: var(--space-4);
+            padding-left: var(--space-6);
+        }
+
+        .lesson-article li {
+            margin-bottom: var(--space-2);
+            line-height: var(--line-height-relaxed);
+        }
+
+        .lesson-article blockquote {
+            border-left: 4px solid var(--color-teal);
+            padding-left: var(--space-4);
+            margin: var(--space-6) 0;
+            font-style: italic;
+            color: var(--color-text-muted);
+        }
+
+        /* Content Warning */
+        .content-warning {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: var(--radius-lg);
+            padding: var(--space-4);
+            margin: var(--space-6) 0;
+        }
+
+        .content-warning-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: var(--space-2);
+        }
+
+        .content-warning p {
+            color: #92400e;
+            margin-bottom: var(--space-3);
+        }
+
+        .content-warning-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+
+        .cw-button {
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            cursor: pointer;
+            min-height: var(--min-tap-target);
+            transition: all var(--transition-fast);
+        }
+
+        .cw-button-primary {
+            background: #92400e;
+            color: var(--color-white);
+            border: none;
+        }
+
+        .cw-button-primary:hover {
+            background: #78350f;
+        }
+
+        .cw-button-secondary {
+            background: transparent;
+            color: #92400e;
+            border: 1px solid #92400e;
+        }
+
+        .cw-button-secondary:hover {
+            background: rgba(146, 64, 14, 0.1);
+        }
+
+        /* Key Points Box */
+        .key-points {
+            background: linear-gradient(135deg, rgba(56,178,172,0.1), rgba(42,90,122,0.1));
+            border-radius: var(--radius-lg);
+            padding: var(--space-5);
+            margin: var(--space-6) 0;
+        }
+
+        .key-points-title {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-weight: 600;
+            color: var(--color-teal);
+            margin-bottom: var(--space-3);
+        }
+
+        .key-points ul {
+            margin: 0;
+            padding-left: var(--space-5);
+        }
+
+        .key-points li {
+            color: var(--color-text);
+        }
+
+        /* Sidebar Resource Card */
+        .resource-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-5);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: calc(var(--header-height) + var(--space-4));
+        }
+
+        .resource-card-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-weight: 600;
+            color: var(--color-teal);
+            margin-bottom: var(--space-4);
+            padding-bottom: var(--space-3);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .resource-item {
+            margin-bottom: var(--space-4);
+        }
+
+        .resource-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .resource-label {
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-muted);
+            margin-bottom: var(--space-1);
+        }
+
+        .resource-value {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .resource-value a {
+            color: var(--color-teal);
+            text-decoration: none;
+        }
+
+        .resource-value a:hover {
+            text-decoration: underline;
+        }
+
+        .resource-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+            width: 100%;
+            padding: var(--space-3);
+            background: var(--color-teal);
+            color: var(--color-white);
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: var(--space-4);
+            min-height: var(--min-tap-target);
+            transition: background var(--transition-fast);
+        }
+
+        .resource-button:hover {
+            background: var(--color-ocean-blue);
+        }
+
+        /* Lesson Navigation */
+        .lesson-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-6) 0;
+            margin-top: var(--space-8);
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .nav-button {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-3) var(--space-5);
+            background: var(--color-white);
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: var(--radius-lg);
+            color: var(--color-text);
+            font-weight: 500;
+            cursor: pointer;
+            min-height: var(--min-tap-target);
+            transition: all var(--transition-fast);
+            text-decoration: none;
+        }
+
+        .nav-button:hover {
+            border-color: var(--color-teal);
+            color: var(--color-teal);
+        }
+
+        .nav-button.primary {
+            background: var(--color-teal);
+            border-color: var(--color-teal);
+            color: var(--color-white);
+        }
+
+        .nav-button.primary:hover {
+            background: var(--color-ocean-blue);
+            border-color: var(--color-ocean-blue);
+        }
+
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Progress Footer */
+        .lesson-progress-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: rgba(0,0,0,0.1);
+            z-index: 50;
+        }
+
+        .lesson-progress-fill {
+            height: 100%;
+            background: var(--color-teal);
+            transition: width var(--transition-base);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           MOBILE RESPONSIVE STYLES
+           ═══════════════════════════════════════════════════════════════ */
+        @media (max-width: 768px) {
+            .lesson-layout {
+                flex-direction: column;
+            }
+
+            /* Sidebar is now handled by hamburger menu - see MOBILE HAMBURGER MENU section */
+
+            .resource-card {
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                
+            }
+
+            .header {
+                padding: 0 var(--space-3);
+            }
+
+            .logo-text {
+                display: none;
+            }
+
+            .module-hero {
+                height: 220px;
+                padding: var(--space-4);
+            }
+
+            .module-title {
+                font-size: var(--font-size-2xl);
+            }
+
+            .module-meta {
+                gap: var(--space-3);
+            }
+
+            .lessons-container {
+                padding: var(--space-4);
+            }
+
+            .lesson-card {
+                flex-direction: column;
+                gap: var(--space-3);
+            }
+
+            .lesson-number {
+                width: 40px;
+                height: 40px;
+                font-size: var(--font-size-base);
+            }
+
+            .lesson-title-row {
+                flex-direction: column;
+                gap: var(--space-1);
+            }
+
+            .lesson-arrow {
+                display: none;
+            }
+
+            .lesson-hero {
+                height: 160px;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: var(--space-4);
+            }
+
+            .lesson-hero-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .lesson-layout {
+                padding: var(--space-4);
+                gap: var(--space-4);
+            }
+
+            .lesson-article {
+                padding: var(--space-5);
+            }
+
+            .lesson-article h2 {
+                font-size: var(--font-size-lg);
+            }
+
+            .lesson-nav {
+                flex-direction: column;
+                gap: var(--space-3);
+            }
+
+            .nav-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .module-hero {
+                height: 200px;
+            }
+
+            .module-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .module-meta-item span:not(.icon) {
+                font-size: var(--font-size-xs);
+            }
+
+            .lessons-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--space-3);
+            }
+
+            .help-button span {
+                display: none;
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           UTILITY CLASSES
+           ═══════════════════════════════════════════════════════════════ */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .icon-sm {
+            width: 16px;
+            height: 16px;
+        }
+
+        .icon-lg {
+            width: 24px;
+            height: 24px;
+        }
+    
+        /* ═══════════════════════════════════════════════════════════════
+           LESSON NAVIGATION SIDEBAR
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-nav-sidebar {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-4);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: calc(var(--header-height) + var(--space-4));
+            max-height: calc(100vh - var(--header-height) - var(--space-8));
+            overflow-y: auto;
+        }
+
+        .nav-header {
+            padding-bottom: var(--space-4);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            margin-bottom: var(--space-4);
+        }
+
+        .nav-back-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: var(--color-teal);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+            transition: color var(--transition-fast);
+        }
+
+        .nav-back-link:hover {
+            color: var(--zone-twilight);
+        }
+
+        .nav-back-link svg {
+            flex-shrink: 0;
+        }
+
+        .nav-module {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-4);
+            box-shadow: var(--shadow-md);
+            margin-bottom: var(--space-3);
+        }
+
+        .nav-module-trigger {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            width: 100%;
+            padding: var(--space-3);
+            background: rgba(56, 178, 172, 0.08);
+            border: 1px solid rgba(56, 178, 172, 0.2);
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            font-family: var(--font-family);
+        }
+
+
+
+
+
+        .nav-module-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: var(--color-teal);
+            color: white;
+            border-radius: 50%;
+            font-size: var(--font-size-xs);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .nav-module-title {
+            flex: 1;
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+            color: var(--color-text);
+            text-align: left;
+        }
+
+        .nav-expand-icon {
+            flex-shrink: 0;
+            transition: transform var(--transition-base);
+        }
+
+        .nav-module.active .nav-expand-icon {
+            transform: rotate(180deg);
+        }
+
+        .nav-lessons {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            margin-top: 0;
+        }
+
+        .nav-module.active .nav-lessons {
+            max-height: 500px;
+            opacity: 1;
+            margin-top: var(--space-3);
+        }
+
+        .nav-lesson-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-3);
+            margin: var(--space-1) 0;
+            margin-left: var(--space-6);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: var(--color-text-muted);
+            font-size: var(--font-size-sm);
+            transition: all var(--transition-fast);
+            border-left: 3px solid transparent;
+        }
+
+        .nav-lesson-link:hover {
+            background: rgba(56, 178, 172, 0.08);
+            color: var(--color-text);
+            border-left-color: rgba(56, 178, 172, 0.3);
+        }
+
+        .nav-lesson-link.current {
+            background: rgba(56, 178, 172, 0.12);
+            color: var(--color-teal);
+            font-weight: 600;
+            border-left-color: var(--color-teal);
+        }
+
+        .nav-lesson-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background: rgba(56, 178, 172, 0.2);
+            color: var(--color-teal);
+            border-radius: 50%;
+            font-size: 11px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .nav-lesson-link.current .nav-lesson-number {
+            background: var(--color-teal);
+            color: white;
+        }
+
+        .nav-lesson-title {
+            flex: 1;
+            line-height: 1.3;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .lesson-nav-sidebar {
+                position: static;
+            }
+        }
+
+        /* END LESSON NAVIGATION SIDEBAR */
+
+
+        /* ═══════════════════════════════════════════════════════════════
+           MOBILE HAMBURGER MENU
+           ═══════════════════════════════════════════════════════════════ */
+        .mobile-menu-toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-md);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: background var(--transition-fast);
+        }
+
+        .mobile-menu-toggle:hover {
+            background: var(--color-light-gray);
+        }
+
+        .mobile-menu-toggle:active {
+            background: rgba(0,0,0,0.1);
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 3px;
+            background: var(--color-text);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger span:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        .mobile-menu-toggle.active .hamburger span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .mobile-menu-toggle.active .hamburger span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle.active .hamburger span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        .mobile-nav-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-nav-overlay.active {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .lesson-sidebar {
+                position: fixed;
+                top: var(--header-height);
+                left: 0;
+                bottom: 0;
+                width: 280px;
+                max-width: 85vw;
+                background: var(--color-white);
+                z-index: 999;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                overflow-y: auto;
+                box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+                order: 0;
+                padding: var(--space-4);
+            }
+
+            .lesson-sidebar.active {
+                transform: translateX(0);
+            }
+
+            .mobile-nav-overlay {
+                display: block;
+            }
+
+            .lesson-layout {
+                flex-direction: column;
+            }
+
+            .lesson-main {
+                width: 100%;
+            }
+        }
+
+        /* END MOBILE HAMBURGER MENU */
+
+        
+        /* ═══════════════════════════════════════════════════════════════
+           LESSON CONTENT VISUAL STRUCTURE
+           ═══════════════════════════════════════════════════════════════ */
+
+        /* Major section headers (h2) - Add top border and spacing */
+        .lesson-article h2 {
+            padding-top: var(--space-8);
+            margin-top: var(--space-10);
+            border-top: 3px solid #e5e7eb;
+        }
+
+        .lesson-article h2:first-of-type {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        /* Subsection headers (h3) - Lighter visual separation */
+        .lesson-article h3 {
+            padding: var(--space-4);
+            background: linear-gradient(135deg, #f0fdfa, #ecfdf5);
+            border-left: 4px solid var(--color-teal);
+            border-radius: var(--radius-md);
+            margin-top: var(--space-6);
+            margin-bottom: var(--space-4);
+        }
+
+        /* Paragraphs after h3 - contained look */
+        .lesson-article h3 + p,
+        .lesson-article h3 + ul,
+        .lesson-article h3 + ol {
+            background: rgba(56, 178, 172, 0.03);
+            padding: var(--space-4);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-4);
+        }
+
+        /* Lists - better visual structure */
+        .lesson-article ul,
+        .lesson-article ol {
+            background: white;
+            padding: var(--space-5) var(--space-6);
+            border-left: 3px solid #e5e7eb;
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-5);
+        }
+
+        .lesson-article li {
+            padding: var(--space-2) 0;
+        }
+
+        .lesson-article li strong {
+            color: var(--color-ocean-blue);
+        }
+
+        /* Ordered lists - styled numbers */
+        .lesson-article ol {
+            counter-reset: custom-counter;
+            list-style: none;
+            padding-left: var(--space-10);
+        }
+
+        .lesson-article ol li {
+            counter-increment: custom-counter;
+            position: relative;
+            padding-left: var(--space-4);
+        }
+
+        .lesson-article ol li::before {
+            content: counter(custom-counter);
+            position: absolute;
+            left: calc(-1 * var(--space-8));
+            width: 32px;
+            height: 32px;
+            background: var(--color-teal);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+        }
+
+        /* Unordered lists - styled bullets */
+        .lesson-article ul {
+            list-style: none;
+            padding-left: var(--space-8);
+        }
+
+        .lesson-article ul li {
+            position: relative;
+        }
+
+        .lesson-article ul li::before {
+            content: '';
+            position: absolute;
+            left: calc(-1 * var(--space-5));
+            top: 14px;
+            width: 8px;
+            height: 8px;
+            background: var(--color-teal);
+            border-radius: 50%;
+        }
+
+        /* Nested lists - different styling */
+        .lesson-article ul ul,
+        .lesson-article ol ul {
+            background: transparent;
+            border-left: 2px solid #e5e7eb;
+            margin-top: var(--space-3);
+            margin-bottom: var(--space-3);
+        }
+
+        .lesson-article ul ul li::before {
+            background: transparent;
+            border: 2px solid var(--color-teal);
+        }
+
+        /* Strong text - more emphasis */
+        .lesson-article strong {
+            color: var(--color-ocean-blue);
+            font-weight: 600;
+        }
+
+        /* Paragraphs - better spacing */
+        .lesson-article p {
+            line-height: var(--line-height-relaxed);
+        }
+
+        /* Content sections - group related content */
+        .lesson-article > h2 ~ * {
+            margin-left: 0;
+        }
+
+        /* Blockquotes - more prominent */
+        .lesson-article blockquote {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border-left: 4px solid #f59e0b;
+            padding: var(--space-5);
+            margin: var(--space-6) 0;
+            border-radius: var(--radius-md);
+            font-style: italic;
+            color: #78350f;
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Add subtle separators between major content blocks */
+        .lesson-article h2 + p:first-of-type {
+            font-size: var(--font-size-lg);
+            color: var(--color-text-muted);
+            font-weight: 400;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .lesson-article h2 {
+                padding-top: var(--space-6);
+                margin-top: var(--space-8);
+                font-size: var(--font-size-xl);
+            }
+
+            .lesson-article h3 {
+                padding: var(--space-3);
+                margin-top: var(--space-5);
+            }
+
+            .lesson-article ul,
+            .lesson-article ol {
+                padding: var(--space-4);
+                padding-left: var(--space-6);
+            }
+
+            .lesson-article ol li {
+                padding-left: var(--space-3);
+            }
+
+            .lesson-article ol li::before {
+                width: 28px;
+                height: 28px;
+                font-size: 0.75rem;
+                left: calc(-1 * var(--space-6));
+            }
+        }
+
+        /* END LESSON CONTENT VISUAL STRUCTURE */
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+
+        /* ═══════════════════════════════════════════════════════════════
+           VIDEO LESSON BLOCK
+           ═══════════════════════════════════════════════════════════════ */
+        .video-lesson-block {
+            margin: 2rem auto;
+            max-width: 1200px;
+            padding: 0 var(--space-4);
+        }
+
+        .video-placeholder-card {
+            background: linear-gradient(135deg, var(--color-deep-navy) 0%, var(--color-twilight-purple) 50%, var(--color-ocean-blue) 100%);
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            transition: transform var(--transition-base), box-shadow var(--transition-base);
+        }
+
+        .video-placeholder-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-play-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.3);
+            transition: background var(--transition-base);
+        }
+
+        .video-placeholder-card:hover .video-play-overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .video-play-button {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(56, 178, 172, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            transition: all var(--transition-base);
+            box-shadow: 0 10px 30px rgba(56, 178, 172, 0.4);
+        }
+
+        .video-placeholder-card:hover .video-play-button {
+            transform: scale(1.1);
+            background: var(--color-teal);
+            box-shadow: 0 15px 40px rgba(56, 178, 172, 0.6);
+        }
+
+        .video-info-section {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: var(--space-6);
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 70%, transparent 100%);
+        }
+
+        .video-lesson-title {
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            color: var(--color-white);
+            margin: 0 0 var(--space-3) 0;
+        }
+
+        .video-description {
+            font-size: var(--font-size-base);
+            color: rgba(255, 255, 255, 0.9);
+            line-height: var(--line-height-relaxed);
+            margin: 0 0 var(--space-4) 0;
+        }
+
+        .video-stats {
+            display: flex;
+            gap: var(--space-4);
+            align-items: center;
+        }
+
+        .video-stat {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--font-size-sm);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .video-stat svg {
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .video-lesson-block {
+                margin: 1rem 0;
+            }
+
+            .video-play-button {
+                width: 70px;
+                height: 70px;
+            }
+
+            .video-play-button svg {
+                width: 48px;
+                height: 48px;
+            }
+
+            .video-info-section {
+                padding: var(--space-4);
+            }
+
+            .video-lesson-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .video-description {
+                font-size: var(--font-size-sm);
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           WATER BUBBLES ANIMATION (Background Effect)
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-water-bubbles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .lesson-bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%,
+                rgba(200, 235, 250, 0.3) 0%,
+                rgba(160, 210, 235, 0.2) 40%,
+                rgba(140, 200, 230, 0.1) 100%);
+            border: 1px solid rgba(180, 220, 240, 0.25);
+            box-shadow:
+                inset -2px -2px 4px rgba(255, 255, 255, 0.25),
+                0 0 6px rgba(140, 200, 230, 0.15);
+        }
+
+        /* Bubble sizes */
+        .lesson-bubble.small {
+            width: 5px;
+            height: 5px;
+        }
+
+        .lesson-bubble.medium {
+            width: 8px;
+            height: 8px;
+        }
+
+        .lesson-bubble.large {
+            width: 12px;
+            height: 12px;
+        }
+
+        /* Rising animation - stops at approximately 30% from top */
+        @keyframes lessonBubbleRise1 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            10% {
+                opacity: 0.6;
+            }
+            85% {
+                opacity: 0.3;
+                bottom: 70%;
+                transform: translateX(15px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 70%;
+                transform: translateX(20px);
+            }
+        }
+
+        @keyframes lessonBubbleRise2 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            10% {
+                opacity: 0.5;
+            }
+            85% {
+                opacity: 0.25;
+                bottom: 70%;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 70%;
+                transform: translateX(-25px);
+            }
+        }
+
+        @keyframes lessonBubbleRise3 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            15% {
+                opacity: 0.6;
+            }
+            85% {
+                opacity: 0.4;
+                bottom: 70%;
+                transform: translateX(10px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 70%;
+                transform: translateX(12px);
+            }
+        }
+
+        /* Left side bubbles */
+        .lesson-bubble:nth-child(1) {
+            left: 5%;
+            animation: lessonBubbleRise1 9s ease-in-out infinite;
+            animation-delay: 0s;
+        }
+
+        .lesson-bubble:nth-child(2) {
+            left: 10%;
+            animation: lessonBubbleRise2 11s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+
+        .lesson-bubble:nth-child(3) {
+            left: 3%;
+            animation: lessonBubbleRise3 8s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+
+        .lesson-bubble:nth-child(4) {
+            left: 8%;
+            animation: lessonBubbleRise1 10s ease-in-out infinite;
+            animation-delay: 3.5s;
+        }
+
+        .lesson-bubble:nth-child(5) {
+            left: 12%;
+            animation: lessonBubbleRise2 9.5s ease-in-out infinite;
+            animation-delay: 0.8s;
+        }
+
+        /* Right side bubbles */
+        .lesson-bubble:nth-child(6) {
+            left: 88%;
+            animation: lessonBubbleRise3 8.5s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+
+        .lesson-bubble:nth-child(7) {
+            left: 92%;
+            animation: lessonBubbleRise1 10.5s ease-in-out infinite;
+            animation-delay: 2.5s;
+        }
+
+        .lesson-bubble:nth-child(8) {
+            left: 95%;
+            animation: lessonBubbleRise2 9s ease-in-out infinite;
+            animation-delay: 0.5s;
+        }
+
+        .lesson-bubble:nth-child(9) {
+            left: 90%;
+            animation: lessonBubbleRise3 7.5s ease-in-out infinite;
+            animation-delay: 3s;
+        }
+
+        .lesson-bubble:nth-child(10) {
+            left: 85%;
+            animation: lessonBubbleRise1 11s ease-in-out infinite;
+            animation-delay: 1.8s;
+        }
+
+        .lesson-bubble:nth-child(11) {
+            left: 7%;
+            animation: lessonBubbleRise2 10s ease-in-out infinite;
+            animation-delay: 4s;
+        }
+
+        .lesson-bubble:nth-child(12) {
+            left: 93%;
+            animation: lessonBubbleRise3 8.8s ease-in-out infinite;
+            animation-delay: 2.2s;
+        }
+
+        /* Hide bubbles on mobile to reduce visual clutter */
+        @media (max-width: 768px) {
+            .lesson-water-bubbles {
+                display: none;
+            }
+        }
+
+    </style>
+  <link rel="stylesheet" href="../css/video-player.css">
+</head>
+<body>
+    <!-- Water Bubbles Background Effect -->
+    <div class="lesson-water-bubbles" aria-hidden="true">
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble large"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble large"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+    </div>
+
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content" role="main">
+        <div class="lesson-view active">
+            <!-- Lesson Hero -->
+            <section class="lesson-hero">
+                <div class="lesson-hero-nav">
+                    <a href="../index.html" class="hero-back-button" aria-label="Back to course home">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        <span>Back</span>
+                    </a>
+                    <a href="../index.html" class="hero-logo" aria-label="Salus Community Home">
+                        <div class="hero-logo-icon">S</div>
+                        <span class="hero-logo-text">Salus Community</span>
+                    </a>
+                </div>
+                <div class="lesson-hero-content">
+                    <nav class="lesson-hero-breadcrumb" aria-label="Breadcrumb">
+                        <a href="../index.html">Home</a>
+                        <span>›</span>
+                        <a href="../index.html#abyss">Module 3</a>
+                        <span>›</span>
+                        <span aria-current="page">Lesson 3</span>
+                    </nav>
+                    <h1 class="lesson-hero-title">Responding to Someone Experiencing IPV</h1>
+                </div>
+            </section>
+<!-- Lesson Layout -->
+
+
+<div class="lesson-layout">
+                <!-- Sidebar -->
+                <aside class="lesson-sidebar" aria-label="Course navigation">
+
+    <nav class="lesson-nav-sidebar" aria-label="Course navigation">
+        <div class="nav-header">
+            <a href="../index.html" class="nav-back-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Course Overview
+            </a>
+        </div>
+
+        <div class="nav-module " data-module="1">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(1)" aria-expanded="false">
+                <span class="nav-module-number">1</span>
+                <span class="nav-module-title">Introduction</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-1">
+                <a href="lesson-intro-1.html" class="nav-lesson-link ">
+                    <span class="nav-lesson-number">1</span>
+                    <span class="nav-lesson-title">Introduction: What is Intimate Partner Violence?</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-module " data-module="2">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(2)" aria-expanded="false">
+                <span class="nav-module-number">2</span>
+                <span class="nav-module-title">MODULE 1: Recognizing Intimate Partner Violence</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-2">
+                <a href="lesson-1-1.html" class="nav-lesson-link "><span class="nav-lesson-number">1</span><span class="nav-lesson-title">Who is Affected by Intimate Partner Violence?</span></a>
+                <a href="lesson-1-2.html" class="nav-lesson-link "><span class="nav-lesson-number">2</span><span class="nav-lesson-title">Types of Abuse</span></a>
+                <a href="lesson-1-3.html" class="nav-lesson-link "><span class="nav-lesson-number">3</span><span class="nav-lesson-title">Power and Control Wheel</span></a>
+                <a href="lesson-1-4.html" class="nav-lesson-link "><span class="nav-lesson-number">4</span><span class="nav-lesson-title">Categorizing Intimate Partner Violence</span></a>
+                <a href="lesson-1-5.html" class="nav-lesson-link "><span class="nav-lesson-number">5</span><span class="nav-lesson-title">Case Analysis: Lois and James Sumpter</span></a>
+            </div>
+        </div>
+
+        <div class="nav-module " data-module="3">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(3)" aria-expanded="false">
+                <span class="nav-module-number">3</span>
+                <span class="nav-module-title">MODULE 2: Intimate Partner Sexual Violence</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-3">
+                <a href="lesson-2-1.html" class="nav-lesson-link "><span class="nav-lesson-number">1</span><span class="nav-lesson-title">What is Sexual Violence?</span></a>
+                <a href="lesson-2-2.html" class="nav-lesson-link "><span class="nav-lesson-number">2</span><span class="nav-lesson-title">Sexual Violence in Our Society</span></a>
+                <a href="lesson-2-3.html" class="nav-lesson-link "><span class="nav-lesson-number">3</span><span class="nav-lesson-title">Rape and Sexual Assault in the Context of Intimate Partner Violence</span></a>
+            </div>
+        </div>
+
+        <div class="nav-module active" data-module="4">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(4)" aria-expanded="true">
+                <span class="nav-module-number">4</span>
+                <span class="nav-module-title">MODULE 3: Responding to Intimate Partner Violence</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-4">
+                <a href="lesson-3-1.html" class="nav-lesson-link "><span class="nav-lesson-number">1</span><span class="nav-lesson-title">The Impact of Intimate Partner Violence on Victims</span></a>
+                <a href="lesson-3-2.html" class="nav-lesson-link "><span class="nav-lesson-number">2</span><span class="nav-lesson-title">Safety Planning with Victims</span></a>
+                <a href="lesson-3-3.html" class="nav-lesson-link current"><span class="nav-lesson-number">3</span><span class="nav-lesson-title">Responding to Someone Experiencing Intimate Partner Violence</span></a>
+            </div>
+        </div>
+
+    </nav>
+
+                </aside>
+
+                <!-- Main Lesson Content -->
+                <div class="lesson-main">
+                    <div class="lesson-article">
+      <!-- Video Introduction Section -->
+      <section class="video-player-section" data-lesson-video="lesson-3-3">
+        <div class="video-header">
+          <h2 class="video-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            Responding to Someone Experiencing Intimate Partner Violence
+          </h2>
+          <span class="video-duration">3:30</span>
+        </div>
+
+        <div class="video-container">
+          <div class="video-scenes" id="video-lesson-3-3">
+            
+            <div class="video-scene template-intro" data-scene="0" data-duration="15" data-template="intro" data-script="How you respond when someone discloses intimate partner violence can profoundly impact their healing and safety. A supportive response validates their experience and opens pathways to help. A harmful response can cause additional trauma and prevent future disclosure.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-1.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Your Response Matters</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-intro.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="1" data-duration="18" data-template="split-left" data-script="Trauma-informed care rests on five principles. Safety ensures physical and emotional security. Trustworthiness requires transparency and consistency. Choice respects autonomy. Collaboration involves shared decision-making. Empowerment builds on survivors' strengths. These principles should guide every interaction.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-2.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Trauma-Informed Principles</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>Safety: Physical and emotional security</li>
+                    <li>Trustworthiness: Transparency and consistency</li>
+                    <li>Choice: Respecting autonomy and control</li>
+                    <li>Collaboration: Shared decision-making</li>
+                    <li>Empowerment: Building on strengths</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-1.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-diagonal" data-scene="2" data-duration="14" data-template="diagonal" data-script="Begin by ensuring immediate safety. Is the abuser present or nearby? Is it safe to talk now? Can they speak freely? Provide a private, comfortable space. Recognize that emotional safety matters too. Your calm, non-judgmental presence contributes to feeling safe.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-3.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Creating Safety</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-1.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="3" data-duration="16" data-template="split-right" data-script="The most powerful response is simple belief. Say I believe you. Validate their feelings and experiences. Acknowledge the courage it took to disclose. Clearly state that the abuse is not their fault. Many survivors have never heard these messages before.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-4.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Believe and Validate</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>Believe their story without questioning</li>
+                    <li>Validate their feelings and experiences</li>
+                    <li>Acknowledge their courage in disclosing</li>
+                    <li>Affirm that abuse is not their fault</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-1.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="4" data-duration="15" data-template="split-left" data-script="Avoid common harmful responses. Never ask why they stayed or didn't leave sooner. Don't minimize their experience or compare to others. Don't tell them what to do or push your timeline. Avoid expressing shock or anger that might feel like judgment. Don't badmouth the abuser.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-5.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">What Not to Say</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-2.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="5" data-duration="15" data-template="split-right" data-script="Practice active listening without interrupting. Use open body language. Provide verbal acknowledgments like I hear you or that sounds really difficult. Reflect back what you're hearing. Allow silence when needed. Focus entirely on them, not on formulating your response.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-6.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Active Listening Skills</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-2.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="6" data-duration="16" data-template="split-left" data-script="Respect that survivors are experts on their own situations and relationships. They understand risks and barriers you may not see. Honor their decisions even when you disagree. Provide information and options, but let them choose. Respecting autonomy counteracts the control they experience.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-7.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Respect Their Choices</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>They are the expert on their situation</li>
+                    <li>Honor their decisions, even if you disagree</li>
+                    <li>Provide information, not directives</li>
+                    <li>Support their autonomy</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-2.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-diagonal" data-scene="7" data-duration="14" data-template="diagonal" data-script="Use respectful, empowering language. Say survivor or person experiencing abuse rather than victim when possible. Avoid dramatic language that sensationalizes. Use their preferred pronouns and terms. Be mindful of cultural context. Language shapes how people understand their experiences.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-8.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Appropriate Language</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="8" data-duration="15" data-template="split-right" data-script="When you suspect abuse, asking directly is appropriate. Use private settings. Ask open-ended questions like Are you safe at home? Has your partner hurt or threatened you? Frame questions non-judgmentally. If they're not ready to disclose, respect that and leave the door open for future conversations.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-9.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Asking About Abuse</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="9" data-duration="20" data-template="split-left" data-script="Provide comprehensive resource information. The National Domestic Violence Hotline at one eight hundred seven nine nine seven two three three offers twenty-four seven support. Local IPV organizations provide advocacy. Legal aid assists with protection orders. Mental health services address trauma. Emergency shelters offer safety. Give resources even if not ready to use them now.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-10.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Providing Resources</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>National Hotline: 1-800-799-7233</li>
+                    <li>Local IPV advocacy organizations</li>
+                    <li>Legal aid and protection orders</li>
+                    <li>Counseling and support groups</li>
+                    <li>Emergency shelter information</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-diagonal" data-scene="10" data-duration="14" data-template="diagonal" data-script="Make warm referrals when possible. Don't just hand out numbers. Offer to call while they're with you. Introduce them to advocates. Explain what to expect. Follow up to ensure they connected. Warm referrals dramatically increase the likelihood people will access specialized services.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-11.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Warm Referrals</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="11" data-duration="15" data-template="split-right" data-script="Recognize what you can and can't do. You're not an IPV specialist, investigator, or therapist. Your role is to listen, believe, provide resources, and support. Don't try to fix everything yourself. Know when to refer to specialists. Maintain appropriate professional boundaries.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-12.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Understanding Your Role and Limits</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="12" data-duration="16" data-template="split-left" data-script="Understand your jurisdiction's mandatory reporting requirements. Some professionals must report IPV to authorities. Know what you're required to report, to whom, and when. If mandatory reporting applies, explain this before disclosure. Balance legal obligations with survivor autonomy and safety as much as possible.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-13.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Mandatory Reporting</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-diagonal" data-scene="13" data-duration="14" data-template="diagonal" data-script="Supporting IPV survivors can cause vicarious trauma. Practice self-care. Seek supervision and debriefing. Maintain boundaries. Connect with colleagues. Recognize your emotional responses. You can't support others effectively if you don't care for yourself. Preventing burnout ensures sustained, quality support.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-14.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Self-Care for Helpers</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-final" data-scene="14" data-duration="14" data-template="final" data-script="Your response to IPV disclosure can be transformative. A single supportive conversation can help someone recognize abuse, access resources, or begin their journey to safety. By applying trauma-informed principles and appropriate responses, you become part of the solution to intimate partner violence.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-3-3-scene-15.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Making a Difference</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-3-3-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+          </div>
+
+          <!-- Closed Captions Display -->
+          <div class="video-caption hidden">
+            <div class="video-caption-text"></div>
+          </div>
+
+          <div class="video-controls">
+            <button class="video-btn video-prev" title="Previous Slide" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+
+            <button class="video-btn video-play-pause" title="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                <rect x="6" y="4" width="4" height="16"/>
+                <rect x="14" y="4" width="4" height="16"/>
+              </svg>
+            </button>
+
+            <button class="video-btn video-next" title="Next Slide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+
+            <div class="video-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+              </div>
+              <span class="progress-text">Slide 1 of 15</span>
+            </div>
+
+            <div class="video-volume">
+              <button class="video-btn video-volume-btn" title="Volume">
+                <svg class="icon-volume-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+                <svg class="icon-volume-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <line x1="23" y1="9" x2="17" y2="15"/>
+                  <line x1="17" y1="9" x2="23" y2="15"/>
+                </svg>
+              </button>
+              <input type="range" class="video-volume-slider" min="0" max="1" step="0.1" value="1">
+            </div>
+
+            <button class="video-btn video-cc" title="Captions (C)">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 7H9.5v-.5h-2v3h2V13H11v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1zm7 0h-1.5v-.5h-2v3h2V13H18v1c0 .55-.45 1-1 1h-3c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1z"/>
+              </svg>
+            </button>
+
+            <button class="video-btn video-fullscreen" title="Fullscreen (F)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      </section>
+
+                        <h2>How to Respond to Survivors</h2>
+
+<div style="background: linear-gradient(135deg, #f0fdfa, #ecfdf5); padding: 1.5rem; border-left: 4px solid #38b2ac; border-radius: 0.5rem; margin: 2rem 0; font-style: italic;">
+  <h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">Responding to Someone Experiencing Intimate Partner Violence</h3>
+</div>
+<div style="margin: 2rem 0;"><p>Responding to someone who is experiencing intimate partner violence can seem overwhelming, and it's normal to want to get it right when helping others. Remember that there isn't one "correct" way to handle every situation.</p>
+</div>
+
+<!-- Interactive Response Builder -->
+<div style="max-width: 900px; margin: 3rem auto; padding: 2rem; background: #f9fafb; border-radius: 12px;">
+
+  <h3 style="color: var(--color-ocean-blue); margin-bottom: 1rem; text-align: center;">Practice Responding to Different Situations</h3>
+  <p style="text-align: center; color: #6b7280; margin-bottom: 2rem; font-size: 0.95rem;">
+    Click on the helpful messages below each scenario to learn why they work and what to avoid saying.
+  </p>
+
+  <!-- Scenario 1: Friend Disclosure -->
+  <div style="margin-bottom: 3rem; padding: 1.5rem; background: white; border-radius: 10px; border-left: 4px solid #38b2ac;">
+    <div style="margin-bottom: 1.5rem;">
+      <span style="display: inline-block; padding: 0.25rem 0.75rem; background: #e0f2fe; color: #0369a1; border-radius: 20px; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.75rem;">Scenario 1</span>
+      <h4 style="color: #0f766e; margin: 0.5rem 0;">A friend tells you their partner has been hurting them</h4>
+      <p style="color: #6b7280; font-size: 0.95rem; margin: 0.5rem 0 0 0;">Your friend says: "I need to tell you something... my partner has been really controlling lately and last night things got physical."</p>
+    </div>
+
+    <p style="font-weight: 600; color: #374151; margin-bottom: 0.75rem; font-size: 0.95rem;">Which responses would be helpful? Click to find out:</p>
+
+    <div style="display: grid; gap: 0.75rem;">
+      <!-- Message 1 -->
+      <div class="response-option" onclick="toggleResponse(1)" onkeydown="handleResponseKeydown(event, 1)" tabindex="0" role="button" aria-expanded="false"
+           style="padding: 0.875rem 1rem; background: #f0fdfa; border: 1px solid #5eead4; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: #0f766e; font-weight: 600; font-size: 0.95rem;">"I believe you"</span>
+          <svg class="response-chevron-1" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2" style="transition: transform 0.3s;">
+            <path d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+        <div id="response-detail-1" style="display: none; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #99f6e4;">
+          <p style="color: #065f46; font-size: 0.875rem; margin-bottom: 0.5rem;"><strong>✓ Why this helps:</strong></p>
+          <p style="color: #047857; font-size: 0.875rem; line-height: 1.5;">Validates their experience and builds trust. Many survivors worry they won't be believed, so this simple statement is powerful.</p>
+        </div>
+      </div>
+
+      <!-- Message 2 -->
+      <div class="response-option" onclick="toggleResponse(2)" onkeydown="handleResponseKeydown(event, 2)" tabindex="0" role="button" aria-expanded="false"
+           style="padding: 0.875rem 1rem; background: #f0fdfa; border: 1px solid #5eead4; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: #0f766e; font-weight: 600; font-size: 0.95rem;">"This is not your fault"</span>
+          <svg class="response-chevron-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2" style="transition: transform 0.3s;">
+            <path d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+        <div id="response-detail-2" style="display: none; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #99f6e4;">
+          <p style="color: #065f46; font-size: 0.875rem; margin-bottom: 0.5rem;"><strong>✓ Why this helps:</strong></p>
+          <p style="color: #047857; font-size: 0.875rem; line-height: 1.5;">Counters self-blame and reinforces that responsibility belongs with the person causing harm. Survivors often blame themselves.</p>
+        </div>
+      </div>
+
+      <!-- Message 3 -->
+      <div class="response-option" onclick="toggleResponse(3)" onkeydown="handleResponseKeydown(event, 3)" tabindex="0" role="button" aria-expanded="false"
+           style="padding: 0.875rem 1rem; background: #fef2f2; border: 1px solid #fca5a5; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: #991b1b; font-weight: 600; font-size: 0.95rem;">"Why don't you just leave?"</span>
+          <svg class="response-chevron-3" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#991b1b" stroke-width="2" style="transition: transform 0.3s;">
+            <path d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+        <div id="response-detail-3" style="display: none; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #fca5a5;">
+          <p style="color: #991b1b; font-size: 0.875rem; margin-bottom: 0.5rem;"><strong>✗ Avoid this:</strong></p>
+          <p style="color: #7f1d1d; font-size: 0.875rem; line-height: 1.5;">Places responsibility on the survivor to stop the violence. Oversimplifies a complex, dangerous situation. Shows judgment rather than support.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scenario 2: Client Disclosure -->
+  <div style="margin-bottom: 3rem; padding: 1.5rem; background: white; border-radius: 10px; border-left: 4px solid #38b2ac;">
+    <div style="margin-bottom: 1.5rem;">
+      <span style="display: inline-block; padding: 0.25rem 0.75rem; background: #e0f2fe; color: #0369a1; border-radius: 20px; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.75rem;">Scenario 2</span>
+      <h4 style="color: #0f766e; margin: 0.5rem 0;">A client seems hesitant but mentions relationship concerns</h4>
+      <p style="color: #6b7280; font-size: 0.95rem; margin: 0.5rem 0 0 0;">The person says: "Things at home have been... tense. I don't really know if I should talk about it."</p>
+    </div>
+
+    <p style="font-weight: 600; color: #374151; margin-bottom: 0.75rem; font-size: 0.95rem;">Which responses would be helpful? Click to find out:</p>
+
+    <div style="display: grid; gap: 0.75rem;">
+      <!-- Message 4 -->
+      <div class="response-option" onclick="toggleResponse(4)" onkeydown="handleResponseKeydown(event, 4)" tabindex="0" role="button" aria-expanded="false"
+           style="padding: 0.875rem 1rem; background: #f0fdfa; border: 1px solid #5eead4; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: #0f766e; font-weight: 600; font-size: 0.95rem;">"I'm here to listen whenever you're ready"</span>
+          <svg class="response-chevron-4" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2" style="transition: transform 0.3s;">
+            <path d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+        <div id="response-detail-4" style="display: none; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #99f6e4;">
+          <p style="color: #065f46; font-size: 0.875rem; margin-bottom: 0.5rem;"><strong>✓ Why this helps:</strong></p>
+          <p style="color: #047857; font-size: 0.875rem; line-height: 1.5;">Creates space for disclosure without pressure. Shows you're supportive and non-judgmental. Honors their pace and autonomy.</p>
+        </div>
+      </div>
+
+      <!-- Message 5 -->
+      <div class="response-option" onclick="toggleResponse(5)" onkeydown="handleResponseKeydown(event, 5)" tabindex="0" role="button" aria-expanded="false"
+           style="padding: 0.875rem 1rem; background: #f0fdfa; border: 1px solid #5eead4; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: #0f766e; font-weight: 600; font-size: 0.95rem;">"What do you need right now?"</span>
+          <svg class="response-chevron-5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2" style="transition: transform 0.3s;">
+            <path d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+        <div id="response-detail-5" style="display: none; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #99f6e4;">
+          <p style="color: #065f46; font-size: 0.875rem; margin-bottom: 0.5rem;"><strong>✓ Why this helps:</strong></p>
+          <p style="color: #047857; font-size: 0.875rem; line-height: 1.5;">Centers their autonomy and current needs. Lets them guide the conversation. Shows you're there to support, not to fix or rescue.</p>
+        </div>
+      </div>
+
+      <!-- Message 6 -->
+      <div class="response-option" onclick="toggleResponse(6)" onkeydown="handleResponseKeydown(event, 6)" tabindex="0" role="button" aria-expanded="false"
+           style="padding: 0.875rem 1rem; background: #fef2f2; border: 1px solid #fca5a5; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: #991b1b; font-weight: 600; font-size: 0.95rem;">"You need to call the police right now"</span>
+          <svg class="response-chevron-6" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#991b1b" stroke-width="2" style="transition: transform 0.3s;">
+            <path d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+        <div id="response-detail-6" style="display: none; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #fca5a5;">
+          <p style="color: #991b1b; font-size: 0.875rem; margin-bottom: 0.5rem;"><strong>✗ Avoid this:</strong></p>
+          <p style="color: #7f1d1d; font-size: 0.875rem; line-height: 1.5;">Takes away their autonomy and decision-making power. Your role is to support, not rescue. They know their situation best and calling police may not be safe.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scenario 3: Family Member Disclosure -->
+  <div style="padding: 1.5rem; background: white; border-radius: 10px; border-left: 4px solid #38b2ac;">
+    <div style="margin-bottom: 1.5rem;">
+      <span style="display: inline-block; padding: 0.25rem 0.75rem; background: #e0f2fe; color: #0369a1; border-radius: 20px; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.75rem;">Scenario 3</span>
+      <h4 style="color: #0f766e; margin: 0.5rem 0;">Someone confides they're in an abusive relationship but says they're not ready to leave</h4>
+      <p style="color: #6b7280; font-size: 0.95rem; margin: 0.5rem 0 0 0;">They say: "I know it's bad, but I'm not ready to leave yet. I still love them and I think they can change."</p>
+    </div>
+
+    <p style="font-weight: 600; color: #374151; margin-bottom: 0.75rem; font-size: 0.95rem;">Which responses would be helpful? Click to find out:</p>
+
+    <div style="display: grid; gap: 0.75rem;">
+      <!-- Message 7 -->
+      <div class="response-option" onclick="toggleResponse(7)" onkeydown="handleResponseKeydown(event, 7)" tabindex="0" role="button" aria-expanded="false"
+           style="padding: 0.875rem 1rem; background: #f0fdfa; border: 1px solid #5eead4; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: #0f766e; font-weight: 600; font-size: 0.95rem;">"I'm worried about your safety, and I'm here for you"</span>
+          <svg class="response-chevron-7" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2" style="transition: transform 0.3s;">
+            <path d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+        <div id="response-detail-7" style="display: none; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #99f6e4;">
+          <p style="color: #065f46; font-size: 0.875rem; margin-bottom: 0.5rem;"><strong>✓ Why this helps:</strong></p>
+          <p style="color: #047857; font-size: 0.875rem; line-height: 1.5;">Expresses care without judgment. Provides ongoing support without demanding they leave. Acknowledges their feelings while expressing concern.</p>
+        </div>
+      </div>
+
+      <!-- Message 8 -->
+      <div class="response-option" onclick="toggleResponse(8)" onkeydown="handleResponseKeydown(event, 8)" tabindex="0" role="button" aria-expanded="false"
+           style="padding: 0.875rem 1rem; background: #f0fdfa; border: 1px solid #5eead4; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: #0f766e; font-weight: 600; font-size: 0.95rem;">"This must be really difficult"</span>
+          <svg class="response-chevron-8" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2" style="transition: transform 0.3s;">
+            <path d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+        <div id="response-detail-8" style="display: none; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #99f6e4;">
+          <p style="color: #065f46; font-size: 0.875rem; margin-bottom: 0.5rem;"><strong>✓ Why this helps:</strong></p>
+          <p style="color: #047857; font-size: 0.875rem; line-height: 1.5;">Acknowledges the complexity of their situation. Shows empathy without telling them what to do. Validates their conflicting feelings.</p>
+        </div>
+      </div>
+
+      <!-- Message 9 -->
+      <div class="response-option" onclick="toggleResponse(9)" onkeydown="handleResponseKeydown(event, 9)" tabindex="0" role="button" aria-expanded="false"
+           style="padding: 0.875rem 1rem; background: #fef2f2; border: 1px solid #fca5a5; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: #991b1b; font-weight: 600; font-size: 0.95rem;">"They're never going to change - you're being naive"</span>
+          <svg class="response-chevron-9" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#991b1b" stroke-width="2" style="transition: transform 0.3s;">
+            <path d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+        <div id="response-detail-9" style="display: none; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #fca5a5;">
+          <p style="color: #991b1b; font-size: 0.875rem; margin-bottom: 0.5rem;"><strong>✗ Avoid this:</strong></p>
+          <p style="color: #7f1d1d; font-size: 0.875rem; line-height: 1.5;">Dismisses their feelings and experiences. Judgmental and hurtful. May cause them to withdraw and not seek support. Shows lack of understanding about the complexity of leaving.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key Principles Summary -->
+  <div style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #ecfdf5, #d1fae5); border-radius: 10px; border-left: 4px solid #059669;">
+    <h4 style="color: #065f46; margin-bottom: 1rem;">Key Principles for Responding:</h4>
+    <ul style="margin: 0; padding-left: 1.5rem; color: #047857; line-height: 1.8;">
+      <li><strong>Listen non-judgmentally</strong> - Your role is to support, not to judge or fix</li>
+      <li><strong>Believe them</strong> - Validation builds trust and counters isolation</li>
+      <li><strong>Honor their autonomy</strong> - Support their decisions, don't make decisions for them</li>
+      <li><strong>Acknowledge complexity</strong> - There's rarely one "right" answer</li>
+      <li><strong>Know your resources</strong> - Be ready to connect them to specialized help</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<h2>Community Accountability Model</h2>
+
+<figure class="lesson-image" style="margin: 2rem auto; max-width: 900px; text-align: center;">
+    <img src="../media/images/HRM-logo.svg"
+         alt="Image related to Responding to Someone Experiencing Intimate Partner Violence"
+         style="max-width: 70%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+    
+</figure>
+
+
+
+<div style="margin: 2rem 0;"><h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">Responding as a Community</h3>
+</div><div style="margin: 2rem 0;"><p>Intimate partner violence is a socially supported behavior, learned through observation, experience, and reinforcement. People who cause harm learn these behaviors through our culture, communities, schools, family, personal experience, and peer groups.</p>
+</div><div style="margin: 2rem 0;"><p>The <strong>community-accountability model of male violence against women</strong> illustrates the different systems that can support or discourage violence against women. It shows that <strong>community-based solutions are needed to address intimate partner violence</strong>.</p>
+</div><div style="margin: 2rem 0;"><h4 style="color: var(--color-ocean-blue); margin-top: 1.5rem; margin-bottom: 0.75rem; font-weight: 600;">The Men Stopping Violence Community-Accountability Model</h4>
+</div>
+
+<!-- Interactive Nested Circles: Community Accountability Model -->
+<style>
+  #community-tooltip {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .community-circle:focus {
+    outline: 3px solid #3b82f6;
+    outline-offset: 3px;
+  }
+
+  @media (max-width: 768px) {
+    #community-tooltip {
+      max-width: 85vw !important;
+      padding: 1.25rem !important;
+      font-size: 0.9rem;
+    }
+
+    #community-tooltip h5 {
+      font-size: 1rem !important;
+    }
+
+    #community-tooltip ul {
+      font-size: 0.875rem !important;
+    }
+  }
+</style>
+
+<div style="max-width: 900px; margin: 3rem auto; padding: 2rem; background: #f9fafb; border-radius: 12px;">
+
+  <p style="text-align: center; color: #6b7280; margin-bottom: 2rem; font-size: 0.95rem;">
+    This model depicts <strong>five levels of community influence</strong>. Click each level to learn more about how communities shape behaviors and how change ripples throughout the ecosystem.
+  </p>
+
+  <!-- SVG Nested Circles -->
+  <div id="circles-container" style="position: relative; max-width: 600px; margin: 0 auto 2rem;">
+
+    <!-- Floating Tooltip (initially hidden) -->
+    <div id="community-tooltip"
+         style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.25); max-width: 350px; width: 90%; z-index: 1000; border-left: 4px solid #38b2ac;"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="tooltip-title">
+      <!-- Close button -->
+      <button id="tooltip-close-btn"
+              onclick="closeTooltip()"
+              style="position: absolute; top: 0.75rem; right: 0.75rem; background: transparent; border: none; color: #9ca3af; cursor: pointer; font-size: 1.5rem; line-height: 1; padding: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 4px; transition: all 0.2s;"
+              onmouseover="this.style.background='#f3f4f6'; this.style.color='#374151';"
+              onmouseout="this.style.background='transparent'; this.style.color='#9ca3af';"
+              aria-label="Close dialog">&times;</button>
+
+      <!-- Tooltip content will be injected here -->
+      <div id="tooltip-content" aria-live="polite"></div>
+    </div>
+
+    <svg viewBox="0 0 600 600" width="100%" style="max-width: 600px;" role="img" aria-labelledby="circles-title circles-desc">
+      <title id="circles-title">Community Accountability Model</title>
+      <desc id="circles-desc">Interactive diagram showing five nested circles representing levels of community influence, from individual at the center to global community on the outside. Click or press Enter on each level to learn more.</desc>
+
+      <!-- Level 5: Global Community (outermost) -->
+      <circle cx="300" cy="300" r="280"
+              fill="rgba(220, 38, 38, 0.08)"
+              stroke="#dc2626"
+              stroke-width="3"
+              class="community-circle"
+              style="cursor: pointer; transition: all 0.3s;"
+              tabindex="0"
+              role="button"
+              aria-label="Level 5: Global Community. Click to learn more."
+              onclick="selectLevel(5, this)"
+              onkeydown="handleCircleKeydown(event, 5)"
+              onmouseover="this.setAttribute('fill', 'rgba(220, 38, 38, 0.15)')"
+              onmouseout="if(!this.classList.contains('active')) this.setAttribute('fill', 'rgba(220, 38, 38, 0.08)')"/>
+      <text x="300" y="50" text-anchor="middle" font-size="18" font-weight="700" fill="#991b1b" style="pointer-events: none;">Global Community</text>
+
+      <!-- Level 4: Macro-Community -->
+      <circle cx="300" cy="300" r="220"
+              fill="rgba(234, 88, 12, 0.08)"
+              stroke="#ea580c"
+              stroke-width="3"
+              class="community-circle"
+              style="cursor: pointer; transition: all 0.3s;"
+              tabindex="0"
+              role="button"
+              aria-label="Level 4: Macro-Community. Click to learn more."
+              onclick="selectLevel(4, this)"
+              onkeydown="handleCircleKeydown(event, 4)"
+              onmouseover="this.setAttribute('fill', 'rgba(234, 88, 12, 0.15)')"
+              onmouseout="if(!this.classList.contains('active')) this.setAttribute('fill', 'rgba(234, 88, 12, 0.08)')"/>
+      <text x="300" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#9a3412" style="pointer-events: none;">Macro-Community</text>
+
+      <!-- Level 3: Micro-Community -->
+      <circle cx="300" cy="300" r="160"
+              fill="rgba(234, 179, 8, 0.08)"
+              stroke="#eab308"
+              stroke-width="3"
+              class="community-circle"
+              style="cursor: pointer; transition: all 0.3s;"
+              tabindex="0"
+              role="button"
+              aria-label="Level 3: Micro-Community. Click to learn more."
+              onclick="selectLevel(3, this)"
+              onkeydown="handleCircleKeydown(event, 3)"
+              onmouseover="this.setAttribute('fill', 'rgba(234, 179, 8, 0.15)')"
+              onmouseout="if(!this.classList.contains('active')) this.setAttribute('fill', 'rgba(234, 179, 8, 0.08)')"/>
+      <text x="300" y="165" text-anchor="middle" font-size="15" font-weight="700" fill="#854d0e" style="pointer-events: none;">Micro-Community</text>
+
+      <!-- Level 2: Primary Community -->
+      <circle cx="300" cy="300" r="100"
+              fill="rgba(34, 197, 94, 0.08)"
+              stroke="#22c55e"
+              stroke-width="3"
+              class="community-circle"
+              style="cursor: pointer; transition: all 0.3s;"
+              tabindex="0"
+              role="button"
+              aria-label="Level 2: Primary Community. Click to learn more."
+              onclick="selectLevel(2, this)"
+              onkeydown="handleCircleKeydown(event, 2)"
+              onmouseover="this.setAttribute('fill', 'rgba(34, 197, 94, 0.15)')"
+              onmouseout="if(!this.classList.contains('active')) this.setAttribute('fill', 'rgba(34, 197, 94, 0.08)')"/>
+      <text x="300" y="225" text-anchor="middle" font-size="14" font-weight="700" fill="#166534" style="pointer-events: none;">Primary</text>
+      <text x="300" y="243" text-anchor="middle" font-size="14" font-weight="700" fill="#166534" style="pointer-events: none;">Community</text>
+
+      <!-- Level 1: Individual (center) -->
+      <circle cx="300" cy="300" r="45"
+              fill="rgba(59, 130, 246, 0.15)"
+              stroke="#3b82f6"
+              stroke-width="3"
+              class="community-circle"
+              style="cursor: pointer; transition: all 0.3s;"
+              tabindex="0"
+              role="button"
+              aria-label="Level 1: Individual. Click to learn more."
+              onclick="selectLevel(1, this)"
+              onkeydown="handleCircleKeydown(event, 1)"
+              onmouseover="this.setAttribute('fill', 'rgba(59, 130, 246, 0.25)')"
+              onmouseout="if(!this.classList.contains('active')) this.setAttribute('fill', 'rgba(59, 130, 246, 0.15)')"/>
+      <text x="300" y="307" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af" style="pointer-events: none;">Individual</text>
+
+      <!-- Bidirectional Arrows -->
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+          <polygon points="0 0, 10 3, 0 6" fill="#6b7280" />
+        </marker>
+      </defs>
+
+      <!-- Arrow pointing outward -->
+      <line x1="320" y1="285" x2="480" y2="150" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)" opacity="0.6"/>
+      <text x="420" y="205" font-size="12" fill="#6b7280" font-style="italic">Influence →</text>
+
+      <!-- Arrow pointing inward -->
+      <line x1="480" y1="450" x2="320" y2="315" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)" opacity="0.6"/>
+      <text x="360" y="395" font-size="12" fill="#6b7280" font-style="italic">← Influence</text>
+
+    </svg>
+  </div>
+
+  <!-- Instructional Text -->
+  <div style="padding: 1.5rem; background: white; border-radius: 10px; border-left: 4px solid #38b2ac;">
+    <h4 style="color: #0f766e; margin-bottom: 1rem;">How the Model Works</h4>
+    <p style="color: #374151; line-height: 1.7; margin-bottom: 1rem;">
+      The five levels of community are depicted as nested circles. The arrows illustrate how each level influences and interacts with the others—going <strong>both directions</strong> from the individual to progressively larger communities, and from the global community back to the individual.
+    </p>
+    <p style="color: #065f46; font-weight: 600; margin-bottom: 0.75rem;">This demonstrates:</p>
+    <ul style="margin: 0; padding-left: 1.5rem; color: #374151; line-height: 1.8;">
+      <li>This ecosystem works together</li>
+      <li>Any changes to one level, or the messages reinforced in each level, will naturally impact the others</li>
+      <li>Impacting messaging at ANY level can work to prevent intimate partner violence by disrupting existing reinforced messaging</li>
+      <li>By changing the mindset, behaviors, and beliefs of individuals and even primary and micro-communities, those changes ripple throughout the ecosystem</li>
+    </ul>
+  </div>
+
+</div>
+
+
+
+<h2>Taking Action and Knowing Resources</h2>
+
+
+
+
+
+<div style="margin: 2rem 0;"><h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">Challenging Unhealthy Assumptions</h3>
+</div><div style="margin: 2rem 0;"><p>This model shows that individuals are shaped by what they see and experience in their community and our society at large. It looks at the contributions society makes to individual development and the way it influences their treatment of others.</p>
+</div><div style="margin: 2rem 0;"><p><strong>Learning about violence against women and its historical and cultural context invites individuals to shift the way they view the world and their place in it.</strong></p>
+</div><div style="margin: 2rem 0;"><p>People are taught that the use of coercion, dominance, and control in relationships with women reflects their internalization of social norms communicated through their day-to-day interactions within primary communities, micro-communities, and macro-communities. They are challenged to accept responsibility for making choices that prevent destructive behaviors.</p>
+</div><div style="margin: 2rem 0;"><h4 style="color: var(--color-ocean-blue); margin-top: 1.5rem; margin-bottom: 0.75rem; font-weight: 600;">The Role of Media and Culture</h4>
+</div><div style="margin: 2rem 0;"><p>The role mainstream media plays in the reinforcement of historical and cultural contexts is a clear example. The way TV shows, movies, and news outlets discuss and portray violence against women can have an impact on how individuals view the issue.</p>
+</div><div style="margin: 2rem 0;"><p>The media can also influence our ideas on how men and women should act, or "gendered stereotypes," instead of valuing people as whole human beings.</p>
+</div><div style="margin: 2rem 0;"><p><strong>By examining the many ways society reinforces sexism and the use of violence against women, we can identify actions that might be taken on personal, cultural, and institutional levels to end the tolerance of abuse. As a community, we can nurture a society where violence against women is unacceptable.</strong></p>
+</div><div style="margin: 2rem 0;"><h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">Know Your Resources</h3>
+</div><div style="margin: 2rem 0;"><p>It is crucial to have resources ready when survivors disclose to you. Being prepared helps you provide immediate, practical support.</p>
+</div>
+
+<!-- Expandable Resource Cards -->
+<div style="max-width: 900px; margin: 2rem auto;">
+
+  <!-- Card 1: National Domestic Violence Hotline -->
+  <div style="margin-bottom: 1rem; border: 2px solid #e5e7eb; border-radius: 10px; overflow: hidden; transition: all 0.3s;">
+    <div onclick="toggleResourceCard(1)" onkeydown="handleResourceKeydown(event, 1)" tabindex="0" role="button" aria-expanded="false"
+         style="padding: 1.25rem 1.5rem; background: white; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: all 0.2s;"
+         onmouseover="this.style.background='#f9fafb'"
+         onmouseout="this.style.background='white'">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="background: #dc2626; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <div>
+          <h4 style="margin: 0; color: #0f766e; font-size: 1.1rem; font-weight: 600;">National Domestic Violence Hotline</h4>
+          <p style="margin: 0.25rem 0 0 0; color: #6b7280; font-size: 0.9rem;">Available 24/7 | Crisis support & safety planning</p>
+        </div>
+      </div>
+      <svg class="resource-chevron-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" style="transition: transform 0.3s; flex-shrink: 0;">
+        <path d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+
+    <div id="resource-detail-1" style="display: none; padding: 1.5rem; background: #f9fafb; border-top: 1px solid #e5e7eb;">
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <!-- Phone -->
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2" style="flex-shrink: 0;">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <div>
+            <p style="margin: 0; color: #6b7280; font-size: 0.875rem;">Phone</p>
+            <a href="tel:18007997233" style="color: #0f766e; font-weight: 600; font-size: 1.25rem; text-decoration: none;">1-800-799-7233</a>
+          </div>
+        </div>
+
+        <!-- TTY -->
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2" style="flex-shrink: 0;">
+            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+            <polyline points="17 2 12 7 7 2"></polyline>
+          </svg>
+          <div>
+            <p style="margin: 0; color: #6b7280; font-size: 0.875rem;">TTY</p>
+            <a href="tel:18007873224" style="color: #0f766e; font-weight: 600; font-size: 1.25rem; text-decoration: none;">1-800-787-3224</a>
+          </div>
+        </div>
+
+        <!-- Online Chat -->
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2" style="flex-shrink: 0;">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <div>
+            <p style="margin: 0; color: #6b7280; font-size: 0.875rem;">Online chat available</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 0.5rem; padding: 1rem; background: white; border-radius: 8px; border-left: 3px solid #0f766e;">
+          <p style="margin: 0; color: #374151; font-size: 0.9rem; line-height: 1.6;">
+            Provides crisis intervention, safety planning, and referrals to local resources
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2: National Sexual Assault Hotline -->
+  <div style="margin-bottom: 1rem; border: 2px solid #e5e7eb; border-radius: 10px; overflow: hidden; transition: all 0.3s;">
+    <div onclick="toggleResourceCard(2)" onkeydown="handleResourceKeydown(event, 2)" tabindex="0" role="button" aria-expanded="false"
+         style="padding: 1.25rem 1.5rem; background: white; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: all 0.2s;"
+         onmouseover="this.style.background='#f9fafb'"
+         onmouseout="this.style.background='white'">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="background: #7c3aed; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <div>
+          <h4 style="margin: 0; color: #6d28d9; font-size: 1.1rem; font-weight: 600;">National Sexual Assault Hotline</h4>
+          <p style="margin: 0.25rem 0 0 0; color: #6b7280; font-size: 0.9rem;">Available 24/7 | Operated by RAINN</p>
+        </div>
+      </div>
+      <svg class="resource-chevron-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" style="transition: transform 0.3s; flex-shrink: 0;">
+        <path d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+
+    <div id="resource-detail-2" style="display: none; padding: 1.5rem; background: #f9fafb; border-top: 1px solid #e5e7eb;">
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <!-- Phone -->
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6d28d9" stroke-width="2" style="flex-shrink: 0;">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <div>
+            <p style="margin: 0; color: #6b7280; font-size: 0.875rem;">Phone</p>
+            <a href="tel:18006564673" style="color: #6d28d9; font-weight: 600; font-size: 1.25rem; text-decoration: none;">1-800-656-HOPE (4673)</a>
+          </div>
+        </div>
+
+        <!-- Online Chat -->
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6d28d9" stroke-width="2" style="flex-shrink: 0;">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <div>
+            <p style="margin: 0; color: #6b7280; font-size: 0.875rem;">Online chat available through RAINN</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3: Local Resources -->
+  <div style="margin-bottom: 1rem; border: 2px solid #e5e7eb; border-radius: 10px; overflow: hidden; transition: all 0.3s;">
+    <div onclick="toggleResourceCard(3)" onkeydown="handleResourceKeydown(event, 3)" tabindex="0" role="button" aria-expanded="false"
+         style="padding: 1.25rem 1.5rem; background: white; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: all 0.2s;"
+         onmouseover="this.style.background='#f9fafb'"
+         onmouseout="this.style.background='white'">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="background: #0891b2; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+        </div>
+        <div>
+          <h4 style="margin: 0; color: #0e7490; font-size: 1.1rem; font-weight: 600;">Local Resources</h4>
+          <p style="margin: 0.25rem 0 0 0; color: #6b7280; font-size: 0.9rem;">Find help in your area</p>
+        </div>
+      </div>
+      <svg class="resource-chevron-3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" style="transition: transform 0.3s; flex-shrink: 0;">
+        <path d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+
+    <div id="resource-detail-3" style="display: none; padding: 1.5rem; background: #f9fafb; border-top: 1px solid #e5e7eb;">
+      <p style="margin: 0 0 1rem 0; color: #374151; line-height: 1.7;">
+        You can contact your <strong>statewide domestic violence coalition</strong> to find resources in your area and locate your local domestic violence center. If you don't know your statewide coalition, the National Domestic Violence Hotline lists them on their website.
+      </p>
+      <p style="margin: 0; color: #374151; line-height: 1.7;">
+        Many of these programs have a <strong>24-hour hotline</strong> available with advocates who specialize in intimate partner violence.
+      </p>
+    </div>
+  </div>
+
+  <!-- Card 4: Resources for Everyone -->
+  <div style="margin-bottom: 1rem; border: 2px solid #e5e7eb; border-radius: 10px; overflow: hidden; transition: all 0.3s;">
+    <div onclick="toggleResourceCard(4)" onkeydown="handleResourceKeydown(event, 4)" tabindex="0" role="button" aria-expanded="false"
+         style="padding: 1.25rem 1.5rem; background: white; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: all 0.2s;"
+         onmouseover="this.style.background='#f9fafb'"
+         onmouseout="this.style.background='white'">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="background: #059669; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <div>
+          <h4 style="margin: 0; color: #047857; font-size: 1.1rem; font-weight: 600;">Resources Are for Everyone</h4>
+          <p style="margin: 0.25rem 0 0 0; color: #6b7280; font-size: 0.9rem;">Support for all community members</p>
+        </div>
+      </div>
+      <svg class="resource-chevron-4" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" style="transition: transform 0.3s; flex-shrink: 0;">
+        <path d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+
+    <div id="resource-detail-4" style="display: none; padding: 1.5rem; background: #f9fafb; border-top: 1px solid #e5e7eb;">
+      <p style="margin: 0; color: #374151; line-height: 1.7;">
+        These resources are not only for survivors of intimate partner violence, but also for <strong>friends, families, and community members</strong>. Watching someone experience abuse is challenging, especially if that person is someone you know and love, so <strong>don't forget to take care of yourself as well</strong>.
+      </p>
+    </div>
+  </div>
+
+</div><div style="margin: 2rem 0;"><h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">Conclusion</h3>
+</div><div style="margin: 2rem 0;"><p>Ultimately, understanding how to recognize intimate partner violence and intimate partner sexual violence will prepare you to support individuals who choose to disclose their circumstances to you.</p>
+</div><p>By understanding:</p>
+<ul>
+<li>The types of abuse</li>
+<li>How power and control are used to perpetuate abuse</li>
+<li>How intimate partner violence intersects with sexual violence</li>
+<li>Why survivors stay and how to support their safety</li>
+<li>How to respond with trauma-informed care</li>
+<li>How community accountability creates systemic change</li>
+</ul>
+<div style="margin: 2rem 0;"><p><strong>You can be a better ally and resource for survivors who reach out to you.</strong></p>
+</div><div style="margin: 2rem 0;"><p>Successfully completing this course does not make you an intimate partner violence service expert, but it prepares you to have informed, supportive, and educated interactions with survivors you may encounter.</p>
+</div><p><strong>To be a successful ally:</strong></p>
+<ul>
+<li>Collect resources and information that you can share</li>
+<li>Challenge harmful attitudes in your communities</li>
+<li>Support survivor autonomy and decision-making</li>
+<li>Continue learning and growing in your understanding</li>
+</ul>
+<div style="margin: 2rem 0;"><p><strong>We each have a role to play in ending intimate partner violence and by working together, we hope to achieve that goal.</strong></p>
+</div>
+
+
+
+                        
+<div class="quiz-container" style="background: white; padding: 2rem; border-radius: 0.75rem; margin: 2rem 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #38b2ac;">
+  <div class="quiz-header" style="margin-bottom: 2rem; text-align: center;">
+    <h2 style="color: #38b2ac; margin-bottom: 0.5rem;">Quiz</h2>
+    <p class="quiz-progress" style="color: #6b7280; font-size: 0.875rem;">Question <span id="current-question">1</span> of 3</p>
+  </div>
+
+<div class="quiz-question" data-question-number="1" style="display: block;">
+  <h3 style="margin-bottom: 1rem; color: #38b2ac;">Trauma-Informed Response</h3>
+  <p style="margin-bottom: 1.5rem; color: #374151; font-size: 1.125rem;">What is the MOST important thing you can do when responding to someone experiencing intimate partner violence?</p>
+  <div class="knowledge-check" data-question-index="0">
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="0"
+             data-correct="false"
+             data-feedback="✗ Incorrect. The MOST important thing you can do is BE SUPPORTIVE AND LISTEN NON-JUDGMENTALLY. Your role is not to rescue, make decisions for them, or force a particular course of action. Instead, you provide a safe space for disclosure, validate their experience, and support their autonomy. This trauma-informed approach honors their expertise about their own situation and helps rebuild the power and control that abuse took away."
+             aria-label="Tell them exactly what they should do to leave the relationship"
+             style="margin-right: 0.75rem;">
+      <span>Tell them exactly what they should do to leave the relationship</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="1"
+             data-correct="true"
+             data-feedback="✓ Correct! The MOST important thing you can do is BE SUPPORTIVE AND LISTEN NON-JUDGMENTALLY. Your role is not to rescue, make decisions for them, or force a particular course of action. Instead, you provide a safe space for disclosure, validate their experience, and support their autonomy. This trauma-informed approach honors their expertise about their own situation and helps rebuild the power and control that abuse took away."
+             aria-label="Be supportive and listen non-judgmentally"
+             style="margin-right: 0.75rem;">
+      <span>Be supportive and listen non-judgmentally</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="2"
+             data-correct="false"
+             data-feedback="✗ Incorrect. The MOST important thing you can do is BE SUPPORTIVE AND LISTEN NON-JUDGMENTALLY. Your role is not to rescue, make decisions for them, or force a particular course of action. Instead, you provide a safe space for disclosure, validate their experience, and support their autonomy. This trauma-informed approach honors their expertise about their own situation and helps rebuild the power and control that abuse took away."
+             aria-label="Contact law enforcement immediately"
+             style="margin-right: 0.75rem;">
+      <span>Contact law enforcement immediately</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="3"
+             data-correct="false"
+             data-feedback="✗ Incorrect. The MOST important thing you can do is BE SUPPORTIVE AND LISTEN NON-JUDGMENTALLY. Your role is not to rescue, make decisions for them, or force a particular course of action. Instead, you provide a safe space for disclosure, validate their experience, and support their autonomy. This trauma-informed approach honors their expertise about their own situation and helps rebuild the power and control that abuse took away."
+             aria-label="Convince them that the abuse is serious"
+             style="margin-right: 0.75rem;">
+      <span>Convince them that the abuse is serious</span>
+    </label>
+
+    <div class="question-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+  </div>
+</div>
+
+<div class="quiz-question" data-question-number="2" style="display: none;">
+  <h3 style="margin-bottom: 1rem; color: #38b2ac;">Community Accountability</h3>
+  <p style="margin-bottom: 1.5rem; color: #374151; font-size: 1.125rem;">What does the Community-Accountability Model teach us about preventing intimate partner violence?</p>
+  <div class="knowledge-check" data-question-index="1">
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="0"
+             data-correct="false"
+             data-feedback="✗ Incorrect. The Community-Accountability Model shows that CHANGES AT ANY COMMUNITY LEVEL can RIPPLE THROUGHOUT THE ECOSYSTEM, so COMMUNITY-BASED SOLUTIONS AT ALL LEVELS are needed. IPV is socially supported behavior learned through multiple community influences. By changing mindsets, behaviors, and beliefs at the individual, primary, micro, macro, or global levels, those changes naturally impact the other levels. This means everyone has a role in prevention."
+             aria-label="Only individuals who cause harm need to change"
+             style="margin-right: 0.75rem;">
+      <span>Only individuals who cause harm need to change</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="1"
+             data-correct="false"
+             data-feedback="✗ Incorrect. The Community-Accountability Model shows that CHANGES AT ANY COMMUNITY LEVEL can RIPPLE THROUGHOUT THE ECOSYSTEM, so COMMUNITY-BASED SOLUTIONS AT ALL LEVELS are needed. IPV is socially supported behavior learned through multiple community influences. By changing mindsets, behaviors, and beliefs at the individual, primary, micro, macro, or global levels, those changes naturally impact the other levels. This means everyone has a role in prevention."
+             aria-label="Prevention only happens through law enforcement"
+             style="margin-right: 0.75rem;">
+      <span>Prevention only happens through law enforcement</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="2"
+             data-correct="true"
+             data-feedback="✓ Correct! The Community-Accountability Model shows that CHANGES AT ANY COMMUNITY LEVEL can RIPPLE THROUGHOUT THE ECOSYSTEM, so COMMUNITY-BASED SOLUTIONS AT ALL LEVELS are needed. IPV is socially supported behavior learned through multiple community influences. By changing mindsets, behaviors, and beliefs at the individual, primary, micro, macro, or global levels, those changes naturally impact the other levels. This means everyone has a role in prevention."
+             aria-label="Changes at any community level can ripple throughout the ecosystem, so community-based solutions at all levels are needed"
+             style="margin-right: 0.75rem;">
+      <span>Changes at any community level can ripple throughout the ecosystem, so community-based solutions at all levels are needed</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="3"
+             data-correct="false"
+             data-feedback="✗ Incorrect. The Community-Accountability Model shows that CHANGES AT ANY COMMUNITY LEVEL can RIPPLE THROUGHOUT THE ECOSYSTEM, so COMMUNITY-BASED SOLUTIONS AT ALL LEVELS are needed. IPV is socially supported behavior learned through multiple community influences. By changing mindsets, behaviors, and beliefs at the individual, primary, micro, macro, or global levels, those changes naturally impact the other levels. This means everyone has a role in prevention."
+             aria-label="The global community has no impact on individual behavior"
+             style="margin-right: 0.75rem;">
+      <span>The global community has no impact on individual behavior</span>
+    </label>
+
+    <div class="question-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+  </div>
+</div>
+
+<div class="quiz-question" data-question-number="3" style="display: none;">
+  <h3 style="margin-bottom: 1rem; color: #38b2ac;">Resources and Support</h3>
+  <p style="margin-bottom: 1.5rem; color: #374151; font-size: 1.125rem;">Why is it important to know resources like the National Domestic Violence Hotline BEFORE a survivor discloses to you?</p>
+  <div class="knowledge-check" data-question-index="2">
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="0"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Being PREPARED with resources helps you provide IMMEDIATE, PRACTICAL SUPPORT when someone trusts you with their disclosure. When a survivor discloses, they're taking a risk and showing trust in you. Having resources ready (like the National Domestic Violence Hotline: 1-800-799-7233) allows you to offer concrete help while they're in a receptive state. This preparation demonstrates that you take IPV seriously and are ready to support them effectively."
+             aria-label="So you can immediately transfer the survivor to someone else"
+             style="margin-right: 0.75rem;">
+      <span>So you can immediately transfer the survivor to someone else</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="1"
+             data-correct="true"
+             data-feedback="✓ Correct! Being PREPARED with resources helps you provide IMMEDIATE, PRACTICAL SUPPORT when someone trusts you with their disclosure. When a survivor discloses, they're taking a risk and showing trust in you. Having resources ready (like the National Domestic Violence Hotline: 1-800-799-7233) allows you to offer concrete help while they're in a receptive state. This preparation demonstrates that you take IPV seriously and are ready to support them effectively."
+             aria-label="Because being prepared helps you provide immediate, practical support when someone trusts you with their disclosure"
+             style="margin-right: 0.75rem;">
+      <span>Because being prepared helps you provide immediate, practical support when someone trusts you with their disclosure</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="2"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Being PREPARED with resources helps you provide IMMEDIATE, PRACTICAL SUPPORT when someone trusts you with their disclosure. When a survivor discloses, they're taking a risk and showing trust in you. Having resources ready (like the National Domestic Violence Hotline: 1-800-799-7233) allows you to offer concrete help while they're in a receptive state. This preparation demonstrates that you take IPV seriously and are ready to support them effectively."
+             aria-label="Because you are required by law to provide resources"
+             style="margin-right: 0.75rem;">
+      <span>Because you are required by law to provide resources</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="3"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Being PREPARED with resources helps you provide IMMEDIATE, PRACTICAL SUPPORT when someone trusts you with their disclosure. When a survivor discloses, they're taking a risk and showing trust in you. Having resources ready (like the National Domestic Violence Hotline: 1-800-799-7233) allows you to offer concrete help while they're in a receptive state. This preparation demonstrates that you take IPV seriously and are ready to support them effectively."
+             aria-label="So you don't have to listen to the survivor's story"
+             style="margin-right: 0.75rem;">
+      <span>So you don't have to listen to the survivor's story</span>
+    </label>
+
+    <div class="question-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+  </div>
+</div>
+
+  <div class="quiz-navigation" style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #e5e7eb;">
+    <button onclick="previousQuestion()" id="prev-btn" style="padding: 0.75rem 1.5rem; background: #6b7280; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; display: none;">Previous</button>
+    <button onclick="nextQuestion()" id="next-btn" style="padding: 0.75rem 1.5rem; background: #38b2ac; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer;">Next Question</button>
+    <button onclick="submitQuiz()" id="submit-btn" style="padding: 0.75rem 1.5rem; background: #10b981; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; display: none;">Submit Quiz</button>
+  </div>
+
+  <div class="quiz-result" style="display: none; margin-top: 2rem; padding: 2rem; background: #f0fdf4; border: 2px solid #10b981; border-radius: 0.75rem; text-align: center;">
+    <h2 style="color: #10b981; margin-bottom: 1rem;">Quiz Complete!</h2>
+    <p class="quiz-score" style="font-size: 2rem; font-weight: bold; color: #047857; margin-bottom: 1rem;"></p>
+    <p class="quiz-message" style="color: #065f46; margin-bottom: 1.5rem;"></p>
+    <button onclick="reviewQuiz()" style="padding: 0.75rem 1.5rem; background: #38b2ac; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; margin-right: 0.75rem;">Review Answers</button>
+  </div>
+</div>
+
+
+  
+  <!-- Lesson Navigation (Previous/Next) -->
+<nav class="lesson-navigation" aria-label="Lesson navigation">
+    <a href="lesson-3-2.html" class="lesson-nav-button lesson-nav-prev">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <div class="lesson-nav-text">
+            <span class="lesson-nav-label">Previous Lesson</span>
+            <span class="lesson-nav-title">Safety Planning with Victims</span>
+        </div>
+    </a>
+    <a href="final-assessment.html" class="lesson-nav-button lesson-nav-next" style="background: linear-gradient(135deg, #d69e2e 0%, #b7791f 100%); border-color: #d69e2e; color: white;">
+        <div class="lesson-nav-text">
+            <span class="lesson-nav-label" style="color: white;">Ready to Complete?</span>
+            <span class="lesson-nav-title" style="color: white;">Take Final Assessment</span>
+        </div>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <circle cx="12" cy="8" r="6"/>
+            <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+        </svg>
+    </a>
+</nav>
+
+  <!-- Sidebar Module Toggle Script -->
+  <script>
+    // Global function for onclick handlers
+    // Community Level Selection
+    let currentLevel = null;
+    let lastFocusedElement = null;
+
+    // Level content data
+    const levelContent = {
+      1: {
+        title: '1. The Individual',
+        color: '#1e40af',
+        items: [
+          'The individual person, their actions, and all the forces that influence their behavior',
+          'At the center of all community levels',
+          'Both shaped by and capable of shaping all other levels'
+        ]
+      },
+      2: {
+        title: '2. The Primary Community',
+        color: '#166534',
+        items: [
+          'The group closest to the individual',
+          'Can consist of family, school friends, clubs, gangs, or any group that functions in a family-like role',
+          'The communities the individual engages with most frequently',
+          'Has the most direct, daily influence on the individual'
+        ]
+      },
+      3: {
+        title: '3. The Micro-Community',
+        color: '#854d0e',
+        items: [
+          'Tied to the primary community but on a larger scale',
+          'Can include religious communities, the broader school system, civic groups, social service agencies',
+          'Provides broader context and norms beyond immediate circles'
+        ]
+      },
+      4: {
+        title: '4. The Macro-Community',
+        color: '#9a3412',
+        items: [
+          'Yet one additional layer away from the individual',
+          'Can include very large group numbers scattered across the country',
+          'The individual may never directly engage with it but is subject to its rules, values, and guidelines',
+          'Examples: organized religion, governments, mass media, high-level courts, large corporations'
+        ]
+      },
+      5: {
+        title: '5. The Global Community',
+        color: '#991b1b',
+        items: [
+          'Encapsulates all other communities',
+          'Has influence on all those that fall under it',
+          'Examples: patriarchy, colonialism',
+          'More abstract but significant impact on individual development',
+          'Shapes fundamental beliefs and power structures across all societies'
+        ]
+      }
+    };
+
+    function selectLevel(levelNum, triggeringElement) {
+      const tooltip = document.getElementById('community-tooltip');
+      const tooltipContent = document.getElementById('tooltip-content');
+      const closeBtn = document.getElementById('tooltip-close-btn');
+      const level = levelContent[levelNum];
+
+      if (!tooltip || !tooltipContent || !level) return;
+
+      // Store currently focused element to return focus later
+      lastFocusedElement = triggeringElement || document.activeElement;
+
+      // Build tooltip content
+      const itemsHTML = level.items.map(item => `<li>${item}</li>`).join('');
+      tooltipContent.innerHTML = `
+        <h5 id="tooltip-title" style="color: ${level.color}; margin-bottom: 1rem; padding-right: 1.5rem;">${level.title}</h5>
+        <ul style="margin: 0; padding-left: 1.5rem; color: #374151; line-height: 1.8;">
+          ${itemsHTML}
+        </ul>
+      `;
+
+      // Show tooltip with fade-in animation
+      tooltip.style.display = 'block';
+      tooltip.style.opacity = '0';
+      setTimeout(() => {
+        tooltip.style.transition = 'opacity 0.3s';
+        tooltip.style.opacity = '1';
+        // Move focus to close button for keyboard accessibility
+        if (closeBtn) closeBtn.focus();
+      }, 10);
+
+      currentLevel = levelNum;
+    }
+
+    function closeTooltip() {
+      const tooltip = document.getElementById('community-tooltip');
+      if (!tooltip) return;
+
+      tooltip.style.opacity = '0';
+      setTimeout(() => {
+        tooltip.style.display = 'none';
+        // Return focus to the element that opened the tooltip
+        if (lastFocusedElement) {
+          lastFocusedElement.focus();
+          lastFocusedElement = null;
+        }
+      }, 300);
+    }
+
+    // Keyboard handler for circle activation
+    function handleCircleKeydown(event, levelNum) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        selectLevel(levelNum, event.target);
+      }
+    }
+
+    // Global keyboard handler for Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        const tooltip = document.getElementById('community-tooltip');
+        if (tooltip && tooltip.style.display === 'block') {
+          closeTooltip();
+        }
+      }
+    });
+
+    // Close tooltip when clicking outside
+    document.addEventListener('click', function(event) {
+      const tooltip = document.getElementById('community-tooltip');
+      const circlesContainer = document.getElementById('circles-container');
+
+      if (!tooltip || !circlesContainer) return;
+
+      // If click is outside the container and tooltip is visible
+      if (!circlesContainer.contains(event.target) && tooltip.style.display === 'block') {
+        closeTooltip();
+      }
+    });
+
+    // Response Option Toggle Functions
+    function toggleResponse(responseNum) {
+      const detail = document.getElementById(`response-detail-${responseNum}`);
+      const chevron = document.querySelector(`.response-chevron-${responseNum}`);
+      const option = detail.parentElement;
+
+      const isExpanded = detail.style.display !== 'none';
+
+      // Toggle display
+      detail.style.display = isExpanded ? 'none' : 'block';
+
+      // Rotate chevron
+      if (chevron) {
+        chevron.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+      }
+
+      // Update aria-expanded
+      option.setAttribute('aria-expanded', !isExpanded);
+
+      // Highlight when expanded
+      if (!isExpanded) {
+        option.style.transform = 'scale(1.02)';
+        option.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+      } else {
+        option.style.transform = 'scale(1)';
+        option.style.boxShadow = 'none';
+      }
+    }
+
+    function handleResponseKeydown(event, responseNum) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleResponse(responseNum);
+      }
+    }
+
+    // Resource Card Toggle Functions
+    function toggleResourceCard(cardNum) {
+      const detail = document.getElementById(`resource-detail-${cardNum}`);
+      const chevron = document.querySelector(`.resource-chevron-${cardNum}`);
+      const header = detail.previousElementSibling;
+
+      const isExpanded = detail.style.display !== 'none';
+
+      // Toggle display
+      detail.style.display = isExpanded ? 'none' : 'block';
+
+      // Rotate chevron
+      if (chevron) {
+        chevron.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+      }
+
+      // Update aria-expanded
+      header.setAttribute('aria-expanded', !isExpanded);
+
+      // Highlight when expanded
+      const card = header.parentElement;
+      if (!isExpanded) {
+        card.style.borderColor = '#38b2ac';
+        card.style.boxShadow = '0 4px 12px rgba(56, 178, 172, 0.15)';
+      } else {
+        card.style.borderColor = '#e5e7eb';
+        card.style.boxShadow = 'none';
+      }
+    }
+
+    function handleResourceKeydown(event, cardNum) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleResourceCard(cardNum);
+      }
+    }
+
+    function toggleSidebarModule(moduleNum) {
+      const module = document.querySelector(`.nav-module[data-module="${moduleNum}"]`);
+      if (!module) return;
+
+      const trigger = module.querySelector('.nav-module-trigger');
+      const lessons = module.querySelector('.nav-lessons');
+      if (!trigger || !lessons) return;
+
+      const isCurrentlyExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+      // Toggle aria-expanded
+      trigger.setAttribute('aria-expanded', !isCurrentlyExpanded);
+
+      // Toggle the active class (used by CSS for styling)
+      if (isCurrentlyExpanded) {
+        module.classList.remove('active');
+        lessons.style.maxHeight = '0';
+        lessons.style.opacity = '0';
+        lessons.style.marginTop = '0';
+      } else {
+        module.classList.add('active');
+        lessons.style.maxHeight = '500px';
+        lessons.style.opacity = '1';
+        lessons.style.marginTop = 'var(--space-3)';
+      }
+    }
+
+    // Initialize modules on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const modules = document.querySelectorAll('.nav-module');
+
+      modules.forEach(function(module) {
+        const trigger = module.querySelector('.nav-module-trigger');
+        const lessons = module.querySelector('.nav-lessons');
+        const moduleNum = module.getAttribute('data-module');
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+        // Initialize visibility based on aria-expanded
+        if (isExpanded) {
+          module.classList.add('active');
+          lessons.style.maxHeight = '500px';
+          lessons.style.opacity = '1';
+          lessons.style.marginTop = 'var(--space-3)';
+        } else {
+          module.classList.remove('active');
+          lessons.style.maxHeight = '0';
+          lessons.style.opacity = '0';
+          lessons.style.marginTop = '0';
+        }
+      });
+    });
+  </script>
+
+  <script src="../js/video-player.js"></script>
+</body>
+</html>

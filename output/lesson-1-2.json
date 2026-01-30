@@ -1,0 +1,94 @@
+{
+  "lessonId": "lesson-1-2",
+  "title": "Types of Abuse",
+  "description": "Identifying the various forms of abuse in intimate partner violence and understanding how different types of abuse often overlap and escalate.",
+  "moduleId": "module-1",
+  "estimatedMinutes": 7,
+  "content": {
+    "narration": "At the surface of the iceberg, abuse reveals itself in many forms—some visible like bruises, others hidden like financial control. Understanding these types helps you, like James providing trauma-informed support, recognize the full spectrum of harm. What seems like separate behaviors often connects into a larger pattern of control.",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Recognizing Different Forms of Abuse",
+        "content": "## What Does Abuse Actually Look Like?\n\nRecognizing intimate partner violence involves more than just identifying bruises or waiting for someone to show up in the emergency room. It is also not a single moment in time, but **a pattern of actions that compound**.\n\nIntimate partner violence can take many forms, and understanding each type is essential for recognizing abuse when it occurs. Review each type of violence and its examples below.\n\n### Physical Abuse\nPhysical violence includes any intentional use of physical force with the potential to cause harm, including:\n- Hitting, slapping, punching, kicking\n- Choking or strangling\n- Burning\n- Using weapons\n- Physical restraint\n\n### Sexual Abuse\nSexual violence includes any sexual act or attempt without consent, including:\n- Forced sexual contact\n- Sexual coercion\n- Reproductive control\n- Refusing to use protection\n\n### Emotional/Psychological Abuse\nPsychological abuse involves verbal and non-verbal behaviors that harm someone's mental health, including:\n- Name-calling and insults\n- Humiliation and degradation\n- Threats and intimidation\n- Isolation from friends and family\n- Gaslighting (making someone question their reality)\n\n### Economic Abuse\nEconomic violence involves controlling access to financial resources, including:\n- Preventing someone from working\n- Controlling all finances\n- Withholding money for necessities\n- Sabotaging employment\n- Running up debt in someone's name"
+      },
+      {
+        "id": "section-2",
+        "title": "How Abuse Types Overlap",
+        "content": "## Relationship Between Types of Abuse and Escalation of Harm\n\nIt is important to note that survivors can experience several types of abuse at once. Often, people who cause harm will use multiple strategies to gain coercive control in their relationship, layering each on top of the others to intensify their effect.\n\n**A Critical Pattern:**\n\nIn most cases, physical and sexual violence in an intimate relationship means there is already a history of controlling behaviors.\n\nFor example, in a 2006 study, Maria A. Pico-Alfonso et al. found that \"while some subjects experienced only psychological abuse, all those who experienced physical abuse were also subjected to some form of psychological abuse.\"\n\n**What This Means:**\n\n- Psychological abuse often comes first and creates the foundation for other forms of abuse\n- Physical violence rarely happens in isolation—it's typically part of a larger pattern of control\n- Multiple forms of abuse working together create a more powerful system of control\n- Understanding this overlap helps professionals like Dr. Patel recognize early warning signs before physical violence occurs"
+      },
+      {
+        "id": "section-3",
+        "title": "Moving Forward",
+        "content": "## Understanding Power and Control\n\nYou have examined types of abuse and how they can overlap. Next, you look more closely at how these behaviors can create a relationship where one partner has power and control over the other.\n\nTo do this, you explore the use of one of the most common tools in this field—the Domestic Abuse Intervention Program's **Power and Control Wheel**.\n\nThis tool helps illustrate:\n- How different abusive behaviors work together\n- The systematic nature of intimate partner violence\n- How control is established and maintained in relationships\n- Patterns that may not be visible from looking at individual incidents\n\nUnderstanding these connections prepares you to better support survivors and recognize abuse in all its forms."
+      }
+    ],
+    "keyTakeaways": [
+      "IPV involves a pattern of behaviors, not isolated incidents, across multiple types of abuse",
+      "The main types of abuse are physical, sexual, emotional/psychological, and economic",
+      "Survivors often experience multiple types of abuse simultaneously, with abusers layering tactics to intensify their effect",
+      "In most cases, physical and sexual violence in a relationship indicates an existing history of controlling behaviors",
+      "Research shows that all people experiencing physical abuse also experience psychological abuse",
+      "Recognizing how different types of abuse overlap is essential for identifying IPV patterns early"
+    ],
+    "reflectionQuestions": [
+      "Before this lesson, which types of abuse were you most familiar with, and which were less obvious to you?",
+      "How might understanding that abuse types overlap change the way you assess situations in your professional role?",
+      "What challenges might you face in recognizing psychological or economic abuse compared to physical abuse?"
+    ],
+    "activities": [
+      {
+        "type": "knowledge-check",
+        "title": "Types of Abuse",
+        "placement": "end-of-lesson",
+        "prompt": "Which of the following is an example of ECONOMIC abuse in an intimate partner relationship?",
+        "options": [
+          "Calling someone insulting names",
+          "Preventing someone from working or controlling all finances",
+          "Threatening to harm someone if they don't comply",
+          "Isolating someone from their friends and family"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Preventing someone from working or controlling all finances is economic abuse. This type of abuse involves controlling access to financial resources, which can include preventing employment, withholding money for necessities, sabotaging jobs, or controlling all financial decisions. Economic abuse creates dependency and makes it harder for survivors to leave abusive relationships."
+      },
+      {
+        "type": "knowledge-check",
+        "title": "Overlapping Abuse",
+        "placement": "end-of-lesson",
+        "prompt": "What does research tell us about the relationship between physical abuse and psychological abuse?",
+        "options": [
+          "They rarely occur together in the same relationship",
+          "Physical abuse always leads to psychological abuse",
+          "All those who experienced physical abuse were also subjected to some form of psychological abuse",
+          "Psychological abuse only occurs in relationships without physical violence"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Research by Maria A. Pico-Alfonso et al. found that while some people experienced ONLY psychological abuse, ALL those who experienced physical abuse were also subjected to some form of psychological abuse. This demonstrates that physical violence rarely happens in isolation—it's typically part of a larger pattern that includes psychological abuse as a foundation for control."
+      },
+      {
+        "type": "knowledge-check",
+        "title": "Recognizing Patterns",
+        "placement": "end-of-lesson",
+        "prompt": "Why is it important to understand that IPV is a PATTERN of behaviors rather than isolated incidents?",
+        "options": [
+          "Because single incidents of abuse are not harmful",
+          "Because patterns help us distinguish IPV from occasional relationship conflict and recognize the systematic nature of abuse",
+          "Because only repeated physical violence qualifies as IPV",
+          "Because isolated incidents always escalate to patterns"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Understanding IPV as a PATTERN of behaviors is crucial because it helps us distinguish systematic abuse from occasional relationship conflict. A pattern reveals the ongoing nature of power and control, shows how different tactics work together, and helps professionals recognize that even 'small' controlling behaviors may be part of a larger abusive system. This understanding is essential for trauma-informed assessment and support."
+      }
+    ],
+    "images": []
+  },
+  "metadata": {
+    "generatedAt": "2026-01-26T08:05:00.000Z",
+    "sourceChunks": ["chunk-53", "chunk-54", "chunk-55", "chunk-56", "chunk-57", "chunk-58", "chunk-59", "chunk-60", "chunk-61", "chunk-62", "chunk-63", "chunk-64"],
+    "wordCount": 893,
+    "readingLevel": "8th grade",
+    "traumaInformedApproach": true,
+    "icebergZone": "surface",
+    "zoneDescription": "Visible manifestations of different abuse types and how they compound"
+  }
+}

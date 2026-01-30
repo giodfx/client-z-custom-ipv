@@ -1,0 +1,4646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IPV Recognition & Response Course">
+    <title>Who is Affected by Intimate Partner Violence? - IPV Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* ═══════════════════════════════════════════════════════════════
+           CSS CUSTOM PROPERTIES (Design Tokens)
+           ═══════════════════════════════════════════════════════════════ */
+        :root {
+            /* Colors - Ethereal Depth Palette */
+            --color-deep-navy: #1a1a2e;
+            --color-twilight-purple: #2a1a3e;
+            --color-ocean-blue: #2a5a7a;
+            --color-teal: #38b2ac;
+            --color-bright-cyan: #80ffff;
+            --color-warm-gold: #ffd700;
+            --color-soft-peach: #ffd4b8;
+            --color-white: #ffffff;
+            --color-light-gray: #f5f5f7;
+            --color-text: #1a1a2e;
+            --color-text-muted: #6b7280;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-error: #ef4444;
+
+            /* Module Zone Colors */
+            --zone-surface: #38b2ac;
+            --zone-twilight: #4a90a8;
+            --zone-deep: #2a5a7a;
+
+            /* Typography */
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-size-xs: 0.75rem;    /* 12px */
+            --font-size-sm: 0.875rem;   /* 14px */
+            --font-size-base: 1rem;     /* 16px */
+            --font-size-lg: 1.125rem;   /* 18px */
+            --font-size-xl: 1.25rem;    /* 20px */
+            --font-size-2xl: 1.5rem;    /* 24px */
+            --font-size-3xl: 1.875rem;  /* 30px */
+            --font-size-4xl: 2.25rem;   /* 36px */
+            --line-height-tight: 1.25;
+            --line-height-normal: 1.5;
+            --line-height-relaxed: 1.75;
+
+            /* Spacing */
+            --space-1: 0.25rem;
+            --space-2: 0.5rem;
+            --space-3: 0.75rem;
+            --space-4: 1rem;
+            --space-5: 1.25rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-10: 2.5rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+
+            /* Borders & Radius */
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --radius-2xl: 1.5rem;
+            --radius-full: 9999px;
+
+            /* Shadows */
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px rgba(0,0,0,0.15);
+
+            /* Transitions */
+            --transition-fast: 150ms ease;
+            --transition-base: 250ms ease;
+            --transition-slow: 350ms ease;
+
+            /* Layout */
+            --content-max-width: 720px;
+            --sidebar-width: 280px;
+            
+            --min-tap-target: 44px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           RESET & BASE STYLES
+           ═══════════════════════════════════════════════════════════════ */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        /* Respect user motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-normal);
+            color: var(--color-text);
+            background: url('../media/backgrounds/lesson-bg-clean.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           ACCESSIBILITY: Skip Link
+           ═══════════════════════════════════════════════════════════════ */
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: var(--space-4);
+            z-index: 9999;
+            padding: var(--space-3) var(--space-4);
+            background: var(--color-teal);
+            color: var(--color-white);
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            transition: top var(--transition-fast);
+        }
+
+        .skip-link:focus {
+            top: var(--space-4);
+            outline: 3px solid var(--color-warm-gold);
+            outline-offset: 2px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           ACCESSIBILITY: Focus Styles
+           ═══════════════════════════════════════════════════════════════ */
+        :focus {
+            outline: none;
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--color-teal);
+            outline-offset: 2px;
+        }
+
+        button:focus-visible,
+        a:focus-visible,
+        [tabindex]:focus-visible {
+            outline: 3px solid var(--color-teal);
+            outline-offset: 2px;
+        }
+
+        
+        
+        
+        /* ═══════════════════════════════════════════════════════════════
+           HERO SECTION (with integrated navigation)
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-hero {
+            position: relative;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(42, 90, 122, 0.7)), center center / cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 0 0 var(--radius-2xl) var(--radius-2xl);
+            overflow: hidden;
+        }
+
+        .lesson-hero-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: var(--space-4) var(--space-6);
+            gap: var(--space-4);
+            z-index: 10;
+        }
+
+        .hero-back-button {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-3);
+            border: none;
+            background: #38b2ac;
+            backdrop-filter: blur(10px);
+            color: var(--color-white);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            min-height: var(--min-tap-target);
+            text-decoration: none;
+        }
+
+        .hero-back-button:hover {
+            background: #2a5a7a;
+            transform: translateX(-2px);
+        }
+
+        .hero-back-button svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .hero-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            text-decoration: none;
+            color: var(--color-white);
+        }
+
+        .hero-logo-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: var(--font-size-lg);
+        }
+
+        .hero-logo-text {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--color-white);
+        }
+
+        .lesson-hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px var(--space-6) var(--space-6);
+        }
+
+        .lesson-hero-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            margin-bottom: var(--space-3);
+            font-size: var(--font-size-sm);
+        }
+
+        .lesson-hero-breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color var(--transition-base);
+        }
+
+        .lesson-hero-breadcrumb a:hover {
+            color: var(--color-white);
+        }
+
+        .lesson-hero-breadcrumb span {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .lesson-hero-breadcrumb span[aria-current] {
+            color: var(--color-white);
+            font-weight: 500;
+        }
+
+        .lesson-hero-title {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            color: var(--color-white);
+            line-height: var(--line-height-tight);
+            margin: 0;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .lesson-hero {
+                height: 240px;
+            }
+
+            .lesson-hero-nav {
+                padding: var(--space-3) var(--space-4);
+            }
+
+            .hero-back-button span {
+                display: none;
+            }
+
+            .hero-back-button {
+                width: var(--min-tap-target);
+                height: var(--min-tap-target);
+                padding: 0;
+                justify-content: center;
+            }
+
+            .hero-logo-text {
+                font-size: var(--font-size-sm);
+            }
+
+            .hero-logo-icon {
+                width: 32px;
+                height: 32px;
+                font-size: var(--font-size-base);
+            }
+
+            .lesson-hero-content {
+                padding: 0 var(--space-4) var(--space-4);
+            }
+
+            .lesson-hero-title {
+                font-size: var(--font-size-2xl);
+            }
+        }
+
+/* ═══════════════════════════════════════════════════════════════
+           MAIN CONTENT AREA
+           ═══════════════════════════════════════════════════════════════ */
+        .main-content {
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           VIEW: MODULE LESSONS
+           ═══════════════════════════════════════════════════════════════ */
+        .module-view {
+            display: block;
+        }
+
+        .module-hero {
+            position: relative;
+            height: 280px;
+            background: url('../media/heroes/lesson-1-1-hero.png') top center / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: var(--space-8);
+        }
+
+        .module-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26,26,46,0.9) 0%, rgba(26,26,46,0.4) 50%, transparent 100%);
+        }
+
+        .module-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .module-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: rgba(255,255,255,0.7);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-3);
+        }
+
+        .module-breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .module-breadcrumb a:hover {
+            color: var(--color-white);
+            text-decoration: underline;
+        }
+
+        .module-title {
+            color: var(--color-white);
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            margin-bottom: var(--space-2);
+        }
+
+        .module-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-4);
+            color: rgba(255,255,255,0.8);
+            font-size: var(--font-size-sm);
+        }
+
+        .module-meta-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        /* Lessons Grid */
+        .lessons-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--space-8) var(--space-4);
+        }
+
+        .lessons-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-6);
+        }
+
+        .lessons-title {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+        }
+
+        .lessons-progress {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+        }
+
+        .progress-bar {
+            width: 120px;
+            height: 8px;
+            background: rgba(0,0,0,0.1);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--color-teal);
+            border-radius: var(--radius-full);
+            transition: width var(--transition-slow);
+        }
+
+        /* Lesson Cards */
+        .lessons-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+        }
+
+        .lesson-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-5);
+            display: flex;
+            gap: var(--space-4);
+            align-items: flex-start;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .lesson-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .lesson-card:focus-visible {
+            outline: 3px solid var(--color-teal);
+            outline-offset: 2px;
+        }
+
+        .lesson-number {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--zone-surface), var(--color-ocean-blue));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: var(--font-size-lg);
+        }
+
+        .lesson-number.completed {
+            background: var(--color-success);
+        }
+
+        .lesson-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .lesson-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: var(--space-3);
+            margin-bottom: var(--space-1);
+        }
+
+        .lesson-name {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .lesson-duration {
+            flex-shrink: 0;
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+            display: flex;
+            align-items: center;
+            gap: var(--space-1);
+        }
+
+        .lesson-description {
+            color: var(--color-text-muted);
+            font-size: var(--font-size-sm);
+            line-height: var(--line-height-relaxed);
+            margin-bottom: var(--space-3);
+        }
+
+        .lesson-status {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--font-size-xs);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .lesson-status.not-started {
+            color: var(--color-text-muted);
+        }
+
+        .lesson-status.in-progress {
+            color: var(--color-teal);
+        }
+
+        .lesson-status.completed {
+            color: var(--color-success);
+        }
+
+        .lesson-arrow {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            color: var(--color-text-muted);
+            align-self: center;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           VIEW: LESSON CONTENT
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-view {
+            display: none;
+        }
+
+        .lesson-view.active {
+            display: block;
+        }
+
+        .module-view.hidden {
+            display: none;
+        }
+
+        .lesson-hero {
+            position: relative;
+            height: 200px;
+            background:  url('../media/heroes/lesson-1-1-hero.png') top center / cover no-repeat;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-end;
+            padding: var(--space-6) var(--space-4);
+        }
+
+        .lesson-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26,26,46,0.85) 0%, rgba(26,26,46,0.3) 60%, transparent 100%);
+        }
+
+        .lesson-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: var(--content-max-width);
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .lesson-hero-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: rgba(255,255,255,0.7);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-2);
+        }
+
+        .lesson-hero-breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .lesson-hero-breadcrumb a:hover {
+            color: var(--color-white);
+        }
+
+        .lesson-hero-title {
+            color: var(--color-white);
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+        }
+
+        /* Lesson Content Layout */
+        .lesson-layout {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: var(--space-8);
+            padding: var(--space-8) var(--space-4);
+        }
+
+        .lesson-main {
+            flex: 1;
+            /* Removed max-width to allow content to match hero width */
+        }
+
+        .lesson-sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+        }
+
+        /* Article Content */
+        .lesson-article {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .lesson-article h2 {
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: var(--space-4);
+            margin-top: var(--space-8);
+        }
+
+        .lesson-article h2:first-child {
+            margin-top: 0;
+        }
+
+        .lesson-article h3 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: var(--space-3);
+            margin-top: var(--space-6);
+        }
+
+        .lesson-article p {
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-relaxed);
+            color: var(--color-text);
+            margin-bottom: var(--space-4);
+        }
+
+        .lesson-article ul, .lesson-article ol {
+            margin-bottom: var(--space-4);
+            padding-left: var(--space-6);
+        }
+
+        .lesson-article li {
+            margin-bottom: var(--space-2);
+            line-height: var(--line-height-relaxed);
+        }
+
+        .lesson-article blockquote {
+            border-left: 4px solid var(--color-teal);
+            padding-left: var(--space-4);
+            margin: var(--space-6) 0;
+            font-style: italic;
+            color: var(--color-text-muted);
+        }
+
+        /* Content Warning */
+        .content-warning {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: var(--radius-lg);
+            padding: var(--space-4);
+            margin: var(--space-6) 0;
+        }
+
+        .content-warning-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: var(--space-2);
+        }
+
+        .content-warning p {
+            color: #92400e;
+            margin-bottom: var(--space-3);
+        }
+
+        .content-warning-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+
+        .cw-button {
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            cursor: pointer;
+            min-height: var(--min-tap-target);
+            transition: all var(--transition-fast);
+        }
+
+        .cw-button-primary {
+            background: #92400e;
+            color: var(--color-white);
+            border: none;
+        }
+
+        .cw-button-primary:hover {
+            background: #78350f;
+        }
+
+        .cw-button-secondary {
+            background: transparent;
+            color: #92400e;
+            border: 1px solid #92400e;
+        }
+
+        .cw-button-secondary:hover {
+            background: rgba(146, 64, 14, 0.1);
+        }
+
+        /* Key Points Box */
+        .key-points {
+            background: linear-gradient(135deg, rgba(56,178,172,0.1), rgba(42,90,122,0.1));
+            border-radius: var(--radius-lg);
+            padding: var(--space-5);
+            margin: var(--space-6) 0;
+        }
+
+        .key-points-title {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-weight: 600;
+            color: var(--color-teal);
+            margin-bottom: var(--space-3);
+        }
+
+        .key-points ul {
+            margin: 0;
+            padding-left: var(--space-5);
+        }
+
+        .key-points li {
+            color: var(--color-text);
+        }
+
+        /* Sidebar Resource Card */
+        .resource-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-5);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: calc(var(--header-height) + var(--space-4));
+        }
+
+        .resource-card-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-weight: 600;
+            color: var(--color-teal);
+            margin-bottom: var(--space-4);
+            padding-bottom: var(--space-3);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .resource-item {
+            margin-bottom: var(--space-4);
+        }
+
+        .resource-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .resource-label {
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-muted);
+            margin-bottom: var(--space-1);
+        }
+
+        .resource-value {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .resource-value a {
+            color: var(--color-teal);
+            text-decoration: none;
+        }
+
+        .resource-value a:hover {
+            text-decoration: underline;
+        }
+
+        .resource-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+            width: 100%;
+            padding: var(--space-3);
+            background: var(--color-teal);
+            color: var(--color-white);
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: var(--space-4);
+            min-height: var(--min-tap-target);
+            transition: background var(--transition-fast);
+        }
+
+        .resource-button:hover {
+            background: var(--color-ocean-blue);
+        }
+
+        /* Lesson Navigation */
+        .lesson-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-6) 0;
+            margin-top: var(--space-8);
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .nav-button {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-3) var(--space-5);
+            background: var(--color-white);
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: var(--radius-lg);
+            color: var(--color-text);
+            font-weight: 500;
+            cursor: pointer;
+            min-height: var(--min-tap-target);
+            transition: all var(--transition-fast);
+            text-decoration: none;
+        }
+
+        .nav-button:hover {
+            border-color: var(--color-teal);
+            color: var(--color-teal);
+        }
+
+        .nav-button.primary {
+            background: var(--color-teal);
+            border-color: var(--color-teal);
+            color: var(--color-white);
+        }
+
+        .nav-button.primary:hover {
+            background: var(--color-ocean-blue);
+            border-color: var(--color-ocean-blue);
+        }
+
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Progress Footer */
+        .lesson-progress-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: rgba(0,0,0,0.1);
+            z-index: 50;
+        }
+
+        .lesson-progress-fill {
+            height: 100%;
+            background: var(--color-teal);
+            transition: width var(--transition-base);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           MOBILE RESPONSIVE STYLES
+           ═══════════════════════════════════════════════════════════════ */
+        @media (max-width: 768px) {
+            .lesson-layout {
+                flex-direction: column;
+            }
+
+            /* Sidebar is now handled by hamburger menu - see MOBILE HAMBURGER MENU section */
+
+            .resource-card {
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                
+            }
+
+            .header {
+                padding: 0 var(--space-3);
+            }
+
+            .logo-text {
+                display: none;
+            }
+
+            .module-hero {
+                height: 220px;
+                padding: var(--space-4);
+            }
+
+            .module-title {
+                font-size: var(--font-size-2xl);
+            }
+
+            .module-meta {
+                gap: var(--space-3);
+            }
+
+            .lessons-container {
+                padding: var(--space-4);
+            }
+
+            .lesson-card {
+                flex-direction: column;
+                gap: var(--space-3);
+            }
+
+            .lesson-number {
+                width: 40px;
+                height: 40px;
+                font-size: var(--font-size-base);
+            }
+
+            .lesson-title-row {
+                flex-direction: column;
+                gap: var(--space-1);
+            }
+
+            .lesson-arrow {
+                display: none;
+            }
+
+            .lesson-hero {
+                height: 160px;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: var(--space-4);
+            }
+
+            .lesson-hero-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .lesson-layout {
+                padding: var(--space-4);
+                gap: var(--space-4);
+            }
+
+            .lesson-article {
+                padding: var(--space-5);
+            }
+
+            .lesson-article h2 {
+                font-size: var(--font-size-lg);
+            }
+
+            .lesson-nav {
+                flex-direction: column;
+                gap: var(--space-3);
+            }
+
+            .nav-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .module-hero {
+                height: 200px;
+            }
+
+            .module-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .module-meta-item span:not(.icon) {
+                font-size: var(--font-size-xs);
+            }
+
+            .lessons-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--space-3);
+            }
+
+            .help-button span {
+                display: none;
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           UTILITY CLASSES
+           ═══════════════════════════════════════════════════════════════ */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .icon-sm {
+            width: 16px;
+            height: 16px;
+        }
+
+        .icon-lg {
+            width: 24px;
+            height: 24px;
+        }
+    
+        /* ═══════════════════════════════════════════════════════════════
+           LESSON NAVIGATION SIDEBAR
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-nav-sidebar {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-4);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: calc(var(--header-height) + var(--space-4));
+            max-height: calc(100vh - var(--header-height) - var(--space-8));
+            overflow-y: auto;
+        }
+
+        .nav-header {
+            padding-bottom: var(--space-4);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            margin-bottom: var(--space-4);
+        }
+
+        .nav-back-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: var(--color-teal);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+            transition: color var(--transition-fast);
+        }
+
+        .nav-back-link:hover {
+            color: var(--zone-twilight);
+        }
+
+        .nav-back-link svg {
+            flex-shrink: 0;
+        }
+
+        .nav-module {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-4);
+            box-shadow: var(--shadow-md);
+            margin-bottom: var(--space-3);
+        }
+
+        .nav-module-trigger {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            width: 100%;
+            padding: var(--space-3);
+            background: rgba(56, 178, 172, 0.08);
+            border: 1px solid rgba(56, 178, 172, 0.2);
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            font-family: var(--font-family);
+        }
+
+
+
+
+
+        .nav-module-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: var(--color-teal);
+            color: white;
+            border-radius: 50%;
+            font-size: var(--font-size-xs);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .nav-module-title {
+            flex: 1;
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+            color: var(--color-text);
+            text-align: left;
+        }
+
+        .nav-expand-icon {
+            flex-shrink: 0;
+            transition: transform var(--transition-base);
+        }
+
+        .nav-module.active .nav-expand-icon {
+            transform: rotate(180deg);
+        }
+
+        .nav-lessons {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            margin-top: 0;
+        }
+
+        .nav-module.active .nav-lessons {
+            max-height: 500px;
+            opacity: 1;
+            margin-top: var(--space-3);
+        }
+
+        .nav-lesson-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-3);
+            margin: var(--space-1) 0;
+            margin-left: var(--space-6);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: var(--color-text-muted);
+            font-size: var(--font-size-sm);
+            transition: all var(--transition-fast);
+            border-left: 3px solid transparent;
+        }
+
+        .nav-lesson-link:hover {
+            background: rgba(56, 178, 172, 0.08);
+            color: var(--color-text);
+            border-left-color: rgba(56, 178, 172, 0.3);
+        }
+
+        .nav-lesson-link.current {
+            background: rgba(56, 178, 172, 0.12);
+            color: var(--color-teal);
+            font-weight: 600;
+            border-left-color: var(--color-teal);
+        }
+
+        .nav-lesson-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background: rgba(56, 178, 172, 0.2);
+            color: var(--color-teal);
+            border-radius: 50%;
+            font-size: 11px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .nav-lesson-link.current .nav-lesson-number {
+            background: var(--color-teal);
+            color: white;
+        }
+
+        .nav-lesson-title {
+            flex: 1;
+            line-height: 1.3;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .lesson-nav-sidebar {
+                position: static;
+            }
+        }
+
+        /* END LESSON NAVIGATION SIDEBAR */
+
+
+        /* ═══════════════════════════════════════════════════════════════
+           MOBILE HAMBURGER MENU
+           ═══════════════════════════════════════════════════════════════ */
+        .mobile-menu-toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-md);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: background var(--transition-fast);
+        }
+
+        .mobile-menu-toggle:hover {
+            background: var(--color-light-gray);
+        }
+
+        .mobile-menu-toggle:active {
+            background: rgba(0,0,0,0.1);
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 3px;
+            background: var(--color-text);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger span:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        .mobile-menu-toggle.active .hamburger span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .mobile-menu-toggle.active .hamburger span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle.active .hamburger span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        .mobile-nav-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-nav-overlay.active {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .lesson-sidebar {
+                position: fixed;
+                top: var(--header-height);
+                left: 0;
+                bottom: 0;
+                width: 280px;
+                max-width: 85vw;
+                background: var(--color-white);
+                z-index: 999;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                overflow-y: auto;
+                box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+                order: 0;
+                padding: var(--space-4);
+            }
+
+            .lesson-sidebar.active {
+                transform: translateX(0);
+            }
+
+            .mobile-nav-overlay {
+                display: block;
+            }
+
+            .lesson-layout {
+                flex-direction: column;
+            }
+
+            .lesson-main {
+                width: 100%;
+            }
+        }
+
+        /* END MOBILE HAMBURGER MENU */
+
+        
+        /* ═══════════════════════════════════════════════════════════════
+           LESSON CONTENT VISUAL STRUCTURE
+           ═══════════════════════════════════════════════════════════════ */
+
+        /* Major section headers (h2) - Add top border and spacing */
+        .lesson-article h2 {
+            padding-top: var(--space-8);
+            margin-top: var(--space-10);
+            border-top: 3px solid #e5e7eb;
+        }
+
+        .lesson-article h2:first-of-type {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        /* Subsection headers (h3) - Lighter visual separation */
+        .lesson-article h3 {
+            padding: var(--space-4);
+            background: linear-gradient(135deg, #f0fdfa, #ecfdf5);
+            border-left: 4px solid var(--color-teal);
+            border-radius: var(--radius-md);
+            margin-top: var(--space-6);
+            margin-bottom: var(--space-4);
+        }
+
+        /* Paragraphs after h3 - contained look */
+        .lesson-article h3 + p,
+        .lesson-article h3 + ul,
+        .lesson-article h3 + ol {
+            background: rgba(56, 178, 172, 0.03);
+            padding: var(--space-4);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-4);
+        }
+
+        /* Lists - better visual structure */
+        .lesson-article ul,
+        .lesson-article ol {
+            background: white;
+            padding: var(--space-5) var(--space-6);
+            border-left: 3px solid #e5e7eb;
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-5);
+        }
+
+        .lesson-article li {
+            padding: var(--space-2) 0;
+        }
+
+        .lesson-article li strong {
+            color: var(--color-ocean-blue);
+        }
+
+        /* Ordered lists - styled numbers */
+        .lesson-article ol {
+            counter-reset: custom-counter;
+            list-style: none;
+            padding-left: var(--space-10);
+        }
+
+        .lesson-article ol li {
+            counter-increment: custom-counter;
+            position: relative;
+            padding-left: var(--space-4);
+        }
+
+        .lesson-article ol li::before {
+            content: counter(custom-counter);
+            position: absolute;
+            left: calc(-1 * var(--space-8));
+            width: 32px;
+            height: 32px;
+            background: var(--color-teal);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+        }
+
+        /* Unordered lists - styled bullets */
+        .lesson-article ul {
+            list-style: none;
+            padding-left: var(--space-8);
+        }
+
+        .lesson-article ul li {
+            position: relative;
+        }
+
+        .lesson-article ul li::before {
+            content: '';
+            position: absolute;
+            left: calc(-1 * var(--space-5));
+            top: 14px;
+            width: 8px;
+            height: 8px;
+            background: var(--color-teal);
+            border-radius: 50%;
+        }
+
+        /* Nested lists - different styling */
+        .lesson-article ul ul,
+        .lesson-article ol ul {
+            background: transparent;
+            border-left: 2px solid #e5e7eb;
+            margin-top: var(--space-3);
+            margin-bottom: var(--space-3);
+        }
+
+        .lesson-article ul ul li::before {
+            background: transparent;
+            border: 2px solid var(--color-teal);
+        }
+
+        /* Strong text - more emphasis */
+        .lesson-article strong {
+            color: var(--color-ocean-blue);
+            font-weight: 600;
+        }
+
+        /* Paragraphs - better spacing */
+        .lesson-article p {
+            line-height: var(--line-height-relaxed);
+        }
+
+        /* Content sections - group related content */
+        .lesson-article > h2 ~ * {
+            margin-left: 0;
+        }
+
+        /* Blockquotes - more prominent */
+        .lesson-article blockquote {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border-left: 4px solid #f59e0b;
+            padding: var(--space-5);
+            margin: var(--space-6) 0;
+            border-radius: var(--radius-md);
+            font-style: italic;
+            color: #78350f;
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Add subtle separators between major content blocks */
+        .lesson-article h2 + p:first-of-type {
+            font-size: var(--font-size-lg);
+            color: var(--color-text-muted);
+            font-weight: 400;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .lesson-article h2 {
+                padding-top: var(--space-6);
+                margin-top: var(--space-8);
+                font-size: var(--font-size-xl);
+            }
+
+            .lesson-article h3 {
+                padding: var(--space-3);
+                margin-top: var(--space-5);
+            }
+
+            .lesson-article ul,
+            .lesson-article ol {
+                padding: var(--space-4);
+                padding-left: var(--space-6);
+            }
+
+            .lesson-article ol li {
+                padding-left: var(--space-3);
+            }
+
+            .lesson-article ol li::before {
+                width: 28px;
+                height: 28px;
+                font-size: 0.75rem;
+                left: calc(-1 * var(--space-6));
+            }
+        }
+
+        /* END LESSON CONTENT VISUAL STRUCTURE */
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+
+        /* ═══════════════════════════════════════════════════════════════
+           VIDEO LESSON BLOCK
+           ═══════════════════════════════════════════════════════════════ */
+        .video-lesson-block {
+            margin: 2rem auto;
+            max-width: 1200px;
+            padding: 0 var(--space-4);
+        }
+
+        .video-placeholder-card {
+            background: linear-gradient(135deg, var(--color-deep-navy) 0%, var(--color-twilight-purple) 50%, var(--color-ocean-blue) 100%);
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            transition: transform var(--transition-base), box-shadow var(--transition-base);
+        }
+
+        .video-placeholder-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-play-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.3);
+            transition: background var(--transition-base);
+        }
+
+        .video-placeholder-card:hover .video-play-overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .video-play-button {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(56, 178, 172, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            transition: all var(--transition-base);
+            box-shadow: 0 10px 30px rgba(56, 178, 172, 0.4);
+        }
+
+        .video-placeholder-card:hover .video-play-button {
+            transform: scale(1.1);
+            background: var(--color-teal);
+            box-shadow: 0 15px 40px rgba(56, 178, 172, 0.6);
+        }
+
+        .video-info-section {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: var(--space-6);
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 70%, transparent 100%);
+        }
+
+        .video-lesson-title {
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            color: var(--color-white);
+            margin: 0 0 var(--space-3) 0;
+        }
+
+        .video-description {
+            font-size: var(--font-size-base);
+            color: rgba(255, 255, 255, 0.9);
+            line-height: var(--line-height-relaxed);
+            margin: 0 0 var(--space-4) 0;
+        }
+
+        .video-stats {
+            display: flex;
+            gap: var(--space-4);
+            align-items: center;
+        }
+
+        .video-stat {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--font-size-sm);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .video-stat svg {
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .video-lesson-block {
+                margin: 1rem 0;
+            }
+
+            .video-play-button {
+                width: 70px;
+                height: 70px;
+            }
+
+            .video-play-button svg {
+                width: 48px;
+                height: 48px;
+            }
+
+            .video-info-section {
+                padding: var(--space-4);
+            }
+
+            .video-lesson-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .video-description {
+                font-size: var(--font-size-sm);
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           WATER BUBBLES ANIMATION (Background Effect)
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-water-bubbles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .lesson-bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%,
+                rgba(200, 235, 250, 0.3) 0%,
+                rgba(160, 210, 235, 0.2) 40%,
+                rgba(140, 200, 230, 0.1) 100%);
+            border: 1px solid rgba(180, 220, 240, 0.25);
+            box-shadow:
+                inset -2px -2px 4px rgba(255, 255, 255, 0.25),
+                0 0 6px rgba(140, 200, 230, 0.15);
+        }
+
+        /* Bubble sizes */
+        .lesson-bubble.small {
+            width: 5px;
+            height: 5px;
+        }
+
+        .lesson-bubble.medium {
+            width: 8px;
+            height: 8px;
+        }
+
+        .lesson-bubble.large {
+            width: 12px;
+            height: 12px;
+        }
+
+        /* Rising animation - stops at approximately 30% from top */
+        @keyframes lessonBubbleRise1 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            10% {
+                opacity: 0.6;
+            }
+            85% {
+                opacity: 0.3;
+                bottom: 70%;
+                transform: translateX(15px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 70%;
+                transform: translateX(20px);
+            }
+        }
+
+        @keyframes lessonBubbleRise2 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            10% {
+                opacity: 0.5;
+            }
+            85% {
+                opacity: 0.25;
+                bottom: 70%;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 70%;
+                transform: translateX(-25px);
+            }
+        }
+
+        @keyframes lessonBubbleRise3 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            15% {
+                opacity: 0.6;
+            }
+            85% {
+                opacity: 0.4;
+                bottom: 70%;
+                transform: translateX(10px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 70%;
+                transform: translateX(12px);
+            }
+        }
+
+        /* Left side bubbles */
+        .lesson-bubble:nth-child(1) {
+            left: 5%;
+            animation: lessonBubbleRise1 9s ease-in-out infinite;
+            animation-delay: 0s;
+        }
+
+        .lesson-bubble:nth-child(2) {
+            left: 10%;
+            animation: lessonBubbleRise2 11s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+
+        .lesson-bubble:nth-child(3) {
+            left: 3%;
+            animation: lessonBubbleRise3 8s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+
+        .lesson-bubble:nth-child(4) {
+            left: 8%;
+            animation: lessonBubbleRise1 10s ease-in-out infinite;
+            animation-delay: 3.5s;
+        }
+
+        .lesson-bubble:nth-child(5) {
+            left: 12%;
+            animation: lessonBubbleRise2 9.5s ease-in-out infinite;
+            animation-delay: 0.8s;
+        }
+
+        /* Right side bubbles */
+        .lesson-bubble:nth-child(6) {
+            left: 88%;
+            animation: lessonBubbleRise3 8.5s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+
+        .lesson-bubble:nth-child(7) {
+            left: 92%;
+            animation: lessonBubbleRise1 10.5s ease-in-out infinite;
+            animation-delay: 2.5s;
+        }
+
+        .lesson-bubble:nth-child(8) {
+            left: 95%;
+            animation: lessonBubbleRise2 9s ease-in-out infinite;
+            animation-delay: 0.5s;
+        }
+
+        .lesson-bubble:nth-child(9) {
+            left: 90%;
+            animation: lessonBubbleRise3 7.5s ease-in-out infinite;
+            animation-delay: 3s;
+        }
+
+        .lesson-bubble:nth-child(10) {
+            left: 85%;
+            animation: lessonBubbleRise1 11s ease-in-out infinite;
+            animation-delay: 1.8s;
+        }
+
+        .lesson-bubble:nth-child(11) {
+            left: 7%;
+            animation: lessonBubbleRise2 10s ease-in-out infinite;
+            animation-delay: 4s;
+        }
+
+        .lesson-bubble:nth-child(12) {
+            left: 93%;
+            animation: lessonBubbleRise3 8.8s ease-in-out infinite;
+            animation-delay: 2.2s;
+        }
+
+        /* Hide bubbles on mobile to reduce visual clutter */
+        @media (max-width: 768px) {
+            .lesson-water-bubbles {
+                display: none;
+            }
+        }
+
+    </style>
+  <link rel="stylesheet" href="../css/video-player.css">
+</head>
+<body>
+    <!-- Water Bubbles Background Effect -->
+    <div class="lesson-water-bubbles" aria-hidden="true">
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble large"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble large"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+    </div>
+
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content" role="main">
+        <div class="lesson-view active">
+            <!-- Lesson Hero -->
+            <section class="lesson-hero">
+                <div class="lesson-hero-nav">
+                    <a href="../index.html" class="hero-back-button" aria-label="Back to course home">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        <span>Back</span>
+                    </a>
+                    <a href="../index.html" class="hero-logo" aria-label="Salus Community Home">
+                        <div class="hero-logo-icon">S</div>
+                        <span class="hero-logo-text">Salus Community</span>
+                    </a>
+                </div>
+                <div class="lesson-hero-content">
+                    <nav class="lesson-hero-breadcrumb" aria-label="Breadcrumb">
+                        <a href="../index.html">Home</a>
+                        <span>›</span>
+                        <a href="../index.html#descent">Module 1</a>
+                        <span>›</span>
+                        <span aria-current="page">Lesson 1</span>
+                    </nav>
+                    <h1 class="lesson-hero-title">Who is Affected by Intimate Partner Violence?</h1>
+                </div>
+            </section>
+<!-- Lesson Layout -->
+
+
+<div class="lesson-layout">
+                <!-- Sidebar -->
+                <aside class="lesson-sidebar" aria-label="Course navigation">
+                    
+    <nav class="lesson-nav-sidebar" aria-label="Course navigation">
+        <div class="nav-header">
+            <a href="../index.html" class="nav-back-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Course Overview
+            </a>
+        </div>
+  
+        <div class="nav-module " data-module="1">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(1)" aria-expanded="false">
+                <span class="nav-module-number">1</span>
+                <span class="nav-module-title">Introduction</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-1">
+    
+                <a href="lesson-intro-1.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">1</span>
+                    <span class="nav-lesson-title">Introduction: What is Intimate Partner Violence?</span>
+                </a>
+      
+            </div>
+        </div>
+    
+        <div class="nav-module active" data-module="2">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(2)" aria-expanded="true">
+                <span class="nav-module-number">2</span>
+                <span class="nav-module-title">MODULE 1: Recognizing Intimate Partner Violence</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-2">
+    
+                <a href="lesson-1-1.html"
+                   class="nav-lesson-link current">
+                    <span class="nav-lesson-number">1</span>
+                    <span class="nav-lesson-title">Who is Affected by Intimate Partner Violence?</span>
+                </a>
+      
+                <a href="lesson-1-2.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">2</span>
+                    <span class="nav-lesson-title">Types of Abuse</span>
+                </a>
+      
+                <a href="lesson-1-3.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">3</span>
+                    <span class="nav-lesson-title">Power and Control Wheel</span>
+                </a>
+      
+                <a href="lesson-1-4.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">4</span>
+                    <span class="nav-lesson-title">Categorizing Intimate Partner Violence</span>
+                </a>
+      
+                <a href="lesson-1-5.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">5</span>
+                    <span class="nav-lesson-title">Case Analysis: Lois and James Sumpter</span>
+                </a>
+      
+            </div>
+        </div>
+    
+        <div class="nav-module" data-module="3">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(3)" aria-expanded="false">
+                <span class="nav-module-number">3</span>
+                <span class="nav-module-title">MODULE 2: Intimate Partner Sexual Violence</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-3">
+    
+                <a href="lesson-2-1.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">1</span>
+                    <span class="nav-lesson-title">What is Sexual Violence?</span>
+                </a>
+      
+                <a href="lesson-2-2.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">2</span>
+                    <span class="nav-lesson-title">Sexual Violence in Our Society</span>
+                </a>
+      
+                <a href="lesson-2-3.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">3</span>
+                    <span class="nav-lesson-title">Rape and Sexual Assault in the Context of Intimate Partner Violence</span>
+                </a>
+      
+            </div>
+        </div>
+    
+        <div class="nav-module" data-module="4">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(4)" aria-expanded="false">
+                <span class="nav-module-number">4</span>
+                <span class="nav-module-title">MODULE 3: Responding to Intimate Partner Violence</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-4">
+    
+                <a href="lesson-3-1.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">1</span>
+                    <span class="nav-lesson-title">The Impact of Intimate Partner Violence on Victims</span>
+                </a>
+      
+                <a href="lesson-3-2.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">2</span>
+                    <span class="nav-lesson-title">Safety Planning with Victims</span>
+                </a>
+      
+                <a href="lesson-3-3.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">3</span>
+                    <span class="nav-lesson-title">Responding to Someone Experiencing Intimate Partner Violence</span>
+                </a>
+      
+            </div>
+        </div>
+    
+    </nav>
+  
+                </aside>
+
+                <!-- Main Lesson Content -->
+                <div class="lesson-main">
+                    <div class="lesson-article">
+                        
+      <!-- Video Introduction Section -->
+      <section class="video-player-section" data-lesson-video="lesson-1-1">
+        <div class="video-header">
+          <h2 class="video-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            Who is Affected by Intimate Partner Violence?
+          </h2>
+          <span class="video-duration">2:12</span>
+        </div>
+
+        <div class="video-container">
+          <div class="video-scenes" id="video-lesson-1-1">
+            
+            <div class="video-scene template-intro" data-scene="0" data-duration="15" data-template="intro" data-script="Intimate partner violence doesn't discriminate. It affects people of all ages, races, genders, sexual orientations, socioeconomic backgrounds, and education levels. No community is immune to this widespread issue.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-1-scene-1.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">IPV Affects Everyone</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-1-intro.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="1" data-duration="14" data-template="split-left" data-script="CDC data reveals that approximately one in four women and one in seven men experience severe intimate partner violence during their lifetimes. This represents millions of people affected every year across the United States alone.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-1-scene-2.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Statistics Tell the Story</h2>
+                  <ul class="scene-bullets">
+                    <li>1 in 4 women experience severe IPV</li>
+                    <li>1 in 7 men experience severe IPV</li>
+                    <li>Affects millions annually</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-1-section-1.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="2" data-duration="11" data-template="split-right" data-script="IPV affects people throughout their lifespan. Young adults in dating relationships, middle-aged couples, and older adults all experience intimate partner violence. Age provides no protection from abuse.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-1-scene-3.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">All Age Groups</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-1-section-1.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-diagonal" data-scene="3" data-duration="15" data-template="diagonal" data-script="IPV occurs in every racial and ethnic community. While cultural contexts and specific barriers may vary, the fundamental dynamics of power and control remain consistent. Research shows similar prevalence rates across racial groups when accounting for socioeconomic factors.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-1-scene-4.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Every Racial and Ethnic Group</h2>
+                  <ul class="scene-bullets">
+                    <li>Occurs across all racial backgrounds</li>
+                    <li>Cultural contexts vary</li>
+                    <li>Barriers may differ by community</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-1-section-1.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="4" data-duration="16" data-template="split-left" data-script="While women are most commonly affected by severe IPV, men also experience intimate partner violence. LGBTQ plus individuals face unique challenges including threats of outing, limited access to gender-specific resources, and additional barriers to reporting and help-seeking.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-1-scene-5.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">All Gender Identities</h2>
+                  <ul class="scene-bullets">
+                    <li>Women most commonly affected</li>
+                    <li>Men also experience IPV</li>
+                    <li>LGBTQ+ individuals face unique challenges</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-1-section-2.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="5" data-duration="14" data-template="split-right" data-script="A critical myth to dispel: IPV happens at every income level. While economic stress can be a risk factor, abuse occurs in wealthy households just as it does in lower-income families. Financial resources can actually make some forms of abuse easier to hide.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-1-scene-6.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Socioeconomic Status</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-1-section-2.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-diagonal" data-scene="6" data-duration="13" data-template="diagonal" data-script="Understanding that IPV affects all demographics helps us recognize it in unexpected places. It prevents us from making assumptions based on someone's appearance, profession, or background. Everyone deserves to be screened and supported.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-1-scene-7.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Why Understanding Demographics Matters</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-1-section-2.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="7" data-duration="16" data-template="split-left" data-script="Certain populations face additional vulnerabilities. Immigrants may fear deportation or face language barriers. People with disabilities may depend on abusive partners for care. Pregnant individuals face higher risks. Rural isolation creates unique challenges for accessing help.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-1-scene-8.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Special Populations</h2>
+                  <ul class="scene-bullets">
+                    <li>Immigrants facing language barriers</li>
+                    <li>People with disabilities</li>
+                    <li>Pregnant and postpartum individuals</li>
+                    <li>Those in rural or isolated areas</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-1-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="8" data-duration="14" data-template="split-right" data-script="People hold multiple identities that intersect and create unique experiences. A Black lesbian woman faces different barriers than a white heterosexual woman. An immigrant man with disabilities has distinct vulnerabilities. Effective response means understanding these intersecting identities.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-1-scene-9.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Intersectionality Matters</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-1-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-final" data-scene="9" data-duration="14" data-template="final" data-script="The key takeaway: intimate partner violence can affect anyone you encounter in your professional role. Stay alert to the signs. Never assume someone is too wealthy, educated, or successful to be experiencing abuse. Your awareness can save lives.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-1-scene-10.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Everyone Deserves Support</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-1-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+          </div>
+
+          <!-- Closed Captions Display -->
+          <div class="video-caption hidden">
+            <div class="video-caption-text"></div>
+          </div>
+
+          <div class="video-controls">
+            <button class="video-btn video-prev" title="Previous Slide" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+
+            <button class="video-btn video-play-pause" title="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                <rect x="6" y="4" width="4" height="16"/>
+                <rect x="14" y="4" width="4" height="16"/>
+              </svg>
+            </button>
+
+            <button class="video-btn video-next" title="Next Slide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+
+            <div class="video-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+              </div>
+              <span class="progress-text">Slide 1 of 10</span>
+            </div>
+
+            <div class="video-volume">
+              <button class="video-btn video-volume-btn" title="Volume">
+                <svg class="icon-volume-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+                <svg class="icon-volume-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <line x1="23" y1="9" x2="17" y2="15"/>
+                  <line x1="17" y1="9" x2="23" y2="15"/>
+                </svg>
+              </button>
+              <input type="range" class="video-volume-slider" min="0" max="1" step="0.1" value="1">
+            </div>
+
+            <button class="video-btn video-cc" title="Captions (C)">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 7H9.5v-.5h-2v3h2V13H11v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1zm7 0h-1.5v-.5h-2v3h2V13H18v1c0 .55-.45 1-1 1h-3c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1z"/>
+              </svg>
+            </button>
+
+            <button class="video-btn video-fullscreen" title="Fullscreen (F)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      </section>
+
+
+                        <h2>Module 1 Overview</h2>
+
+<div style="background: linear-gradient(135deg, #f0fdfa, #ecfdf5); padding: 1.5rem; border-left: 4px solid #38b2ac; border-radius: 0.5rem; margin: 2rem 0; font-style: italic;">
+  <h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">Recognizing Intimate Partner Violence</h3>
+</div>
+<div style="margin: 2rem 0;"><p>Whether you are taking this course as part of a professional development plan or because you are seeking to be more informed about intimate partner violence, this course has been organized to help you understand the prevalence of intimate partner violence, its components, and how you can be a helpful ally to survivors.</p>
+</div><div style="margin: 2rem 0;"><p>In this first module, you explore the faces of intimate partner violence, types and categories of abuse, and the foundations of power and control on which it is based.</p>
+</div><div style="margin: 2rem 0;"><p><strong>By the end of this module, you will be able to:</strong></p>
+</div><ul>
+<li>Define intimate partner violence</li>
+<li>Recognize ways a person who causes harm establishes power and control in their relationship</li>
+<li>Identify different categories of relationship violence</li>
+</ul>
+
+
+
+<h2>The Prevalence of IPV</h2>
+
+
+<figure class="lesson-image" style="margin: 2rem auto; max-width: 900px; text-align: center;">
+    <img src="../media/images/HRM_CDC_Stats_2.png"
+         alt="CDC statistics on intimate partner violence prevalence"
+         style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+    
+</figure>
+
+
+
+<figure class="lesson-image" style="margin: 2rem auto; max-width: 900px; text-align: center;">
+    <img src="../media/images/HRM_CDC_Stats_3.png"
+         alt="CDC statistics on intimate partner violence prevalence"
+         style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+    
+</figure>
+
+
+
+<div style="margin: 2rem 0;"><h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">How Common is Intimate Partner Violence?</h3>
+</div><div style="margin: 2rem 0;"><p>Intimate partner violence is far more common than many people realize. Understanding the scope of this issue is essential for recognizing its impact across communities.</p>
+</div><div style="margin: 2rem 0;"><p><strong>According to the CDC's National Intimate Partner and Sexual Violence Survey:</strong></p>
+</div><div style="margin: 2rem 0;"><p>- About <strong>1 in 4 women</strong> and nearly <strong>1 in 10 men</strong> have experienced contact sexual violence, physical violence, and/or stalking by an intimate partner during their lifetime and reported some form of IPV-related impact</p>
+</div><div style="margin: 2rem 0;"><p>- Data from U.S. crime reports suggest that <strong>16% (about 1 in 6)</strong> of homicide victims are killed by an intimate partner</p>
+</div><div style="margin: 2rem 0;"><p>- About <strong>11 million women</strong> and <strong>5 million men</strong> who reported experiencing contact sexual violence, physical violence, or stalking by an intimate partner in their lifetime said that they <strong>first experienced these forms of violence before the age of 18</strong></p>
+</div><div style="margin: 2rem 0;"><p>These statistics reveal that IPV is a widespread public health issue affecting millions of individuals. The data also shows that IPV often begins early in life, highlighting the importance of prevention and early intervention.</p>
+</div>
+
+
+<h2>Breaking Down Stereotypes</h2>
+
+
+<div style="margin: 2rem 0;"><h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">Myths About Survivors</h3>
+</div><div style="margin: 2rem 0;"><p>Sometimes people have a very specific image in their mind of what a survivor of intimate partner violence looks like. There are harmful stereotypes that survivors are:</p>
+</div><ul>
+<li>Poor, uneducated, and totally reliant on the person causing harm</li>
+<li>Meek and don't stand up for themselves</li>
+<li>Have low self-esteem</li>
+<li>Disheveled, nervous, and jumpy</li>
+<li>Put up with or excuse abusive behavior</li>
+<li>Have traditional beliefs about gender roles</li>
+</ul>
+<div style="margin: 2rem 0;"><p><strong>Why These Stereotypes Are Harmful:</strong></p>
+</div><div style="margin: 2rem 0;"><p>Making these generalizations reinforces the idea that only certain types of people are affected by intimate partner violence. It is important to emphasize, however, that <strong>intimate partner violence occurs in every demographic regardless of age, race, gender, sexuality, and socioeconomic class</strong>.</p>
+</div><div style="margin: 2rem 0;"><p>Assuming that intimate partner violence only happens in certain communities can make it easy to overlook signs and symptoms that someone we know is experiencing abuse in their relationship.</p>
+</div><div style="margin: 2rem 0;"><p><strong>The Reality:</strong></p>
+</div><p>IPV can happen to anyone:</p>
+<ul>
+<li>Across all income levels</li>
+<li>In all racial and ethnic communities</li>
+<li>Regardless of education level</li>
+<li>In all types of relationships</li>
+<li>Regardless of gender identity or sexual orientation</li>
+<li>In all religious and cultural backgrounds</li>
+</ul>
+<div style="margin: 2rem 0;"><p>As professionals like Dr. Patel conducting health screenings or Aisha monitoring workplace dynamics, recognizing that IPV crosses all boundaries is essential for trauma-informed practice.</p>
+</div>
+
+
+
+                        
+
+<div class="interactive-component drag-drop-activity" style="background: linear-gradient(135deg, #f0fdfa, #ecfdf5); padding: 2rem; border-radius: 12px; margin: 3rem 0; border-left: 4px solid #38b2ac;">
+    <h3 style="color: #38b2ac; margin-bottom: 1rem;">🎯 Interactive Activity: Abuse Type Categorization</h3>
+    <p style="margin-bottom: 1.5rem;">Drag each behavior into the correct abuse category.</p>
+
+    <div class="drag-drop-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0;">
+        <!-- Draggable items -->
+        <div class="draggable-items" style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <h4 style="margin-bottom: 1rem; font-size: 1rem; color: #6b7280;">Behaviors to Categorize:</h4>
+            <div class="draggable-item" draggable="true" data-category="physical" style="padding: 0.75rem; margin: 0.5rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 6px; cursor: move;">
+                Pushing, shoving, or hitting
+            </div>
+            <div class="draggable-item" draggable="true" data-category="emotional" style="padding: 0.75rem; margin: 0.5rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 6px; cursor: move;">
+                Constant criticism and humiliation
+            </div>
+            <div class="draggable-item" draggable="true" data-category="economic" style="padding: 0.75rem; margin: 0.5rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 6px; cursor: move;">
+                Controlling access to money
+            </div>
+            <div class="draggable-item" draggable="true" data-category="sexual" style="padding: 0.75rem; margin: 0.5rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 6px; cursor: move;">
+                Forcing unwanted sexual acts
+            </div>
+            <div class="draggable-item" draggable="true" data-category="isolation" style="padding: 0.75rem; margin: 0.5rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 6px; cursor: move;">
+                Preventing contact with family/friends
+            </div>
+        </div>
+
+        <!-- Drop zones -->
+        <div class="drop-zones" style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div class="drop-zone" data-category="physical" style="padding: 1rem; background: white; border: 2px dashed #38b2ac; border-radius: 8px; min-height: 60px;">
+                <strong style="color: #38b2ac;">Physical Abuse</strong>
+                <div class="dropped-items"></div>
+            </div>
+            <div class="drop-zone" data-category="emotional" style="padding: 1rem; background: white; border: 2px dashed #38b2ac; border-radius: 8px; min-height: 60px;">
+                <strong style="color: #38b2ac;">Emotional Abuse</strong>
+                <div class="dropped-items"></div>
+            </div>
+            <div class="drop-zone" data-category="economic" style="padding: 1rem; background: white; border: 2px dashed #38b2ac; border-radius: 8px; min-height: 60px;">
+                <strong style="color: #38b2ac;">Economic Abuse</strong>
+                <div class="dropped-items"></div>
+            </div>
+            <div class="drop-zone" data-category="sexual" style="padding: 1rem; background: white; border: 2px dashed #38b2ac; border-radius: 8px; min-height: 60px;">
+                <strong style="color: #38b2ac;">Sexual Abuse</strong>
+                <div class="dropped-items"></div>
+            </div>
+            <div class="drop-zone" data-category="isolation" style="padding: 1rem; background: white; border: 2px dashed #38b2ac; border-radius: 8px; min-height: 60px;">
+                <strong style="color: #38b2ac;">Isolation/Control</strong>
+                <div class="dropped-items"></div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="checkDragDropAnswers()" style="background: #38b2ac; color: white; padding: 0.75rem 2rem; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; margin-top: 1rem;">
+        Check Answers
+    </button>
+    <div class="feedback-area" style="margin-top: 1rem; padding: 1rem; border-radius: 8px; display: none;"></div>
+</div>
+
+<div class="quiz-container" style="background: white; padding: 2rem; border-radius: 0.75rem; margin: 2rem 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #38b2ac;">
+  <div class="quiz-header" style="margin-bottom: 2rem; text-align: center;">
+    <h2 style="color: #38b2ac; margin-bottom: 0.5rem;">Quiz</h2>
+    <p class="quiz-progress" style="color: #6b7280; font-size: 0.875rem;">Question <span id="current-question">1</span> of 3</p>
+  </div>
+
+<div class="quiz-question" data-question-number="1" style="display: block;">
+  <h3 style="margin-bottom: 1rem; color: #38b2ac;">IPV Prevalence</h3>
+  <p style="margin-bottom: 1.5rem; color: #374151; font-size: 1.125rem;">According to the CDC's National Intimate Partner and Sexual Violence Survey, approximately how many women experience contact sexual violence, physical violence, and/or stalking by an intimate partner during their lifetime?</p>
+  <div class="knowledge-check" data-question-index="0">
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="0" data-correct="false" data-feedback="✗ Incorrect. About 1 in 4 women (25%) have experienced contact sexual violence, physical violence, and/or stalking by an intimate partner during their lifetime and reported some form of IPV-related impact. This statistic demonstrates how widespread intimate partner violence is in our society." aria-label="IPV Prevalence: About 1 in 10 women" style="margin-right: 0.75rem;">
+      <span>About 1 in 10 women</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="1" data-correct="true" data-feedback="✓ Correct! About 1 in 4 women (25%) have experienced contact sexual violence, physical violence, and/or stalking by an intimate partner during their lifetime and reported some form of IPV-related impact. This statistic demonstrates how widespread intimate partner violence is in our society." aria-label="IPV Prevalence: About 1 in 4 women" style="margin-right: 0.75rem;">
+      <span>About 1 in 4 women</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="2" data-correct="false" data-feedback="✗ Incorrect. About 1 in 4 women (25%) have experienced contact sexual violence, physical violence, and/or stalking by an intimate partner during their lifetime and reported some form of IPV-related impact. This statistic demonstrates how widespread intimate partner violence is in our society." aria-label="IPV Prevalence: About 1 in 2 women" style="margin-right: 0.75rem;">
+      <span>About 1 in 2 women</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="3" data-correct="false" data-feedback="✗ Incorrect. About 1 in 4 women (25%) have experienced contact sexual violence, physical violence, and/or stalking by an intimate partner during their lifetime and reported some form of IPV-related impact. This statistic demonstrates how widespread intimate partner violence is in our society." aria-label="IPV Prevalence: About 1 in 20 women" style="margin-right: 0.75rem;">
+      <span>About 1 in 20 women</span>
+    </label>
+
+    <div class="question-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+  </div>
+</div>
+
+<div class="quiz-question" data-question-number="2" style="display: none;">
+  <h3 style="margin-bottom: 1rem; color: #38b2ac;">Universal Impact</h3>
+  <p style="margin-bottom: 1.5rem; color: #374151; font-size: 1.125rem;">Which statement is TRUE about who can experience intimate partner violence?</p>
+  <div class="knowledge-check" data-question-index="1">
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="0" data-correct="false" data-feedback="✗ Incorrect. Intimate partner violence occurs in EVERY demographic regardless of age, race, gender, sexuality, and socioeconomic class. One of the most harmful myths about IPV is that it only affects certain types of people. In reality, IPV crosses all boundaries and affects diverse communities. Recognizing this universality is essential for providing trauma-informed support." aria-label="Universal Impact: IPV primarily affects people from low-income communities" style="margin-right: 0.75rem;">
+      <span>IPV primarily affects people from low-income communities</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="1" data-correct="true" data-feedback="✓ Correct! Intimate partner violence occurs in EVERY demographic regardless of age, race, gender, sexuality, and socioeconomic class. One of the most harmful myths about IPV is that it only affects certain types of people. In reality, IPV crosses all boundaries and affects diverse communities. Recognizing this universality is essential for providing trauma-informed support." aria-label="Universal Impact: IPV occurs in every demographic regardless of age, race, gender, sexuality, and socioeconomic class" style="margin-right: 0.75rem;">
+      <span>IPV occurs in every demographic regardless of age, race, gender, sexuality, and socioeconomic class</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="2" data-correct="false" data-feedback="✗ Incorrect. Intimate partner violence occurs in EVERY demographic regardless of age, race, gender, sexuality, and socioeconomic class. One of the most harmful myths about IPV is that it only affects certain types of people. In reality, IPV crosses all boundaries and affects diverse communities. Recognizing this universality is essential for providing trauma-informed support." aria-label="Universal Impact: IPV mostly affects people with low self-esteem who don't stand up for themselves" style="margin-right: 0.75rem;">
+      <span>IPV mostly affects people with low self-esteem who don't stand up for themselves</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="3" data-correct="false" data-feedback="✗ Incorrect. Intimate partner violence occurs in EVERY demographic regardless of age, race, gender, sexuality, and socioeconomic class. One of the most harmful myths about IPV is that it only affects certain types of people. In reality, IPV crosses all boundaries and affects diverse communities. Recognizing this universality is essential for providing trauma-informed support." aria-label="Universal Impact: IPV is most common among people who have traditional beliefs about gender roles" style="margin-right: 0.75rem;">
+      <span>IPV is most common among people who have traditional beliefs about gender roles</span>
+    </label>
+
+    <div class="question-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+  </div>
+</div>
+
+<div class="quiz-question" data-question-number="3" style="display: none;">
+  <h3 style="margin-bottom: 1rem; color: #38b2ac;">Early Onset</h3>
+  <p style="margin-bottom: 1.5rem; color: #374151; font-size: 1.125rem;">What does the data tell us about when many people first experience intimate partner violence?</p>
+  <div class="knowledge-check" data-question-index="2">
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="0" data-correct="false" data-feedback="✗ Incorrect. According to the CDC data, about 11 million women and 5 million men who reported experiencing IPV said they first experienced these forms of violence BEFORE THE AGE OF 18. This highlights the critical importance of prevention efforts, early intervention, and education for young people about healthy relationships." aria-label="Early Onset: Most people first experience IPV in their 30s and 40s" style="margin-right: 0.75rem;">
+      <span>Most people first experience IPV in their 30s and 40s</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="1" data-correct="false" data-feedback="✗ Incorrect. According to the CDC data, about 11 million women and 5 million men who reported experiencing IPV said they first experienced these forms of violence BEFORE THE AGE OF 18. This highlights the critical importance of prevention efforts, early intervention, and education for young people about healthy relationships." aria-label="Early Onset: IPV typically begins after marriage" style="margin-right: 0.75rem;">
+      <span>IPV typically begins after marriage</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="2" data-correct="true" data-feedback="✓ Correct! According to the CDC data, about 11 million women and 5 million men who reported experiencing IPV said they first experienced these forms of violence BEFORE THE AGE OF 18. This highlights the critical importance of prevention efforts, early intervention, and education for young people about healthy relationships." aria-label="Early Onset: Many people first experience IPV before the age of 18" style="margin-right: 0.75rem;">
+      <span>Many people first experience IPV before the age of 18</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="3" data-correct="false" data-feedback="✗ Incorrect. According to the CDC data, about 11 million women and 5 million men who reported experiencing IPV said they first experienced these forms of violence BEFORE THE AGE OF 18. This highlights the critical importance of prevention efforts, early intervention, and education for young people about healthy relationships." aria-label="Early Onset: IPV usually begins in retirement years" style="margin-right: 0.75rem;">
+      <span>IPV usually begins in retirement years</span>
+    </label>
+
+    <div class="question-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+  </div>
+</div>
+
+  <div class="quiz-navigation" style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #e5e7eb;">
+    <button onclick="previousQuestion()" id="prev-btn" style="padding: 0.75rem 1.5rem; background: #6b7280; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; display: none;">Previous</button>
+    <button onclick="nextQuestion()" id="next-btn" style="padding: 0.75rem 1.5rem; background: #38b2ac; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer;">Next Question</button>
+    <button onclick="submitQuiz()" id="submit-btn" style="padding: 0.75rem 1.5rem; background: #10b981; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; display: none;">Submit Quiz</button>
+  </div>
+
+  <div class="quiz-result" style="display: none; margin-top: 2rem; padding: 2rem; background: #f0fdf4; border: 2px solid #10b981; border-radius: 0.75rem; text-align: center;">
+    <h2 style="color: #10b981; margin-bottom: 1rem;">Quiz Complete!</h2>
+    <p class="quiz-score" style="font-size: 2rem; font-weight: bold; color: #047857; margin-bottom: 1rem;"></p>
+    <p class="quiz-message" style="color: #065f46; margin-bottom: 1.5rem;"></p>
+    <button onclick="reviewQuiz()" style="padding: 0.75rem 1.5rem; background: #38b2ac; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; margin-right: 0.75rem;">Review Answers</button>
+  </div>
+</div>
+
+<!-- Lesson Navigation (Previous/Next) -->
+<nav class="lesson-navigation" aria-label="Lesson navigation">
+    <a href="lesson-intro-1.html" class="lesson-nav-button lesson-nav-prev">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <div class="lesson-nav-text">
+            <span class="lesson-nav-label">Previous Lesson</span>
+            <span class="lesson-nav-title">Introduction: What is Intimate Partner Violence?</span>
+        </div>
+    </a>
+    <a href="lesson-1-2.html" class="lesson-nav-button lesson-nav-next">
+        <div class="lesson-nav-text">
+            <span class="lesson-nav-label">Next Lesson</span>
+            <span class="lesson-nav-title">Types of Abuse</span>
+        </div>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+    </a>
+</nav>
+
+  <script>
+    // Quiz Navigation Functions
+    let currentQuestion = 1;
+    const totalQuestions = 3;
+    let userAnswers = {};
+
+    function nextQuestion() {
+      // Save current answer
+      const currentQ = document.querySelector(`.quiz-question[data-question-number="${currentQuestion}"]`);
+      const selectedInput = currentQ.querySelector('input[type="radio"]:checked');
+
+      if (!selectedInput) {
+        const feedback = currentQ.querySelector('.question-feedback');
+        feedback.style.display = 'block';
+        feedback.style.background = '#fee2e2';
+        feedback.style.border = '2px solid #ef4444';
+        feedback.innerHTML = '<strong style="color: #ef4444;">Please select an answer before continuing.</strong>';
+        return;
+      }
+
+      // Hide current question
+      currentQ.style.display = 'none';
+
+      // Show next question
+      currentQuestion++;
+      const nextQ = document.querySelector(`.quiz-question[data-question-number="${currentQuestion}"]`);
+      nextQ.style.display = 'block';
+
+      // Update progress
+      document.getElementById('current-question').textContent = currentQuestion;
+
+      // Update button visibility
+      document.getElementById('prev-btn').style.display = 'block';
+
+      if (currentQuestion === totalQuestions) {
+        document.getElementById('next-btn').style.display = 'none';
+        document.getElementById('submit-btn').style.display = 'block';
+      }
+    }
+
+    function previousQuestion() {
+      // Hide current question
+      const currentQ = document.querySelector(`.quiz-question[data-question-number="${currentQuestion}"]`);
+      currentQ.style.display = 'none';
+
+      // Show previous question
+      currentQuestion--;
+      const prevQ = document.querySelector(`.quiz-question[data-question-number="${currentQuestion}"]`);
+      prevQ.style.display = 'block';
+
+      // Update progress
+      document.getElementById('current-question').textContent = currentQuestion;
+
+      // Update button visibility
+      if (currentQuestion === 1) {
+        document.getElementById('prev-btn').style.display = 'none';
+      }
+
+      document.getElementById('next-btn').style.display = 'block';
+      document.getElementById('submit-btn').style.display = 'none';
+    }
+
+    function submitQuiz() {
+      // Check all answers are selected
+      for (let i = 0; i < totalQuestions; i++) {
+        const q = document.querySelector(`.knowledge-check[data-question-index="${i}"]`);
+        const selected = q.querySelector('input[type="radio"]:checked');
+        if (!selected) {
+          alert('Please answer all questions before submitting.');
+          return;
+        }
+      }
+
+      // Calculate score
+      let correct = 0;
+      for (let i = 0; i < totalQuestions; i++) {
+        const q = document.querySelector(`.knowledge-check[data-question-index="${i}"]`);
+        const selected = q.querySelector('input[type="radio"]:checked');
+        if (selected && selected.dataset.correct === 'true') {
+          correct++;
+        }
+      }
+
+      const percentage = Math.round((correct / totalQuestions) * 100);
+      const passed = percentage >= 70;
+
+      // Show results
+      document.querySelector('.quiz-header').style.display = 'none';
+      document.querySelectorAll('.quiz-question').forEach(q => q.style.display = 'none');
+      document.querySelector('.quiz-navigation').style.display = 'none';
+
+      const result = document.querySelector('.quiz-result');
+      result.style.display = 'block';
+      result.querySelector('.quiz-score').textContent = percentage + '%';
+      result.querySelector('.quiz-message').textContent = passed ?
+        `Congratulations! You passed with ${correct} out of ${totalQuestions} correct.` :
+        `You scored ${correct} out of ${totalQuestions}. You need 70% to pass. Review the material and try again.`;
+    }
+
+    function reviewQuiz() {
+      // Show all questions with feedback
+      document.querySelector('.quiz-result').style.display = 'none';
+      document.querySelector('.quiz-header').style.display = 'block';
+      document.querySelector('.quiz-navigation').style.display = 'flex';
+
+      // Show all questions and their feedback
+      document.querySelectorAll('.quiz-question').forEach((q, idx) => {
+        q.style.display = 'block';
+        const selected = q.querySelector('input[type="radio"]:checked');
+        if (selected) {
+          const feedback = q.querySelector('.question-feedback');
+          feedback.style.display = 'block';
+          feedback.innerHTML = selected.dataset.feedback;
+          if (selected.dataset.correct === 'true') {
+            feedback.style.background = '#d1fae5';
+            feedback.style.border = '2px solid #10b981';
+          } else {
+            feedback.style.background = '#fee2e2';
+            feedback.style.border = '2px solid #ef4444';
+          }
+        }
+      });
+
+      // Hide navigation buttons
+      document.querySelector('.quiz-navigation').style.visibility = 'hidden';
+    }
+
+    // Label hover/click handlers
+    document.querySelectorAll('label').forEach(label => {
+      label.addEventListener('click', function() {
+        const questionDiv = this.closest('.knowledge-check');
+        questionDiv.querySelectorAll('label').forEach(l => {
+          l.style.borderColor = '#e5e7eb';
+          l.style.background = '#f9fafb';
+        });
+        this.style.borderColor = '#38b2ac';
+        this.style.background = '#f0fdfa';
+
+        // Hide previous feedback when new answer selected
+        const feedback = questionDiv.querySelector('.question-feedback');
+        if (feedback && feedback.innerHTML.includes('Please select')) {
+          feedback.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+  <!-- Drag and Drop Interactive Component Script -->
+  <script>
+  (function() {
+    'use strict';
+
+    // Drag and Drop Functionality
+    let draggedElement = null;
+    let touchStartY = 0;
+    let touchStartX = 0;
+
+    // Get all draggable items
+    const draggableItems = document.querySelectorAll('.draggable-item');
+    const dropZones = document.querySelectorAll('.drop-zone');
+
+    // Setup drag and drop for each item
+    draggableItems.forEach(item => {
+      // Mouse drag events
+      item.addEventListener('dragstart', handleDragStart);
+      item.addEventListener('dragend', handleDragEnd);
+
+      // Touch events for mobile
+      item.addEventListener('touchstart', handleTouchStart, { passive: false });
+      item.addEventListener('touchmove', handleTouchMove, { passive: false });
+      item.addEventListener('touchend', handleTouchEnd);
+
+      // Keyboard support
+      item.addEventListener('keydown', handleKeyDown);
+      item.setAttribute('tabindex', '0');
+      item.setAttribute('role', 'button');
+      item.setAttribute('aria-grabbed', 'false');
+    });
+
+    // Setup drop zones
+    dropZones.forEach(zone => {
+      zone.addEventListener('dragover', handleDragOver);
+      zone.addEventListener('drop', handleDrop);
+      zone.addEventListener('dragleave', handleDragLeave);
+    });
+
+    function handleDragStart(e) {
+      draggedElement = this;
+      this.style.opacity = '0.5';
+      this.setAttribute('aria-grabbed', 'true');
+      e.dataTransfer.effectAllowed = 'move';
+      e.dataTransfer.setData('text/html', this.innerHTML);
+    }
+
+    function handleDragEnd(e) {
+      this.style.opacity = '';
+      this.setAttribute('aria-grabbed', 'false');
+      dropZones.forEach(zone => zone.classList.remove('drag-over'));
+    }
+
+    function handleDragOver(e) {
+      if (e.preventDefault) {
+        e.preventDefault();
+      }
+      e.dataTransfer.dropEffect = 'move';
+      this.classList.add('drag-over');
+      return false;
+    }
+
+    function handleDragLeave(e) {
+      this.classList.remove('drag-over');
+    }
+
+    function handleDrop(e) {
+      if (e.stopPropagation) {
+        e.stopPropagation();
+      }
+      e.preventDefault();
+
+      this.classList.remove('drag-over');
+
+      if (draggedElement) {
+        const droppedItemsContainer = this.querySelector('.dropped-items');
+        if (droppedItemsContainer) {
+          // Clone the item
+          const clonedItem = draggedElement.cloneNode(true);
+          clonedItem.classList.add('dropped');
+          clonedItem.style.opacity = '';
+          clonedItem.draggable = false;
+
+          // Add remove button
+          const removeBtn = document.createElement('button');
+          removeBtn.innerHTML = '×';
+          removeBtn.className = 'remove-btn';
+          removeBtn.style.cssText = 'margin-left: 0.5rem; background: #ef4444; color: white; border: none; border-radius: 4px; padding: 0.25rem 0.5rem; cursor: pointer; font-weight: bold;';
+          removeBtn.setAttribute('aria-label', 'Remove item');
+          removeBtn.onclick = function() {
+            clonedItem.remove();
+          };
+          clonedItem.appendChild(removeBtn);
+
+          droppedItemsContainer.appendChild(clonedItem);
+
+          // Hide original
+          draggedElement.style.display = 'none';
+        }
+      }
+
+      return false;
+    }
+
+    // Touch support for mobile
+    function handleTouchStart(e) {
+      draggedElement = this;
+      const touch = e.touches[0];
+      touchStartX = touch.clientX;
+      touchStartY = touch.clientY;
+      this.style.opacity = '0.5';
+      this.setAttribute('aria-grabbed', 'true');
+    }
+
+    function handleTouchMove(e) {
+      if (!draggedElement) return;
+      e.preventDefault();
+
+      const touch = e.touches[0];
+      const currentX = touch.clientX;
+      const currentY = touch.clientY;
+
+      // Create ghost element for visual feedback
+      let ghost = document.getElementById('drag-ghost');
+      if (!ghost) {
+        ghost = document.createElement('div');
+        ghost.id = 'drag-ghost';
+        ghost.style.cssText = 'position: fixed; pointer-events: none; z-index: 10000; opacity: 0.8; background: #f9fafb; border: 2px solid #38b2ac; border-radius: 6px; padding: 0.75rem;';
+        ghost.textContent = draggedElement.textContent.trim();
+        document.body.appendChild(ghost);
+      }
+
+      ghost.style.left = currentX + 'px';
+      ghost.style.top = currentY + 'px';
+    }
+
+    function handleTouchEnd(e) {
+      if (!draggedElement) return;
+
+      const ghost = document.getElementById('drag-ghost');
+      if (ghost) ghost.remove();
+
+      const touch = e.changedTouches[0];
+      const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
+
+      // Find the drop zone
+      let dropZone = dropTarget;
+      while (dropZone && !dropZone.classList.contains('drop-zone')) {
+        dropZone = dropZone.parentElement;
+      }
+
+      if (dropZone) {
+        const droppedItemsContainer = dropZone.querySelector('.dropped-items');
+        if (droppedItemsContainer) {
+          const clonedItem = draggedElement.cloneNode(true);
+          clonedItem.classList.add('dropped');
+          clonedItem.style.opacity = '';
+          clonedItem.draggable = false;
+
+          const removeBtn = document.createElement('button');
+          removeBtn.innerHTML = '×';
+          removeBtn.className = 'remove-btn';
+          removeBtn.style.cssText = 'margin-left: 0.5rem; background: #ef4444; color: white; border: none; border-radius: 4px; padding: 0.25rem 0.5rem; cursor: pointer; font-weight: bold;';
+          removeBtn.setAttribute('aria-label', 'Remove item');
+          removeBtn.onclick = function() {
+            clonedItem.remove();
+          };
+          clonedItem.appendChild(removeBtn);
+
+          droppedItemsContainer.appendChild(clonedItem);
+          draggedElement.style.display = 'none';
+        }
+      }
+
+      draggedElement.style.opacity = '';
+      draggedElement.setAttribute('aria-grabbed', 'false');
+      draggedElement = null;
+    }
+
+    // Keyboard support
+    let selectedItem = null;
+
+    function handleKeyDown(e) {
+      switch(e.key) {
+        case 'Enter':
+        case ' ':
+          e.preventDefault();
+          if (!selectedItem) {
+            selectedItem = this;
+            this.style.outline = '3px solid #38b2ac';
+            this.setAttribute('aria-grabbed', 'true');
+            // Announce to screen readers
+            const announcer = document.createElement('div');
+            announcer.setAttribute('role', 'status');
+            announcer.setAttribute('aria-live', 'polite');
+            announcer.textContent = 'Item selected. Use arrow keys to choose a category, then press Enter to place.';
+            document.body.appendChild(announcer);
+            setTimeout(() => announcer.remove(), 1000);
+          } else {
+            // Find nearest drop zone and place item
+            const dropZone = document.querySelector('.drop-zone[tabindex="0"]') || dropZones[0];
+            if (dropZone) {
+              const droppedItemsContainer = dropZone.querySelector('.dropped-items');
+              if (droppedItemsContainer) {
+                const clonedItem = selectedItem.cloneNode(true);
+                clonedItem.classList.add('dropped');
+                clonedItem.style.outline = '';
+                clonedItem.draggable = false;
+
+                const removeBtn = document.createElement('button');
+                removeBtn.innerHTML = '×';
+                removeBtn.className = 'remove-btn';
+                removeBtn.style.cssText = 'margin-left: 0.5rem; background: #ef4444; color: white; border: none; border-radius: 4px; padding: 0.25rem 0.5rem; cursor: pointer; font-weight: bold;';
+                removeBtn.setAttribute('aria-label', 'Remove item');
+                removeBtn.onclick = function() {
+                  clonedItem.remove();
+                };
+                clonedItem.appendChild(removeBtn);
+
+                droppedItemsContainer.appendChild(clonedItem);
+                selectedItem.style.display = 'none';
+              }
+            }
+            selectedItem.style.outline = '';
+            selectedItem.setAttribute('aria-grabbed', 'false');
+            selectedItem = null;
+          }
+          break;
+        case 'Escape':
+          if (selectedItem) {
+            selectedItem.style.outline = '';
+            selectedItem.setAttribute('aria-grabbed', 'false');
+            selectedItem = null;
+          }
+          break;
+      }
+    }
+
+    // Check answers function
+    window.checkDragDropAnswers = function() {
+      const feedbackArea = document.querySelector('.feedback-area');
+      let correct = 0;
+      let total = 0;
+      const results = [];
+
+      dropZones.forEach(zone => {
+        const category = zone.dataset.category;
+        const droppedItems = zone.querySelectorAll('.dropped-items .draggable-item');
+
+        droppedItems.forEach(item => {
+          total++;
+          const itemCategory = item.dataset.category;
+          if (itemCategory === category) {
+            correct++;
+            item.style.border = '2px solid #10b981';
+            item.style.background = '#d1fae5';
+            results.push({ item: item.textContent.replace('×', '').trim(), correct: true });
+          } else {
+            item.style.border = '2px solid #ef4444';
+            item.style.background = '#fee2e2';
+            results.push({ item: item.textContent.replace('×', '').trim(), correct: false });
+          }
+        });
+      });
+
+      const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
+      const passed = percentage >= 70;
+
+      feedbackArea.style.display = 'block';
+      feedbackArea.style.background = passed ? '#d1fae5' : '#fee2e2';
+      feedbackArea.style.border = passed ? '2px solid #10b981' : '2px solid #ef4444';
+      feedbackArea.style.color = passed ? '#065f46' : '#991b1b';
+      feedbackArea.innerHTML = `
+        <div style="font-weight: bold; font-size: 1.1rem; margin-bottom: 0.5rem;">
+          ${passed ? '✓ Great job!' : '✗ Not quite right'}
+        </div>
+        <div>You got ${correct} out of ${total} correct (${percentage}%).</div>
+        ${!passed ? '<div style="margin-top: 0.5rem;">Try again! Look at the items highlighted in red.</div>' : ''}
+      `;
+
+      // Announce to screen readers
+      const announcer = document.createElement('div');
+      announcer.setAttribute('role', 'status');
+      announcer.setAttribute('aria-live', 'assertive');
+      announcer.textContent = `Results: ${correct} out of ${total} correct. ${passed ? 'You passed!' : 'Please try again.'}`;
+      document.body.appendChild(announcer);
+      setTimeout(() => announcer.remove(), 3000);
+    };
+
+    // Add CSS for drag over state
+    const style = document.createElement('style');
+    style.textContent = `
+      .drag-over {
+        background: #e0f2f1 !important;
+        border-color: #38b2ac !important;
+        border-style: solid !important;
+      }
+      .dropped-items {
+        min-height: 40px;
+        margin-top: 0.5rem;
+      }
+      .dropped-items .draggable-item {
+        margin: 0.5rem 0;
+        cursor: default;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      @media (max-width: 768px) {
+        .drag-drop-container {
+          grid-template-columns: 1fr !important;
+        }
+        .draggable-item {
+          font-size: 0.875rem !important;
+          padding: 0.6rem !important;
+        }
+        .drop-zone {
+          padding: 0.75rem !important;
+          min-height: 50px !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+
+  })();
+  </script>
+
+  <!-- Sidebar Module Toggle Script -->
+  <script>
+    // Global function for onclick handlers
+    function toggleSidebarModule(moduleNum) {
+      const module = document.querySelector(`.nav-module[data-module="${moduleNum}"]`);
+      if (!module) return;
+
+      const trigger = module.querySelector('.nav-module-trigger');
+      const lessons = module.querySelector('.nav-lessons');
+      if (!trigger || !lessons) return;
+
+      const isCurrentlyExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+      // Toggle aria-expanded
+      trigger.setAttribute('aria-expanded', !isCurrentlyExpanded);
+
+      // Toggle the active class (used by CSS for styling)
+      if (isCurrentlyExpanded) {
+        module.classList.remove('active');
+        lessons.style.maxHeight = '0';
+        lessons.style.opacity = '0';
+        lessons.style.marginTop = '0';
+      } else {
+        module.classList.add('active');
+        lessons.style.maxHeight = '500px';
+        lessons.style.opacity = '1';
+        lessons.style.marginTop = 'var(--space-3)';
+      }
+    }
+
+    // Initialize modules on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const modules = document.querySelectorAll('.nav-module');
+
+      modules.forEach(function(module) {
+        const trigger = module.querySelector('.nav-module-trigger');
+        const lessons = module.querySelector('.nav-lessons');
+        const moduleNum = module.getAttribute('data-module');
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+        // Initialize visibility based on aria-expanded
+        if (isExpanded) {
+          module.classList.add('active');
+          lessons.style.maxHeight = '500px';
+          lessons.style.opacity = '1';
+          lessons.style.marginTop = 'var(--space-3)';
+        } else {
+          module.classList.remove('active');
+          lessons.style.maxHeight = '0';
+          lessons.style.opacity = '0';
+          lessons.style.marginTop = '0';
+        }
+      });
+    });
+  </script>
+
+  <script src="../js/video-player.js"></script>
+</body>
+</html>

@@ -1,0 +1,4691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IPV Recognition & Response Course">
+    <title>Types of Abuse - IPV Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* ═══════════════════════════════════════════════════════════════
+           CSS CUSTOM PROPERTIES (Design Tokens)
+           ═══════════════════════════════════════════════════════════════ */
+        :root {
+            /* Colors - Ethereal Depth Palette */
+            --color-deep-navy: #1a1a2e;
+            --color-twilight-purple: #2a1a3e;
+            --color-ocean-blue: #2a5a7a;
+            --color-teal: #38b2ac;
+            --color-bright-cyan: #80ffff;
+            --color-warm-gold: #ffd700;
+            --color-soft-peach: #ffd4b8;
+            --color-white: #ffffff;
+            --color-light-gray: #f5f5f7;
+            --color-text: #1a1a2e;
+            --color-text-muted: #6b7280;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-error: #ef4444;
+
+            /* Module Zone Colors */
+            --zone-surface: #38b2ac;
+            --zone-twilight: #4a90a8;
+            --zone-deep: #2a5a7a;
+
+            /* Typography */
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-size-xs: 0.75rem;    /* 12px */
+            --font-size-sm: 0.875rem;   /* 14px */
+            --font-size-base: 1rem;     /* 16px */
+            --font-size-lg: 1.125rem;   /* 18px */
+            --font-size-xl: 1.25rem;    /* 20px */
+            --font-size-2xl: 1.5rem;    /* 24px */
+            --font-size-3xl: 1.875rem;  /* 30px */
+            --font-size-4xl: 2.25rem;   /* 36px */
+            --line-height-tight: 1.25;
+            --line-height-normal: 1.5;
+            --line-height-relaxed: 1.75;
+
+            /* Spacing */
+            --space-1: 0.25rem;
+            --space-2: 0.5rem;
+            --space-3: 0.75rem;
+            --space-4: 1rem;
+            --space-5: 1.25rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-10: 2.5rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+
+            /* Borders & Radius */
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --radius-2xl: 1.5rem;
+            --radius-full: 9999px;
+
+            /* Shadows */
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px rgba(0,0,0,0.15);
+
+            /* Transitions */
+            --transition-fast: 150ms ease;
+            --transition-base: 250ms ease;
+            --transition-slow: 350ms ease;
+
+            /* Layout */
+            --content-max-width: 720px;
+            --sidebar-width: 280px;
+            
+            --min-tap-target: 44px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           RESET & BASE STYLES
+           ═══════════════════════════════════════════════════════════════ */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        /* Respect user motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-normal);
+            color: var(--color-text);
+            background: url('../media/backgrounds/lesson-bg-clean.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           ACCESSIBILITY: Skip Link
+           ═══════════════════════════════════════════════════════════════ */
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: var(--space-4);
+            z-index: 9999;
+            padding: var(--space-3) var(--space-4);
+            background: var(--color-teal);
+            color: var(--color-white);
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            transition: top var(--transition-fast);
+        }
+
+        .skip-link:focus {
+            top: var(--space-4);
+            outline: 3px solid var(--color-warm-gold);
+            outline-offset: 2px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           ACCESSIBILITY: Focus Styles
+           ═══════════════════════════════════════════════════════════════ */
+        :focus {
+            outline: none;
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--color-teal);
+            outline-offset: 2px;
+        }
+
+        button:focus-visible,
+        a:focus-visible,
+        [tabindex]:focus-visible {
+            outline: 3px solid var(--color-teal);
+            outline-offset: 2px;
+        }
+
+        
+        
+        
+        /* ═══════════════════════════════════════════════════════════════
+           HERO SECTION (with integrated navigation)
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-hero {
+            position: relative;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(42, 90, 122, 0.7)), center center / cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 0 0 var(--radius-2xl) var(--radius-2xl);
+            overflow: hidden;
+        }
+
+        .lesson-hero-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: var(--space-4) var(--space-6);
+            gap: var(--space-4);
+            z-index: 10;
+        }
+
+        .hero-back-button {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-3);
+            border: none;
+            background: #38b2ac;
+            backdrop-filter: blur(10px);
+            color: var(--color-white);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            min-height: var(--min-tap-target);
+            text-decoration: none;
+        }
+
+        .hero-back-button:hover {
+            background: #2a5a7a;
+            transform: translateX(-2px);
+        }
+
+        .hero-back-button svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .hero-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            text-decoration: none;
+            color: var(--color-white);
+        }
+
+        .hero-logo-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: var(--font-size-lg);
+        }
+
+        .hero-logo-text {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--color-white);
+        }
+
+        .lesson-hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px var(--space-6) var(--space-6);
+        }
+
+        .lesson-hero-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            margin-bottom: var(--space-3);
+            font-size: var(--font-size-sm);
+        }
+
+        .lesson-hero-breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color var(--transition-base);
+        }
+
+        .lesson-hero-breadcrumb a:hover {
+            color: var(--color-white);
+        }
+
+        .lesson-hero-breadcrumb span {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .lesson-hero-breadcrumb span[aria-current] {
+            color: var(--color-white);
+            font-weight: 500;
+        }
+
+        .lesson-hero-title {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            color: var(--color-white);
+            line-height: var(--line-height-tight);
+            margin: 0;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .lesson-hero {
+                height: 240px;
+            }
+
+            .lesson-hero-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: var(--space-4) var(--space-6);
+            gap: var(--space-4);
+            z-index: 10;
+        }
+
+            .hero-back-button span {
+                display: none;
+            }
+
+            .hero-back-button {
+                width: var(--min-tap-target);
+                height: var(--min-tap-target);
+                padding: 0;
+                justify-content: center;
+            }
+
+            .hero-logo-text {
+                font-size: var(--font-size-sm);
+            }
+
+            .hero-logo-icon {
+                width: 32px;
+                height: 32px;
+                font-size: var(--font-size-base);
+            }
+
+            .lesson-hero-content {
+                padding: 0 var(--space-4) var(--space-4);
+            }
+
+            .lesson-hero-title {
+                font-size: var(--font-size-2xl);
+            }
+        }
+
+/* ═══════════════════════════════════════════════════════════════
+           MAIN CONTENT AREA
+           ═══════════════════════════════════════════════════════════════ */
+        .main-content {
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           VIEW: MODULE LESSONS
+           ═══════════════════════════════════════════════════════════════ */
+        .module-view {
+            display: block;
+        }
+
+        .module-hero {
+            position: relative;
+            height: 280px;
+            background: url('../media/heroes/lesson-1-2-hero.png') top center / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: var(--space-8);
+        }
+
+        .module-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26,26,46,0.9) 0%, rgba(26,26,46,0.4) 50%, transparent 100%);
+        }
+
+        .module-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .module-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: rgba(255,255,255,0.7);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-3);
+        }
+
+        .module-breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .module-breadcrumb a:hover {
+            color: var(--color-white);
+            text-decoration: underline;
+        }
+
+        .module-title {
+            color: var(--color-white);
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            margin-bottom: var(--space-2);
+        }
+
+        .module-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-4);
+            color: rgba(255,255,255,0.8);
+            font-size: var(--font-size-sm);
+        }
+
+        .module-meta-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        /* Lessons Grid */
+        .lessons-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--space-8) var(--space-4);
+        }
+
+        .lessons-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-6);
+        }
+
+        .lessons-title {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+        }
+
+        .lessons-progress {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+        }
+
+        .progress-bar {
+            width: 120px;
+            height: 8px;
+            background: rgba(0,0,0,0.1);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--color-teal);
+            border-radius: var(--radius-full);
+            transition: width var(--transition-slow);
+        }
+
+        /* Lesson Cards */
+        .lessons-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+        }
+
+        .lesson-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-5);
+            display: flex;
+            gap: var(--space-4);
+            align-items: flex-start;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .lesson-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .lesson-card:focus-visible {
+            outline: 3px solid var(--color-teal);
+            outline-offset: 2px;
+        }
+
+        .lesson-number {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--zone-surface), var(--color-ocean-blue));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: var(--font-size-lg);
+        }
+
+        .lesson-number.completed {
+            background: var(--color-success);
+        }
+
+        .lesson-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .lesson-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: var(--space-3);
+            margin-bottom: var(--space-1);
+        }
+
+        .lesson-name {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .lesson-duration {
+            flex-shrink: 0;
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+            display: flex;
+            align-items: center;
+            gap: var(--space-1);
+        }
+
+        .lesson-description {
+            color: var(--color-text-muted);
+            font-size: var(--font-size-sm);
+            line-height: var(--line-height-relaxed);
+            margin-bottom: var(--space-3);
+        }
+
+        .lesson-status {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--font-size-xs);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .lesson-status.not-started {
+            color: var(--color-text-muted);
+        }
+
+        .lesson-status.in-progress {
+            color: var(--color-teal);
+        }
+
+        .lesson-status.completed {
+            color: var(--color-success);
+        }
+
+        .lesson-arrow {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            color: var(--color-text-muted);
+            align-self: center;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           VIEW: LESSON CONTENT
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-view {
+            display: none;
+        }
+
+        .lesson-view.active {
+            display: block;
+        }
+
+        .module-view.hidden {
+            display: none;
+        }
+
+        .lesson-hero {
+            position: relative;
+            height: 200px;
+            background:  url('../media/heroes/lesson-1-2-hero.png') top center / cover no-repeat;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-end;
+            padding: var(--space-6) var(--space-4);
+        }
+
+        .lesson-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26,26,46,0.85) 0%, rgba(26,26,46,0.3) 60%, transparent 100%);
+        }
+
+        .lesson-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: var(--content-max-width);
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .lesson-hero-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: rgba(255,255,255,0.7);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-2);
+        }
+
+        .lesson-hero-breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .lesson-hero-breadcrumb a:hover {
+            color: var(--color-white);
+        }
+
+        .lesson-hero-title {
+            color: var(--color-white);
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+        }
+
+        /* Lesson Content Layout */
+        .lesson-layout {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: var(--space-8);
+            padding: var(--space-8) var(--space-4);
+        }
+
+        .lesson-main {
+            flex: 1;
+            /* Removed max-width to allow content to match hero width */
+        }
+
+        .lesson-sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+        }
+
+        /* Article Content */
+        .lesson-article {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .lesson-article h2 {
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: var(--space-4);
+            margin-top: var(--space-8);
+        }
+
+        .lesson-article h2:first-child {
+            margin-top: 0;
+        }
+
+        .lesson-article h3 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: var(--space-3);
+            margin-top: var(--space-6);
+        }
+
+        .lesson-article p {
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-relaxed);
+            color: var(--color-text);
+            margin-bottom: var(--space-4);
+        }
+
+        .lesson-article ul, .lesson-article ol {
+            margin-bottom: var(--space-4);
+            padding-left: var(--space-6);
+        }
+
+        .lesson-article li {
+            margin-bottom: var(--space-2);
+            line-height: var(--line-height-relaxed);
+        }
+
+        .lesson-article blockquote {
+            border-left: 4px solid var(--color-teal);
+            padding-left: var(--space-4);
+            margin: var(--space-6) 0;
+            font-style: italic;
+            color: var(--color-text-muted);
+        }
+
+        /* Content Warning */
+        .content-warning {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: var(--radius-lg);
+            padding: var(--space-4);
+            margin: var(--space-6) 0;
+        }
+
+        .content-warning-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: var(--space-2);
+        }
+
+        .content-warning p {
+            color: #92400e;
+            margin-bottom: var(--space-3);
+        }
+
+        .content-warning-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+
+        .cw-button {
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            cursor: pointer;
+            min-height: var(--min-tap-target);
+            transition: all var(--transition-fast);
+        }
+
+        .cw-button-primary {
+            background: #92400e;
+            color: var(--color-white);
+            border: none;
+        }
+
+        .cw-button-primary:hover {
+            background: #78350f;
+        }
+
+        .cw-button-secondary {
+            background: transparent;
+            color: #92400e;
+            border: 1px solid #92400e;
+        }
+
+        .cw-button-secondary:hover {
+            background: rgba(146, 64, 14, 0.1);
+        }
+
+        /* Key Points Box */
+        .key-points {
+            background: linear-gradient(135deg, rgba(56,178,172,0.1), rgba(42,90,122,0.1));
+            border-radius: var(--radius-lg);
+            padding: var(--space-5);
+            margin: var(--space-6) 0;
+        }
+
+        .key-points-title {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-weight: 600;
+            color: var(--color-teal);
+            margin-bottom: var(--space-3);
+        }
+
+        .key-points ul {
+            margin: 0;
+            padding-left: var(--space-5);
+        }
+
+        .key-points li {
+            color: var(--color-text);
+        }
+
+        /* Sidebar Resource Card */
+        .resource-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-5);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: calc(var(--header-height) + var(--space-4));
+        }
+
+        .resource-card-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-weight: 600;
+            color: var(--color-teal);
+            margin-bottom: var(--space-4);
+            padding-bottom: var(--space-3);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .resource-item {
+            margin-bottom: var(--space-4);
+        }
+
+        .resource-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .resource-label {
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-muted);
+            margin-bottom: var(--space-1);
+        }
+
+        .resource-value {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .resource-value a {
+            color: var(--color-teal);
+            text-decoration: none;
+        }
+
+        .resource-value a:hover {
+            text-decoration: underline;
+        }
+
+        .resource-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+            width: 100%;
+            padding: var(--space-3);
+            background: var(--color-teal);
+            color: var(--color-white);
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: var(--space-4);
+            min-height: var(--min-tap-target);
+            transition: background var(--transition-fast);
+        }
+
+        .resource-button:hover {
+            background: var(--color-ocean-blue);
+        }
+
+        /* Lesson Navigation */
+        .lesson-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-6) 0;
+            margin-top: var(--space-8);
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .nav-button {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-3) var(--space-5);
+            background: var(--color-white);
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: var(--radius-lg);
+            color: var(--color-text);
+            font-weight: 500;
+            cursor: pointer;
+            min-height: var(--min-tap-target);
+            transition: all var(--transition-fast);
+            text-decoration: none;
+        }
+
+        .nav-button:hover {
+            border-color: var(--color-teal);
+            color: var(--color-teal);
+        }
+
+        .nav-button.primary {
+            background: var(--color-teal);
+            border-color: var(--color-teal);
+            color: var(--color-white);
+        }
+
+        .nav-button.primary:hover {
+            background: var(--color-ocean-blue);
+            border-color: var(--color-ocean-blue);
+        }
+
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Progress Footer */
+        .lesson-progress-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: rgba(0,0,0,0.1);
+            z-index: 50;
+        }
+
+        .lesson-progress-fill {
+            height: 100%;
+            background: var(--color-teal);
+            transition: width var(--transition-base);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           MOBILE RESPONSIVE STYLES
+           ═══════════════════════════════════════════════════════════════ */
+        @media (max-width: 768px) {
+            .lesson-layout {
+                flex-direction: column;
+            }
+
+            /* Sidebar is now handled by hamburger menu - see MOBILE HAMBURGER MENU section */
+
+            .resource-card {
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                
+            }
+
+            .header {
+                padding: 0 var(--space-3);
+            }
+
+            .logo-text {
+                display: none;
+            }
+
+            .module-hero {
+                height: 220px;
+                padding: var(--space-4);
+            }
+
+            .module-title {
+                font-size: var(--font-size-2xl);
+            }
+
+            .module-meta {
+                gap: var(--space-3);
+            }
+
+            .lessons-container {
+                padding: var(--space-4);
+            }
+
+            .lesson-card {
+                flex-direction: column;
+                gap: var(--space-3);
+            }
+
+            .lesson-number {
+                width: 40px;
+                height: 40px;
+                font-size: var(--font-size-base);
+            }
+
+            .lesson-title-row {
+                flex-direction: column;
+                gap: var(--space-1);
+            }
+
+            .lesson-arrow {
+                display: none;
+            }
+
+            .lesson-hero {
+                height: 160px;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: var(--space-4);
+            }
+
+            .lesson-hero-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .lesson-layout {
+                padding: var(--space-4);
+                gap: var(--space-4);
+            }
+
+            .lesson-article {
+                padding: var(--space-5);
+            }
+
+            .lesson-article h2 {
+                font-size: var(--font-size-lg);
+            }
+
+            .lesson-nav {
+                flex-direction: column;
+                gap: var(--space-3);
+            }
+
+            .nav-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .module-hero {
+                height: 200px;
+            }
+
+            .module-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .module-meta-item span:not(.icon) {
+                font-size: var(--font-size-xs);
+            }
+
+            .lessons-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--space-3);
+            }
+
+            .help-button span {
+                display: none;
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           UTILITY CLASSES
+           ═══════════════════════════════════════════════════════════════ */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .icon-sm {
+            width: 16px;
+            height: 16px;
+        }
+
+        .icon-lg {
+            width: 24px;
+            height: 24px;
+        }
+    
+        /* ═══════════════════════════════════════════════════════════════
+           LESSON NAVIGATION SIDEBAR
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-nav-sidebar {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-4);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: calc(var(--header-height) + var(--space-4));
+            max-height: calc(100vh - var(--header-height) - var(--space-8));
+            overflow-y: auto;
+        }
+
+        .nav-header {
+            padding-bottom: var(--space-4);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            margin-bottom: var(--space-4);
+        }
+
+        .nav-back-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: var(--color-teal);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+            transition: color var(--transition-fast);
+        }
+
+        .nav-back-link:hover {
+            color: var(--zone-twilight);
+        }
+
+        .nav-back-link svg {
+            flex-shrink: 0;
+        }
+
+        .nav-module {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-4);
+            box-shadow: var(--shadow-md);
+            margin-bottom: var(--space-3);
+        }
+
+        .nav-module-trigger {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            width: 100%;
+            padding: var(--space-3);
+            background: rgba(56, 178, 172, 0.08);
+            border: 1px solid rgba(56, 178, 172, 0.2);
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            font-family: var(--font-family);
+        }
+
+
+
+
+
+        .nav-module-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: var(--color-teal);
+            color: white;
+            border-radius: 50%;
+            font-size: var(--font-size-xs);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .nav-module-title {
+            flex: 1;
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+            color: var(--color-text);
+            text-align: left;
+        }
+
+        .nav-expand-icon {
+            flex-shrink: 0;
+            transition: transform var(--transition-base);
+        }
+
+        .nav-module.active .nav-expand-icon {
+            transform: rotate(180deg);
+        }
+
+        .nav-lessons {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            margin-top: 0;
+        }
+
+        .nav-module.active .nav-lessons {
+            max-height: 500px;
+            opacity: 1;
+            margin-top: var(--space-3);
+        }
+
+        .nav-lesson-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-3);
+            margin: var(--space-1) 0;
+            margin-left: var(--space-6);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: var(--color-text-muted);
+            font-size: var(--font-size-sm);
+            transition: all var(--transition-fast);
+            border-left: 3px solid transparent;
+        }
+
+        .nav-lesson-link:hover {
+            background: rgba(56, 178, 172, 0.08);
+            color: var(--color-text);
+            border-left-color: rgba(56, 178, 172, 0.3);
+        }
+
+        .nav-lesson-link.current {
+            background: rgba(56, 178, 172, 0.12);
+            color: var(--color-teal);
+            font-weight: 600;
+            border-left-color: var(--color-teal);
+        }
+
+        .nav-lesson-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background: rgba(56, 178, 172, 0.2);
+            color: var(--color-teal);
+            border-radius: 50%;
+            font-size: 11px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .nav-lesson-link.current .nav-lesson-number {
+            background: var(--color-teal);
+            color: white;
+        }
+
+        .nav-lesson-title {
+            flex: 1;
+            line-height: 1.3;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .lesson-nav-sidebar {
+                position: static;
+            }
+        }
+
+        /* END LESSON NAVIGATION SIDEBAR */
+
+
+        /* ═══════════════════════════════════════════════════════════════
+           MOBILE HAMBURGER MENU
+           ═══════════════════════════════════════════════════════════════ */
+        .mobile-menu-toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-md);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: background var(--transition-fast);
+        }
+
+        .mobile-menu-toggle:hover {
+            background: var(--color-light-gray);
+        }
+
+        .mobile-menu-toggle:active {
+            background: rgba(0,0,0,0.1);
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 3px;
+            background: var(--color-text);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger span:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        .mobile-menu-toggle.active .hamburger span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .mobile-menu-toggle.active .hamburger span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle.active .hamburger span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        .mobile-nav-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-nav-overlay.active {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .lesson-sidebar {
+                position: fixed;
+                top: var(--header-height);
+                left: 0;
+                bottom: 0;
+                width: 280px;
+                max-width: 85vw;
+                background: var(--color-white);
+                z-index: 999;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                overflow-y: auto;
+                box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+                order: 0;
+                padding: var(--space-4);
+            }
+
+            .lesson-sidebar.active {
+                transform: translateX(0);
+            }
+
+            .mobile-nav-overlay {
+                display: block;
+            }
+
+            .lesson-layout {
+                flex-direction: column;
+            }
+
+            .lesson-main {
+                width: 100%;
+            }
+        }
+
+        /* END MOBILE HAMBURGER MENU */
+
+        
+        /* ═══════════════════════════════════════════════════════════════
+           LESSON CONTENT VISUAL STRUCTURE
+           ═══════════════════════════════════════════════════════════════ */
+
+        /* Major section headers (h2) - Add top border and spacing */
+        .lesson-article h2 {
+            padding-top: var(--space-8);
+            margin-top: var(--space-10);
+            border-top: 3px solid #e5e7eb;
+        }
+
+        .lesson-article h2:first-of-type {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        /* Subsection headers (h3) - Lighter visual separation */
+        .lesson-article h3 {
+            padding: var(--space-4);
+            background: linear-gradient(135deg, #f0fdfa, #ecfdf5);
+            border-left: 4px solid var(--color-teal);
+            border-radius: var(--radius-md);
+            margin-top: var(--space-6);
+            margin-bottom: var(--space-4);
+        }
+
+        /* Paragraphs after h3 - contained look */
+        .lesson-article h3 + p,
+        .lesson-article h3 + ul,
+        .lesson-article h3 + ol {
+            background: rgba(56, 178, 172, 0.03);
+            padding: var(--space-4);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-4);
+        }
+
+        /* Lists - better visual structure */
+        .lesson-article ul,
+        .lesson-article ol {
+            background: white;
+            padding: var(--space-5) var(--space-6);
+            border-left: 3px solid #e5e7eb;
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-5);
+        }
+
+        .lesson-article li {
+            padding: var(--space-2) 0;
+        }
+
+        .lesson-article li strong {
+            color: var(--color-ocean-blue);
+        }
+
+        /* Ordered lists - styled numbers */
+        .lesson-article ol {
+            counter-reset: custom-counter;
+            list-style: none;
+            padding-left: var(--space-10);
+        }
+
+        .lesson-article ol li {
+            counter-increment: custom-counter;
+            position: relative;
+            padding-left: var(--space-4);
+        }
+
+        .lesson-article ol li::before {
+            content: counter(custom-counter);
+            position: absolute;
+            left: calc(-1 * var(--space-8));
+            width: 32px;
+            height: 32px;
+            background: var(--color-teal);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+        }
+
+        /* Unordered lists - styled bullets */
+        .lesson-article ul {
+            list-style: none;
+            padding-left: var(--space-8);
+        }
+
+        .lesson-article ul li {
+            position: relative;
+        }
+
+        .lesson-article ul li::before {
+            content: '';
+            position: absolute;
+            left: calc(-1 * var(--space-5));
+            top: 14px;
+            width: 8px;
+            height: 8px;
+            background: var(--color-teal);
+            border-radius: 50%;
+        }
+
+        /* Nested lists - different styling */
+        .lesson-article ul ul,
+        .lesson-article ol ul {
+            background: transparent;
+            border-left: 2px solid #e5e7eb;
+            margin-top: var(--space-3);
+            margin-bottom: var(--space-3);
+        }
+
+        .lesson-article ul ul li::before {
+            background: transparent;
+            border: 2px solid var(--color-teal);
+        }
+
+        /* Strong text - more emphasis */
+        .lesson-article strong {
+            color: var(--color-ocean-blue);
+            font-weight: 600;
+        }
+
+        /* Paragraphs - better spacing */
+        .lesson-article p {
+            line-height: var(--line-height-relaxed);
+        }
+
+        /* Content sections - group related content */
+        .lesson-article > h2 ~ * {
+            margin-left: 0;
+        }
+
+        /* Blockquotes - more prominent */
+        .lesson-article blockquote {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border-left: 4px solid #f59e0b;
+            padding: var(--space-5);
+            margin: var(--space-6) 0;
+            border-radius: var(--radius-md);
+            font-style: italic;
+            color: #78350f;
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Add subtle separators between major content blocks */
+        .lesson-article h2 + p:first-of-type {
+            font-size: var(--font-size-lg);
+            color: var(--color-text-muted);
+            font-weight: 400;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .lesson-article h2 {
+                padding-top: var(--space-6);
+                margin-top: var(--space-8);
+                font-size: var(--font-size-xl);
+            }
+
+            .lesson-article h3 {
+                padding: var(--space-3);
+                margin-top: var(--space-5);
+            }
+
+            .lesson-article ul,
+            .lesson-article ol {
+                padding: var(--space-4);
+                padding-left: var(--space-6);
+            }
+
+            .lesson-article ol li {
+                padding-left: var(--space-3);
+            }
+
+            .lesson-article ol li::before {
+                width: 28px;
+                height: 28px;
+                font-size: 0.75rem;
+                left: calc(-1 * var(--space-6));
+            }
+        }
+
+        /* END LESSON CONTENT VISUAL STRUCTURE */
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+
+        /* ═══════════════════════════════════════════════════════════════
+           VIDEO LESSON BLOCK
+           ═══════════════════════════════════════════════════════════════ */
+        .video-lesson-block {
+            margin: 2rem auto;
+            max-width: 1200px;
+            padding: 0 var(--space-4);
+        }
+
+        .video-placeholder-card {
+            background: linear-gradient(135deg, var(--color-deep-navy) 0%, var(--color-twilight-purple) 50%, var(--color-ocean-blue) 100%);
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            transition: transform var(--transition-base), box-shadow var(--transition-base);
+        }
+
+        .video-placeholder-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-play-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.3);
+            transition: background var(--transition-base);
+        }
+
+        .video-placeholder-card:hover .video-play-overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .video-play-button {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(56, 178, 172, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            transition: all var(--transition-base);
+            box-shadow: 0 10px 30px rgba(56, 178, 172, 0.4);
+        }
+
+        .video-placeholder-card:hover .video-play-button {
+            transform: scale(1.1);
+            background: var(--color-teal);
+            box-shadow: 0 15px 40px rgba(56, 178, 172, 0.6);
+        }
+
+        .video-info-section {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: var(--space-6);
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 70%, transparent 100%);
+        }
+
+        .video-lesson-title {
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            color: var(--color-white);
+            margin: 0 0 var(--space-3) 0;
+        }
+
+        .video-description {
+            font-size: var(--font-size-base);
+            color: rgba(255, 255, 255, 0.9);
+            line-height: var(--line-height-relaxed);
+            margin: 0 0 var(--space-4) 0;
+        }
+
+        .video-stats {
+            display: flex;
+            gap: var(--space-4);
+            align-items: center;
+        }
+
+        .video-stat {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--font-size-sm);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .video-stat svg {
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .video-lesson-block {
+                margin: 1rem 0;
+            }
+
+            .video-play-button {
+                width: 70px;
+                height: 70px;
+            }
+
+            .video-play-button svg {
+                width: 48px;
+                height: 48px;
+            }
+
+            .video-info-section {
+                padding: var(--space-4);
+            }
+
+            .video-lesson-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .video-description {
+                font-size: var(--font-size-sm);
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           WATER BUBBLES ANIMATION (Background Effect)
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-water-bubbles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .lesson-bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%,
+                rgba(200, 235, 250, 0.3) 0%,
+                rgba(160, 210, 235, 0.2) 40%,
+                rgba(140, 200, 230, 0.1) 100%);
+            border: 1px solid rgba(180, 220, 240, 0.25);
+            box-shadow:
+                inset -2px -2px 4px rgba(255, 255, 255, 0.25),
+                0 0 6px rgba(140, 200, 230, 0.15);
+        }
+
+        /* Bubble sizes */
+        .lesson-bubble.small {
+            width: 5px;
+            height: 5px;
+        }
+
+        .lesson-bubble.medium {
+            width: 8px;
+            height: 8px;
+        }
+
+        .lesson-bubble.large {
+            width: 12px;
+            height: 12px;
+        }
+
+        /* Rising animation - stops at approximately 30% from top */
+        @keyframes lessonBubbleRise1 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            10% {
+                opacity: 0.6;
+            }
+            85% {
+                opacity: 0.3;
+                bottom: 70%;
+                transform: translateX(15px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 70%;
+                transform: translateX(20px);
+            }
+        }
+
+        @keyframes lessonBubbleRise2 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            10% {
+                opacity: 0.5;
+            }
+            85% {
+                opacity: 0.25;
+                bottom: 70%;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 70%;
+                transform: translateX(-25px);
+            }
+        }
+
+        @keyframes lessonBubbleRise3 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            15% {
+                opacity: 0.6;
+            }
+            85% {
+                opacity: 0.4;
+                bottom: 70%;
+                transform: translateX(10px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 70%;
+                transform: translateX(12px);
+            }
+        }
+
+        /* Left side bubbles */
+        .lesson-bubble:nth-child(1) {
+            left: 5%;
+            animation: lessonBubbleRise1 9s ease-in-out infinite;
+            animation-delay: 0s;
+        }
+
+        .lesson-bubble:nth-child(2) {
+            left: 10%;
+            animation: lessonBubbleRise2 11s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+
+        .lesson-bubble:nth-child(3) {
+            left: 3%;
+            animation: lessonBubbleRise3 8s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+
+        .lesson-bubble:nth-child(4) {
+            left: 8%;
+            animation: lessonBubbleRise1 10s ease-in-out infinite;
+            animation-delay: 3.5s;
+        }
+
+        .lesson-bubble:nth-child(5) {
+            left: 12%;
+            animation: lessonBubbleRise2 9.5s ease-in-out infinite;
+            animation-delay: 0.8s;
+        }
+
+        /* Right side bubbles */
+        .lesson-bubble:nth-child(6) {
+            left: 88%;
+            animation: lessonBubbleRise3 8.5s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+
+        .lesson-bubble:nth-child(7) {
+            left: 92%;
+            animation: lessonBubbleRise1 10.5s ease-in-out infinite;
+            animation-delay: 2.5s;
+        }
+
+        .lesson-bubble:nth-child(8) {
+            left: 95%;
+            animation: lessonBubbleRise2 9s ease-in-out infinite;
+            animation-delay: 0.5s;
+        }
+
+        .lesson-bubble:nth-child(9) {
+            left: 90%;
+            animation: lessonBubbleRise3 7.5s ease-in-out infinite;
+            animation-delay: 3s;
+        }
+
+        .lesson-bubble:nth-child(10) {
+            left: 85%;
+            animation: lessonBubbleRise1 11s ease-in-out infinite;
+            animation-delay: 1.8s;
+        }
+
+        .lesson-bubble:nth-child(11) {
+            left: 7%;
+            animation: lessonBubbleRise2 10s ease-in-out infinite;
+            animation-delay: 4s;
+        }
+
+        .lesson-bubble:nth-child(12) {
+            left: 93%;
+            animation: lessonBubbleRise3 8.8s ease-in-out infinite;
+            animation-delay: 2.2s;
+        }
+
+        /* Hide bubbles on mobile to reduce visual clutter */
+        @media (max-width: 768px) {
+            .lesson-water-bubbles {
+                display: none;
+            }
+        }
+
+    </style>
+  <link rel="stylesheet" href="../css/video-player.css">
+</head>
+<body>
+    <!-- Water Bubbles Background Effect -->
+    <div class="lesson-water-bubbles" aria-hidden="true">
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble large"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble large"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+    </div>
+
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content" role="main">
+        <div class="lesson-view active">
+            <!-- Lesson Hero -->
+            <section class="lesson-hero">
+                <div class="lesson-hero-nav">
+                    <a href="../index.html" class="hero-back-button" aria-label="Back to course home">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        <span>Back</span>
+                    </a>
+                    <a href="../index.html" class="hero-logo" aria-label="Salus Community Home">
+                        <div class="hero-logo-icon">S</div>
+                        <span class="hero-logo-text">Salus Community</span>
+                    </a>
+                </div>
+                <div class="lesson-hero-content">
+                    <nav class="lesson-hero-breadcrumb" aria-label="Breadcrumb">
+                        <a href="../index.html">Home</a>
+                        <span>›</span>
+                        <a href="../index.html#descent">Module 1</a>
+                        <span>›</span>
+                        <span aria-current="page">Lesson 2</span>
+                    </nav>
+                    <h1 class="lesson-hero-title">Types of Abuse</h1>
+                </div>
+            </section>
+<!-- Lesson Layout -->
+
+
+<div class="lesson-layout">
+                <!-- Sidebar -->
+                <aside class="lesson-sidebar" aria-label="Course navigation">
+
+    <nav class="lesson-nav-sidebar" aria-label="Course navigation">
+        <div class="nav-header">
+            <a href="../index.html" class="nav-back-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Course Overview
+            </a>
+        </div>
+
+        <div class="nav-module " data-module="1">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(1)" aria-expanded="false">
+                <span class="nav-module-number">1</span>
+                <span class="nav-module-title">Introduction</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-1">
+
+                <a href="lesson-intro-1.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">1</span>
+                    <span class="nav-lesson-title">Introduction: What is Intimate Partner Violence?</span>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="nav-module active" data-module="2">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(2)" aria-expanded="true">
+                <span class="nav-module-number">2</span>
+                <span class="nav-module-title">MODULE 1: Recognizing Intimate Partner Violence</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-2">
+
+                <a href="lesson-1-1.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">1</span>
+                    <span class="nav-lesson-title">Who is Affected by Intimate Partner Violence?</span>
+                </a>
+
+                <a href="lesson-1-2.html"
+                   class="nav-lesson-link current">
+                    <span class="nav-lesson-number">2</span>
+                    <span class="nav-lesson-title">Types of Abuse</span>
+                </a>
+
+                <a href="lesson-1-3.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">3</span>
+                    <span class="nav-lesson-title">Power and Control Wheel</span>
+                </a>
+
+                <a href="lesson-1-4.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">4</span>
+                    <span class="nav-lesson-title">Categorizing Intimate Partner Violence</span>
+                </a>
+
+                <a href="lesson-1-5.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">5</span>
+                    <span class="nav-lesson-title">Case Analysis: Lois and James Sumpter</span>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="nav-module " data-module="3">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(3)" aria-expanded="false">
+                <span class="nav-module-number">3</span>
+                <span class="nav-module-title">MODULE 2: Intimate Partner Sexual Violence</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-3">
+
+                <a href="lesson-2-1.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">1</span>
+                    <span class="nav-lesson-title">What is Sexual Violence?</span>
+                </a>
+
+                <a href="lesson-2-2.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">2</span>
+                    <span class="nav-lesson-title">Sexual Violence in Our Society</span>
+                </a>
+
+                <a href="lesson-2-3.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">3</span>
+                    <span class="nav-lesson-title">Rape and Sexual Assault in the Context of Intimate Partner Violence</span>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="nav-module " data-module="4">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(4)" aria-expanded="false">
+                <span class="nav-module-number">4</span>
+                <span class="nav-module-title">MODULE 3: Responding to Intimate Partner Violence</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-4">
+
+                <a href="lesson-3-1.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">1</span>
+                    <span class="nav-lesson-title">The Impact of Intimate Partner Violence on Victims</span>
+                </a>
+
+                <a href="lesson-3-2.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">2</span>
+                    <span class="nav-lesson-title">Safety Planning with Victims</span>
+                </a>
+
+                <a href="lesson-3-3.html"
+                   class="nav-lesson-link ">
+                    <span class="nav-lesson-number">3</span>
+                    <span class="nav-lesson-title">Responding to Someone Experiencing Intimate Partner Violence</span>
+                </a>
+
+            </div>
+        </div>
+
+    </nav>
+
+                </aside>
+
+                <!-- Main Lesson Content -->
+                <div class="lesson-main">
+                    <div class="lesson-article">
+      <!-- Video Introduction Section -->
+      <section class="video-player-section" data-lesson-video="lesson-1-2">
+        <div class="video-header">
+          <h2 class="video-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            Types of Abuse
+          </h2>
+          <span class="video-duration">2:54</span>
+        </div>
+
+        <div class="video-container">
+          <div class="video-scenes" id="video-lesson-1-2">
+            
+            <div class="video-scene template-intro" data-scene="0" data-duration="13" data-template="intro" data-script="Intimate partner violence takes many forms beyond physical violence. Understanding the full spectrum of abuse helps you recognize patterns that might otherwise go unnoticed. Let's explore five major categories.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-1.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Understanding Abuse Types</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-intro.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="1" data-duration="14" data-template="split-left" data-script="Physical abuse includes hitting, punching, kicking, and choking. It can involve weapons or physical restraint. Some abusers prevent sleep or withhold medical care. Physical abuse often escalates over time and poses life-threatening danger.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-2.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Physical Abuse</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>Hitting, punching, kicking, choking</li>
+                    <li>Use of weapons or restraint</li>
+                    <li>Preventing sleep or medical care</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-section-1.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="2" data-duration="17" data-template="split-right" data-script="Emotional abuse can be devastating. It includes constant criticism, insults, and humiliation designed to destroy self-esteem. Abusers use threats and intimidation. Gaslighting makes victims question their own perceptions and sanity. This form leaves no visible scars but profound psychological damage.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-3.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Emotional and Psychological Abuse</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>Insults, humiliation, constant criticism</li>
+                    <li>Threats and intimidation tactics</li>
+                    <li>Gaslighting and reality manipulation</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-section-1.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-diagonal" data-scene="3" data-duration="14" data-template="diagonal" data-script="Isolation is a powerful abuse tactic. Abusers systematically cut victims off from family, friends, and support systems. They may monitor phone calls, control transportation, or create conflict with loved ones. Isolation makes victims dependent and removes witnesses to abuse.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-4.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Isolation as Control</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-section-1.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="4" data-duration="16" data-template="split-left" data-script="Economic abuse creates financial dependence. Abusers control all money, prevent employment, and sabotage careers or education. They may destroy credit, create debt in the victim's name, or withhold basic necessities. This makes leaving financially impossible for many survivors.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-5.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Economic Abuse</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>Controlling all finances and income</li>
+                    <li>Preventing employment or education</li>
+                    <li>Destroying credit and creating debt</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-section-2.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="5" data-duration="13" data-template="split-right" data-script="Sexual violence within intimate relationships is common but often unrecognized. It includes any unwanted sexual contact, coercion, or assault. Marriage or relationship status does not imply consent. We'll explore this topic in depth in Module Two.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-6.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Sexual Abuse and Coercion</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-section-2.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="6" data-duration="15" data-template="split-left" data-script="Technology has created new avenues for abuse. Abusers use GPS to track locations, monitor all online activity and communications, and install spyware. They may impersonate victims online or use technology to harass and intimidate. Digital abuse is increasingly common.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-7.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Technological Abuse</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>GPS tracking and surveillance</li>
+                    <li>Monitoring social media and communications</li>
+                    <li>Using technology to harass or intimidate</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-section-2.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-diagonal" data-scene="7" data-duration="13" data-template="diagonal" data-script="Here's what's critical to understand: these forms of abuse rarely exist in isolation. Physical abuse almost always occurs alongside emotional abuse. Economic control combines with isolation. Recognizing one form should prompt you to look for others.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-8.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Abuse Rarely Exists Alone</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="8" data-duration="15" data-template="split-right" data-script="What distinguishes intimate partner violence from relationship conflicts is the pattern. IPV isn't about isolated incidents or mutual arguments. It's a systematic pattern of behaviors designed to maintain power and control over a partner. The pattern continues and often escalates.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-9.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">The Pattern of Control</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>Not isolated incidents</li>
+                    <li>Systematic pattern over time</li>
+                    <li>Designed to maintain power</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="9" data-duration="13" data-template="split-left" data-script="Not all abuse is obvious. You may notice someone who seems anxious about their partner's reaction, makes excuses for injuries, or has lost contact with friends and family. These subtle signs deserve attention and appropriate follow-up.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-10.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Recognizing Subtle Signs</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="10" data-duration="16" data-template="split-right" data-script="All forms of abuse cause serious harm. Physical abuse creates injuries and chronic health problems. Emotional abuse causes psychological trauma, PTSD, depression, and anxiety. Economic abuse traps victims. Sexual violence creates profound trauma. The cumulative impact can be devastating.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-11.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Impact Across All Forms</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>Physical health consequences</li>
+                    <li>Psychological trauma and PTSD</li>
+                    <li>Damaged self-esteem and identity</li>
+                    <li>Fear and hypervigilance</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-diagonal" data-scene="11" data-duration="13" data-template="diagonal" data-script="As a professional, you're positioned to recognize these different forms of abuse. Someone experiencing economic control might not identify it as abuse. Your knowledge helps you ask the right questions and connect people to appropriate resources.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-12.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Your Role in Recognition</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-final" data-scene="12" data-duration="12" data-template="final" data-script="Understanding these five types of abuse physical, emotional, economic, sexual, and technological equips you to recognize intimate partner violence in its many forms. This knowledge is your foundation for effective response.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-1-2-scene-13.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Knowledge Empowers Action</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-1-2-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+          </div>
+
+          <!-- Closed Captions Display -->
+          <div class="video-caption hidden">
+            <div class="video-caption-text"></div>
+          </div>
+
+          <div class="video-controls">
+            <button class="video-btn video-prev" title="Previous Slide" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+
+            <button class="video-btn video-play-pause" title="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                <rect x="6" y="4" width="4" height="16"/>
+                <rect x="14" y="4" width="4" height="16"/>
+              </svg>
+            </button>
+
+            <button class="video-btn video-next" title="Next Slide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+
+            <div class="video-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+              </div>
+              <span class="progress-text">Slide 1 of 13</span>
+            </div>
+
+            <div class="video-volume">
+              <button class="video-btn video-volume-btn" title="Volume">
+                <svg class="icon-volume-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+                <svg class="icon-volume-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <line x1="23" y1="9" x2="17" y2="15"/>
+                  <line x1="17" y1="9" x2="23" y2="15"/>
+                </svg>
+              </button>
+              <input type="range" class="video-volume-slider" min="0" max="1" step="0.1" value="1">
+            </div>
+
+            <button class="video-btn video-cc" title="Captions (C)">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 7H9.5v-.5h-2v3h2V13H11v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1zm7 0h-1.5v-.5h-2v3h2V13H18v1c0 .55-.45 1-1 1h-3c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1z"/>
+              </svg>
+            </button>
+
+            <button class="video-btn video-fullscreen" title="Fullscreen (F)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      </section>
+
+                        <h2>Recognizing Different Forms of Abuse</h2>
+
+
+
+
+<div style="background: linear-gradient(135deg, #f0fdfa, #ecfdf5); padding: 1.5rem; border-left: 4px solid #38b2ac; border-radius: 0.5rem; margin: 2rem 0; font-style: italic;">
+  <h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">What Does Abuse Actually Look Like?</h3>
+</div>
+<div style="margin: 2rem 0;"><p>Recognizing intimate partner violence involves more than just identifying bruises or waiting for someone to show up in the emergency room. It is also not a single moment in time, but <strong>a pattern of actions that compound</strong>.</p>
+</div><div style="margin: 2rem 0;"><p>Intimate partner violence can take many forms, and understanding each type is essential for recognizing abuse when it occurs. <strong>Click each type below to explore its definition and examples.</strong></p>
+</div>
+
+<!-- Accordion: Types of Abuse -->
+<div class="abuse-types-accordion" style="margin: 2rem 0;">
+
+  <!-- Physical Abuse -->
+  <div class="accordion-item" style="background: white; border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.08); overflow: hidden;">
+    <button class="accordion-trigger"
+            onclick="toggleAccordion('physical')"
+            onkeydown="handleAccordionKeydown(event, 'physical')"
+            aria-expanded="false"
+            aria-controls="accordion-physical"
+            aria-label="Physical Abuse - click to expand or collapse"
+            style="width: 100%; padding: 1.25rem 1.5rem; background: #f9fafb; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s;">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="background: #38b2ac; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div style="text-align: left;">
+          <h4 style="margin: 0; color: #1f2937; font-size: 1.125rem; font-weight: 700;">Physical Abuse</h4>
+          <p style="margin: 0.25rem 0 0 0; color: #6b7280; font-size: 0.875rem; font-weight: 500;">Using force to cause harm or injury</p>
+        </div>
+      </div>
+      <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="2" style="transition: transform 0.3s;" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </button>
+    <div id="accordion-physical" class="accordion-content" role="region" aria-labelledby="accordion-physical" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+      <div style="padding: 1.5rem; background: #f9fafb; border-top: 1px solid #e5e7eb;">
+        <p style="color: #374151; margin-bottom: 1rem; line-height: 1.6;"><strong>Physical violence includes any intentional use of physical force with the potential to cause harm, including:</strong></p>
+        <ul style="color: #4b5563; line-height: 1.8; margin: 0; padding-left: 1.5rem;">
+          <li>Hitting, slapping, punching, kicking</li>
+          <li>Choking or strangling</li>
+          <li>Burning</li>
+          <li>Using weapons</li>
+          <li>Physical restraint</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sexual Abuse -->
+  <div class="accordion-item" style="background: white; border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.08); overflow: hidden;">
+    <button class="accordion-trigger"
+            onclick="toggleAccordion('sexual')"
+            onkeydown="handleAccordionKeydown(event, 'sexual')"
+            aria-expanded="false"
+            aria-controls="accordion-sexual"
+            aria-label="Sexual Abuse - click to expand or collapse"
+            style="width: 100%; padding: 1.25rem 1.5rem; background: #f9fafb; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s;">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="background: #38b2ac; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            <line x1="12" y1="5" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <div style="text-align: left;">
+          <h4 style="margin: 0; color: #1f2937; font-size: 1.125rem; font-weight: 700;">Sexual Abuse</h4>
+          <p style="margin: 0.25rem 0 0 0; color: #6b7280; font-size: 0.875rem; font-weight: 500;">Any sexual act without consent</p>
+        </div>
+      </div>
+      <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="2" style="transition: transform 0.3s;" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </button>
+    <div id="accordion-sexual" class="accordion-content" role="region" aria-labelledby="accordion-sexual" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+      <div style="padding: 1.5rem; background: #f9fafb; border-top: 1px solid #e5e7eb;">
+        <p style="color: #374151; margin-bottom: 1rem; line-height: 1.6;"><strong>Sexual violence includes any sexual act or attempt without consent, including:</strong></p>
+        <ul style="color: #4b5563; line-height: 1.8; margin: 0; padding-left: 1.5rem;">
+          <li>Forced sexual contact</li>
+          <li>Sexual coercion</li>
+          <li>Reproductive control</li>
+          <li>Refusing to use protection</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Emotional/Psychological Abuse -->
+  <div class="accordion-item" style="background: white; border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.08); overflow: hidden;">
+    <button class="accordion-trigger"
+            onclick="toggleAccordion('emotional')"
+            onkeydown="handleAccordionKeydown(event, 'emotional')"
+            aria-expanded="false"
+            aria-controls="accordion-emotional"
+            aria-label="Emotional/Psychological Abuse - click to expand or collapse"
+            style="width: 100%; padding: 1.25rem 1.5rem; background: #f9fafb; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s;">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="background: #38b2ac; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            <line x1="9" y1="10" x2="15" y2="10"/>
+            <line x1="12" y1="14" x2="12" y2="14"/>
+          </svg>
+        </div>
+        <div style="text-align: left;">
+          <h4 style="margin: 0; color: #1f2937; font-size: 1.125rem; font-weight: 700;">Emotional/Psychological Abuse</h4>
+          <p style="margin: 0.25rem 0 0 0; color: #6b7280; font-size: 0.875rem; font-weight: 500;">Harming mental health and self-worth</p>
+        </div>
+      </div>
+      <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="2" style="transition: transform 0.3s;" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </button>
+    <div id="accordion-emotional" class="accordion-content" role="region" aria-labelledby="accordion-emotional" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+      <div style="padding: 1.5rem; background: #f9fafb; border-top: 1px solid #e5e7eb;">
+        <p style="color: #374151; margin-bottom: 1rem; line-height: 1.6;"><strong>Psychological abuse involves verbal and non-verbal behaviors that harm someone's mental health, including:</strong></p>
+        <ul style="color: #4b5563; line-height: 1.8; margin: 0; padding-left: 1.5rem;">
+          <li>Name-calling and insults</li>
+          <li>Humiliation and degradation</li>
+          <li>Threats and intimidation</li>
+          <li>Isolation from friends and family</li>
+          <li>Gaslighting (making someone question their reality)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Economic Abuse -->
+  <div class="accordion-item" style="background: white; border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.08); overflow: hidden;">
+    <button class="accordion-trigger"
+            onclick="toggleAccordion('economic')"
+            onkeydown="handleAccordionKeydown(event, 'economic')"
+            aria-expanded="false"
+            aria-controls="accordion-economic"
+            aria-label="Economic Abuse - click to expand or collapse"
+            style="width: 100%; padding: 1.25rem 1.5rem; background: #f9fafb; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s;">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="background: #38b2ac; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="23"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <div style="text-align: left;">
+          <h4 style="margin: 0; color: #1f2937; font-size: 1.125rem; font-weight: 700;">Economic Abuse</h4>
+          <p style="margin: 0.25rem 0 0 0; color: #6b7280; font-size: 0.875rem; font-weight: 500;">Controlling financial resources</p>
+        </div>
+      </div>
+      <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="2" style="transition: transform 0.3s;" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </button>
+    <div id="accordion-economic" class="accordion-content" role="region" aria-labelledby="accordion-economic" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+      <div style="padding: 1.5rem; background: #f9fafb; border-top: 1px solid #e5e7eb;">
+        <p style="color: #374151; margin-bottom: 1rem; line-height: 1.6;"><strong>Economic violence involves controlling access to financial resources, including:</strong></p>
+        <ul style="color: #4b5563; line-height: 1.8; margin: 0; padding-left: 1.5rem;">
+          <li>Preventing someone from working</li>
+          <li>Controlling all finances</li>
+          <li>Withholding money for necessities</li>
+          <li>Sabotaging employment</li>
+          <li>Running up debt in someone's name</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function toggleAccordion(type) {
+  const content = document.getElementById(`accordion-${type}`);
+  const trigger = content.previousElementSibling;
+  const icon = trigger.querySelector('.accordion-icon');
+  const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+  if (isExpanded) {
+    // Collapse
+    content.style.maxHeight = '0';
+    trigger.setAttribute('aria-expanded', 'false');
+    icon.style.transform = 'rotate(0deg)';
+  } else {
+    // Expand
+    content.style.maxHeight = content.scrollHeight + 'px';
+    trigger.setAttribute('aria-expanded', 'true');
+    icon.style.transform = 'rotate(180deg)';
+  }
+}
+
+function handleAccordionKeydown(event, type) {
+  // Handle Enter and Space keys for accessibility
+  if (event.key === 'Enter' || event.key === ' ') {
+    event.preventDefault();
+    toggleAccordion(type);
+  }
+}
+
+// Add hover effects
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+    trigger.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateX(4px)';
+    });
+    trigger.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateX(0)';
+    });
+  });
+});
+</script>
+
+<!-- Scenario-Based Interactive: Recognize the Abuse -->
+<div style="background: linear-gradient(135deg, #fef3c7, #fde68a); padding: 2.5rem; border-radius: 12px; margin: 3rem 0; border-left: 4px solid #d97706;">
+  <h3 style="color: #92400e; text-align: center; margin-bottom: 0.5rem; font-size: 1.5rem;">Practice: Recognize the Abuse</h3>
+  <p style="text-align: center; color: #78350f; margin-bottom: 2rem; font-size: 0.95rem;">
+    Read each scenario and identify which type(s) of abuse are present. Remember: abuse types often overlap.
+  </p>
+
+  <!-- Scenario 1 -->
+  <div class="scenario-card" style="background: white; padding: 1.75rem; border-radius: 10px; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+      <div style="background: #f59e0b; color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+      <h4 style="color: #0f766e; margin: 0; font-size: 1.125rem;">Sarah's Story</h4>
+    </div>
+
+    <p style="background: #f9fafb; padding: 1.25rem; border-radius: 8px; border-left: 3px solid #38b2ac; margin-bottom: 1.5rem; line-height: 1.7; color: #374151;">
+      Sarah's partner constantly checks her phone and emails. He demands to know where she is at all times and gets angry if she doesn't respond to his texts immediately. He's told her that her friends are "bad influences" and has gradually convinced her to stop seeing them. When Sarah mentions feeling isolated, he tells her she's "too sensitive" and that he's "just trying to protect her."
+    </p>
+
+    <div style="margin-bottom: 1rem;">
+      <label style="font-weight: 600; color: #374151; margin-bottom: 0.75rem; display: block; font-size: 0.95rem;">Which type(s) of abuse are present? (Select all that apply)</label>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <label style="display: flex; align-items: center; padding: 0.875rem; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+               onmouseover="this.style.borderColor='#38b2ac'; this.style.background='#f0fdfa'"
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.background='#f9fafb'">
+          <input type="checkbox" name="scenario1" value="physical" aria-label="Scenario 1: Physical Abuse" style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+          <span style="color: #374151; font-weight: 500;">Physical Abuse</span>
+        </label>
+
+        <label style="display: flex; align-items: center; padding: 0.875rem; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+               onmouseover="this.style.borderColor='#38b2ac'; this.style.background='#f0fdfa'"
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.background='#f9fafb'">
+          <input type="checkbox" name="scenario1" value="sexual" aria-label="Scenario 1: Sexual Abuse" style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+          <span style="color: #374151; font-weight: 500;">Sexual Abuse</span>
+        </label>
+
+        <label style="display: flex; align-items: center; padding: 0.875rem; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+               onmouseover="this.style.borderColor='#38b2ac'; this.style.background='#f0fdfa'"
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.background='#f9fafb'">
+          <input type="checkbox" name="scenario1" value="emotional" aria-label="Scenario 1: Emotional/Psychological Abuse" style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+          <span style="color: #374151; font-weight: 500;">Emotional/Psychological Abuse</span>
+        </label>
+
+        <label style="display: flex; align-items: center; padding: 0.875rem; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+               onmouseover="this.style.borderColor='#38b2ac'; this.style.background='#f0fdfa'"
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.background='#f9fafb'">
+          <input type="checkbox" name="scenario1" value="economic" aria-label="Scenario 1: Economic Abuse" style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+          <span style="color: #374151; font-weight: 500;">Economic Abuse</span>
+        </label>
+      </div>
+    </div>
+
+    <button onclick="checkScenario(1)"
+            style="padding: 0.75rem 1.5rem; background: #0f766e; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.2s; width: 100%;"
+            onmouseover="this.style.background='#0d9488'"
+            onmouseout="this.style.background='#0f766e'"
+            aria-label="Check your answer for scenario 1">
+      Check Answer
+    </button>
+
+    <div id="feedback1" style="display: none; margin-top: 1.25rem; padding: 1.25rem; border-radius: 8px;" role="alert" aria-live="polite"></div>
+  </div>
+
+  <!-- Scenario 2 -->
+  <div class="scenario-card" style="background: white; padding: 1.75rem; border-radius: 10px; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+      <div style="background: #f59e0b; color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+      <h4 style="color: #0f766e; margin: 0; font-size: 1.125rem;">Marcus's Situation</h4>
+    </div>
+
+    <p style="background: #f9fafb; padding: 1.25rem; border-radius: 8px; border-left: 3px solid #38b2ac; margin-bottom: 1.5rem; line-height: 1.7; color: #374151;">
+      Marcus's partner controls all their bank accounts and credit cards. She gives him a small "allowance" each week and requires receipts for everything he purchases. When Marcus got a promotion at work, she became angry and accused him of "trying to show her up." Last month, she secretly opened a credit card in his name and maxed it out. Marcus isn't allowed to see any financial statements.
+    </p>
+
+    <div style="margin-bottom: 1rem;">
+      <label style="font-weight: 600; color: #374151; margin-bottom: 0.75rem; display: block; font-size: 0.95rem;">Which type(s) of abuse are present? (Select all that apply)</label>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <label style="display: flex; align-items: center; padding: 0.875rem; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+               onmouseover="this.style.borderColor='#38b2ac'; this.style.background='#f0fdfa'"
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.background='#f9fafb'">
+          <input type="checkbox" name="scenario2" value="physical" aria-label="Scenario 2: Physical Abuse" style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+          <span style="color: #374151; font-weight: 500;">Physical Abuse</span>
+        </label>
+
+        <label style="display: flex; align-items: center; padding: 0.875rem; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+               onmouseover="this.style.borderColor='#38b2ac'; this.style.background='#f0fdfa'"
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.background='#f9fafb'">
+          <input type="checkbox" name="scenario2" value="sexual" aria-label="Scenario 2: Sexual Abuse" style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+          <span style="color: #374151; font-weight: 500;">Sexual Abuse</span>
+        </label>
+
+        <label style="display: flex; align-items: center; padding: 0.875rem; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+               onmouseover="this.style.borderColor='#38b2ac'; this.style.background='#f0fdfa'"
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.background='#f9fafb'">
+          <input type="checkbox" name="scenario2" value="emotional" aria-label="Scenario 2: Emotional/Psychological Abuse" style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+          <span style="color: #374151; font-weight: 500;">Emotional/Psychological Abuse</span>
+        </label>
+
+        <label style="display: flex; align-items: center; padding: 0.875rem; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+               onmouseover="this.style.borderColor='#38b2ac'; this.style.background='#f0fdfa'"
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.background='#f9fafb'">
+          <input type="checkbox" name="scenario2" value="economic" aria-label="Scenario 2: Economic Abuse" style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+          <span style="color: #374151; font-weight: 500;">Economic Abuse</span>
+        </label>
+      </div>
+    </div>
+
+    <button onclick="checkScenario(2)"
+            style="padding: 0.75rem 1.5rem; background: #0f766e; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.2s; width: 100%;"
+            onmouseover="this.style.background='#0d9488'"
+            onmouseout="this.style.background='#0f766e'"
+            aria-label="Check your answer for scenario 2">
+      Check Answer
+    </button>
+
+    <div id="feedback2" style="display: none; margin-top: 1.25rem; padding: 1.25rem; border-radius: 8px;" role="alert" aria-live="polite"></div>
+  </div>
+
+  <!-- Scenario 3 -->
+  <div class="scenario-card" style="background: white; padding: 1.75rem; border-radius: 10px; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+      <div style="background: #f59e0b; color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+      <h4 style="color: #0f766e; margin: 0; font-size: 1.125rem;">Jamie's Experience</h4>
+    </div>
+
+    <p style="background: #f9fafb; padding: 1.25rem; border-radius: 8px; border-left: 3px solid #38b2ac; margin-bottom: 1.5rem; line-height: 1.7; color: #374151;">
+      Jamie's partner becomes violent when angry, pushing and shoving during arguments. Last week, Jamie had to call in sick to work because of visible bruising. When Jamie tries to leave during fights, the partner blocks the door. After violent incidents, the partner is extremely apologetic, promises to change, and buys expensive gifts. The partner also frequently tells Jamie that "no one else would ever want you" and that Jamie is "lucky" to be in the relationship.
+    </p>
+
+    <div style="margin-bottom: 1rem;">
+      <label style="font-weight: 600; color: #374151; margin-bottom: 0.75rem; display: block; font-size: 0.95rem;">Which type(s) of abuse are present? (Select all that apply)</label>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <label style="display: flex; align-items: center; padding: 0.875rem; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+               onmouseover="this.style.borderColor='#38b2ac'; this.style.background='#f0fdfa'"
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.background='#f9fafb'">
+          <input type="checkbox" name="scenario3" value="physical" aria-label="Scenario 3: Physical Abuse" style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+          <span style="color: #374151; font-weight: 500;">Physical Abuse</span>
+        </label>
+
+        <label style="display: flex; align-items: center; padding: 0.875rem; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+               onmouseover="this.style.borderColor='#38b2ac'; this.style.background='#f0fdfa'"
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.background='#f9fafb'">
+          <input type="checkbox" name="scenario3" value="sexual" aria-label="Scenario 3: Sexual Abuse" style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+          <span style="color: #374151; font-weight: 500;">Sexual Abuse</span>
+        </label>
+
+        <label style="display: flex; align-items: center; padding: 0.875rem; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+               onmouseover="this.style.borderColor='#38b2ac'; this.style.background='#f0fdfa'"
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.background='#f9fafb'">
+          <input type="checkbox" name="scenario3" value="emotional" aria-label="Scenario 3: Emotional/Psychological Abuse" style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+          <span style="color: #374151; font-weight: 500;">Emotional/Psychological Abuse</span>
+        </label>
+
+        <label style="display: flex; align-items: center; padding: 0.875rem; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all 0.2s;"
+               onmouseover="this.style.borderColor='#38b2ac'; this.style.background='#f0fdfa'"
+               onmouseout="this.style.borderColor='#e5e7eb'; this.style.background='#f9fafb'">
+          <input type="checkbox" name="scenario3" value="economic" aria-label="Scenario 3: Economic Abuse" style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+          <span style="color: #374151; font-weight: 500;">Economic Abuse</span>
+        </label>
+      </div>
+    </div>
+
+    <button onclick="checkScenario(3)"
+            style="padding: 0.75rem 1.5rem; background: #0f766e; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.2s; width: 100%;"
+            onmouseover="this.style.background='#0d9488'"
+            onmouseout="this.style.background='#0f766e'"
+            aria-label="Check your answer for scenario 3">
+      Check Answer
+    </button>
+
+    <div id="feedback3" style="display: none; margin-top: 1.25rem; padding: 1.25rem; border-radius: 8px;" role="alert" aria-live="polite"></div>
+  </div>
+
+  <!-- Key Insight -->
+  <div style="background: linear-gradient(135deg, #d1fae5, #a7f3d0); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #059669; margin-top: 2rem;">
+    <p style="margin: 0; color: #065f46; font-size: 0.95rem; line-height: 1.7;">
+      <strong style="color: #047857;">💡 Key Insight:</strong> As you work through these scenarios, notice how abuse types rarely occur in isolation. The presence of one type often indicates others are present too. This overlapping pattern is characteristic of intimate partner violence.
+    </p>
+  </div>
+</div>
+
+<script>
+// Scenario answer keys
+const scenarioAnswers = {
+  1: ['emotional'], // Sarah: isolation, gaslighting, controlling behavior
+  2: ['economic', 'emotional'], // Marcus: financial control + sabotage + humiliation
+  3: ['physical', 'emotional'] // Jamie: violence + degradation + cycle of abuse
+};
+
+const scenarioExplanations = {
+  1: {
+    correct: "You correctly identified Emotional/Psychological Abuse. Sarah's partner is using isolation (cutting her off from friends), gaslighting (telling her she's 'too sensitive'), and surveillance/control (monitoring her phone and location). While there's no physical, sexual, or economic abuse described, the emotional manipulation and control are clear forms of abuse.",
+    partial: "You're on the right track! The primary form of abuse here is Emotional/Psychological. Look for: isolation from friends, constant monitoring, gaslighting ('you're too sensitive'), and controlling behavior. These are all emotional/psychological tactics.",
+    incorrect: "Let's look more carefully. This scenario shows Emotional/Psychological Abuse through: isolation from friends, constant phone/email monitoring, demanding immediate responses, gaslighting ('too sensitive'), and control disguised as 'protection.' There's no mention of physical violence, sexual coercion, or financial control in this scenario."
+  },
+  2: {
+    correct: "Excellent recognition! This scenario shows both Economic Abuse (controlling all accounts, giving 'allowances', requiring receipts, sabotaging career advancement, opening fraudulent credit cards) and Emotional/Psychological Abuse (anger about promotion, sabotage, humiliation through financial control). Economic abuse is often paired with emotional abuse as the financial control creates psychological harm.",
+    partial: "You identified some abuse! This scenario contains Economic Abuse (all the financial control, allowances, hidden credit cards) AND Emotional/Psychological Abuse (becoming angry about his promotion, the humiliation of the 'allowance' system). Both types work together here.",
+    incorrect: "Look at the financial aspects: controlling all accounts, giving small 'allowances', requiring receipts, opening fraudulent credit cards, blocking access to statements. This is Economic Abuse. Also notice the Emotional/Psychological component: becoming angry about his success and the degrading nature of the financial control. There's no physical or sexual abuse described."
+  },
+  3: {
+    correct: "Correct identification! This shows Physical Abuse (pushing, shoving, causing visible bruising, blocking exits, physical restraint) combined with Emotional/Psychological Abuse (degrading comments like 'no one else would want you', verbal putdowns, the cycle of violence followed by apologies and gifts). The combination demonstrates how abuse types compound.",
+    partial: "You're identifying some of the abuse! Look for Physical Abuse (pushing, shoving, bruising, blocking the door) AND Emotional/Psychological Abuse (telling Jamie 'no one would want you', degradation, the cycle of violence/apology/gifts). Both are present here.",
+    incorrect: "This scenario contains multiple abuse types: Physical Abuse (pushing, shoving, visible bruising, blocking exits) and Emotional/Psychological Abuse ('no one else would want you', degradation, the classic cycle of violence followed by apologies and gifts). These often occur together. There's no sexual or economic abuse mentioned in this scenario."
+  }
+};
+
+function checkScenario(scenarioNum) {
+  const checkboxes = document.querySelectorAll(`input[name="scenario${scenarioNum}"]:checked`);
+  const selected = Array.from(checkboxes).map(cb => cb.value);
+  const correct = scenarioAnswers[scenarioNum];
+  const feedbackDiv = document.getElementById(`feedback${scenarioNum}`);
+
+  // Check if answer is correct
+  const isCorrect = correct.length === selected.length &&
+                    correct.every(answer => selected.includes(answer));
+
+  // Check if partial (got some right but not all)
+  const hasCorrect = selected.some(s => correct.includes(s));
+  const hasIncorrect = selected.some(s => !correct.includes(s));
+  const isPartial = hasCorrect && (hasIncorrect || selected.length !== correct.length);
+
+  // Display feedback
+  feedbackDiv.style.display = 'block';
+
+  if (isCorrect) {
+    feedbackDiv.style.background = 'linear-gradient(135deg, #d1fae5, #a7f3d0)';
+    feedbackDiv.style.borderLeft = '4px solid #059669';
+    feedbackDiv.innerHTML = `
+      <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+        <svg style="flex-shrink: 0; margin-top: 2px;" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" fill="#059669"/>
+          <path d="M8 12l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <div style="color: #047857; font-weight: 700; margin-bottom: 0.5rem;">✓ Correct!</div>
+          <div style="color: #065f46; line-height: 1.6; font-size: 0.9375rem;">${scenarioExplanations[scenarioNum].correct}</div>
+        </div>
+      </div>
+    `;
+  } else if (isPartial) {
+    feedbackDiv.style.background = 'linear-gradient(135deg, #fef3c7, #fde68a)';
+    feedbackDiv.style.borderLeft = '4px solid #d97706';
+    feedbackDiv.innerHTML = `
+      <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+        <svg style="flex-shrink: 0; margin-top: 2px;" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" fill="#d97706"/>
+          <path d="M12 7v6M12 16h.01" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <div style="color: #92400e; font-weight: 700; margin-bottom: 0.5rem;">Partially Correct</div>
+          <div style="color: #78350f; line-height: 1.6; font-size: 0.9375rem;">${scenarioExplanations[scenarioNum].partial}</div>
+        </div>
+      </div>
+    `;
+  } else {
+    feedbackDiv.style.background = 'linear-gradient(135deg, #fee2e2, #fecaca)';
+    feedbackDiv.style.borderLeft = '4px solid #dc2626';
+    feedbackDiv.innerHTML = `
+      <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+        <svg style="flex-shrink: 0; margin-top: 2px;" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" fill="#dc2626"/>
+          <path d="M8 8l8 8M16 8l-8 8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <div style="color: #991b1b; font-weight: 700; margin-bottom: 0.5rem;">Not quite</div>
+          <div style="color: #7f1d1d; line-height: 1.6; font-size: 0.9375rem;">${scenarioExplanations[scenarioNum].incorrect}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  // Scroll feedback into view smoothly
+  feedbackDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
+
+<h2>How Abuse Types Overlap</h2>
+
+
+
+<div style="margin: 2rem 0;"><h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">Relationship Between Types of Abuse and Escalation of Harm</h3>
+</div><div style="margin: 2rem 0;"><p>It is important to note that survivors can experience several types of abuse at once. Often, people who cause harm will use multiple strategies to gain coercive control in their relationship, layering each on top of the others to intensify their effect.</p>
+</div><div style="margin: 2rem 0;"><p><strong>A Critical Pattern:</strong></p>
+</div><div style="margin: 2rem 0;"><p>In most cases, physical and sexual violence in an intimate relationship means there is already a history of controlling behaviors.</p>
+</div><div style="margin: 2rem 0;"><p>For example, in a 2006 study, Maria A. Pico-Alfonso et al. found that "while some subjects experienced only psychological abuse, all those who experienced physical abuse were also subjected to some form of psychological abuse."</p>
+</div><div style="margin: 2rem 0;"><p><strong>What This Means:</strong></p>
+</div><ul>
+<li>Psychological abuse often comes first and creates the foundation for other forms of abuse</li>
+<li>Physical violence rarely happens in isolation—it's typically part of a larger pattern of control</li>
+<li>Multiple forms of abuse working together create a more powerful system of control</li>
+<li>Understanding this overlap helps professionals like Dr. Patel recognize early warning signs before physical violence occurs</li>
+</ul>
+
+
+
+<h2>Moving Forward</h2>
+
+
+
+
+
+<div style="margin: 2rem 0;"><h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">Understanding Power and Control</h3>
+</div><div style="margin: 2rem 0;"><p>You have examined types of abuse and how they can overlap. Next, you look more closely at how these behaviors can create a relationship where one partner has power and control over the other.</p>
+</div><div style="margin: 2rem 0;"><p>To do this, you explore the use of one of the most common tools in this field—the Domestic Abuse Intervention Program's <strong>Power and Control Wheel</strong>.</p>
+</div><p>This tool helps illustrate:</p>
+<ul>
+<li>How different abusive behaviors work together</li>
+<li>The systematic nature of intimate partner violence</li>
+<li>How control is established and maintained in relationships</li>
+<li>Patterns that may not be visible from looking at individual incidents</li>
+</ul>
+<div style="margin: 2rem 0;"><p>Understanding these connections prepares you to better support survivors and recognize abuse in all its forms.</p>
+</div>
+
+
+
+                        
+<div class="quiz-container" style="background: white; padding: 2rem; border-radius: 0.75rem; margin: 2rem 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #38b2ac;">
+  <div class="quiz-header" style="margin-bottom: 2rem; text-align: center;">
+    <h2 style="color: #38b2ac; margin-bottom: 0.5rem;">Quiz</h2>
+
+
+<p class="quiz-progress" style="color: #6b7280; font-size: 0.875rem;">Question <span id="current-question">1</span> of 3</p>
+  </div>
+
+<div class="quiz-question" data-question-number="1" style="display: block;">
+  <h3 style="margin-bottom: 1rem; color: #38b2ac;">Types of Abuse</h3>
+  <p style="margin-bottom: 1.5rem; color: #374151; font-size: 1.125rem;">Which of the following is an example of ECONOMIC abuse in an intimate partner relationship?</p>
+  <div class="knowledge-check" data-question-index="0">
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="0"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Preventing someone from working or controlling all finances is economic abuse. This type of abuse involves controlling access to financial resources, which can include preventing employment, withholding money for necessities, sabotaging jobs, or controlling all financial decisions. Economic abuse creates dependency and makes it harder for survivors to leave abusive relationships."
+             aria-label="Calling someone insulting names"
+             style="margin-right: 0.75rem;">
+      <span>Calling someone insulting names</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="1"
+             data-correct="true"
+             data-feedback="✓ Correct! Preventing someone from working or controlling all finances is economic abuse. This type of abuse involves controlling access to financial resources, which can include preventing employment, withholding money for necessities, sabotaging jobs, or controlling all financial decisions. Economic abuse creates dependency and makes it harder for survivors to leave abusive relationships."
+             aria-label="Preventing someone from working or controlling all finances"
+             style="margin-right: 0.75rem;">
+      <span>Preventing someone from working or controlling all finances</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="2"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Preventing someone from working or controlling all finances is economic abuse. This type of abuse involves controlling access to financial resources, which can include preventing employment, withholding money for necessities, sabotaging jobs, or controlling all financial decisions. Economic abuse creates dependency and makes it harder for survivors to leave abusive relationships."
+             aria-label="Threatening to harm someone if they don't comply"
+             style="margin-right: 0.75rem;">
+      <span>Threatening to harm someone if they don't comply</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="3"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Preventing someone from working or controlling all finances is economic abuse. This type of abuse involves controlling access to financial resources, which can include preventing employment, withholding money for necessities, sabotaging jobs, or controlling all financial decisions. Economic abuse creates dependency and makes it harder for survivors to leave abusive relationships."
+             aria-label="Isolating someone from their friends and family"
+             style="margin-right: 0.75rem;">
+      <span>Isolating someone from their friends and family</span>
+    </label>
+
+    <div class="question-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+  </div>
+</div>
+
+<div class="quiz-question" data-question-number="2" style="display: none;">
+  <h3 style="margin-bottom: 1rem; color: #38b2ac;">Overlapping Abuse</h3>
+  <p style="margin-bottom: 1.5rem; color: #374151; font-size: 1.125rem;">What does research tell us about the relationship between physical abuse and psychological abuse?</p>
+  <div class="knowledge-check" data-question-index="1">
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="0"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Research by Maria A. Pico-Alfonso et al. found that while some people experienced ONLY psychological abuse, ALL those who experienced physical abuse were also subjected to some form of psychological abuse. This demonstrates that physical violence rarely happens in isolation—it's typically part of a larger pattern that includes psychological abuse as a foundation for control."
+             aria-label="They rarely occur together in the same relationship"
+             style="margin-right: 0.75rem;">
+      <span>They rarely occur together in the same relationship</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="1"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Research by Maria A. Pico-Alfonso et al. found that while some people experienced ONLY psychological abuse, ALL those who experienced physical abuse were also subjected to some form of psychological abuse. This demonstrates that physical violence rarely happens in isolation—it's typically part of a larger pattern that includes psychological abuse as a foundation for control."
+             aria-label="Physical abuse always leads to psychological abuse"
+             style="margin-right: 0.75rem;">
+      <span>Physical abuse always leads to psychological abuse</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="2"
+             data-correct="true"
+             data-feedback="✓ Correct! Research by Maria A. Pico-Alfonso et al. found that while some people experienced ONLY psychological abuse, ALL those who experienced physical abuse were also subjected to some form of psychological abuse. This demonstrates that physical violence rarely happens in isolation—it's typically part of a larger pattern that includes psychological abuse as a foundation for control."
+             aria-label="All those who experienced physical abuse were also subjected to some form of psychological abuse"
+             style="margin-right: 0.75rem;">
+      <span>All those who experienced physical abuse were also subjected to some form of psychological abuse</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="3"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Research by Maria A. Pico-Alfonso et al. found that while some people experienced ONLY psychological abuse, ALL those who experienced physical abuse were also subjected to some form of psychological abuse. This demonstrates that physical violence rarely happens in isolation—it's typically part of a larger pattern that includes psychological abuse as a foundation for control."
+             aria-label="Psychological abuse only occurs in relationships without physical violence"
+             style="margin-right: 0.75rem;">
+      <span>Psychological abuse only occurs in relationships without physical violence</span>
+    </label>
+
+    <div class="question-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+  </div>
+</div>
+
+<div class="quiz-question" data-question-number="3" style="display: none;">
+  <h3 style="margin-bottom: 1rem; color: #38b2ac;">Recognizing Patterns</h3>
+  <p style="margin-bottom: 1.5rem; color: #374151; font-size: 1.125rem;">Why is it important to understand that IPV is a PATTERN of behaviors rather than isolated incidents?</p>
+  <div class="knowledge-check" data-question-index="2">
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="0"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Understanding IPV as a PATTERN of behaviors is crucial because it helps us distinguish systematic abuse from occasional relationship conflict. A pattern reveals the ongoing nature of power and control, shows how different tactics work together, and helps professionals recognize that even 'small' controlling behaviors may be part of a larger abusive system. This understanding is essential for trauma-informed assessment and support."
+             aria-label="Because single incidents of abuse are not harmful"
+             style="margin-right: 0.75rem;">
+      <span>Because single incidents of abuse are not harmful</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="1"
+             data-correct="true"
+             data-feedback="✓ Correct! Understanding IPV as a PATTERN of behaviors is crucial because it helps us distinguish systematic abuse from occasional relationship conflict. A pattern reveals the ongoing nature of power and control, shows how different tactics work together, and helps professionals recognize that even 'small' controlling behaviors may be part of a larger abusive system. This understanding is essential for trauma-informed assessment and support."
+             aria-label="Because patterns help us distinguish IPV from occasional relationship conflict and recognize the systematic nature of abuse"
+             style="margin-right: 0.75rem;">
+      <span>Because patterns help us distinguish IPV from occasional relationship conflict and recognize the systematic nature of abuse</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="2"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Understanding IPV as a PATTERN of behaviors is crucial because it helps us distinguish systematic abuse from occasional relationship conflict. A pattern reveals the ongoing nature of power and control, shows how different tactics work together, and helps professionals recognize that even 'small' controlling behaviors may be part of a larger abusive system. This understanding is essential for trauma-informed assessment and support."
+             aria-label="Because only repeated physical violence qualifies as IPV"
+             style="margin-right: 0.75rem;">
+      <span>Because only repeated physical violence qualifies as IPV</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="3"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Understanding IPV as a PATTERN of behaviors is crucial because it helps us distinguish systematic abuse from occasional relationship conflict. A pattern reveals the ongoing nature of power and control, shows how different tactics work together, and helps professionals recognize that even 'small' controlling behaviors may be part of a larger abusive system. This understanding is essential for trauma-informed assessment and support."
+             aria-label="Because isolated incidents always escalate to patterns"
+             style="margin-right: 0.75rem;">
+      <span>Because isolated incidents always escalate to patterns</span>
+    </label>
+
+    <div class="question-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+  </div>
+</div>
+
+  <div class="quiz-navigation" style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #e5e7eb;">
+    <button onclick="previousQuestion()" id="prev-btn" style="padding: 0.75rem 1.5rem; background: #6b7280; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; display: none;">Previous</button>
+    <button onclick="nextQuestion()" id="next-btn" style="padding: 0.75rem 1.5rem; background: #38b2ac; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer;">Next Question</button>
+    <button onclick="submitQuiz()" id="submit-btn" style="padding: 0.75rem 1.5rem; background: #10b981; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; display: none;">Submit Quiz</button>
+  </div>
+
+  <div class="quiz-result" style="display: none; margin-top: 2rem; padding: 2rem; background: #f0fdf4; border: 2px solid #10b981; border-radius: 0.75rem; text-align: center;">
+    <h2 style="color: #10b981; margin-bottom: 1rem;">Quiz Complete!</h2>
+
+<figure class="lesson-image" style="margin: 2rem auto; max-width: 900px; text-align: center;">
+    <img src="../media/images/5.png"
+         alt="Image related to Types of Abuse"
+         style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+    
+</figure>
+
+
+
+<p class="quiz-score" style="font-size: 2rem; font-weight: bold; color: #047857; margin-bottom: 1rem;"></p>
+    <p class="quiz-message" style="color: #065f46; margin-bottom: 1.5rem;"></p>
+    <button onclick="reviewQuiz()" style="padding: 0.75rem 1.5rem; background: #38b2ac; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; margin-right: 0.75rem;">Review Answers</button>
+  </div>
+</div>
+
+
+  
+  <!-- Lesson Navigation (Previous/Next) -->
+<nav class="lesson-navigation" aria-label="Lesson navigation">
+    <a href="lesson-1-1.html" class="lesson-nav-button lesson-nav-prev">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <div class="lesson-nav-text">
+            <span class="lesson-nav-label">Previous Lesson</span>
+            <span class="lesson-nav-title">Who is Affected by Intimate Partner Violence?</span>
+        </div>
+    </a>
+    <a href="lesson-1-3.html" class="lesson-nav-button lesson-nav-next">
+        <div class="lesson-nav-text">
+            <span class="lesson-nav-label">Next Lesson</span>
+            <span class="lesson-nav-title">Power and Control Wheel</span>
+        </div>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+    </a>
+</nav>
+
+  <!-- Sidebar Module Toggle Script -->
+  <script>
+    // Global function for onclick handlers
+    function toggleSidebarModule(moduleNum) {
+      const module = document.querySelector(`.nav-module[data-module="${moduleNum}"]`);
+      if (!module) return;
+
+      const trigger = module.querySelector('.nav-module-trigger');
+      const lessons = module.querySelector('.nav-lessons');
+      if (!trigger || !lessons) return;
+
+      const isCurrentlyExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+      // Toggle aria-expanded
+      trigger.setAttribute('aria-expanded', !isCurrentlyExpanded);
+
+      // Toggle the active class (used by CSS for styling)
+      if (isCurrentlyExpanded) {
+        module.classList.remove('active');
+        lessons.style.maxHeight = '0';
+        lessons.style.opacity = '0';
+        lessons.style.marginTop = '0';
+      } else {
+        module.classList.add('active');
+        lessons.style.maxHeight = '500px';
+        lessons.style.opacity = '1';
+        lessons.style.marginTop = 'var(--space-3)';
+      }
+    }
+
+    // Initialize modules on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const modules = document.querySelectorAll('.nav-module');
+
+      modules.forEach(function(module) {
+        const trigger = module.querySelector('.nav-module-trigger');
+        const lessons = module.querySelector('.nav-lessons');
+        const moduleNum = module.getAttribute('data-module');
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+        // Initialize visibility based on aria-expanded
+        if (isExpanded) {
+          module.classList.add('active');
+          lessons.style.maxHeight = '500px';
+          lessons.style.opacity = '1';
+          lessons.style.marginTop = 'var(--space-3)';
+        } else {
+          module.classList.remove('active');
+          lessons.style.maxHeight = '0';
+          lessons.style.opacity = '0';
+          lessons.style.marginTop = '0';
+        }
+      });
+    });
+  </script>
+
+  <script src="../js/video-player.js"></script>
+</body>
+</html>

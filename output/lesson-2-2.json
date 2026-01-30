@@ -1,0 +1,94 @@
+{
+  "lessonId": "lesson-2-2",
+  "title": "Sexual Violence in Our Society",
+  "description": "Examining rape culture, gender stereotypes, and how societal attitudes normalize and perpetuate violence against women.",
+  "moduleId": "module-2",
+  "estimatedMinutes": 8,
+  "content": {
+    "narration": "In the twilight zone, we see how cultural currents shape violence. Rape culture isn't abstract theory—it's the water we swim in, the messages we absorb, the stereotypes that seem normal until we examine them. Understanding these societal foundations helps us challenge the beliefs that support violence and create change at every level.",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Understanding Rape Culture",
+        "content": "## Sexual Violence in Our Society\n\nViolence against women is based upon the idea of unequal power between men and women, a message that has been used by society throughout history.\n\n**Rape culture** is a term used to describe an environment where sexual violence against women is normalized and excused in the media and popular culture. It is perpetuated through:\n\n- Misogynistic language\n- The objectification of women's bodies\n- The glamorization of sexual violence\n\n### The Rape Culture Pyramid\n\nThe Rape Culture Pyramid, created by the **11th Principle: Consent** advocacy group, shows how gender stereotypes can perpetuate abusive and violent behaviors at many levels.\n\n**Key Insights:**\n\n- All the layers are linked and build on one another\n- Therefore, to eliminate violence against women, we must start at the foundation and address our beliefs and attitudes that support sexual violence\n- Behaviors at the bottom of the pyramid create the foundation for more serious violence at the top\n\n**The Pyramid Structure:**\n\n- **Foundation:** Gender stereotypes, sexist jokes, objectification\n- **Middle layers:** Victim blaming, slut-shaming, denial of rape culture\n- **Top:** Sexual assault, rape, sexual violence\n\nOnce you know what rape culture is, it may be overwhelming to see how common these behaviors are and how \"normal\" they are considered in our society."
+      },
+      {
+        "id": "section-2",
+        "title": "Challenging Rape Culture",
+        "content": "## Taking Action Against Harmful Norms\n\nIt is not easy to challenge rape culture, especially for those who have intentionally or unintentionally perpetuated it. It is important, however, to still have these conversations and call out sexist language or behaviors, no matter how small they seem.\n\n### Impact on All Genders\n\nIt is also important to recognize these harmful beliefs affect individuals of any gender, not just women and girls. Because of this, there are many organizations led by men that focus on spreading awareness about the impact of rigid gender stereotypes and the effect it can have on men and boys.\n\n**Gender Stereotypes Harm Everyone:**\n\n- Boys and men are told to suppress emotions (\"boys don't cry\")\n- Men are expected to be aggressive and dominant\n- Showing vulnerability is seen as weakness\n- These expectations contribute to violence and harm\n\nThe \"Boys Don't Cry\" campaign from White Ribbon shows how gender stereotypes impact the way men and boys act in our society. It captures many of the concepts in the Rape Culture Pyramid and how harmful behaviors and mindsets can build to sexual violence."
+      },
+      {
+        "id": "section-3",
+        "title": "Prevention Through Education",
+        "content": "## Preventing Sexual Violence and Rape Culture\n\nThe \"Boys Don't Cry\" initiative seeks to prevent sexual violence by breaking down common stereotypes and behaviors that often reinforce rape culture. By educating the public through common images and familiar language, this effort aims to lead to awareness and prevention behaviors rather than behaviors that reinforce rape culture.\n\n**Ultimately, prevention must include education, both formal and informal.**\n\n### How Allies and Advocates Can Participate:\n\n- **Talking about rape culture and gender-based violence with others** - Break the silence and normalize these important conversations\n\n- **Challenging sexist comments in conversations** - Speak up when you hear jokes, language, or attitudes that perpetuate harm\n\n- **Knowing your local resources** - Be prepared to connect survivors with appropriate support\n\n### Creating Change\n\nIn the next section, you focus on how the concepts you have encountered thus far relate to the intersection of intimate partner violence and sexual assault and how to respond and help survivors experiencing intimate partner sexual violence.\n\nAs professionals like Maria, Dr. Patel, Aisha, or James, you have opportunities every day to challenge rape culture, educate others, and support survivors. Small actions at every community level create ripple effects that can transform society."
+      }
+    ],
+    "keyTakeaways": [
+      "Rape culture describes an environment where sexual violence is normalized and excused through media and popular culture",
+      "The Rape Culture Pyramid shows how gender stereotypes at the foundation build to sexual violence at the top",
+      "All layers of the pyramid are linked—addressing the foundation is essential to eliminating violence",
+      "Harmful gender stereotypes affect individuals of all genders, not just women and girls",
+      "Prevention requires education and challenging sexist attitudes at every level",
+      "Allies can participate by talking about rape culture, challenging sexist comments, and knowing local resources"
+    ],
+    "reflectionQuestions": [
+      "What examples of rape culture have you noticed in media, advertising, or everyday conversations?",
+      "How do you think rigid gender stereotypes have affected your own life or the lives of people around you?",
+      "What is one concrete action you can take this week to challenge rape culture in your community?"
+    ],
+    "activities": [
+      {
+        "type": "knowledge-check",
+        "title": "Rape Culture Definition",
+        "placement": "end-of-lesson",
+        "prompt": "What is rape culture?",
+        "options": [
+          "A legal term for prosecuting sexual assault cases",
+          "An environment where sexual violence against women is normalized and excused in media and popular culture",
+          "A culture that only exists in certain communities",
+          "A term used only by feminists to blame men"
+        ],
+        "correctAnswer": 1,
+        "explanation": "RAPE CULTURE is an environment where sexual violence against women is NORMALIZED and EXCUSED in the media and popular culture. It is perpetuated through misogynistic language, objectification of women's bodies, and glamorization of sexual violence. Understanding rape culture helps us recognize how societal attitudes and beliefs create the foundation for violence and how challenging these attitudes is essential for prevention."
+      },
+      {
+        "type": "knowledge-check",
+        "title": "Rape Culture Pyramid",
+        "placement": "end-of-lesson",
+        "prompt": "According to the Rape Culture Pyramid, why must we address beliefs and attitudes at the foundation level?",
+        "options": [
+          "Because foundation-level behaviors are more serious than sexual violence",
+          "Because all layers are linked and build on one another, so addressing the foundation is essential to eliminating violence at the top",
+          "Because it's easier to change attitudes than behaviors",
+          "Because sexual violence only happens when foundation attitudes are present"
+        ],
+        "correctAnswer": 1,
+        "explanation": "According to the Rape Culture Pyramid, ALL LAYERS ARE LINKED AND BUILD ON ONE ANOTHER. Therefore, to eliminate violence against women at the top of the pyramid, we must START AT THE FOUNDATION and address our beliefs and attitudes that support sexual violence. Behaviors like gender stereotypes, sexist jokes, and objectification at the bottom create the foundation for more serious violence at the top. This is why challenging 'small' sexist comments matters."
+      },
+      {
+        "type": "knowledge-check",
+        "title": "Ally Actions",
+        "placement": "end-of-lesson",
+        "prompt": "Which of the following is an example of how allies can help prevent sexual violence and challenge rape culture?",
+        "options": [
+          "Ignoring sexist comments to avoid conflict",
+          "Only supporting survivors who report to police",
+          "Challenging sexist comments in conversations and talking about rape culture with others",
+          "Waiting for survivors to ask for help before offering resources"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Allies can help prevent sexual violence by CHALLENGING SEXIST COMMENTS in conversations and TALKING ABOUT RAPE CULTURE with others. This breaks the silence, normalizes important conversations, and disrupts the foundation of attitudes that support violence. Other ally actions include knowing local resources and being prepared to support survivors. Prevention requires active participation, not passive observation."
+      }
+    ],
+    "images": []
+  },
+  "metadata": {
+    "generatedAt": "2026-01-26T08:30:00.000Z",
+    "sourceChunks": ["chunk-137", "chunk-138", "chunk-139", "chunk-140", "chunk-141", "chunk-142", "chunk-143", "chunk-144"],
+    "wordCount": 891,
+    "readingLevel": "8th grade",
+    "traumaInformedApproach": true,
+    "icebergZone": "twilight",
+    "zoneDescription": "Examining the cultural currents that normalize and perpetuate violence"
+  }
+}

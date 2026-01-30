@@ -1,0 +1,94 @@
+{
+  "lessonId": "lesson-2-1",
+  "title": "What is Sexual Violence?",
+  "description": "Understanding the spectrum of consent, legal versus social definitions, and how sexual violence intersects with intimate partner violence.",
+  "moduleId": "module-2",
+  "estimatedMinutes": 10,
+  "content": {
+    "narration": "We now enter the twilight zone—where light fades and hidden truths emerge. Sexual violence in intimate relationships challenges our assumptions about consent and harm. While Hollywood depicts strangers in dark alleys, the reality is that most sexual assault is committed by someone the survivor knows. This deeper understanding transforms how we recognize and respond to intimate partner sexual violence.",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Module 2 Overview",
+        "content": "## Intimate Partner Sexual Violence\n\nWhile Hollywood often depicts sexual assault as a stranger in a ski mask who lunges out to pull a complete stranger into a dark alley, in reality, most sexual assault is committed by someone the survivor knows.\n\n**According to the National Sexual Violence Resource Center (NSVRC):**\n\n- More than half (51.1%) of female survivors of rape reported being raped by an intimate partner and 40.8% by an acquaintance\n- For male survivors, more than half (52.4%) reported being raped by an acquaintance\n- For both men and women, being assaulted by a known individual makes up more than half of the cases reported\n\n### Module Learning Objectives\n\nIn the first module, you examined intimate partner violence and the use of power and control in abusive relationships. On the outer ring of the Power and Control Wheel are physical and sexual violence. The threat of violence can be terrorizing, and the use of sexual violence can be particularly traumatizing.\n\nThe intersection between sexual violence and intimate partner violence is more common than you might think, and to understand this intersection, you must understand the basis of sexual violence.\n\n**By the end of this module you will be able to:**\n\n- Distinguish between consent, compliance, coercion, rape, and other forms of sexual assault\n- Identify ways society normalizes violence against women\n- Describe how sexual violence connects to intimate partner violence"
+      },
+      {
+        "id": "section-2",
+        "title": "The Spectrum of Consent",
+        "content": "## Understanding Consent\n\nThe spectrum of consent includes four areas: **consent, compliance, coercion**, and **rape/assault**. A large portion of understanding sexual violence is understanding consent and what lack of consent looks like.\n\n### Consent\n\n**True consent is:**\n- Freely given without pressure or coercion\n- Informed - with full awareness of what is being agreed to\n- Enthusiastic - not reluctant or hesitant\n- Ongoing - can be withdrawn at any time\n- Specific - consent to one thing doesn't mean consent to everything\n\n### Compliance\n\n**Compliance means:**\n- Going along with something without true enthusiasm\n- May involve pressure, obligation, or social expectations\n- Not the same as freely given consent\n- In healthy relationships, occasional compliance may occur, but it should not be the norm\n\n### Coercion\n\n**Coercion involves:**\n- Pressure, threats, or manipulation to obtain sexual activity\n- Creating a sense of obligation or guilt\n- Using position of power or authority\n- Threatening consequences if someone doesn't comply\n- When coercion is present, true consent cannot be given\n\n### Rape/Assault\n\n**Rape and sexual assault are:**\n- Any sexual act without consent\n- Sexual activity obtained through force or threat of force\n- Sexual contact when someone cannot consent (incapacitated, unconscious, etc.)\n- A serious crime and violation of a person's autonomy\n\n### A Note About Gender\n\nWhen reviewing the research and history of sexual violence, it is largely a story of men's violence against women. Unfortunately, that also means that most of the research that has been done does not include research about survivors who are men, transgender, or non-binary. This data will be included where possible throughout the course."
+      },
+      {
+        "id": "section-3",
+        "title": "Social vs. Legal Definitions",
+        "content": "## Understanding Different Definitions of Consent\n\nConsent may sound like a simple concept—you either have someone's consent or you don't. As the consent spectrum shows, however, consent isn't always easy to understand. Many people struggle with knowing when someone can and cannot consent.\n\n**Social Definitions:**\n\nIn a social context, consent should be enthusiastic, informed, freely given, and ongoing. If any of these elements are missing, consent is questionable or absent.\n\n**Legal Definitions:**\n\nWhile social understanding helps us recognize what consent looks like, legal definitions of consent and sexual assault don't always match the social definition. Laws also vary between states and territories, which can make it that much harder to understand.\n\n### How to Respond\n\n**For this reason, it is important to always respond to survivors of rape and sexual assault based on their social and lived experiences.**\n\nThis means that if a survivor has any of the actions defined across the consent spectrum used against them, and they consider themselves to have experienced sexual assault, then we should believe and support them.\n\nAs professionals like Dr. Patel or James, your role is not to determine legal definitions—it's to provide trauma-informed support based on the survivor's experience and needs."
+      }
+    ],
+    "keyTakeaways": [
+      "Most sexual assault is committed by someone the survivor knows, not by strangers",
+      "The spectrum of consent includes consent, compliance, coercion, and rape/assault",
+      "True consent is freely given, informed, enthusiastic, ongoing, and specific",
+      "Coercion means true consent cannot be given, even if it looks like compliance",
+      "Legal and social definitions of consent don't always align—support survivors based on their lived experience",
+      "More than half of female rape survivors were raped by an intimate partner"
+    ],
+    "reflectionQuestions": [
+      "How does understanding the spectrum of consent change your perspective on sexual violence?",
+      "What challenges might arise when legal definitions don't match survivors' lived experiences?",
+      "How can you create an environment where survivors feel safe disclosing their experiences to you?"
+    ],
+    "activities": [
+      {
+        "type": "knowledge-check",
+        "title": "Consent vs. Compliance",
+        "placement": "end-of-lesson",
+        "prompt": "What is the key difference between consent and compliance?",
+        "options": [
+          "Consent is legal while compliance is not",
+          "Consent is freely given without pressure, while compliance means going along without true enthusiasm",
+          "Compliance is always acceptable in relationships while consent is not",
+          "There is no difference between consent and compliance"
+        ],
+        "correctAnswer": 1,
+        "explanation": "CONSENT is freely given without pressure or coercion, while COMPLIANCE means going along with something without true enthusiasm and may involve pressure, obligation, or social expectations. True consent must be enthusiastic, informed, and freely given. While occasional compliance may occur in healthy relationships, in abusive relationships, compliance often results from fear or learned patterns—which means consent is not actually present."
+      },
+      {
+        "type": "knowledge-check",
+        "title": "Coercion and Consent",
+        "placement": "end-of-lesson",
+        "prompt": "According to the lesson, what happens to the possibility of consent when coercion is present?",
+        "options": [
+          "Consent is still possible if the person eventually agrees",
+          "Coercion creates delayed consent",
+          "When coercion is present, true consent cannot be given",
+          "Coercion only matters in stranger assault cases"
+        ],
+        "correctAnswer": 2,
+        "explanation": "When COERCION is present, TRUE CONSENT CANNOT BE GIVEN. Coercion involves pressure, threats, manipulation, creating obligation or guilt, or using a position of power. Even if someone eventually 'agrees' under these conditions, it is not freely given consent—it is compliance obtained through pressure or fear. This is especially important in intimate partner relationships where coercion may be subtle or part of a larger pattern of control."
+      },
+      {
+        "type": "knowledge-check",
+        "title": "Supporting Survivors",
+        "placement": "end-of-lesson",
+        "prompt": "How should professionals respond when legal definitions of sexual assault don't match a survivor's lived experience?",
+        "options": [
+          "Tell the survivor their experience doesn't count legally",
+          "Only provide support if the experience meets legal criteria",
+          "Respond to survivors based on their social and lived experiences, believing and supporting them",
+          "Encourage survivors to change their story to match legal definitions"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Professionals should RESPOND TO SURVIVORS BASED ON THEIR SOCIAL AND LIVED EXPERIENCES, believing and supporting them regardless of legal definitions. If a survivor has experienced any actions on the consent spectrum and considers themselves to have experienced sexual assault, we should believe and support them. Your role is not to determine legal definitions—it's to provide trauma-informed support based on the survivor's experience and needs."
+      }
+    ],
+    "images": []
+  },
+  "metadata": {
+    "generatedAt": "2026-01-26T08:25:00.000Z",
+    "sourceChunks": ["chunk-120", "chunk-121", "chunk-122", "chunk-123", "chunk-124", "chunk-125", "chunk-126", "chunk-127", "chunk-128", "chunk-129", "chunk-130", "chunk-131", "chunk-132", "chunk-133", "chunk-134", "chunk-135", "chunk-136"],
+    "wordCount": 1024,
+    "readingLevel": "8th grade",
+    "traumaInformedApproach": true,
+    "icebergZone": "twilight",
+    "zoneDescription": "Descending into hidden realities of sexual violence within intimate relationships"
+  }
+}

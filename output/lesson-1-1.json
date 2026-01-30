@@ -1,0 +1,94 @@
+{
+  "lessonId": "lesson-1-1",
+  "title": "Who is Affected by Intimate Partner Violence?",
+  "description": "Exploring the prevalence and universality of intimate partner violence, examining statistics and debunking common stereotypes about survivors.",
+  "moduleId": "module-1",
+  "estimatedMinutes": 8,
+  "content": {
+    "narration": "As we descend deeper into the iceberg, we encounter the surface reality—the visible patterns of who experiences intimate partner violence. What you're about to learn challenges common assumptions and reveals a universal truth: IPV crosses all boundaries. Like Maria, who might screen hundreds of individuals, you'll learn to recognize that IPV affects anyone, anywhere.",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Module 1 Overview",
+        "content": "## Recognizing Intimate Partner Violence\n\nWhether you are taking this course as part of a professional development plan or because you are seeking to be more informed about intimate partner violence, this course has been organized to help you understand the prevalence of intimate partner violence, its components, and how you can be a helpful ally to survivors.\n\nIn this first module, you explore the faces of intimate partner violence, types and categories of abuse, and the foundations of power and control on which it is based.\n\n**By the end of this module, you will be able to:**\n\n- Define intimate partner violence\n- Recognize ways a person who causes harm establishes power and control in their relationship\n- Identify different categories of relationship violence"
+      },
+      {
+        "id": "section-2",
+        "title": "The Prevalence of IPV",
+        "content": "## How Common is Intimate Partner Violence?\n\nIntimate partner violence is far more common than many people realize. Understanding the scope of this issue is essential for recognizing its impact across communities.\n\n**According to the CDC's National Intimate Partner and Sexual Violence Survey:**\n\n- About **1 in 4 women** and nearly **1 in 10 men** have experienced contact sexual violence, physical violence, and/or stalking by an intimate partner during their lifetime and reported some form of IPV-related impact\n\n- Data from U.S. crime reports suggest that **16% (about 1 in 6)** of homicide victims are killed by an intimate partner\n\n- About **11 million women** and **5 million men** who reported experiencing contact sexual violence, physical violence, or stalking by an intimate partner in their lifetime said that they **first experienced these forms of violence before the age of 18**\n\nThese statistics reveal that IPV is a widespread public health issue affecting millions of individuals. The data also shows that IPV often begins early in life, highlighting the importance of prevention and early intervention."
+      },
+      {
+        "id": "section-3",
+        "title": "Breaking Down Stereotypes",
+        "content": "## Myths About Survivors\n\nSometimes people have a very specific image in their mind of what a survivor of intimate partner violence looks like. There are harmful stereotypes that survivors are:\n\n- Poor, uneducated, and totally reliant on the person causing harm\n- Meek and don't stand up for themselves\n- Have low self-esteem\n- Disheveled, nervous, and jumpy\n- Put up with or excuse abusive behavior\n- Have traditional beliefs about gender roles\n\n**Why These Stereotypes Are Harmful:**\n\nMaking these generalizations reinforces the idea that only certain types of people are affected by intimate partner violence. It is important to emphasize, however, that **intimate partner violence occurs in every demographic regardless of age, race, gender, sexuality, and socioeconomic class**.\n\nAssuming that intimate partner violence only happens in certain communities can make it easy to overlook signs and symptoms that someone we know is experiencing abuse in their relationship.\n\n**The Reality:**\n\nIPV can happen to anyone:\n- Across all income levels\n- In all racial and ethnic communities\n- Regardless of education level\n- In all types of relationships\n- Regardless of gender identity or sexual orientation\n- In all religious and cultural backgrounds\n\nAs professionals like Dr. Patel conducting health screenings or Aisha monitoring workplace dynamics, recognizing that IPV crosses all boundaries is essential for trauma-informed practice."
+      }
+    ],
+    "keyTakeaways": [
+      "About 1 in 4 women and 1 in 10 men experience IPV-related impact during their lifetime",
+      "IPV can happen to anyone regardless of race, age, sexual orientation, religion, ability, or gender",
+      "Stereotypes about IPV survivors are harmful and can prevent us from recognizing abuse",
+      "Approximately 16% of homicide victims are killed by an intimate partner",
+      "Many people first experience IPV before age 18, highlighting the need for early intervention",
+      "Assuming IPV only affects certain demographics can cause us to overlook warning signs"
+    ],
+    "reflectionQuestions": [
+      "What stereotypes about IPV survivors did you hold before this lesson, and how might they have affected your ability to recognize abuse?",
+      "How might the prevalence statistics you learned change the way you interact with clients, patients, or colleagues?",
+      "In your professional role, what steps can you take to ensure you're not making assumptions about who experiences IPV?"
+    ],
+    "activities": [
+      {
+        "type": "knowledge-check",
+        "title": "IPV Prevalence",
+        "placement": "end-of-lesson",
+        "prompt": "According to the CDC's National Intimate Partner and Sexual Violence Survey, approximately how many women experience contact sexual violence, physical violence, and/or stalking by an intimate partner during their lifetime?",
+        "options": [
+          "About 1 in 10 women",
+          "About 1 in 4 women",
+          "About 1 in 2 women",
+          "About 1 in 20 women"
+        ],
+        "correctAnswer": 1,
+        "explanation": "About 1 in 4 women (25%) have experienced contact sexual violence, physical violence, and/or stalking by an intimate partner during their lifetime and reported some form of IPV-related impact. This statistic demonstrates how widespread intimate partner violence is in our society."
+      },
+      {
+        "type": "knowledge-check",
+        "title": "Universal Impact",
+        "placement": "end-of-lesson",
+        "prompt": "Which statement is TRUE about who can experience intimate partner violence?",
+        "options": [
+          "IPV primarily affects people from low-income communities",
+          "IPV occurs in every demographic regardless of age, race, gender, sexuality, and socioeconomic class",
+          "IPV mostly affects people with low self-esteem who don't stand up for themselves",
+          "IPV is most common among people who have traditional beliefs about gender roles"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Intimate partner violence occurs in EVERY demographic regardless of age, race, gender, sexuality, and socioeconomic class. One of the most harmful myths about IPV is that it only affects certain types of people. In reality, IPV crosses all boundaries and affects diverse communities. Recognizing this universality is essential for providing trauma-informed support."
+      },
+      {
+        "type": "knowledge-check",
+        "title": "Early Onset",
+        "placement": "end-of-lesson",
+        "prompt": "What does the data tell us about when many people first experience intimate partner violence?",
+        "options": [
+          "Most people first experience IPV in their 30s and 40s",
+          "IPV typically begins after marriage",
+          "Many people first experience IPV before the age of 18",
+          "IPV usually begins in retirement years"
+        ],
+        "correctAnswer": 2,
+        "explanation": "According to the CDC data, about 11 million women and 5 million men who reported experiencing IPV said they first experienced these forms of violence BEFORE THE AGE OF 18. This highlights the critical importance of prevention efforts, early intervention, and education for young people about healthy relationships."
+      }
+    ],
+    "images": []
+  },
+  "metadata": {
+    "generatedAt": "2026-01-26T08:00:00.000Z",
+    "sourceChunks": ["chunk-39", "chunk-40", "chunk-41", "chunk-42", "chunk-43", "chunk-44", "chunk-45", "chunk-46", "chunk-47", "chunk-48", "chunk-49", "chunk-50", "chunk-51", "chunk-52"],
+    "wordCount": 847,
+    "readingLevel": "8th grade",
+    "traumaInformedApproach": true,
+    "icebergZone": "surface",
+    "zoneDescription": "Visible patterns of IPV prevalence and the universality across all demographics"
+  }
+}

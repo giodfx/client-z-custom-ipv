@@ -1,0 +1,2535 @@
+{
+  "generatedAt": "2026-01-27T14:12:20.829Z",
+  "config": {
+    "project": "IPV",
+    "totalVideos": 13,
+    "totalScenes": 163,
+    "totalDuration": 2220,
+    "imageProvider": "qwen-2512",
+    "ttsProvider": "edge-tts",
+    "visualStyle": "artistic-watercolor"
+  },
+  "videos": [
+    {
+      "videoId": "lesson-1-1",
+      "lessonId": "lesson-1-1",
+      "title": "Who is Affected by Intimate Partner Violence?",
+      "totalDuration": 132,
+      "scenes": [
+        {
+          "id": "lesson-1-1-scene-1",
+          "sceneNumber": 1,
+          "narration": "Intimate partner violence doesn't discriminate. It affects people of all ages, races, genders, sexual orientations, socioeconomic backgrounds, and education levels. No community is immune to this widespread issue.",
+          "visualDescription": "Watercolor painting of diverse group of silhouettes in overlapping scattered arrangement suggesting community diversity. Solid teal, purple, and cream silhouettes of varied heights against soft peach and purple watercolor background. Centered composition. Inclusive, respectful mood with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "IPV Affects Everyone",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-1-1/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-1-1/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-1-scene-2",
+          "sceneNumber": 2,
+          "narration": "CDC data reveals that approximately one in four women and one in seven men experience severe intimate partner violence during their lifetimes. This represents millions of people affected every year across the United States alone.",
+          "visualDescription": "Watercolor painting of silhouette gesturing with open palm in explaining pose positioned on LEFT SIDE of frame. Teal silhouette with cream light rays flowing from palm against purple and peach watercolor background. Teaching, informing theme. RIGHT SIDE empty for text overlay. Painterly style with soft edges. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Statistics Tell the Story",
+          "bullets": [
+            "1 in 4 women experience severe IPV",
+            "1 in 7 men experience severe IPV",
+            "Affects millions annually"
+          ],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-1/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-1-1/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-1-scene-3",
+          "sceneNumber": 3,
+          "narration": "IPV affects people throughout their lifespan. Young adults in dating relationships, middle-aged couples, and older adults all experience intimate partner violence. Age provides no protection from abuse.",
+          "visualDescription": "Watercolor painting of three silhouettes of different heights in semi-circle formation looking toward horizon, positioned on RIGHT SIDE of frame. Teal and purple silhouettes against cream and peach watercolor background suggesting generational diversity. LEFT SIDE empty for text overlay. Respectful, inclusive mood. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "All Age Groups",
+          "bullets": [],
+          "duration": 11,
+          "imageUrl": "../images/videos/lesson-1-1/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-1-1/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-1-scene-4",
+          "sceneNumber": 4,
+          "narration": "IPV occurs in every racial and ethnic community. While cultural contexts and specific barriers may vary, the fundamental dynamics of power and control remain consistent. Research shows similar prevalence rates across racial groups when accounting for socioeconomic factors.",
+          "visualDescription": "Watercolor illustration of flowing ribbons interweaving in harmonious pattern. Soft teal, purple, cream, and peach ribbons blending together against watercolor background. Centered composition. Symbolic representation of diverse communities interconnected. Painterly style with organic flowing edges. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Every Racial and Ethnic Group",
+          "bullets": [
+            "Occurs across all racial backgrounds",
+            "Cultural contexts vary",
+            "Barriers may differ by community"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-1-1/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-1-1/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-1-scene-5",
+          "sceneNumber": 5,
+          "narration": "While women are most commonly affected by severe IPV, men also experience intimate partner violence. LGBTQ plus individuals face unique challenges including threats of outing, limited access to gender-specific resources, and additional barriers to reporting and help-seeking.",
+          "visualDescription": "Watercolor painting of two silhouettes walking together in same direction side by side positioned on LEFT SIDE of frame. Solid teal silhouettes moving toward cream light with purple and peach atmospheric watercolor background. Partnership, solidarity theme. RIGHT SIDE empty for text overlay. No facial features or details. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "All Gender Identities",
+          "bullets": [
+            "Women most commonly affected",
+            "Men also experience IPV",
+            "LGBTQ+ individuals face unique challenges"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-1-1/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-1-1/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-1-scene-6",
+          "sceneNumber": 6,
+          "narration": "A critical myth to dispel: IPV happens at every income level. While economic stress can be a risk factor, abuse occurs in wealthy households just as it does in lower-income families. Financial resources can actually make some forms of abuse easier to hide.",
+          "visualDescription": "Watercolor painting of silhouette in profile with hand touching abstract symbol positioned on RIGHT SIDE of frame. Teal silhouette reaching toward cream glowing circular symbol against purple and peach watercolor background. Contemplation, understanding theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Socioeconomic Status",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-1/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-1-1/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-1-scene-7",
+          "sceneNumber": 7,
+          "narration": "Understanding that IPV affects all demographics helps us recognize it in unexpected places. It prevents us from making assumptions based on someone's appearance, profession, or background. Everyone deserves to be screened and supported.",
+          "visualDescription": "Watercolor painting of cascade of light falling like waterfall into gathering pool below. Cream and peach light cascading down through teal and purple atmospheric watercolor. Centered composition. Symbolic representation of universal impact and understanding flowing to all. Painterly style with visible brushstrokes. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Why Understanding Demographics Matters",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-1-1/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-1-1/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-1-scene-8",
+          "sceneNumber": 8,
+          "narration": "Certain populations face additional vulnerabilities. Immigrants may fear deportation or face language barriers. People with disabilities may depend on abusive partners for care. Pregnant individuals face higher risks. Rural isolation creates unique challenges for accessing help.",
+          "visualDescription": "Watercolor painting of protective shelter shape formed by abstract hands with light glowing inside positioned on LEFT SIDE of frame. Teal hands forming protective arch over cream light with purple and peach watercolor background. Care, protection theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Special Populations",
+          "bullets": [
+            "Immigrants facing language barriers",
+            "People with disabilities",
+            "Pregnant and postpartum individuals",
+            "Those in rural or isolated areas"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-1-1/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-1-1/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-1-scene-9",
+          "sceneNumber": 9,
+          "narration": "People hold multiple identities that intersect and create unique experiences. A Black lesbian woman faces different barriers than a white heterosexual woman. An immigrant man with disabilities has distinct vulnerabilities. Effective response means understanding these intersecting identities.",
+          "visualDescription": "Watercolor illustration of interlocking puzzle pieces in teal, purple, cream, and peach fitting together harmoniously positioned on RIGHT SIDE of frame. Soft watercolor edges blending pieces together against atmospheric background. Symbolic representation of intersectionality. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Intersectionality Matters",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-1/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-1-1/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-1-scene-10",
+          "sceneNumber": 10,
+          "narration": "The key takeaway: intimate partner violence can affect anyone you encounter in your professional role. Stay alert to the signs. Never assume someone is too wealthy, educated, or successful to be experiencing abuse. Your awareness can save lives.",
+          "visualDescription": "Watercolor painting of silhouettes gathered in radial formation around central light source with all figures connected by light rays. Teal and purple silhouettes with cream light radiating from center against peach watercolor background. Centered composition. Universal support, connection theme with painterly textures and visible brushstrokes. No facial features. No text or letters visible.",
+          "templateName": "final",
+          "heading": "Everyone Deserves Support",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-1/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-1-1/scene-10.mp3",
+          "templateHTML": null
+        }
+      ]
+    },
+    {
+      "videoId": "lesson-1-2",
+      "lessonId": "lesson-1-2",
+      "title": "Types of Abuse",
+      "totalDuration": 174,
+      "scenes": [
+        {
+          "id": "lesson-1-2-scene-1",
+          "sceneNumber": 1,
+          "narration": "Intimate partner violence takes many forms beyond physical violence. Understanding the full spectrum of abuse helps you recognize patterns that might otherwise go unnoticed. Let's explore five major categories.",
+          "visualDescription": "Watercolor painting of sprouting plants with five stems reaching upward toward light. Teal and purple stems growing from cream base with peach light above against soft watercolor background. Centered composition. Growth of understanding theme with painterly textures and visible brushstrokes. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "Understanding Abuse Types",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-1-2/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-2-scene-2",
+          "sceneNumber": 2,
+          "narration": "Physical abuse includes hitting, punching, kicking, and choking. It can involve weapons or physical restraint. Some abusers prevent sleep or withhold medical care. Physical abuse often escalates over time and poses life-threatening danger.",
+          "visualDescription": "Watercolor painting of single silhouette in sitting meditation pose with hands resting calmly positioned on LEFT SIDE of frame. Teal silhouette surrounded by protective cream light against purple and peach watercolor background. Peaceful, recovery theme. RIGHT SIDE empty for text overlay. Painterly style with soft edges. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Physical Abuse",
+          "bullets": [
+            "Hitting, punching, kicking, choking",
+            "Use of weapons or restraint",
+            "Preventing sleep or medical care"
+          ],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-2/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-2-scene-3",
+          "sceneNumber": 3,
+          "narration": "Emotional abuse can be devastating. It includes constant criticism, insults, and humiliation designed to destroy self-esteem. Abusers use threats and intimidation. Gaslighting makes victims question their own perceptions and sanity. This form leaves no visible scars but profound psychological damage.",
+          "visualDescription": "Watercolor painting of silhouette standing at window opening looking toward cream and peach light positioned on RIGHT SIDE of frame. Teal silhouette framed by purple architectural elements with light streaming in. Hope, perspective theme. LEFT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Emotional and Psychological Abuse",
+          "bullets": [
+            "Insults, humiliation, constant criticism",
+            "Threats and intimidation tactics",
+            "Gaslighting and reality manipulation"
+          ],
+          "duration": 17,
+          "imageUrl": "../images/videos/lesson-1-2/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-2-scene-4",
+          "sceneNumber": 4,
+          "narration": "Isolation is a powerful abuse tactic. Abusers systematically cut victims off from family, friends, and support systems. They may monitor phone calls, control transportation, or create conflict with loved ones. Isolation makes victims dependent and removes witnesses to abuse.",
+          "visualDescription": "Watercolor illustration of single glowing orb of cream light surrounded by breaking purple chains with teal light rays emerging outward. Symbolic representation of isolation being broken. Peach and purple watercolor background. Centered composition. Freedom, liberation theme. Painterly style with visible brushstrokes. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Isolation as Control",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-2/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-2-scene-5",
+          "sceneNumber": 5,
+          "narration": "Economic abuse creates financial dependence. Abusers control all money, prevent employment, and sabotage careers or education. They may destroy credit, create debt in the victim's name, or withhold basic necessities. This makes leaving financially impossible for many survivors.",
+          "visualDescription": "Watercolor painting of two silhouettes with one helping lift the other upward positioned on LEFT SIDE of frame. Teal silhouettes with cream light flowing between them showing support against purple and peach watercolor background. Assistance, empowerment theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Economic Abuse",
+          "bullets": [
+            "Controlling all finances and income",
+            "Preventing employment or education",
+            "Destroying credit and creating debt"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-1-2/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-2-scene-6",
+          "sceneNumber": 6,
+          "narration": "Sexual violence within intimate relationships is common but often unrecognized. It includes any unwanted sexual contact, coercion, or assault. Marriage or relationship status does not imply consent. We'll explore this topic in depth in Module Two.",
+          "visualDescription": "Watercolor painting of single silhouette with thoughtful hand near chin in contemplative pose positioned on RIGHT SIDE of frame. Teal silhouette surrounded by soft purple and cream watercolor washes. Serious, respectful mood. LEFT SIDE empty for text overlay. Painterly style. No facial features or details. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Sexual Abuse and Coercion",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-1-2/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-2-scene-7",
+          "sceneNumber": 7,
+          "narration": "Technology has created new avenues for abuse. Abusers use GPS to track locations, monitor all online activity and communications, and install spyware. They may impersonate victims online or use technology to harass and intimidate. Digital abuse is increasingly common.",
+          "visualDescription": "Watercolor painting of silhouette with arm pointing toward horizon in decisive gesture positioned on LEFT SIDE of frame. Teal silhouette with cream light emanating from pointing hand toward peach horizon against purple watercolor background. Direction, awareness theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Technological Abuse",
+          "bullets": [
+            "GPS tracking and surveillance",
+            "Monitoring social media and communications",
+            "Using technology to harass or intimidate"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-1-2/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-2-scene-8",
+          "sceneNumber": 8,
+          "narration": "Here's what's critical to understand: these forms of abuse rarely exist in isolation. Physical abuse almost always occurs alongside emotional abuse. Economic control combines with isolation. Recognizing one form should prompt you to look for others.",
+          "visualDescription": "Watercolor illustration of tree branches spreading outward with interconnected teal and purple branches against cream sky. Peach and purple atmospheric watercolor at base. Centered composition. Symbolic representation of interconnected abuse patterns. Painterly style with organic edges. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Abuse Rarely Exists Alone",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-1-2/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-2-scene-9",
+          "sceneNumber": 9,
+          "narration": "What distinguishes intimate partner violence from relationship conflicts is the pattern. IPV isn't about isolated incidents or mutual arguments. It's a systematic pattern of behaviors designed to maintain power and control over a partner. The pattern continues and often escalates.",
+          "visualDescription": "Watercolor painting of winding path through calm meadow with wildflowers positioned on RIGHT SIDE of frame. Teal path with purple and peach wildflowers against cream and soft watercolor background. Journey, progression theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "The Pattern of Control",
+          "bullets": [
+            "Not isolated incidents",
+            "Systematic pattern over time",
+            "Designed to maintain power"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-1-2/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-2-scene-10",
+          "sceneNumber": 10,
+          "narration": "Not all abuse is obvious. You may notice someone who seems anxious about their partner's reaction, makes excuses for injuries, or has lost contact with friends and family. These subtle signs deserve attention and appropriate follow-up.",
+          "visualDescription": "Watercolor painting of silhouette in profile walking forward with determined posture positioned on LEFT SIDE of frame. Teal silhouette moving toward cream light with purple and peach atmospheric watercolor background. Determination, recognition theme. RIGHT SIDE empty for text overlay. No facial features or clothing details. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Recognizing Subtle Signs",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-1-2/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-10.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-2-scene-11",
+          "sceneNumber": 11,
+          "narration": "All forms of abuse cause serious harm. Physical abuse creates injuries and chronic health problems. Emotional abuse causes psychological trauma, PTSD, depression, and anxiety. Economic abuse traps victims. Sexual violence creates profound trauma. The cumulative impact can be devastating.",
+          "visualDescription": "Watercolor painting of two silhouettes back to back supporting each other positioned on RIGHT SIDE of frame. Solid teal and purple silhouettes leaning together for mutual support against cream and peach watercolor background. Solidarity, recovery theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Impact Across All Forms",
+          "bullets": [
+            "Physical health consequences",
+            "Psychological trauma and PTSD",
+            "Damaged self-esteem and identity",
+            "Fear and hypervigilance"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-1-2/scene-11.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-11.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-2-scene-12",
+          "sceneNumber": 12,
+          "narration": "As a professional, you're positioned to recognize these different forms of abuse. Someone experiencing economic control might not identify it as abuse. Your knowledge helps you ask the right questions and connect people to appropriate resources.",
+          "visualDescription": "Watercolor illustration of lighthouse beam cutting through soft mist with teal tower and cream light rays spreading across purple and peach watercolor background. Centered composition. Symbolic representation of guidance and recognition. Painterly style with visible brushstrokes. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Your Role in Recognition",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-1-2/scene-12.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-12.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-2-scene-13",
+          "sceneNumber": 13,
+          "narration": "Understanding these five types of abuse physical, emotional, economic, sexual, and technological equips you to recognize intimate partner violence in its many forms. This knowledge is your foundation for effective response.",
+          "visualDescription": "Watercolor painting of multiple silhouettes standing together in ascending pyramid formation with cream light glowing at apex. Teal and purple silhouettes of varied heights supporting each other. Centered composition. Empowerment, collective strength theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "final",
+          "heading": "Knowledge Empowers Action",
+          "bullets": [],
+          "duration": 12,
+          "imageUrl": "../images/videos/lesson-1-2/scene-13.png",
+          "audioUrl": "../audio/videos/lesson-1-2/scene-13.mp3",
+          "templateHTML": null
+        }
+      ]
+    },
+    {
+      "videoId": "lesson-1-3",
+      "lessonId": "lesson-1-3",
+      "title": "Power and Control Wheel",
+      "totalDuration": 180,
+      "scenes": [
+        {
+          "id": "lesson-1-3-scene-1",
+          "sceneNumber": 1,
+          "narration": "The Duluth Model's Power and Control Wheel is one of the most important tools for understanding intimate partner violence. This framework reveals how abusers systematically use multiple tactics to dominate their partners.",
+          "visualDescription": "Watercolor painting of protective circular wheel pattern with eight segments radiating from center. Teal and purple segments arranged around cream central hub against peach watercolor background. Centered composition. Framework, structure theme with painterly textures and visible brushstrokes. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "The Power and Control Wheel",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-3/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-2",
+          "sceneNumber": 2,
+          "narration": "Intimidation creates an atmosphere of fear. Abusers use looks, actions, and gestures to frighten their partners. They may destroy property, harm beloved pets, or display weapons. The message is clear: obey or face consequences.",
+          "visualDescription": "Watercolor painting of single silhouette with arms outstretched wide in embracing gesture positioned on LEFT SIDE of frame. Teal silhouette with cream light rays extending outward against purple and peach watercolor background. Openness, explanation theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Using Intimidation",
+          "bullets": [
+            "Looks, actions, gestures to create fear",
+            "Destroying property or harming pets",
+            "Displaying weapons to threaten"
+          ],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-3/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-3",
+          "sceneNumber": 3,
+          "narration": "Emotional abuse systematically destroys self-worth. Constant put-downs, name-calling, and humiliation erode confidence. Abusers make partners feel crazy through gaslighting and mind games. Over time, victims internalize these messages and doubt their own perceptions.",
+          "visualDescription": "Watercolor painting of calm lake with reflections and ripples emanating from center positioned on RIGHT SIDE of frame. Teal and purple water with cream light reflecting across surface against peach sky. Impact, consequence theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Emotional Abuse Tactics",
+          "bullets": [
+            "Put-downs and name-calling",
+            "Making partner feel crazy",
+            "Humiliation and mind games"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-1-3/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-4",
+          "sceneNumber": 4,
+          "narration": "Isolation cuts victims off from everyone who might help. Abusers control what partners do, see, read, and who they talk to. They may monitor all communications, limit transportation, or create conflicts with family and friends. Isolation makes victims dependent and removes witnesses.",
+          "visualDescription": "Watercolor illustration of bridge spanning across space connecting two shores with teal structure over purple water and cream light at connection point. Peach sky above. Centered composition. Symbolic representation of reconnection after isolation. Painterly style with organic edges. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Using Isolation",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-3/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-5",
+          "sceneNumber": 5,
+          "narration": "Abusers minimize their actions, deny abuse occurred, or shift blame to victims. They'll say it wasn't that bad, claim the victim is too sensitive, or insist the victim provoked them. This tactic makes victims doubt their experiences and feel responsible for abuse.",
+          "visualDescription": "Watercolor painting of two silhouettes in mirror gesture pose facing each other positioned on LEFT SIDE of frame. Teal silhouettes with matching poses and cream light between them against purple and peach watercolor background. Balance, reality theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Minimizing, Denying, Blaming",
+          "bullets": [
+            "Making light of abuse or denying it",
+            "Shifting responsibility to victim",
+            "Saying victim caused the abuse"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-1-3/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-6",
+          "sceneNumber": 6,
+          "narration": "When children are present, abusers weaponize them. They make partners feel guilty about the children, use visitation to harass, threaten to take children away, or manipulate children to relay messages. Children become tools for control and emotional leverage.",
+          "visualDescription": "Watercolor painting of silhouettes gathered around central light with protective circle formation positioned on RIGHT SIDE of frame. Teal and purple silhouettes with cream light glowing protectively in center against soft peach watercolor background. Protection, care theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Using Children",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-1-3/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-7",
+          "sceneNumber": 7,
+          "narration": "Some abusers use traditional gender roles to justify control. They treat partners like servants, make all decisions, act as master of the house, and enforce rigid gender expectations. This tactic weaponizes cultural or religious beliefs to maintain dominance.",
+          "visualDescription": "Watercolor painting of single silhouette sitting in calm contemplative pose with hands resting positioned on LEFT SIDE of frame. Teal silhouette surrounded by protective cream light against purple and peach watercolor background. Reflection, healing theme. RIGHT SIDE empty for text overlay. No facial features or clothing details. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Using Male Privilege",
+          "bullets": [
+            "Treating partner like a servant",
+            "Making all major decisions alone",
+            "Acting like master of the household",
+            "Defining rigid gender roles"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-1-3/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-8",
+          "sceneNumber": 8,
+          "narration": "Economic abuse creates complete financial dependence. Abusers prevent partners from working or getting education, control all money, don't allow access to family income, and may force victims to ask for money for basic needs. Financial control traps victims in relationships.",
+          "visualDescription": "Watercolor illustration of ascending steps or platforms leading upward with teal and purple steps toward cream light above. Peach watercolor background. Centered composition. Symbolic representation of financial independence and freedom. Painterly style with visible brushstrokes. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Economic Abuse",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-1-3/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-9",
+          "sceneNumber": 9,
+          "narration": "Coercion and threats maintain control through fear. Abusers threaten to harm the victim, themselves, or loved ones. They threaten suicide, deportation, or reporting to child services. Some force partners to participate in illegal activities to create leverage. Threats keep victims compliant.",
+          "visualDescription": "Watercolor painting of silhouette with one hand extended in stop gesture positioned on RIGHT SIDE of frame. Teal silhouette with firm posture and cream light radiating from palm against purple and peach watercolor background. Boundary, protection theme. LEFT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Using Coercion and Threats",
+          "bullets": [
+            "Threats to harm self or others",
+            "Threats to leave or commit suicide",
+            "Threats to report to authorities",
+            "Forcing illegal activities"
+          ],
+          "duration": 17,
+          "imageUrl": "../images/videos/lesson-1-3/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-10",
+          "sceneNumber": 10,
+          "narration": "At the wheel's center: physical and sexual violence. While not all abusive relationships involve physical violence, when present it's typically surrounded by these other control tactics. The wheel shows how multiple tactics work together to trap victims.",
+          "visualDescription": "Watercolor painting of beach shoreline with gentle waves on cream sand. Teal and purple water meeting peach shore with soft watercolor sky. Centered composition. Peace, transition theme representing movement away from violence. Painterly style with soft edges. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Physical and Sexual Violence",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-1-3/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-10.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-11",
+          "sceneNumber": 11,
+          "narration": "The Equality Wheel presents a healthy contrast. In equal relationships, partners practice non-threatening behavior, mutual respect, trust, and honesty. They share responsibility, support each other's goals, negotiate fairly, and function as economic partners. This is the alternative to control.",
+          "visualDescription": "Watercolor painting of two silhouettes in supportive teaching pose with one gesturing, one listening positioned on LEFT SIDE of frame. Teal silhouettes with cream light flowing between them showing knowledge sharing against purple and peach watercolor background. Partnership, equality theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "The Equality Wheel",
+          "bullets": [
+            "Non-threatening behavior",
+            "Respect and trust",
+            "Shared responsibility",
+            "Economic partnership"
+          ],
+          "duration": 17,
+          "imageUrl": "../images/videos/lesson-1-3/scene-11.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-11.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-12",
+          "sceneNumber": 12,
+          "narration": "The Power and Control Wheel helps you see the full pattern. One tactic alone might be explained away. Multiple tactics used systematically reveal intimate partner violence. When you identify one spoke of the wheel, look for others. They're almost always present.",
+          "visualDescription": "Watercolor painting of constellation pattern with connected teal and purple stars linked by cream light rays against peach and purple watercolor background positioned on RIGHT SIDE of frame. Pattern recognition theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Recognizing the Pattern",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-3/scene-12.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-12.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-13",
+          "sceneNumber": 13,
+          "narration": "This framework matters because it names the tactics abusers use. It validates survivors' experiences. It helps professionals identify patterns we might otherwise miss. And it clarifies that abuse is about power and control, not anger management or relationship problems.",
+          "visualDescription": "Watercolor illustration of open book with cream light emerging and spreading outward in teal and purple rays. Soft watercolor background in peach tones. Centered composition. Symbolic representation of knowledge illuminating understanding. Painterly style with visible brushstrokes. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Why This Framework Matters",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-3/scene-13.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-13.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-3-scene-14",
+          "sceneNumber": 14,
+          "narration": "The Power and Control Wheel is now part of your professional toolkit. Use it to analyze relationships, recognize abuse patterns, and explain dynamics to colleagues. This evidence-based framework has helped millions understand what intimate partner violence really looks like.",
+          "visualDescription": "Watercolor painting of silhouettes in semi-circle formation all looking toward shared horizon with cream and peach light ahead. Teal and purple silhouettes standing together. Centered composition. Collective understanding, forward movement theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "final",
+          "heading": "A Tool for Understanding",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-3/scene-14.png",
+          "audioUrl": "../audio/videos/lesson-1-3/scene-14.mp3",
+          "templateHTML": null
+        }
+      ]
+    },
+    {
+      "videoId": "lesson-1-4",
+      "lessonId": "lesson-1-4",
+      "title": "Categorizing Intimate Partner Violence",
+      "totalDuration": 156,
+      "scenes": [
+        {
+          "id": "lesson-1-4-scene-1",
+          "sceneNumber": 1,
+          "narration": "Not all intimate partner violence follows the same pattern. Understanding different types of IPV helps predict risk, tailor interventions, and provide appropriate support. Let's explore key categorization frameworks.",
+          "visualDescription": "Watercolor painting of branching pathways diverging from single origin point. Teal and purple paths flowing outward against cream base with peach watercolor background. Centered composition. Diversity of patterns theme with painterly textures and visible brushstrokes. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "Different Patterns of IPV",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-1-4/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-1-4/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-4-scene-2",
+          "sceneNumber": 2,
+          "narration": "Researcher Michael Johnson identified distinct types of intimate partner violence. Situational couple violence involves conflicts that escalate. Intimate terrorism is systematic coercive control. Violent resistance occurs when victims fight back. Separation-instigated violence emerges during breakups.",
+          "visualDescription": "Watercolor painting of silhouette in teaching gesture with one arm extended positioned on LEFT SIDE of frame. Teal silhouette with cream light emanating from open palm against purple and peach watercolor background. Education, framework theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Johnson's Typology",
+          "bullets": [
+            "Situational couple violence",
+            "Intimate terrorism (coercive control)",
+            "Violent resistance",
+            "Separation-instigated violence"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-1-4/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-1-4/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-4-scene-3",
+          "sceneNumber": 3,
+          "narration": "Situational couple violence emerges from specific conflicts rather than control patterns. Both partners may be violent. It typically involves fewer severe tactics and doesn't escalate as predictably. However, it still causes harm and isn't acceptable behavior.",
+          "visualDescription": "Watercolor painting of two silhouettes in animated conversation pose positioned on RIGHT SIDE of frame. Teal and purple silhouettes with dynamic gestures and cream light between them against peach watercolor background. Conflict, tension theme. LEFT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Situational Couple Violence",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-4/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-1-4/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-4-scene-4",
+          "sceneNumber": 4,
+          "narration": "Intimate terrorism is what we typically mean when discussing serious IPV. It involves the systematic pattern of coercive control we explored in the Power and Control Wheel. One partner uses multiple tactics to dominate. This type is most dangerous and escalates over time.",
+          "visualDescription": "Watercolor illustration of heavy storm clouds with teal and purple masses parting to reveal cream light breaking through. Peach atmospheric glow at horizon. Centered composition. Symbolic representation of controlling atmosphere being challenged. Painterly style with dramatic edges. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Intimate Terrorism",
+          "bullets": [
+            "Pattern of coercive control",
+            "Multiple Power & Control tactics",
+            "Systematic and ongoing",
+            "Severe and escalating"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-1-4/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-1-4/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-4-scene-5",
+          "sceneNumber": 5,
+          "narration": "Coercive control is the defining feature of intimate terrorism. It's a pattern of microregulation that dominates daily life. Victims must constantly monitor their behavior to avoid punishment. This psychological captivity characterizes the most dangerous relationships.",
+          "visualDescription": "Watercolor painting of single silhouette in confined space with arms reaching upward toward opening with cream light positioned on LEFT SIDE of frame. Teal silhouette surrounded by purple boundaries with peach light above. Constraint, limitation theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Coercive Control",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-4/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-1-4/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-4-scene-6",
+          "sceneNumber": 6,
+          "narration": "Many abusive relationships follow a predictable cycle. Tension builds gradually. An acute violent incident occurs. The abuser apologizes profusely during reconciliation. A calm period follows before tension rebuilds. Understanding this cycle helps predict and prevent escalation.",
+          "visualDescription": "Watercolor painting of circular wave pattern with teal and purple waves flowing in cycle around cream center. Peach watercolor background. Centered composition. Symbolic representation of cyclical pattern. Painterly style with flowing brushstrokes. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "The Escalation Pattern",
+          "bullets": [
+            "Tension building phase",
+            "Acute incident",
+            "Reconciliation (honeymoon)",
+            "Calm period, then cycle repeats"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-1-4/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-1-4/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-4-scene-7",
+          "sceneNumber": 7,
+          "narration": "Violence escalates for several reasons. Abusers learn violence works to maintain control. Victims develop coping strategies requiring increased force to overcome. External stressors like job loss or pregnancy increase risk. Previous tactics lose effectiveness over time.",
+          "visualDescription": "Watercolor painting of ascending mountain silhouette with teal peaks rising against cream and peach sky positioned on RIGHT SIDE of frame. Purple atmospheric base with increasing height. Growth, escalation theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Why Escalation Happens",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-4/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-1-4/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-4-scene-8",
+          "sceneNumber": 8,
+          "narration": "Certain factors predict life-threatening violence. Previous escalation is the strongest predictor. Threats to kill, especially with weapons access, signal extreme danger. Strangulation dramatically increases homicide risk. Stalking, obsessive behavior, and forced sex are also critical red flags.",
+          "visualDescription": "Watercolor painting of alert lighthouse with teal structure and bright cream beacon cutting through purple mist positioned on LEFT SIDE of frame. Peach atmospheric glow in background. Warning, awareness theme. RIGHT SIDE empty for text overlay. Painterly style with dramatic lighting. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Risk Factors for Severe Violence",
+          "bullets": [
+            "History of violence escalation",
+            "Threats to kill or use weapons",
+            "Strangulation or choking",
+            "Stalking behavior",
+            "Forced sex"
+          ],
+          "duration": 17,
+          "imageUrl": "../images/videos/lesson-1-4/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-1-4/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-4-scene-9",
+          "sceneNumber": 9,
+          "narration": "The most dangerous time for IPV victims is when they leave or attempt to leave. Abusers face loss of control, triggering extreme violence. Homicide risk peaks in the first few months after separation. This is why safety planning for departure is critical.",
+          "visualDescription": "Watercolor painting of silhouette standing at crossroads with two paths diverging positioned on RIGHT SIDE of frame. Teal silhouette at intersection with cream light illuminating both paths against purple and peach watercolor background. Decision, danger theme. LEFT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Separation as High-Risk Period",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-4/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-1-4/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-4-scene-10",
+          "sceneNumber": 10,
+          "narration": "Understanding these categories informs our response. Situational violence may respond to couples counseling, but intimate terrorism requires victim safety prioritization and specialized intervention. Risk assessment guides the urgency and type of resources provided.",
+          "visualDescription": "Watercolor illustration of compass with teal and purple directional points around cream central star. Peach watercolor background with soft atmospheric quality. Centered composition. Symbolic representation of guided direction and appropriate response. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Why Categorization Matters",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-4/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-1-4/scene-10.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-4-scene-11",
+          "sceneNumber": 11,
+          "narration": "These frameworks equip you to recognize not just that abuse is occurring, but what type and level of danger exists. This knowledge helps you match the right intervention to the situation and potentially save lives through appropriate escalation of response.",
+          "visualDescription": "Watercolor painting of multiple silhouettes in protective circle formation around central glowing light. Teal and purple silhouettes standing together with cream light radiating from center. Centered composition. Collective protection, informed action theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "final",
+          "heading": "Informed Recognition",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-4/scene-11.png",
+          "audioUrl": "../audio/videos/lesson-1-4/scene-11.mp3",
+          "templateHTML": null
+        }
+      ]
+    },
+    {
+      "videoId": "lesson-1-5",
+      "lessonId": "lesson-1-5",
+      "title": "Case Analysis: Lois and James Sumpter",
+      "totalDuration": 180,
+      "scenes": [
+        {
+          "id": "lesson-1-5-scene-1",
+          "sceneNumber": 1,
+          "narration": "Let's apply what we've learned to a realistic case scenario. This story is composite, drawn from real patterns. As we explore Lois and James Sumpter's relationship, identify the Power and Control tactics you recognize.",
+          "visualDescription": "Watercolor painting of open doorway revealing scene beyond with teal frame and cream light streaming through opening. Purple and peach atmospheric watercolor around entrance. Centered composition. Gateway to understanding theme with painterly textures and visible brushstrokes. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "Case Study: The Sumpters",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-5/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-5-scene-2",
+          "sceneNumber": 2,
+          "narration": "Lois is thirty-five, an office manager at a medical practice. She's been married to James for eight years. They have two children, ages six and four. From the outside, they appear to be a typical middle-class family.",
+          "visualDescription": "Watercolor painting of single silhouette in professional standing pose with briefcase positioned on LEFT SIDE of frame. Teal silhouette against cream and purple watercolor background suggesting workplace setting. Professional, composed mood. RIGHT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Meeting Lois",
+          "bullets": [
+            "35 years old, office manager",
+            "Married to James for 8 years",
+            "Two children, ages 6 and 4"
+          ],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-5/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-5-scene-3",
+          "sceneNumber": 3,
+          "narration": "Lois met James at a friend's party. He was charming, attentive, and made her feel special. He called constantly and wanted to spend all his time with her. At first, she felt flattered by his intense interest and devotion.",
+          "visualDescription": "Watercolor painting of two silhouettes in greeting gesture with hands extending toward each other positioned on RIGHT SIDE of frame. Teal and purple silhouettes with cream light between connecting hands against peach watercolor background. Initial connection theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "The Beginning",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-1-5/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-5-scene-4",
+          "sceneNumber": 4,
+          "narration": "Gradually, James began criticizing Lois's friends and family. He insisted she check in constantly about her whereabouts. He became intensely jealous when she spent time with anyone else. Slowly, Lois lost contact with her support system.",
+          "visualDescription": "Watercolor illustration of single orb of cream light surrounded by closing teal and purple walls or barriers. Peach atmospheric glow dimming around confined space. Centered composition. Symbolic representation of gradual isolation. Painterly style with closing edges. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Isolation Begins",
+          "bullets": [
+            "Criticized Lois's friends and family",
+            "Insisted on knowing her whereabouts",
+            "Became jealous of time with others"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-1-5/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-5-scene-5",
+          "sceneNumber": 5,
+          "narration": "After marriage, James insisted Lois quit her job to stay home with the baby. He controlled all finances, gave her an allowance for groceries, and required receipts for every purchase. Lois had no access to bank accounts or credit cards.",
+          "visualDescription": "Watercolor painting of locked treasure chest with teal and purple decorative elements and cream keyhole positioned on LEFT SIDE of frame. Peach watercolor background. Restriction, control theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Financial Control",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-5/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-5-scene-6",
+          "sceneNumber": 6,
+          "narration": "James called Lois stupid and worthless. He criticized every aspect of her parenting. He told her repeatedly that she couldn't survive without him, that no one else would want her. Lois began to believe these messages.",
+          "visualDescription": "Watercolor painting of wilting flower with drooping teal petals and purple stem against cream and peach watercolor background positioned on RIGHT SIDE of frame. Symbolic representation of damaged self-esteem. LEFT SIDE empty for text overlay. Painterly style with soft edges. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Emotional Abuse Escalates",
+          "bullets": [
+            "Called her stupid and worthless",
+            "Criticized her parenting constantly",
+            "Made her feel she couldn't survive alone"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-1-5/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-5-scene-7",
+          "sceneNumber": 7,
+          "narration": "James used the children to maintain control. He told Lois she was a terrible mother. He threatened to take the children if she ever left. He made the children relay messages and report on what Lois did during the day.",
+          "visualDescription": "Watercolor painting of protective shelter formed by gentle teal arch with small purple silhouettes sheltered beneath and cream light glowing inside positioned on LEFT SIDE of frame. Peach watercolor background. Vulnerability, protection needed theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Using Children as Control",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-1-5/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-5-scene-8",
+          "sceneNumber": 8,
+          "narration": "The first time James pushed Lois, she was shocked. He apologized profusely, brought flowers, and promised it would never happen again. He blamed stress at work. Lois wanted to believe him and accepted his explanation.",
+          "visualDescription": "Watercolor illustration of breaking wave or barrier with teal and purple water disrupting against cream light with peach sky above. Centered composition. Symbolic representation of boundary crossed, violence beginning. Painterly style with dynamic edges. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "The First Physical Incident",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-5/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-5-scene-9",
+          "sceneNumber": 9,
+          "narration": "The pattern became predictable. Tension would build as James became increasingly critical and controlling. An explosive incident would occur. James would apologize and promise change. After a calm period, the cycle would begin again. Each time, the violence escalated.",
+          "visualDescription": "Watercolor painting of spiral pattern with teal and purple elements circling downward toward center with cream light attempting to break through. Peach atmospheric background. Centered composition. Cyclical pattern, entrapment theme. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "The Pattern Continues",
+          "bullets": [
+            "Tension builds over days or weeks",
+            "Explosive incident occurs",
+            "Apologies and promises follow",
+            "Calm period, then cycle repeats"
+          ],
+          "duration": 17,
+          "imageUrl": "../images/videos/lesson-1-5/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-5-scene-10",
+          "sceneNumber": 10,
+          "narration": "Why did Lois stay? She had no money, no job, no car, and no support system. James had convinced her she was worthless. She feared losing her children. She hoped he would change. Most importantly, leaving is the most dangerous time.",
+          "visualDescription": "Watercolor painting of silhouette at intersection of multiple paths, hesitating with contemplative posture positioned on RIGHT SIDE of frame. Teal silhouette surrounded by purple pathways and cream light on distant horizons. Difficult choice, barriers theme. LEFT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Why Lois Stayed",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-1-5/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-10.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-5-scene-11",
+          "sceneNumber": 11,
+          "narration": "Let's identify the Power and Control Wheel tactics present in this case. James used isolation, economic abuse, emotional abuse, children as leverage, and physical violence. Multiple tactics worked together to trap Lois in an increasingly dangerous situation.",
+          "visualDescription": "Watercolor painting of puzzle pieces with gaps being filled, teal and purple pieces with cream connections against peach background positioned on LEFT SIDE of frame. Recognition, understanding theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Identifying the Tactics",
+          "bullets": [
+            "Isolation from support system",
+            "Economic abuse and dependence",
+            "Emotional abuse destroying self-worth",
+            "Using children as tools",
+            "Physical violence and intimidation"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-1-5/scene-11.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-11.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-5-scene-12",
+          "sceneNumber": 12,
+          "narration": "This is intimate terrorism, characterized by systematic coercive control. It's not situational couple violence. James uses multiple tactics over time to dominate Lois completely. The violence is escalating, and the risk factors for severe harm are present.",
+          "visualDescription": "Watercolor illustration of dark storm clouds with teal and purple masses containing flashes of cream lightning against peach threatening sky. Centered composition. Symbolic representation of severe danger pattern. Painterly style with dramatic atmosphere. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "What Type of IPV?",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-5/scene-12.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-12.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-1-5-scene-13",
+          "sceneNumber": 13,
+          "narration": "The Sumpter case illustrates patterns you may encounter in your professional role. Behind a normal appearance can hide severe abuse. Your ability to recognize these dynamics and respond appropriately can help survivors like Lois find safety and support.",
+          "visualDescription": "Watercolor painting of multiple silhouettes standing together in unified formation with cream light radiating outward from group. Teal and purple silhouettes of supportive professionals. Centered composition. Professional response, collective support theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "final",
+          "heading": "Recognizing Real Cases",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-1-5/scene-13.png",
+          "audioUrl": "../audio/videos/lesson-1-5/scene-13.mp3",
+          "templateHTML": null
+        }
+      ]
+    },
+    {
+      "videoId": "lesson-2-1",
+      "lessonId": "lesson-2-1",
+      "title": "What is Sexual Violence?",
+      "totalDuration": 168,
+      "scenes": [
+        {
+          "id": "lesson-2-1-scene-1",
+          "sceneNumber": 1,
+          "narration": "Sexual violence is a critical component of intimate partner violence, yet it's often misunderstood or overlooked. Let's establish a clear, comprehensive definition and explore its many forms within intimate relationships.",
+          "visualDescription": "Watercolor painting of gentle sunrise with teal and purple horizon line beneath cream and peach sky. Soft atmospheric quality suggesting new understanding. Centered composition. Clarity, awareness theme with painterly textures and visible brushstrokes. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "Defining Sexual Violence",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-2-1/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-2-1/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-1-scene-2",
+          "sceneNumber": 2,
+          "narration": "Sexual violence encompasses any sexual act committed without consent. This includes attempted or completed rape, unwanted sexual contact or touching, and sexual coercion through pressure or manipulation. The defining element is absence of freely given consent.",
+          "visualDescription": "Watercolor painting of silhouette with hand raised in clear stop gesture positioned on LEFT SIDE of frame. Teal silhouette with firm posture and cream light radiating from raised palm against purple and peach watercolor background. Boundary, clarity theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "What Sexual Violence Includes",
+          "bullets": [
+            "Any sexual act without consent",
+            "Attempted or completed rape",
+            "Unwanted sexual contact or touching",
+            "Sexual coercion or pressure"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-2-1/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-2-1/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-1-scene-3",
+          "sceneNumber": 3,
+          "narration": "Sexual violence takes many forms beyond penetrative assault. It includes forced sexual acts, making someone view or participate in pornography, photographing sexual acts without consent, or reproductive coercion like forcing pregnancy or preventing contraception use.",
+          "visualDescription": "Watercolor illustration of branching tree with multiple limbs extending outward. Teal trunk with purple and cream branches spreading against peach watercolor background positioned on RIGHT SIDE of frame. Complexity, multiple forms theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Forms of Sexual Violence",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-2-1/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-2-1/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-1-scene-4",
+          "sceneNumber": 4,
+          "narration": "Consent is the foundation of all sexual activity. It must be freely given, reversible, informed, enthusiastic, and specific. This is often remembered as FRIES. Without all these elements, sexual activity becomes sexual violence.",
+          "visualDescription": "Watercolor painting of two silhouettes facing each other in respectful dialogue pose with cream light flowing between them. Teal and purple silhouettes against peach watercolor background. Centered composition. Mutual respect, communication theme with painterly textures. No facial features or clothing details. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Understanding Consent",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-2-1/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-2-1/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-1-scene-5",
+          "sceneNumber": 5,
+          "narration": "Freely given means consent occurs without pressure, coercion, manipulation, or threats. If someone agrees to sex because they're afraid of consequences or being manipulated, that's not free consent. It must be a voluntary, willing choice.",
+          "visualDescription": "Watercolor painting of single silhouette with arms spread wide in open, free gesture positioned on LEFT SIDE of frame. Teal silhouette with cream light surrounding suggesting freedom and choice against purple and peach watercolor background. Liberation, choice theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Freely Given",
+          "bullets": [
+            "Without pressure or coercion",
+            "Not given under threat",
+            "Voluntary and willing"
+          ],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-2-1/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-2-1/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-1-scene-6",
+          "sceneNumber": 6,
+          "narration": "Consent must be reversible meaning anyone can change their mind. It must be informed with full understanding of what's being agreed to. It should be enthusiastic, not reluctant. And it must be specific consent to one act doesn't mean consent to all acts.",
+          "visualDescription": "Watercolor illustration of four interlocking puzzle pieces fitting together harmoniously in teal, purple, cream, and peach positioned on RIGHT SIDE of frame. Symbolic representation of consent elements working together. LEFT SIDE empty for text overlay. Painterly style with soft edges. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Reversible, Informed, Enthusiastic, Specific",
+          "bullets": [],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-2-1/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-2-1/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-1-scene-7",
+          "sceneNumber": 7,
+          "narration": "Certain conditions make consent impossible. Someone who is unconscious, asleep, or incapacitated by drugs or alcohol cannot consent. Those below the legal age of consent cannot agree. Some disabilities prevent the capacity to consent. In these situations, sexual activity is always assault.",
+          "visualDescription": "Watercolor painting of protective dome or shield with teal and purple curved protective structure over cream light positioned on LEFT SIDE of frame. Peach atmospheric background. Protection, boundaries theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "When Consent Cannot Be Given",
+          "bullets": [
+            "When someone is unconscious or asleep",
+            "Under the influence of drugs or alcohol",
+            "Below the legal age of consent",
+            "Due to disability or incapacitation"
+          ],
+          "duration": 17,
+          "imageUrl": "../images/videos/lesson-2-1/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-2-1/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-1-scene-8",
+          "sceneNumber": 8,
+          "narration": "Sexual coercion uses non-physical tactics to pressure sexual activity. This includes persistent pressure, guilt trips, threatening to leave or find sex elsewhere, or claiming that arousal means consent. These tactics undermine free choice and constitute sexual violence.",
+          "visualDescription": "Watercolor illustration of heavy teal and purple clouds pressing downward against cream light trying to break through below. Peach atmospheric background. Centered composition. Symbolic representation of pressure and coercion. Painterly style with weight and heaviness. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Sexual Coercion Tactics",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-2-1/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-2-1/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-1-scene-9",
+          "sceneNumber": 9,
+          "narration": "A critical myth to dispel: marriage or being in a relationship doesn't mean ongoing consent. Consent must be given each time. Partners can and do rape their spouses. Relationship status is legally and ethically irrelevant to the requirement for consent.",
+          "visualDescription": "Watercolor painting of two silhouettes standing separately with respectful distance between them positioned on RIGHT SIDE of frame. Teal and purple silhouettes with cream light around each showing autonomy against peach watercolor background. Independence, respect theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Relationship Status Doesn't Equal Consent",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-2-1/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-2-1/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-1-scene-10",
+          "sceneNumber": 10,
+          "narration": "Sexual violence causes profound trauma. Survivors commonly experience PTSD, depression, anxiety, and difficulty with trust and intimacy. Physical injuries and health consequences occur. Perhaps most significantly, sexual violence represents a fundamental violation of bodily autonomy and human dignity.",
+          "visualDescription": "Watercolor painting of single silhouette sitting on ground in vulnerable curled posture with protective teal and purple watercolor surrounding and cream light gently approaching. Peach atmospheric background. Centered composition. Trauma, need for support theme. Painterly style with compassionate mood. No facial features. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "The Impact of Sexual Violence",
+          "bullets": [
+            "Severe psychological trauma",
+            "PTSD and depression",
+            "Physical injuries and health consequences",
+            "Profound violation of autonomy"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-2-1/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-2-1/scene-10.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-1-scene-11",
+          "sceneNumber": 11,
+          "narration": "Sexual violence frequently co-occurs with other forms of intimate partner violence. When present, it signals higher risk for severe physical violence and homicide. Understanding sexual violence within IPV contexts is essential for comprehensive assessment and appropriate response.",
+          "visualDescription": "Watercolor painting of interconnected web or network with teal and purple connection points linked by cream light rays against peach watercolor background positioned on LEFT SIDE of frame. Interconnection, complexity theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Why This Matters for IPV",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-2-1/scene-11.png",
+          "audioUrl": "../audio/videos/lesson-2-1/scene-11.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-1-scene-12",
+          "sceneNumber": 12,
+          "narration": "The foundation of all sexual activity is clear, freely given consent. Without it, sexual activity becomes sexual violence regardless of relationship status. As professionals, understanding consent helps us identify sexual violence and support survivors appropriately.",
+          "visualDescription": "Watercolor painting of silhouettes standing together in supportive formation with cream light radiating from center outward. Teal and purple silhouettes of varied heights showing solidarity. Centered composition. Professional understanding, support theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "final",
+          "heading": "Consent is Non-Negotiable",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-2-1/scene-12.png",
+          "audioUrl": "../audio/videos/lesson-2-1/scene-12.mp3",
+          "templateHTML": null
+        }
+      ]
+    },
+    {
+      "videoId": "lesson-2-2",
+      "lessonId": "lesson-2-2",
+      "title": "Sexual Violence in Our Society",
+      "totalDuration": 174,
+      "scenes": [
+        {
+          "id": "lesson-2-2-scene-1",
+          "sceneNumber": 1,
+          "narration": "Sexual violence doesn't happen in a vacuum. It occurs within a societal context that often minimizes, normalizes, or excuses it. This environment is called rape culture. Understanding these cultural factors helps us challenge them effectively.",
+          "visualDescription": "Watercolor painting of landscape with layered atmospheric perspective showing teal and purple foreground, cream middle distance, and peach horizon. Centered composition. Contextual layers, societal environment theme with painterly textures and visible brushstrokes. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "Understanding Rape Culture",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-2-2/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-2-2/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-2-scene-2",
+          "sceneNumber": 2,
+          "narration": "Rape culture refers to social attitudes and practices that normalize, trivialize, or excuse sexual violence. It includes victim-blaming, perpetrator excuses, objectification, and the pervasive message that sexual assault is inevitable. These attitudes create an environment where violence thrives.",
+          "visualDescription": "Watercolor painting of single silhouette in contemplative standing pose with hand on chest positioned on LEFT SIDE of frame. Teal silhouette surrounded by purple atmospheric watercolor suggesting heavy societal weight with cream light breaking through above. Awareness, recognition theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "What is Rape Culture?",
+          "bullets": [
+            "Attitudes that normalize sexual violence",
+            "Victim-blaming and perpetrator excuses",
+            "Trivializing sexual assault",
+            "Society that tolerates abuse"
+          ],
+          "duration": 17,
+          "imageUrl": "../images/videos/lesson-2-2/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-2-2/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-2-scene-3",
+          "sceneNumber": 3,
+          "narration": "Victim-blaming shifts responsibility from perpetrators to survivors. Questions about what the victim wore, drank, or did communicate that assault is somehow the victim's fault. This silences survivors, protects perpetrators, and reinforces the false idea that certain behaviors cause rape.",
+          "visualDescription": "Watercolor illustration of scales heavily tilted to one side with teal and purple balance arms and cream light showing imbalance positioned on RIGHT SIDE of frame. Peach atmospheric background. Symbolic representation of misplaced responsibility. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Victim-Blaming",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-2-2/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-2-2/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-2-scene-4",
+          "sceneNumber": 4,
+          "narration": "Rape culture normalizes behaviors that exist on the continuum of sexual violence. Catcalling becomes flattery. Sexual jokes are just humor. Objectification is entertainment. Boys will be boys excuses disrespectful behavior. These attitudes create environments where serious violence becomes possible.",
+          "visualDescription": "Watercolor painting of fortress wall with cracks appearing and cream light breaking through teal and purple stone. Peach atmospheric glow beyond barrier. Centered composition. Symbolic representation of normalized barriers being challenged. Painterly style with texture and detail. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Normalizing Sexual Harassment",
+          "bullets": [
+            "Catcalling and unwanted comments",
+            "Sexual jokes that demean",
+            "Objectification in media and advertising",
+            "Boys will be boys attitudes"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-2-2/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-2-2/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-2-scene-5",
+          "sceneNumber": 5,
+          "narration": "The rape culture pyramid illustrates how attitudes and behaviors build on each other. At the base are sexist jokes and objectifying comments. These support escalating behaviors. At the apex is sexual violence. The foundation enables the peak.",
+          "visualDescription": "Watercolor painting of triangular mountain shape with teal base, purple middle slopes, cream pathways, and peach peak against atmospheric background positioned on LEFT SIDE of frame. Hierarchical structure, progression theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "The Rape Culture Pyramid",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-2-2/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-2-2/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-2-scene-6",
+          "sceneNumber": 6,
+          "narration": "The pyramid's foundation includes seemingly minor behaviors. Sexist jokes that demean women. Rigid gender stereotypes. Sexual objectification. Victim-blaming language. These create a cultural environment where sexual violence becomes normalized and perpetrators feel entitled.",
+          "visualDescription": "Watercolor illustration of scattered seeds on ground with teal and purple seed shapes against cream soil and peach atmospheric background positioned on RIGHT SIDE of frame. Symbolic representation of problematic attitudes taking root. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Pyramid Foundation Level",
+          "bullets": [
+            "Sexist attitudes and jokes",
+            "Gender stereotypes and roles",
+            "Objectification and harassment",
+            "Victim-blaming language"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-2-2/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-2-2/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-2-scene-7",
+          "sceneNumber": 7,
+          "narration": "The middle levels involve more direct behaviors. Unwanted sexual comments and advances. Verbal sexual harassment. Non-consensual intimate images. Sexual coercion and pressure. These behaviors escalate from the foundation and support more severe violence above.",
+          "visualDescription": "Watercolor painting of ascending stone steps with teal and purple stones rising toward distant peak with cream light between steps. Peach atmospheric background. Centered composition. Escalation, progression upward theme. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Pyramid Middle Levels",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-2-2/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-2-2/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-2-scene-8",
+          "sceneNumber": 8,
+          "narration": "At the pyramid's top sits sexual violence, rape, and assault. These acts don't emerge from nowhere. They're supported and enabled by all the attitudes and behaviors below. Understanding this structure helps us intervene at multiple levels to prevent violence.",
+          "visualDescription": "Watercolor painting of mountain peak with dark teal and purple summit being cleared away to reveal cream light beneath and peach sky opening above positioned on LEFT SIDE of frame. Transformation, dismantling theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Pyramid Apex: Sexual Violence",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-2-2/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-2-2/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-2-scene-9",
+          "sceneNumber": 9,
+          "narration": "Media often perpetuates rape culture. Movies romanticize persistence that crosses into coercion. News coverage focuses on perpetrator potential rather than their choices. Advertising uses sexual objectification. These messages shape our cultural attitudes about sexual violence and consent.",
+          "visualDescription": "Watercolor illustration of multiple windows or frames with teal and purple borders showing different cream light sources against peach atmospheric background positioned on RIGHT SIDE of frame. Multiple influences, media messages theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Media and Rape Culture",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-2-2/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-2-2/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-2-scene-10",
+          "sceneNumber": 10,
+          "narration": "Rape culture profoundly impacts survivors. Many don't report because they fear blame or disbelief. They internalize shame for something done to them. Their trauma is minimized. Meanwhile, perpetrators face few consequences. This environment prioritizes perpetrator comfort over survivor justice.",
+          "visualDescription": "Watercolor painting of single silhouette sitting hunched with protective posture surrounded by pressing teal and purple atmospheric weight with small cream light of hope nearby. Peach background. Centered composition. Impact on survivors, isolation theme. Painterly style with compassionate mood. No facial features. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "How Rape Culture Affects Survivors",
+          "bullets": [
+            "Discourages reporting and help-seeking",
+            "Increases shame and self-blame",
+            "Minimizes trauma impact",
+            "Protects perpetrators"
+          ],
+          "duration": 17,
+          "imageUrl": "../images/videos/lesson-2-2/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-2-2/scene-10.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-2-scene-11",
+          "sceneNumber": 11,
+          "narration": "We can challenge rape culture through our words and actions. Interrupt sexist jokes. Call out victim-blaming. Believe survivors. Hold perpetrators accountable. Teach comprehensive consent education. Model respectful relationships. Cultural change happens through individual choices multiplied across communities.",
+          "visualDescription": "Watercolor painting of multiple silhouettes in various active poses suggesting speaking up and taking action positioned on LEFT SIDE of frame. Teal and purple silhouettes with cream light radiating outward showing influence against peach watercolor background. Action, advocacy theme. RIGHT SIDE empty for text overlay. No facial features or clothing details. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Challenging Rape Culture",
+          "bullets": [],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-2-2/scene-11.png",
+          "audioUrl": "../audio/videos/lesson-2-2/scene-11.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-2-scene-12",
+          "sceneNumber": 12,
+          "narration": "The alternative to rape culture is a culture of consent, respect, and equality. This means centering survivor voices, teaching enthusiastic consent, challenging harmful attitudes, and creating accountability for perpetrators. As professionals, we contribute to this cultural shift through our responses to sexual violence.",
+          "visualDescription": "Watercolor painting of diverse silhouettes standing together in unified circle with hands joined and cream light radiating from center. Teal and purple silhouettes of varied heights. Centered composition. Collective change, unified action theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "final",
+          "heading": "Creating a Culture of Consent",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-2-2/scene-12.png",
+          "audioUrl": "../audio/videos/lesson-2-2/scene-12.mp3",
+          "templateHTML": null
+        }
+      ]
+    },
+    {
+      "videoId": "lesson-2-3",
+      "lessonId": "lesson-2-3",
+      "title": "Rape and Sexual Assault in the Context of Intimate Partner Violence",
+      "totalDuration": 180,
+      "scenes": [
+        {
+          "id": "lesson-2-3-scene-1",
+          "sceneNumber": 1,
+          "narration": "Sexual violence within intimate relationships has unique characteristics that distinguish it from stranger assault. Understanding these dynamics helps us recognize this hidden form of abuse and respond appropriately to survivors.",
+          "visualDescription": "Watercolor painting of two paths diverging with one teal path in shadow and one purple path in cream light against peach watercolor background. Centered composition. Different realities, hidden dynamics theme with painterly textures and visible brushstrokes. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "Sexual Violence Within Relationships",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-2-3/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-3-scene-2",
+          "sceneNumber": 2,
+          "narration": "Sexual violence is common in abusive relationships. Research indicates ten to fourteen percent of married women experience spousal rape. Forty to forty-five percent of intimate partner violence includes sexual violence. It's often combined with physical abuse and remains severely underreported.",
+          "visualDescription": "Watercolor painting of single silhouette in professional teaching pose with arm gesturing toward data positioned on LEFT SIDE of frame. Teal silhouette with cream light illuminating presented information against purple and peach watercolor background. Information sharing, education theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Prevalence in Relationships",
+          "bullets": [
+            "10-14% of married women experience spousal rape",
+            "40-45% of domestic violence includes sexual violence",
+            "Often occurs alongside physical abuse",
+            "Severely underreported"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-2-3/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-3-scene-3",
+          "sceneNumber": 3,
+          "narration": "Until relatively recently, marital rape wasn't recognized as a crime. The concept of husband as owner meant wives couldn't refuse sex. The last U.S. state didn't criminalize marital rape until nineteen ninety-three. These attitudes still influence how intimate partner sexual violence is viewed.",
+          "visualDescription": "Watercolor illustration of broken chain links with teal and purple chain breaking apart and cream light emerging from break against peach watercolor background positioned on RIGHT SIDE of frame. Freedom from historical oppression theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Historical Context",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-2-3/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-3-scene-4",
+          "sceneNumber": 4,
+          "narration": "Intimate partner sexual violence differs from stranger assault in critical ways. Perpetrators have ongoing access to victims. Sexual violence is embedded in broader control patterns. Victims experience profound betrayal by trusted partners. Assaults are typically repeated over months or years.",
+          "visualDescription": "Watercolor painting of house silhouette with teal and purple walls and windows showing cream light both inside and outside with peach sky positioned on LEFT SIDE of frame. Complex relationship between safety and danger theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Why It's Different from Stranger Assault",
+          "bullets": [
+            "Ongoing access to victim",
+            "Embedded in pattern of control",
+            "Betrayal by trusted partner",
+            "Repeated assaults over time"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-2-3/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-3-scene-5",
+          "sceneNumber": 5,
+          "narration": "Intimate partner sexual violence takes many forms. Forced sex through physical violence or threats. Coerced sex through pressure or manipulation. Sex when victim is unable to consent. Forcing degrading or unwanted sexual acts. Reproductive coercion controlling pregnancy decisions.",
+          "visualDescription": "Watercolor illustration of tangled teal and purple thorny vines with cream light struggling to break through. Peach atmospheric background. Centered composition. Symbolic representation of complex entrapment and multiple forms. Painterly style with organic edges. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Forms Within Relationships",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-2-3/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-3-scene-6",
+          "sceneNumber": 6,
+          "narration": "Reproductive coercion is a specific form of intimate partner sexual violence. Abusers sabotage birth control, force pregnancy or abortion, control access to reproductive healthcare, or use pregnancy to trap partners. This tactic creates additional dependence and vulnerability.",
+          "visualDescription": "Watercolor painting of protective cage or barrier with teal and purple bars surrounding cream light positioned on RIGHT SIDE of frame. Peach atmospheric background suggesting captivity through reproductive control. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Reproductive Coercion",
+          "bullets": [
+            "Sabotaging birth control",
+            "Forcing pregnancy or abortion",
+            "Controlling reproductive healthcare",
+            "Using pregnancy to trap partners"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-2-3/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-3-scene-7",
+          "sceneNumber": 7,
+          "narration": "Intimate partner sexual violence rarely exists alone. It's typically part of a broader pattern including physical violence, emotional abuse, isolation, and economic control. When sexual violence is present, relationships are more dangerous and lethal risk increases significantly.",
+          "visualDescription": "Watercolor painting of interconnected web with teal and purple strands all connecting to central dark point surrounded by cream warning light. Peach atmospheric background. Centered composition. Interconnected dangers, severity theme. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Connection to Other Abuse",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-2-3/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-3-scene-8",
+          "sceneNumber": 8,
+          "narration": "Multiple factors prevent leaving. Fear of escalated violence when departing. Financial dependence with no resources. Children and custody concerns. Shame and belief no one will help. Cultural or religious barriers. Trauma bonding to the abuser. Love mixed with abuse creates profound confusion.",
+          "visualDescription": "Watercolor painting of figure at base of tall wall looking up at distant opening with cream light above positioned on LEFT SIDE of frame. Teal silhouette surrounded by purple walls suggesting barriers with peach light far above. Trapped, barriers theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Why Victims Don't Leave",
+          "bullets": [],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-2-3/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-3-scene-9",
+          "sceneNumber": 9,
+          "narration": "Victims of intimate partner sexual violence face unique barriers to disclosure. Deep shame about sexual violence. Fear that people won't believe a spouse can rape. Cultural taboos around discussing sexuality. Conflicted loyalty to partners they may still love. These barriers mean most never report.",
+          "visualDescription": "Watercolor illustration of closed door with teal and purple frame and heavy locks with small cream light seeping underneath gap positioned on RIGHT SIDE of frame. Barriers to speaking, silence theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Barriers to Disclosure",
+          "bullets": [
+            "Shame and self-blame",
+            "Fear of not being believed",
+            "Cultural stigma around sexuality",
+            "Loyalty to partner despite abuse"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-2-3/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-3-scene-10",
+          "sceneNumber": 10,
+          "narration": "Dangerous myths persist. That spouses can't rape each other. That women who stay must want it. That it's less traumatic than stranger rape. That alcohol or dress causes assault. These myths blame victims, excuse perpetrators, and prevent appropriate response.",
+          "visualDescription": "Watercolor painting of fog or mist clearing with teal and purple clouds dissipating to reveal cream light and clarity beneath. Peach sky emerging above. Centered composition. Myths being dispelled, truth emerging theme. Painterly style with atmospheric quality. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Myths About Intimate Partner Sexual Violence",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-2-3/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-10.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-3-scene-11",
+          "sceneNumber": 11,
+          "narration": "Intimate partner sexual violence causes severe trauma. Victims experience complex PTSD, depression, anxiety, and suicidality. Physical injuries and chronic health problems occur. The betrayal by a trusted partner creates profound difficulty with future trust and intimacy. The impact can last years.",
+          "visualDescription": "Watercolor painting of single silhouette in hunched sitting position with protective arms wrapped around knees surrounded by gentle cream light positioned on LEFT SIDE of frame. Teal silhouette against purple and peach watercolor background. Trauma, vulnerability theme. RIGHT SIDE empty for text overlay. Painterly style with compassionate mood. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "The Impact is Severe",
+          "bullets": [
+            "Complex trauma and PTSD",
+            "Depression and anxiety",
+            "Physical injuries and health problems",
+            "Difficulty with trust and intimacy"
+          ],
+          "duration": 17,
+          "imageUrl": "../images/videos/lesson-2-3/scene-11.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-11.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-3-scene-12",
+          "sceneNumber": 12,
+          "narration": "Watch for indicators. Victims may have unexplained injuries, especially in genital areas. They may express fear of partner's sexual demands. They might show signs of depression or trauma. Some become pregnant repeatedly despite expressing desire for no more children. These signs deserve sensitive inquiry.",
+          "visualDescription": "Watercolor illustration of magnifying glass with teal frame examining purple pattern with cream light illuminating details against peach watercolor background positioned on RIGHT SIDE of frame. Recognition, attention to detail theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Recognizing the Signs",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-2-3/scene-12.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-12.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-2-3-scene-13",
+          "sceneNumber": 13,
+          "narration": "Understanding intimate partner sexual violence prepares you to respond appropriately. Believe disclosures. Never question why they stayed. Recognize the trauma and danger. Connect to specialized resources. Your informed, compassionate response can help survivors begin healing and finding safety.",
+          "visualDescription": "Watercolor painting of multiple silhouettes standing together in supportive circle formation with cream light glowing in center and radiating outward. Teal and purple silhouettes of varied heights. Centered composition. Professional support, understanding response theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "final",
+          "heading": "Responding with Understanding",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-2-3/scene-13.png",
+          "audioUrl": "../audio/videos/lesson-2-3/scene-13.mp3",
+          "templateHTML": null
+        }
+      ]
+    },
+    {
+      "videoId": "lesson-3-1",
+      "lessonId": "lesson-3-1",
+      "title": "The Impact of Intimate Partner Violence on Victims",
+      "totalDuration": 186,
+      "scenes": [
+        {
+          "id": "lesson-3-1-scene-1",
+          "sceneNumber": 1,
+          "narration": "Intimate partner violence creates profound, multifaceted impacts that extend far beyond visible injuries. Understanding these consequences helps us recognize IPV's severity, respond with appropriate compassion, and avoid judgment about why victims stay.",
+          "visualDescription": "Watercolor painting of ripples spreading outward in concentric circles from center point. Teal and purple ripples with cream light at origin against peach watercolor background. Centered composition. Far-reaching impact theme with painterly textures and visible brushstrokes. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "Understanding the Impact",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-1/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-2",
+          "sceneNumber": 2,
+          "narration": "IPV causes severe psychological trauma. Many victims develop post-traumatic stress disorder with flashbacks, nightmares, and hypervigilance. Depression and anxiety disorders are common. Sustained abuse destroys self-esteem and sense of identity. Constant fear becomes a way of life.",
+          "visualDescription": "Watercolor painting of silhouette sitting with head bowed surrounded by swirling teal and purple atmospheric pressure with small cream light nearby positioned on LEFT SIDE of frame. Peach background. Psychological weight, trauma theme. RIGHT SIDE empty for text overlay. Painterly style with emotional depth. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Psychological Trauma",
+          "bullets": [
+            "Post-traumatic stress disorder",
+            "Depression and anxiety",
+            "Low self-esteem and identity loss",
+            "Hypervigilance and fear"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-3-1/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-3",
+          "sceneNumber": 3,
+          "narration": "Ongoing abuse often causes complex PTSD, distinct from single-incident trauma. It involves emotional regulation difficulties, negative self-perception, relationship problems, and feeling permanently damaged. The sustained nature of intimate partner violence creates this complex trauma response.",
+          "visualDescription": "Watercolor illustration of fractured mirror or broken glass with teal and purple shards with cream light visible through cracks. Peach atmospheric background. Centered composition. Symbolic representation of fragmented sense of self. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Complex PTSD",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-3-1/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-4",
+          "sceneNumber": 4,
+          "narration": "Repeated abuse with no escape creates learned helplessness. Victims stop trying to change their situation because nothing has worked before. This isn't weakness or choosing to stay. It's a psychological response to sustained trauma and control that makes leaving feel impossible.",
+          "visualDescription": "Watercolor painting of silhouette sitting against wall in defeated posture with arms resting on raised knees positioned on RIGHT SIDE of frame. Teal silhouette in purple shadowed corner with cream light distant and unreachable. Helplessness, exhaustion theme. LEFT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Learned Helplessness",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-1/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-5",
+          "sceneNumber": 5,
+          "narration": "Physical health impacts extend beyond acute injuries. Victims suffer chronic pain, headaches, and gastrointestinal problems. Stress causes cardiovascular issues. Sleep disturbances and fatigue are common. Some injuries like traumatic brain injury from strangulation or blows have long-term consequences.",
+          "visualDescription": "Watercolor painting of wilting plant or tree with drooping teal branches and purple leaves showing physical decline with cream light trying to reach it positioned on LEFT SIDE of frame. Peach background. Physical toll, health impact theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Physical Health Consequences",
+          "bullets": [
+            "Acute injuries from violence",
+            "Chronic pain conditions",
+            "Gastrointestinal problems",
+            "Cardiovascular issues"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-3-1/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-6",
+          "sceneNumber": 6,
+          "narration": "Sexual violence and reproductive coercion create specific health consequences. Sexually transmitted infections, unwanted pregnancies, miscarriage, and pregnancy complications occur. Gynecological problems develop. Some victims experience sexual dysfunction and chronic pelvic pain from repeated assault.",
+          "visualDescription": "Watercolor illustration of protective cocoon or wrapped form in teal and purple with gentle cream light inside suggesting need for healing and protection. Peach atmospheric background. Centered composition. Vulnerability, need for care theme. Painterly style with soft organic edges. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Reproductive Health Impacts",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-1/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-7",
+          "sceneNumber": 7,
+          "narration": "Abusers deliberately isolate victims, cutting them off from family, friends, and community support. This isolation becomes self-perpetuating as victims feel ashamed and withdraw further. The loss of social connections removes critical protective factors and support systems.",
+          "visualDescription": "Watercolor painting of single silhouette on small island surrounded by teal and purple water with cream light on distant shore unreachable positioned on RIGHT SIDE of frame. Peach sky above. Isolation, disconnection theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Social Isolation Impact",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-3-1/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-8",
+          "sceneNumber": 8,
+          "narration": "Economic abuse creates lasting financial harm. Victims lose jobs due to abuser sabotage or inability to function. Credit is destroyed, debt accumulates. Many lose housing and stability. Even after leaving, economic impacts persist, making self-sufficiency difficult and increasing vulnerability to future abuse.",
+          "visualDescription": "Watercolor painting of figure carrying heavy load represented by teal and purple weight on shoulders positioned on LEFT SIDE of frame. Cream light ahead on path but burden making progress difficult. Peach atmospheric background. Economic burden, struggle theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Economic Consequences",
+          "bullets": [
+            "Inability to work or keep jobs",
+            "Destroyed credit and created debt",
+            "Loss of housing and stability",
+            "Poverty and financial dependence"
+          ],
+          "duration": 17,
+          "imageUrl": "../images/videos/lesson-3-1/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-9",
+          "sceneNumber": 9,
+          "narration": "Children in homes with intimate partner violence suffer significant harm even if not directly abused. They experience trauma, behavioral problems, and academic difficulties. Many develop anxiety and depression. They learn unhealthy relationship models. Witnessing IPV is a form of child abuse.",
+          "visualDescription": "Watercolor illustration of small vulnerable seedlings in purple soil being sheltered by larger teal protective shape with cream light filtered through protection. Peach sky above. Centered composition. Symbolic representation of children needing protection from violence. Painterly style with care and concern. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Impact on Children",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-1/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-10",
+          "sceneNumber": 10,
+          "narration": "Understanding why victims stay requires understanding barriers. Fear is primary. Victims accurately assess that leaving is the most dangerous time when homicide risk peaks. Abusers threaten to kill them, their children, or themselves. This fear is based in reality, not irrationality.",
+          "visualDescription": "Watercolor painting of silhouette at edge of cliff looking down at dangerous drop with teal cliff edge and purple void below, cream light far on other side positioned on RIGHT SIDE of frame. Peach sky with ominous atmosphere. Danger of leaving theme. LEFT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Barriers to Leaving: Fear",
+          "bullets": [],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-3-1/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-10.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-11",
+          "sceneNumber": 11,
+          "narration": "Practical barriers trap victims. Economic abuse leaves them with no money, no job, and destroyed credit. They may have nowhere to go and no transportation. Abusers threaten custody battles. Without resources and support, leaving feels impossible and may genuinely be unsafe.",
+          "visualDescription": "Watercolor painting of multiple locked doors in row with teal and purple door frames all showing heavy locks with cream light visible through keyholes positioned on LEFT SIDE of frame. Peach background. Multiple barriers, obstacles theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Barriers to Leaving: Practical",
+          "bullets": [
+            "No financial resources",
+            "Nowhere to go",
+            "No transportation",
+            "Threats to take children"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-1/scene-11.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-11.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-12",
+          "sceneNumber": 12,
+          "narration": "Emotional barriers are powerful. Many victims still love their abusers and hope for change. Trauma bonding creates strong attachment. Cultural or religious beliefs about marriage and family create obligation. Shame prevents disclosure. These emotional factors are as real as physical barriers.",
+          "visualDescription": "Watercolor illustration of heart shape divided between teal and purple halves with cream light at center division point showing internal conflict. Peach atmospheric background. Centered composition. Symbolic representation of conflicted feelings, love and fear mixed. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Barriers to Leaving: Emotional",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-1/scene-12.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-12.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-13",
+          "sceneNumber": 13,
+          "narration": "These impacts don't exist separately. They compound and reinforce each other. Trauma affects physical health. Economic dependence increases isolation. Fear prevents help-seeking. Understanding this cumulative impact helps us avoid judgment and recognize the immense courage required to survive and eventually leave.",
+          "visualDescription": "Watercolor painting of layered mountain ranges with teal foreground, purple middle distance, cream highlights, and peach distant peaks positioned on RIGHT SIDE of frame. Overlapping challenges, cumulative weight theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Cumulative Impact",
+          "bullets": [],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-3-1/scene-13.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-13.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-1-scene-14",
+          "sceneNumber": 14,
+          "narration": "Despite devastating impacts, survivors demonstrate remarkable resilience. They develop survival strategies, protect their children, and ultimately find pathways to safety. Understanding impacts helps us appreciate their strength and provide appropriate, trauma-informed support as they rebuild their lives.",
+          "visualDescription": "Watercolor painting of multiple silhouettes standing together on rising ground moving toward bright cream and peach horizon light with teal and purple supportive figures helping each other climb. Centered composition. Resilience, recovery, support theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "final",
+          "heading": "Recognizing Resilience",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-3-1/scene-14.png",
+          "audioUrl": "../audio/videos/lesson-3-1/scene-14.mp3",
+          "templateHTML": null
+        }
+      ]
+    },
+    {
+      "videoId": "lesson-3-2",
+      "lessonId": "lesson-3-2",
+      "title": "Safety Planning with Victims",
+      "totalDuration": 192,
+      "scenes": [
+        {
+          "id": "lesson-3-2-scene-1",
+          "sceneNumber": 1,
+          "narration": "Safety planning is a collaborative process to help IPV victims reduce risk and prepare for emergencies. It's not about telling people to leave. It's about empowering them to make informed decisions and increase safety whether they stay or go.",
+          "visualDescription": "Watercolor painting of hands holding and carefully arranging puzzle pieces with teal and purple pieces coming together with cream light showing connection points. Peach watercolor background. Centered composition. Planning, preparation theme with painterly textures and visible brushstrokes. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "The Importance of Safety Planning",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-2/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-2",
+          "sceneNumber": 2,
+          "narration": "Safety planning creates a personalized strategy for each unique situation. It helps reduce risk of harm, prepares for dangerous situations or emergencies, and increases victims' sense of control and options. Effective safety plans are collaborative, practical, and survivor-driven.",
+          "visualDescription": "Watercolor painting of single silhouette in confident standing pose with map or document in hands positioned on LEFT SIDE of frame. Teal silhouette with cream light illuminating the planning document against purple and peach watercolor background. Preparation, empowerment theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "What is Safety Planning?",
+          "bullets": [
+            "Personalized strategy for each situation",
+            "Reduces risk of harm",
+            "Prepares for emergencies",
+            "Increases options and control"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-3-2/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-3",
+          "sceneNumber": 3,
+          "narration": "For those not yet ready or able to leave, safety planning focuses on risk reduction. This includes identifying safe rooms without weapons, planning escape routes, teaching children to call for help, establishing code words with trusted people, and hiding emergency supplies.",
+          "visualDescription": "Watercolor illustration of house layout from above showing teal walls, purple rooms, cream safe pathway marked through space, and peach exterior. Centered composition. Symbolic representation of planning safe routes and spaces. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Safety While in the Relationship",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-2/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-4",
+          "sceneNumber": 4,
+          "narration": "Help victims recognize warning signs of escalation. Discuss avoiding rooms with weapons or without exits like kitchens, bathrooms, or bedrooms. Identify the safest exit routes from home. Practice what to say or do during incidents to reduce harm while abuse is occurring.",
+          "visualDescription": "Watercolor painting of storm warning system with teal signal tower and purple alert symbols with cream light beaming warning positioned on RIGHT SIDE of frame. Peach atmospheric background. Alert, warning recognition theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Identifying Dangerous Situations",
+          "bullets": [
+            "Recognizing escalation warning signs",
+            "Avoiding dangerous rooms",
+            "Planning exit routes",
+            "Preparing what to say or do"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-2/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-5",
+          "sceneNumber": 5,
+          "narration": "Help victims prepare emergency supplies kept in a safe, accessible location. Include copies of important documents like IDs, birth certificates, and legal papers. Cash and credit cards. Extra keys. Medications. A change of clothes. Contact information for resources. These enable quick departure if needed.",
+          "visualDescription": "Watercolor painting of packed bag or bundle with teal and purple fabric tied securely containing essential items suggested by abstract shapes with cream light nearby positioned on LEFT SIDE of frame. Peach background. Preparation, readiness theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Emergency Supply Preparation",
+          "bullets": [
+            "Important documents and copies",
+            "Money and credit cards",
+            "Keys and medications",
+            "Change of clothes",
+            "Emergency contacts"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-3-2/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-6",
+          "sceneNumber": 6,
+          "narration": "Leaving requires careful planning as this is the most dangerous time. Discuss timing, safe places to go, transportation, financial resources, and legal protections. Help identify obstacles and solutions. Emphasize that leaving doesn't have to be permanent to practice this planning.",
+          "visualDescription": "Watercolor illustration of bridge extending from purple shore across teal water toward cream and peach safe distant shore with careful step-by-step path marked. Centered composition. Symbolic representation of planned transition to safety. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Safety Planning for Leaving",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-2/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-7",
+          "sceneNumber": 7,
+          "narration": "Help victims rebuild support networks abusers have destroyed. Identify trusted friends, family members, or neighbors who can offer help or call police. Establish workplace allies. Connect with IPV advocates and counselors. A support network increases safety and provides resources.",
+          "visualDescription": "Watercolor painting of protective circle of silhouettes surrounding central figure with teal and purple support figures and cream light glowing in center positioned on RIGHT SIDE of frame. Peach background. Support, protection theme. LEFT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Building a Support Network",
+          "bullets": [
+            "Trusted friends and family",
+            "Workplace contacts",
+            "Neighbors who can call for help",
+            "IPV advocates and counselors"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-2/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-8",
+          "sceneNumber": 8,
+          "narration": "Technology enables tracking and surveillance. Discuss changing passwords, using safe computers at libraries or work, disabling location services, checking for spyware, and using safety apps. Help victims understand their devices may be monitored and plan accordingly.",
+          "visualDescription": "Watercolor painting of shield protecting glowing cream light from teal and purple threatening digital elements represented by circuit-like patterns positioned on LEFT SIDE of frame. Peach atmospheric background. Digital protection, privacy theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Technology Safety",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-3-2/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-9",
+          "sceneNumber": 9,
+          "narration": "Address financial barriers to leaving. Discuss opening separate bank accounts at different institutions. Building emergency funds slowly and secretly. Understanding shared finances and debts. Planning steps toward economic independence. Financial resources dramatically increase safety options.",
+          "visualDescription": "Watercolor illustration of growing plant with teal stem and purple leaves with cream coins or resources accumulating at base like saved nutrients. Peach watercolor background. Centered composition. Symbolic representation of building financial resources. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Financial Safety Planning",
+          "bullets": [
+            "Opening separate bank accounts",
+            "Building hidden emergency funds",
+            "Understanding shared finances",
+            "Planning for economic independence"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-2/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-10",
+          "sceneNumber": 10,
+          "narration": "Inform victims about legal options including protection orders, custody provisions, and criminal charges. Explain the process, benefits, and limitations of each. Connect to legal advocates who can help navigate systems. Understanding options empowers informed decisions.",
+          "visualDescription": "Watercolor painting of balanced scales with teal and purple balance arms holding cream light symbolizing justice positioned on RIGHT SIDE of frame. Peach atmospheric background. Legal protection, justice theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Legal Protections",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-3-2/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-10.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-11",
+          "sceneNumber": 11,
+          "narration": "Post-separation safety planning is critical as danger continues. Discuss changing routines, routes, and patterns. Alert security at residence and workplace. Document all contact and violations. Maintain protection orders. Prepare for potential stalking or continued harassment. Safety planning doesn't end at separation.",
+          "visualDescription": "Watercolor painting of figure walking on new path with teal and purple landscape behind and cream and peach light ahead showing forward movement but maintaining awareness positioned on LEFT SIDE of frame. Vigilance, new beginning theme. RIGHT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Safety After Leaving",
+          "bullets": [
+            "Changing routines and routes",
+            "Alerting security at home and work",
+            "Documenting violations",
+            "Maintaining protection orders"
+          ],
+          "duration": 17,
+          "imageUrl": "../images/videos/lesson-3-2/scene-11.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-11.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-12",
+          "sceneNumber": 12,
+          "narration": "Effective facilitation requires trauma-informed approaches. Ask open questions. Listen without judgment. Validate concerns. Respect their expertise about their situation. Never push your timeline. Provide information, not directives. Acknowledge that they're the expert on their life and relationship.",
+          "visualDescription": "Watercolor painting of two silhouettes in respectful listening pose with one slightly leaning forward attentively positioned on RIGHT SIDE of frame. Teal and purple silhouettes with cream light of respect flowing between them against peach watercolor background. Active listening, collaboration theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Facilitating Safety Planning Conversations",
+          "bullets": [],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-3-2/scene-12.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-12.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-13",
+          "sceneNumber": 13,
+          "narration": "Recognize your limitations. IPV advocates have specialized training and can provide comprehensive safety planning. Legal advocates help navigate complex systems. Mental health professionals address trauma. Know when to make warm referrals to specialists while maintaining your supportive role.",
+          "visualDescription": "Watercolor illustration of network or web connecting multiple points with teal and purple connection nodes linked by cream light pathways against peach background. Centered composition. Collaborative professional network theme. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "When to Involve Specialists",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-2/scene-13.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-13.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-2-scene-14",
+          "sceneNumber": 14,
+          "narration": "Safety planning isn't about convincing people to leave. It's about increasing options, reducing risk, and supporting informed decision-making. By providing tools and resources, we empower survivors to make choices that are right for their unique situations and enhance their safety.",
+          "visualDescription": "Watercolor painting of silhouette standing at center of radiating pathways with multiple teal and purple options extending outward illuminated by cream light with peach sky above. Centered composition. Empowerment, choices, possibilities theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "final",
+          "heading": "Empowering Informed Decisions",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-3-2/scene-14.png",
+          "audioUrl": "../audio/videos/lesson-3-2/scene-14.mp3",
+          "templateHTML": null
+        }
+      ]
+    },
+    {
+      "videoId": "lesson-3-3",
+      "lessonId": "lesson-3-3",
+      "title": "Responding to Someone Experiencing Intimate Partner Violence",
+      "totalDuration": 210,
+      "scenes": [
+        {
+          "id": "lesson-3-3-scene-1",
+          "sceneNumber": 1,
+          "narration": "How you respond when someone discloses intimate partner violence can profoundly impact their healing and safety. A supportive response validates their experience and opens pathways to help. A harmful response can cause additional trauma and prevent future disclosure.",
+          "visualDescription": "Watercolor painting of two pathways diverging with one teal path leading to warm cream and peach light and one purple path leading to shadow. Centered composition. Impact of response choices theme with painterly textures and visible brushstrokes. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "Your Response Matters",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-3/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-2",
+          "sceneNumber": 2,
+          "narration": "Trauma-informed care rests on five principles. Safety ensures physical and emotional security. Trustworthiness requires transparency and consistency. Choice respects autonomy. Collaboration involves shared decision-making. Empowerment builds on survivors' strengths. These principles should guide every interaction.",
+          "visualDescription": "Watercolor painting of strong tree with five main branches extending upward with teal trunk, purple branches, cream light filtering through, and peach sky positioned on LEFT SIDE of frame. Foundation of principles theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Trauma-Informed Principles",
+          "bullets": [
+            "Safety: Physical and emotional security",
+            "Trustworthiness: Transparency and consistency",
+            "Choice: Respecting autonomy and control",
+            "Collaboration: Shared decision-making",
+            "Empowerment: Building on strengths"
+          ],
+          "duration": 18,
+          "imageUrl": "../images/videos/lesson-3-3/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-3",
+          "sceneNumber": 3,
+          "narration": "Begin by ensuring immediate safety. Is the abuser present or nearby? Is it safe to talk now? Can they speak freely? Provide a private, comfortable space. Recognize that emotional safety matters too. Your calm, non-judgmental presence contributes to feeling safe.",
+          "visualDescription": "Watercolor illustration of protective shelter or safe space formed by gentle teal walls with opening showing cream light inside and purple exterior with peach atmospheric glow. Centered composition. Symbolic representation of creating safe space for disclosure. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Creating Safety",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-3-3/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-4",
+          "sceneNumber": 4,
+          "narration": "The most powerful response is simple belief. Say I believe you. Validate their feelings and experiences. Acknowledge the courage it took to disclose. Clearly state that the abuse is not their fault. Many survivors have never heard these messages before.",
+          "visualDescription": "Watercolor painting of two silhouettes facing each other with one extending supportive hand to other positioned on RIGHT SIDE of frame. Teal and purple silhouettes with cream light of validation flowing between them against peach watercolor background. Support, belief theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Believe and Validate",
+          "bullets": [
+            "Believe their story without questioning",
+            "Validate their feelings and experiences",
+            "Acknowledge their courage in disclosing",
+            "Affirm that abuse is not their fault"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-3-3/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-5",
+          "sceneNumber": 5,
+          "narration": "Avoid common harmful responses. Never ask why they stayed or didn't leave sooner. Don't minimize their experience or compare to others. Don't tell them what to do or push your timeline. Avoid expressing shock or anger that might feel like judgment. Don't badmouth the abuser.",
+          "visualDescription": "Watercolor painting of cracked or broken ground with teal and purple fissures showing what not to step on with cream light showing safe path around cracks positioned on LEFT SIDE of frame. Peach background. Avoiding harmful responses theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "What Not to Say",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-3/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-6",
+          "sceneNumber": 6,
+          "narration": "Practice active listening without interrupting. Use open body language. Provide verbal acknowledgments like I hear you or that sounds really difficult. Reflect back what you're hearing. Allow silence when needed. Focus entirely on them, not on formulating your response.",
+          "visualDescription": "Watercolor illustration of two silhouettes in attentive conversation with one listening intently positioned on RIGHT SIDE of frame. Teal listener leaning slightly forward, purple speaker, with cream light of attention and connection between them. Peach atmospheric background. Active listening theme. LEFT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Active Listening Skills",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-3/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-7",
+          "sceneNumber": 7,
+          "narration": "Respect that survivors are experts on their own situations and relationships. They understand risks and barriers you may not see. Honor their decisions even when you disagree. Provide information and options, but let them choose. Respecting autonomy counteracts the control they experience.",
+          "visualDescription": "Watercolor painting of figure standing at crossroads with multiple paths choosing their own direction with teal and purple pathways and cream light illuminating options positioned on LEFT SIDE of frame. Peach sky above. Autonomy, choice theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Respect Their Choices",
+          "bullets": [
+            "They are the expert on their situation",
+            "Honor their decisions, even if you disagree",
+            "Provide information, not directives",
+            "Support their autonomy"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-3-3/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-8",
+          "sceneNumber": 8,
+          "narration": "Use respectful, empowering language. Say survivor or person experiencing abuse rather than victim when possible. Avoid dramatic language that sensationalizes. Use their preferred pronouns and terms. Be mindful of cultural context. Language shapes how people understand their experiences.",
+          "visualDescription": "Watercolor illustration of gentle flowing river with teal and purple water moving smoothly with cream light reflecting on surface suggesting careful, respectful communication. Peach sky above. Centered composition. Symbolic representation of appropriate language flow. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Appropriate Language",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-3-3/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-9",
+          "sceneNumber": 9,
+          "narration": "When you suspect abuse, asking directly is appropriate. Use private settings. Ask open-ended questions like Are you safe at home? Has your partner hurt or threatened you? Frame questions non-judgmentally. If they're not ready to disclose, respect that and leave the door open for future conversations.",
+          "visualDescription": "Watercolor painting of opening door with teal frame showing cream light streaming through with purple and peach atmospheric space beyond positioned on RIGHT SIDE of frame. Opening for disclosure theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Asking About Abuse",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-3/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-10",
+          "sceneNumber": 10,
+          "narration": "Provide comprehensive resource information. The National Domestic Violence Hotline at one eight hundred seven nine nine seven two three three offers twenty-four seven support. Local IPV organizations provide advocacy. Legal aid assists with protection orders. Mental health services address trauma. Emergency shelters offer safety. Give resources even if not ready to use them now.",
+          "visualDescription": "Watercolor painting of multiple pathways or roads extending from center outward like rays with teal and purple paths illuminated by cream light showing options positioned on LEFT SIDE of frame. Peach atmospheric background. Resources, multiple options theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Providing Resources",
+          "bullets": [
+            "National Hotline: 1-800-799-7233",
+            "Local IPV advocacy organizations",
+            "Legal aid and protection orders",
+            "Counseling and support groups",
+            "Emergency shelter information"
+          ],
+          "duration": 20,
+          "imageUrl": "../images/videos/lesson-3-3/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-10.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-11",
+          "sceneNumber": 11,
+          "narration": "Make warm referrals when possible. Don't just hand out numbers. Offer to call while they're with you. Introduce them to advocates. Explain what to expect. Follow up to ensure they connected. Warm referrals dramatically increase the likelihood people will access specialized services.",
+          "visualDescription": "Watercolor illustration of bridge being built connecting one shore to another with teal and purple construction elements and cream light showing the helpful connection forming. Peach sky above. Centered composition. Symbolic representation of connecting to resources. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Warm Referrals",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-3-3/scene-11.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-11.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-12",
+          "sceneNumber": 12,
+          "narration": "Recognize what you can and can't do. You're not an IPV specialist, investigator, or therapist. Your role is to listen, believe, provide resources, and support. Don't try to fix everything yourself. Know when to refer to specialists. Maintain appropriate professional boundaries.",
+          "visualDescription": "Watercolor painting of figure standing at clear boundary line with teal and purple zones clearly defined and cream light illuminating the appropriate professional space positioned on RIGHT SIDE of frame. Peach atmospheric background. Boundaries, appropriate role theme. LEFT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Understanding Your Role and Limits",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-3-3/scene-12.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-12.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-13",
+          "sceneNumber": 13,
+          "narration": "Understand your jurisdiction's mandatory reporting requirements. Some professionals must report IPV to authorities. Know what you're required to report, to whom, and when. If mandatory reporting applies, explain this before disclosure. Balance legal obligations with survivor autonomy and safety as much as possible.",
+          "visualDescription": "Watercolor painting of scales balancing competing priorities with teal and purple balance arms holding legal obligation and survivor safety with cream light at fulcrum positioned on LEFT SIDE of frame. Peach background. Balance, legal requirements theme. RIGHT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Mandatory Reporting",
+          "bullets": [],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-3-3/scene-13.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-13.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-14",
+          "sceneNumber": 14,
+          "narration": "Supporting IPV survivors can cause vicarious trauma. Practice self-care. Seek supervision and debriefing. Maintain boundaries. Connect with colleagues. Recognize your emotional responses. You can't support others effectively if you don't care for yourself. Preventing burnout ensures sustained, quality support.",
+          "visualDescription": "Watercolor illustration of protective circle with teal and purple boundary surrounding cream light representing self-care space with peach atmospheric environment beyond. Centered composition. Symbolic representation of protecting helper wellbeing. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Self-Care for Helpers",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-3-3/scene-14.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-14.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-3-3-scene-15",
+          "sceneNumber": 15,
+          "narration": "Your response to IPV disclosure can be transformative. A single supportive conversation can help someone recognize abuse, access resources, or begin their journey to safety. By applying trauma-informed principles and appropriate responses, you become part of the solution to intimate partner violence.",
+          "visualDescription": "Watercolor painting of multiple silhouettes standing together on rising ground moving toward bright cream and peach horizon with teal and purple supportive figures helping each other forward. Centered composition. Collective impact, hope, professional response theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "final",
+          "heading": "Making a Difference",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-3-3/scene-15.png",
+          "audioUrl": "../audio/videos/lesson-3-3/scene-15.mp3",
+          "templateHTML": null
+        }
+      ]
+    },
+    {
+      "videoId": "lesson-final-assessment",
+      "lessonId": "lesson-final-assessment",
+      "title": "Course Completion and Assessment",
+      "totalDuration": 132,
+      "scenes": [
+        {
+          "id": "lesson-final-assessment-scene-1",
+          "sceneNumber": 1,
+          "narration": "Congratulations on completing this comprehensive training on recognizing and responding to intimate partner violence. You've gained knowledge and skills that can make a real difference in survivors' lives. Let's review what we've covered and prepare for the final assessment.",
+          "visualDescription": "Watercolor painting of sunrise over mountain peaks with teal and purple mountains against cream and peach sky suggesting completion of journey. Centered composition. Achievement, completion theme with painterly textures and visible brushstrokes. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "Course Completion",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-final-assessment/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-final-assessment/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-final-assessment-scene-2",
+          "sceneNumber": 2,
+          "narration": "In Module One, you learned to recognize intimate partner violence in its many forms. You explored five types of abuse, studied the Power and Control Wheel, understood different IPV patterns, and applied your knowledge to the Sumpter case.",
+          "visualDescription": "Watercolor painting of silhouette in confident recognition pose with hand shading eyes looking toward horizon positioned on LEFT SIDE of frame. Teal silhouette with cream light illuminating discovered knowledge against purple and peach watercolor background. Recognition, awareness theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Module 1: Recognition",
+          "bullets": [
+            "Types of abuse: Physical, emotional, economic, sexual, technological",
+            "Power and Control Wheel framework",
+            "IPV categorization and escalation patterns",
+            "Case analysis skills"
+          ],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-final-assessment/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-final-assessment/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-final-assessment-scene-3",
+          "sceneNumber": 3,
+          "narration": "Module Two deepened your understanding of sexual violence within intimate relationships. You learned consent principles, explored how rape culture enables violence, and recognized the unique dynamics and barriers surrounding intimate partner sexual assault.",
+          "visualDescription": "Watercolor illustration of protective boundary being established with teal and purple elements forming respectful space around cream light representing autonomy. Peach atmospheric background positioned on RIGHT SIDE of frame. Consent, boundaries theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Module 2: Sexual Violence",
+          "bullets": [
+            "Comprehensive definition of sexual violence",
+            "Understanding consent (FRIES)",
+            "Rape culture and societal attitudes",
+            "Unique aspects of intimate partner sexual assault"
+          ],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-final-assessment/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-final-assessment/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-final-assessment-scene-4",
+          "sceneNumber": 4,
+          "narration": "In Module Three, you developed response skills. You learned about IPV's multifaceted impacts, how to facilitate safety planning, and trauma-informed principles for supporting survivors. You now understand how to respond compassionately and effectively.",
+          "visualDescription": "Watercolor painting of two silhouettes in supportive partnership with one helping other stand positioned on LEFT SIDE of frame. Teal and purple silhouettes with cream light flowing between showing support against peach watercolor background. Support, response theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features or clothing details. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Module 3: Response",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-final-assessment/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-final-assessment/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-final-assessment-scene-5",
+          "sceneNumber": 5,
+          "narration": "Remember the key frameworks you've learned. The Power and Control Wheel for analyzing abusive dynamics. The Equality Wheel for healthy alternatives. The five principles of trauma-informed care. FRIES for understanding consent. These tools guide professional practice.",
+          "visualDescription": "Watercolor illustration of interconnected gear wheels in teal and purple working together with cream light showing connection points against peach watercolor background. Centered composition. Symbolic representation of frameworks working together. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Key Frameworks to Remember",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-final-assessment/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-final-assessment/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-final-assessment-scene-6",
+          "sceneNumber": 6,
+          "narration": "Keep these critical concepts central to your practice. IPV is fundamentally about power and control. Abuse extends beyond physical violence. Leaving is extremely dangerous. Survivors' autonomy must be respected. Your trauma-informed response can change outcomes and save lives.",
+          "visualDescription": "Watercolor painting of lighthouse with strong teal tower and bright cream beacon cutting through purple and peach atmospheric conditions positioned on RIGHT SIDE of frame. Guidance, key principles theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Critical Concepts",
+          "bullets": [
+            "IPV is about power and control, not anger",
+            "Abuse takes many forms beyond physical",
+            "Leaving is the most dangerous time",
+            "Survivors' choices deserve respect",
+            "Your response can be transformative"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-final-assessment/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-final-assessment/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-final-assessment-scene-7",
+          "sceneNumber": 7,
+          "narration": "The true value of this training comes from application. Use your knowledge to screen patients, recognize warning signs, respond supportively to disclosures, facilitate safety planning, and connect people to resources. You're now equipped to make a difference.",
+          "visualDescription": "Watercolor painting of silhouette in action pose taking a purposeful step forward positioned on LEFT SIDE of frame. Teal silhouette moving toward cream light with determination against purple and peach watercolor background. Action, application theme. RIGHT SIDE empty for text overlay. Painterly style. No facial features. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Applying Your Knowledge",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-final-assessment/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-final-assessment/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-final-assessment-scene-8",
+          "sceneNumber": 8,
+          "narration": "The final assessment contains twenty questions covering all three modules. You'll need seventy percent to pass. Questions test your understanding of concepts, frameworks, and appropriate responses. If you don't pass initially, you can review materials and retake the assessment.",
+          "visualDescription": "Watercolor illustration of ascending steps or ladder with teal and purple steps leading upward toward cream light representing assessment completion. Peach atmospheric background. Centered composition. Progress toward completion theme. Painterly style. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "About the Final Assessment",
+          "bullets": [
+            "20 questions covering all modules",
+            "Multiple choice format",
+            "Passing score: 70%",
+            "You may retake if needed"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-final-assessment/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-final-assessment/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-final-assessment-scene-9",
+          "sceneNumber": 9,
+          "narration": "This training is a beginning, not an endpoint. Continue learning through specialized IPV trainings, consultation with advocates, staying current on research, and reflecting on your practice. The National Domestic Violence Hotline and local organizations offer ongoing professional education.",
+          "visualDescription": "Watercolor painting of open pathways extending into distance with teal and purple paths continuing forward illuminated by cream light toward peach horizon positioned on RIGHT SIDE of frame. Ongoing learning, continued growth theme. LEFT SIDE empty for text overlay. Painterly style. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Resources for Ongoing Learning",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-final-assessment/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-final-assessment/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-final-assessment-scene-10",
+          "sceneNumber": 10,
+          "narration": "You now have the knowledge and tools to recognize and respond effectively to intimate partner violence. Your awareness, compassion, and appropriate action can help survivors find safety, access resources, and begin healing. Thank you for your commitment to ending intimate partner violence.",
+          "visualDescription": "Watercolor painting of diverse silhouettes standing together in unified formation on hilltop with cream and peach light radiating outward from group. Teal and purple silhouettes of varied heights showing collective impact. Centered composition. Hope, professional commitment, collective change theme with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "final",
+          "heading": "You Can Make a Difference",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-final-assessment/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-final-assessment/scene-10.mp3",
+          "templateHTML": null
+        }
+      ]
+    },
+    {
+      "videoId": "lesson-intro-1",
+      "lessonId": "lesson-intro-1",
+      "title": "Introduction: What is Intimate Partner Violence?",
+      "totalDuration": 156,
+      "scenes": [
+        {
+          "id": "lesson-intro-1-scene-1",
+          "sceneNumber": 1,
+          "narration": "Welcome to this essential training on recognizing and responding to intimate partner violence. In the next few lessons, you'll gain critical knowledge to support those affected by IPV.",
+          "visualDescription": "Watercolor painting of winding illuminated path ascending through misty mountains toward sunrise. Path glows with soft teal and cream light leading toward peach horizon. Purple mountain silhouettes with atmospheric haze. Centered composition. Hopeful, empowering mood with painterly textures and visible brushstrokes. No text or letters visible.",
+          "templateName": "intro",
+          "heading": "Understanding Intimate Partner Violence",
+          "bullets": [],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-intro-1/scene-1.png",
+          "audioUrl": "../audio/videos/lesson-intro-1/scene-1.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-intro-1-scene-2",
+          "sceneNumber": 2,
+          "narration": "Intimate partner violence includes physical, sexual, and emotional abuse. It encompasses economic control and represents a pattern of power and control rather than isolated incidents. IPV affects people across all demographics and communities.",
+          "visualDescription": "Watercolor painting of diverse human silhouettes standing in supportive circle positioned on LEFT SIDE of frame. Solid teal and purple silhouettes against cream watercolor background with peach atmospheric washes. Varied heights suggesting diversity. Simple clean outlines, no facial features or clothing details. RIGHT HALF empty for text overlay. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "What is IPV?",
+          "bullets": [
+            "Physical, sexual, emotional abuse",
+            "Economic control and coercion",
+            "Pattern of power and control"
+          ],
+          "duration": 18,
+          "imageUrl": "../images/videos/lesson-intro-1/scene-2.png",
+          "audioUrl": "../audio/videos/lesson-intro-1/scene-2.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-intro-1-scene-3",
+          "sceneNumber": 3,
+          "narration": "The statistics are sobering. Research shows that one in four women and one in seven men will experience severe intimate partner violence in their lifetime. This issue transcends age, race, socioeconomic status, and sexual orientation.",
+          "visualDescription": "Watercolor illustration of glowing constellation pattern with connected stars and light rays positioned on RIGHT SIDE of frame. Soft teal and purple stars connected by cream light rays against peach watercolor background. Abstract representation of widespread impact. LEFT SIDE empty for text overlay. Painterly style with organic edges. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "The Scope of IPV",
+          "bullets": [
+            "1 in 4 women experience severe IPV",
+            "1 in 7 men experience severe IPV",
+            "Occurs across all demographics"
+          ],
+          "duration": 17,
+          "imageUrl": "../images/videos/lesson-intro-1/scene-3.png",
+          "audioUrl": "../audio/videos/lesson-intro-1/scene-3.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-intro-1-scene-4",
+          "sceneNumber": 4,
+          "narration": "As professionals in healthcare, social services, or human resources, you're often the first point of contact for someone experiencing abuse. Your ability to recognize the signs can be life-changing.",
+          "visualDescription": "Watercolor painting of single silhouette with one arm extended forward reaching toward light, other hand at heart, positioned on RIGHT SIDE of frame. Teal silhouette with cream light rays emanating from extended hand against purple and peach watercolor background. Empowering, purposeful mood. LEFT SIDE empty for diagonal text overlay. No facial features. No text or letters visible.",
+          "templateName": "diagonal-badge",
+          "heading": "Why Recognition Matters",
+          "bullets": [],
+          "duration": 13,
+          "imageUrl": "../images/videos/lesson-intro-1/scene-4.png",
+          "audioUrl": "../audio/videos/lesson-intro-1/scene-4.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-intro-1-scene-5",
+          "sceneNumber": 5,
+          "narration": "IPV manifests in many forms. Physical violence ranges from pushing to severe assault. Emotional abuse includes manipulation, threats, and isolation from support networks. Sexual violence involves any unwanted sexual contact. Economic abuse restricts financial independence and freedom.",
+          "visualDescription": "Watercolor painting of two silhouettes facing each other in supportive dialogue positioned on LEFT SIDE of frame. Solid teal silhouettes with soft light rays connecting between them symbolizing communication. Purple and peach watercolor background with cream highlights. Empowering, connected mood. RIGHT SIDE empty for text overlay. No facial features or details. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Multiple Forms of Abuse",
+          "bullets": [
+            "Physical violence and intimidation",
+            "Emotional manipulation and isolation",
+            "Sexual coercion without consent",
+            "Financial control restricting independence"
+          ],
+          "duration": 18,
+          "imageUrl": "../images/videos/lesson-intro-1/scene-5.png",
+          "audioUrl": "../audio/videos/lesson-intro-1/scene-5.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-intro-1-scene-6",
+          "sceneNumber": 6,
+          "narration": "What distinguishes IPV from isolated conflicts is the pattern of power and control. One partner systematically dominates and controls the other through various tactics we'll explore in detail.",
+          "visualDescription": "Watercolor illustration of protective circular mandala pattern with geometric teal and purple shapes arranged in concentric circles around cream light center. Peach and purple atmospheric watercolor background. Centered composition. Symbolic representation of control dynamics. Painterly style with organic edges. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Power and Control",
+          "bullets": [],
+          "duration": 12,
+          "imageUrl": "../images/videos/lesson-intro-1/scene-6.png",
+          "audioUrl": "../audio/videos/lesson-intro-1/scene-6.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-intro-1-scene-7",
+          "sceneNumber": 7,
+          "narration": "The impact on survivors extends far beyond physical injuries. Victims often experience profound psychological trauma, PTSD, depression, and anxiety. They may face social isolation as abusers cut them off from family and friends. Economic abuse creates financial dependence that makes leaving extremely difficult.",
+          "visualDescription": "Watercolor painting of single silhouette in contemplative pose with head bowed, hands clasped, positioned on RIGHT SIDE of frame. Teal silhouette surrounded by soft purple and peach watercolor washes suggesting processing and reflection. Cream light beginning to emerge above. LEFT SIDE empty for text overlay. Empathetic, respectful mood. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Impact on Survivors",
+          "bullets": [
+            "Physical injuries and chronic health issues",
+            "Psychological trauma and PTSD",
+            "Social isolation from support systems",
+            "Economic dependence and instability"
+          ],
+          "duration": 18,
+          "imageUrl": "../images/videos/lesson-intro-1/scene-7.png",
+          "audioUrl": "../audio/videos/lesson-intro-1/scene-7.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-intro-1-scene-8",
+          "sceneNumber": 8,
+          "narration": "Your role isn't to solve the problem yourself. It's to recognize the signs, respond with trauma-informed care, provide resources, and empower survivors to make their own decisions about their safety.",
+          "visualDescription": "Watercolor painting of silhouette standing confidently with hands on hips positioned on LEFT SIDE of frame. Solid teal silhouette against cream and peach watercolor background with purple atmospheric accents. Confident, professional posture. RIGHT SIDE empty for text overlay. Painterly style with soft edges. No facial features or clothing details. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Your Role as a Professional",
+          "bullets": [],
+          "duration": 14,
+          "imageUrl": "../images/videos/lesson-intro-1/scene-8.png",
+          "audioUrl": "../audio/videos/lesson-intro-1/scene-8.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-intro-1-scene-9",
+          "sceneNumber": 9,
+          "narration": "Throughout this course, we'll emphasize trauma-informed principles. This means prioritizing safety and trust, respecting survivor autonomy, collaborating rather than directing, and maintaining cultural sensitivity. Survivors are experts on their own situations.",
+          "visualDescription": "Watercolor painting of three silhouettes in varied heights standing together in supportive line with shoulders gently touching, positioned on RIGHT SIDE of frame. Solid teal and purple silhouettes against cream watercolor background with peach atmospheric washes. Community support theme. LEFT SIDE empty for text overlay. No facial features. No text or letters visible.",
+          "templateName": "split-right",
+          "heading": "Trauma-Informed Approach",
+          "bullets": [
+            "Safety and trustworthiness first",
+            "Respect survivor autonomy and choice",
+            "Collaborate rather than direct",
+            "Cultural sensitivity and awareness"
+          ],
+          "duration": 16,
+          "imageUrl": "../images/videos/lesson-intro-1/scene-9.png",
+          "audioUrl": "../audio/videos/lesson-intro-1/scene-9.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-intro-1-scene-10",
+          "sceneNumber": 10,
+          "narration": "Critical resources exist to support survivors. The National Domestic Violence Hotline provides twenty-four-seven confidential support. Local advocacy organizations offer safety planning, legal assistance, and emergency shelter.",
+          "visualDescription": "Watercolor illustration of open doorway with warm cream and peach light streaming through, positioned centrally. Teal and purple architectural elements framing the doorway against soft watercolor background. Symbolic representation of access to help and new possibilities. Hopeful, welcoming mood. Painterly style with visible brushstrokes. No text or letters visible.",
+          "templateName": "diagonal",
+          "heading": "Resources and Support",
+          "bullets": [],
+          "duration": 12,
+          "imageUrl": "../images/videos/lesson-intro-1/scene-10.png",
+          "audioUrl": "../audio/videos/lesson-intro-1/scene-10.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-intro-1-scene-11",
+          "sceneNumber": 11,
+          "narration": "In Module One, you'll learn to recognize IPV patterns using evidence-based frameworks. Module Two covers intimate partner sexual violence. Module Three teaches trauma-informed response strategies including safety planning.",
+          "visualDescription": "Watercolor painting of ascending staircase into soft clouds with light positioned on LEFT SIDE of frame. Stairs glow with teal and cream light ascending toward peach sky. Purple cloud formations. Journey and progression theme. RIGHT SIDE empty for text overlay. Painterly style with soft organic edges. No text or letters visible.",
+          "templateName": "split-left",
+          "heading": "Course Journey Ahead",
+          "bullets": [
+            "Module 1: Recognizing IPV patterns",
+            "Module 2: Understanding sexual violence",
+            "Module 3: Responding with trauma-informed care"
+          ],
+          "duration": 15,
+          "imageUrl": "../images/videos/lesson-intro-1/scene-11.png",
+          "audioUrl": "../audio/videos/lesson-intro-1/scene-11.mp3",
+          "templateHTML": null
+        },
+        {
+          "id": "lesson-intro-1-scene-12",
+          "sceneNumber": 12,
+          "narration": "You're about to gain knowledge that can save lives. By completing this training, you'll be better equipped to recognize intimate partner violence and respond in ways that empower survivors. Let's begin.",
+          "visualDescription": "Watercolor painting of single silhouette with arms raised upward in empowering celebration gesture. Teal silhouette with radiating cream and peach light rays against purple watercolor background. Centered composition. Uplifting, inspiring mood with painterly textures and visible brushstrokes. No facial features or clothing details. No text or letters visible.",
+          "templateName": "final",
+          "heading": "Ready to Make a Difference",
+          "bullets": [],
+          "duration": 12,
+          "imageUrl": "../images/videos/lesson-intro-1/scene-12.png",
+          "audioUrl": "../audio/videos/lesson-intro-1/scene-12.mp3",
+          "templateHTML": null
+        }
+      ]
+    }
+  ]
+}

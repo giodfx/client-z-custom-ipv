@@ -1,0 +1,4408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IPV Recognition & Response Course">
+    <title>Sexual Violence in Our Society - IPV Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* ═══════════════════════════════════════════════════════════════
+           CSS CUSTOM PROPERTIES (Design Tokens)
+           ═══════════════════════════════════════════════════════════════ */
+        :root {
+            /* Colors - Ethereal Depth Palette */
+            --color-deep-navy: #1a1a2e;
+            --color-twilight-purple: #2a1a3e;
+            --color-ocean-blue: #2a5a7a;
+            --color-teal: #38b2ac;
+            --color-bright-cyan: #80ffff;
+            --color-warm-gold: #ffd700;
+            --color-soft-peach: #ffd4b8;
+            --color-white: #ffffff;
+            --color-light-gray: #f5f5f7;
+            --color-text: #1a1a2e;
+            --color-text-muted: #6b7280;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-error: #ef4444;
+
+            /* Module Zone Colors */
+            --zone-surface: #38b2ac;
+            --zone-twilight: #4a90a8;
+            --zone-deep: #2a5a7a;
+
+            /* Typography */
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-size-xs: 0.75rem;    /* 12px */
+            --font-size-sm: 0.875rem;   /* 14px */
+            --font-size-base: 1rem;     /* 16px */
+            --font-size-lg: 1.125rem;   /* 18px */
+            --font-size-xl: 1.25rem;    /* 20px */
+            --font-size-2xl: 1.5rem;    /* 24px */
+            --font-size-3xl: 1.875rem;  /* 30px */
+            --font-size-4xl: 2.25rem;   /* 36px */
+            --line-height-tight: 1.25;
+            --line-height-normal: 1.5;
+            --line-height-relaxed: 1.75;
+
+            /* Spacing */
+            --space-1: 0.25rem;
+            --space-2: 0.5rem;
+            --space-3: 0.75rem;
+            --space-4: 1rem;
+            --space-5: 1.25rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-10: 2.5rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+
+            /* Borders & Radius */
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --radius-2xl: 1.5rem;
+            --radius-full: 9999px;
+
+            /* Shadows */
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px rgba(0,0,0,0.15);
+
+            /* Transitions */
+            --transition-fast: 150ms ease;
+            --transition-base: 250ms ease;
+            --transition-slow: 350ms ease;
+
+            /* Layout */
+            --content-max-width: 720px;
+            --sidebar-width: 280px;
+            
+            --min-tap-target: 44px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           RESET & BASE STYLES
+           ═══════════════════════════════════════════════════════════════ */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        /* Respect user motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-normal);
+            color: var(--color-text);
+            background: url('../media/backgrounds/lesson-bg-clean.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           ACCESSIBILITY: Skip Link
+           ═══════════════════════════════════════════════════════════════ */
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: var(--space-4);
+            z-index: 9999;
+            padding: var(--space-3) var(--space-4);
+            background: var(--color-teal);
+            color: var(--color-white);
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            transition: top var(--transition-fast);
+        }
+
+        .skip-link:focus {
+            top: var(--space-4);
+            outline: 3px solid var(--color-warm-gold);
+            outline-offset: 2px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           ACCESSIBILITY: Focus Styles
+           ═══════════════════════════════════════════════════════════════ */
+        :focus {
+            outline: none;
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--color-teal);
+            outline-offset: 2px;
+        }
+
+        button:focus-visible,
+        a:focus-visible,
+        [tabindex]:focus-visible {
+            outline: 3px solid var(--color-teal);
+            outline-offset: 2px;
+        }
+
+        
+        
+        
+        /* ═══════════════════════════════════════════════════════════════
+           HERO SECTION (with integrated navigation)
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-hero {
+            position: relative;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(42, 90, 122, 0.7)), center center / cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 0 0 var(--radius-2xl) var(--radius-2xl);
+            overflow: hidden;
+        }
+
+        .lesson-hero-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: var(--space-4) var(--space-6);
+            gap: var(--space-4);
+            z-index: 10;
+        }
+
+        .hero-back-button {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-3);
+            border: none;
+            background: #38b2ac;
+            backdrop-filter: blur(10px);
+            color: var(--color-white);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            min-height: var(--min-tap-target);
+            text-decoration: none;
+        }
+
+        .hero-back-button:hover {
+            background: #2a5a7a;
+            transform: translateX(-2px);
+        }
+
+        .hero-back-button svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .hero-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            text-decoration: none;
+            color: var(--color-white);
+        }
+
+        .hero-logo-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: var(--font-size-lg);
+        }
+
+        .hero-logo-text {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--color-white);
+        }
+
+        .lesson-hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px var(--space-6) var(--space-6);
+        }
+
+        .lesson-hero-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            margin-bottom: var(--space-3);
+            font-size: var(--font-size-sm);
+        }
+
+        .lesson-hero-breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color var(--transition-base);
+        }
+
+        .lesson-hero-breadcrumb a:hover {
+            color: var(--color-white);
+        }
+
+        .lesson-hero-breadcrumb span {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .lesson-hero-breadcrumb span[aria-current] {
+            color: var(--color-white);
+            font-weight: 500;
+        }
+
+        .lesson-hero-title {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            color: var(--color-white);
+            line-height: var(--line-height-tight);
+            margin: 0;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .lesson-hero {
+                height: 240px;
+            }
+
+            .lesson-hero-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: var(--space-4) var(--space-6);
+            gap: var(--space-4);
+            z-index: 10;
+        }
+
+            .hero-back-button span {
+                display: none;
+            }
+
+            .hero-back-button {
+                width: var(--min-tap-target);
+                height: var(--min-tap-target);
+                padding: 0;
+                justify-content: center;
+            }
+
+            .hero-logo-text {
+                font-size: var(--font-size-sm);
+            }
+
+            .hero-logo-icon {
+                width: 32px;
+                height: 32px;
+                font-size: var(--font-size-base);
+            }
+
+            .lesson-hero-content {
+                padding: 0 var(--space-4) var(--space-4);
+            }
+
+            .lesson-hero-title {
+                font-size: var(--font-size-2xl);
+            }
+        }
+
+/* ═══════════════════════════════════════════════════════════════
+           MAIN CONTENT AREA
+           ═══════════════════════════════════════════════════════════════ */
+        .main-content {
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           VIEW: MODULE LESSONS
+           ═══════════════════════════════════════════════════════════════ */
+        .module-view {
+            display: block;
+        }
+
+        .module-hero {
+            position: relative;
+            height: 280px;
+            background: url('../media/heroes/lesson-2-2-hero.png') top center / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: var(--space-8);
+        }
+
+        .module-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26,26,46,0.9) 0%, rgba(26,26,46,0.4) 50%, transparent 100%);
+        }
+
+        .module-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .module-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: rgba(255,255,255,0.7);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-3);
+        }
+
+        .module-breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .module-breadcrumb a:hover {
+            color: var(--color-white);
+            text-decoration: underline;
+        }
+
+        .module-title {
+            color: var(--color-white);
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            margin-bottom: var(--space-2);
+        }
+
+        .module-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-4);
+            color: rgba(255,255,255,0.8);
+            font-size: var(--font-size-sm);
+        }
+
+        .module-meta-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        /* Lessons Grid */
+        .lessons-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--space-8) var(--space-4);
+        }
+
+        .lessons-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-6);
+        }
+
+        .lessons-title {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+        }
+
+        .lessons-progress {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+        }
+
+        .progress-bar {
+            width: 120px;
+            height: 8px;
+            background: rgba(0,0,0,0.1);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--color-teal);
+            border-radius: var(--radius-full);
+            transition: width var(--transition-slow);
+        }
+
+        /* Lesson Cards */
+        .lessons-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+        }
+
+        .lesson-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-5);
+            display: flex;
+            gap: var(--space-4);
+            align-items: flex-start;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .lesson-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .lesson-card:focus-visible {
+            outline: 3px solid var(--color-teal);
+            outline-offset: 2px;
+        }
+
+        .lesson-number {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--zone-surface), var(--color-ocean-blue));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: var(--font-size-lg);
+        }
+
+        .lesson-number.completed {
+            background: var(--color-success);
+        }
+
+        .lesson-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .lesson-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: var(--space-3);
+            margin-bottom: var(--space-1);
+        }
+
+        .lesson-name {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .lesson-duration {
+            flex-shrink: 0;
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+            display: flex;
+            align-items: center;
+            gap: var(--space-1);
+        }
+
+        .lesson-description {
+            color: var(--color-text-muted);
+            font-size: var(--font-size-sm);
+            line-height: var(--line-height-relaxed);
+            margin-bottom: var(--space-3);
+        }
+
+        .lesson-status {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--font-size-xs);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .lesson-status.not-started {
+            color: var(--color-text-muted);
+        }
+
+        .lesson-status.in-progress {
+            color: var(--color-teal);
+        }
+
+        .lesson-status.completed {
+            color: var(--color-success);
+        }
+
+        .lesson-arrow {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            color: var(--color-text-muted);
+            align-self: center;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           VIEW: LESSON CONTENT
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-view {
+            display: none;
+        }
+
+        .lesson-view.active {
+            display: block;
+        }
+
+        .module-view.hidden {
+            display: none;
+        }
+
+        .lesson-hero {
+            position: relative;
+            height: 200px;
+            background:  url('../media/heroes/lesson-2-2-hero.png') top center / cover no-repeat;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-end;
+            padding: var(--space-6) var(--space-4);
+        }
+
+        .lesson-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26,26,46,0.85) 0%, rgba(26,26,46,0.3) 60%, transparent 100%);
+        }
+
+        .lesson-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: var(--content-max-width);
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .lesson-hero-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: rgba(255,255,255,0.7);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-2);
+        }
+
+        .lesson-hero-breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .lesson-hero-breadcrumb a:hover {
+            color: var(--color-white);
+        }
+
+        .lesson-hero-title {
+            color: var(--color-white);
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+        }
+
+        /* Lesson Content Layout */
+        .lesson-layout {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: var(--space-8);
+            padding: var(--space-8) var(--space-4);
+        }
+
+        .lesson-main {
+            flex: 1;
+            /* Removed max-width to allow content to match hero width */
+        }
+
+        .lesson-sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+        }
+
+        /* Article Content */
+        .lesson-article {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .lesson-article h2 {
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: var(--space-4);
+            margin-top: var(--space-8);
+        }
+
+        .lesson-article h2:first-child {
+            margin-top: 0;
+        }
+
+        .lesson-article h3 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: var(--space-3);
+            margin-top: var(--space-6);
+        }
+
+        .lesson-article p {
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-relaxed);
+            color: var(--color-text);
+            margin-bottom: var(--space-4);
+        }
+
+        .lesson-article ul, .lesson-article ol {
+            margin-bottom: var(--space-4);
+            padding-left: var(--space-6);
+        }
+
+        .lesson-article li {
+            margin-bottom: var(--space-2);
+            line-height: var(--line-height-relaxed);
+        }
+
+        .lesson-article blockquote {
+            border-left: 4px solid var(--color-teal);
+            padding-left: var(--space-4);
+            margin: var(--space-6) 0;
+            font-style: italic;
+            color: var(--color-text-muted);
+        }
+
+        /* Content Warning */
+        .content-warning {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: var(--radius-lg);
+            padding: var(--space-4);
+            margin: var(--space-6) 0;
+        }
+
+        .content-warning-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: var(--space-2);
+        }
+
+        .content-warning p {
+            color: #92400e;
+            margin-bottom: var(--space-3);
+        }
+
+        .content-warning-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+
+        .cw-button {
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            cursor: pointer;
+            min-height: var(--min-tap-target);
+            transition: all var(--transition-fast);
+        }
+
+        .cw-button-primary {
+            background: #92400e;
+            color: var(--color-white);
+            border: none;
+        }
+
+        .cw-button-primary:hover {
+            background: #78350f;
+        }
+
+        .cw-button-secondary {
+            background: transparent;
+            color: #92400e;
+            border: 1px solid #92400e;
+        }
+
+        .cw-button-secondary:hover {
+            background: rgba(146, 64, 14, 0.1);
+        }
+
+        /* Key Points Box */
+        .key-points {
+            background: linear-gradient(135deg, rgba(56,178,172,0.1), rgba(42,90,122,0.1));
+            border-radius: var(--radius-lg);
+            padding: var(--space-5);
+            margin: var(--space-6) 0;
+        }
+
+        .key-points-title {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-weight: 600;
+            color: var(--color-teal);
+            margin-bottom: var(--space-3);
+        }
+
+        .key-points ul {
+            margin: 0;
+            padding-left: var(--space-5);
+        }
+
+        .key-points li {
+            color: var(--color-text);
+        }
+
+        /* Sidebar Resource Card */
+        .resource-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-5);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: calc(var(--header-height) + var(--space-4));
+        }
+
+        .resource-card-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-weight: 600;
+            color: var(--color-teal);
+            margin-bottom: var(--space-4);
+            padding-bottom: var(--space-3);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .resource-item {
+            margin-bottom: var(--space-4);
+        }
+
+        .resource-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .resource-label {
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-muted);
+            margin-bottom: var(--space-1);
+        }
+
+        .resource-value {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .resource-value a {
+            color: var(--color-teal);
+            text-decoration: none;
+        }
+
+        .resource-value a:hover {
+            text-decoration: underline;
+        }
+
+        .resource-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+            width: 100%;
+            padding: var(--space-3);
+            background: var(--color-teal);
+            color: var(--color-white);
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: var(--space-4);
+            min-height: var(--min-tap-target);
+            transition: background var(--transition-fast);
+        }
+
+        .resource-button:hover {
+            background: var(--color-ocean-blue);
+        }
+
+        /* Lesson Navigation */
+        .lesson-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-6) 0;
+            margin-top: var(--space-8);
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .nav-button {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-3) var(--space-5);
+            background: var(--color-white);
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: var(--radius-lg);
+            color: var(--color-text);
+            font-weight: 500;
+            cursor: pointer;
+            min-height: var(--min-tap-target);
+            transition: all var(--transition-fast);
+            text-decoration: none;
+        }
+
+        .nav-button:hover {
+            border-color: var(--color-teal);
+            color: var(--color-teal);
+        }
+
+        .nav-button.primary {
+            background: var(--color-teal);
+            border-color: var(--color-teal);
+            color: var(--color-white);
+        }
+
+        .nav-button.primary:hover {
+            background: var(--color-ocean-blue);
+            border-color: var(--color-ocean-blue);
+        }
+
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Progress Footer */
+        .lesson-progress-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: rgba(0,0,0,0.1);
+            z-index: 50;
+        }
+
+        .lesson-progress-fill {
+            height: 100%;
+            background: var(--color-teal);
+            transition: width var(--transition-base);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           MOBILE RESPONSIVE STYLES
+           ═══════════════════════════════════════════════════════════════ */
+        @media (max-width: 768px) {
+            .lesson-layout {
+                flex-direction: column;
+            }
+
+            /* Sidebar is now handled by hamburger menu - see MOBILE HAMBURGER MENU section */
+
+            .resource-card {
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                
+            }
+
+            .header {
+                padding: 0 var(--space-3);
+            }
+
+            .logo-text {
+                display: none;
+            }
+
+            .module-hero {
+                height: 220px;
+                padding: var(--space-4);
+            }
+
+            .module-title {
+                font-size: var(--font-size-2xl);
+            }
+
+            .module-meta {
+                gap: var(--space-3);
+            }
+
+            .lessons-container {
+                padding: var(--space-4);
+            }
+
+            .lesson-card {
+                flex-direction: column;
+                gap: var(--space-3);
+            }
+
+            .lesson-number {
+                width: 40px;
+                height: 40px;
+                font-size: var(--font-size-base);
+            }
+
+            .lesson-title-row {
+                flex-direction: column;
+                gap: var(--space-1);
+            }
+
+            .lesson-arrow {
+                display: none;
+            }
+
+            .lesson-hero {
+                height: 160px;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: var(--space-4);
+            }
+
+            .lesson-hero-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .lesson-layout {
+                padding: var(--space-4);
+                gap: var(--space-4);
+            }
+
+            .lesson-article {
+                padding: var(--space-5);
+            }
+
+            .lesson-article h2 {
+                font-size: var(--font-size-lg);
+            }
+
+            .lesson-nav {
+                flex-direction: column;
+                gap: var(--space-3);
+            }
+
+            .nav-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .module-hero {
+                height: 200px;
+            }
+
+            .module-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .module-meta-item span:not(.icon) {
+                font-size: var(--font-size-xs);
+            }
+
+            .lessons-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--space-3);
+            }
+
+            .help-button span {
+                display: none;
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           UTILITY CLASSES
+           ═══════════════════════════════════════════════════════════════ */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .icon-sm {
+            width: 16px;
+            height: 16px;
+        }
+
+        .icon-lg {
+            width: 24px;
+            height: 24px;
+        }
+    
+        /* ═══════════════════════════════════════════════════════════════
+           LESSON NAVIGATION SIDEBAR
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-nav-sidebar {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-4);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: calc(var(--header-height) + var(--space-4));
+            max-height: calc(100vh - var(--header-height) - var(--space-8));
+            overflow-y: auto;
+        }
+
+        .nav-header {
+            padding-bottom: var(--space-4);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            margin-bottom: var(--space-4);
+        }
+
+        .nav-back-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: var(--color-teal);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+            transition: color var(--transition-fast);
+        }
+
+        .nav-back-link:hover {
+            color: var(--zone-twilight);
+        }
+
+        .nav-back-link svg {
+            flex-shrink: 0;
+        }
+
+        .nav-module {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-4);
+            box-shadow: var(--shadow-md);
+            margin-bottom: var(--space-3);
+        }
+
+        .nav-module-trigger {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            width: 100%;
+            padding: var(--space-3);
+            background: rgba(56, 178, 172, 0.08);
+            border: 1px solid rgba(56, 178, 172, 0.2);
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            font-family: var(--font-family);
+        }
+
+
+
+
+
+        .nav-module-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: var(--color-teal);
+            color: white;
+            border-radius: 50%;
+            font-size: var(--font-size-xs);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .nav-module-title {
+            flex: 1;
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+            color: var(--color-text);
+            text-align: left;
+        }
+
+        .nav-expand-icon {
+            flex-shrink: 0;
+            transition: transform var(--transition-base);
+        }
+
+        .nav-module.active .nav-expand-icon {
+            transform: rotate(180deg);
+        }
+
+        .nav-lessons {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            margin-top: 0;
+        }
+
+        .nav-module.active .nav-lessons {
+            max-height: 500px;
+            opacity: 1;
+            margin-top: var(--space-3);
+        }
+
+        .nav-lesson-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-3);
+            margin: var(--space-1) 0;
+            margin-left: var(--space-6);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: var(--color-text-muted);
+            font-size: var(--font-size-sm);
+            transition: all var(--transition-fast);
+            border-left: 3px solid transparent;
+        }
+
+        .nav-lesson-link:hover {
+            background: rgba(56, 178, 172, 0.08);
+            color: var(--color-text);
+            border-left-color: rgba(56, 178, 172, 0.3);
+        }
+
+        .nav-lesson-link.current {
+            background: rgba(56, 178, 172, 0.12);
+            color: var(--color-teal);
+            font-weight: 600;
+            border-left-color: var(--color-teal);
+        }
+
+        .nav-lesson-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background: rgba(56, 178, 172, 0.2);
+            color: var(--color-teal);
+            border-radius: 50%;
+            font-size: 11px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .nav-lesson-link.current .nav-lesson-number {
+            background: var(--color-teal);
+            color: white;
+        }
+
+        .nav-lesson-title {
+            flex: 1;
+            line-height: 1.3;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .lesson-nav-sidebar {
+                position: static;
+            }
+        }
+
+        /* END LESSON NAVIGATION SIDEBAR */
+
+
+        /* ═══════════════════════════════════════════════════════════════
+           MOBILE HAMBURGER MENU
+           ═══════════════════════════════════════════════════════════════ */
+        .mobile-menu-toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-md);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: background var(--transition-fast);
+        }
+
+        .mobile-menu-toggle:hover {
+            background: var(--color-light-gray);
+        }
+
+        .mobile-menu-toggle:active {
+            background: rgba(0,0,0,0.1);
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 3px;
+            background: var(--color-text);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger span:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        .mobile-menu-toggle.active .hamburger span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .mobile-menu-toggle.active .hamburger span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle.active .hamburger span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        .mobile-nav-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-nav-overlay.active {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .lesson-sidebar {
+                position: fixed;
+                top: var(--header-height);
+                left: 0;
+                bottom: 0;
+                width: 280px;
+                max-width: 85vw;
+                background: var(--color-white);
+                z-index: 999;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                overflow-y: auto;
+                box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+                order: 0;
+                padding: var(--space-4);
+            }
+
+            .lesson-sidebar.active {
+                transform: translateX(0);
+            }
+
+            .mobile-nav-overlay {
+                display: block;
+            }
+
+            .lesson-layout {
+                flex-direction: column;
+            }
+
+            .lesson-main {
+                width: 100%;
+            }
+        }
+
+        /* END MOBILE HAMBURGER MENU */
+
+        
+        /* ═══════════════════════════════════════════════════════════════
+           LESSON CONTENT VISUAL STRUCTURE
+           ═══════════════════════════════════════════════════════════════ */
+
+        /* Major section headers (h2) - Add top border and spacing */
+        .lesson-article h2 {
+            padding-top: var(--space-8);
+            margin-top: var(--space-10);
+            border-top: 3px solid #e5e7eb;
+        }
+
+        .lesson-article h2:first-of-type {
+            border-top: none;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        /* Subsection headers (h3) - Lighter visual separation */
+        .lesson-article h3 {
+            padding: var(--space-4);
+            background: linear-gradient(135deg, #f0fdfa, #ecfdf5);
+            border-left: 4px solid var(--color-teal);
+            border-radius: var(--radius-md);
+            margin-top: var(--space-6);
+            margin-bottom: var(--space-4);
+        }
+
+        /* Paragraphs after h3 - contained look */
+        .lesson-article h3 + p,
+        .lesson-article h3 + ul,
+        .lesson-article h3 + ol {
+            background: rgba(56, 178, 172, 0.03);
+            padding: var(--space-4);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-4);
+        }
+
+        /* Lists - better visual structure */
+        .lesson-article ul,
+        .lesson-article ol {
+            background: white;
+            padding: var(--space-5) var(--space-6);
+            border-left: 3px solid #e5e7eb;
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-5);
+        }
+
+        .lesson-article li {
+            padding: var(--space-2) 0;
+        }
+
+        .lesson-article li strong {
+            color: var(--color-ocean-blue);
+        }
+
+        /* Ordered lists - styled numbers */
+        .lesson-article ol {
+            counter-reset: custom-counter;
+            list-style: none;
+            padding-left: var(--space-10);
+        }
+
+        .lesson-article ol li {
+            counter-increment: custom-counter;
+            position: relative;
+            padding-left: var(--space-4);
+        }
+
+        .lesson-article ol li::before {
+            content: counter(custom-counter);
+            position: absolute;
+            left: calc(-1 * var(--space-8));
+            width: 32px;
+            height: 32px;
+            background: var(--color-teal);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+        }
+
+        /* Unordered lists - styled bullets */
+        .lesson-article ul {
+            list-style: none;
+            padding-left: var(--space-8);
+        }
+
+        .lesson-article ul li {
+            position: relative;
+        }
+
+        .lesson-article ul li::before {
+            content: '';
+            position: absolute;
+            left: calc(-1 * var(--space-5));
+            top: 14px;
+            width: 8px;
+            height: 8px;
+            background: var(--color-teal);
+            border-radius: 50%;
+        }
+
+        /* Nested lists - different styling */
+        .lesson-article ul ul,
+        .lesson-article ol ul {
+            background: transparent;
+            border-left: 2px solid #e5e7eb;
+            margin-top: var(--space-3);
+            margin-bottom: var(--space-3);
+        }
+
+        .lesson-article ul ul li::before {
+            background: transparent;
+            border: 2px solid var(--color-teal);
+        }
+
+        /* Strong text - more emphasis */
+        .lesson-article strong {
+            color: var(--color-ocean-blue);
+            font-weight: 600;
+        }
+
+        /* Paragraphs - better spacing */
+        .lesson-article p {
+            line-height: var(--line-height-relaxed);
+        }
+
+        /* Content sections - group related content */
+        .lesson-article > h2 ~ * {
+            margin-left: 0;
+        }
+
+        /* Blockquotes - more prominent */
+        .lesson-article blockquote {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border-left: 4px solid #f59e0b;
+            padding: var(--space-5);
+            margin: var(--space-6) 0;
+            border-radius: var(--radius-md);
+            font-style: italic;
+            color: #78350f;
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Add subtle separators between major content blocks */
+        .lesson-article h2 + p:first-of-type {
+            font-size: var(--font-size-lg);
+            color: var(--color-text-muted);
+            font-weight: 400;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .lesson-article h2 {
+                padding-top: var(--space-6);
+                margin-top: var(--space-8);
+                font-size: var(--font-size-xl);
+            }
+
+            .lesson-article h3 {
+                padding: var(--space-3);
+                margin-top: var(--space-5);
+            }
+
+            .lesson-article ul,
+            .lesson-article ol {
+                padding: var(--space-4);
+                padding-left: var(--space-6);
+            }
+
+            .lesson-article ol li {
+                padding-left: var(--space-3);
+            }
+
+            .lesson-article ol li::before {
+                width: 28px;
+                height: 28px;
+                font-size: 0.75rem;
+                left: calc(-1 * var(--space-6));
+            }
+        }
+
+        /* END LESSON CONTENT VISUAL STRUCTURE */
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+    
+
+/* ═══════════════════════════════════════════════════════════════
+   LESSON NAVIGATION (Next/Previous Buttons)
+   ═══════════════════════════════════════════════════════════════ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.lesson-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text, #1a1a2e);
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-nav-button:hover {
+    background: var(--color-light-gray, #f5f5f7);
+    border-color: var(--color-ocean-blue, #2a5a7a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-nav-prev {
+    justify-content: flex-start;
+}
+
+.lesson-nav-next {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.lesson-nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.lesson-nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted, #6b7280);
+}
+
+.lesson-nav-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text, #1a1a2e);
+}
+
+.lesson-nav-button svg {
+    flex-shrink: 0;
+    stroke: var(--color-ocean-blue, #2a5a7a);
+}
+
+@media (max-width: 768px) {
+    .lesson-navigation {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .lesson-nav-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .lesson-nav-next {
+        margin-left: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR TOGGLE
+   ═══════════════════════════════════════════════════════════════ */
+.desktop-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text, #1a1a2e);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+}
+
+.desktop-menu-toggle:hover {
+    background: var(--color-light-gray, #f5f5f7);
+}
+
+.desktop-menu-toggle svg {
+    display: block;
+}
+
+/* Show desktop toggle on desktop, hide mobile toggle */
+@media (min-width: 1024px) {
+    .desktop-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Sidebar hidden state for desktop */
+body.sidebar-hidden .lesson-sidebar {
+    transform: translateX(-100%);
+}
+
+body.sidebar-hidden .lesson-main {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+body.sidebar-hidden .lesson-layout {
+    grid-template-columns: 0 1fr;
+}
+
+/* Smooth transitions for sidebar toggle */
+@media (min-width: 1024px) {
+    .lesson-sidebar {
+        transition: transform 0.3s ease;
+    }
+
+    .lesson-main {
+        transition: margin-left 0.3s ease, max-width 0.3s ease;
+    }
+
+    .lesson-layout {
+        transition: grid-template-columns 0.3s ease;
+    }
+}
+
+        /* ═══════════════════════════════════════════════════════════════
+           VIDEO LESSON BLOCK
+           ═══════════════════════════════════════════════════════════════ */
+        .video-lesson-block {
+            margin: 2rem auto;
+            max-width: 1200px;
+            padding: 0 var(--space-4);
+        }
+
+        .video-placeholder-card {
+            background: linear-gradient(135deg, var(--color-deep-navy) 0%, var(--color-twilight-purple) 50%, var(--color-ocean-blue) 100%);
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            transition: transform var(--transition-base), box-shadow var(--transition-base);
+        }
+
+        .video-placeholder-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-play-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.3);
+            transition: background var(--transition-base);
+        }
+
+        .video-placeholder-card:hover .video-play-overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .video-play-button {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(56, 178, 172, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            transition: all var(--transition-base);
+            box-shadow: 0 10px 30px rgba(56, 178, 172, 0.4);
+        }
+
+        .video-placeholder-card:hover .video-play-button {
+            transform: scale(1.1);
+            background: var(--color-teal);
+            box-shadow: 0 15px 40px rgba(56, 178, 172, 0.6);
+        }
+
+        .video-info-section {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: var(--space-6);
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 70%, transparent 100%);
+        }
+
+        .video-lesson-title {
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            color: var(--color-white);
+            margin: 0 0 var(--space-3) 0;
+        }
+
+        .video-description {
+            font-size: var(--font-size-base);
+            color: rgba(255, 255, 255, 0.9);
+            line-height: var(--line-height-relaxed);
+            margin: 0 0 var(--space-4) 0;
+        }
+
+        .video-stats {
+            display: flex;
+            gap: var(--space-4);
+            align-items: center;
+        }
+
+        .video-stat {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--font-size-sm);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .video-stat svg {
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .video-lesson-block {
+                margin: 1rem 0;
+            }
+
+            .video-play-button {
+                width: 70px;
+                height: 70px;
+            }
+
+            .video-play-button svg {
+                width: 48px;
+                height: 48px;
+            }
+
+            .video-info-section {
+                padding: var(--space-4);
+            }
+
+            .video-lesson-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .video-description {
+                font-size: var(--font-size-sm);
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           WATER BUBBLES ANIMATION (Background Effect)
+           ═══════════════════════════════════════════════════════════════ */
+        .lesson-water-bubbles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .lesson-bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%,
+                rgba(200, 235, 250, 0.3) 0%,
+                rgba(160, 210, 235, 0.2) 40%,
+                rgba(140, 200, 230, 0.1) 100%);
+            border: 1px solid rgba(180, 220, 240, 0.25);
+            box-shadow:
+                inset -2px -2px 4px rgba(255, 255, 255, 0.25),
+                0 0 6px rgba(140, 200, 230, 0.15);
+        }
+
+        /* Bubble sizes */
+        .lesson-bubble.small {
+            width: 5px;
+            height: 5px;
+        }
+
+        .lesson-bubble.medium {
+            width: 8px;
+            height: 8px;
+        }
+
+        .lesson-bubble.large {
+            width: 12px;
+            height: 12px;
+        }
+
+        /* Rising animation - stops at approximately 30% from top */
+        @keyframes lessonBubbleRise1 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            10% {
+                opacity: 0.6;
+            }
+            85% {
+                opacity: 0.3;
+                bottom: 70%;
+                transform: translateX(15px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 70%;
+                transform: translateX(20px);
+            }
+        }
+
+        @keyframes lessonBubbleRise2 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            10% {
+                opacity: 0.5;
+            }
+            85% {
+                opacity: 0.25;
+                bottom: 70%;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 70%;
+                transform: translateX(-25px);
+            }
+        }
+
+        @keyframes lessonBubbleRise3 {
+            0% {
+                bottom: 0;
+                opacity: 0;
+                transform: translateX(0);
+            }
+            15% {
+                opacity: 0.6;
+            }
+            85% {
+                opacity: 0.4;
+                bottom: 70%;
+                transform: translateX(10px);
+            }
+            100% {
+                opacity: 0;
+                bottom: 70%;
+                transform: translateX(12px);
+            }
+        }
+
+        /* Left side bubbles */
+        .lesson-bubble:nth-child(1) {
+            left: 5%;
+            animation: lessonBubbleRise1 9s ease-in-out infinite;
+            animation-delay: 0s;
+        }
+
+        .lesson-bubble:nth-child(2) {
+            left: 10%;
+            animation: lessonBubbleRise2 11s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+
+        .lesson-bubble:nth-child(3) {
+            left: 3%;
+            animation: lessonBubbleRise3 8s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+
+        .lesson-bubble:nth-child(4) {
+            left: 8%;
+            animation: lessonBubbleRise1 10s ease-in-out infinite;
+            animation-delay: 3.5s;
+        }
+
+        .lesson-bubble:nth-child(5) {
+            left: 12%;
+            animation: lessonBubbleRise2 9.5s ease-in-out infinite;
+            animation-delay: 0.8s;
+        }
+
+        /* Right side bubbles */
+        .lesson-bubble:nth-child(6) {
+            left: 88%;
+            animation: lessonBubbleRise3 8.5s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+
+        .lesson-bubble:nth-child(7) {
+            left: 92%;
+            animation: lessonBubbleRise1 10.5s ease-in-out infinite;
+            animation-delay: 2.5s;
+        }
+
+        .lesson-bubble:nth-child(8) {
+            left: 95%;
+            animation: lessonBubbleRise2 9s ease-in-out infinite;
+            animation-delay: 0.5s;
+        }
+
+        .lesson-bubble:nth-child(9) {
+            left: 90%;
+            animation: lessonBubbleRise3 7.5s ease-in-out infinite;
+            animation-delay: 3s;
+        }
+
+        .lesson-bubble:nth-child(10) {
+            left: 85%;
+            animation: lessonBubbleRise1 11s ease-in-out infinite;
+            animation-delay: 1.8s;
+        }
+
+        .lesson-bubble:nth-child(11) {
+            left: 7%;
+            animation: lessonBubbleRise2 10s ease-in-out infinite;
+            animation-delay: 4s;
+        }
+
+        .lesson-bubble:nth-child(12) {
+            left: 93%;
+            animation: lessonBubbleRise3 8.8s ease-in-out infinite;
+            animation-delay: 2.2s;
+        }
+
+        /* Hide bubbles on mobile to reduce visual clutter */
+        @media (max-width: 768px) {
+            .lesson-water-bubbles {
+                display: none;
+            }
+        }
+
+    </style>
+  <link rel="stylesheet" href="../css/video-player.css">
+</head>
+<body>
+    <!-- Water Bubbles Background Effect -->
+    <div class="lesson-water-bubbles" aria-hidden="true">
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble large"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble large"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+        <div class="lesson-bubble small"></div>
+        <div class="lesson-bubble medium"></div>
+    </div>
+
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content" role="main">
+        <div class="lesson-view active">
+            <!-- Lesson Hero -->
+            <section class="lesson-hero">
+                <div class="lesson-hero-nav">
+                    <a href="../index.html" class="hero-back-button" aria-label="Back to course home">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        <span>Back</span>
+                    </a>
+                    <a href="../index.html" class="hero-logo" aria-label="Salus Community Home">
+                        <div class="hero-logo-icon">S</div>
+                        <span class="hero-logo-text">Salus Community</span>
+                    </a>
+                </div>
+                <div class="lesson-hero-content">
+                    <nav class="lesson-hero-breadcrumb" aria-label="Breadcrumb">
+                        <a href="../index.html">Home</a>
+                        <span>›</span>
+                        <a href="../index.html#twilight">Module 2</a>
+                        <span>›</span>
+                        <span aria-current="page">Lesson 2</span>
+                    </nav>
+                    <h1 class="lesson-hero-title">Sexual Violence in Our Society</h1>
+                </div>
+            </section>
+<!-- Lesson Layout -->
+
+
+<div class="lesson-layout">
+                <!-- Sidebar -->
+                <aside class="lesson-sidebar" aria-label="Course navigation">
+
+    <nav class="lesson-nav-sidebar" aria-label="Course navigation">
+        <div class="nav-header">
+            <a href="../index.html" class="nav-back-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Course Overview
+            </a>
+        </div>
+
+        <div class="nav-module " data-module="1">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(1)" aria-expanded="false">
+                <span class="nav-module-number">1</span>
+                <span class="nav-module-title">Introduction</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-1">
+                <a href="lesson-intro-1.html" class="nav-lesson-link ">
+                    <span class="nav-lesson-number">1</span>
+                    <span class="nav-lesson-title">Introduction: What is Intimate Partner Violence?</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-module " data-module="2">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(2)" aria-expanded="false">
+                <span class="nav-module-number">2</span>
+                <span class="nav-module-title">MODULE 1: Recognizing Intimate Partner Violence</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-2">
+                <a href="lesson-1-1.html" class="nav-lesson-link "><span class="nav-lesson-number">1</span><span class="nav-lesson-title">Who is Affected by Intimate Partner Violence?</span></a>
+                <a href="lesson-1-2.html" class="nav-lesson-link "><span class="nav-lesson-number">2</span><span class="nav-lesson-title">Types of Abuse</span></a>
+                <a href="lesson-1-3.html" class="nav-lesson-link "><span class="nav-lesson-number">3</span><span class="nav-lesson-title">Power and Control Wheel</span></a>
+                <a href="lesson-1-4.html" class="nav-lesson-link "><span class="nav-lesson-number">4</span><span class="nav-lesson-title">Categorizing Intimate Partner Violence</span></a>
+                <a href="lesson-1-5.html" class="nav-lesson-link "><span class="nav-lesson-number">5</span><span class="nav-lesson-title">Case Analysis: Lois and James Sumpter</span></a>
+            </div>
+        </div>
+
+        <div class="nav-module active" data-module="3">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(3)" aria-expanded="true">
+                <span class="nav-module-number">3</span>
+                <span class="nav-module-title">MODULE 2: Intimate Partner Sexual Violence</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-3">
+                <a href="lesson-2-1.html" class="nav-lesson-link "><span class="nav-lesson-number">1</span><span class="nav-lesson-title">What is Sexual Violence?</span></a>
+                <a href="lesson-2-2.html" class="nav-lesson-link current"><span class="nav-lesson-number">2</span><span class="nav-lesson-title">Sexual Violence in Our Society</span></a>
+                <a href="lesson-2-3.html" class="nav-lesson-link "><span class="nav-lesson-number">3</span><span class="nav-lesson-title">Rape and Sexual Assault in the Context of Intimate Partner Violence</span></a>
+            </div>
+        </div>
+
+        <div class="nav-module " data-module="4">
+            <button class="nav-module-trigger" onclick="toggleSidebarModule(4)" aria-expanded="false">
+                <span class="nav-module-number">4</span>
+                <span class="nav-module-title">MODULE 3: Responding to Intimate Partner Violence</span>
+                <svg class="nav-expand-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                </svg>
+            </button>
+            <div class="nav-lessons" id="nav-module-4">
+                <a href="lesson-3-1.html" class="nav-lesson-link "><span class="nav-lesson-number">1</span><span class="nav-lesson-title">The Impact of Intimate Partner Violence on Victims</span></a>
+                <a href="lesson-3-2.html" class="nav-lesson-link "><span class="nav-lesson-number">2</span><span class="nav-lesson-title">Safety Planning with Victims</span></a>
+                <a href="lesson-3-3.html" class="nav-lesson-link "><span class="nav-lesson-number">3</span><span class="nav-lesson-title">Responding to Someone Experiencing Intimate Partner Violence</span></a>
+            </div>
+        </div>
+
+    </nav>
+
+                </aside>
+
+                <!-- Main Lesson Content -->
+                <div class="lesson-main">
+                    <div class="lesson-article">
+      <!-- Video Introduction Section -->
+      <section class="video-player-section" data-lesson-video="lesson-2-2">
+        <div class="video-header">
+          <h2 class="video-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            Sexual Violence in Our Society
+          </h2>
+          <span class="video-duration">2:54</span>
+        </div>
+
+        <div class="video-container">
+          <div class="video-scenes" id="video-lesson-2-2">
+            
+            <div class="video-scene template-intro" data-scene="0" data-duration="15" data-template="intro" data-script="Sexual violence doesn't happen in a vacuum. It occurs within a societal context that often minimizes, normalizes, or excuses it. This environment is called rape culture. Understanding these cultural factors helps us challenge them effectively.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-2-2-scene-1.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Understanding Rape Culture</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-2-2-intro.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="1" data-duration="17" data-template="split-left" data-script="Rape culture refers to social attitudes and practices that normalize, trivialize, or excuse sexual violence. It includes victim-blaming, perpetrator excuses, objectification, and the pervasive message that sexual assault is inevitable. These attitudes create an environment where violence thrives.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-2-2-scene-2.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">What is Rape Culture?</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>Attitudes that normalize sexual violence</li>
+                    <li>Victim-blaming and perpetrator excuses</li>
+                    <li>Trivializing sexual assault</li>
+                    <li>Society that tolerates abuse</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-2-2-section-1.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="2" data-duration="15" data-template="split-right" data-script="Victim-blaming shifts responsibility from perpetrators to survivors. Questions about what the victim wore, drank, or did communicate that assault is somehow the victim's fault. This silences survivors, protects perpetrators, and reinforces the false idea that certain behaviors cause rape.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-2-2-scene-3.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Victim-Blaming</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-2-2-section-1.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-diagonal" data-scene="3" data-duration="16" data-template="diagonal" data-script="Rape culture normalizes behaviors that exist on the continuum of sexual violence. Catcalling becomes flattery. Sexual jokes are just humor. Objectification is entertainment. Boys will be boys excuses disrespectful behavior. These attitudes create environments where serious violence becomes possible.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-2-2-scene-4.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Normalizing Sexual Harassment</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>Catcalling and unwanted comments</li>
+                    <li>Sexual jokes that demean</li>
+                    <li>Objectification in media and advertising</li>
+                    <li>Boys will be boys attitudes</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-2-2-section-1.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="4" data-duration="14" data-template="split-left" data-script="The rape culture pyramid illustrates how attitudes and behaviors build on each other. At the base are sexist jokes and objectifying comments. These support escalating behaviors. At the apex is sexual violence. The foundation enables the peak.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-2-2-scene-5.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">The Rape Culture Pyramid</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-2-2-section-2.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="5" data-duration="15" data-template="split-right" data-script="The pyramid's foundation includes seemingly minor behaviors. Sexist jokes that demean women. Rigid gender stereotypes. Sexual objectification. Victim-blaming language. These create a cultural environment where sexual violence becomes normalized and perpetrators feel entitled.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-2-2-scene-6.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Pyramid Foundation Level</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>Sexist attitudes and jokes</li>
+                    <li>Gender stereotypes and roles</li>
+                    <li>Objectification and harassment</li>
+                    <li>Victim-blaming language</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-2-2-section-2.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-diagonal" data-scene="6" data-duration="14" data-template="diagonal" data-script="The middle levels involve more direct behaviors. Unwanted sexual comments and advances. Verbal sexual harassment. Non-consensual intimate images. Sexual coercion and pressure. These behaviors escalate from the foundation and support more severe violence above.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-2-2-scene-7.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Pyramid Middle Levels</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-2-2-section-2.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="7" data-duration="15" data-template="split-left" data-script="At the pyramid's top sits sexual violence, rape, and assault. These acts don't emerge from nowhere. They're supported and enabled by all the attitudes and behaviors below. Understanding this structure helps us intervene at multiple levels to prevent violence.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-2-2-scene-8.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Pyramid Apex: Sexual Violence</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-2-2-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-right" data-scene="8" data-duration="15" data-template="split-right" data-script="Media often perpetuates rape culture. Movies romanticize persistence that crosses into coercion. News coverage focuses on perpetrator potential rather than their choices. Advertising uses sexual objectification. These messages shape our cultural attitudes about sexual violence and consent.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-2-2-scene-9.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Media and Rape Culture</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-2-2-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-diagonal" data-scene="9" data-duration="17" data-template="diagonal" data-script="Rape culture profoundly impacts survivors. Many don't report because they fear blame or disbelief. They internalize shame for something done to them. Their trauma is minimized. Meanwhile, perpetrators face few consequences. This environment prioritizes perpetrator comfort over survivor justice.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-2-2-scene-10.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">How Rape Culture Affects Survivors</h2>
+                  
+                  <ul class="scene-bullets">
+                    <li>Discourages reporting and help-seeking</li>
+                    <li>Increases shame and self-blame</li>
+                    <li>Minimizes trauma impact</li>
+                    <li>Protects perpetrators</li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-2-2-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-split-left" data-scene="10" data-duration="16" data-template="split-left" data-script="We can challenge rape culture through our words and actions. Interrupt sexist jokes. Call out victim-blaming. Believe survivors. Hold perpetrators accountable. Teach comprehensive consent education. Model respectful relationships. Cultural change happens through individual choices multiplied across communities.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-2-2-scene-11.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Challenging Rape Culture</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-2-2-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+
+            <div class="video-scene template-final" data-scene="11" data-duration="15" data-template="final" data-script="The alternative to rape culture is a culture of consent, respect, and equality. This means centering survivor voices, teaching enthusiastic consent, challenging harmful attitudes, and creating accountability for perpetrators. As professionals, we contribute to this cultural shift through our responses to sexual violence.">
+              <div class="scene-background animate-ken-burns" style="background-image: url('../media/scene-images/lesson-2-2-scene-12.png')"></div>
+              <div class="scene-overlay">
+                <div class="scene-content">
+                  <h2 class="scene-heading">Creating a Culture of Consent</h2>
+                  
+                </div>
+              </div>
+              <audio class="scene-audio" preload="auto">
+                <source src="../media/audio/lesson-2-2-section-3.wav" type="audio/wav">
+              </audio>
+            </div>
+          </div>
+
+          <!-- Closed Captions Display -->
+          <div class="video-caption hidden">
+            <div class="video-caption-text"></div>
+          </div>
+
+          <div class="video-controls">
+            <button class="video-btn video-prev" title="Previous Slide" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+
+            <button class="video-btn video-play-pause" title="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                <rect x="6" y="4" width="4" height="16"/>
+                <rect x="14" y="4" width="4" height="16"/>
+              </svg>
+            </button>
+
+            <button class="video-btn video-next" title="Next Slide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+
+            <div class="video-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+              </div>
+              <span class="progress-text">Slide 1 of 12</span>
+            </div>
+
+            <div class="video-volume">
+              <button class="video-btn video-volume-btn" title="Volume">
+                <svg class="icon-volume-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+                <svg class="icon-volume-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <line x1="23" y1="9" x2="17" y2="15"/>
+                  <line x1="17" y1="9" x2="23" y2="15"/>
+                </svg>
+              </button>
+              <input type="range" class="video-volume-slider" min="0" max="1" step="0.1" value="1">
+            </div>
+
+            <button class="video-btn video-cc" title="Captions (C)">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 7H9.5v-.5h-2v3h2V13H11v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1zm7 0h-1.5v-.5h-2v3h2V13H18v1c0 .55-.45 1-1 1h-3c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1z"/>
+              </svg>
+            </button>
+
+            <button class="video-btn video-fullscreen" title="Fullscreen (F)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      </section>
+
+                        <h2>Understanding Rape Culture</h2>
+<div style="background: linear-gradient(135deg, #f0fdfa, #ecfdf5); padding: 1.5rem; border-left: 4px solid #38b2ac; border-radius: 0.5rem; margin: 2rem 0; font-style: italic;">
+  <h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">Sexual Violence in Our Society</h3>
+</div>
+<div style="margin: 2rem 0;"><p>Violence against women is based upon the idea of unequal power between men and women, a message that has been used by society throughout history.</p>
+</div><div style="margin: 2rem 0;"><p><strong>Rape culture</strong> is a term used to describe an environment where sexual violence against women is normalized and excused in the media and popular culture. It is perpetuated through:</p>
+</div>
+
+<!-- Rape Culture Perpetuation Badges -->
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0 2.5rem 0; justify-content: center;">
+  <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); padding: 1rem 1.5rem; border-radius: 10px; border-left: 4px solid #f59e0b; box-shadow: 0 2px 4px rgba(0,0,0,0.1); flex: 1; min-width: 250px;">
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <div style="background: #f59e0b; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+      <div>
+        <div style="font-weight: 600; color: #92400e; margin-bottom: 0.25rem;">Misogynistic Language</div>
+        <div style="font-size: 0.875rem; color: #78350f;">Words that demean and devalue women</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background: linear-gradient(135deg, #fed7aa, #fdba74); padding: 1rem 1.5rem; border-radius: 10px; border-left: 4px solid #f97316; box-shadow: 0 2px 4px rgba(0,0,0,0.1); flex: 1; min-width: 250px;">
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <div style="background: #f97316; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+      <div>
+        <div style="font-weight: 600; color: #7c2d12; margin-bottom: 0.25rem;">Objectification of Women's Bodies</div>
+        <div style="font-size: 0.875rem; color: #9a3412;">Treating women as objects rather than people</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background: linear-gradient(135deg, #fecaca, #fca5a5); padding: 1rem 1.5rem; border-radius: 10px; border-left: 4px solid #ef4444; box-shadow: 0 2px 4px rgba(0,0,0,0.1); flex: 1; min-width: 250px;">
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <div style="background: #ef4444; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+      <div>
+        <div style="font-weight: 600; color: #7f1d1d; margin-bottom: 0.25rem;">Glamorization of Sexual Violence</div>
+        <div style="font-size: 0.875rem; color: #991b1b;">Portraying violence as acceptable or desirable</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="margin: 2rem 0;"><h3 style="color: var(--color-ocean-blue); margin-top: 1.5rem; margin-bottom: 0.75rem; font-weight: 600;">The Rape Culture Pyramid</h3>
+</div><div style="margin: 2rem 0;"><p>The Rape Culture Pyramid, created by the <strong>11th Principle: Consent</strong> advocacy group, shows how gender stereotypes can perpetuate abusive and violent behaviors at many levels.</p>
+</div>
+
+<!-- Interactive Rape Culture Pyramid -->
+<div id="pyramid-container" style="margin: 3rem auto; max-width: 900px; transition: all 0.4s ease;">
+  <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <p style="text-align: center; color: #6b7280; font-size: 0.875rem; margin-bottom: 1.5rem;">Click each tier to explore how behaviors escalate</p>
+
+    <div style="position: relative; width: 100%; max-width: 650px; margin: 0 auto; min-height: 400px;">
+      <!-- Pyramid SVG -->
+      <svg id="pyramid-svg" viewBox="0 0 500 400" style="width: 100%; height: auto; display: block; transition: opacity 0.4s ease;" role="img" aria-label="Interactive Rape Culture Pyramid showing three tiers of escalating behaviors">
+
+        <!-- Gradients -->
+        <defs>
+          <linearGradient id="gradientRed" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#fca5a5;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+          </linearGradient>
+          <linearGradient id="gradientOrange" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#fdba74;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+          </linearGradient>
+          <linearGradient id="gradientYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#fde68a;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+
+        <!-- Bottom Tier - Foundation (Yellow) - Full pyramid -->
+        <polygon
+          points="250,40 60,370 440,370"
+          fill="url(#gradientYellow)"
+          stroke="none"
+          opacity="0.9"
+        />
+
+        <!-- Middle Tier - Escalating (Orange) -->
+        <polygon
+          points="250,40 120,260 380,260"
+          fill="url(#gradientOrange)"
+          stroke="none"
+          opacity="0.9"
+        />
+
+        <!-- Top Tier - Violence (Red) -->
+        <polygon
+          points="250,40 180,140 320,140"
+          fill="url(#gradientRed)"
+          stroke="none"
+          opacity="0.9"
+        />
+
+        <!-- White divider lines -->
+        <line x1="180" y1="140" x2="320" y2="140" stroke="#ffffff" stroke-width="3" opacity="0.7" pointer-events="none" />
+        <line x1="120" y1="260" x2="380" y2="260" stroke="#ffffff" stroke-width="3" opacity="0.7" pointer-events="none" />
+
+        <!-- Clickable overlay for Violence tier -->
+        <polygon
+          points="250,40 180,140 320,140"
+          fill="transparent"
+          onclick="togglePyramidDetail('violence')"
+          onkeydown="handlePyramidKeydown(event, 'violence')"
+          tabindex="0"
+          role="button"
+          aria-label="Top tier: Sexual assault, rape, and sexual violence. Click to learn more."
+          style="cursor: pointer;"
+        />
+
+        <!-- Clickable overlay for Escalation tier -->
+        <polygon
+          points="180,145 120,260 380,260 320,145"
+          fill="transparent"
+          onclick="togglePyramidDetail('escalation')"
+          onkeydown="handlePyramidKeydown(event, 'escalation')"
+          tabindex="0"
+          role="button"
+          aria-label="Middle tier: Victim blaming, slut-shaming, and denial of rape culture. Click to learn more."
+          style="cursor: pointer;"
+        />
+
+        <!-- Clickable overlay for Foundation tier -->
+        <polygon
+          points="120,265 60,370 440,370 380,265"
+          fill="transparent"
+          onclick="togglePyramidDetail('foundation')"
+          onkeydown="handlePyramidKeydown(event, 'foundation')"
+          tabindex="0"
+          role="button"
+          aria-label="Foundation tier: Gender stereotypes, sexist jokes, and objectification. Click to learn more."
+          style="cursor: pointer;"
+        />
+
+        <!-- Text Labels -->
+        <text x="250" y="80" text-anchor="middle" fill="#7f1d1d" font-weight="bold" font-size="18" pointer-events="none">VIOLENCE</text>
+        <text x="250" y="102" text-anchor="middle" fill="#991b1b" font-size="12" pointer-events="none">Sexual Assault • Rape</text>
+
+        <text x="250" y="185" text-anchor="middle" fill="#7c2d12" font-weight="bold" font-size="18" pointer-events="none">ESCALATING</text>
+        <text x="250" y="210" text-anchor="middle" fill="#9a3412" font-size="11" pointer-events="none">Victim Blaming • Slut-Shaming</text>
+        <text x="250" y="228" text-anchor="middle" fill="#9a3412" font-size="11" pointer-events="none">Denial of Rape Culture</text>
+
+        <text x="250" y="305" text-anchor="middle" fill="#78350f" font-weight="bold" font-size="18" pointer-events="none">FOUNDATION</text>
+        <text x="250" y="330" text-anchor="middle" fill="#92400e" font-size="11" pointer-events="none">Gender Stereotypes • Sexist Jokes</text>
+        <text x="250" y="350" text-anchor="middle" fill="#92400e" font-size="11" pointer-events="none">Objectification</text>
+      </svg>
+
+      <!-- Content Overlay -->
+      <div id="pyramid-detail-overlay" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; border-radius: 12px; padding: 2rem; max-width: 500px; width: 90%; box-shadow: 0 8px 24px rgba(0,0,0,0.2); z-index: 10; opacity: 0; transition: opacity 0.4s ease;">
+        <!-- Close Button -->
+        <button onclick="closePyramidDetail()" style="position: absolute; top: 0.75rem; right: 0.75rem; background: none; border: none; cursor: pointer; color: #6b7280; font-size: 1.5rem; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 6px; transition: all 0.2s;" onmouseover="this.style.background='#f3f4f6'" onmouseout="this.style.background='none'" aria-label="Close detail view">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;">
+            <path d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+
+        <!-- Content will be inserted here -->
+        <div id="pyramid-detail-content"></div>
+      </div>
+    </div>
+
+    <!-- Key Insights Below Pyramid -->
+    <div style="background: linear-gradient(135deg, #fff7ed, #ffedd5); padding: 1.25rem; border-radius: 10px; border-left: 4px solid #f97316; margin-top: 2rem;">
+      <p style="margin: 0; color: #7c2d12; font-size: 0.9375rem; line-height: 1.6;">
+        <strong style="color: #9a3412;">Key Insight:</strong> All layers are interconnected. To prevent violence at the top, we must challenge harmful beliefs and behaviors at the foundation.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div style="margin: 2rem 0;"><p>Once you know what rape culture is, it may be overwhelming to see how common these behaviors are and how "normal" they are considered in our society.</p>
+</div>
+
+
+<h2>Challenging Rape Culture</h2>
+<div style="margin: 2rem 0;"><h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">Taking Action Against Harmful Norms</h3>
+</div><div style="margin: 2rem 0;"><p>It is not easy to challenge rape culture, especially for those who have intentionally or unintentionally perpetuated it. It is important, however, to still have these conversations and call out sexist language or behaviors, no matter how small they seem.</p>
+</div><div style="margin: 2rem 0;"><h4 style="color: var(--color-ocean-blue); margin-top: 1.5rem; margin-bottom: 0.75rem; font-weight: 600;">Impact on All Genders</h4>
+</div><div style="margin: 2rem 0;"><p>It is also important to recognize these harmful beliefs affect individuals of any gender, not just women and girls. Because of this, there are many organizations led by men that focus on spreading awareness about the impact of rigid gender stereotypes and the effect it can have on men and boys.</p>
+</div><div style="margin: 2rem 0;"><p><strong>Gender Stereotypes Harm Everyone:</strong></p>
+</div><ul>
+<li>Boys and men are told to suppress emotions ("boys don't cry")</li>
+<li>Men are expected to be aggressive and dominant</li>
+<li>Showing vulnerability is seen as weakness</li>
+<li>These expectations contribute to violence and harm</li>
+</ul>
+<div style="margin: 2rem 0;"><p>The "Boys Don't Cry" campaign from White Ribbon shows how gender stereotypes impact the way men and boys act in our society. It captures many of the concepts in the Rape Culture Pyramid and how harmful behaviors and mindsets can build to sexual violence.</p>
+</div>
+
+
+<h2>Prevention Through Education</h2>
+<div style="margin: 2rem 0;"><h3 style="color: var(--color-teal); margin-top: 2rem; margin-bottom: 1rem;">Preventing Sexual Violence and Rape Culture</h3>
+</div><div style="margin: 2rem 0;"><p>The "Boys Don't Cry" initiative seeks to prevent sexual violence by breaking down common stereotypes and behaviors that often reinforce rape culture. By educating the public through common images and familiar language, this effort aims to lead to awareness and prevention behaviors rather than behaviors that reinforce rape culture.</p>
+</div><div style="margin: 2rem 0;"><p><strong>Ultimately, prevention must include education, both formal and informal.</strong></p>
+</div><div style="margin: 2rem 0;"><h4 style="color: var(--color-ocean-blue); margin-top: 1.5rem; margin-bottom: 0.75rem; font-weight: 600;">How Allies and Advocates Can Participate:</h4>
+</div><div style="margin: 2rem 0;"><p>- <strong>Talking about rape culture and gender-based violence with others</strong> - Break the silence and normalize these important conversations</p>
+</div><div style="margin: 2rem 0;"><p>- <strong>Challenging sexist comments in conversations</strong> - Speak up when you hear jokes, language, or attitudes that perpetuate harm</p>
+</div><div style="margin: 2rem 0;"><p>- <strong>Knowing your local resources</strong> - Be prepared to connect survivors with appropriate support</p>
+</div><div style="margin: 2rem 0;"><h4 style="color: var(--color-ocean-blue); margin-top: 1.5rem; margin-bottom: 0.75rem; font-weight: 600;">Creating Change</h4>
+</div><div style="margin: 2rem 0;"><p>In the next section, you focus on how the concepts you have encountered thus far relate to the intersection of intimate partner violence and sexual assault and how to respond and help survivors experiencing intimate partner sexual violence.</p>
+</div><div style="margin: 2rem 0;"><p>As professionals like Maria, Dr. Patel, Aisha, or James, you have opportunities every day to challenge rape culture, educate others, and support survivors. Small actions at every community level create ripple effects that can transform society.</p>
+</div>
+
+
+
+                        
+<div class="quiz-container" style="background: white; padding: 2rem; border-radius: 0.75rem; margin: 2rem 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #38b2ac;">
+  <div class="quiz-header" style="margin-bottom: 2rem; text-align: center;">
+    <h2 style="color: #38b2ac; margin-bottom: 0.5rem;">Quiz</h2>
+    <p class="quiz-progress" style="color: #6b7280; font-size: 0.875rem;">Question <span id="current-question">1</span> of 3</p>
+  </div>
+
+<div class="quiz-question" data-question-number="1" style="display: block;">
+  <h3 style="margin-bottom: 1rem; color: #38b2ac;">Rape Culture Definition</h3>
+  <p style="margin-bottom: 1.5rem; color: #374151; font-size: 1.125rem;">What is rape culture?</p>
+  <div class="knowledge-check" data-question-index="0">
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="0"
+             data-correct="false"
+             data-feedback="✗ Incorrect. RAPE CULTURE is an environment where sexual violence against women is NORMALIZED and EXCUSED in the media and popular culture. It is perpetuated through misogynistic language, objectification of women's bodies, and glamorization of sexual violence. Understanding rape culture helps us recognize how societal attitudes and beliefs create the foundation for violence and how challenging these attitudes is essential for prevention."
+             aria-label="A legal term for prosecuting sexual assault cases"
+             style="margin-right: 0.75rem;">
+      <span>A legal term for prosecuting sexual assault cases</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="1"
+             data-correct="true"
+             data-feedback="✓ Correct! RAPE CULTURE is an environment where sexual violence against women is NORMALIZED and EXCUSED in the media and popular culture. It is perpetuated through misogynistic language, objectification of women's bodies, and glamorization of sexual violence. Understanding rape culture helps us recognize how societal attitudes and beliefs create the foundation for violence and how challenging these attitudes is essential for prevention."
+             aria-label="An environment where sexual violence against women is normalized and excused in media and popular culture"
+             style="margin-right: 0.75rem;">
+      <span>An environment where sexual violence against women is normalized and excused in media and popular culture</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="2"
+             data-correct="false"
+             data-feedback="✗ Incorrect. RAPE CULTURE is an environment where sexual violence against women is NORMALIZED and EXCUSED in the media and popular culture. It is perpetuated through misogynistic language, objectification of women's bodies, and glamorization of sexual violence. Understanding rape culture helps us recognize how societal attitudes and beliefs create the foundation for violence and how challenging these attitudes is essential for prevention."
+             aria-label="A culture that only exists in certain communities"
+             style="margin-right: 0.75rem;">
+      <span>A culture that only exists in certain communities</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-0" value="3"
+             data-correct="false"
+             data-feedback="✗ Incorrect. RAPE CULTURE is an environment where sexual violence against women is NORMALIZED and EXCUSED in the media and popular culture. It is perpetuated through misogynistic language, objectification of women's bodies, and glamorization of sexual violence. Understanding rape culture helps us recognize how societal attitudes and beliefs create the foundation for violence and how challenging these attitudes is essential for prevention."
+             aria-label="A term used only by feminists to blame men"
+             style="margin-right: 0.75rem;">
+      <span>A term used only by feminists to blame men</span>
+    </label>
+
+    <div class="question-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+  </div>
+</div>
+
+<div class="quiz-question" data-question-number="2" style="display: none;">
+  <h3 style="margin-bottom: 1rem; color: #38b2ac;">Rape Culture Pyramid</h3>
+  <p style="margin-bottom: 1.5rem; color: #374151; font-size: 1.125rem;">According to the Rape Culture Pyramid, why must we address beliefs and attitudes at the foundation level?</p>
+  <div class="knowledge-check" data-question-index="1">
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="0"
+             data-correct="false"
+             data-feedback="✗ Incorrect. According to the Rape Culture Pyramid, ALL LAYERS ARE LINKED AND BUILD ON ONE ANOTHER. Therefore, to eliminate violence against women at the top of the pyramid, we must START AT THE FOUNDATION and address our beliefs and attitudes that support sexual violence. Behaviors like gender stereotypes, sexist jokes, and objectification at the bottom create the foundation for more serious violence at the top. This is why challenging 'small' sexist comments matters."
+             aria-label="Because foundation-level behaviors are more serious than sexual violence"
+             style="margin-right: 0.75rem;">
+      <span>Because foundation-level behaviors are more serious than sexual violence</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="1"
+             data-correct="true"
+             data-feedback="✓ Correct! According to the Rape Culture Pyramid, ALL LAYERS ARE LINKED AND BUILD ON ONE ANOTHER. Therefore, to eliminate violence against women at the top of the pyramid, we must START AT THE FOUNDATION and address our beliefs and attitudes that support sexual violence. Behaviors like gender stereotypes, sexist jokes, and objectification at the bottom create the foundation for more serious violence at the top. This is why challenging 'small' sexist comments matters."
+             aria-label="Because all layers are linked and build on one another, so addressing the foundation is essential to eliminating violence at the top"
+             style="margin-right: 0.75rem;">
+      <span>Because all layers are linked and build on one another, so addressing the foundation is essential to eliminating violence at the top</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="2"
+             data-correct="false"
+             data-feedback="✗ Incorrect. According to the Rape Culture Pyramid, ALL LAYERS ARE LINKED AND BUILD ON ONE ANOTHER. Therefore, to eliminate violence against women at the top of the pyramid, we must START AT THE FOUNDATION and address our beliefs and attitudes that support sexual violence. Behaviors like gender stereotypes, sexist jokes, and objectification at the bottom create the foundation for more serious violence at the top. This is why challenging 'small' sexist comments matters."
+             aria-label="Because it's easier to change attitudes than behaviors"
+             style="margin-right: 0.75rem;">
+      <span>Because it's easier to change attitudes than behaviors</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-1" value="3"
+             data-correct="false"
+             data-feedback="✗ Incorrect. According to the Rape Culture Pyramid, ALL LAYERS ARE LINKED AND BUILD ON ONE ANOTHER. Therefore, to eliminate violence against women at the top of the pyramid, we must START AT THE FOUNDATION and address our beliefs and attitudes that support sexual violence. Behaviors like gender stereotypes, sexist jokes, and objectification at the bottom create the foundation for more serious violence at the top. This is why challenging 'small' sexist comments matters."
+             aria-label="Because sexual violence only happens when foundation attitudes are present"
+             style="margin-right: 0.75rem;">
+      <span>Because sexual violence only happens when foundation attitudes are present</span>
+    </label>
+
+    <div class="question-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+  </div>
+</div>
+
+<div class="quiz-question" data-question-number="3" style="display: none;">
+  <h3 style="margin-bottom: 1rem; color: #38b2ac;">Ally Actions</h3>
+  <p style="margin-bottom: 1.5rem; color: #374151; font-size: 1.125rem;">Which of the following is an example of how allies can help prevent sexual violence and challenge rape culture?</p>
+  <div class="knowledge-check" data-question-index="2">
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="0"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Allies can help prevent sexual violence by CHALLENGING SEXIST COMMENTS in conversations and TALKING ABOUT RAPE CULTURE with others. This breaks the silence, normalizes important conversations, and disrupts the foundation of attitudes that support violence. Other ally actions include knowing local resources and being prepared to support survivors. Prevention requires active participation, not passive observation."
+             aria-label="Ignoring sexist comments to avoid conflict"
+             style="margin-right: 0.75rem;">
+      <span>Ignoring sexist comments to avoid conflict</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="1"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Allies can help prevent sexual violence by CHALLENGING SEXIST COMMENTS in conversations and TALKING ABOUT RAPE CULTURE with others. This breaks the silence, normalizes important conversations, and disrupts the foundation of attitudes that support violence. Other ally actions include knowing local resources and being prepared to support survivors. Prevention requires active participation, not passive observation."
+             aria-label="Only supporting survivors who report to police"
+             style="margin-right: 0.75rem;">
+      <span>Only supporting survivors who report to police</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="2"
+             data-correct="true"
+             data-feedback="✓ Correct! Allies can help prevent sexual violence by CHALLENGING SEXIST COMMENTS in conversations and TALKING ABOUT RAPE CULTURE with others. This breaks the silence, normalizes important conversations, and disrupts the foundation of attitudes that support violence. Other ally actions include knowing local resources and being prepared to support survivors. Prevention requires active participation, not passive observation."
+             aria-label="Challenging sexist comments in conversations and talking about rape culture with others"
+             style="margin-right: 0.75rem;">
+      <span>Challenging sexist comments in conversations and talking about rape culture with others</span>
+    </label>
+
+    <label style="display: block; padding: 1rem 1.25rem; margin: 0.75rem 0; background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s;">
+      <input type="radio" name="question-2" value="3"
+             data-correct="false"
+             data-feedback="✗ Incorrect. Allies can help prevent sexual violence by CHALLENGING SEXIST COMMENTS in conversations and TALKING ABOUT RAPE CULTURE with others. This breaks the silence, normalizes important conversations, and disrupts the foundation of attitudes that support violence. Other ally actions include knowing local resources and being prepared to support survivors. Prevention requires active participation, not passive observation."
+             aria-label="Waiting for survivors to ask for help before offering resources"
+             style="margin-right: 0.75rem;">
+      <span>Waiting for survivors to ask for help before offering resources</span>
+    </label>
+
+    <div class="question-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+  </div>
+</div>
+
+  <div class="quiz-navigation" style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #e5e7eb;">
+    <button onclick="previousQuestion()" id="prev-btn" style="padding: 0.75rem 1.5rem; background: #6b7280; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; display: none;">Previous</button>
+    <button onclick="nextQuestion()" id="next-btn" style="padding: 0.75rem 1.5rem; background: #38b2ac; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer;">Next Question</button>
+    <button onclick="submitQuiz()" id="submit-btn" style="padding: 0.75rem 1.5rem; background: #10b981; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; display: none;">Submit Quiz</button>
+  </div>
+
+  <div class="quiz-result" style="display: none; margin-top: 2rem; padding: 2rem; background: #f0fdf4; border: 2px solid #10b981; border-radius: 0.75rem; text-align: center;">
+    <h2 style="color: #10b981; margin-bottom: 1rem;">Quiz Complete!</h2>
+    <p class="quiz-score" style="font-size: 2rem; font-weight: bold; color: #047857; margin-bottom: 1rem;"></p>
+    <p class="quiz-message" style="color: #065f46; margin-bottom: 1.5rem;"></p>
+    <button onclick="reviewQuiz()" style="padding: 0.75rem 1.5rem; background: #38b2ac; color: white; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; margin-right: 0.75rem;">Review Answers</button>
+  </div>
+</div>
+
+
+  
+  <!-- Lesson Navigation (Previous/Next) -->
+<nav class="lesson-navigation" aria-label="Lesson navigation">
+    <a href="lesson-2-1.html" class="lesson-nav-button lesson-nav-prev">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <div class="lesson-nav-text">
+            <span class="lesson-nav-label">Previous Lesson</span>
+            <span class="lesson-nav-title">What is Sexual Violence?</span>
+        </div>
+    </a>
+    <a href="lesson-2-3.html" class="lesson-nav-button lesson-nav-next">
+        <div class="lesson-nav-text">
+            <span class="lesson-nav-label">Next Lesson</span>
+            <span class="lesson-nav-title">Rape and Sexual Assault in the Context of Intimate Partner Violence</span>
+        </div>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+    </a>
+</nav>
+
+  <!-- Sidebar Module Toggle Script -->
+  <script>
+    // Global function for onclick handlers
+    function toggleSidebarModule(moduleNum) {
+      const module = document.querySelector(`.nav-module[data-module="${moduleNum}"]`);
+      if (!module) return;
+
+      const trigger = module.querySelector('.nav-module-trigger');
+      const lessons = module.querySelector('.nav-lessons');
+      if (!trigger || !lessons) return;
+
+      const isCurrentlyExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+      // Toggle aria-expanded
+      trigger.setAttribute('aria-expanded', !isCurrentlyExpanded);
+
+      // Toggle the active class (used by CSS for styling)
+      if (isCurrentlyExpanded) {
+        module.classList.remove('active');
+        lessons.style.maxHeight = '0';
+        lessons.style.opacity = '0';
+        lessons.style.marginTop = '0';
+      } else {
+        module.classList.add('active');
+        lessons.style.maxHeight = '500px';
+        lessons.style.opacity = '1';
+        lessons.style.marginTop = 'var(--space-3)';
+      }
+    }
+
+    // Initialize modules on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const modules = document.querySelectorAll('.nav-module');
+
+      modules.forEach(function(module) {
+        const trigger = module.querySelector('.nav-module-trigger');
+        const lessons = module.querySelector('.nav-lessons');
+        const moduleNum = module.getAttribute('data-module');
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+        // Initialize visibility based on aria-expanded
+        if (isExpanded) {
+          module.classList.add('active');
+          lessons.style.maxHeight = '500px';
+          lessons.style.opacity = '1';
+          lessons.style.marginTop = 'var(--space-3)';
+        } else {
+          module.classList.remove('active');
+          lessons.style.maxHeight = '0';
+          lessons.style.opacity = '0';
+          lessons.style.marginTop = '0';
+        }
+      });
+    });
+
+    // Rape Culture Pyramid Interactive Functions
+    let currentExpandedTier = null;
+
+    function togglePyramidDetail(tier) {
+      const overlay = document.getElementById('pyramid-detail-overlay');
+      const content = document.getElementById('pyramid-detail-content');
+      const container = document.getElementById('pyramid-container');
+
+      // If clicking the same tier, close it
+      if (currentExpandedTier === tier) {
+        closePyramidDetail();
+        return;
+      }
+
+      // Store current tier
+      currentExpandedTier = tier;
+
+      // Pyramid data - concise version
+      const pyramidData = {
+        foundation: {
+          title: 'Foundation',
+          subtitle: 'Normalized Behaviors',
+          color: '#f59e0b',
+          bgColor: '#fef3c7',
+          examples: [
+            '"Boys will be boys"',
+            'Sexist jokes and catcalling',
+            'Objectifying women\'s bodies',
+            'Rigid gender stereotypes'
+          ],
+          insight: 'These seem harmless but create an environment where women are viewed as less than fully human, normalizing disrespect.'
+        },
+        escalation: {
+          title: 'Escalation',
+          subtitle: 'Harmful Attitudes',
+          color: '#f97316',
+          bgColor: '#fed7aa',
+          examples: [
+            '"What was she wearing?"',
+            'Slut-shaming and purity culture',
+            'Denying rape culture exists',
+            'Defending perpetrators over survivors'
+          ],
+          insight: 'These attitudes shift responsibility to survivors, create barriers to reporting, and protect those who cause harm.'
+        },
+        violence: {
+          title: 'Violence',
+          subtitle: 'Criminal Acts',
+          color: '#ef4444',
+          bgColor: '#fecaca',
+          examples: [
+            'Sexual assault and rape',
+            'Sexual harassment',
+            'Intimate partner sexual violence',
+            'Exploitation and trafficking'
+          ],
+          insight: 'These crimes don\'t happen in isolation—they\'re enabled by the attitudes and behaviors in lower tiers.'
+        }
+      };
+
+      const data = pyramidData[tier];
+
+      // Build concise content
+      let html = `
+        <div style="border-left: 4px solid ${data.color}; padding-left: 1rem; margin-bottom: 1.5rem;">
+          <h4 style="color: ${data.color}; margin: 0 0 0.25rem 0; font-size: 1.25rem;">${data.title}</h4>
+          <p style="color: #6b7280; margin: 0; font-size: 0.875rem;">${data.subtitle}</p>
+        </div>
+
+        <div style="background: ${data.bgColor}; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+          <p style="margin: 0 0 0.75rem 0; color: #374151; font-weight: 600; font-size: 0.875rem;">Examples:</p>
+          <ul style="margin: 0; padding-left: 1.25rem; color: #4b5563; font-size: 0.875rem;">
+            ${data.examples.map(ex => `<li style="margin-bottom: 0.5rem;">${ex}</li>`).join('')}
+          </ul>
+        </div>
+
+        <div style="background: #f9fafb; padding: 1rem; border-radius: 8px;">
+          <p style="margin: 0; color: #4b5563; line-height: 1.6; font-size: 0.875rem;"><strong style="color: #374151;">Why it matters:</strong> ${data.insight}</p>
+        </div>
+      `;
+
+      content.innerHTML = html;
+
+      const pyramidSvg = document.getElementById('pyramid-svg');
+
+      // Fade out pyramid
+      pyramidSvg.style.opacity = '0';
+      pyramidSvg.style.pointerEvents = 'none';
+
+      // Show and fade in content overlay
+      setTimeout(() => {
+        overlay.style.display = 'block';
+        setTimeout(() => {
+          overlay.style.opacity = '1';
+        }, 50);
+      }, 200);
+    }
+
+    function closePyramidDetail() {
+      const overlay = document.getElementById('pyramid-detail-overlay');
+      const pyramidSvg = document.getElementById('pyramid-svg');
+
+      // Fade out content
+      overlay.style.opacity = '0';
+
+      // Fade in pyramid
+      setTimeout(() => {
+        overlay.style.display = 'none';
+        pyramidSvg.style.opacity = '1';
+        pyramidSvg.style.pointerEvents = 'auto';
+      }, 400);
+
+      currentExpandedTier = null;
+    }
+
+    function handlePyramidKeydown(event, tier) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        togglePyramidDetail(tier);
+      } else if (event.key === 'Escape') {
+        event.preventDefault();
+        closePyramidDetail();
+      } else if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        const tiers = ['violence', 'escalation', 'foundation'];
+        const currentIndex = tiers.indexOf(tier);
+        if (currentIndex > 0) {
+          document.getElementById(`tier-${tiers[currentIndex - 1]}`).focus();
+        }
+      } else if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        const tiers = ['violence', 'escalation', 'foundation'];
+        const currentIndex = tiers.indexOf(tier);
+        if (currentIndex < tiers.length - 1) {
+          document.getElementById(`tier-${tiers[currentIndex + 1]}`).focus();
+        }
+      }
+    }
+  </script>
+
+  <script src="../js/video-player.js"></script>
+</body>
+</html>
