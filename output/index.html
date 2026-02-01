@@ -36,13 +36,13 @@
             right: 0;
             bottom: 0;
             /* Fallback gradient if image not loaded */
-            background: url('media/backgrounds/landing-iceberg-hero.png') center center / cover no-repeat, linear-gradient(180deg, #1a1a2e 0%, #d8e8f0 100%);
+            background: url('media/backgrounds/landing-iceberg-hero.jpg') center center / cover no-repeat, linear-gradient(180deg, #1a1a2e 0%, #d8e8f0 100%);
             z-index: 0;
         }
 
         /* When image is available, use it */
         .aurora-bg.with-image {
-            background: url('media/backgrounds/landing-iceberg-hero.png') center center / cover no-repeat;
+            background: url('media/backgrounds/landing-iceberg-hero.jpg') center center / cover no-repeat;
         }
 
         /* Aurora lights effect - overlay for added depth */
@@ -743,7 +743,7 @@
 
         /* When image is available, use it */
         .descent-bg.with-image {
-            background: url('media/backgrounds/descent-iceberg-side.png') center center / cover no-repeat;
+            background: url('media/backgrounds/descent-iceberg-side.jpg') center center / cover no-repeat;
         }
 
         .descent-aurora {
@@ -2103,7 +2103,7 @@
             landingImg.onerror = function() {
                 console.log('ℹ️ Landing image not found, using SVG fallback');
             };
-            landingImg.src = 'media/backgrounds/landing-iceberg-hero.png';
+            landingImg.src = 'media/backgrounds/landing-iceberg-hero.jpg';
 
             // Descent page image
             const descentImg = new Image();
@@ -2115,7 +2115,7 @@
             descentImg.onerror = function() {
                 console.log('ℹ️ Descent image not found, using SVG fallback');
             };
-            descentImg.src = 'media/backgrounds/descent-iceberg-side.png';
+            descentImg.src = 'media/backgrounds/descent-iceberg-side.jpg';
         }
 
         // Check URL hash on page load

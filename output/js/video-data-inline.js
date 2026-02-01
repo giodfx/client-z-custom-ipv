@@ -13,7 +13,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "IPV Affects Everyone",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-1-1/scene-1.png",
+      "imageUrl": "../images/videos/lesson-1-1/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-1-1/scene-1.mp3",
       "templateHTML": null
     },
@@ -30,7 +30,7 @@ const LESSON_VIDEO_DATA = {
         "Affects millions annually"
       ],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-1/scene-2.png",
+      "imageUrl": "../images/videos/lesson-1-1/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-1-1/scene-2.mp3",
       "templateHTML": null
     },
@@ -43,7 +43,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "All Age Groups",
       "bullets": [],
       "duration": 11,
-      "imageUrl": "../images/videos/lesson-1-1/scene-3.png",
+      "imageUrl": "../images/videos/lesson-1-1/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-1-1/scene-3.mp3",
       "templateHTML": null
     },
@@ -60,7 +60,7 @@ const LESSON_VIDEO_DATA = {
         "Barriers may differ by community"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-1-1/scene-4.png",
+      "imageUrl": "../images/videos/lesson-1-1/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-1-1/scene-4.mp3",
       "templateHTML": null
     },
@@ -77,7 +77,7 @@ const LESSON_VIDEO_DATA = {
         "LGBTQ+ individuals face unique challenges"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-1-1/scene-5.png",
+      "imageUrl": "../images/videos/lesson-1-1/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-1-1/scene-5.mp3",
       "templateHTML": null
     },
@@ -90,7 +90,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Socioeconomic Status",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-1/scene-6.png",
+      "imageUrl": "../images/videos/lesson-1-1/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-1-1/scene-6.mp3",
       "templateHTML": null
     },
@@ -103,7 +103,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Why Understanding Demographics Matters",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-1-1/scene-7.png",
+      "imageUrl": "../images/videos/lesson-1-1/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-1-1/scene-7.mp3",
       "templateHTML": null
     },
@@ -121,7 +121,7 @@ const LESSON_VIDEO_DATA = {
         "Those in rural or isolated areas"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-1-1/scene-8.png",
+      "imageUrl": "../images/videos/lesson-1-1/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-1-1/scene-8.mp3",
       "templateHTML": null
     },
@@ -134,7 +134,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Intersectionality Matters",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-1/scene-9.png",
+      "imageUrl": "../images/videos/lesson-1-1/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-1-1/scene-9.mp3",
       "templateHTML": null
     },
@@ -147,7 +147,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Everyone Deserves Support",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-1/scene-10.png",
+      "imageUrl": "../images/videos/lesson-1-1/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-1-1/scene-10.mp3",
       "templateHTML": null
     }
@@ -162,7 +162,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Understanding Abuse Types",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-1-2/scene-1.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-1.mp3",
       "templateHTML": null
     },
@@ -179,7 +179,7 @@ const LESSON_VIDEO_DATA = {
         "Preventing sleep or medical care"
       ],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-2/scene-2.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-2.mp3",
       "templateHTML": null
     },
@@ -196,7 +196,7 @@ const LESSON_VIDEO_DATA = {
         "Gaslighting and reality manipulation"
       ],
       "duration": 17,
-      "imageUrl": "../images/videos/lesson-1-2/scene-3.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-3.mp3",
       "templateHTML": null
     },
@@ -209,7 +209,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Isolation as Control",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-2/scene-4.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-4.mp3",
       "templateHTML": null
     },
@@ -226,7 +226,7 @@ const LESSON_VIDEO_DATA = {
         "Destroying credit and creating debt"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-1-2/scene-5.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-5.mp3",
       "templateHTML": null
     },
@@ -239,7 +239,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Sexual Abuse and Coercion",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-1-2/scene-6.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-6.mp3",
       "templateHTML": null
     },
@@ -256,7 +256,7 @@ const LESSON_VIDEO_DATA = {
         "Using technology to harass or intimidate"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-1-2/scene-7.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-7.mp3",
       "templateHTML": null
     },
@@ -269,7 +269,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Abuse Rarely Exists Alone",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-1-2/scene-8.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-8.mp3",
       "templateHTML": null
     },
@@ -286,7 +286,7 @@ const LESSON_VIDEO_DATA = {
         "Designed to maintain power"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-1-2/scene-9.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-9.mp3",
       "templateHTML": null
     },
@@ -299,7 +299,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Recognizing Subtle Signs",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-1-2/scene-10.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-10.mp3",
       "templateHTML": null
     },
@@ -317,7 +317,7 @@ const LESSON_VIDEO_DATA = {
         "Fear and hypervigilance"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-1-2/scene-11.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-11.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-11.mp3",
       "templateHTML": null
     },
@@ -330,7 +330,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Your Role in Recognition",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-1-2/scene-12.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-12.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-12.mp3",
       "templateHTML": null
     },
@@ -343,7 +343,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Knowledge Empowers Action",
       "bullets": [],
       "duration": 12,
-      "imageUrl": "../images/videos/lesson-1-2/scene-13.png",
+      "imageUrl": "../images/videos/lesson-1-2/scene-13.jpg",
       "audioUrl": "../audio/videos/lesson-1-2/scene-13.mp3",
       "templateHTML": null
     }
@@ -358,7 +358,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "The Power and Control Wheel",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-3/scene-1.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-1.mp3",
       "templateHTML": null
     },
@@ -375,7 +375,7 @@ const LESSON_VIDEO_DATA = {
         "Displaying weapons to threaten"
       ],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-3/scene-2.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-2.mp3",
       "templateHTML": null
     },
@@ -392,7 +392,7 @@ const LESSON_VIDEO_DATA = {
         "Humiliation and mind games"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-1-3/scene-3.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-3.mp3",
       "templateHTML": null
     },
@@ -405,7 +405,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Using Isolation",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-3/scene-4.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-4.mp3",
       "templateHTML": null
     },
@@ -422,7 +422,7 @@ const LESSON_VIDEO_DATA = {
         "Saying victim caused the abuse"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-1-3/scene-5.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-5.mp3",
       "templateHTML": null
     },
@@ -435,7 +435,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Using Children",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-1-3/scene-6.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-6.mp3",
       "templateHTML": null
     },
@@ -453,7 +453,7 @@ const LESSON_VIDEO_DATA = {
         "Defining rigid gender roles"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-1-3/scene-7.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-7.mp3",
       "templateHTML": null
     },
@@ -466,7 +466,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Economic Abuse",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-1-3/scene-8.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-8.mp3",
       "templateHTML": null
     },
@@ -484,7 +484,7 @@ const LESSON_VIDEO_DATA = {
         "Forcing illegal activities"
       ],
       "duration": 17,
-      "imageUrl": "../images/videos/lesson-1-3/scene-9.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-9.mp3",
       "templateHTML": null
     },
@@ -497,7 +497,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Physical and Sexual Violence",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-1-3/scene-10.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-10.mp3",
       "templateHTML": null
     },
@@ -515,7 +515,7 @@ const LESSON_VIDEO_DATA = {
         "Economic partnership"
       ],
       "duration": 17,
-      "imageUrl": "../images/videos/lesson-1-3/scene-11.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-11.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-11.mp3",
       "templateHTML": null
     },
@@ -528,7 +528,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Recognizing the Pattern",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-3/scene-12.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-12.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-12.mp3",
       "templateHTML": null
     },
@@ -541,7 +541,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Why This Framework Matters",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-3/scene-13.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-13.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-13.mp3",
       "templateHTML": null
     },
@@ -554,7 +554,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "A Tool for Understanding",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-3/scene-14.png",
+      "imageUrl": "../images/videos/lesson-1-3/scene-14.jpg",
       "audioUrl": "../audio/videos/lesson-1-3/scene-14.mp3",
       "templateHTML": null
     }
@@ -569,7 +569,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Different Patterns of IPV",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-1-4/scene-1.png",
+      "imageUrl": "../images/videos/lesson-1-4/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-1-4/scene-1.mp3",
       "templateHTML": null
     },
@@ -587,7 +587,7 @@ const LESSON_VIDEO_DATA = {
         "Separation-instigated violence"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-1-4/scene-2.png",
+      "imageUrl": "../images/videos/lesson-1-4/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-1-4/scene-2.mp3",
       "templateHTML": null
     },
@@ -600,7 +600,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Situational Couple Violence",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-4/scene-3.png",
+      "imageUrl": "../images/videos/lesson-1-4/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-1-4/scene-3.mp3",
       "templateHTML": null
     },
@@ -618,7 +618,7 @@ const LESSON_VIDEO_DATA = {
         "Severe and escalating"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-1-4/scene-4.png",
+      "imageUrl": "../images/videos/lesson-1-4/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-1-4/scene-4.mp3",
       "templateHTML": null
     },
@@ -631,7 +631,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Coercive Control",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-4/scene-5.png",
+      "imageUrl": "../images/videos/lesson-1-4/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-1-4/scene-5.mp3",
       "templateHTML": null
     },
@@ -649,7 +649,7 @@ const LESSON_VIDEO_DATA = {
         "Calm period, then cycle repeats"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-1-4/scene-6.png",
+      "imageUrl": "../images/videos/lesson-1-4/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-1-4/scene-6.mp3",
       "templateHTML": null
     },
@@ -662,7 +662,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Why Escalation Happens",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-4/scene-7.png",
+      "imageUrl": "../images/videos/lesson-1-4/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-1-4/scene-7.mp3",
       "templateHTML": null
     },
@@ -681,7 +681,7 @@ const LESSON_VIDEO_DATA = {
         "Forced sex"
       ],
       "duration": 17,
-      "imageUrl": "../images/videos/lesson-1-4/scene-8.png",
+      "imageUrl": "../images/videos/lesson-1-4/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-1-4/scene-8.mp3",
       "templateHTML": null
     },
@@ -694,7 +694,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Separation as High-Risk Period",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-4/scene-9.png",
+      "imageUrl": "../images/videos/lesson-1-4/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-1-4/scene-9.mp3",
       "templateHTML": null
     },
@@ -707,7 +707,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Why Categorization Matters",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-4/scene-10.png",
+      "imageUrl": "../images/videos/lesson-1-4/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-1-4/scene-10.mp3",
       "templateHTML": null
     },
@@ -720,7 +720,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Informed Recognition",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-4/scene-11.png",
+      "imageUrl": "../images/videos/lesson-1-4/scene-11.jpg",
       "audioUrl": "../audio/videos/lesson-1-4/scene-11.mp3",
       "templateHTML": null
     }
@@ -735,7 +735,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Case Study: The Sumpters",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-5/scene-1.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-1.mp3",
       "templateHTML": null
     },
@@ -752,7 +752,7 @@ const LESSON_VIDEO_DATA = {
         "Two children, ages 6 and 4"
       ],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-5/scene-2.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-2.mp3",
       "templateHTML": null
     },
@@ -765,7 +765,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "The Beginning",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-1-5/scene-3.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-3.mp3",
       "templateHTML": null
     },
@@ -782,7 +782,7 @@ const LESSON_VIDEO_DATA = {
         "Became jealous of time with others"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-1-5/scene-4.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-4.mp3",
       "templateHTML": null
     },
@@ -795,7 +795,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Financial Control",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-5/scene-5.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-5.mp3",
       "templateHTML": null
     },
@@ -812,7 +812,7 @@ const LESSON_VIDEO_DATA = {
         "Made her feel she couldn't survive alone"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-1-5/scene-6.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-6.mp3",
       "templateHTML": null
     },
@@ -825,7 +825,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Using Children as Control",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-1-5/scene-7.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-7.mp3",
       "templateHTML": null
     },
@@ -838,7 +838,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "The First Physical Incident",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-5/scene-8.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-8.mp3",
       "templateHTML": null
     },
@@ -856,7 +856,7 @@ const LESSON_VIDEO_DATA = {
         "Calm period, then cycle repeats"
       ],
       "duration": 17,
-      "imageUrl": "../images/videos/lesson-1-5/scene-9.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-9.mp3",
       "templateHTML": null
     },
@@ -869,7 +869,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Why Lois Stayed",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-1-5/scene-10.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-10.mp3",
       "templateHTML": null
     },
@@ -888,7 +888,7 @@ const LESSON_VIDEO_DATA = {
         "Physical violence and intimidation"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-1-5/scene-11.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-11.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-11.mp3",
       "templateHTML": null
     },
@@ -901,7 +901,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "What Type of IPV?",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-5/scene-12.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-12.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-12.mp3",
       "templateHTML": null
     },
@@ -914,7 +914,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Recognizing Real Cases",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-1-5/scene-13.png",
+      "imageUrl": "../images/videos/lesson-1-5/scene-13.jpg",
       "audioUrl": "../audio/videos/lesson-1-5/scene-13.mp3",
       "templateHTML": null
     }
@@ -929,7 +929,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Defining Sexual Violence",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-2-1/scene-1.png",
+      "imageUrl": "../images/videos/lesson-2-1/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-2-1/scene-1.mp3",
       "templateHTML": null
     },
@@ -947,7 +947,7 @@ const LESSON_VIDEO_DATA = {
         "Sexual coercion or pressure"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-2-1/scene-2.png",
+      "imageUrl": "../images/videos/lesson-2-1/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-2-1/scene-2.mp3",
       "templateHTML": null
     },
@@ -960,7 +960,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Forms of Sexual Violence",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-2-1/scene-3.png",
+      "imageUrl": "../images/videos/lesson-2-1/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-2-1/scene-3.mp3",
       "templateHTML": null
     },
@@ -973,7 +973,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Understanding Consent",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-2-1/scene-4.png",
+      "imageUrl": "../images/videos/lesson-2-1/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-2-1/scene-4.mp3",
       "templateHTML": null
     },
@@ -990,7 +990,7 @@ const LESSON_VIDEO_DATA = {
         "Voluntary and willing"
       ],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-2-1/scene-5.png",
+      "imageUrl": "../images/videos/lesson-2-1/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-2-1/scene-5.mp3",
       "templateHTML": null
     },
@@ -1003,7 +1003,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Reversible, Informed, Enthusiastic, Specific",
       "bullets": [],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-2-1/scene-6.png",
+      "imageUrl": "../images/videos/lesson-2-1/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-2-1/scene-6.mp3",
       "templateHTML": null
     },
@@ -1021,7 +1021,7 @@ const LESSON_VIDEO_DATA = {
         "Due to disability or incapacitation"
       ],
       "duration": 17,
-      "imageUrl": "../images/videos/lesson-2-1/scene-7.png",
+      "imageUrl": "../images/videos/lesson-2-1/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-2-1/scene-7.mp3",
       "templateHTML": null
     },
@@ -1034,7 +1034,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Sexual Coercion Tactics",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-2-1/scene-8.png",
+      "imageUrl": "../images/videos/lesson-2-1/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-2-1/scene-8.mp3",
       "templateHTML": null
     },
@@ -1047,7 +1047,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Relationship Status Doesn't Equal Consent",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-2-1/scene-9.png",
+      "imageUrl": "../images/videos/lesson-2-1/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-2-1/scene-9.mp3",
       "templateHTML": null
     },
@@ -1065,7 +1065,7 @@ const LESSON_VIDEO_DATA = {
         "Profound violation of autonomy"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-2-1/scene-10.png",
+      "imageUrl": "../images/videos/lesson-2-1/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-2-1/scene-10.mp3",
       "templateHTML": null
     },
@@ -1078,7 +1078,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Why This Matters for IPV",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-2-1/scene-11.png",
+      "imageUrl": "../images/videos/lesson-2-1/scene-11.jpg",
       "audioUrl": "../audio/videos/lesson-2-1/scene-11.mp3",
       "templateHTML": null
     },
@@ -1091,7 +1091,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Consent is Non-Negotiable",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-2-1/scene-12.png",
+      "imageUrl": "../images/videos/lesson-2-1/scene-12.jpg",
       "audioUrl": "../audio/videos/lesson-2-1/scene-12.mp3",
       "templateHTML": null
     }
@@ -1106,7 +1106,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Understanding Rape Culture",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-2-2/scene-1.png",
+      "imageUrl": "../images/videos/lesson-2-2/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-2-2/scene-1.mp3",
       "templateHTML": null
     },
@@ -1124,7 +1124,7 @@ const LESSON_VIDEO_DATA = {
         "Society that tolerates abuse"
       ],
       "duration": 17,
-      "imageUrl": "../images/videos/lesson-2-2/scene-2.png",
+      "imageUrl": "../images/videos/lesson-2-2/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-2-2/scene-2.mp3",
       "templateHTML": null
     },
@@ -1137,7 +1137,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Victim-Blaming",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-2-2/scene-3.png",
+      "imageUrl": "../images/videos/lesson-2-2/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-2-2/scene-3.mp3",
       "templateHTML": null
     },
@@ -1155,7 +1155,7 @@ const LESSON_VIDEO_DATA = {
         "Boys will be boys attitudes"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-2-2/scene-4.png",
+      "imageUrl": "../images/videos/lesson-2-2/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-2-2/scene-4.mp3",
       "templateHTML": null
     },
@@ -1168,7 +1168,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "The Rape Culture Pyramid",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-2-2/scene-5.png",
+      "imageUrl": "../images/videos/lesson-2-2/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-2-2/scene-5.mp3",
       "templateHTML": null
     },
@@ -1186,7 +1186,7 @@ const LESSON_VIDEO_DATA = {
         "Victim-blaming language"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-2-2/scene-6.png",
+      "imageUrl": "../images/videos/lesson-2-2/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-2-2/scene-6.mp3",
       "templateHTML": null
     },
@@ -1199,7 +1199,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Pyramid Middle Levels",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-2-2/scene-7.png",
+      "imageUrl": "../images/videos/lesson-2-2/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-2-2/scene-7.mp3",
       "templateHTML": null
     },
@@ -1212,7 +1212,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Pyramid Apex: Sexual Violence",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-2-2/scene-8.png",
+      "imageUrl": "../images/videos/lesson-2-2/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-2-2/scene-8.mp3",
       "templateHTML": null
     },
@@ -1225,7 +1225,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Media and Rape Culture",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-2-2/scene-9.png",
+      "imageUrl": "../images/videos/lesson-2-2/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-2-2/scene-9.mp3",
       "templateHTML": null
     },
@@ -1243,7 +1243,7 @@ const LESSON_VIDEO_DATA = {
         "Protects perpetrators"
       ],
       "duration": 17,
-      "imageUrl": "../images/videos/lesson-2-2/scene-10.png",
+      "imageUrl": "../images/videos/lesson-2-2/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-2-2/scene-10.mp3",
       "templateHTML": null
     },
@@ -1256,7 +1256,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Challenging Rape Culture",
       "bullets": [],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-2-2/scene-11.png",
+      "imageUrl": "../images/videos/lesson-2-2/scene-11.jpg",
       "audioUrl": "../audio/videos/lesson-2-2/scene-11.mp3",
       "templateHTML": null
     },
@@ -1269,7 +1269,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Creating a Culture of Consent",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-2-2/scene-12.png",
+      "imageUrl": "../images/videos/lesson-2-2/scene-12.jpg",
       "audioUrl": "../audio/videos/lesson-2-2/scene-12.mp3",
       "templateHTML": null
     }
@@ -1284,7 +1284,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Sexual Violence Within Relationships",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-2-3/scene-1.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-1.mp3",
       "templateHTML": null
     },
@@ -1302,7 +1302,7 @@ const LESSON_VIDEO_DATA = {
         "Severely underreported"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-2-3/scene-2.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-2.mp3",
       "templateHTML": null
     },
@@ -1315,7 +1315,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Historical Context",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-2-3/scene-3.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-3.mp3",
       "templateHTML": null
     },
@@ -1333,7 +1333,7 @@ const LESSON_VIDEO_DATA = {
         "Repeated assaults over time"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-2-3/scene-4.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-4.mp3",
       "templateHTML": null
     },
@@ -1346,7 +1346,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Forms Within Relationships",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-2-3/scene-5.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-5.mp3",
       "templateHTML": null
     },
@@ -1364,7 +1364,7 @@ const LESSON_VIDEO_DATA = {
         "Using pregnancy to trap partners"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-2-3/scene-6.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-6.mp3",
       "templateHTML": null
     },
@@ -1377,7 +1377,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Connection to Other Abuse",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-2-3/scene-7.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-7.mp3",
       "templateHTML": null
     },
@@ -1390,7 +1390,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Why Victims Don't Leave",
       "bullets": [],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-2-3/scene-8.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-8.mp3",
       "templateHTML": null
     },
@@ -1408,7 +1408,7 @@ const LESSON_VIDEO_DATA = {
         "Loyalty to partner despite abuse"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-2-3/scene-9.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-9.mp3",
       "templateHTML": null
     },
@@ -1421,7 +1421,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Myths About Intimate Partner Sexual Violence",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-2-3/scene-10.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-10.mp3",
       "templateHTML": null
     },
@@ -1439,7 +1439,7 @@ const LESSON_VIDEO_DATA = {
         "Difficulty with trust and intimacy"
       ],
       "duration": 17,
-      "imageUrl": "../images/videos/lesson-2-3/scene-11.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-11.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-11.mp3",
       "templateHTML": null
     },
@@ -1452,7 +1452,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Recognizing the Signs",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-2-3/scene-12.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-12.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-12.mp3",
       "templateHTML": null
     },
@@ -1465,7 +1465,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Responding with Understanding",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-2-3/scene-13.png",
+      "imageUrl": "../images/videos/lesson-2-3/scene-13.jpg",
       "audioUrl": "../audio/videos/lesson-2-3/scene-13.mp3",
       "templateHTML": null
     }
@@ -1480,7 +1480,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Understanding the Impact",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-1/scene-1.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-1.mp3",
       "templateHTML": null
     },
@@ -1498,7 +1498,7 @@ const LESSON_VIDEO_DATA = {
         "Hypervigilance and fear"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-3-1/scene-2.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-2.mp3",
       "templateHTML": null
     },
@@ -1511,7 +1511,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Complex PTSD",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-3-1/scene-3.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-3.mp3",
       "templateHTML": null
     },
@@ -1524,7 +1524,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Learned Helplessness",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-1/scene-4.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-4.mp3",
       "templateHTML": null
     },
@@ -1542,7 +1542,7 @@ const LESSON_VIDEO_DATA = {
         "Cardiovascular issues"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-3-1/scene-5.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-5.mp3",
       "templateHTML": null
     },
@@ -1555,7 +1555,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Reproductive Health Impacts",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-1/scene-6.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-6.mp3",
       "templateHTML": null
     },
@@ -1568,7 +1568,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Social Isolation Impact",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-3-1/scene-7.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-7.mp3",
       "templateHTML": null
     },
@@ -1586,7 +1586,7 @@ const LESSON_VIDEO_DATA = {
         "Poverty and financial dependence"
       ],
       "duration": 17,
-      "imageUrl": "../images/videos/lesson-3-1/scene-8.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-8.mp3",
       "templateHTML": null
     },
@@ -1599,7 +1599,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Impact on Children",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-1/scene-9.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-9.mp3",
       "templateHTML": null
     },
@@ -1612,7 +1612,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Barriers to Leaving: Fear",
       "bullets": [],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-3-1/scene-10.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-10.mp3",
       "templateHTML": null
     },
@@ -1630,7 +1630,7 @@ const LESSON_VIDEO_DATA = {
         "Threats to take children"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-1/scene-11.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-11.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-11.mp3",
       "templateHTML": null
     },
@@ -1643,7 +1643,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Barriers to Leaving: Emotional",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-1/scene-12.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-12.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-12.mp3",
       "templateHTML": null
     },
@@ -1656,7 +1656,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Cumulative Impact",
       "bullets": [],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-3-1/scene-13.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-13.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-13.mp3",
       "templateHTML": null
     },
@@ -1669,7 +1669,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Recognizing Resilience",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-3-1/scene-14.png",
+      "imageUrl": "../images/videos/lesson-3-1/scene-14.jpg",
       "audioUrl": "../audio/videos/lesson-3-1/scene-14.mp3",
       "templateHTML": null
     }
@@ -1684,7 +1684,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "The Importance of Safety Planning",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-2/scene-1.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-1.mp3",
       "templateHTML": null
     },
@@ -1702,7 +1702,7 @@ const LESSON_VIDEO_DATA = {
         "Increases options and control"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-3-2/scene-2.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-2.mp3",
       "templateHTML": null
     },
@@ -1715,7 +1715,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Safety While in the Relationship",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-2/scene-3.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-3.mp3",
       "templateHTML": null
     },
@@ -1733,7 +1733,7 @@ const LESSON_VIDEO_DATA = {
         "Preparing what to say or do"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-2/scene-4.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-4.mp3",
       "templateHTML": null
     },
@@ -1752,7 +1752,7 @@ const LESSON_VIDEO_DATA = {
         "Emergency contacts"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-3-2/scene-5.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-5.mp3",
       "templateHTML": null
     },
@@ -1765,7 +1765,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Safety Planning for Leaving",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-2/scene-6.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-6.mp3",
       "templateHTML": null
     },
@@ -1783,7 +1783,7 @@ const LESSON_VIDEO_DATA = {
         "IPV advocates and counselors"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-2/scene-7.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-7.mp3",
       "templateHTML": null
     },
@@ -1796,7 +1796,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Technology Safety",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-3-2/scene-8.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-8.mp3",
       "templateHTML": null
     },
@@ -1814,7 +1814,7 @@ const LESSON_VIDEO_DATA = {
         "Planning for economic independence"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-2/scene-9.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-9.mp3",
       "templateHTML": null
     },
@@ -1827,7 +1827,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Legal Protections",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-3-2/scene-10.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-10.mp3",
       "templateHTML": null
     },
@@ -1845,7 +1845,7 @@ const LESSON_VIDEO_DATA = {
         "Maintaining protection orders"
       ],
       "duration": 17,
-      "imageUrl": "../images/videos/lesson-3-2/scene-11.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-11.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-11.mp3",
       "templateHTML": null
     },
@@ -1858,7 +1858,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Facilitating Safety Planning Conversations",
       "bullets": [],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-3-2/scene-12.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-12.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-12.mp3",
       "templateHTML": null
     },
@@ -1871,7 +1871,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "When to Involve Specialists",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-2/scene-13.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-13.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-13.mp3",
       "templateHTML": null
     },
@@ -1884,7 +1884,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Empowering Informed Decisions",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-3-2/scene-14.png",
+      "imageUrl": "../images/videos/lesson-3-2/scene-14.jpg",
       "audioUrl": "../audio/videos/lesson-3-2/scene-14.mp3",
       "templateHTML": null
     }
@@ -1899,7 +1899,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Your Response Matters",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-3/scene-1.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-1.mp3",
       "templateHTML": null
     },
@@ -1918,7 +1918,7 @@ const LESSON_VIDEO_DATA = {
         "Empowerment: Building on strengths"
       ],
       "duration": 18,
-      "imageUrl": "../images/videos/lesson-3-3/scene-2.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-2.mp3",
       "templateHTML": null
     },
@@ -1931,7 +1931,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Creating Safety",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-3-3/scene-3.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-3.mp3",
       "templateHTML": null
     },
@@ -1949,7 +1949,7 @@ const LESSON_VIDEO_DATA = {
         "Affirm that abuse is not their fault"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-3-3/scene-4.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-4.mp3",
       "templateHTML": null
     },
@@ -1962,7 +1962,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "What Not to Say",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-3/scene-5.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-5.mp3",
       "templateHTML": null
     },
@@ -1975,7 +1975,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Active Listening Skills",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-3/scene-6.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-6.mp3",
       "templateHTML": null
     },
@@ -1993,7 +1993,7 @@ const LESSON_VIDEO_DATA = {
         "Support their autonomy"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-3-3/scene-7.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-7.mp3",
       "templateHTML": null
     },
@@ -2006,7 +2006,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Appropriate Language",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-3-3/scene-8.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-8.mp3",
       "templateHTML": null
     },
@@ -2019,7 +2019,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Asking About Abuse",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-3/scene-9.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-9.mp3",
       "templateHTML": null
     },
@@ -2038,7 +2038,7 @@ const LESSON_VIDEO_DATA = {
         "Emergency shelter information"
       ],
       "duration": 20,
-      "imageUrl": "../images/videos/lesson-3-3/scene-10.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-10.mp3",
       "templateHTML": null
     },
@@ -2051,7 +2051,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Warm Referrals",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-3-3/scene-11.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-11.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-11.mp3",
       "templateHTML": null
     },
@@ -2064,7 +2064,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Understanding Your Role and Limits",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-3-3/scene-12.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-12.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-12.mp3",
       "templateHTML": null
     },
@@ -2077,7 +2077,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Mandatory Reporting",
       "bullets": [],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-3-3/scene-13.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-13.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-13.mp3",
       "templateHTML": null
     },
@@ -2090,7 +2090,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Self-Care for Helpers",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-3-3/scene-14.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-14.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-14.mp3",
       "templateHTML": null
     },
@@ -2103,7 +2103,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Making a Difference",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-3-3/scene-15.png",
+      "imageUrl": "../images/videos/lesson-3-3/scene-15.jpg",
       "audioUrl": "../audio/videos/lesson-3-3/scene-15.mp3",
       "templateHTML": null
     }
@@ -2118,7 +2118,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Course Completion",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-final-assessment/scene-1.png",
+      "imageUrl": "../images/videos/lesson-final-assessment/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-final-assessment/scene-1.mp3",
       "templateHTML": null
     },
@@ -2136,7 +2136,7 @@ const LESSON_VIDEO_DATA = {
         "Case analysis skills"
       ],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-final-assessment/scene-2.png",
+      "imageUrl": "../images/videos/lesson-final-assessment/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-final-assessment/scene-2.mp3",
       "templateHTML": null
     },
@@ -2154,7 +2154,7 @@ const LESSON_VIDEO_DATA = {
         "Unique aspects of intimate partner sexual assault"
       ],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-final-assessment/scene-3.png",
+      "imageUrl": "../images/videos/lesson-final-assessment/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-final-assessment/scene-3.mp3",
       "templateHTML": null
     },
@@ -2167,7 +2167,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Module 3: Response",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-final-assessment/scene-4.png",
+      "imageUrl": "../images/videos/lesson-final-assessment/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-final-assessment/scene-4.mp3",
       "templateHTML": null
     },
@@ -2180,7 +2180,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Key Frameworks to Remember",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-final-assessment/scene-5.png",
+      "imageUrl": "../images/videos/lesson-final-assessment/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-final-assessment/scene-5.mp3",
       "templateHTML": null
     },
@@ -2199,7 +2199,7 @@ const LESSON_VIDEO_DATA = {
         "Your response can be transformative"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-final-assessment/scene-6.png",
+      "imageUrl": "../images/videos/lesson-final-assessment/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-final-assessment/scene-6.mp3",
       "templateHTML": null
     },
@@ -2212,7 +2212,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Applying Your Knowledge",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-final-assessment/scene-7.png",
+      "imageUrl": "../images/videos/lesson-final-assessment/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-final-assessment/scene-7.mp3",
       "templateHTML": null
     },
@@ -2230,7 +2230,7 @@ const LESSON_VIDEO_DATA = {
         "You may retake if needed"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-final-assessment/scene-8.png",
+      "imageUrl": "../images/videos/lesson-final-assessment/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-final-assessment/scene-8.mp3",
       "templateHTML": null
     },
@@ -2243,7 +2243,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Resources for Ongoing Learning",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-final-assessment/scene-9.png",
+      "imageUrl": "../images/videos/lesson-final-assessment/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-final-assessment/scene-9.mp3",
       "templateHTML": null
     },
@@ -2256,7 +2256,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "You Can Make a Difference",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-final-assessment/scene-10.png",
+      "imageUrl": "../images/videos/lesson-final-assessment/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-final-assessment/scene-10.mp3",
       "templateHTML": null
     }
@@ -2271,7 +2271,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Understanding Intimate Partner Violence",
       "bullets": [],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-intro-1/scene-1.png",
+      "imageUrl": "../images/videos/lesson-intro-1/scene-1.jpg",
       "audioUrl": "../audio/videos/lesson-intro-1/scene-1.mp3",
       "templateHTML": null
     },
@@ -2288,7 +2288,7 @@ const LESSON_VIDEO_DATA = {
         "Pattern of power and control"
       ],
       "duration": 18,
-      "imageUrl": "../images/videos/lesson-intro-1/scene-2.png",
+      "imageUrl": "../images/videos/lesson-intro-1/scene-2.jpg",
       "audioUrl": "../audio/videos/lesson-intro-1/scene-2.mp3",
       "templateHTML": null
     },
@@ -2305,7 +2305,7 @@ const LESSON_VIDEO_DATA = {
         "Occurs across all demographics"
       ],
       "duration": 17,
-      "imageUrl": "../images/videos/lesson-intro-1/scene-3.png",
+      "imageUrl": "../images/videos/lesson-intro-1/scene-3.jpg",
       "audioUrl": "../audio/videos/lesson-intro-1/scene-3.mp3",
       "templateHTML": null
     },
@@ -2318,7 +2318,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Why Recognition Matters",
       "bullets": [],
       "duration": 13,
-      "imageUrl": "../images/videos/lesson-intro-1/scene-4.png",
+      "imageUrl": "../images/videos/lesson-intro-1/scene-4.jpg",
       "audioUrl": "../audio/videos/lesson-intro-1/scene-4.mp3",
       "templateHTML": null
     },
@@ -2336,7 +2336,7 @@ const LESSON_VIDEO_DATA = {
         "Financial control restricting independence"
       ],
       "duration": 18,
-      "imageUrl": "../images/videos/lesson-intro-1/scene-5.png",
+      "imageUrl": "../images/videos/lesson-intro-1/scene-5.jpg",
       "audioUrl": "../audio/videos/lesson-intro-1/scene-5.mp3",
       "templateHTML": null
     },
@@ -2349,7 +2349,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Power and Control",
       "bullets": [],
       "duration": 12,
-      "imageUrl": "../images/videos/lesson-intro-1/scene-6.png",
+      "imageUrl": "../images/videos/lesson-intro-1/scene-6.jpg",
       "audioUrl": "../audio/videos/lesson-intro-1/scene-6.mp3",
       "templateHTML": null
     },
@@ -2367,7 +2367,7 @@ const LESSON_VIDEO_DATA = {
         "Economic dependence and instability"
       ],
       "duration": 18,
-      "imageUrl": "../images/videos/lesson-intro-1/scene-7.png",
+      "imageUrl": "../images/videos/lesson-intro-1/scene-7.jpg",
       "audioUrl": "../audio/videos/lesson-intro-1/scene-7.mp3",
       "templateHTML": null
     },
@@ -2380,7 +2380,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Your Role as a Professional",
       "bullets": [],
       "duration": 14,
-      "imageUrl": "../images/videos/lesson-intro-1/scene-8.png",
+      "imageUrl": "../images/videos/lesson-intro-1/scene-8.jpg",
       "audioUrl": "../audio/videos/lesson-intro-1/scene-8.mp3",
       "templateHTML": null
     },
@@ -2398,7 +2398,7 @@ const LESSON_VIDEO_DATA = {
         "Cultural sensitivity and awareness"
       ],
       "duration": 16,
-      "imageUrl": "../images/videos/lesson-intro-1/scene-9.png",
+      "imageUrl": "../images/videos/lesson-intro-1/scene-9.jpg",
       "audioUrl": "../audio/videos/lesson-intro-1/scene-9.mp3",
       "templateHTML": null
     },
@@ -2411,7 +2411,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Resources and Support",
       "bullets": [],
       "duration": 12,
-      "imageUrl": "../images/videos/lesson-intro-1/scene-10.png",
+      "imageUrl": "../images/videos/lesson-intro-1/scene-10.jpg",
       "audioUrl": "../audio/videos/lesson-intro-1/scene-10.mp3",
       "templateHTML": null
     },
@@ -2428,7 +2428,7 @@ const LESSON_VIDEO_DATA = {
         "Module 3: Responding with trauma-informed care"
       ],
       "duration": 15,
-      "imageUrl": "../images/videos/lesson-intro-1/scene-11.png",
+      "imageUrl": "../images/videos/lesson-intro-1/scene-11.jpg",
       "audioUrl": "../audio/videos/lesson-intro-1/scene-11.mp3",
       "templateHTML": null
     },
@@ -2441,7 +2441,7 @@ const LESSON_VIDEO_DATA = {
       "heading": "Ready to Make a Difference",
       "bullets": [],
       "duration": 12,
-      "imageUrl": "../images/videos/lesson-intro-1/scene-12.png",
+      "imageUrl": "../images/videos/lesson-intro-1/scene-12.jpg",
       "audioUrl": "../audio/videos/lesson-intro-1/scene-12.mp3",
       "templateHTML": null
     }
