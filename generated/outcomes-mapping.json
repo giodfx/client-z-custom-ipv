@@ -6,8 +6,15 @@
     {
       "id": "LO1",
       "outcome": "Recognize various forms of intimate partner violence including physical, emotional, sexual, and economic abuse",
+      "bloomLevel": "Understanding",
       "primaryModules": ["module-1"],
-      "reinforcedIn": [],
+      "coverage": {
+        "introduced": ["lesson-1-2"],
+        "practiced": ["lesson-1-3", "lesson-1-4"],
+        "mastered": ["lesson-1-5"],
+        "primary": ["lesson-1-2", "lesson-1-3", "lesson-1-4", "lesson-1-5"],
+        "reinforced": []
+      },
       "assessedIn": ["lesson-1-5", "quiz-module-1"],
       "lessons": {
         "introduced": "lesson-1-2",
@@ -18,8 +25,15 @@
     {
       "id": "LO2",
       "outcome": "Analyze abusive relationship dynamics using the Power and Control Wheel framework",
+      "bloomLevel": "Analysis",
       "primaryModules": ["module-1"],
-      "reinforcedIn": [],
+      "coverage": {
+        "introduced": ["lesson-1-3"],
+        "practiced": ["lesson-1-4"],
+        "mastered": ["lesson-1-5"],
+        "primary": ["lesson-1-3", "lesson-1-4", "lesson-1-5"],
+        "reinforced": []
+      },
       "assessedIn": ["lesson-1-5", "quiz-module-1"],
       "lessons": {
         "introduced": "lesson-1-3",
@@ -30,8 +44,15 @@
     {
       "id": "LO3",
       "outcome": "Understand the unique characteristics and impacts of intimate partner sexual violence",
+      "bloomLevel": "Understanding",
       "primaryModules": ["module-2"],
-      "reinforcedIn": [],
+      "coverage": {
+        "introduced": ["lesson-2-1"],
+        "practiced": ["lesson-2-2"],
+        "mastered": ["lesson-2-3"],
+        "primary": ["lesson-2-1", "lesson-2-2", "lesson-2-3"],
+        "reinforced": []
+      },
       "assessedIn": ["lesson-2-3", "quiz-module-2"],
       "lessons": {
         "introduced": "lesson-2-1",
@@ -42,8 +63,15 @@
     {
       "id": "LO4",
       "outcome": "Apply trauma-informed approaches when responding to individuals experiencing IPV",
+      "bloomLevel": "Application",
       "primaryModules": ["module-3"],
-      "reinforcedIn": [],
+      "coverage": {
+        "introduced": ["lesson-3-1"],
+        "practiced": ["lesson-3-2"],
+        "mastered": ["lesson-3-3"],
+        "primary": ["lesson-3-1", "lesson-3-2", "lesson-3-3"],
+        "reinforced": []
+      },
       "assessedIn": ["lesson-3-3", "quiz-module-3"],
       "lessons": {
         "introduced": "lesson-3-1",
@@ -54,15 +82,21 @@
     {
       "id": "LO5",
       "outcome": "Develop and facilitate safety planning strategies with survivors",
+      "bloomLevel": "Application",
       "primaryModules": ["module-3"],
-      "reinforcedIn": [],
+      "coverage": {
+        "introduced": ["lesson-3-2"],
+        "practiced": ["lesson-3-3"],
+        "mastered": ["lesson-3-3"],
+        "primary": ["lesson-3-2", "lesson-3-3"],
+        "reinforced": []
+      },
       "assessedIn": ["lesson-3-3", "quiz-module-3"],
       "lessons": {
         "introduced": "lesson-3-2",
         "practiced": ["lesson-3-3"],
         "mastered": "lesson-3-3"
-      },
-      "bloomLevel": "remember"
+      }
     }
   ],
 
@@ -88,23 +122,18 @@
       "outcomeCoverage": {
         "LO1": {
           "level": "primary",
+          "introduced": ["lesson-1-2"],
+          "practiced": ["lesson-1-3", "lesson-1-4"],
+          "mastered": ["lesson-1-5"],
           "lessons": ["lesson-1-2", "lesson-1-3", "lesson-1-4", "lesson-1-5"],
-          "lessonDetails": {
-            "lesson-1-2": "introduced",
-            "lesson-1-3": "practiced",
-            "lesson-1-4": "practiced",
-            "lesson-1-5": "mastered"
-          },
           "assessment": "quiz-module-1"
         },
         "LO2": {
           "level": "primary",
+          "introduced": ["lesson-1-3"],
+          "practiced": ["lesson-1-4"],
+          "mastered": ["lesson-1-5"],
           "lessons": ["lesson-1-3", "lesson-1-4", "lesson-1-5"],
-          "lessonDetails": {
-            "lesson-1-3": "introduced",
-            "lesson-1-4": "practiced",
-            "lesson-1-5": "mastered"
-          },
           "assessment": "quiz-module-1"
         }
       }
@@ -121,12 +150,10 @@
       "outcomeCoverage": {
         "LO3": {
           "level": "primary",
+          "introduced": ["lesson-2-1"],
+          "practiced": ["lesson-2-2"],
+          "mastered": ["lesson-2-3"],
           "lessons": ["lesson-2-1", "lesson-2-2", "lesson-2-3"],
-          "lessonDetails": {
-            "lesson-2-1": "introduced",
-            "lesson-2-2": "practiced",
-            "lesson-2-3": "mastered"
-          },
           "assessment": "quiz-module-2"
         }
       }
@@ -143,21 +170,18 @@
       "outcomeCoverage": {
         "LO4": {
           "level": "primary",
+          "introduced": ["lesson-3-1"],
+          "practiced": ["lesson-3-2"],
+          "mastered": ["lesson-3-3"],
           "lessons": ["lesson-3-1", "lesson-3-2", "lesson-3-3"],
-          "lessonDetails": {
-            "lesson-3-1": "introduced",
-            "lesson-3-2": "practiced",
-            "lesson-3-3": "mastered"
-          },
           "assessment": "quiz-module-3"
         },
         "LO5": {
           "level": "primary",
+          "introduced": ["lesson-3-2"],
+          "practiced": ["lesson-3-3"],
+          "mastered": ["lesson-3-3"],
           "lessons": ["lesson-3-2", "lesson-3-3"],
-          "lessonDetails": {
-            "lesson-3-2": "introduced",
-            "lesson-3-3": "mastered"
-          },
           "assessment": "quiz-module-3"
         }
       }
